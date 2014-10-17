@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我只需要你陪我60年。很傻，对吧？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-10-17T06:15:41.925Z</updated>
+  <updated>2014-10-17T09:12:05.605Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -19,11 +19,13 @@
     <link href="http://jianhanglin.github.io/2014/10/17/123456/"/>
     <id>http://jianhanglin.github.io/2014/10/17/123456/</id>
     <published>2014-10-17T03:53:51.000Z</published>
-    <updated>2014-10-17T03:53:51.000Z</updated>
+    <updated>2014-10-17T06:54:55.000Z</updated>
     <content type="html"><![CDATA[]]></content>
     <summary type="html">
     <![CDATA[]]>
     </summary>
+    
+      <category term="1233" scheme="http://jianhanglin.github.io/categories/1233/"/>
     
   </entry>
   
