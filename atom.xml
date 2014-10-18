@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我只需要你陪我60年。很傻，对吧？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-10-18T09:37:25.910Z</updated>
+  <updated>2014-10-18T10:51:14.268Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -15,11 +15,270 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[《近世代数引论》第1章 群 1.1 什么是群]]></title>
+    <title><![CDATA[《Algebra》Chapter I Groups 1. Monoids]]></title>
+    <link href="http://jianhanglin.github.io/Algebra11%20-%20%E5%89%AF%E6%9C%AC%20(5)/"/>
+    <id>http://jianhanglin.github.io/Algebra11 - 副本 (5)/</id>
+    <published>2014-10-18T10:21:34.000Z</published>
+    <updated>2014-10-18T10:21:27.000Z</updated>
+    <content type="html"><![CDATA[<p><strong><a href="http://book.douban.com/subject/1462025/" target="_blank" rel="external">Algebra</a></strong> <a href="http://pan.baidu.com/s/1jGf0HM2" target="_blank" rel="external">在线阅读</a> Serge Lang Springer Revised Third Edition</p>
+<center><img src="/assets/img/Algebra/cover.jpg" alt=""></center> 
+]]></content>
+    <summary type="html">
+    <![CDATA[Algebra]]>
+    
+    </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[《Algebra》Chapter I Groups 1. Monoids]]></title>
+    <link href="http://jianhanglin.github.io/Algebra11%20-%20%E5%89%AF%E6%9C%AC%20(4)/"/>
+    <id>http://jianhanglin.github.io/Algebra11 - 副本 (4)/</id>
+    <published>2014-10-18T10:21:33.000Z</published>
+    <updated>2014-10-18T10:21:27.000Z</updated>
+    <content type="html"><![CDATA[<p><strong><a href="http://book.douban.com/subject/1462025/" target="_blank" rel="external">Algebra</a></strong> <a href="http://pan.baidu.com/s/1jGf0HM2" target="_blank" rel="external">在线阅读</a> Serge Lang Springer Revised Third Edition</p>
+<center><img src="/assets/img/Algebra/cover.jpg" alt=""></center> 
+]]></content>
+    <summary type="html">
+    <![CDATA[Algebra]]>
+    
+    </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[《Algebra》Chapter I Groups 1. Monoids]]></title>
+    <link href="http://jianhanglin.github.io/Algebra11%20-%20%E5%89%AF%E6%9C%AC%20(3)/"/>
+    <id>http://jianhanglin.github.io/Algebra11 - 副本 (3)/</id>
+    <published>2014-10-18T10:21:33.000Z</published>
+    <updated>2014-10-18T10:21:27.000Z</updated>
+    <content type="html"><![CDATA[<p><strong><a href="http://book.douban.com/subject/1462025/" target="_blank" rel="external">Algebra</a></strong> <a href="http://pan.baidu.com/s/1jGf0HM2" target="_blank" rel="external">在线阅读</a> Serge Lang Springer Revised Third Edition</p>
+<center><img src="/assets/img/Algebra/cover.jpg" alt=""></center> 
+]]></content>
+    <summary type="html">
+    <![CDATA[Algebra]]>
+    
+    </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[《Algebra》Chapter I Groups 1. Monoids]]></title>
+    <link href="http://jianhanglin.github.io/Algebra11%20-%20%E5%89%AF%E6%9C%AC%20(2)/"/>
+    <id>http://jianhanglin.github.io/Algebra11 - 副本 (2)/</id>
+    <published>2014-10-18T10:21:32.000Z</published>
+    <updated>2014-10-18T10:21:27.000Z</updated>
+    <content type="html"><![CDATA[<p><strong><a href="http://book.douban.com/subject/1462025/" target="_blank" rel="external">Algebra</a></strong> <a href="http://pan.baidu.com/s/1jGf0HM2" target="_blank" rel="external">在线阅读</a> Serge Lang Springer Revised Third Edition</p>
+<center><img src="/assets/img/Algebra/cover.jpg" alt=""></center> 
+]]></content>
+    <summary type="html">
+    <![CDATA[Algebra]]>
+    
+    </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[《Algebra》Chapter I Groups 1. Monoids]]></title>
+    <link href="http://jianhanglin.github.io/Algebra11%20-%20%E5%89%AF%E6%9C%AC/"/>
+    <id>http://jianhanglin.github.io/Algebra11 - 副本/</id>
+    <published>2014-10-18T10:21:31.000Z</published>
+    <updated>2014-10-18T10:21:27.000Z</updated>
+    <content type="html"><![CDATA[<p><strong><a href="http://book.douban.com/subject/1462025/" target="_blank" rel="external">Algebra</a></strong> <a href="http://pan.baidu.com/s/1jGf0HM2" target="_blank" rel="external">在线阅读</a> Serge Lang Springer Revised Third Edition</p>
+<center><img src="/assets/img/Algebra/cover.jpg" alt=""></center> 
+]]></content>
+    <summary type="html">
+    <![CDATA[Algebra]]>
+    
+    </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[《Algebra》Chapter I Groups 1. Monoids]]></title>
+    <link href="http://jianhanglin.github.io/Algebra11/"/>
+    <id>http://jianhanglin.github.io/Algebra11/</id>
+    <published>2014-10-18T10:11:19.000Z</published>
+    <updated>2014-10-18T10:50:29.000Z</updated>
+    <content type="html"><![CDATA[<p><strong><a href="http://book.douban.com/subject/1462025/" target="_blank" rel="external">Algebra</a></strong> <a href="http://pan.baidu.com/s/1jGf0HM2" target="_blank" rel="external">在线阅读</a> Serge Lang Springer Revised Third Edition</p>
+<center><img src="/assets/img/Algebra/cover.jpg" alt=""></center> 
+
+<h2 id="Logical_Prerequisites">Logical Prerequisites</h2>
+<pre><code>逻辑前提
+</code></pre><p>If $A,B$ are sets,we use the symbol $A\subset B$ to mean that $A$ is contained in $B$ but may be equal to $B$. Similarly for $A\supset B$.</p>
+<p>If $f:A\to B$ is a mapping of one set into another,we write</p>
+<p>$$x\mapsto f(x)$$</p>
+<p>to denote the effect of $f$ on an element $x$ of $A$. We distinguish between the arrows $\to$ and $\mapsto$. We denote by $f(A)$ the set of all elements $f(x)$,with $x\in A$.</p>
+<pre><code><span class="operator">a</span> mapping <span class="operator">of</span> <span class="constant">one</span> <span class="built_in">set</span>:集合映射,<span class="built_in">to</span> denote:表示,distinguish区分,denote <span class="keyword">by</span>:用
+</code></pre><p>Let $f:A\to B$ be a mapping (also called a map). We say that $f$ is <strong>injective</strong> if $x\neq y$ implies $f(x)\neq f(y)$. We say <strong>surjective</strong> if given $b\in B$ there exists $a\in A$ such that $f(a)=b$. We say that $f$ is <strong>bijective</strong> if it is both surjective and injective.</p>
+<pre><code><span class="label">injective:</span>单射，surjective:满射，bijective:双射
+</code></pre><p>A subset $A$ of a set $B$ is said to be proper if $A\neq B$.</p>
+<pre><code><span class="label">proper:</span>真
+</code></pre><p>Let $f:A\to B$ be a map, and $A’$ a subset of $A$. The restriction of $f$ to $A’$ is a map of $a’$ into $B$ denoted by $f\mid A’$.</p>
+<p>If $f:A\to B$ and $g:B\to C$ are maps, then we have a composite map $g\circ f$ such that $(g\circ f)(x)=g(f(x))$ for all $x\in A$.</p>
+<p>Let $f:A\to B$ be a map, and $B’$ a subset of $B$. By $f^{-1}(B’)$ we mean the subset of A consisting of all $x\in A$ such that $f(x)\in B’$. We call it the <strong>inverse image</strong> of $B’$. We call $f(A)$ the <strong>image</strong> of $f$.</p>
+<pre><code><span class="built_in">inverse</span> image:逆象
+</code></pre><p>A <strong>diagram</strong></p>
+<center><img src="/assets/img/Algebra/1diagram.bmp" alt=""></center>
+
+<p>is said to be <strong>commutative</strong> if $g\circ f=h$. Similarly, a <strong>diagram</strong></p>
+<center><img src="/assets/img/Algebra/1diagram.bmp" alt=""></center>
+
+<p>is said to be <strong>commutative</strong> if $g\circ f=\psi\circ \varphi$. We deal sometimes with more complicated diagrams, consisting of arrows between various objects. Such diagrams are called commutative if, whenever it is possible to go from one object to another by means of two sequences of arrows, say</p>
+<span>$$A_{1}\xrightarrow{f_{1}} A_{2}\xrightarrow{f_{2}}\cdots \xrightarrow{f_{n-1}} A_{n}$$</span>
+
+<p>and</p>
+<span>$$A_{1}\xrightarrow{g_{1}} B_{2}\xrightarrow{g_{2}}\cdots \xrightarrow{g_{n-1}} B_{m}=A_{n}$$</span>
+
+<p>then</p>
+<span>$$f_{n-1}\circ \cdots \circ f_{1}=g_{m-1}\circ \cdots \circ g_{1}$$</span>
+
+<p>in other words, the composite maps are equal. Most of our diagrams are composed of triangles or squares as above, and to verify that a diagram consisting of triangles or squares is commutative, it suffices to verify that each triangle and square in it is commutative.</p>
+<pre><code><span class="label">commutative:</span>交换,verify:验证
+</code></pre><p>We assume that the reader is acquained with the integers and rational numbers, denoted respectively by $\bf Z$ and $\bf Q$. For many of our examples, we also assume that the reader knows the real and complex numbers, denoted by $\bf R$ and $\bf C$.</p>
+<pre><code>integer<span class="variable">s:</span>整数，rationa<span class="variable">l:</span>有理
+</code></pre><p>Let $A$ and $I$ be two sets. By a family of elements of $A$, indexed by $I$, one means a map $f:I\to A$. Thus for each $i\in I$ we are given an element $f(i)\in A$. Although a family does not differ from a map, we think of it as determining a collection of objects from $A$, and write it often as </p>
+<p>$$\lbrace f(i)\rbrace _{i\in I}$$</p>
+<p>or </p>
+<span>$$\lbrace a_i\rbrace _{i\in I}$$</span>
+
+<p>writing $a_{i}$ instead of $f(i)$. We call $I$ the indexing set.</p>
+<p>We assume that the reader knows what an equivalence ralation is. Let $A$ be a set with an equivalence relation, let $E$ be an equivalence class of elements of $A$. We sometimes try to define a map of equivalence classes into some set $B$. To define such a map $f$ on the class $E$, we sometimes first give its value on an element $x\in E$(called a representative of $E$), and then show that it is independent of the choice of representative $x\in E$. In that case we say that $f$ is <strong>well defined</strong>. </p>
+<pre><code>equivalence:等价，well <span class="keyword">defined</span>:明确定义
+</code></pre><p>We have products of sets,say finite products $A\times B$, or $A_1\times \cdots \times A_n$, and prouducts of families of sets.</p>
+<p>We shall use Zorn’s lemma, which we describe in Appendix 2.</p>
+<pre><code>lemm<span class="variable">a:</span>引理，appendix：附录
+</code></pre><p>We let #($S$) denote the number of elements of a set $S$, also called the <strong>cardinality</strong> of $S$. The notation is usually employed when $S$ is finite. We also write #($S$)$=$card($S$) </p>
+<pre><code><span class="label">cardinality:</span>基数,notation:符号,finite：有限
+</code></pre><h2 id="Part_One_THE_BASIC_OBJECTS_OF_ALGEBRA"><strong>Part One THE BASIC OBJECTS OF ALGEBRA</strong></h2>
+<p>This part introduces the basic notions of algebra, and the main difficulty for the beginner is to absorb a reasonable vocabulary in a short time. None of the concepts is difficult, but there is an accumulation of new concepts which may sometimes seem heavy.</p>
+<p>To understand the next parts of the book,the reader needs to know essentially only the basic definitions of this first part. Of course, a theorem may be used later for some specific and isolated applications, but on the whole, we have avoided making long logical chains of interdependence.</p>
+<pre><code><span class="label">absorb:</span>吸收,accumulation:积累,theorem:定理,logical chains:逻辑链,interdependence:相互依存
+</code></pre><h2 id="Chapter_I_Groups">Chapter I Groups</h2>
+<h2 id="1-Monoids">1.Monoids</h2>
+<p>monoid:单式半群，幺半群</p>
+<p>Let $S$ be a set. A mapping</p>
+<p>$$S\times S\to S$$</p>
+<p>is sometimes called a <strong>law of composition</strong><br>(of $S$ into itself). If $x$,$y$ are elements of $S$, the image of the pair $(x,y)$ under this mapping is also called their <strong>product</strong> under the law of composition, and will be denoted by $xy$. (Sometimes, we also write $x\cdot y$, and in many cases it is also convention to use an additive notation, and thus to write $x+y$. In that case, we call this element the <strong>sum</strong> of $x$ and $y$. It is customary to use the notation $x+y$ only when the relation $x+y=y+x$ holds.) </p>
+<p>Let $S$ be a set with a law of composition. If $x$,$y$,$z$ are elements of $S$, then we may form their product in two ways:$(xy)z$ and $x(yz)$. If $(xy)z=x(yz)$ for all $x$,$y$,$z$ in $S$ then we say that the law of composition is <strong>associative</strong>.</p>
+<pre><code><span class="label">associative:</span>关联，associative law：结合律
+</code></pre><p>An element $e$ of $S$ such that $ex=x=xe$ for all $x\in S$ is called a <strong>unit element</strong>.(When the law of composition is written additively, the unit element is denoted by $0$, and is called a <strong>zero element</strong>.) A unit element is unique, for if $e’$ is another unit element, we have </p>
+<p>$$e=ee’=e’$$</p>
+<p>by assumption. In most cases, the unit element is written simply $1$(instead of $e$). For most of this chapter, however, we shall write $e$ so as to avoid confusion in proving the most basic properties.</p>
+<pre><code><span class="keyword">property</span>:性质、属性
+</code></pre><p>A <strong>monoid</strong> is a set $G$, with a law of composition which is associative, and having a unit element(so that in particular, $G$ is not empty). </p>
+<p>Let $G$ be a monoid, and $x_1,\cdots ,x_n$ elements of $G$ (where $n$ is an integer $&gt;1$).We definie their product inductively:</p>
+<pre><code><span class="label">inductively:</span>感性
+</code></pre><span>$$\prod\limits_{\nu=1}^{n}x_{\nu}=x_{1}\cdots x_{n}=(x_{1}\cdots x_{n-1})x_{n}.$$</span>
+
+<p>We then have the following rule:</p>
+<span>$$\prod\limits_{\mu=1}^{m}x_{\mu}\cdot \prod\limits_{\nu=1}^{n}x_{m+\nu}=\prod\limits_{\nu=1}^{m+n}x_{\nu},$$</span>
+
+<p>which essentially asserts that we can insert parentheses in any manner in our product without changing its value.</p>
+<pre><code>asser<span class="variable">t:</span>声称,parenthese<span class="variable">s:</span>括号
+</code></pre><p>One alse writes </p>
+<span>$$\prod\limits_{m+1}^{m+n}x_{\nu}~~instead~~of~~\prod\limits_{\nu=1}^{n}x_{m+\nu}$$</span>
+
+<p>and we define</p>
+<span>$$\prod\limits_{\nu=1}^{0}x_{\nu}=e.$$</span>
+
+<p>As a matter of convention, we agree also that the empty product is equal to the unit element.</p>
+<p>It would be possible to define more general laws of composition,i.e. maps $S_1\times S_2\to S_3$ using arbitrary sets. One can then express associativity and commutativity in any setting for which they make sense. For instance, for commutativity we need a law of composition:</p>
+<pre><code><span class="label">arbitrary:</span>任意
+</code></pre><p>$$f:S\times S\to T$$</p>
+<p>where the two sets of departure are the same. <strong>Commutativity</strong> then means $f(x,y)=f(y,x)$, or $xy=yx$ if we omit the mapping $f$ from the notation. For associativity, we leave it to the reader to formulate the most general combination of sets under which it will work. We shall meet special cases later, for instance arising from maps</p>
+<pre><code><span class="label">omit:</span>省略,formulate:制定
+</code></pre><span>$$S\times S\to S~~and~~S\times T\to T.$$</span>
+
+<p>Then a product $(xy)z$ makes sense with $x\in S$,$y\in S$, and $z\in T$. The product $x(yz)$ also makes sense for such elements $x,y,z$ and thus it makes sense to say that our law of composition is associative, namely to say that for all $x,y,z$ as above we have $(xy)z=x(yz)$.    </p>
+<p>If the law of composition of $G$ is commutative, we also say that $G$ is <strong>commutative(or abelian)</strong>.</p>
+<pre><code><span class="label">abelian:</span>阿贝尔
+</code></pre><p>Let $G$ be a commutative monoid,and $x_1,\cdots ,x_n$ elements of $G$.Let $\psi$ be a bijection of the set of integers$(1,\cdots ,n)$ onto itself.Then</p>
+<span>$$\prod\limits_{\nu =1}^{n}x_{\psi (\nu )}=\prod\limits_{\nu =1}^{n}x_{\nu}.$$</span>
+
+<pre><code>bijection：双射
+</code></pre><p>We prove this by induction,it being obvious for $n=1$.We assume it for $n-1$.Let $k$ be an integer such that $\psi (k)=n$.Then</p>
+<span>$$\prod\limits_{1}^{n}x_{\psi (\nu )}=\prod\limits_{1}^{k-1}x_{\psi (\nu )}\cdot x_{\psi (k)}\cdot \prod\limits_{1}^{n-k}x_{\psi (k+\nu )}=\prod\limits_{1}^{k-1}x_{\psi (\nu )}\cdot \prod\limits_{1}^{n-k}x_{\psi (k+\nu )}\cdot x_{\psi (k)}.$$</span>
+
+<pre><code>induction：归纳
+</code></pre><p>Define a map $\varphi$ of $(1,\cdots ,n-1)$ into itself by the rule</p>
+<p>$$\varphi (\nu )=\psi (\nu ),if \nu &lt;k,$$</p>
+<p>$$\varphi (\nu )=\psi (\nu +1),if \nu \geqq k.$$</p>
+<p>Then</p>
+<span>$$\prod\limits_{1}^{n}x_{\psi (\nu )}=\prod\limits_{1}^{k-1}x_{\varphi (\nu )}\prod\limits_{1}^{n-k}x_{\varphi (k-1+\nu )}\cdot x_{n}=\prod\limits_{1}^{n-1}x_{\varphi (\nu )}\cdot x_{n},$$</span>
+
+<p>which,by induction,is equal to $x<em>{1}\cdots x</em>{n}$,as desired.</p>
+<p>Let $G$ be a commutative monoid,let $I$ be a set,and let $f:I\to G$ be a mapping such that $f(i)=e$ for almost all $i\in I$.(Here and thereafter,almost all will mean all but a finite number.)Let $I_{0}$ be the subset of $I$ consisting of those $i$ such that $f(i)\neq e$.By</p>
+<p>$$\prod\limits_{i\in I}f(i)$$</p>
+<p>we shall mean the product</p>
+<span>$$\prod\limits_{i\in I_{0}}f(i)$$</span>
+
+<p>taken in any order(the value does not depend on the order,according to the preceding remark).It is understood that the empty product is equal to $e$.</p>
+<p>When $G$ is written additively,then instead of a product sign,we write the sum sign $\sum$.</p>
+<p>There are a number of formal rules for dealing with products which it would be tedious to list completely.We give one example.Let $I,J$ be two sets,and $f:I\times J\to G$ a mapping into a commutative monoid which takes the value $e$ for almost all pairs $(i,j)$.Then </p>
+<span>$$\prod\limits_{i\in I}\left[ \prod\limits_{j\in J}f(i,j)\right]=\prod\limits_{j\in J}\left[ \prod\limits_{i\in I}f(i,j)\right].$$</span>
+
+<pre><code>tedious：单调沉闷的，冗长乏味的，令人生厌的
+</code></pre><p>As a matter of notation,we sometimes write $\prod\limits f(i)$,omitting the signs $i\in I$,if the reference to the indexing set is clear.</p>
+<pre><code>omit：省略
+</code></pre><p>Let $x$ be an element of a monoid $G$.For every integer $n\geqq 0$ we define $x^n$ to be</p>
+<p>$$\prod\limits_{1}^{n}x,$$</p>
+<p>so that in particular we have $x^0=e,x^1=x,x^2=xx,\cdots$ We obviously have $x^{(n+m)}=x^nx^m$ and $(x^n)^m=x^{nm}$.Furthermore,from our preceding rules of associativity and commutativity,if $x,y$ are elements of $G$ such that $xy=yx$,then $(xy)^n=x^ny^n$.</p>
+<pre><code><span class="keyword">associativity</span>：关联性
+</code></pre><p>If $S,S’$ are two subsets of a monoid $G$,then we define $SS’’$ to be the subset consisting of all elements $xy$,with $x\in S$ and $y\in S’$.Inductively,we can define the product of a finite number of subsets,and we have associativity.For instance,if $S,S’,S’’$ are subsets of $G$,then $(SS’)S’’=S(S’S’’)$.Observe that $GG=G$(because $G$ has a unit element).If $x\in G$,then we define $xS$ to be $\lbrace x\rbrace S$,where $\lbrace x\rbrace $ is the set consisting of the single element $x$.Thus $xS$ consists of all elements $xy$,with $y\in S$.</p>
+<p>By a <strong>submonoid</strong> of $G$,we shall mean a subset $H$ of $G$ containing the unit element $e$,and such that,if $x,y\in H$ then $xy\in H$(we say that $H$ is closed under the law of composition).It is then clear thar $H$ is itself a monoid,under the law of composition induced by that of $G$.</p>
+<p>If $x$ is an element of a monoid $G$,then the subset of powers $x^n(n=0,1,\cdots )$ is a submonoid of $G$.</p>
+<p>The set of integers $\geqq 0$ under addition is a monoid.</p>
+<p>Later we shall define rings.If $R$ is a commutative ring, we shall deal with multiplicative subsets $S$,that is subsets containing the unit element,and such that if $x,y\in S$ then $xy\in S$.Such subsets are monoids.</p>
+<pre><code>multiplicative：倍增的
+</code></pre><p><strong>A routine example.</strong>Let $\bf N$ be the natural numbers,i.e.the integers $\geqq 0$. Then $\bf N$ is an additive monoid.In some applications,it is useful to deal with a multiplicative version.See the definition of polynomials in Chapter II, $\S 3$,where a higher-dimensional version is also used for polynomials in several variables. </p>
+<pre><code>polynomials：多项式 
+</code></pre><p><strong>An interesting example.</strong>We assume that the reader is familiar with the terminology of elementary topology.Let $M$ be the set of homeomorphism classes of compact(connected)surfaces.We shall define an addition in $M$.Let $S,S’$ be compact surfaces.Let $D$ be a small disc in $S$,and $D’$ a small disc in $S’$.Let $C,C’$ be the circles which form the boundaries of $D$ and $D’$ respectively.Let <span>$D_0,D_0'$</span> be the interiors of $D$ and $D’$ respectively,and glue <span>$S—D_0$</span> to <span>$S'—D_{0}'$</span> by identifying $C$ with $C’$.It can be shown that the resulting surface is independent,up to homeomorphism,of the various choices made in the preceding construction.If $\sigma ,\sigma ‘$ denote the homeomorphism classes of $S$ and $S’$ respectively,we define $\sigma +\sigma ‘$ to be the class of the surface obtained by the preceding gluing process.It can be shown that this addition defines a monoid structure on $M$,whose unit element is the class of the ordinary $2-$sphere.Furthermore,if $\tau$ denotes the class of the torus,and $\pi$ denotes the class of the projective plane,then every element $\sigma$ of $M$ has a unique expression of the form</p>
+<p>$$\sigma =n\tau +m\pi$$</p>
+<p>where $n$ is an integer $\geqq 0$ and $m=0,1$,or $2$.We have $3\pi =\tau +\pi$$.</p>
+<pre><code>terminology：术语;topology：拓扑学;homeomorphism：异质同晶;compact：紧密的;<span class="keyword">torus</span>：环面;projective：射影的
+</code></pre><p>(The reasons for inserting the preceding example are twofold:First to relieve the essential dullness of the section.Second to show the reader that monoids exist in nature.Needless to say,the example will not be used in any way throughout the rest of the book.)</p>
+<pre><code>twofold：双重的;dullness：单调
+</code></pre><p><strong>Still other examples.</strong>At the end of Chapter $III$,$\S 4$,we shall remark that isomorphism classes of modules over a ring form a monoid under the direct sum.In Chapter $XV$,$\S 1$,we shall consider a monoid consisting of equivalence classes of quadratic forms.</p>
+<pre><code>isomorphism：同形，类质同像;quadratic：二次方程式
+</code></pre>]]></content>
+    <summary type="html">
+    <![CDATA[Algebra]]>
+    
+    </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[《近世代数引论》第1章 群 1.2 什么是群]]></title>
     <link href="http://jianhanglin.github.io/jinshidaishuyinlun112/"/>
     <id>http://jianhanglin.github.io/jinshidaishuyinlun112/</id>
     <published>2014-10-18T08:07:43.000Z</published>
-    <updated>2014-10-18T09:02:01.000Z</updated>
+    <updated>2014-10-18T09:40:32.000Z</updated>
     <content type="html"><![CDATA[<h2 id="简介">简介</h2>
 <p>近世代数是代数学一个基础学科，讲述代数基本结构的特性。本书除系统介绍群、环和域的基础知识（包括域的有限伽罗瓦扩张理论）之外，还力图强调近世代数中的思想和方法.书中有大量习题.除主线内容外，还增加一些附录用来开拓和深化所学内容.</p>
 <p>本书在中国科学技术大学讲授多年的讲义基础上修改写成.可作为高等学校数学系基础课教材，也可供数学工作者和通信、计算机科学等领域的工程技术人员参考.</p>

@@ -1,0 +1,643 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《Algebra》Chapter I Groups 1. Monoids | JianhangLin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="JianhangLin">
+    
+    <meta name="description" itemprop="description" content="Algebra">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="JianhangLin" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="JianhangLin" title="JianhangLin"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="JianhangLin">JianhangLin</a></h1>
+				<h2 class="blog-motto">我只需要你陪我60年。很傻，对吧？</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/Algebra11/" title="《Algebra》Chapter I Groups 1. Monoids" itemprop="url">《Algebra》Chapter I Groups 1. Monoids</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
+		
+  <p class="article-time">
+    <time datetime="2014-10-18T10:11:19.000Z" itemprop="datePublished"> 发表于 10月 18 2014</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Logical_Prerequisites"><span class="toc-number">1.</span> <span class="toc-text">Logical Prerequisites</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part_One_THE_BASIC_OBJECTS_OF_ALGEBRA"><span class="toc-number">2.</span> <span class="toc-text">Part One THE BASIC OBJECTS OF ALGEBRA</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Chapter_I_Groups"><span class="toc-number">3.</span> <span class="toc-text">Chapter I Groups</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Monoids"><span class="toc-number">4.</span> <span class="toc-text">1.Monoids</span></a></li></ol>
+		
+		</div>
+		
+		<p><strong><a href="http://book.douban.com/subject/1462025/" target="_blank" rel="external">Algebra</a></strong> <a href="http://pan.baidu.com/s/1jGf0HM2" target="_blank" rel="external">在线阅读</a> Serge Lang Springer Revised Third Edition</p>
+<center><img src="/assets/img/Algebra/cover.jpg" alt=""></center> 
+
+<h2 id="Logical_Prerequisites">Logical Prerequisites</h2>
+<pre><code>逻辑前提
+</code></pre><p>If $A,B$ are sets,we use the symbol $A\subset B$ to mean that $A$ is contained in $B$ but may be equal to $B$. Similarly for $A\supset B$.</p>
+<p>If $f:A\to B$ is a mapping of one set into another,we write</p>
+<p>$$x\mapsto f(x)$$</p>
+<p>to denote the effect of $f$ on an element $x$ of $A$. We distinguish between the arrows $\to$ and $\mapsto$. We denote by $f(A)$ the set of all elements $f(x)$,with $x\in A$.</p>
+<pre><code><span class="operator">a</span> mapping <span class="operator">of</span> <span class="constant">one</span> <span class="built_in">set</span>:集合映射,<span class="built_in">to</span> denote:表示,distinguish区分,denote <span class="keyword">by</span>:用
+</code></pre><p>Let $f:A\to B$ be a mapping (also called a map). We say that $f$ is <strong>injective</strong> if $x\neq y$ implies $f(x)\neq f(y)$. We say <strong>surjective</strong> if given $b\in B$ there exists $a\in A$ such that $f(a)=b$. We say that $f$ is <strong>bijective</strong> if it is both surjective and injective.</p>
+<pre><code><span class="label">injective:</span>单射，surjective:满射，bijective:双射
+</code></pre><p>A subset $A$ of a set $B$ is said to be proper if $A\neq B$.</p>
+<pre><code><span class="label">proper:</span>真
+</code></pre><p>Let $f:A\to B$ be a map, and $A’$ a subset of $A$. The restriction of $f$ to $A’$ is a map of $a’$ into $B$ denoted by $f\mid A’$.</p>
+<p>If $f:A\to B$ and $g:B\to C$ are maps, then we have a composite map $g\circ f$ such that $(g\circ f)(x)=g(f(x))$ for all $x\in A$.</p>
+<p>Let $f:A\to B$ be a map, and $B’$ a subset of $B$. By $f^{-1}(B’)$ we mean the subset of A consisting of all $x\in A$ such that $f(x)\in B’$. We call it the <strong>inverse image</strong> of $B’$. We call $f(A)$ the <strong>image</strong> of $f$.</p>
+<pre><code><span class="built_in">inverse</span> image:逆象
+</code></pre><p>A <strong>diagram</strong></p>
+<center><img src="/assets/img/Algebra/1diagram.bmp" alt=""></center>
+
+<p>is said to be <strong>commutative</strong> if $g\circ f=h$. Similarly, a <strong>diagram</strong></p>
+<center><img src="/assets/img/Algebra/1diagram.bmp" alt=""></center>
+
+<p>is said to be <strong>commutative</strong> if $g\circ f=\psi\circ \varphi$. We deal sometimes with more complicated diagrams, consisting of arrows between various objects. Such diagrams are called commutative if, whenever it is possible to go from one object to another by means of two sequences of arrows, say</p>
+<span>$$A_{1}\xrightarrow{f_{1}} A_{2}\xrightarrow{f_{2}}\cdots \xrightarrow{f_{n-1}} A_{n}$$</span>
+
+<p>and</p>
+<span>$$A_{1}\xrightarrow{g_{1}} B_{2}\xrightarrow{g_{2}}\cdots \xrightarrow{g_{n-1}} B_{m}=A_{n}$$</span>
+
+<p>then</p>
+<span>$$f_{n-1}\circ \cdots \circ f_{1}=g_{m-1}\circ \cdots \circ g_{1}$$</span>
+
+<p>in other words, the composite maps are equal. Most of our diagrams are composed of triangles or squares as above, and to verify that a diagram consisting of triangles or squares is commutative, it suffices to verify that each triangle and square in it is commutative.</p>
+<pre><code><span class="label">commutative:</span>交换,verify:验证
+</code></pre><p>We assume that the reader is acquained with the integers and rational numbers, denoted respectively by $\bf Z$ and $\bf Q$. For many of our examples, we also assume that the reader knows the real and complex numbers, denoted by $\bf R$ and $\bf C$.</p>
+<pre><code>integer<span class="variable">s:</span>整数，rationa<span class="variable">l:</span>有理
+</code></pre><p>Let $A$ and $I$ be two sets. By a family of elements of $A$, indexed by $I$, one means a map $f:I\to A$. Thus for each $i\in I$ we are given an element $f(i)\in A$. Although a family does not differ from a map, we think of it as determining a collection of objects from $A$, and write it often as </p>
+<p>$$\lbrace f(i)\rbrace _{i\in I}$$</p>
+<p>or </p>
+<span>$$\lbrace a_i\rbrace _{i\in I}$$</span>
+
+<p>writing $a_{i}$ instead of $f(i)$. We call $I$ the indexing set.</p>
+<p>We assume that the reader knows what an equivalence ralation is. Let $A$ be a set with an equivalence relation, let $E$ be an equivalence class of elements of $A$. We sometimes try to define a map of equivalence classes into some set $B$. To define such a map $f$ on the class $E$, we sometimes first give its value on an element $x\in E$(called a representative of $E$), and then show that it is independent of the choice of representative $x\in E$. In that case we say that $f$ is <strong>well defined</strong>. </p>
+<pre><code>equivalence:等价，well <span class="keyword">defined</span>:明确定义
+</code></pre><p>We have products of sets,say finite products $A\times B$, or $A_1\times \cdots \times A_n$, and prouducts of families of sets.</p>
+<p>We shall use Zorn’s lemma, which we describe in Appendix 2.</p>
+<pre><code>lemm<span class="variable">a:</span>引理，appendix：附录
+</code></pre><p>We let #($S$) denote the number of elements of a set $S$, also called the <strong>cardinality</strong> of $S$. The notation is usually employed when $S$ is finite. We also write #($S$)$=$card($S$) </p>
+<pre><code><span class="label">cardinality:</span>基数,notation:符号,finite：有限
+</code></pre><h2 id="Part_One_THE_BASIC_OBJECTS_OF_ALGEBRA"><strong>Part One THE BASIC OBJECTS OF ALGEBRA</strong></h2>
+<p>This part introduces the basic notions of algebra, and the main difficulty for the beginner is to absorb a reasonable vocabulary in a short time. None of the concepts is difficult, but there is an accumulation of new concepts which may sometimes seem heavy.</p>
+<p>To understand the next parts of the book,the reader needs to know essentially only the basic definitions of this first part. Of course, a theorem may be used later for some specific and isolated applications, but on the whole, we have avoided making long logical chains of interdependence.</p>
+<pre><code><span class="label">absorb:</span>吸收,accumulation:积累,theorem:定理,logical chains:逻辑链,interdependence:相互依存
+</code></pre><h2 id="Chapter_I_Groups">Chapter I Groups</h2>
+<h2 id="1-Monoids">1.Monoids</h2>
+<p>monoid:单式半群，幺半群</p>
+<p>Let $S$ be a set. A mapping</p>
+<p>$$S\times S\to S$$</p>
+<p>is sometimes called a <strong>law of composition</strong><br>(of $S$ into itself). If $x$,$y$ are elements of $S$, the image of the pair $(x,y)$ under this mapping is also called their <strong>product</strong> under the law of composition, and will be denoted by $xy$. (Sometimes, we also write $x\cdot y$, and in many cases it is also convention to use an additive notation, and thus to write $x+y$. In that case, we call this element the <strong>sum</strong> of $x$ and $y$. It is customary to use the notation $x+y$ only when the relation $x+y=y+x$ holds.) </p>
+<p>Let $S$ be a set with a law of composition. If $x$,$y$,$z$ are elements of $S$, then we may form their product in two ways:$(xy)z$ and $x(yz)$. If $(xy)z=x(yz)$ for all $x$,$y$,$z$ in $S$ then we say that the law of composition is <strong>associative</strong>.</p>
+<pre><code><span class="label">associative:</span>关联，associative law：结合律
+</code></pre><p>An element $e$ of $S$ such that $ex=x=xe$ for all $x\in S$ is called a <strong>unit element</strong>.(When the law of composition is written additively, the unit element is denoted by $0$, and is called a <strong>zero element</strong>.) A unit element is unique, for if $e’$ is another unit element, we have </p>
+<p>$$e=ee’=e’$$</p>
+<p>by assumption. In most cases, the unit element is written simply $1$(instead of $e$). For most of this chapter, however, we shall write $e$ so as to avoid confusion in proving the most basic properties.</p>
+<pre><code><span class="keyword">property</span>:性质、属性
+</code></pre><p>A <strong>monoid</strong> is a set $G$, with a law of composition which is associative, and having a unit element(so that in particular, $G$ is not empty). </p>
+<p>Let $G$ be a monoid, and $x_1,\cdots ,x_n$ elements of $G$ (where $n$ is an integer $&gt;1$).We definie their product inductively:</p>
+<pre><code><span class="label">inductively:</span>感性
+</code></pre><span>$$\prod\limits_{\nu=1}^{n}x_{\nu}=x_{1}\cdots x_{n}=(x_{1}\cdots x_{n-1})x_{n}.$$</span>
+
+<p>We then have the following rule:</p>
+<span>$$\prod\limits_{\mu=1}^{m}x_{\mu}\cdot \prod\limits_{\nu=1}^{n}x_{m+\nu}=\prod\limits_{\nu=1}^{m+n}x_{\nu},$$</span>
+
+<p>which essentially asserts that we can insert parentheses in any manner in our product without changing its value.</p>
+<pre><code>asser<span class="variable">t:</span>声称,parenthese<span class="variable">s:</span>括号
+</code></pre><p>One alse writes </p>
+<span>$$\prod\limits_{m+1}^{m+n}x_{\nu}~~instead~~of~~\prod\limits_{\nu=1}^{n}x_{m+\nu}$$</span>
+
+<p>and we define</p>
+<span>$$\prod\limits_{\nu=1}^{0}x_{\nu}=e.$$</span>
+
+<p>As a matter of convention, we agree also that the empty product is equal to the unit element.</p>
+<p>It would be possible to define more general laws of composition,i.e. maps $S_1\times S_2\to S_3$ using arbitrary sets. One can then express associativity and commutativity in any setting for which they make sense. For instance, for commutativity we need a law of composition:</p>
+<pre><code><span class="label">arbitrary:</span>任意
+</code></pre><p>$$f:S\times S\to T$$</p>
+<p>where the two sets of departure are the same. <strong>Commutativity</strong> then means $f(x,y)=f(y,x)$, or $xy=yx$ if we omit the mapping $f$ from the notation. For associativity, we leave it to the reader to formulate the most general combination of sets under which it will work. We shall meet special cases later, for instance arising from maps</p>
+<pre><code><span class="label">omit:</span>省略,formulate:制定
+</code></pre><span>$$S\times S\to S~~and~~S\times T\to T.$$</span>
+
+<p>Then a product $(xy)z$ makes sense with $x\in S$,$y\in S$, and $z\in T$. The product $x(yz)$ also makes sense for such elements $x,y,z$ and thus it makes sense to say that our law of composition is associative, namely to say that for all $x,y,z$ as above we have $(xy)z=x(yz)$.    </p>
+<p>If the law of composition of $G$ is commutative, we also say that $G$ is <strong>commutative(or abelian)</strong>.</p>
+<pre><code><span class="label">abelian:</span>阿贝尔
+</code></pre><p>Let $G$ be a commutative monoid,and $x_1,\cdots ,x_n$ elements of $G$.Let $\psi$ be a bijection of the set of integers$(1,\cdots ,n)$ onto itself.Then</p>
+<span>$$\prod\limits_{\nu =1}^{n}x_{\psi (\nu )}=\prod\limits_{\nu =1}^{n}x_{\nu}.$$</span>
+
+<pre><code>bijection：双射
+</code></pre><p>We prove this by induction,it being obvious for $n=1$.We assume it for $n-1$.Let $k$ be an integer such that $\psi (k)=n$.Then</p>
+<span>$$\prod\limits_{1}^{n}x_{\psi (\nu )}=\prod\limits_{1}^{k-1}x_{\psi (\nu )}\cdot x_{\psi (k)}\cdot \prod\limits_{1}^{n-k}x_{\psi (k+\nu )}=\prod\limits_{1}^{k-1}x_{\psi (\nu )}\cdot \prod\limits_{1}^{n-k}x_{\psi (k+\nu )}\cdot x_{\psi (k)}.$$</span>
+
+<pre><code>induction：归纳
+</code></pre><p>Define a map $\varphi$ of $(1,\cdots ,n-1)$ into itself by the rule</p>
+<p>$$\varphi (\nu )=\psi (\nu ),if \nu &lt;k,$$</p>
+<p>$$\varphi (\nu )=\psi (\nu +1),if \nu \geqq k.$$</p>
+<p>Then</p>
+<span>$$\prod\limits_{1}^{n}x_{\psi (\nu )}=\prod\limits_{1}^{k-1}x_{\varphi (\nu )}\prod\limits_{1}^{n-k}x_{\varphi (k-1+\nu )}\cdot x_{n}=\prod\limits_{1}^{n-1}x_{\varphi (\nu )}\cdot x_{n},$$</span>
+
+<p>which,by induction,is equal to $x<em>{1}\cdots x</em>{n}$,as desired.</p>
+<p>Let $G$ be a commutative monoid,let $I$ be a set,and let $f:I\to G$ be a mapping such that $f(i)=e$ for almost all $i\in I$.(Here and thereafter,almost all will mean all but a finite number.)Let $I_{0}$ be the subset of $I$ consisting of those $i$ such that $f(i)\neq e$.By</p>
+<p>$$\prod\limits_{i\in I}f(i)$$</p>
+<p>we shall mean the product</p>
+<span>$$\prod\limits_{i\in I_{0}}f(i)$$</span>
+
+<p>taken in any order(the value does not depend on the order,according to the preceding remark).It is understood that the empty product is equal to $e$.</p>
+<p>When $G$ is written additively,then instead of a product sign,we write the sum sign $\sum$.</p>
+<p>There are a number of formal rules for dealing with products which it would be tedious to list completely.We give one example.Let $I,J$ be two sets,and $f:I\times J\to G$ a mapping into a commutative monoid which takes the value $e$ for almost all pairs $(i,j)$.Then </p>
+<span>$$\prod\limits_{i\in I}\left[ \prod\limits_{j\in J}f(i,j)\right]=\prod\limits_{j\in J}\left[ \prod\limits_{i\in I}f(i,j)\right].$$</span>
+
+<pre><code>tedious：单调沉闷的，冗长乏味的，令人生厌的
+</code></pre><p>As a matter of notation,we sometimes write $\prod\limits f(i)$,omitting the signs $i\in I$,if the reference to the indexing set is clear.</p>
+<pre><code>omit：省略
+</code></pre><p>Let $x$ be an element of a monoid $G$.For every integer $n\geqq 0$ we define $x^n$ to be</p>
+<p>$$\prod\limits_{1}^{n}x,$$</p>
+<p>so that in particular we have $x^0=e,x^1=x,x^2=xx,\cdots$ We obviously have $x^{(n+m)}=x^nx^m$ and $(x^n)^m=x^{nm}$.Furthermore,from our preceding rules of associativity and commutativity,if $x,y$ are elements of $G$ such that $xy=yx$,then $(xy)^n=x^ny^n$.</p>
+<pre><code><span class="keyword">associativity</span>：关联性
+</code></pre><p>If $S,S’$ are two subsets of a monoid $G$,then we define $SS’’$ to be the subset consisting of all elements $xy$,with $x\in S$ and $y\in S’$.Inductively,we can define the product of a finite number of subsets,and we have associativity.For instance,if $S,S’,S’’$ are subsets of $G$,then $(SS’)S’’=S(S’S’’)$.Observe that $GG=G$(because $G$ has a unit element).If $x\in G$,then we define $xS$ to be $\lbrace x\rbrace S$,where $\lbrace x\rbrace $ is the set consisting of the single element $x$.Thus $xS$ consists of all elements $xy$,with $y\in S$.</p>
+<p>By a <strong>submonoid</strong> of $G$,we shall mean a subset $H$ of $G$ containing the unit element $e$,and such that,if $x,y\in H$ then $xy\in H$(we say that $H$ is closed under the law of composition).It is then clear thar $H$ is itself a monoid,under the law of composition induced by that of $G$.</p>
+<p>If $x$ is an element of a monoid $G$,then the subset of powers $x^n(n=0,1,\cdots )$ is a submonoid of $G$.</p>
+<p>The set of integers $\geqq 0$ under addition is a monoid.</p>
+<p>Later we shall define rings.If $R$ is a commutative ring, we shall deal with multiplicative subsets $S$,that is subsets containing the unit element,and such that if $x,y\in S$ then $xy\in S$.Such subsets are monoids.</p>
+<pre><code>multiplicative：倍增的
+</code></pre><p><strong>A routine example.</strong>Let $\bf N$ be the natural numbers,i.e.the integers $\geqq 0$. Then $\bf N$ is an additive monoid.In some applications,it is useful to deal with a multiplicative version.See the definition of polynomials in Chapter II, $\S 3$,where a higher-dimensional version is also used for polynomials in several variables. </p>
+<pre><code>polynomials：多项式 
+</code></pre><p><strong>An interesting example.</strong>We assume that the reader is familiar with the terminology of elementary topology.Let $M$ be the set of homeomorphism classes of compact(connected)surfaces.We shall define an addition in $M$.Let $S,S’$ be compact surfaces.Let $D$ be a small disc in $S$,and $D’$ a small disc in $S’$.Let $C,C’$ be the circles which form the boundaries of $D$ and $D’$ respectively.Let <span>$D_0,D_0'$</span> be the interiors of $D$ and $D’$ respectively,and glue <span>$S—D_0$</span> to <span>$S'—D_{0}'$</span> by identifying $C$ with $C’$.It can be shown that the resulting surface is independent,up to homeomorphism,of the various choices made in the preceding construction.If $\sigma ,\sigma ‘$ denote the homeomorphism classes of $S$ and $S’$ respectively,we define $\sigma +\sigma ‘$ to be the class of the surface obtained by the preceding gluing process.It can be shown that this addition defines a monoid structure on $M$,whose unit element is the class of the ordinary $2-$sphere.Furthermore,if $\tau$ denotes the class of the torus,and $\pi$ denotes the class of the projective plane,then every element $\sigma$ of $M$ has a unique expression of the form</p>
+<p>$$\sigma =n\tau +m\pi$$</p>
+<p>where $n$ is an integer $\geqq 0$ and $m=0,1$,or $2$.We have $3\pi =\tau +\pi$$.</p>
+<pre><code>terminology：术语;topology：拓扑学;homeomorphism：异质同晶;compact：紧密的;<span class="keyword">torus</span>：环面;projective：射影的
+</code></pre><p>(The reasons for inserting the preceding example are twofold:First to relieve the essential dullness of the section.Second to show the reader that monoids exist in nature.Needless to say,the example will not be used in any way throughout the rest of the book.)</p>
+<pre><code>twofold：双重的;dullness：单调
+</code></pre><p><strong>Still other examples.</strong>At the end of Chapter $III$,$\S 4$,we shall remark that isomorphism classes of modules over a ring form a monoid under the direct sum.In Chapter $XV$,$\S 1$,we shall consider a monoid consisting of equivalence classes of quadratic forms.</p>
+<pre><code>isomorphism：同形，类质同像;quadratic：二次方程式
+</code></pre>  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/抽象代数/">抽象代数</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数/">代数</a>
+  </div>
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://jianhanglin.github.io/Algebra11/" data-title="《Algebra》Chapter I Groups 1. Monoids | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/Algebra11 - 副本/" title="《Algebra》Chapter I Groups 1. Monoids">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《Algebra》Chapter I Groups 1. Monoids</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/jinshidaishuyinlun112/"  title="《近世代数引论》第1章 群 1.2 什么是群">
+ <strong>下一篇：</strong><br/> 
+ <span>《近世代数引论》第1章 群 1.2 什么是群
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Logical_Prerequisites"><span class="toc-number">1.</span> <span class="toc-text">Logical Prerequisites</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Part_One_THE_BASIC_OBJECTS_OF_ALGEBRA"><span class="toc-number">2.</span> <span class="toc-text">Part One THE BASIC OBJECTS OF ALGEBRA</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Chapter_I_Groups"><span class="toc-number">3.</span> <span class="toc-text">Chapter I Groups</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-Monoids"><span class="toc-number">4.</span> <span class="toc-text">1.Monoids</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>8</sup></a></li>
+		
+			<li><a href="/categories/计划/" title="计划">计划<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/代数/" title="代数">代数<sup>8</sup></a></li>
+		
+			<li><a href="/tags/计划/" title="计划">计划<sup>1</sup></a></li>
+		
+			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/代数/" style="font-size: 20.00px;">代数</a><a href="/tags/计划/" style="font-size: 10.00px;">计划</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+      <li><a href="http://wuchong.me" target="_blank" title="WuChong">Jark's Blog</a></li>
+      <li><a href="http://hexo.io" target="_blank" title="Hexo">Hexo</a></li>
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+
+</div>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312 for http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="weibo"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://jianhanglin.github.io/about" target="_blank" title="JianhangLin">JianhangLin</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<script src="/js/totop.js"></script>
+<script src="/js/totop.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-1', 'linjianhang.me');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
