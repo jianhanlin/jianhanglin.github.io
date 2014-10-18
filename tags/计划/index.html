@@ -9,8 +9,6 @@
     
     <meta name="author" content="JianhangLin">
     
-    <meta name="description" content="My blog.">
-    
     
     
     
@@ -105,7 +103,7 @@
 
   <section class="post" itemscope itemprop="blogPost">
   
-    <a href="/2014/10/16/jichushuxuexuexijihua/" title="基础数学学习计划" itemprop="url">
+    <a href="/jichushuxuexuexijihua/" title="基础数学学习计划" itemprop="url">
   
 
     <time datetime="2014-10-16T09:21:56.000Z" itemprop="datePublished">10月 16 2014</time>
@@ -182,6 +180,8 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      
         
     }
   });
@@ -198,6 +198,38 @@ $(document).ready(function(){
   $(window).scroll(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
   });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
 });
 </script>
 
