@@ -209,9 +209,9 @@
 
 
 <div class="next">
-<a href="/3456/"  title="">
+<a href="/jichushuxuexuexijihua/"  title="基础数学学习计划">
  <strong>下一篇：</strong><br/> 
- <span>(no title)
+ <span>基础数学学习计划
 </span>
 </a>
 </div>
@@ -245,6 +245,10 @@
 		
 			<li><a href="/categories/1233/" title="1233">1233<sup>1</sup></a></li>
 		
+			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>1</sup></a></li>
+		
+			<li><a href="/categories/抽象代数/" title="抽象代数####">抽象代数####<sup>0</sup></a></li>
+		
 			<li><a href="/categories/计划/" title="计划">计划<sup>1</sup></a></li>
 		
 		</ul>
@@ -255,6 +259,8 @@
 <div class="tagslist">
 	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
+		
+			<li><a href="/tags/代数/" title="代数">代数<sup>1</sup></a></li>
 		
 			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
 		
@@ -268,7 +274,7 @@
   <div class="tagcloudlist">
     <p class="asidetitle">标签云</p>
     <div class="tagcloudlist clearfix">
-       <a href="/tags/hello/" style="font-size: NaNpx;">hello</a><a href="/tags/计划/" style="font-size: NaNpx;">计划</a>
+       <a href="/tags/hello/" style="font-size: NaNpx;">hello</a><a href="/tags/代数/" style="font-size: NaNpx;">代数</a><a href="/tags/计划/" style="font-size: NaNpx;">计划</a>
     </div>
   </div>
 
@@ -478,6 +484,38 @@ $(document).ready(function(){
 }); 
 </script>
 
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
 <div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
 <a title="返回顶部"><img src="/img/scrollup.png"/></a>
 </div>
@@ -505,6 +543,13 @@ ga('send', 'pageview');
 
 
 
-
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
   </body>
 </html>

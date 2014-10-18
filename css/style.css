@@ -1005,6 +1005,9 @@ article .article-content em code {
   border-radius: 0.25em;
 }
 article .article-content p {
+  margin: 0em;
+  margin-bottom: -0.6em;
+  text-indent: 2em;
   line-height: 1.5;
   margin-top: 0.7em;
 }
