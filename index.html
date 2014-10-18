@@ -25,6 +25,36 @@
     
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </head>
 
   <body>
@@ -114,12 +144,12 @@ tags:4566777
 
   <section class="post" itemscope itemprop="blogPost">
   
-    <a href="/2014/10/16/hello-world/" title="Hello World" itemprop="url">
+    <a href="/2014/10/16/jichushuxuexuexijihua/" title="基础数学学习计划" itemprop="url">
   
-    <h1 itemprop="name">Hello World</h1>
+    <h1 itemprop="name">基础数学学习计划</h1>
     
      
-       <p itemprop="description" >Welcome to Hexo! This is your very first post. Check documentation for more info.</p>
+      <p itemprop="description" >关于我的数学学习计划</p>
       
     
     <time datetime="2014-10-16T09:21:56.000Z" itemprop="datePublished">10月 16 2014</time>
@@ -141,6 +171,8 @@ tags:4566777
 		
 			<li><a href="/categories/1233/" title="1233">1233<sup>1</sup></a></li>
 		
+			<li><a href="/categories/计划/" title="计划">计划<sup>1</sup></a></li>
+		
 		</ul>
 </div>
 
@@ -150,7 +182,9 @@ tags:4566777
 	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/hello/" title="hello">hello<sup>2</sup></a></li>
+			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
+		
+			<li><a href="/tags/计划/" title="计划">计划<sup>1</sup></a></li>
 		
 		</ul>
 </div>
@@ -160,7 +194,7 @@ tags:4566777
   <div class="tagcloudlist">
     <p class="asidetitle">标签云</p>
     <div class="tagcloudlist clearfix">
-       <a href="/tags/hello/" style="font-size: NaNpx;">hello</a>
+       <a href="/tags/hello/" style="font-size: NaNpx;">hello</a><a href="/tags/计划/" style="font-size: NaNpx;">计划</a>
     </div>
   </div>
 
