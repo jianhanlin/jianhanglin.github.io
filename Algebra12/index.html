@@ -1,0 +1,643 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《Algebra》Chapter I Groups 2. GROUPS | JianhangLin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="JianhangLin">
+    
+    <meta name="description" content="Chapter I Groups
+2.Groups
+A group $G$ is a monoid,such that for every element $x\in G$ there exists an element $y\in G$ such that $xy=yx=e$.Such an el">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="JianhangLin" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="JianhangLin" title="JianhangLin"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="JianhangLin">JianhangLin</a></h1>
+				<h2 class="blog-motto">我只需要你陪我60年。很傻，对吧？</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/Algebra12/" title="《Algebra》Chapter I Groups 2. GROUPS" itemprop="url">《Algebra》Chapter I Groups 2. GROUPS</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
+		
+  <p class="article-time">
+    <time datetime="2014-10-18T10:21:31.000Z" itemprop="datePublished"> 发表于 10月 18 2014</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Chapter_I_Groups"><span class="toc-number">1.</span> <span class="toc-text">Chapter I Groups</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Groups"><span class="toc-number">2.</span> <span class="toc-text">2.Groups</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="Chapter_I_Groups">Chapter I Groups</h2>
+<h2 id="2-Groups">2.Groups</h2>
+<p>A <strong>group</strong> $G$ is a monoid,such that for every element $x\in G$ there exists an element $y\in G$ such that $xy=yx=e$.Such an element $y$ is called an <strong>inverse</strong> for $x$.&lt;—!more—&gt;Such an inverse is unique,because if $y’$ is also an inverse for $x$,then</p>
+<p>$$y’=y’e=y’(xy)=(y’x)y=ey=y.$$</p>
+<pre><code><span class="built_in">inverse</span>：逆元
+</code></pre><p>We denote this inverse by $x^{-1}$ (or by $-x$ when the law of composition is written additively).</p>
+<p>For any positive integer $n$,we let $x^{-n}=(x^{-1})^n$.Then the usual rules for exponentiation hold for all integers,not only for integers $\geqq 0$(as we pointed out for monoids in $\S 1$).</p>
+<pre><code>exponentiation：求幂
+</code></pre><p>In the definitions of unit elements and inverses,we could define left units and left inverses(in the obvious way).One can easily prove that these are also units and inverses respectively under suitable conditions.Namely:</p>
+<p>Let $G$ be a set with an associative law of composition,let $e$ be $a$ left unit for that law,and assume that every element has a left inverse.Then $e$ is a unit,and each left inverse is also an inverse.In particular,$G$ is a group.</p>
+<pre><code>associative：结合
+</code></pre><p>To prove this,let $a\in G$ and let $b\in G$ be such that $ba=e$.Then</p>
+<p>$$bab=eb=b.$$</p>
+<p>Multiplying on the left by a left inverse for $b$ yields</p>
+<p>$$ab=e,$$</p>
+<p>or in other words,$b$ is also a right inverse for $a$.One sees also that $a$ is a left inverse for $b$.Furthermore,</p>
+<p>$$ae=aba=ea=a,$$</p>
+<p>whence $e$ is a right unit.</p>
+<p><strong>Example.</strong>Let $G$ be a group and $S$ a nonempty set.The set of maps $M(S,G)$ is itself a group;namely for two maps $f,g$ of $S$ into $G$ we define $fg$ to be the map such that</p>
+<p>$$(fg)(x)=f(x)g(x),$$</p>
+<p>and we define $f^{-1}$ to be the map such that $f^{-1}(x)=f(x)^{-1}$.It is then trivial to verify that $M(S,G)$ is a group.If $G$ is commutative,so is $M(S,G)$,and when the law of composition in $G$ is written additively,so is the law of composition in $M(S,G)$,so that we would write $f+g$ instead of $fg$,and $-f$ instead of $f^{-1}$.</p>
+<pre><code>trivial：平常的
+</code></pre><p><strong>Example.</strong>Let $S$ be a non-empty set.Let $G$ be the set of bijective mappings of $S$ onto itself.Then $G$ is a group,the law of composition being ordinary composition of mappings.The unit element of $G$ is the identity of $S$,and the other group properties are trivially verified.The elements of $G$ are called <strong>permutations</strong> of $S$.We also denote $G$ by Perm($S$).For more information on Perm($S$) when $S$ is finite,see $\S 5$ below.</p>
+<pre><code>bijective：双射;ordinary：普通的;identity：恒等;permutations：排列中的任一组数字或文字
+</code></pre><p><strong>Example.</strong>Let us assume here the basic notions of linear algebra.Let $k$ be a field and $V$ a vector space over $k$.Let $GL(V)$ denote the set of invertible $k-$ linear maps of $V$ onto itself.Then $GL(V)$ is a group under composition of mappings.Similarly,let $k$ be a field and let $GL(n,k)$ be the set of invertible $n\times n$ matrices with components in $k$.Then $GL(n,k)$ is a group under the multiplication of matrices.For $n\geqq 2$,this group is not commutative.</p>
+<pre><code><span class="keyword">vector</span>：矢量；invertible：倒转的；component：要素
+</code></pre><p><strong>Example.The group of automorphisms.</strong>We recommend that the reader now refer immediately to $\S 11$,where the notion of a category is defined,and where several examples are given.For any object $A$ in a category,its automorphisms form a group denoted by $Aut (A)$.Permutations of a set and the linear automorphisms of a vector space are merely examples of this more general structure.</p>
+<pre><code>automorphism：自同构
+</code></pre><p><strong>Example.</strong>The set of rational numbers forms a group under addition.The set of non-zero rational numbers forms a group under multiplication.Similar statements hold for the real and complex numbers.</p>
+<pre><code>rational：合理的
+</code></pre><p><strong>Example.Cyclic groups.</strong>The integers $\bf Z$ form an additive group.A group is defined to be <strong>cyclic</strong> if there exists an element $a\in G$ such that every element of $G$(written multiplicatively)is of the form $a^n$ for some integer $n$.If $G$ is written additively,then every element of a cyclic group is of the form $na$.One calls $a$ <strong>a cyclic generator</strong>.Thus $\bf Z$ is an additive cyclic group with generator $1$,and also with generator $-1$.There are no other generators.Given a positive integer $n$,the $n-$th roots of unity in the complex numbers form a cyclic group of order $n$.In terms of the usual notation,$e^{\frac{2\pi i}{n}}$ is a generator for this group.So is $e^{\frac{2\pi ir}{n}}$ with $r\in \bf Z$ and $r$ prime to $n$.A generator for this group is called a <strong>primitive</strong> $n-$th root of unity.</p>
+<pre><code>cyclic：循环的;generator：生成;prime：主要;primitive：原始；<span class="keyword">n</span>-<span class="keyword">th</span> root：<span class="keyword">n</span>次根
+</code></pre><p><strong>Example.The direct product.</strong>Let <span>$G_1,G_2$</span> be groups.Let <span>$G_{1}\times G_{2}$</span> be the direct product as sets,so <span>$G_{1}\times G_{2}$</span> is the set of all pairs <span>$(x_{1},x_{2})$</span> with <span>$x_{i}\in G_{i}$</span>.We define the product componentwise by</p>
+<span>$$(x_{1},x_{2})(y_{1},y_{2})=(x_{1}y_{1},x_{2}y_{2}).$$</span>
+
+<pre><code>componentwise：分量型
+</code></pre><p>Then <span>$G_{1}\times G_{2}$</span> is a group,whose unit element is <span>$(e_{1},e_{2})$</span>(where <span>$e_{i}$</span> is the unit element of <span>$G_{i}$</span>).Similarly,for $n$ groups we define <span>$G_1\times \cdots \times G_n$</span> to be the set of $n-$tuples with <span>$x_{i}\in G_{i}$</span>($i=1,\cdots ,n$),and componentwise multiplication.Even more generally,let $I$ be a set,and for each $i\in I$,let <span>$G_{i}$</span> be a group.Let <span>$G=\prod\limits G_{i}$</span> be the set-theoretic product of the sets <span>$G_{i}$</span>.Then $G$ is the set of all families <span>$(x_{i})_{i\in I}$</span> with <span>$x_{i}\in G_{i}$</span>.We can define a group structure on $G$ by componentwise multiplication,namely,if <span>$(x_{i})_{i\in I}$</span> and <span>$(y_{i})_{i\in I}$</span> are two elements of $G$,we define their product to be <span>$(x_{i}y_{i})_{i\in I}$</span>.We define the inverse of <span>$(x_{i})_{i\in I}$</span> to be <span>$(x_{i}^{-1})_{i\in I}$</span>.It is then obvious that $G$ is a group called the <strong>direct product</strong> of the family.</p>
+<pre><code>tuples：元组;multiplication：乘法；theoretic：理论上
+</code></pre><p>Let $G$ be a group.A <strong>subgroup</strong> $H$ of $G$ is a subset of $G$ containing the unit element,and such that $H$ is closed under the law of composition and inverse(i.e. it is a submonoid,such that if $x\in H$ then $x^{-1}\in H$).A subgroup is called <strong>trivial</strong> if it consists of the unit element alone.The intersection of an arbitrary non-empty family of subgroups is a subgroup(trivial verification).</p>
+<pre><code>arbitrary：任意
+</code></pre><p>Let $G$ be a group and $S$ a subset of $G$.We shall say that $S$ <strong>generates</strong> $G$,or that $S$ is a set of <strong>generators</strong> for $G$,if every element of $G$ can be expressed as a product of element of $S$ or inverses of elements of $S$,i.e. as a product <span>$x_{1}\cdots x_{n}$</span> where each <span>$x_{i}$</span> or <span>$x_{i}^{-1}$</span> is in $S$.It is clear that the set of all such products is a subgroup of $G$(the empty product is the unit element),and is the smallest subgroup of $G$ containing $S$.Thus $S$ generates $G$ if and only the smallest subgroup of $G$ containing $S$ is $G$ itself.If $G$ is generated by $S$,then we write $G=\langle S\rangle$.By definition,a cyclic group is a group which has one generator.Given elements <span>$x_{1},\cdots ,x_{n}\in G$</span>,these elements generate a subgroup <span>$\langle x_{1},\cdots ,x_{n}\rangle$</span>,namely the set of all elements of $G$ of the form</p>
+<span>$$x_{i_{1}}^{k_{1}}\cdots x_{i_{r}}^{k_{r}}~~with ~~k_{1},\cdots ,k_{r}\in \bf Z.$$</span>
+
+<p>A single element $x\in G$ generates a cyclic subgroup.</p>
+<p><strong>Example.</strong>There are two non-abelian groups of order $8$.One is the <strong>group of symmetries of the square</strong>,generated by two elements $\sigma ,\tau$ such that</p>
+<p>$\sigma ^4=\tau ^2=e,\tau \sigma \tau ^{-1}=\sigma ^3.$</p>
+<pre><code><span class="keyword">symmetry</span>：对称
+</code></pre><p>The other is the <strong>quaternion group</strong>,generated by two elements,$i,j$ such that if we put $k=ij$ and $m=i^2$,then </p>
+<p>$$i^4=j^4=k^4=e,i^2=j^2=k^2=m,ij=mji.$$</p>
+<pre><code>quaternion：四元
+</code></pre><p>After you know enough facts about groups,you can easily do Exercise $35$.</p>
+<p>Let $G,G’$ be monoids.A <strong>monoid-homomorphism</strong>(or simply <strong>homomorphism</strong>)of $G$ into $G’$ is a mapping $f:G\to G’$ such that $f(xy)=f(x)f(y)$ for all $x,y\in G$,and mapping the element of $G$ into that of $G’$.If $G,G’$ are groups,a <strong>group-homomorphism</strong> of $G$ into $G’$ is simply a monoid-homomorphism.</p>
+<pre><code>homomorphism：同态
+</code></pre><p>We sometimes say:”Let $f:G\to G’$ be a group-homomorphism”to mean:”Let $G,G’$ be groups,and let $f$ be a homomorphism from $G$ into $G’$.”</p>
+<p>Let $f:G\to G’$ be a group-homomorphism.Then</p>
+<p>$$f(x^{-1})=f(x)^{-1}$$</p>
+<p>because if $e,e’$ are the unit elements of $G,G’$ respectively,then</p>
+<p>$$e’=f(e)=f(xx^{-1})=f(x)f(x^{-1}).$$</p>
+<p>Furthermore,if $G,G’$ are groups and $f:G\to G’$ is a map such that</p>
+<p>$$f(xy)=f(x)f(y)$$</p>
+<p>for all $x,y$ in $G$,then $f(e)=e’$ because $f(ee)f(e)$ and also $=f(e)f(e)$.Multiplying by the inverse of $f(e)$ shows that $f(e)=e’$.</p>
+<p>Let $G,G’$ be monoids.A homomorphism $f:G\to G’$ is called an <strong>isomorphism</strong> if there exists a homomorphism $g:G’\to G$ such that $f\circ g$ and $g\circ f$ are the identity mappings(in $G’$ and $G$ respectively).It is trivially verified that $f$ is an isomorphism if and only if $f$ is bijective.The existence of an isomorphism between two groups $G$ and $G’$ is sometimes denoted by $G\approx G’$.If $G=G’$,we say that isomorphism is an <strong>automorphism</strong>.A homomorphism of $G$ into itself is also called an <strong>endomorphism</strong>.</p>
+<pre><code>isomorphism：同构；antomorphism：自同构；endomorphism：自同态
+</code></pre><p><strong>Example.</strong>Let $G$ be a monoid and $x$ an element of $G$.Let $N$ denote the(additive)monoid of integers $\geqq 0$.Then the map $f:N\to G$ such that $f(n)=x^n$ is a homomorphism.If $G$ is a group,we can extend $f$ to a homomorphism of $Z$ into $G$($x^n$ is defined for all $n\in Z$,as pointed out previously).</p>
+<p>Let $n$ be a fixed integer and let $G$ be a commutative group.Then one verifies easily that the map</p>
+<p>$$x\mapsto x^n$$</p>
+<p>from $G$ into itself is a homomorphism.So is the map $x\mapsto x^{-1}$.The map $x\mapsto x^n$ is called the $n-$th <strong>power map</strong>.</p>
+<pre><code><span class="keyword">n</span>-<span class="keyword">th</span> power <span class="built_in">map</span>：<span class="keyword">n</span>次方映射
+</code></pre><p><strong>Example.</strong>Let $I=\lbrace i\rbrace $ be an indexing set,and let <span>$\lbrace G_{i}\rbrace$</span> be a family of groups.Let <span>$G=\prod\limits G_{i}$</span> be their direct product.Let</p>
+<span>$$p_{i}:G\to G_{i}$$</span>
+
+<p>be the projection on the $i$-th factor.Then $p_{i}$ is a homomorphism.</p>
+<pre><code>projection：投影
+</code></pre><p>Let $G$ be a group,$S$ a set of generators for $G$,and $G’$ another group.Let $f:S\to G’$ be a map.If there exists a homomorphism $\overline{f}$ of $G$ into $G’$ whose restriction to $S$ is $f$,then there is only one.</p>
+<p>In other words,$f$ has at most one extension to a homomorphism of $G$ into $G’$.This is obvious,but will be used many times in the sequel.</p>
+<pre><code><span class="operator">in</span> <span class="operator">the</span> sequel：结果
+</code></pre><p>Let $f:G\to G’$ and $g:G’\to G$ be two group-homomorphism.Then the composite map $g\circ f$ is a group-homomorphism.If $f,g$ are isomorphisms then so is $g\circ f$.Furthermore $f^{-1}:G’\to G$ is also an isomorphism.In particular,the set of all automorphism of $G$ is itself a group,denoted by $Aut (G)$.</p>
+<p>Let $f:G\to G’$ be a group-homomorphism.Let $e,e’$ be the respective unit elements of $G,G’$.We define the <strong>kernel</strong> of $f$ to be the subset of $G$ consisting of all $x$ such that $f(x)=e’$.From the definitions,it follows at once that the kernel $H$ of $f$ is a subgrop of $G$.(Let us prove for instance that $H$ is closed under the inverse mapping.Let $x\in H$.Then</p>
+<p>$$f(x^{-1})f(x)=f(e)=e’.$$</p>
+<p>Since $f(x)=e’$,we have $f(x^{-1})=e’$,whence $x^{-1}\in H$.)</p>
+<p>Let $f:G\to G’$ be a group-homomorphism again.Let $H’$ be the <strong>image</strong> of $f$.Then $H’$ is a subgroup of $G’$,because it contains $e’$,and if $f(x),f(y)\in H’$,then $f(xy)=f(x)f(y)$ lies also in $H’$.Furthermore,$f(x^{-1})=f(x)^{-1}$ is in $H’$,and hence $H’$ is a subgroup of $G’$.</p>
+<p>The kernel and image of $f$ are sometimes denoted by $Ker f$ and $Im f$.</p>
+<p>A homomorphism $f:G\to G’$ which establishes an isomorphism between $G$ and its image in $G’$ will also called an <strong>embedding</strong>.</p>
+<p>A homomorphism whose kernel is trivial is injective.</p>
+<pre><code>injective：单射
+</code></pre><p>To prove this,suppose that the kernel of $f$ is trivial,and let $f(x)=f(y)$ for some $x,y\in G$.Multiplying by $f(y^{-1})$ we obtain</p>
+<p>$$f(xy^{-1})=f(x)f(y^{-1})=e’.$$</p>
+<p>Hence $xy^{-1}$ lies in the kernel,hence $xy^{-1}=e$,and $x=y$.If in particular $f$ is also surjective,then $f$ is an isomorphism.Thus a surjective homomorphism whose kernel is tirvial must be an isomorphism.We note that an injective homomorphism is an embedding.</p>
+<pre><code>surjective：满射
+</code></pre><p>An injective homomorphism is often denoted by a special arrow,such as</p>
+<p>$$f:G\hookrightarrow G’.$$</p>
+<p>There is a useful criterion for a group to be a direct product of subgroups:</p>
+<p><strong>Proposition $2.1$</strong>Let $G$ be a group and let $H,K$ be two subgroups such that $H\cap K=e$,$HK=G$,and such that $xy=yx$ for all $x\in H$ and $y\in K$.Then the map </p>
+<p>$$H\times K\to G$$</p>
+<p>such that $(x,y)\mapsto xy$ is an isomorphism. </p>
+<p><strong>Proof.</strong>It is obviously a homomorphism,which is surjective since $HK=G$.If $(x,y)$ is in its kernel,then $x=y^{-1}$,wherece $x$ lies in both $H$ and $K$,and $x=e$,so that $y=e$ also,and our map is isomorphism.</p>
+<p>We observe that Proposition $2.1$ generalizes by induction to a finite number of subgroups $H<em>{1},\cdots ,H</em>{n}$ whose elements commute with each other,such that</p>
+<span>$$H_{1}\cdots H_{n}=G,$$</span>
+
+<p>and such that </p>
+<span>$$H_{i+1}\cap (H_{1}\cdots H_{i})=e.$$</span>
+
+<p>In that case,$G$ is isomorphic to the direct product</p>
+<span>$$H_{1}\times \cdots \times H_{n}.$$</span>
+
+<p>Let $G$ be a group and $H$ a subgroup.A <strong>left coset</strong> of $H$ in $G$ is a subset of $G$ of type $aH$,for some element $a$ of $G$.An element of $aH$ is called a <strong>coset representative</strong> of $aH$.The map $x\mapsto ax$ induces a bijection of $H$ onto $aH$.Hence any two left cosets have the same cardinality.</p>
+<pre><code>coset：陪集；cardinality：基数
+</code></pre><p>Observe that if $a,b$ are elements of $G$ and $aH,bH$ are cosets having one element in common,then they are equal.Indeed,let $ax=by$ with $x,y\in H$.Then $a=byx^{-1}$.But $yx^{-1}\in H$.Hence $aH=b(yx^{-1})H=bH$,because for any $z\in H$ we have $zH=H$.</p>
+<p>We conclude that $G$ is the disjoint union of the left cosets of $H$.A similar remark applies to <strong>right cosets</strong>(i.e. subsets of $G$ of type $Ha$).The number of left cosets of $H$ in $G$ is denoted by $(G:H)$,and is called the(left)<strong>index</strong> of $H$ in $G$.The index of the tirvial subgroup is called the <strong>order</strong> of $G$ and is written $(G:1)$.From the above conclusion,we get:</p>
+<pre><code>disjoint：不相交
+</code></pre><p><strong>Proposition $2.2$</strong>Let $G$ be a group and $H$ a subgroup.Then </p>
+<p>$$(G:H)(H:1)=(G:1),$$</p>
+<p>in the sense that if two of these indices are finite,so is the third and equality holds as stated.If $(G:1)$ is finite,the order of $H$ divides the order of $G$.</p>
+<p>More generally,let $H,K$ be subgroups of $G$ and let $H\supset K$.Let <span>$\lbrace x_{i}\rbrace$</span> be a set of(left)coset representatives of $K$ in $H$ and let <span>$\lbrace y_{i}\rbrace$</span> be a set of coset representatives of $H$ in $G$.Then we contend that <span>$\lbrace y_{i}x_{i}\rbrace$</span> is a set of coset representatives of $K$ in $G$.</p>
+<p><strong>Proof.</strong>Note that</p>
+<p>$$H=\underset{i}{\bigcup}x_{i}K (disjoint),$$</p>
+<p>$$G=\underset{j}{\bigcup}y_{j}H (disjoint),$$</p>
+<p>Hence</p>
+<span>$$G=\underset{i,j}{\bigcup}y_{j}x_{i}K.$$</span>
+
+<p>We must show that this union is disjoint,i.e. that the <span>$y_{j}x_{i}$</span> represent distinct cosets.Suppose</p>
+<pre><code><span class="keyword">distinct</span>：不同的
+</code></pre><span>$$y_{j}x_{i}K=y_{j'}x_{i'}K$$</span>
+
+<p>for a pair of indices $(j,i)$ and $(j’,i’)$.Multiplying by $H$ on the right,and noting that <span>$x_{i},x_{i'}$</span> are in $H$,we get</p>
+<span>$$y_{j}H=y_{j'}H,$$</span>
+
+<p>whence <span>$y_{j}=y_{j'}$</span>.From this it follows that <span>$x_{i}K=x_{i'}K$</span> and therfore that <span>$x_{i}=x_{i'}$</span>,as was to be shown.</p>
+<p>The formula of Proposition $2.2$ may therefore be generalized by writing </p>
+<p>$$(G:K)=(G:H)(H:K),$$</p>
+<p>with the understanding that if two of the three indices appearing in this formula are finite,then so is the third and the formula holds.</p>
+<p>The above results are concerned systematically with left cosets.For the right cosets,see Exercise $10$.</p>
+<p><strong>Example.</strong>A group of prime order is cyclic.Indeed,let $G$ have order $p$ and let $a\in G,a\neq e$.Let $H$ be the subgroup generated by $a$.Then #（$H$） divides $p$ and $\neq 1$,so #$(H)=p$ and so $H=G$,which is therefore cyclic. </p>
+<p><strong>Example.</strong>Let <span>$J_{n}=\lbrace 1,\cdots ,n\rbrace$</span>.Let <span>$S_{n}$</span> the group of permutations of <span>$J_{n}$</span>.We define a <strong>transposition</strong> to be a permutation $\tau$ such that there exist two elements $r\neq s$ in <span>$J_{n}$</span> for which $\tau (r)=s,\tau (s)=r$,and $\tau (k)=k$ for all $k\neq r,s$.Note that the transposition generate $S_{n}$.Indeed,say $\tau$ is a permutation,$\sigma (n)=k\neq n$.Let $\tau$ be the transposition interchanging $k,n$.Then $\tau \sigma$leaves $n$ fixed,and by induction,we can write $\tau \sigma$ as a product of transpositions in Perm(<span>$J_{n-1})$</span>,thus proving that transpositions generate <span>$S_{n}$</span>.</p>
+<pre><code>permutation：排列中的任一组数字或文字；transposition：变换；interchanging：互换
+</code></pre><p>Next we note that #<span>$(S_{n})=n!$</span>.Indeed,let $H$ be the subgroup of <span>$S_{n}$</span> consisting of those elements which leave $n$ fixed.Then $H$ may be identified with <span>$S_{n-1}$</span>.If <span>$\sigma _{i}(i=1,\cdots ,n)$</span>is an element of <span>$S_{n}$</span> such that <span>$\sigma _{i}(n)=i$</span>,then it is immediately verified that <span>$\sigma _{1},\cdots ,\sigma _{n}$</span> are coset representatives of $H$.Hence by induction</p>
+<span>$$(S_{n}:1)=n(H:1)=n!.$$</span>
+
+<p>Observe that for <span>$\sigma _{i}$</span> we could have taken the transposition <span>$\tau _{i}$</span>,which interchanges $i$ and $n$(except for $i=n$,where we could take <span>$\sigma _{n}$</span> to be the identify).</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/抽象代数/">抽象代数</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数/">代数</a>
+  </div>
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://jianhanglin.github.io/Algebra12/" data-title="《Algebra》Chapter I Groups 2. GROUPS | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/Algebra11 - 副本 (2)/" title="《Algebra》Chapter I Groups 1. Monoids">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《Algebra》Chapter I Groups 1. Monoids</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/Algebra11/"  title="《Algebra》Chapter I Groups 1. Monoids">
+ <strong>下一篇：</strong><br/> 
+ <span>《Algebra》Chapter I Groups 1. Monoids
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Chapter_I_Groups"><span class="toc-number">1.</span> <span class="toc-text">Chapter I Groups</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-Groups"><span class="toc-number">2.</span> <span class="toc-text">2.Groups</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>8</sup></a></li>
+		
+			<li><a href="/categories/计划/" title="计划">计划<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/代数/" title="代数">代数<sup>8</sup></a></li>
+		
+			<li><a href="/tags/计划/" title="计划">计划<sup>1</sup></a></li>
+		
+			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/代数/" style="font-size: 20.00px;">代数</a><a href="/tags/计划/" style="font-size: 10.00px;">计划</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+      <li><a href="http://wuchong.me" target="_blank" title="WuChong">Jark's Blog</a></li>
+      <li><a href="http://hexo.io" target="_blank" title="Hexo">Hexo</a></li>
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+
+</div>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312 for http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="weibo"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://jianhanglin.github.io/about" target="_blank" title="JianhangLin">JianhangLin</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<script src="/js/totop.js"></script>
+<script src="/js/totop.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-1', 'linjianhang.me');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
