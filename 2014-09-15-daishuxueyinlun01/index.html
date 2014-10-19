@@ -1,0 +1,550 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《代数学引论》第零章 集合与整数 1 集合上的等价关系 | JianhangLin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="JianhangLin">
+    
+    <meta name="description" itemprop="description" content="集合是数学的基本概念之一.它是具有一定属性的事物形成的一个集体.根据这属性可以区别一个事物属于或不属于这个集合.">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="JianhangLin" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="JianhangLin" title="JianhangLin"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="JianhangLin">JianhangLin</a></h1>
+				<h2 class="blog-motto">我只需要你陪我60年。很傻，对吧？</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014-09-15-daishuxueyinlun01/" title="《代数学引论》第零章 集合与整数 1 集合上的等价关系" itemprop="url">《代数学引论》第零章 集合与整数 1 集合上的等价关系</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
+		
+  <p class="article-time">
+    <time datetime="2014-10-18T10:21:33.000Z" itemprop="datePublished"> 发表于 10月 18 2014</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#集合与整数"><span class="toc-number">1.</span> <span class="toc-text">集合与整数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#集合上的等价关系"><span class="toc-number">2.</span> <span class="toc-text">集合上的等价关系</span></a></li></ol>
+		
+		</div>
+		
+		<p><strong><a href="http://book.douban.com/subject/1230310/" target="_blank" rel="external">代数学引论</a></strong> <a href="http://pan.baidu.com/s/1dD1V5lf" target="_blank" rel="external">在线阅读</a> 聂灵沼 丁石孙 高等教育出版社 第2版   </p>
+<center><img src="/assets/img/daishuxueyinlun/cover.jpg" alt=""></center>
+
+<h2 id="集合与整数">集合与整数</h2>
+<p>集合是数学的基本概念之一.它是具有一定属性的事物形成的一个集体.根据这属性可以区别一个事物属于或不属于这个集合.例如空间的点集、实系数多项式集合、定义在区间$\left[ 0,1\right]$上的实函数集合等.本章主要讨论一个集合上的等价关系、偏序关系以及整数的算术性质.关于集合的子集、交集、并集以及一个集合到另一个集合的映射等概念，在高等代数课程中已有介绍，在这里不再重复.</p>
+<h2 id="集合上的等价关系">集合上的等价关系</h2>
+<p>在一个集合的元素之间常常存在某种关系.例如，两个$n\times n$的复矩阵的相似或不相似；空间两直线平行或不平行；数学分析中两个哥西序列的等价或不等价，都是特殊集合上的重要关系.</p>
+<p>设$S$为一非空集合，$a,b,c,\cdots$表示它的元素.设在$S$中任意两个元素之间存在(或不存在)某种属性$R$.只要$R$满足下面的条件，即对于$S$中任一对有次序的元素$a,b$来说，$a,b$有这种属性$R$或者$a,b$没有这种属性$R$，这两者必定有一成立而且只有一成立，那么我们说$R$是集合$S$上的一个<strong>二元关系</strong>，或简称关系.若$a,b$有关系$R$，则记作$aRb$.</p>
+<p>上面列举的“相似”、“平行”和“等价”都是它们的相应集合上的二元关系.又如，实数集合上的大小关系“$\leq$”，整数集合上的整除关系$a\arrowvert b$都是该集合上的二元关系.再如一个非空集合$S$中元素之间的相等(或不相等)，子集之间的包含(或不包含)分别是$S$上和$S$上的幂集$P(S)$上的二元关系.所谓$S$的幂集$P(S)$就是$S$的所有子集作元素构成的集合.</p>
+<p>非空集合$S$上一个二元关系$R$还可用笛卡尔积$S\times S$的一个子集$T$表示.$T$规定如下</p>
+<p>$$T=\lbrace (a,b)\in S\times S\arrowvert a,b有关系R\rbrace .$$</p>
+<p>于是可以说，元素$a,b$有关系$R$当而且仅当$(a,b)\in T$.$T$称为关系$R$在$S\times S$中的<strong>图象</strong>.反之，$S\times S$的任一个子集$T$可以给出$S$上的一个二元关系$R$，称元素$a,b$有关系$R$当有仅当$(a,b)\in T$.由此可知$R$满足二元关系的条件.</p>
+<p>按照矩阵的相似关系可以将$n\times n$复矩阵分成若干相似类，使之每一类有一个标准形作为代表；按照哥西序列的等价关系可以将哥西序列分成一些等价类，使之每一类代表一个实数.这些都是数学中常见的基本方法.“相似”和“等价”它们有三条共性，就是反身性、对称性和传递性.</p>
+<p><strong>定义1</strong>如果一个非空集合$S$的一个二元关系$R$满足下列三条：</p>
+<p>$(i)$反身性.$aRa$，对所有$a\in S$，</p>
+<p>$(ii)$对称性.若$aRb$，则$bRa$，</p>
+<p>$(iii)$传递性.若$aRb$且$bRc$，则$aRc$，</p>
+<p>则称$R$是$S$的一个<strong>等价关系</strong>.等价关系$R$通常记成“$\sim$”.</p>
+<p>显然，“相似”、“平行”、“哥西序列等价”都是等价关系.但是“$\leq$”和“$a\arrowvert b$”则不是等价关系.而”$=$”和“$a\arrowvert b$且$b\arrowvert a$”是等价关系.</p>
+<p>如果非空集合$S$的一组子集$\lbrace S_{\lambda}\arrowvert \lambda \in I\rbrace $，$I$为指标集，满足下列条件：</p>
+<p>$(1)S=\underset{\lambda \in I}{\bigcup}S_{\lambda},$</p>
+<p><span>$(2)S_{\lambda}\cap S_{\mu}=\varnothing ,\lambda \neq \mu ,\lambda ,\mu \in I$</span>,</p>
+<p>则${S_{\lambda}}$叫做$S$的一个<strong>划分</strong>.</p>
+<p>非空集合$S$的任一个等价关系$\sim$确定$S$的一个划分如下：对每个元素$a\in S$，规定</p>
+<p>$$S_{a}=\lbrace  x\in S\arrowvert x\sim a\rbrace $$</p>
+<p>这样得到$S$的一组子集<span>$\lbrace S_{a}\mid a\in S\rbrace$</span>.证明它是$S$的一个划分.首先，由于反身性，$a\sim a$，所以$a\in S_{a}$，于是</p>
+<p>$$S=\underset{a\in S}{\bigcup}S_{a}.$$</p>
+<p>其次证明，若<span>$S_{a}\cap S_{b}\neq \varnothing$</span>，则$a\sim b$且<span>$S_{a}=S_{b}$</span>.设<span>$S_{a}\cap S_{b}\neq \varnothing$</span>，取一个<span>$c\in S_{a}\cap S_{b}$</span>，于是$c\sim a$，$c\sim b$，由对称性，$a\sim c$，再由传递性，得$a\sim b$.其次对任一元素<span>$x\in S_{a}$</span>，有$x\sim a$，由传递性得$x\sim b$，从而<span>$x\in S_{b}$</span>，所以<span>$S_{a}\subset S_{b}$</span>.再由对称性，$b\sim a$，同理得<span>$S_{b}\subset S_{a}$</span>.所以<span>$S_{a}=S_{b}$</span>.由此可知<span>$\lbrace S_{a} \arrowvert a\in S\rbrace$</span>，把重复的去掉之后，就是$S$的一个划分.这个划分中的每个元素叫做由等价关系确定的等价类.</p>
+<p>反之，$S$的任一个划分$\lbrace S_{\lambda}\mid \lambda \in I\rbrace$决定一个等价关系如下：规定</p>
+<p>$$a\sim b\Leftrightarrow a,b 属于同一个S_{\lambda}.$$</p>
+<p>首先，由划分的定义可知$a,b$属于同一个<span>$S_{\lambda}$</span>或者$a,b$分属于不同的<span>$S_{\lambda}$</span>，这两者有一而且只有一成立.因而”$\sim$”是一个二元关系.进一步由划分的定义，不难证明，“$\sim$”是一个等价关系，而且这个等价关系如上决定的划分就是原来的划分.</p>
+<p>一个集合的等价关系的重要性在于由它可以产生出新的集合.设”$\sim$”是非空集合$S$的一个等价关系.如上，”$\sim$”将$S$分成一些互不相交的等价类<span>$\lbrace S_{\lambda}\mid \lambda \in I\rbrace$</span>的并.为表法简明起见，在每个等价类<span>$S_{\lambda}$</span>中取一个代表$a$，将<span>$S_{\lambda}$</span>写成$\overline{a}$.这种表示与代表的取法无关，就是说，$\overline{a} =\overline{b}$当且仅当$a\sim b$.用这些等价类$\overline{a} ,\overline{b} ,\cdots$作元素得到一个新的集合，记作$S/\sim $，叫做$S$关于等价关系$\sim$的<strong>商集</strong>.今后将会看到，对于各种不同的具体集合$S$和等价关系$\sim$，商集$S/\sim$将会有它崭新的意义.</p>
+<p><strong>例</strong>三维仿射空间的直线集合按平行关系分成一些平行直线束，设想每一平行直线束相交于同一个无穷远点.这样，以平行直线束为元素得到的商集就表示一个无穷远平面，它是一个射影平面.把这个射影平面添加到三维仿射空间就得到一个三维射影空间.这就是历史上将仿射空间扩充成射影空间的朴素的几何直观的方法.</p>
+<p>集合$S$到商集$S/\sim$存在一个<strong>自然映射</strong></p>
+<p>$$\nu :x\mapsto \overline{x},x\in S.$$</p>
+<p>它是一个满射，而且$\nu (a)=\nu (b)$当且仅当$a\sim b$.</p>
+<p>反之，设$\varphi$是集合$S$到集合$T$的一个映射.于是在$S$上可以如下定义一个关系$\sim$:</p>
+<p>$$a\sim b当且仅当\varphi (a)=\varphi (b),a,b\in S.$$</p>
+<p>容易看出，这是一个等价关系.而且$\varphi$诱导出商集$S/\sim$到$T$的一个映射$\overline{\varphi}$如下：</p>
+<p>$$\overline{\varphi}(\overline{x})=\varphi (x),x\in S.$$</p>
+<p>显然$\overline{\varphi}$是单一的.这样，映射$\varphi$就分解成一个自然映射$\nu :S\to S/\sim$和一个单射$\overline{\varphi}$的积</p>
+<p>$￥\varphi=\overline{\varphi} \cdot \nu.$$</p>
+<p>用图表示就是</p>
+<center><img src="/assets/img/daishuxueyinlun/1.png" alt=""></center>
+
+<p>综上所述，我们得到</p>
+<p><strong>定理1</strong> 非空集合$S$上的一个等价关系$\sim$的一个商集$S/\sim$并诱导出一个自然映射$\nu :S\to S/\sim$使得$x\sim y$，$x$，$y\in S\Leftrightarrow \nu (x)=\nu (y)$，反之，任一个集合映射$\varphi :S\to T$决定$S$上的一个等价关系$\sim$使得$x\sim y$，$x$，$y\in S\Leftrightarrow \varphi (x)=\varphi (y)$.而且$\varphi$诱导出商集$S/\sim$到$T$的单一映射$\overline{\varphi}$：$\overline{\varphi}(\overline{x})=\varphi (x)$，$x\in S$，使得$\varphi$有分解</p>
+<p>$$\varphi =\overline{\varphi} \cdot \nu.$$</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/抽象代数/">抽象代数</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数/">代数</a>
+  </div>
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://jianhanglin.github.io/2014-09-15-daishuxueyinlun01/" data-title="《代数学引论》第零章 集合与整数 1 集合上的等价关系 | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2014-09-16-daishuxueyinlun02/" title="《代数学引论》第零章 集合与整数 2 自然数">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《代数学引论》第零章 集合与整数 2 自然数</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2014-09-13-Algebra13/"  title="《Algebra》Chapter I Groups 3. NORMAL　SUBGROUPS">
+ <strong>下一篇：</strong><br/> 
+ <span>《Algebra》Chapter I Groups 3. NORMAL　SUBGROUPS
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#集合与整数"><span class="toc-number">1.</span> <span class="toc-text">集合与整数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#集合上的等价关系"><span class="toc-number">2.</span> <span class="toc-text">集合上的等价关系</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>9</sup></a></li>
+		
+			<li><a href="/categories/计划/" title="计划">计划<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/代数/" title="代数">代数<sup>9</sup></a></li>
+		
+			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
+		
+			<li><a href="/tags/计划/" title="计划">计划<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/代数/" style="font-size: 20.00px;">代数</a><a href="/tags/计划/" style="font-size: 10.00px;">计划</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+      <li><a href="http://wuchong.me" target="_blank" title="WuChong">Jark's Blog</a></li>
+      <li><a href="http://hexo.io" target="_blank" title="Hexo">Hexo</a></li>
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+
+</div>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="weibo"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://jianhanglin.github.io/about" target="_blank" title="JianhangLin">JianhangLin</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<script src="/js/totop.js"></script>
+<script src="/js/totop.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-1', 'linjianhang.me');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
