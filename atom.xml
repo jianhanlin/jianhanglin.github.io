@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我只需要你陪我60年。很傻，对吧？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-10-19T01:56:47.997Z</updated>
+  <updated>2014-10-19T03:16:22.202Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://jianhanglin.github.io/daishuxueyinlun04/"/>
     <id>http://jianhanglin.github.io/daishuxueyinlun04/</id>
     <published>2014-10-19T01:51:22.000Z</published>
-    <updated>2014-10-19T01:55:58.000Z</updated>
+    <updated>2014-10-19T03:14:45.000Z</updated>
     <content type="html"><![CDATA[<h2 id="第零章_集合与整数">第零章 集合与整数</h2>
 <h2 id="同余式和同余方程">同余式和同余方程</h2>
 <p>在整数环$\bf Z$中我们引进一个基本的等价关系，即同余概念.它和整数的运算是相容的，从而产生新的代数结构.同余概念在代数中产生了广泛的影响.</p>
@@ -35,6 +35,37 @@
 <p>$5$.若$a\equiv b\pmod{n}$，$m\mid n$，则$a\equiv b\pmod{m}$.</p>
 <p>$6$.若$a\equiv b\pmod{n}$，则$(a,n)=(b,n)$.</p>
 <p>$7$.若$a\equiv b\pmod{n}$，$d$为$a,b,n$的一个公因子，$a=da_1$，$b=db_1$，$n=dn_1$，则$a_1\equiv b_1\pmod{n_1}$.</p>
+<p><strong>例1</strong> $716\cdot 93$和$543\cdot 93$模$61$是否同余？假设$716\cdot 93\equiv 543\cdot 93\pmod{61}$，根据性质$4$，因$(93,61)=1$，有$716\equiv 543\pmod{61}$.但$61\nmid (716-543)=173$，所以$716\cdot 93\not\equiv 543\cdot 93\pmod{61}$.</p>
+<p><strong>例2</strong> 设复数$\varepsilon =\cos{\dfrac{2\pi}{17}}+i\sin{\dfrac{2\pi}{17}}$.计算$\varepsilon$的整数幂$\varepsilon ^m$等于计算$\varepsilon ^r$，其中$r$是$m$模$17$的余数，$0\leq r &lt; 17$.</p>
+<p>对于一个给定的模数$n$，全体整数按模$n$同余分成一些等价类，此时的等价类叫做<strong>整数模$n$的剩余类</strong>，含整数$a$的剩余类记作$\overline{a}$，剩余类$\overline{a}$的任一个元素叫做$\overline{a}$的一个代表.在每个剩余类中任取一个代表$r_i$，由这些代表组成的集合叫做整数模$n$的一个<strong>完全剩余代表系</strong>.整数模$n$的一个完全代表系$S$也可以这样来刻画：$1)$每个整数和$S$中一个元素模$n$同余，$2)S$中元素两两互不同余.根据除法算式可知，集合$S=\lbrace 0,1,2,\cdots ,n-1\rbrace$是模$n$的一个完全剩余类代表系.</p>
+<p>由模$n$的剩余类组成的商集记作${\bf Z}/(n)$.在${\bf Z}/(n)$中可以定义加法和乘法如下：</p>
+<p>$$\overline{a}+\overline{b}=\overline{a+b},$$</p>
+<p>$$\overline{a}\cdot \overline{b}=\overline{a\cdot b}.$$</p>
+<p>根据同余式的性质，定义与代表的取法无关而且加法和乘法还满足结合律、交换律和分配律，加法有零元素$\overline{0}$，每个$\overline{a}$有负元素：$\overline{-a}$：$\overline{a}+\overline{-a}=\overline{0}$.${\bf Z}/(n)$叫做<strong>整数模$n$的环</strong>.</p>
+<p>这一节剩下的部分来讨论一次同余方程和方程组.同余式</p>
+<p>$$ax\equiv b\pmod{n},a\not\equiv 0\pmod{0}$$</p>
+<p>是含有一个未知量$x$的一次式，叫做<strong>一次同余方程</strong>.若$x=c\in \bf Z$代入上方程使两边同余，则$c$叫做上方程的一个<strong>解</strong>.上方程的两个解$c_1,c_2$看作相同当而且仅当$c_1 \equiv c_2\pmod{n}$.</p>
+<p><strong>定理4</strong> 设$(a,n)=1$，则一次同余方程</p>
+<p>$$ax\equiv b\pmod{n}$$</p>
+<p>有解而且只有一个解.</p>
+<p><strong>证明</strong> 由于$(a,n)=1$，存在整数$u,v$使得$ua+vn=1$.两边乘$b$，$uba+vbn=b$，令$ub=c$，于是$ca\equiv uba\equiv b\pmod{n},x\equiv c$为其一解.其次，令$c_1,c_2$为任意两个解，于是</p>
+<p>$$ac_1\equiv b\pmod{n},$$</p>
+<p>$$ac_2\equiv b\pmod{n}.$$</p>
+<p>相减得$a(c_1-c_2)\equiv 0\pmod{n}$，由于$(a,n)=1$，根据同余的性质$4$，有$c_1\equiv c_2\pmod{n}$，$c_1,c_2$为同一解.</p>
+<p>考虑下列<strong>一次同余方程组</strong></p>
+<p>$$\begin{cases} x\equiv b_1\pmod{n_1}, \\ x\equiv b_2\pmod{n_2}, \\ \cdots \cdots \cdots \cdots \cdots \\ x\equiv b_r\pmod{n_r}. \end{cases} \tag{1}$$</p>
+<p>其中$n_1,n_2,\cdots ,n_r$为大于$1$的整数，两两互素，$b_1,b_2,\cdots ,b_r$是任意给定的整数.如果$x=c\in \bf Z$代入方程组使得同余式同时都成立，则$c$叫做方程组$(1)$的一个解.上方程组的两个解$c_1$和$c_2$看作相同当而且仅当</p>
+<span>$$c_1 \equiv c_2 \pmod{\prod \limits_{i=1}^rn_i}.$$</span>
+
+<p><strong>定理5 (孙子定理)</strong> 设一次同余方程组$(1)$中大于$1$的整数$n_1,n_2,\cdots ,n_r$两两互素，$b_1,b_2,\cdots ,b_r$是任意给定的整数，则$(1)$有解而且只有一解.</p>
+<p><strong>证明</strong> 这里只证明$r=2$的情况，读者可以应用数学归纳法去证明一般情况.设$r=2$，由于$(n_1,n_2)=1$，存在一对整数$u_1,u_2$使得$u_1n_1+u_2n_2=1$.令$e_2=u_1n_1$，$e_1=u_2n_2$.于是$e_i\equiv 1\pmod{n_i},i=1,2$，而$e_i\equiv 0\pmod{n_j},i\neq j$.取$c=b_1e_1+b_2e_2$，则$c$为方程组$(1)$的解.其次证明解的唯一性，设$c_1,c_2$为任意两解，于是</p>
+<p>$$c_1\equiv b_1,c_2\equiv b_1\pmod{n_1},$$</p>
+<p>$$c_1\equiv b_2,c_2\equiv b_2\pmod{n_2}.$$</p>
+<p>同余式相减得</p>
+<p>$$c_1-c_2\equiv 0\pmod{n_1},$$</p>
+<p>$$c_1-c_2\equiv 0\pmod{n_2}.$$</p>
+<p>由于$(n_1,n_2)=1$，根据互素性质$(3)c_1-c_2\equiv 0\pmod{n_1n_2}$，所以$c_1,c_2$为同一解.$\blacksquare$</p>
+<p>孙子定理在国际上叫做中国剩余定理.</p>
 ]]></content>
     <summary type="html">
     <![CDATA[在整数环$\bf Z$中我们引进一个基本的等价关系，即同余概念.它和整数的运算是相容的，从而产生新的代数结构.同余概念在代数中产生了广泛的影响.]]>
@@ -160,7 +191,7 @@
     <link href="http://jianhanglin.github.io/daishuxueyinlun02/"/>
     <id>http://jianhanglin.github.io/daishuxueyinlun02/</id>
     <published>2014-10-18T10:21:33.000Z</published>
-    <updated>2014-10-19T00:56:03.000Z</updated>
+    <updated>2014-10-19T01:58:10.000Z</updated>
     <content type="html"><![CDATA[<h2 id="集合与整数">集合与整数</h2>
 <h2 id="自然数">自然数</h2>
 <p><strong>自然数系</strong>是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.&lt;—!more—&gt;自然数系是可数无限集合的一个原型.它的良序性质是数学归纳法原理的依据.自然数系的整除性和素数的研究促使了数论的发展.用<strong>皮阿诺(Peano)公理</strong>来描述自然数，容易使我们看清自然数的本质.</p>
@@ -204,8 +235,9 @@
 <p><strong>证明</strong> 我们是在引号中的命题已被证明成立的前提下，来证明$P$对所有自然数$n$都真.设$S=\lbrace  x \in {\bf N}\mid P(x)$假$\rbrace $，求证$S$为空集.反证法.假如$S$非空，则$S$有一个最小自然数$m$.于是$P(m)$假.但是$P(x)$对所有小于$m$的自然数都真.这与上述命题矛盾.所以$S=\varnothing$.$\blacksquare$</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[Algebra]]>
-    
+    <![CDATA[<h2 id="集合与整数">集合与整数</h2>
+<h2 id="自然数">自然数</h2>
+<p><strong>自然数系</strong>是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、]]>
     </summary>
     
       <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
@@ -926,8 +958,8 @@
   
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://jianhanglin.github.io/hello-world%20-%20%E5%89%AF%E6%9C%AC/"/>
-    <id>http://jianhanglin.github.io/hello-world - 副本/</id>
+    <link href="http://jianhanglin.github.io/hello-world/"/>
+    <id>http://jianhanglin.github.io/hello-world/</id>
     <published>2014-10-17T03:52:49.000Z</published>
     <updated>2014-10-17T03:41:11.000Z</updated>
     <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. <a id="more"></a>If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
