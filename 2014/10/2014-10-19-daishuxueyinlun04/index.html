@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>基础数学学习计划 | JianhangLin</title>
+    <title>《代数学引论》第零章 集合与整数 4 同余式和同余方程 | JianhangLin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="JianhangLin">
     
-    <meta name="description" itemprop="description" content="关于我的数学学习计划">
+    <meta name="description" itemprop="description" content="在整数环$\bf Z$中我们引进一个基本的等价关系，即同余概念.它和整数的运算是相容的，从而产生新的代数结构.同余概念在代数中产生了广泛的影响.">
     
     
     
@@ -99,14 +99,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2014-09-05-jichushuxuexuexijihua/" title="基础数学学习计划" itemprop="url">基础数学学习计划</a>
+      <a href="/2014/10/2014-10-19-daishuxueyinlun04/" title="《代数学引论》第零章 集合与整数 4 同余式和同余方程" itemprop="url">《代数学引论》第零章 集合与整数 4 同余式和同余方程</a>
   </h1>
   <p class="article-author">By
        
 		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
 		
   <p class="article-time">
-    <time datetime="2014-10-16T09:21:56.000Z" itemprop="datePublished"> 发表于 10月 16 2014</time>
+    <time datetime="2014-10-19T01:51:22.000Z" itemprop="datePublished"> 发表于 10月 19 2014</time>
     
   </p>
 </header>
@@ -116,32 +116,70 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第零章_集合与整数"><span class="toc-number">1.</span> <span class="toc-text">第零章 集合与整数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#同余式和同余方程"><span class="toc-number">2.</span> <span class="toc-text">同余式和同余方程</span></a></li></ol>
 		
 		</div>
 		
-		<p><strong>抽象代数</strong></p>
-<p> <strong><a href="http://book.douban.com/subject/4201293/" target="_blank" rel="external">近世代数引论</a></strong> <a href="http://pan.baidu.com/s/1hqIe368" target="_blank" rel="external">在线阅读</a> 冯克勤 李尚志 章璞 中国科学技术大学出版社 第3版 </p>
-<center><img src="/assets/img/Cover/jinshidaishuyinlun.jpg" alt=""></center> 
+		<h2 id="第零章_集合与整数">第零章 集合与整数</h2>
+<h2 id="同余式和同余方程">同余式和同余方程</h2>
+<p>在整数环$\bf Z$中我们引进一个基本的等价关系，即同余概念.它和整数的运算是相容的，从而产生新的代数结构.同余概念在代数中产生了广泛的影响.</p>
+<p><strong>定义2</strong> 设$n$为一正整数，$a,b$为任意整数.如果$n\mid a-b$，则$a,b$叫做<strong>模$n$同余</strong>，记作</p>
+<p>$$a\equiv b\pmod{n},$$</p>
+<p>$n$叫做<strong>模数</strong>.否则，$a,b$叫做<strong>模$n$非同余</strong>，记作$a\not\equiv b\pmod{n}$.以下的讨论恒固定一个模数或几个模数.</p>
+<p>容易证明$a\equiv b\pmod{n}$的充要条件是除法算式$a=q_1n+r_1$和$b=q_2n+r_2$有相同的余数$r_1=r_2$.</p>
+<p>同余概念以最适宜于描写一种有限多个状态的周期现象.例如计算某一天是星期几，可以取$7$作模数.计算一个整数是否偶数，可以取$2$作模数.取$2$作模做，余数$0$和$1$还可以描写电路的连接和断开.同余概念和整数的运算是相容的，表现在下列基本性质中.模数固定时，$a\equiv b\pmod{n}$可简写成$a\equiv b$.如果不写出模数，表示是对同一个模数而言的.</p>
+<p>$1$.同余是一个等价关系.</p>
+<p>$2$.若$a\equiv b$，$c\equiv d$，则$a\pm c\equiv b\pm d\pmod{n}$.</p>
+<p>$3$.若$a\equiv b$，$c\equiv d$，则$a\cdot c\equiv b\cdot d\pmod{n}$.</p>
+<p>$4$.若$ac\equiv bc\pmod{n}$，$(c,n)=1$，则$a\equiv b\pmod{n}$.</p>
+<p>$5$.若$a\equiv b\pmod{n}$，$m\mid n$，则$a\equiv b\pmod{m}$.</p>
+<p>$6$.若$a\equiv b\pmod{n}$，则$(a,n)=(b,n)$.</p>
+<p>$7$.若$a\equiv b\pmod{n}$，$d$为$a,b,n$的一个公因子，$a=da_1$，$b=db_1$，$n=dn_1$，则$a_1\equiv b_1\pmod{n_1}$.</p>
+<p><strong>例1</strong> $716\cdot 93$和$543\cdot 93$模$61$是否同余？假设$716\cdot 93\equiv 543\cdot 93\pmod{61}$，根据性质$4$，因$(93,61)=1$，有$716\equiv 543\pmod{61}$.但$61\nmid (716-543)=173$，所以$716\cdot 93\not\equiv 543\cdot 93\pmod{61}$.</p>
+<p><strong>例2</strong> 设复数$\varepsilon =\cos{\dfrac{2\pi}{17}}+i\sin{\dfrac{2\pi}{17}}$.计算$\varepsilon$的整数幂$\varepsilon ^m$等于计算$\varepsilon ^r$，其中$r$是$m$模$17$的余数，$0\leq r &lt; 17$.</p>
+<p>对于一个给定的模数$n$，全体整数按模$n$同余分成一些等价类，此时的等价类叫做<strong>整数模$n$的剩余类</strong>，含整数$a$的剩余类记作$\overline{a}$，剩余类$\overline{a}$的任一个元素叫做$\overline{a}$的一个代表.在每个剩余类中任取一个代表$r_i$，由这些代表组成的集合叫做整数模$n$的一个<strong>完全剩余代表系</strong>.整数模$n$的一个完全代表系$S$也可以这样来刻画：$1)$每个整数和$S$中一个元素模$n$同余，$2)S$中元素两两互不同余.根据除法算式可知，集合$S=\lbrace 0,1,2,\cdots ,n-1\rbrace$是模$n$的一个完全剩余类代表系.</p>
+<p>由模$n$的剩余类组成的商集记作${\bf Z}/(n)$.在${\bf Z}/(n)$中可以定义加法和乘法如下：</p>
+<p>$$\overline{a}+\overline{b}=\overline{a+b},$$</p>
+<p>$$\overline{a}\cdot \overline{b}=\overline{a\cdot b}.$$</p>
+<p>根据同余式的性质，定义与代表的取法无关而且加法和乘法还满足结合律、交换律和分配律，加法有零元素$\overline{0}$，每个$\overline{a}$有负元素：$\overline{-a}$：$\overline{a}+\overline{-a}=\overline{0}$.${\bf Z}/(n)$叫做<strong>整数模$n$的环</strong>.</p>
+<p>这一节剩下的部分来讨论一次同余方程和方程组.同余式</p>
+<p>$$ax\equiv b\pmod{n},a\not\equiv 0\pmod{0}$$</p>
+<p>是含有一个未知量$x$的一次式，叫做<strong>一次同余方程</strong>.若$x=c\in \bf Z$代入上方程使两边同余，则$c$叫做上方程的一个<strong>解</strong>.上方程的两个解$c_1,c_2$看作相同当而且仅当$c_1 \equiv c_2\pmod{n}$.</p>
+<p><strong>定理4</strong> 设$(a,n)=1$，则一次同余方程</p>
+<p>$$ax\equiv b\pmod{n}$$</p>
+<p>有解而且只有一个解.</p>
+<p><strong>证明</strong> 由于$(a,n)=1$，存在整数$u,v$使得$ua+vn=1$.两边乘$b$，$uba+vbn=b$，令$ub=c$，于是$ca\equiv uba\equiv b\pmod{n},x\equiv c$为其一解.其次，令$c_1,c_2$为任意两个解，于是</p>
+<p>$$ac_1\equiv b\pmod{n},$$</p>
+<p>$$ac_2\equiv b\pmod{n}.$$</p>
+<p>相减得$a(c_1-c_2)\equiv 0\pmod{n}$，由于$(a,n)=1$，根据同余的性质$4$，有$c_1\equiv c_2\pmod{n}$，$c_1,c_2$为同一解.</p>
+<p>考虑下列<strong>一次同余方程组</strong></p>
+<p>$$\begin{cases} x\equiv b_1\pmod{n_1}, \\ x\equiv b_2\pmod{n_2}, \\ \cdots \cdots \cdots \cdots \cdots \\ x\equiv b_r\pmod{n_r}. \end{cases} \tag{1}$$</p>
+<p>其中$n_1,n_2,\cdots ,n_r$为大于$1$的整数，两两互素，$b_1,b_2,\cdots ,b_r$是任意给定的整数.如果$x=c\in \bf Z$代入方程组使得同余式同时都成立，则$c$叫做方程组$(1)$的一个解.上方程组的两个解$c_1$和$c_2$看作相同当而且仅当</p>
+<span>$$c_1 \equiv c_2 \pmod{\prod \limits_{i=1}^rn_i}.$$</span>
 
-<p> <strong><a href="http://book.douban.com/subject/1462025/" target="_blank" rel="external">Algebra</a></strong> <a href="http://pan.baidu.com/s/1jGf0HM2" target="_blank" rel="external">在线阅读</a> Serge Lang Springer Revised Third Edition </p>
-<center><img src="/assets/img/Cover/Algebra.jpg" alt=""></center> 
-
-<p> <strong><a href="http://book.douban.com/subject/1230310/" target="_blank" rel="external">代数学引论</a></strong> <a href="http://pan.baidu.com/s/1dD1V5lf" target="_blank" rel="external">在线阅读</a> 聂灵沼 丁石孙 高等教育出版社 第2版   </p>
-<center><img src="/assets/img/Cover/daishuxueyinlun.jpg" alt=""></center>   
+<p><strong>定理5 (孙子定理)</strong> 设一次同余方程组$(1)$中大于$1$的整数$n_1,n_2,\cdots ,n_r$两两互素，$b_1,b_2,\cdots ,b_r$是任意给定的整数，则$(1)$有解而且只有一解.</p>
+<p><strong>证明</strong> 这里只证明$r=2$的情况，读者可以应用数学归纳法去证明一般情况.设$r=2$，由于$(n_1,n_2)=1$，存在一对整数$u_1,u_2$使得$u_1n_1+u_2n_2=1$.令$e_2=u_1n_1$，$e_1=u_2n_2$.于是$e_i\equiv 1\pmod{n_i},i=1,2$，而$e_i\equiv 0\pmod{n_j},i\neq j$.取$c=b_1e_1+b_2e_2$，则$c$为方程组$(1)$的解.其次证明解的唯一性，设$c_1,c_2$为任意两解，于是</p>
+<p>$$c_1\equiv b_1,c_2\equiv b_1\pmod{n_1},$$</p>
+<p>$$c_1\equiv b_2,c_2\equiv b_2\pmod{n_2}.$$</p>
+<p>同余式相减得</p>
+<p>$$c_1-c_2\equiv 0\pmod{n_1},$$</p>
+<p>$$c_1-c_2\equiv 0\pmod{n_2}.$$</p>
+<p>由于$(n_1,n_2)=1$，根据互素性质$(3)c_1-c_2\equiv 0\pmod{n_1n_2}$，所以$c_1,c_2$为同一解.$\blacksquare$</p>
+<p>孙子定理在国际上叫做中国剩余定理.</p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/计划/">计划</a>
+  <a class="article-category-link" href="/categories/抽象代数/">抽象代数</a>
 </div>
 
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/计划/">计划</a>
+  <span></span> <a href="/tags/代数/">代数</a>
   </div>
 
 </div>
@@ -149,7 +187,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://jianhanglin.github.io/2014-09-05-jichushuxuexuexijihua/" data-title="基础数学学习计划 | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  <div data-url="http://jianhanglin.github.io/2014/10/2014-10-19-daishuxueyinlun04/" data-title="《代数学引论》第零章 集合与整数 4 同余式和同余方程 | JianhangLin" data-tsina="1763313312" class="share clearfix">
   </div>
 
 </div>
@@ -159,13 +197,21 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/hello-world/" title="Hello World">
+ <a href="/2014/09/hello-world/" title="Hello World">
   <strong>上一篇：</strong><br/>
   <span>
   Hello World</span>
 </a>
 </div>
 
+
+<div class="next">
+<a href="/2014/09/2014-09-17-daishuxueyinlun03/"  title="《代数学引论》第零章 集合与整数 3 整数. 整数的整除性">
+ <strong>下一篇：</strong><br/> 
+ <span>《代数学引论》第零章 集合与整数 3 整数. 整数的整除性
+</span>
+</a>
+</div>
 
 </nav>
 
@@ -181,7 +227,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第零章_集合与整数"><span class="toc-number">1.</span> <span class="toc-text">第零章 集合与整数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#同余式和同余方程"><span class="toc-number">2.</span> <span class="toc-text">同余式和同余方程</span></a></li></ol>
  
   </div>
 
