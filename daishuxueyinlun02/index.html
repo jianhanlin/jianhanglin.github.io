@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>《Algebra》Chapter I Groups 1. Monoids | JianhangLin</title>
+    <title>《代数学引论》第零章 集合与整数 2 自然数 | JianhangLin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="JianhangLin">
@@ -99,7 +99,7 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/daishuxueyinlun02/" title="《Algebra》Chapter I Groups 1. Monoids" itemprop="url">《Algebra》Chapter I Groups 1. Monoids</a>
+      <a href="/daishuxueyinlun02/" title="《代数学引论》第零章 集合与整数 2 自然数" itemprop="url">《代数学引论》第零章 集合与整数 2 自然数</a>
   </h1>
   <p class="article-author">By
        
@@ -116,12 +116,51 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#集合与整数"><span class="toc-number">1.</span> <span class="toc-text">集合与整数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#自然数"><span class="toc-number">2.</span> <span class="toc-text">自然数</span></a></li></ol>
 		
 		</div>
 		
-		<p><strong><a href="http://book.douban.com/subject/1462025/" target="_blank" rel="external">Algebra</a></strong> <a href="http://pan.baidu.com/s/1jGf0HM2" target="_blank" rel="external">在线阅读</a> Serge Lang Springer Revised Third Edition</p>
-<center><img src="/assets/img/Algebra/cover.jpg" alt=""></center> 
+		<h2 id="集合与整数">集合与整数</h2>
+<h2 id="自然数">自然数</h2>
+<p><strong>自然数系</strong>是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.&lt;—!more—&gt;自然数系是可数无限集合的一个原型.它的良序性质是数学归纳法原理的依据.自然数系的整除性和素数的研究促使了数论的发展.用<strong>皮阿诺(Peano)公理</strong>来描述自然数，容易使我们看清自然数的本质.</p>
+<p>自然数系是这样一个非空集合$\bf N$，其中有一个选定了的元素$0$，和一个$\bf N$到自身的后继映射$a\mapsto a^{+}$，$a^{+}$叫做$a$的后继，满足</p>
+<p>$i)$映射$a\mapsto a^{+}$是单一的.即从$a^{+}=b^{+}$推出$a=b$，</p>
+<p>$ii)0$不是任何元素的后继，即不存在$a\in \bf N$使得$a^{+}=0$，</p>
+<p>$iii)$如果$\bf N$的任一个子集$S$满足1)$0\in S$而且2)对所有元素$a\in \bf N$，从$a\in S$恒有$a^{+}\in S$，则$S=\bf N$.</p>
+<p>从公理$i)$和$ii)0$推出$\bf N$是一个无穷集合，公理$iii)$就是<strong>数学归纳法原理</strong>.它是归纳法证明方法的基础.设$P(n)$是关于自然数$n$的某种性质或陈述.为了证明$P(n)$对所有自然数是真的，我们只需证明两点：1)$P(0)$是真的，2)若对任一自然数$n$，$P(n)$是真的，则$P(n^{+})$也是真的.于是根据数学归纳法原理，$P(n)$对所有自然数都是真的.</p>
+<p>关于自然数的许多性质都可以应用数学归纳法原理予以证明.例如，我们可以应用数字归纳法原理证明命题：$\bf N$的每个非零自然数$a$都是另一个自然数$b$的后继.设<span>$S_{1}=\lbrace x\in \bf N\mid$</span>对$x$存在一个$y\in \bf N$使得$x=y^{+}\rbrace $，<span>$S=\lbrace  0\rbrace  \cup S_{1}$</span>.证明$S=\bf N$.首先$0\in S$，而且若$b\in S$，根据$S$的定义$b^{+}\in S$.根据数学归纳法原理$S=\bf N$.</p>
+<p>归纳法的证明为大家所熟悉，但是归纳法或归纳法构造，则不大为大家所熟悉.归纳法构造是以下列定理为基础的.</p>
+<p><strong>递归定理</strong>设$S$为一集合，$\varphi$为$S$到自身的一个映射，$a$为$S$的一个给定的元素，则存在一个唯一的$\bf N$到$S$的映射$\psi _{a}$使得</p>
+<p>$$\psi _{a}(0)=a$$</p>
+<p>且</p>
+<span>$$\psi _{a}(n^{+})=\varphi (\psi _{a}(n)),n\in \bf N.$$</span>
+
+<p>就是说下图交换</p>
+<center><img src="/assets/img/daishuxueyinlun/2.bmp" alt=""></center>
+
+<p>且</p>
+<p>$$\psi _{a}(0)=a.$$</p>
+<p>(交换图的概念可见第一章$\S 7$).</p>
+<p>我们不打算给出这个定理的详细证明.但是要说一下证明的思路.一个集合$X$到另一个集合$Y$的任一映射$f$规定了笛卡尔积$X\times Y$的一个子集</p>
+<p>$$T=\lbrace  (x,f(x))\mid x\in X\rbrace .$$</p>
+<p>反之，$X\times Y$的一个子集$T$如果满足1)对每个$x\in X$存在一个$y\in Y$使$(x,y)\in T$，而且2)若$(x,y)$，$(x,y’)\in T$，则$y=y’$，那么$T$规定了一个映射$f:X\to Y$使得$T$由所有的$(x,f(x))$，$x\in X$组成.基于这种看法，我们考虑笛卡尔积${\bf N}\times S$的满足下列条件的子集$T$：(1)$(0,a)\in T$，而且(2)若$(n,b)\in T$，则$(n^{+},\varphi (b))\in T$(对所有$n\in \bf N$).用$I$表示${\bf N}\times S$的所有这种子集的交.读者可以根据自然数的公理证明$I$规定了一个映射<span>$\psi _{a}:{\bf N}\to S$</span>而且<span>$\psi _{a}$</span>满足定理的要求.不难证明，满足定理要求的映射<span>$\psi _{a}$</span>是唯一的.</p>
+<p>根据递归定理，在自然数系上我们可以归纳地定义一个概念或归纳地构造一个函数.自然数的加法和乘法的定义就是典型的例子.</p>
+<p>定义$\bf N$的加法如下：对任意$m,n\in \bf N$，规定</p>
+<p>$$m+0=m$$</p>
+<p>$$m+n^{+}=(m+n)^{+}.$$</p>
+<p>注意，我们在递归定理中令$S=\bf N$，$\varphi (n)=n^{+}$，$a=m$，从而得到的映射<span>$\psi _{m}$</span>等于规定了加法运算，<span>$\psi _{m}(n)=m+n$</span>.</p>
+<p>不难证明加法满足结合律、交换律和加法消去律.将$0$的后继记成$1$，$0^{+}=1$，于是有$m+1=m^{+}$.$0$是加法的单位元素.</p>
+<p>定义$\bf N$的乘法如下：对任意$m,n\in \bf N$，规定</p>
+<p>$$m\cdot 0=0$$</p>
+<p>$$m\cdot n^{+}=m\cdot n+m.$$</p>
+<p>注意，在递归定理中我们令$S=\bf N$，$\varphi (n)=n+m$，$a=m$，从而得到的映射<span>$\psi _{m}$</span>等于规定了乘法运算，<span>$\psi _{m}(n)=m\cdot n$</span>.</p>
+<p>不难证明乘法满足结合律、交换律、乘法消去律以及乘法对加法的分配律.由定义可知$m\cdot 1=m$，对所有自然数$m$.$1$是乘法的单位元素.</p>
+<p>自然数系还有一个序“$\leq$”.这个序规定了任意两个自然数$a,b$的大小.我们说$a\leq b$当而且仅当$a+x=b$在$\bf N$内有解.若$a\leq b$且$a\neq b$，则写成$a&lt;b$.$a\neq b$也可写成$b\geq a$.根据定义可知$0\neq n$，$n&lt;n^{+}$，对所有自然数$n$.关于序的一些性质在这里不一一列举了.例如应用数学归纳法可以证明，对任一对自然数$n,n^{+}$，不再存在自然数$m$满足$n&lt;m&lt;n^{+}$.因而从$n&lt;m$就可以断定$n^{+}\leq m$.特别值得提出的是</p>
+<p><strong>良序性质</strong> 自然数系的任一非空子集$S$有一个最小元素，即存在一个$m\in S$使得对所有$x\in S$都有$x\geq m$.</p>
+<p><strong>证明</strong> 如果$S$包含$0$，则$0$是$S$的最小元素.假设：如果$S$包含$n$，则$S$有一个最小元素.由此证明，如果$S$包含$n^{+}$，则$S$有一个最小元素.作$S’=S\cup \lbrace n\rbrace $.根据归纳法假设，$S’$有一个最小元素$m$.若$m\in S$，则$m$就是$S$的最小元素.假设$m\notin S$，则必有$m=n$，因而$n\notin S$，且$n&lt;a$，对所有的$a\in S$.于是，根据上面的说明可以断定$n^{+}\leq a$对所有的$a\in S$.根据$n^{+}\in S$，所以$n^{+}$是$S$的最小元素.$\blacksquare$</p>
+<p>自然数系的良序性质是第二数学归纳法的基础.</p>
+<p><strong>第二数学归纳法</strong> 假设$P(n)$是关于自然数$n$的一种性质或陈述.如果我们能够证明命题“若$P(n)$对所有小于$n$的自然数$x$都真，则$P(n)$也是真的”，其中包含$P(0)$为真的证明.那么可以断言$P$对所有自然数都是真的.</p>
+<p><strong>证明</strong> 我们是在引号中的命题已被证明成立的前提下，来证明$P$对所有自然数$n$都真.设$S=\lbrace  x \in {\bf N}\mid P(x)$假$\rbrace $，求证$S$为空集.反证法.假如$S$非空，则$S$有一个最小自然数$m$.于是$P(m)$假.但是$P(x)$对所有小于$m$的自然数都真.这与上述命题矛盾.所以$S=\varnothing$.$\blacksquare$</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -143,7 +182,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://jianhanglin.github.io/daishuxueyinlun02/" data-title="《Algebra》Chapter I Groups 1. Monoids | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  <div data-url="http://jianhanglin.github.io/daishuxueyinlun02/" data-title="《代数学引论》第零章 集合与整数 2 自然数 | JianhangLin" data-tsina="1763313312" class="share clearfix">
   </div>
 
 </div>
@@ -153,10 +192,10 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/daishuxueyinlun03/" title="《Algebra》Chapter I Groups 1. Monoids">
+ <a href="/daishuxueyinlun03/" title="《代数学引论》第零章 集合与整数 3 整数. 整数的整除性">
   <strong>上一篇：</strong><br/>
   <span>
-  《Algebra》Chapter I Groups 1. Monoids</span>
+  《代数学引论》第零章 集合与整数 3 整数. 整数的整除性</span>
 </a>
 </div>
 
@@ -183,7 +222,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#集合与整数"><span class="toc-number">1.</span> <span class="toc-text">集合与整数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#自然数"><span class="toc-number">2.</span> <span class="toc-text">自然数</span></a></li></ol>
  
   </div>
 
@@ -196,7 +235,7 @@
 	<p class="asidetitle">分类</p>
 		<ul>
 		
-			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>8</sup></a></li>
+			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>9</sup></a></li>
 		
 			<li><a href="/categories/计划/" title="计划">计划<sup>1</sup></a></li>
 		
@@ -209,7 +248,7 @@
 	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/代数/" title="代数">代数<sup>8</sup></a></li>
+			<li><a href="/tags/代数/" title="代数">代数<sup>9</sup></a></li>
 		
 			<li><a href="/tags/计划/" title="计划">计划<sup>1</sup></a></li>
 		

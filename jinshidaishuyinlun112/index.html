@@ -116,15 +116,15 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第1章_群"><span class="toc-number">2.</span> <span class="toc-text">第1章 群</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2_什么是群"><span class="toc-number">3.</span> <span class="toc-text">1.2 什么是群</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">4.</span> <span class="toc-text">习题</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#群"><span class="toc-number">2.</span> <span class="toc-text">群</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是群"><span class="toc-number">3.</span> <span class="toc-text">什么是群</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">4.</span> <span class="toc-text">习题</span></a></li></ol>
 		
 		</div>
 		
 		<h2 id="简介">简介</h2>
 <p>近世代数是代数学一个基础学科，讲述代数基本结构的特性。本书除系统介绍群、环和域的基础知识（包括域的有限伽罗瓦扩张理论）之外，还力图强调近世代数中的思想和方法.书中有大量习题.除主线内容外，还增加一些附录用来开拓和深化所学内容.</p>
 <p>本书在中国科学技术大学讲授多年的讲义基础上修改写成.可作为高等学校数学系基础课教材，也可供数学工作者和通信、计算机科学等领域的工程技术人员参考.</p>
-<h2 id="第1章_群">第1章 群</h2>
-<h2 id="1-2_什么是群">1.2 什么是群</h2>
+<h2 id="群">群</h2>
+<h2 id="什么是群">什么是群</h2>
 <p><strong>定义1</strong>&nbsp;&nbsp;集合$S$和$S$上满足结合律的二元运算$\cdot$所形成的代数结构叫做<strong>半群</strong>.这个半群记成$(S,\cdot )$或者简记成$S$，运算$x\cdot y$也常常简写成$xy$.</p>
 <p>如果运算又满足交换律，则$(S,\cdot )$叫做<strong>交换半群</strong>.像通常那样令$x^2=x\cdot x$，$x^{n+1}=x^n\cdot x(=x\cdot x^n$,$n\geq 1)$.</p>
 <p><strong>定义2</strong>&nbsp;&nbsp;设$S$是半群，元素$e\in S$叫做半群$S$的幺元素，是指对每个$x\in S$,$xe=ex=x$.</p>
@@ -176,7 +176,7 @@
 <p>群$G$到自身的同态(同构)叫群$G$的自同态(自同构).以$Aut (G)$表示群$G$的自同构全体，请读者验证它对于合成运算为群，其幺元素为$G$上的恒等自同构(即恒等映射).对于群$G$决定出它的自同构群$Aut (G)$(即确定$G$的全部自同构并刻画出$Aut (G)$的群结构)，是群论的一个基本问题.</p>
 <p><strong>例8</strong>&nbsp;&nbsp;考虑整数加法群$({\bf Z},+)$.设$f:{\bf Z}\to {\bf Z}$是${\bf Z}$的自同态.则必然有$f(0)=0$，$f(-n)=-f(n)$.从而若$f(1)=t\in {\bf Z}$，则$f(2)=f(1+1)=f(1)+f(1)=t+t=2t$.用数学归纳法即知对每个正整数$n,f(n)=nt$，从而$f(-n)=-nt$.不难看出如此定义的映射是加法群${\bf Z}$的自同态.将此自同态记成<span>$f_t$</span>.不同的$t$对应不同的自同态.因此${\bf Z}$的自同态(含幺半群)为$\lbrace f_{t}\mid t\in {\bf Z}\rbrace $.</p>
 <p>自同态<span>$f_{t}$</span>的像为<span>$\lbrace tn\mid n\in {\bf Z}\rbrace$</span>.从而<span>$f_{t}$</span>为自同构<span>$\Leftrightarrow \lbrace tn \mid n\in {\bf Z}={\bf Z}\rbrace \Leftrightarrow t=\pm 1$</span>.因此<span>$Aut ({\bf Z})=\lbrace f_{1},f_{-1}\rbrace$</span>(二元群).其中幺元素<span>$f_1$</span>为恒等自同构，而<span>$f_{-1}$</span>为自同构$n\mapsto -n$.$Aut (Z)$中群运算是<span>$f_{-1}\cdot f_{-1}=f_{1}$</span>.</p>
-<h2 id="习题"><strong>习题</strong></h2>
+<h2 id="习题">习题</h2>
 <p>$1$.令$N$是所有$n\times n$上三角非奇异复方阵的集合，$P$是主对角线上的元素都是$1$的上三角方阵的集合，运算定义为矩阵的乘法.试证$N$和$P$都是群.</p>
 <p>证：方阵的乘法有结合律；$n$阶单位阵是$N$的单位元；两个奇异复阵的积仍是$n$阶上三角非奇异复阵；一个$n$阶上三角非奇异复阵的逆仍是$n$阶上三角非奇异复阵.故依群的定义知$N$是群.</p>
 <p>同理$P$是群.</p>
@@ -316,7 +316,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第1章_群"><span class="toc-number">2.</span> <span class="toc-text">第1章 群</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2_什么是群"><span class="toc-number">3.</span> <span class="toc-text">1.2 什么是群</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">4.</span> <span class="toc-text">习题</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#群"><span class="toc-number">2.</span> <span class="toc-text">群</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是群"><span class="toc-number">3.</span> <span class="toc-text">什么是群</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">4.</span> <span class="toc-text">习题</span></a></li></ol>
  
   </div>
 
@@ -329,7 +329,7 @@
 	<p class="asidetitle">分类</p>
 		<ul>
 		
-			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>8</sup></a></li>
+			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>9</sup></a></li>
 		
 			<li><a href="/categories/计划/" title="计划">计划<sup>1</sup></a></li>
 		
@@ -342,7 +342,7 @@
 	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/代数/" title="代数">代数<sup>8</sup></a></li>
+			<li><a href="/tags/代数/" title="代数">代数<sup>9</sup></a></li>
 		
 			<li><a href="/tags/计划/" title="计划">计划<sup>1</sup></a></li>
 		

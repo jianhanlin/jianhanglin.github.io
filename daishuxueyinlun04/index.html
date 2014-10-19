@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>《Algebra》Chapter I Groups 3. NORMAL　SUBGROUPS | JianhangLin</title>
+    <title>《代数学引论》第零章 集合与整数 4 同余式和同余方程 | JianhangLin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="JianhangLin">
     
-    <meta name="description" itemprop="description" content="NORMAL　SUBGROUPS">
+    <meta name="description" itemprop="description" content="在整数环$\bf Z$中我们引进一个基本的等价关系，即同余概念.它和整数的运算是相容的，从而产生新的代数结构.同余概念在代数中产生了广泛的影响.">
     
     
     
@@ -99,14 +99,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/Algebra13/" title="《Algebra》Chapter I Groups 3. NORMAL　SUBGROUPS" itemprop="url">《Algebra》Chapter I Groups 3. NORMAL　SUBGROUPS</a>
+      <a href="/daishuxueyinlun04/" title="《代数学引论》第零章 集合与整数 4 同余式和同余方程" itemprop="url">《代数学引论》第零章 集合与整数 4 同余式和同余方程</a>
   </h1>
   <p class="article-author">By
        
 		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
 		
   <p class="article-time">
-    <time datetime="2014-10-18T10:21:32.000Z" itemprop="datePublished"> 发表于 10月 18 2014</time>
+    <time datetime="2014-10-19T01:51:22.000Z" itemprop="datePublished"> 发表于 10月 19 2014</time>
     
   </p>
 </header>
@@ -116,12 +116,25 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Groups"><span class="toc-number">1.</span> <span class="toc-text">Groups</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Normal_Subgroups"><span class="toc-number">2.</span> <span class="toc-text">Normal Subgroups</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第零章_集合与整数"><span class="toc-number">1.</span> <span class="toc-text">第零章 集合与整数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#同余式和同余方程"><span class="toc-number">2.</span> <span class="toc-text">同余式和同余方程</span></a></li></ol>
 		
 		</div>
 		
-		<h2 id="Groups">Groups</h2>
-<h2 id="Normal_Subgroups">Normal Subgroups</h2>
+		<h2 id="第零章_集合与整数">第零章 集合与整数</h2>
+<h2 id="同余式和同余方程">同余式和同余方程</h2>
+<p>在整数环$\bf Z$中我们引进一个基本的等价关系，即同余概念.它和整数的运算是相容的，从而产生新的代数结构.同余概念在代数中产生了广泛的影响.</p>
+<p><strong>定义2</strong> 设$n$为一正整数，$a,b$为任意整数.如果$n\mid a-b$，则$a,b$叫做<strong>模$n$同余</strong>，记作</p>
+<p>$$a\equiv b\pmod{n},$$</p>
+<p>$n$叫做<strong>模数</strong>.否则，$a,b$叫做<strong>模$n$非同余</strong>，记作$a\not\equiv b\pmod{n}$.以下的讨论恒固定一个模数或几个模数.</p>
+<p>容易证明$a\equiv b\pmod{n}$的充要条件是除法算式$a=q_1n+r_1$和$b=q_2n+r_2$有相同的余数$r_1=r_2$.</p>
+<p>同余概念以最适宜于描写一种有限多个状态的周期现象.例如计算某一天是星期几，可以取$7$作模数.计算一个整数是否偶数，可以取$2$作模数.取$2$作模做，余数$0$和$1$还可以描写电路的连接和断开.同余概念和整数的运算是相容的，表现在下列基本性质中.模数固定时，$a\equiv b\pmod{n}$可简写成$a\equiv b$.如果不写出模数，表示是对同一个模数而言的.</p>
+<p>$1$.同余是一个等价关系.</p>
+<p>$2$.若$a\equiv b$，$c\equiv d$，则$a\pm c\equiv b\pm d\pmod{n}$.</p>
+<p>$3$.若$a\equiv b$，$c\equiv d$，则$a\cdot c\equiv b\cdot d\pmod{n}$.</p>
+<p>$4$.若$ac\equiv bc\pmod{n}$，$(c,n)=1$，则$a\equiv b\pmod{n}$.</p>
+<p>$5$.若$a\equiv b\pmod{n}$，$m\mid n$，则$a\equiv b\pmod{m}$.</p>
+<p>$6$.若$a\equiv b\pmod{n}$，则$(a,n)=(b,n)$.</p>
+<p>$7$.若$a\equiv b\pmod{n}$，$d$为$a,b,n$的一个公因子，$a=da_1$，$b=db_1$，$n=dn_1$，则$a_1\equiv b_1\pmod{n_1}$.</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -143,7 +156,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://jianhanglin.github.io/Algebra13/" data-title="《Algebra》Chapter I Groups 3. NORMAL　SUBGROUPS | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  <div data-url="http://jianhanglin.github.io/daishuxueyinlun04/" data-title="《代数学引论》第零章 集合与整数 4 同余式和同余方程 | JianhangLin" data-tsina="1763313312" class="share clearfix">
   </div>
 
 </div>
@@ -152,19 +165,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/daishuxueyinlun01/" title="《代数学引论》第零章 集合与整数 1 集合上的等价关系">
-  <strong>上一篇：</strong><br/>
-  <span>
-  《代数学引论》第零章 集合与整数 1 集合上的等价关系</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/Algebra12/"  title="《Algebra》Chapter I Groups 2. GROUPS">
+<a href="/daishuxueyinlun03/"  title="《代数学引论》第零章 集合与整数 3 整数. 整数的整除性">
  <strong>下一篇：</strong><br/> 
- <span>《Algebra》Chapter I Groups 2. GROUPS
+ <span>《代数学引论》第零章 集合与整数 3 整数. 整数的整除性
 </span>
 </a>
 </div>
@@ -183,7 +188,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Groups"><span class="toc-number">1.</span> <span class="toc-text">Groups</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Normal_Subgroups"><span class="toc-number">2.</span> <span class="toc-text">Normal Subgroups</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第零章_集合与整数"><span class="toc-number">1.</span> <span class="toc-text">第零章 集合与整数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#同余式和同余方程"><span class="toc-number">2.</span> <span class="toc-text">同余式和同余方程</span></a></li></ol>
  
   </div>
 
