@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我只需要你陪我60年。很傻，对吧？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-10-19T08:24:32.037Z</updated>
+  <updated>2014-10-21T07:37:53.574Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -13,6 +13,90 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[《代数学引论》第零章 集合与整数 6 偏序集合]]></title>
+    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun06/"/>
+    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun06/</id>
+    <published>2014-10-21T07:34:53.000Z</published>
+    <updated>2014-10-21T07:36:51.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="第零章_集合与整数">第零章 集合与整数</h2>
+<h2 id="偏序集合">偏序集合</h2>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="第零章_集合与整数">第零章 集合与整数</h2>
+<h2 id="偏序集合">偏序集合</h2>
+]]>
+    </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[《代数学引论》第零章 集合与整数 5 欧拉函数和欧拉-费马定理]]></title>
+    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun05/"/>
+    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun05/</id>
+    <published>2014-10-20T01:33:53.000Z</published>
+    <updated>2014-10-21T07:36:31.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="第零章_集合与整数">第零章 集合与整数</h2>
+<h2 id="欧拉函数和欧拉-费马定理">欧拉函数和欧拉-费马定理</h2>
+<p>首先介绍数论中一个重要的函数即欧拉函数.</p>
+<p>设$n$为一正整数，在$0,1,2,\cdots ,n-1$中与$n$互素的整数的个数记作$\varphi (n)$，叫做<strong>欧拉函数</strong>.由同余性质$6$知道，$\varphi (n)$也就是那些模$n$的剩余类的个数，这些剩余类是由与$n$互素的整数组成的.从这些剩余类取出的代表所组成的集合叫做<strong>模$n$的既约剩余代表系</strong>.一个既约剩余代表系$T$也可以这样来刻画：$1)$任一个与$n$互素的整数必与$T$中一个数模$n$同余，而且$2)T$中整数与$n$互素而且模$n$两两不同余.</p>
+<p>设$r_1,r_2,\cdots ,r_N,N=\varphi (n)$，为模$n$的一个既约剩余代表系，$(a,n)=1$，则$ar_1,ar_2,\cdots ,ar_N$仍是模$n$的一个既约剩余代表系.这是因为，首先根据互素性质$4)$和同余性质$4$，$ar_1,ar_2,\cdots ,ar_N$与$n$互素而且两两互不同余$\pmod{n}$.其次，每个$ar_i$和某一个<span>$r_{a_i} (1\leq a_i\leq N)$</span>同余，而且当$i\neq j$有$a_i\neq a_j$，于是<span>$ar_i \mapsto r_{a_i}$</span>是一个单射，因而是一个满射.$\alpha _1,\alpha _2,\cdots ,\alpha _N$是$1,2,\cdots ,N$的一个排列.由于每个与$n$互素的整数$b$必与某个<span>$r_{a_i}$</span>同余，由上可知$b$必与$ar_i$同余.所以$ar_1,ar_2,\cdots ,ar_N$是模$n$的既约剩余代表系.</p>
+<p><strong>定理$6$(欧拉-费马($Fermat$))</strong> 设$(a,n)=1,N=\varphi (n)$，则</p>
+<p>$$a^N \equiv 1\pmod{n}.$$</p>
+<p><strong>证明</strong> 取模$n$的一个既约剩余代表系<span>$r_1 ,r_2 ,\cdots ,r_N$</span>.由于$(a,n)=1$，<span>$ar_1,ar_2,\cdots ,ar_N$</span>也是一个既约剩余代表系，而且<span>$ar_i\equiv r_{a_i}\pmod{n}$</span>，$a_1,a_2,\cdots ,a_N$是$1,2,\cdots ,N$的一个排列.这$N$个同余式连乘得</p>
+<span>$$\prod \limits_{i=1}^Nar_i\equiv \prod \limits_{i=1}^Nr_{a_i}=\prod \limits_{i=1}^Nr_i\pmod{n},$$</span>
+
+<p>$$a^N\prod \limits r_i\equiv \prod \limits r_i\pmod{n},$$</p>
+<p>根据互素性质$4)$，$\prod \limits r_i$与$n$互素，根据同余式性质$4$，消去$\prod \limits r_i$得$a^N \equiv 1\pmod{n}$.$\blacksquare$</p>
+<p>定理$6$的特殊情况是，$n=p$为一素数，$\varphi (p)=p-1$.$(a,p)=1$即$p\nmid a$，于是</p>
+<p>$$a^{p-1}\equiv 1\pmod{p}.$$</p>
+<p>这就是费马定理.费马定理也可写成：对任意素数$p$和任意整数$a$，恒有</p>
+<p>$$a^p \equiv a\pmod{p}.$$</p>
+<p>在这里顺便介绍一下指数的概念.设$a,n$为互素的一对整数，$n\geq 1$，则存在一个最小正整数$m$使得</p>
+<p>$$a^m \equiv 1\pmod{n},$$</p>
+<p>$m$叫做<strong>$a$模$n$的指数</strong>.指数的存在由欧拉-费马定理得到保证.因为使$a^k\equiv 1\pmod{n}$的正整数$k$存在，$\varphi (n)$就是一个.$k$的存在也可直接看出.因为$a,a^2,a^3,\cdots $中必有两个同余的，设$a^j \equiv a^i \pmod{n}$，$j&gt;i$，消去$a^i$使$a^{j-i}\equiv 1\pmod{n}$.应用除法算式可以证明指数的一个基本性质：</p>
+<p>$a^k \equiv 1\pmod{n}\Leftrightarrow m\mid k$，$m$为$a~mod~n$的指数.特别地，指数$m\mid \varphi (n)$.</p>
+<p><strong>例</strong> $~2~mod~17$的指数为$8$，$3~mod~17$的指数为$16=\varphi (17)$.计算$3^{157}~mod~17$，可应用指数.</p>
+<p>首先，$157\equiv 13\pmod{16}$，$3^{157}\equiv 3^{13}\pmod{17}$，而$3^{13}\equiv 3^8\cdot 3^5\equiv -3^5\equiv -5\pmod{17}$.</p>
+<p><strong>个人思路</strong>：首先先分解$157=9\times 16+13$.根据欧拉-费马定理，令$a=3^k$，$n=17$，则$(a,n)=(3^k,17)=1$，对任意的整数$k$来说.$N=\varphi (n)=\varphi (17)=17-1=16$，因此有$a^N=(3^k)^{16} \equiv 1\pmod{17}$成立，也即是说$a^{N}\cdot 3^{13}=(3^k)^{16}\cdot 3^{13} \equiv 3^{13}\pmod{17}$成立.这时，可令$k=9$，则有$3^{157}=(3^9)^{16}\cdot 3^{13} \equiv 3^{13}\pmod{17}$成立.因为$17\times 386=6562=6561+1=3^8+1$，所以$3^8\equiv -1\pmod{17}$.因为$3^5=243=17\times 16+5$，所以$3^5\equiv 5\pmod{17}$.因此有$3^{13}\equiv 3^8\cdot 3^5\equiv -3^5\equiv -5\pmod{17}$.</p>
+<p>下面我们来计算欧拉函数.</p>
+<p><strong>引理$1$</strong>$~p$为素数，$\varphi (p^m)=p^m (1-\dfrac{1}{p})$，$m\geq 1$.</p>
+<p><strong>证明</strong> 因为在$S=\lbrace 0,1,2,\cdots ,p^m-1 \rbrace$中除去$p$的倍数，剩下的都与$p$互素，而$S$中$p$的倍数恰好有$\dfrac{p^m}{p}$个，因此$S$中与$p$互素的整数的个数为$p^m-p^{m-1}$.</p>
+<p><strong>引理$2$</strong>设$n=n_1\times n_2$，$(n_1,n_2)=1$，$n_i\geq 1$，则</p>
+<p>$$\varphi (n)=\varphi (n_1)\times \varphi (n_2).$$</p>
+<p><strong>证明</strong>$\varphi (n_i)$简记作$N_i$，$i=1,2$.设$r_1,\cdots$,<span>$r_{N_1}$</span>和$s_1,\cdots $,<span>$s_{N_2}$</span>分别为模$n_1$和模$n_2$的既约剩余代表系.根据孙子定理，存在整数<span>$t_{ij}$</span>，$i=1,\cdots ,N_1$，$j=1,\cdots ,N_2$使得</p>
+<span>$$t_{ij}\equiv r_i\pmod{n_1},$$</span>
+
+<span>$$t_{ij}\equiv s_j\pmod{n_2}.$$</span>
+
+<p>证明<span>$t_{ij}$</span>为模<span>$n_1n_2$</span>的一个既约剩余代表系.首先，由于<span>$(r_i,n_1)=1$</span>，有<span>$(t_{ij},n_1)=1$</span>.由于<span>$(s_j,n_2)=1$</span>，有<span>$(t_{ij},n_2)=1$</span>.因而<span>$(t_{ij},n_1n_2)=1$</span>.其次<span>$t_{ij}$</span>互不同余.假设若<span>$t_{ij}\equiv t_{kl}\pmod{n_1n_2}$</span>，一方面有<span>$t_{ij}\equiv t_{kl}\pmod{n_1}$</span>，它化为<span>$r_i\equiv r_k\pmod{n_1}$</span>，从而$i=k$，另一方面有<span>$t_{ij}\equiv t_{kl}\pmod{n_2}$</span>，它化为<span>$s_j\equiv s_l\pmod{n_2}$</span>，从而$j=l$.所以<span>$t_{ij}$</span>互不同余<span>$\pmod{n_1n_2}$</span>.最后设$a$为任一与$n$互素的整数，根据<span>$r_i$</span>和<span>$s_j$</span>的定义，存在<span>$r_i$</span>和<span>$s_j$</span>使得<span>$a\equiv r_i\pmod{n_1}$</span>，<span>$a\equiv s_j\pmod{n_2}$</span>，于是根据孙子定理有<span>$a\equiv t_{ij}\pmod{n}$</span>(<strong>不懂</strong>).所以$t_{ij}$是模$n$的一个既约代表系.这就证明了<span>$\varphi (n)=\varphi (n_1)\times \varphi (n_2)$</span>.$\blacksquare$</p>
+<p><strong>定理$7$</strong>设$n=p_1^{e_1}p_2^{e_2}\cdots p_r^{e_r}$，$p_1,p_2,\cdots ,p_r$为不同素数，$e_i \geq 1$，则</p>
+<p>$$\varphi (n)=n(1-\dfrac{1}{p_1})(1-\dfrac{1}{p_2})\cdots (1-\dfrac{1}{p_r}).$$</p>
+<p>应用引理$1$和引理$2$对$r$作归纳法即得.</p>
+<p>最后证明欧拉函数的一个性质</p>
+<p>$$\underset{d\mid n}{\sum}\varphi (d)=n.$$</p>
+<p>设$S=\lbrace 0,1,\cdots ,n-1\rbrace$，对每个$d\mid n$，令<span>$S_d =\lbrace x\in S\mid (x,n)=d\rbrace$</span>.显然$S=\underset{d\mid n}{\bigcup}S_d$是$S$的一个划分.其次，映射</p>
+<p>$$\eta :x\mapsto \dfrac{x}{d},x\in S_d$$</p>
+<p>是$S_d$到$S(\dfrac{n}{d})=\lbrace 0,1,2,\cdots ,\dfrac{n}{d}-1\rbrace$的一个单射.而且象集$\eta (S_d)$恰好是$S(\dfrac{n}{d})$中与$\dfrac{n}{d}$互素的整数全体.所以$\mid S_d\mid =\varphi (\dfrac{n}{d})$，由此得</p>
+<p>$$n=\underset{d\mid n}{\sum}\mid S_d\mid =\underset{d\mid n}{\sum} \varphi (\dfrac{n}{d}),$$</p>
+<p>当$d$走遍$n$的因子时，$\dfrac{n}{d}$刚好走遍$n$的因子，所以</p>
+<p>$$\underset{d\mid n}{\sum} \varphi (d)=\underset{d\mid n}{\sum} \varphi (\dfrac{n}{d}).$$</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[设$n$为一正整数，在$0,1,2,\cdots ,n-1$中与$n$互素的整数的个数记作$\varphi (n)$，叫做**欧拉函数**.]]>
+    
+    </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
