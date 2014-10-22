@@ -9,8 +9,7 @@
     
     <meta name="author" content="JianhangLin">
     
-    <meta name="description" content="第零章 集合与整数
-偏序集合">
+    <meta name="description" itemprop="description" content="集合$S$上的一个关系，记作$\leq$，叫做一个偏序，如果$\leq$满足反身性、反对称性和传递性.">
     
     
     
@@ -117,12 +116,25 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第零章_集合与整数"><span class="toc-number">1.</span> <span class="toc-text">第零章 集合与整数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#偏序集合"><span class="toc-number">2.</span> <span class="toc-text">偏序集合</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#偏序集合"><span class="toc-number">1.</span> <span class="toc-text">偏序集合</span></a></li></ol>
 		
 		</div>
 		
-		<h2 id="第零章_集合与整数">第零章 集合与整数</h2>
-<h2 id="偏序集合">偏序集合</h2>
+		<h2 id="偏序集合">偏序集合</h2>
+<p>集合$S$上的一个关系，记作$\leq$，叫做一个<strong>偏序</strong>，如果$\leq$满足</p>
+<p>$1)$ 反身性 $a\leq a$对所有$a\in S$；</p>
+<p>$2)$ 反对称性 若$a\leq b$且$b\leq a$，则$a=b$；</p>
+<p>$3)$ 传递性 若$a\leq b$且$b\leq c$，则$a\leq c$.</p>
+<p>一个具有偏序的集合叫做<strong>偏序集合</strong>，如果集合$S$上一个偏序$\leq$对于任意$a,b\in S$恒有$a\leq b$或$b\leq a$，则$\leq $叫做一个<strong>全序</strong>.偏序集合的元素$a,b$叫做<strong>可比较的</strong>，如果$a\leq b$和$b\leq a$有一成立.如果一个偏序集合$S$的一个子集$A$的任一对元素都可比较的，则$A$叫做$S$的一个<strong>链</strong>.</p>
+<p><strong>例$1$</strong> 设$X$为一集合.$X$的幂集$P(X)$按$X$的包含关系构成一个偏序集合，$P(X)$为一个链当且仅当$X$为空集或只含一个元素.</p>
+<pre><code>所谓幂集（<span class="keyword">Power</span> <span class="keyword">Set</span>）， 就是原集合中所有的子集（包括全集和空集）构成的集族。
+</code></pre><p><strong>例$2$</strong> 自然数系$\bf N$按小于等于号$\leq $是一个全序集合.</p>
+<p><strong>例$3$</strong> 自然数系$\bf N$的整除关系$a\mid b$记成$a\leq b$，就是一个偏序.</p>
+<p>设$S$为一个偏序集合.元素$a\in S$叫做$S$的一个<strong>极小元素</strong>，如果$S$没有元素$x$使得$x &lt; a$(即$x\leq a,x\neq a$)，或者说从$x\leq a$推出$x=a$.依此，元素$a\in S$叫做$S$的一个<strong>极大元素</strong>，如果不存在$x\in S$使得$a &lt; x$，或者说如果从$a\leq x$可推出$a=x$.若$S$有极大(小)元素$a$，并不要求$a$与$S$的所有元素可以比较.</p>
+<p><strong>例$4$</strong> 令$N_1 =N-\lbrace 0,1 \rbrace$，$N_1$按整除关系是一偏序集合，此时每个素数是$N_1$的极小元素，$N_1$没有极大元素.</p>
+<p>设$A$为偏序集合$S$的一个子集，元素$a\in S$叫做$A$的一个<strong>下界</strong>，如果对所有的$x\in A$都有$a\leq x$.类似，元素$a\in S$叫做$A$的一个<strong>上界</strong>，如果对所有$x\in A$都有$x\leq a$.$A$可以没有下界或有多个下界.若$A$有下界，也不要求它属于$A$，对上界也如此.在例$2$中令$A=\lbrace 2k\mid k\in \bf N\rbrace$，$A$没有上界但有下界$0$且$0\in A$.在例$3$中令$B=\lbrace 2k+1\mid k\in \bf N\rbrace$，$B$有一上界$0$，但$0\notin B$.</p>
+<p>设$S$为一个偏序集合，$A$为一个子集，如果$A$有一个下界$a$而且$a\in S$，则$a$叫做$A$的一个<strong>最小元素</strong>.类似地，如果$A$有一个上界$a$而且$a\in A$，则$a$叫做$A$的一个<strong>最大元素</strong>.$A$可以没有最小(大)元素，如果$A$有最小(大)元素，则它是唯一的.</p>
+<p>在例$1$中空集是$P(X)$的最小元素，$X$是$P(X)$的最大元素.在例$2$中$0$是$\bf N$的最小元素，$\bf N$没有最大元素.在例$3$中，$1$是$\bf N$的最小元素.$0$是$\bf N$的最大元素.   </p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -176,7 +188,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#第零章_集合与整数"><span class="toc-number">1.</span> <span class="toc-text">第零章 集合与整数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#偏序集合"><span class="toc-number">2.</span> <span class="toc-text">偏序集合</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#偏序集合"><span class="toc-number">1.</span> <span class="toc-text">偏序集合</span></a></li></ol>
  
   </div>
 

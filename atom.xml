@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我只需要你陪我60年。很傻，对吧？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-10-21T13:13:56.166Z</updated>
+  <updated>2014-10-22T01:27:30.028Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -19,14 +19,26 @@
     <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun06/"/>
     <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun06/</id>
     <published>2014-10-21T07:34:53.000Z</published>
-    <updated>2014-10-21T07:36:51.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="第零章_集合与整数">第零章 集合与整数</h2>
-<h2 id="偏序集合">偏序集合</h2>
+    <updated>2014-10-22T01:24:32.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="偏序集合">偏序集合</h2>
+<p>集合$S$上的一个关系，记作$\leq$，叫做一个<strong>偏序</strong>，如果$\leq$满足</p>
+<p>$1)$ 反身性 $a\leq a$对所有$a\in S$；</p>
+<p>$2)$ 反对称性 若$a\leq b$且$b\leq a$，则$a=b$；</p>
+<p>$3)$ 传递性 若$a\leq b$且$b\leq c$，则$a\leq c$.</p>
+<p>一个具有偏序的集合叫做<strong>偏序集合</strong>，如果集合$S$上一个偏序$\leq$对于任意$a,b\in S$恒有$a\leq b$或$b\leq a$，则$\leq $叫做一个<strong>全序</strong>.偏序集合的元素$a,b$叫做<strong>可比较的</strong>，如果$a\leq b$和$b\leq a$有一成立.如果一个偏序集合$S$的一个子集$A$的任一对元素都可比较的，则$A$叫做$S$的一个<strong>链</strong>.</p>
+<p><strong>例$1$</strong> 设$X$为一集合.$X$的幂集$P(X)$按$X$的包含关系构成一个偏序集合，$P(X)$为一个链当且仅当$X$为空集或只含一个元素.</p>
+<pre><code>所谓幂集（<span class="keyword">Power</span> <span class="keyword">Set</span>）， 就是原集合中所有的子集（包括全集和空集）构成的集族。
+</code></pre><p><strong>例$2$</strong> 自然数系$\bf N$按小于等于号$\leq $是一个全序集合.</p>
+<p><strong>例$3$</strong> 自然数系$\bf N$的整除关系$a\mid b$记成$a\leq b$，就是一个偏序.</p>
+<p>设$S$为一个偏序集合.元素$a\in S$叫做$S$的一个<strong>极小元素</strong>，如果$S$没有元素$x$使得$x &lt; a$(即$x\leq a,x\neq a$)，或者说从$x\leq a$推出$x=a$.依此，元素$a\in S$叫做$S$的一个<strong>极大元素</strong>，如果不存在$x\in S$使得$a &lt; x$，或者说如果从$a\leq x$可推出$a=x$.若$S$有极大(小)元素$a$，并不要求$a$与$S$的所有元素可以比较.</p>
+<p><strong>例$4$</strong> 令$N_1 =N-\lbrace 0,1 \rbrace$，$N_1$按整除关系是一偏序集合，此时每个素数是$N_1$的极小元素，$N_1$没有极大元素.</p>
+<p>设$A$为偏序集合$S$的一个子集，元素$a\in S$叫做$A$的一个<strong>下界</strong>，如果对所有的$x\in A$都有$a\leq x$.类似，元素$a\in S$叫做$A$的一个<strong>上界</strong>，如果对所有$x\in A$都有$x\leq a$.$A$可以没有下界或有多个下界.若$A$有下界，也不要求它属于$A$，对上界也如此.在例$2$中令$A=\lbrace 2k\mid k\in \bf N\rbrace$，$A$没有上界但有下界$0$且$0\in A$.在例$3$中令$B=\lbrace 2k+1\mid k\in \bf N\rbrace$，$B$有一上界$0$，但$0\notin B$.</p>
+<p>设$S$为一个偏序集合，$A$为一个子集，如果$A$有一个下界$a$而且$a\in S$，则$a$叫做$A$的一个<strong>最小元素</strong>.类似地，如果$A$有一个上界$a$而且$a\in A$，则$a$叫做$A$的一个<strong>最大元素</strong>.$A$可以没有最小(大)元素，如果$A$有最小(大)元素，则它是唯一的.</p>
+<p>在例$1$中空集是$P(X)$的最小元素，$X$是$P(X)$的最大元素.在例$2$中$0$是$\bf N$的最小元素，$\bf N$没有最大元素.在例$3$中，$1$是$\bf N$的最小元素.$0$是$\bf N$的最大元素.   </p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="第零章_集合与整数">第零章 集合与整数</h2>
-<h2 id="偏序集合">偏序集合</h2>
-]]>
+    <![CDATA[集合$S$上的一个关系，记作$\leq$，叫做一个偏序，如果$\leq$满足反身性、反对称性和传递性.]]>
+    
     </summary>
     
       <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
@@ -40,7 +52,7 @@
     <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun05/"/>
     <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun05/</id>
     <published>2014-10-20T01:33:53.000Z</published>
-    <updated>2014-10-21T07:36:31.000Z</updated>
+    <updated>2014-10-22T00:49:50.000Z</updated>
     <content type="html"><![CDATA[<h2 id="第零章_集合与整数">第零章 集合与整数</h2>
 <h2 id="欧拉函数和欧拉-费马定理">欧拉函数和欧拉-费马定理</h2>
 <p>首先介绍数论中一个重要的函数即欧拉函数.</p>
@@ -88,7 +100,7 @@
 <p>$$\underset{d\mid n}{\sum} \varphi (d)=\underset{d\mid n}{\sum} \varphi (\dfrac{n}{d}).$$</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[设$n$为一正整数，在$0,1,2,\cdots ,n-1$中与$n$互素的整数的个数记作$\varphi (n)$，叫做**欧拉函数**.]]>
+    <![CDATA[设$n$为一正整数，在$0,1,2,\cdots ,n-1$中与$n$互素的整数的个数记作$\varphi (n)$，叫做欧拉函数.]]>
     
     </summary>
     
@@ -173,9 +185,8 @@
     <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun04/"/>
     <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun04/</id>
     <published>2014-10-19T01:51:22.000Z</published>
-    <updated>2014-10-19T03:14:45.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="第零章_集合与整数">第零章 集合与整数</h2>
-<h2 id="同余式和同余方程">同余式和同余方程</h2>
+    <updated>2014-10-22T01:23:33.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="同余式和同余方程">同余式和同余方程</h2>
 <p>在整数环$\bf Z$中我们引进一个基本的等价关系，即同余概念.它和整数的运算是相容的，从而产生新的代数结构.同余概念在代数中产生了广泛的影响.</p>
 <p><strong>定义2</strong> 设$n$为一正整数，$a,b$为任意整数.如果$n\mid a-b$，则$a,b$叫做<strong>模$n$同余</strong>，记作</p>
 <p>$$a\equiv b\pmod{n},$$</p>
@@ -237,9 +248,8 @@
     <link href="http://jianhanglin.github.io/2014/09/daishuxueyinlun03/"/>
     <id>http://jianhanglin.github.io/2014/09/daishuxueyinlun03/</id>
     <published>2014-10-18T10:21:34.000Z</published>
-    <updated>2014-10-19T01:50:51.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="集合与整数">集合与整数</h2>
-<h2 id="整数-_整数的整除性">整数. 整数的整除性</h2>
+    <updated>2014-10-22T01:26:17.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="整数-_整数的整除性">整数. 整数的整除性</h2>
 <p>我们知道在自然数系内方程$a+x=b$有解当而且仅当$a\leq b$.当$a\leq b$时，这方程的解$x$记作$b-a$，叫做$b$减$a$的差.这意味着在自然数系内当$b\geq a$时$b$减$a$有意义，$b-a$表示一个自然数，它是这方程的解，否则$b-a$不能表示自然数，因而无意义.为了使得自然数的差$b-a$恒有意义.需要将自然数系加以扩充.我们从经验得到启示，一个扩充的办法是引进“正”和“负”的概念.当自然数$b&gt;a$时，$b-a$表示正整数，若$b&lt;a$时，$b-a$表示负整数.为了从数学上统一处理，我们的作法如下：</p>
 <p>作自然数系的笛卡尔积${\bf N}\times {\bf N}=\lbrace (a,b)\mid a,b\in {\bf N}\rbrace $.$(a,b)$意味着自然数$a,b$的差$a-b$.由于有不同的$(a,b)$表示同一个差，就需要在${\bf N}\times {\bf N}$中引进一个等价关系$\sim$：</p>
 <p>$$(a,b)\sim (c,d)\Leftrightarrow a+d=b+c.$$</p>
@@ -411,10 +421,9 @@
     <link href="http://jianhanglin.github.io/2014/09/daishuxueyinlun02/"/>
     <id>http://jianhanglin.github.io/2014/09/daishuxueyinlun02/</id>
     <published>2014-10-18T10:21:33.000Z</published>
-    <updated>2014-10-19T01:58:10.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="集合与整数">集合与整数</h2>
-<h2 id="自然数">自然数</h2>
-<p><strong>自然数系</strong>是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.&lt;—!more—&gt;自然数系是可数无限集合的一个原型.它的良序性质是数学归纳法原理的依据.自然数系的整除性和素数的研究促使了数论的发展.用<strong>皮阿诺(Peano)公理</strong>来描述自然数，容易使我们看清自然数的本质.</p>
+    <updated>2014-10-22T01:26:07.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="自然数">自然数</h2>
+<p><strong>自然数系</strong>是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.自然数系是可数无限集合的一个原型.它的良序性质是数学归纳法原理的依据.自然数系的整除性和素数的研究促使了数论的发展.用<strong>皮阿诺(Peano)公理</strong>来描述自然数，容易使我们看清自然数的本质.</p>
 <p>自然数系是这样一个非空集合$\bf N$，其中有一个选定了的元素$0$，和一个$\bf N$到自身的后继映射$a\mapsto a^{+}$，$a^{+}$叫做$a$的后继，满足</p>
 <p>$i)$映射$a\mapsto a^{+}$是单一的.即从$a^{+}=b^{+}$推出$a=b$，</p>
 <p>$ii)0$不是任何元素的后继，即不存在$a\in \bf N$使得$a^{+}=0$，</p>
@@ -455,9 +464,8 @@
 <p><strong>证明</strong> 我们是在引号中的命题已被证明成立的前提下，来证明$P$对所有自然数$n$都真.设$S=\lbrace  x \in {\bf N}\mid P(x)$假$\rbrace $，求证$S$为空集.反证法.假如$S$非空，则$S$有一个最小自然数$m$.于是$P(m)$假.但是$P(x)$对所有小于$m$的自然数都真.这与上述命题矛盾.所以$S=\varnothing$.$\blacksquare$</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="集合与整数">集合与整数</h2>
-<h2 id="自然数">自然数</h2>
-<p><strong>自然数系</strong>是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、]]>
+    <![CDATA[自然数系是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.]]>
+    
     </summary>
     
       <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
@@ -471,9 +479,8 @@
     <link href="http://jianhanglin.github.io/2014/09/Algebra13/"/>
     <id>http://jianhanglin.github.io/2014/09/Algebra13/</id>
     <published>2014-10-18T10:21:32.000Z</published>
-    <updated>2014-10-19T00:42:52.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="Groups">Groups</h2>
-<h2 id="Normal_Subgroups">Normal Subgroups</h2>
+    <updated>2014-10-22T01:25:34.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="Normal_Subgroups">Normal Subgroups</h2>
 ]]></content>
     <summary type="html">
     <![CDATA[NORMAL　SUBGROUPS]]>
@@ -491,9 +498,8 @@
     <link href="http://jianhanglin.github.io/2014/09/Algebra12/"/>
     <id>http://jianhanglin.github.io/2014/09/Algebra12/</id>
     <published>2014-10-18T10:21:31.000Z</published>
-    <updated>2014-10-19T00:42:37.000Z</updated>
+    <updated>2014-10-22T01:25:19.000Z</updated>
     <content type="html"><![CDATA[<h2 id="Groups">Groups</h2>
-<h2 id="Groups-1">Groups</h2>
 <p>A <strong>group</strong> $G$ is a monoid,such that for every element $x\in G$ there exists an element $y\in G$ such that $xy=yx=e$.Such an element $y$ is called an <strong>inverse</strong> for $x$.&lt;—!more—&gt;Such an inverse is unique,because if $y’$ is also an inverse for $x$,then</p>
 <p>$$y’=y’e=y’(xy)=(y’x)y=ey=y.$$</p>
 <pre><code><span class="built_in">inverse</span>：逆元
@@ -634,8 +640,7 @@
 ]]></content>
     <summary type="html">
     <![CDATA[<h2 id="Groups">Groups</h2>
-<h2 id="Groups-1">Groups</h2>
-<p>A <strong>group</strong> $G$ is a monoid,such that for every element $x\in G$ t]]>
+<p>A <strong>group</strong> $G$ is a monoid,such that for every element $x\in G$ there exists an element $y\in G]]>
     </summary>
     
       <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
@@ -808,12 +813,8 @@
     <link href="http://jianhanglin.github.io/2014/09/jinshidaishuyinlun112/"/>
     <id>http://jianhanglin.github.io/2014/09/jinshidaishuyinlun112/</id>
     <published>2014-10-18T08:07:43.000Z</published>
-    <updated>2014-10-19T00:41:31.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="简介">简介</h2>
-<p>近世代数是代数学一个基础学科，讲述代数基本结构的特性。本书除系统介绍群、环和域的基础知识（包括域的有限伽罗瓦扩张理论）之外，还力图强调近世代数中的思想和方法.书中有大量习题.除主线内容外，还增加一些附录用来开拓和深化所学内容.</p>
-<p>本书在中国科学技术大学讲授多年的讲义基础上修改写成.可作为高等学校数学系基础课教材，也可供数学工作者和通信、计算机科学等领域的工程技术人员参考.</p>
-<h2 id="群">群</h2>
-<h2 id="什么是群">什么是群</h2>
+    <updated>2014-10-22T01:27:05.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="什么是群">什么是群</h2>
 <p><strong>定义1</strong>&nbsp;&nbsp;集合$S$和$S$上满足结合律的二元运算$\cdot$所形成的代数结构叫做<strong>半群</strong>.这个半群记成$(S,\cdot )$或者简记成$S$，运算$x\cdot y$也常常简写成$xy$.</p>
 <p>如果运算又满足交换律，则$(S,\cdot )$叫做<strong>交换半群</strong>.像通常那样令$x^2=x\cdot x$，$x^{n+1}=x^n\cdot x(=x\cdot x^n$,$n\geq 1)$.</p>
 <p><strong>定义2</strong>&nbsp;&nbsp;设$S$是半群，元素$e\in S$叫做半群$S$的幺元素，是指对每个$x\in S$,$xe=ex=x$.</p>
@@ -946,7 +947,7 @@
 <p>证：令$H=\lbrace g^{-1}\alpha (g)\mid g\in G\rbrace $，则$H=G$.(事实上，若$g\neq h$，则$g^{-1}\alpha (g)\neq h^{-1}\alpha (h)$：否则$hg^{-1}$是$\alpha$的不动点，从而$g=h$.矛盾！)于是，对任一$a\in G,a=g^{-1}\alpha (g)$.因$\alpha ^2=1$，故$a^{-1}=\alpha (g^{-1})g=\alpha (a)$.从而$\alpha (ab)=(ab)^{-1}=b^{-1}a^{-1}=\alpha (b)\alpha (a)=\alpha (ba)$.故$ba=ab,\forall a,b \in G$.即$G$是$Abel$群.因$a^{-1}\neq a,\forall 1\neq a\in G$，故$G$的阶为奇数.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[什么是群]]>
+    <![CDATA[集合$S$和$S$上满足结合律的二元运算$\cdot$所形成的代数结构叫做半群.]]>
     
     </summary>
     
