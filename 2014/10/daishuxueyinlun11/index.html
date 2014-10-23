@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>《代数学引论》第零章 集合与整数 4 同余式和同余方程 | JianhangLin</title>
+    <title>《代数学引论(第一卷)基础代数》 第1章 代数的起源 1 简谈代数 | JianhangLin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="JianhangLin">
     
-    <meta name="description" itemprop="description" content="在整数环$\bf Z$中我们引进一个基本的等价关系，即同余概念.它和整数的运算是相容的，从而产生新的代数结构.同余概念在代数中产生了广泛的影响.">
+    <meta name="description" itemprop="description" content="代数从何而来？粗略地说，代数起源于加法，乘法和求整数次方幂的计算艺术.">
     
     
     
@@ -99,14 +99,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2014/10/daishuxueyinlun04/" title="《代数学引论》第零章 集合与整数 4 同余式和同余方程" itemprop="url">《代数学引论》第零章 集合与整数 4 同余式和同余方程</a>
+      <a href="/2014/10/daishuxueyinlun11/" title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 1 简谈代数" itemprop="url">《代数学引论(第一卷)基础代数》 第1章 代数的起源 1 简谈代数</a>
   </h1>
   <p class="article-author">By
        
 		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
 		
   <p class="article-time">
-    <time datetime="2014-10-19T01:51:22.000Z" itemprop="datePublished"> 发表于 10月 19 2014</time>
+    <time datetime="2014-10-22T08:27:50.000Z" itemprop="datePublished"> 发表于 10月 22 2014</time>
     
   </p>
 </header>
@@ -116,55 +116,30 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#同余式和同余方程"><span class="toc-number">1.</span> <span class="toc-text">同余式和同余方程</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简谈代数"><span class="toc-number">1.</span> <span class="toc-text">简谈代数</span></a></li></ol>
 		
 		</div>
 		
-		<h2 id="同余式和同余方程">同余式和同余方程</h2>
-<p>在整数环$\bf Z$中我们引进一个基本的等价关系，即同余概念.它和整数的运算是相容的，从而产生新的代数结构.同余概念在代数中产生了广泛的影响.</p>
-<p><strong>定义2</strong> 设$n$为一正整数，$a,b$为任意整数.如果$n\mid a-b$，则$a,b$叫做<strong>模$n$同余</strong>，记作</p>
-<p>$$a\equiv b\pmod{n},$$</p>
-<p>$n$叫做<strong>模数</strong>.否则，$a,b$叫做<strong>模$n$非同余</strong>，记作$a\not\equiv b\pmod{n}$.以下的讨论恒固定一个模数或几个模数.</p>
-<p>容易证明$a\equiv b\pmod{n}$的充要条件是除法算式$a=q_1n+r_1$和$b=q_2n+r_2$有相同的余数$r_1=r_2$.</p>
-<p>同余概念以最适宜于描写一种有限多个状态的周期现象.例如计算某一天是星期几，可以取$7$作模数.计算一个整数是否偶数，可以取$2$作模数.取$2$作模做，余数$0$和$1$还可以描写电路的连接和断开.同余概念和整数的运算是相容的，表现在下列基本性质中.模数固定时，$a\equiv b\pmod{n}$可简写成$a\equiv b$.如果不写出模数，表示是对同一个模数而言的.</p>
-<p>$1$.同余是一个等价关系.</p>
-<p>$2$.若$a\equiv b$，$c\equiv d$，则$a\pm c\equiv b\pm d\pmod{n}$.</p>
-<p>$3$.若$a\equiv b$，$c\equiv d$，则$a\cdot c\equiv b\cdot d\pmod{n}$.</p>
-<p>$4$.若$ac\equiv bc\pmod{n}$，$(c,n)=1$，则$a\equiv b\pmod{n}$.</p>
-<p>$5$.若$a\equiv b\pmod{n}$，$m\mid n$，则$a\equiv b\pmod{m}$.</p>
-<p>$6$.若$a\equiv b\pmod{n}$，则$(a,n)=(b,n)$.</p>
-<p>$7$.若$a\equiv b\pmod{n}$，$d$为$a,b,n$的一个公因子，$a=da_1$，$b=db_1$，$n=dn_1$，则$a_1\equiv b_1\pmod{n_1}$.</p>
-<p><strong>例1</strong> $716\cdot 93$和$543\cdot 93$模$61$是否同余？假设$716\cdot 93\equiv 543\cdot 93\pmod{61}$，根据性质$4$，因$(93,61)=1$，有$716\equiv 543\pmod{61}$.但$61\nmid (716-543)=173$，所以$716\cdot 93\not\equiv 543\cdot 93\pmod{61}$.</p>
-<p><strong>例2</strong> 设复数$\varepsilon =\cos{\dfrac{2\pi}{17}}+i\sin{\dfrac{2\pi}{17}}$.计算$\varepsilon$的整数幂$\varepsilon ^m$等于计算$\varepsilon ^r$，其中$r$是$m$模$17$的余数，$0\leq r &lt; 17$.</p>
-<p>对于一个给定的模数$n$，全体整数按模$n$同余分成一些等价类，此时的等价类叫做<strong>整数模$n$的剩余类</strong>，含整数$a$的剩余类记作$\overline{a}$，剩余类$\overline{a}$的任一个元素叫做$\overline{a}$的一个代表.在每个剩余类中任取一个代表$r_i$，由这些代表组成的集合叫做整数模$n$的一个<strong>完全剩余代表系</strong>.整数模$n$的一个完全代表系$S$也可以这样来刻画：$1)$每个整数和$S$中一个元素模$n$同余，$2)S$中元素两两互不同余.根据除法算式可知，集合$S=\lbrace 0,1,2,\cdots ,n-1\rbrace$是模$n$的一个完全剩余类代表系.</p>
-<p>由模$n$的剩余类组成的商集记作${\bf Z}/(n)$.在${\bf Z}/(n)$中可以定义加法和乘法如下：</p>
-<p>$$\overline{a}+\overline{b}=\overline{a+b},$$</p>
-<p>$$\overline{a}\cdot \overline{b}=\overline{a\cdot b}.$$</p>
-<p>根据同余式的性质，定义与代表的取法无关而且加法和乘法还满足结合律、交换律和分配律，加法有零元素$\overline{0}$，每个$\overline{a}$有负元素：$\overline{-a}$：$\overline{a}+\overline{-a}=\overline{0}$.${\bf Z}/(n)$叫做<strong>整数模$n$的环</strong>.</p>
-<p>这一节剩下的部分来讨论一次同余方程和方程组.同余式</p>
-<p>$$ax\equiv b\pmod{n},a\not\equiv 0\pmod{0}$$</p>
-<p>是含有一个未知量$x$的一次式，叫做<strong>一次同余方程</strong>.若$x=c\in \bf Z$代入上方程使两边同余，则$c$叫做上方程的一个<strong>解</strong>.上方程的两个解$c_1,c_2$看作相同当而且仅当$c_1 \equiv c_2\pmod{n}$.</p>
-<p><strong>定理4</strong> 设$(a,n)=1$，则一次同余方程</p>
-<p>$$ax\equiv b\pmod{n}$$</p>
-<p>有解而且只有一个解.</p>
-<p><strong>证明</strong> 由于$(a,n)=1$，存在整数$u,v$使得$ua+vn=1$.两边乘$b$，$uba+vbn=b$，令$ub=c$，于是$ca\equiv uba\equiv b\pmod{n},x\equiv c$为其一解.其次，令$c_1,c_2$为任意两个解，于是</p>
-<p>$$ac_1\equiv b\pmod{n},$$</p>
-<p>$$ac_2\equiv b\pmod{n}.$$</p>
-<p>相减得$a(c_1-c_2)\equiv 0\pmod{n}$，由于$(a,n)=1$，根据同余的性质$4$，有$c_1\equiv c_2\pmod{n}$，$c_1,c_2$为同一解.</p>
-<p>考虑下列<strong>一次同余方程组</strong></p>
-<p>$$\begin{cases} x\equiv b_1\pmod{n_1}, \\ x\equiv b_2\pmod{n_2}, \\ \cdots \cdots \cdots \cdots \cdots \\ x\equiv b_r\pmod{n_r}. \end{cases} \tag{1}$$</p>
-<p>其中$n_1,n_2,\cdots ,n_r$为大于$1$的整数，两两互素，$b_1,b_2,\cdots ,b_r$是任意给定的整数.如果$x=c\in \bf Z$代入方程组使得同余式同时都成立，则$c$叫做方程组$(1)$的一个解.上方程组的两个解$c_1$和$c_2$看作相同当而且仅当</p>
-<span>$$c_1 \equiv c_2 \pmod{\prod \limits_{i=1}^rn_i}.$$</span>
+		<p>代数从何而来？粗略地说，代数起源于加法，乘法和求整数次方幂的计算艺术.如果用字母代替数(这一点并非显而易见且有多种方式)，就使我们能够在更广泛的代数系统中使用类似的法则进行计算.对这一问题给出透彻回答的尝试将我们带进了久远的时代，带进了数学思想奇妙产生的过程.这一答案，最困难的部分与我们今天的基本代数结构：群、环、域、模等紧密相关.但这恰好是本书的大部分内容，因而第一章的目的目前似乎还达不到.</p>
+<p>幸运的是，在大多数代数公理抽象的外表下，隐含着非常具体的理论和实际问题，它们的解决常常幸运地成为进一步发展抽象理论的动力.同样地，所发展的理论又成为解决这些问题的基础和工具.存在于所有数学领域内的理论与应用之间的复杂的相互作用在代数中表现得尤为明显，同时也在某种程度上说明我们通常采用的围绕中心问题层层深入的教学方法是有道理的.</p>
+<p>在对历史事件进行过简短评注之后，我们将叙述包含在下面章节中的一些问题.这些问题之一成为研究线性方程组，矩阵和行列式理论的出发点.我们介绍高斯方法并得到解线性方程组的初步认识.</p>
+<p>在这一步引入标准的符号和术语是有益的，为此我们将扼要地给出集合与映射的理论.</p>
+<p>我们将引入等价关系和商映射的重要概念.进一步，为了详细讲解数学归纳法原理.建立了一些初等的组合关系式，我们特别引出了置换的概念，它是行列式理念的基础.</p>
+<p>最后在末尾一节中列出了整数的最简单的算术性质.这些性质不仅将来要用，也是在更复杂的代数系统中构造类似算法的原型.</p>
+<p>本章的材料并未超出中学课程太多.仅要求读者准备上升到更高一般的观点。</p>
+<h2 id="简谈代数">简谈代数</h2>
+<p>在我们今天的时代，谈论数学的“代数化”不是没有理由的，即代数的思想和方法渗透到数学各个分支的理论与应用中.这种情况在$20$世纪中叶变得十分明显，但情况并不总是如此.正如人类活动的所有领域一样，数学也会受到时尚的影响.代数方法的流行有其实际的原因，尽管对它的迷恋有时会超越理智的界限.由于掩盖了内容的代数外壳不亚于对代数的基本无知造成的不幸，所以教科书的作者要是擅长于避免代数过分的形式化，那么就会合情合理地受到赞许.</p>
+<p>只要不走极端，代数自古以来就是数学的一个重要的组成部分.几何也是这样，但我们愿意在这里引用索菲·格尔曼的观点.“代数不外是符号的几何，而几何不外是图形的代数.”后来情况有些变化，但仍可以说“数学对象的自然属性实质上是不太重要的第二位的事情，例如我们得到的结果既可以用纯几何定理的形式表述，也可以借助解析几何以代数定理的形式出现.”(<a href="http://baike.baidu.com/view/786982.htm?fr=aladdin" target="_blank" rel="external">尼·布尔巴基</a>).</p>
+<p>根据“重要的不是数学对象，而是它们之间的关系”这一原则，代数被定义为对各种集合的元素施行代数运算的科学(这种说法有些重复，并且使未入门者完全莫名其妙).代数运算本身来源于初等算术.反过来，基于代数学的思想，“高等算术”，即数论中的许多事实得到了最自然的证明.</p>
+<p>但是代数结构，即带有代数运算的集合，意义远远超出了对数论的应用.许多数学对象(拓扑空间，多复变函数等等)，其研究方法是建立相应的代数结构，即便与所研究的对象不完全吻合，但在所有的情况下都能反映出它们的本质方面.在现实世界中没有什么东西是完全相同的.</p>
+<p>对代数学的这明确看法是在$45$年前由量子力学的创始人之一狄拉克提出来的，他说：“现代物理学越来越需要抽象数学及其基础的发展.非欧几何和非交换代数一度被认为是虚构的，是迷恋逻辑推理的简单结果，而现在则被认为是描绘物理世界不可或缺的工具.”</p>
+<p>代数工具在研究量子力学的基本粒子，在考察刚体性质和晶体结构(在这方面，群表示理论特别重要)，在分析经济模式，在制造现代化计算机等方面都是非常有用的.</p>
+<p>与此同时，代数学也受到其他学科新鲜汁液的哺育，其中包括数学中的其他学科.例如代数的同调方法产生于拓扑学和代数理论.因而代数的面貌和人们对代数的看法在不同的时期有所改变是不足为奇的.我们不可能详细地列出这些变化，不仅由于篇幅有限，尤其是因为书写历史必需具体，而这只有在学习了代数的基础知识之后才能办到.我们仅限于列举一个带有人名和年代的图表.</p>
+<span>$$  \begin{array}{|l|l|}  \hline  古代巴比伦和埃及文化，希腊文化.丢番图的 & 自然数与正有理数的四则运算.几何学与 \\  “算术”(公元前3世纪) & 天文学中的代数公式.作图问题的形成 \\  & (立方倍积与三等分角)，代数思想的使用 \\  & 是很久以后的事情. \\  \hline  中世纪的东方文化.穆罕默德·花拉子米 & 一次及二次代数方程.术语“代数”一词 \\  (\text{Muhammad al-Khwārizmī})的著作《代数》 & 的产生. \\  (约825年) & \\  \hline  文艺复兴时代 & 三次和四次代数方程的一般解，建立了现 \\  \text{S.}费罗(1465-1526) & 代的代数符号 \\  \text{N.}塔尔塔利亚(1500-1557) & \\  \text{G.}卡尔达诺(1501-1576) & \\  \text{L.}费拉里(1522-1565) & \\  \text{F.}韦达(1540-1603) & \\  \text{R.}邦贝利(1530-1572) & \\  \hline  17至18世纪 & 出现了解析几何——几何与代数之间的 \\  \text{R.}笛卡儿(1596-1650) & 坚实的桥梁.\\  \text{P.}费马(1601-1665) & 数论研究趋于活跃.\\  \text{I.}牛顿(1643-1727) & 开始研究多项式代数.\\  \text{G.}莱布尼茨(1646-1716) & 深入研究代数方程求解的一般公式.\\  \text{L.}欧拉(1707-1783) & 证明数值系数代数方程根的存在性的首.\\  \text{J.}达朗贝尔(1717-1783) & 批方法.\\  \text{J.L.}拉格朗日(1736-1813) & 行列式理论的开端.\\  \text{G.}克拉默(1704-1752) & \\  \text{P.}拉普拉斯(1749-1827) & \\  \text{A.}范德蒙德(1735-1796) & \\  \hline  19世纪至20世纪初 & 证明数值系数方程根的存在性的基本定理. \\  \text{K.F.}高斯(1777-1855) & 代数理论的深入发展.\\  \text{P.}狄利克雷(1805-1859) & \\  \text{E.}库默尔(1810-1893) & \\  \text{L.}克罗内克(1823-1891) & \\  \text{R.}戴德金(1831-1916) & \\  \text{E.L.}佐洛塔廖夫(1847-1878) & \\  \text{G.F}沃罗诺依(1868-1908) & \\  \text{A.A.}马尔可夫(1856-1922) & \\  \hline  \text{P.L}切比雪夫(1821-1894) & 探讨代数方程近似解的求法.\\  \text{G.}埃尔米特(1822-1901) & 使根处于某一位置时系数应满足的条件.\\  \text{N.I}罗巴切夫斯基(1792-1856) & \\  \text{A.}胡尔维茨(1859-1919) & \\  \text{P.}鲁菲尼(1765-1822) & 证明次数 \geq 5的方程不能用根式求解.\\  \text{N.H.}阿贝尔(1802-1829) & 代数函数论的发展.\\  \text{G.}雅可比(1804-1851) & 伽罗瓦理论的创立.\\  \text{E.}伽罗瓦(1811-1832) & 主要基于转换群的有限群论的开端.\\  \text{G.}黎曼(1826-1866) & \\  \text{A.L.}柯西(1789-1857) & \\  \text{G.}若尔当(1838-1922) & \\  \text{L.}西罗(1832-1918) & \\  \hline  \text{H.}格拉斯曼(1809-1877) & 线性代数方法的深入发展.\\  \text{J.}西尔维斯特(1814-1897) & 发现四元数后引起的超复数的研究\\  \text{A.}凯莱(1821-1895) & (这样的系统现在称为代数).\\  \text{W.}哈密尔顿(1805-1865) & 特别是连续群(李群)的发展为李代\\  \text{G.}布尔(1815-1864) & 数理论奠定了基础.\\  \text{S.}李(1842-1899) & 代数几何和不变量理论成为数学的重要\\  \text{F.}弗罗贝尼乌斯(1849-1918) & 分支.\\  \text{J.}塞雷(1819-1885) & 在19世纪，数学尚未高度专门化，许多大科\\  \text{M.}诺特(1844-1922) & 学家在不同的领域内创造性地工作.\\  \text{D.A.}格拉韦(1863-1939) & \\  \text{H.}庞加莱(1854-1912) & \\  \text{F.}克莱茵(1849-1925) & \\  \text{W.}伯恩赛德(1852-1927) & \\  \text{F.}莫林(1861-1941) & \\  \text{J.}舒尔(1875-1941) & \\  \text{H.}外尔(1885-1955) & \\  \text{F.}恩里克(1871-1946) & \\  \hline  \text{J.}冯·诺依曼(1903-1957) & 20世纪上半叶，整个数学大厦得到了根本\\  \text{D.}希尔伯特(1862-1943) & 性的改造.\\  \text{E.}嘉当(1869-1951) & 代数不再是关于解代数方程的科学，开始\\  \text{K.}亨泽尔(1861-1941) & 坚定地滑道公理化和更加抽象的道路发展.\\  \text{E.}施泰尼茨(1871-1928) & \\  \text{E.}诺特(1882-1935) & \\  \text{E.}阿廷(1898-1962) & \\  \text{H.}布尔巴基《数学原理》. & \\  \hline  \end{array}  $$</span>
 
-<p><strong>定理5 (孙子定理)</strong> 设一次同余方程组$(1)$中大于$1$的整数$n_1,n_2,\cdots ,n_r$两两互素，$b_1,b_2,\cdots ,b_r$是任意给定的整数，则$(1)$有解而且只有一解.</p>
-<p><strong>证明</strong> 这里只证明$r=2$的情况，读者可以应用数学归纳法去证明一般情况.设$r=2$，由于$(n_1,n_2)=1$，存在一对整数$u_1,u_2$使得$u_1n_1+u_2n_2=1$.令$e_2=u_1n_1$，$e_1=u_2n_2$.于是$e_i\equiv 1\pmod{n_i},i=1,2$，而$e_i\equiv 0\pmod{n_j},i\neq j$.取$c=b_1e_1+b_2e_2$，则$c$为方程组$(1)$的解.其次证明解的唯一性，设$c_1,c_2$为任意两解，于是</p>
-<p>$$c_1\equiv b_1,c_2\equiv b_1\pmod{n_1},$$</p>
-<p>$$c_1\equiv b_2,c_2\equiv b_2\pmod{n_2}.$$</p>
-<p>同余式相减得</p>
-<p>$$c_1-c_2\equiv 0\pmod{n_1},$$</p>
-<p>$$c_1-c_2\equiv 0\pmod{n_2}.$$</p>
-<p>由于$(n_1,n_2)=1$，根据互素性质$(3)c_1-c_2\equiv 0\pmod{n_1n_2}$，所以$c_1,c_2$为同一解.$\blacksquare$</p>
-<p>孙子定理在国际上叫做中国剩余定理.</p>
+<span>$$  \begin{array}{|ll|}  \hline  环、模、范畴、同调理论成为常用的语言.许多不同的理论符合泛代数的通用模式.模型论兴起于 & \\  代数与数理逻辑的交界处.古老的理论焕然一新，扩大了自己的应用领域. & \\  例子有现代代数几何、代数拓扑、代数K-理论、代数群理论.有限群论经历了特殊的飞跃. & \\  \hline  \end{array}  $$</span>
+
+<p>目前代数学正处于生机勃勃的发展中.其中俄罗斯数学家做出了重大贡献.我国高水平的代数研究，应归功于下述学者，如$\text{N.G.}$切博塔廖夫($1894-1947$)，$\text{O.Ju.}$施米特($1891-1956$)，$\text{A.I.}$马尔采夫($1909-1967$)，$\text{A.G.}$库洛什($1908-1971$)，$\text{P.S.}$诺维科夫($1901-1975$)，$\text{D.K.}$法捷耶夫($1907-1989$).</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -172,7 +147,7 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/抽象代数/">抽象代数</a>
+  <a class="article-category-link" href="/categories/基础代数/">基础代数</a>
 </div>
 
 
@@ -186,7 +161,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://jianhanglin.github.io/2014/10/daishuxueyinlun04/" data-title="《代数学引论》第零章 集合与整数 4 同余式和同余方程 | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  <div data-url="http://jianhanglin.github.io/2014/10/daishuxueyinlun11/" data-title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 1 简谈代数 | JianhangLin" data-tsina="1763313312" class="share clearfix">
   </div>
 
 </div>
@@ -196,18 +171,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2014/09/hello-world/" title="Hello World">
+ <a href="/2014/10/daishuxueyinlun12/" title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 2 几个典型问题">
   <strong>上一篇：</strong><br/>
   <span>
-  Hello World</span>
+  《代数学引论(第一卷)基础代数》 第1章 代数的起源 2 几个典型问题</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2014/09/daishuxueyinlun03/"  title="《代数学引论》第零章 集合与整数 3 整数. 整数的整除性">
+<a href="/2014/10/daishuxueyinlun0/"  title="《代数学引论(第一卷)基础代数》 前言">
  <strong>下一篇：</strong><br/> 
- <span>《代数学引论》第零章 集合与整数 3 整数. 整数的整除性
+ <span>《代数学引论(第一卷)基础代数》 前言
 </span>
 </a>
 </div>
@@ -226,7 +201,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#同余式和同余方程"><span class="toc-number">1.</span> <span class="toc-text">同余式和同余方程</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简谈代数"><span class="toc-number">1.</span> <span class="toc-text">简谈代数</span></a></li></ol>
  
   </div>
 
