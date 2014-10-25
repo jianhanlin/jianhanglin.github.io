@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我只需要你陪我60年。很傻，对吧？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-10-23T02:10:52.059Z</updated>
+  <updated>2014-10-25T01:28:33.155Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -15,11 +15,148 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 3 线性方程组初步]]></title>
+    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun113/"/>
+    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun113/</id>
+    <published>2014-10-23T04:30:34.000Z</published>
+    <updated>2014-10-25T01:27:45.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="线性方程组初步">线性方程组初步</h1>
+<p>带有实系数$a,b,c,d,e,f$的线性方程$ax=b$，以及形如</p>
+<span>$$  \begin{array}{c}  ax+by=e, \\  cx+dy=f \\  \end{array}\\ \tag{1}  $$</span>
+
+<p>方程组的求解问题在中学已经学习过了.我们现在的目的是学会解形如</p>
+<span>$$  \begin{array}{c}  a_{11}x_1+a_{12}x_2+\cdots +a_{1n}x_n=b_1, \\  a_{21}x_1+a_{22}x_2+\cdots +a_{2n}x_n=b_2, \\  \cdots \cdots \cdots \cdots \\  a_{m1}x_1+a_{m2}x_2+\cdots +a_{mn}x_n=b_m, \\  \end{array}\\ \tag{2}  $$</span>
+
+<p>的一般线性代数方程组(或简称线性方程组).此处$m,n$是任意正整数.看起来，从方程$(1)$过渡到方程$(2)$时纯粹数量上的增长是一件具有本质意义的事情.形如$(2)$的线性方程组直接出现在几乎所有的数学分支中，而所谓线性方法，其最终产物往往是线性方程组的解，已经成为数学中发展最充分的部分.简略地说，形如$(2)$的线性方程组为$19$世纪创立积分方程的理论提供了原型，而后者在力学和物理学中有着特殊重要的作用.再如计算机处理的大量实际问题也要归结为线性方程组$(2)$.</p>
+<h2 id="名词">名词</h2>
+<p>注意到方程组$(2)$的系数使用了非常简明方便的符号：系数<span>$a_{ij}$</span>表示在第$i$个方程中第$j$个未知数的系数(读作”$a-i-j$”，例如<span>$a_{12}$</span>读作”$a-1-2$”,而不是“$a-12$”).数字$b_i$叫作第$i$个方程的<strong>常数项</strong>.如果$b_i=0$，$i=1,2,\cdots ,m$，称方程组$(2)$为齐次的.对于任意的一组$b_i=0$，$i=1,\cdots ,m$，线性方程组</p>
+<span>$$  \begin{array}{c}  a_{11}x_1+a_{12}x_2+\cdots +a_{1n}x_n=0, \\  a_{21}x_1+a_{22}x_2+\cdots +a_{2n}x_n=0, \\  \cdots \cdots \cdots \cdots \\  a_{m1}x_1+a_{m2}x_2+\cdots +a_{mn}x_n=0, \\  \end{array}\\ \tag{2°}  $$</span>
+
+<p>叫作与方程组$(2)$相对应的<strong>齐次方程组</strong>，或方程组$(2)$的<strong>诱导组</strong>，未知数的系数可以排成一个长方形的表</p>
+<span>$$  \begin{pmatrix}  a_{11} & a_{12} & \cdots & a_{1n} \\  a_{21} & a_{22} & \cdots & a_{2n} \\  \cdots & \cdots & \cdots & \cdots \\  a_{m1} & a_{m2} & \cdots & a_{mn} \\  \end{pmatrix} \tag{3}  $$</span>
+
+<p>叫作一个<strong>$m\times n$矩阵</strong>(如果$m=n$，则称为$n$阶<strong>方阵</strong>)，并可简记为<span>$(a_{ij})$</span>或用字母$A$表示.自然地<span>$(a_{i1},a_{i2},\cdots ,a_{in})$</span>叫作矩阵$(3)$的第$i$行，而第$j$列</p>
+<span>$$  \begin{pmatrix}  a_{1j} \\  a_{2j} \\  \vdots \\  a_{mj} \\  \end{pmatrix}  $$</span>
+
+<p>今后将表示成用方括号括起来的行<span>$[a_{1j},a_{2j},\cdots ,a_{mj}]$</span>以便节省地方.当矩阵是方阵时，我们还可以谈它的由元素<span>$a_{11},a_{22},\cdots ,a_{nn}$</span>组成的<strong>主对角线</strong>.除主对角线外，其他所有元素都等于零的方阵<span>$(a_{ij})$</span>，叫作<strong>对角矩阵</strong>，有时记作</p>
+<span>$$\text{diag}(a_{11},a_{22},\cdots ,a_{nn}),$$</span>
+
+<p>当<span>$a_{11}=a_{22}=\cdots =a_{nn}=a$</span>时，称之为<strong>纯量</strong>矩阵，记作<span>$\text{diag}_n(a)$</span>.矩阵<span>$\text{diag}_n(1)$</span>叫作<strong>单位</strong>矩阵，通常记作$E_n$，当矩阵的阶数确定时可简记作$E$.</p>
+<p>与矩阵$(3)$同时，我们也考虑方程组$(2)$的<strong>增广</strong>矩阵<span>$(a_{ij}\mid b_{i})$</span>它是由矩阵$(3)$增添常数项的列$[b_1,b_2,\cdots ,b_m]$得到的；为清楚起见，用竖线将该列与其他列分开.</p>
+<p>如果用数字$x_i^0$代替未知数$x_i$时，方程组$(2)$中的每一个方程都变成了恒等式，则称$n$个数$x_1^0,x_2^0,\cdots ,x_n^0$的有序组为方程组$(2)$的一个<strong>解</strong>，而$x_i^0$称为解的第$i$个分量.这时也称有序组$x_1^0,x_2^0,\cdots ,x_n^0$满足$(2)$的每一个方程.没有任何解的方程组叫作<strong>不相容的</strong>.有解的方程组叫作<strong>相容的</strong>，如果只有唯一解，就叫作<strong>确定的</strong>.解的个数多于一个的方程组叫作<strong>不定的</strong>.一个给定的方程组是否相容，如果相容，它的所有的解是什么样的，这就是我们当前应该回答的问题.</p>
+<p>再来看$\S 2$的第四个问题.我们给薄板内部的点以任意顺序从$1$到$416$编号(即图$3$所示的内点总数)，再添加$204$个边界点的号码，并将需要按照已知规则计算的温度$t_i$放到序号$i$的内点，编成$416$个相关的式子：</p>
+<p>$$t_e=\dfrac{t_a+t_b+t_c+t_d}{4}.$$</p>
+<p>比如说$a,b,c\leq 416,d&gt;416$.这时，关系式可以写成线性方程的形式</p>
+<p>$$-t_a-t_b-t_c+4t_e=t_d.$$</p>
+<p>右边的$t_d=-273,-100,-50,0,50,100,300$(可能有其他的不同版本).这些方程构成了一个形如$(2)$的线性方程组，其中$n=m=416$.未知数$t_i$的系数等于$0$(在绝大多数情况下)，$-1$或$4$.这个方程组是否相容和确定呢？</p>
+<p>我们得到了一个定性问题在数学上的准确的定量表达式.存在性和唯一性问题在由研究物理现象引出的许多数学分支中都是非常典型的问题.</p>
+<h2 id="线性方程组的等价">线性方程组的等价</h2>
+<p>假设我们还有一个与方程组$(2)$未知数个数与方程个数相同的线性方程组</p>
+<span>$$  \begin{array}{c}  a_{11}'x_1+a_{12}'x_2+\cdots +a_{1n}'x_n=b_1', \\  a_{21}'x_1+a_{22}'x_2+\cdots +a_{2n}'x_n=b_2', \\  \cdots \cdots \cdots \cdots \\  a_{m1}'x_1+a_{m2}'x_2+\cdots +a_{mn}'x_n=b_m'. \\  \end{array}\\ \tag{2′}  $$</span>
+
+<p>如果方程组$(2)$中除第$i,k$个之外的所有的方程保持不动，而第$i,k$个方程交换位置，则称$(2′)$是由$(2)$经过<strong>(Ⅰ)型初等变换</strong>得到的.如果$(2)$中除第$i$个之外的所有方程保持不变，而第$i$个方程变为</p>
+<span>$$(a_{i1}+ca_{k1})x_1+\cdots +(a_{in}+ca_{kn})x_n=b_i+cb_k\tag{*}$$</span>
+
+<p>(即<span>$a_{ij}'=a_{ij}+ca_{kj},b_i'=b_i+cb_k$</span>)，此外$c$是任意常数，则称方程组$(2)$是由$(2’)$经过<strong>(Ⅱ)型初等变换</strong>得到的.</p>
+<p>如果两个线性方程组$(2)$和$(2’)$同时是不相容的，或者同时是相容的，且有相同的解，则称$(2)$和$(2’)$<strong>等价</strong>.两个等价的方程组$(a)$和$(b)$记作：$(a)\sim (b)$，我们注意到，$(a)\sim (a)$，$(a)\sim (b)$意味着$(b)\sim (a)$，而从$(a)\sim (b)$，$(b)\sim (c)$可推出$(a)\sim (c)$.</p>
+<p>下述论断给出了等价性的一个充分条件.</p>
+<p><strong>定理$1$</strong> 如果一个线性方程组是由另一个线性方程组经过有限多次初等变换得到的，则这两个方程组等价.</p>
+<p><strong>证明</strong> 只要证明当方程组$(2’)$由方程组$(2)$经一次初等变换得到，$(2)$与$(2’)$等价就可以了.</p>
+<p>注意到方程$(2)$也是由方程$(2’)$经一次初等变换得到，因为这些变换是可逆的.事实上，在情况(Ⅰ)，再一次交换第$i,k$个方程的位置，我们就回到了原来的方程组；类似地，在情况(Ⅱ)，将第$k$个方程乘以$(-c)$加到$(2’)$中的第$i$个方程上去，我们就得到了$(2)$中的第$i$个方程.</p>
+<p>现在我们来证明方程组$(2)$的任意解$(x_1^0,\cdots ,x_n^0)$也是$(2’)$的解.如果施行的初等变换是(Ⅰ)型的，方程自身没有改变(改变的仅仅是它们的次序).所以在变换前满足方程的数组$x_1^0,x_2^0\cdots ,x_n^0$在变换后仍满足方程.在(Ⅱ)型初等变换的情况下，除第$i$个之外的所有方程都没有改变，所以原来方程组的解$(x_1^0,x_2^0\cdots ,x_n^0)$满足这些方程.至于第$i$个方程，它变成了$(*)$的形式.因为我们的解满足$(2)$的第$i$个方程和第$k$个方程，所以</p>
+<span>$$a_{i1}x_1^0+\cdots +a_{in}x_n^0=b_i,$$</span>
+
+<span>$$a_{k1}x_1^0+\cdots +a_{kn}x_n^0=b_k.$$</span>
+
+<p>用$c$乘第二个恒等式的两端，并加到第一个恒等式上，我们就得到了形如$(*)$的恒等式，此外$x_i=x_i^0$.</p>
+<p>前面谈到的初等变换的可逆性可以用来证明，反过来，方程组$(2”)$的任意解也是$(2)$的解.</p>
+<p>最后要说明的是，一个方程组的不相容性意味着另一个的不相容(通过反证法来证).</p>
+<h2 id="化为阶梯型">化为阶梯型</h2>
+<p>通过施行一系列的初等变换，可以将给定的方程组转化为较简单的形式.</p>
+<p>首先指出，在系数<span>$a_{i1}$</span>当中至少有一个不等于$0$.否则谈未知数$x_1$就没有意义了.如果<span>$a_{11}=0$</span>，<span>$a_{j1}\neq 0$</span>，交换第$1$个方程与第$j$个方程的位置，(用(Ⅰ)型初等变换).现在第一个方程中第一个未知数的系数非$0$.将它记作<span>$a_{11}'$</span>.从第$i$个方程的两端($i=2,3,\cdots ,m$)减去新方程组中第一个方程的两端乘以系数$c_i$，使得减完后$x_1$的系数变为$0$(做$m-1$次(Ⅱ)型初等变换).显然为此必须取<span>$c_i=\dfrac{a_{i1}}{a_{11}'}$</span>.结果我们就得到了一个方程组，$x_1$只出现在该组的第一个方程中.这时也可能发生如下情况，即第二个未知数在标号$i&gt;1$的所有方程中也不出现.设$x_k$出现在第一个方程以外的任意一个方程中脚标最小的未知数.我们得到方程组</p>
+<span>$$  \begin{array}{ccccc}  a_{11}'x_1+ &  &  & \cdots & +a_{1n}'x_n=b_1', \\  & a_{2k}'x_k+ &  & \cdots & +a_{2n}'x_n=b_2', \\  &  & & \cdots \cdots \cdots  &  \\  &  & a_{mk}'x_k+  & \cdots & +a_{mn}'x_n=b_m', \\  &  &  &  & k>1,a_{11}' \neq 0  \\  \end{array}\\  $$</span>
+
+<p>抛开第一个方程，对所有余下的方程运用上述推理.经过一系列初等变换，原方程组变成下述形式.</p>
+<span>$$  \begin{array}{cccccc}  a_{11}''x_1+ &  &  &  & \cdots & +a_{1n}''x_n=b_1'', \\  & a_{2k}''x_k+ &  &  & \cdots & +a_{2n}''x_n=b_2'', \\  &  & a_{3l}''x_l+ &  & \cdots & +a_{3n}''x_n=b_3'', \\  &  &  & & \cdots \cdots \cdots  &  \\  &  &  & a_{ms}''x_s+  & \cdots & +a_{mn}''x_n=b_m'', \\  &  &  &  & s>l>k>1, & a_{11}'' \neq 0 ,a_{2k}''\neq 0 .\\  \end{array}\\  $$</span>
+
+<p>因为第一个方程未被涉及，此处自然有<span>$a_{1j}''=a_{1j}'$</span>，$b_1’’=b_1’$.只要还有可能，我们就运用这一过程.显然，如果在所得方程中头一个未知数(设脚标为$s$)及其后面直到脚标为$n$的所有未知数的系数都等于$0$，我们就不得不中止这一过程.这时，方程组$(2)$变为</p>
+<span>$$  \begin{array}{cccccc}  \overline{a}_{11}x_1+ &  &  &  & \cdots & +\overline{a}_{1n}x_n=\overline{b}_1, \\  & \overline{a}_{2k}x_k+ &  &  & \cdots & +\overline{a}_{2n}x_n=\overline{b}_2, \\  &  & \overline{a}_{3l}x_l+ &  & \cdots & +\overline{a}_{3n}x_n=\overline{b}_3, \\  &  &  & & \cdots \cdots \cdots  &  \\  &  &  & \overline{a}_{rs}x_s+  & \cdots & +\overline{a}_{rn}x_n=b_r, \\  &  &  &  &  & 0=\overline{b}_{r+1},\\  &  &  &  &  & \cdots \cdots \cdots \\  &  &  &  &  & 0=\overline{b}_m,\\  \end{array}\\ \tag{4}  $$</span>
+
+<p>此处<span>$\overline{a}_{11}\overline{a}_{2k}\overline{a}_{3l}\cdots \overline{a}_{rs}\neq 0$</span>，$ 1 &lt; k &lt; l &lt; \cdots &lt; s$.如果$r=m$，则方程组$(4)$中形如<span>$0=\overline{b}_i$</span>的方程不会出现.方程组$(4)$叫作<strong>阶梯形的</strong>.</p>
+<p>这一术语不是唯一通用的，方程组$(4)$有时被称为<strong>梯形的</strong>或<strong>拟三角形的</strong>，它们都没有本质上的区别.</p>
+<p><strong>定理$2$</strong> 任意线性方程组都等价于五个阶梯形方程组.</p>
+<p>证明可直接由上述推导得到.</p>
+<p>有时不把初等变换用于线性方程组，而用于它的增广矩阵<span>$(a_{ij}\mid b_i)$</span>.与定理$2$的证明相同，我们有</p>
+<p><strong>定理$2’$</strong> 任意矩阵可以用初等变换化成阶梯形.</p>
+<h2 id="对阶梯形线性方程组的研究">对阶梯形线性方程组的研究</h2>
+<p>根据定理$1$和定理$2$，相容性和确定性问题只要对阶梯形方程组$(4)$进行研究就可以了.</p>
+<p>我们从相容性问题入手.如果方程组$(4)$包含一个形如<span>$0=\overline{b}_t$</span>的方程，且<span>$\overline{b}_t\neq 0$</span>，则方程组显然是不相容的，因为当未知数取任何值时，等式<span>$0=\overline{b}_t$</span>都不能成立.我们来证明，如果方程组$(4)$不包含这种方程，则方程组是相容的.</p>
+<p>于是当$t &gt; r$时，令<span>$\overline{b}_t= 0$</span>，我们称第$1$，第$2$，$\cdots ，$第$r$个方程开头的未知数$x_1,x_k,x_l,\cdots ,x_s$为<strong>主未知数</strong>，其余的未知数(如果它们存在的话)，为<strong>自由变量</strong>.根据定义，主未知数共有$r$个.</p>
+<p>取定自由变量的任意一组值，并代入方程组$(4)$.则关于$x_s$的第$r$个方程形如$ax_s=b$，其中<span>$a=\overline{a}_{rs}\neq 0$</span>方程有唯一解.将得到的解$x_s =x_s^0$代入前$r-1$个方程，并在方程组$(4)$中按照自下而上的顺序求解，我们看到，主未知数的值由自由变量的任意一组给定的值唯一确定.</p>
+<p>这就证明了</p>
+<p><strong>定理$3$</strong> 一个线性方程组具有相容性的充分必要条件是，将它转化为阶梯形方程组后，不包含形如<span>$0=\overline{b}_t$</span>的方程，且<span>$\overline{b}_t\neq 0$</span>的方程.如果这一条件成立，自由变量可以取做任意值；而主未知数(在自由变量的任意一组定值之下)由方程组唯一确定.</p>
+<p>现在我们来搞清楚，一个方程组在相容性条件成立的情况下，何时是确定的.如果方程组$(4)$有自由变量，则方程组显然是不确定的：我们可以给自由变量以任意值，并通过它们来表示主未知数(定理$3$).如果自由变量不存在，即所有的未知数都是主未知数，则根据定理$(3)$，主未知数的值由方程组唯一确定，所以方程组是确定的.</p>
+<p>注意到没有自由变量等价于条件$r=n$.</p>
+<p>我们证明了下述论断.</p>
+<p><strong>定理$4$</strong> 一个相容的线性方程组$(2)$是确定的，当且仅当由它得到的阶梯形方程组$(4)$满足条件$r=n$.$\square$</p>
+<p>当$m=n$，则线性方程组转化为阶梯形时也可以写成如下(<strong>三角形式</strong>)：</p>
+<span>$$  \begin{array}{cccc}  \overline{a}_{11}x_1+ & \overline{a}_{12}x_2+ & \cdots & +\overline{a}_{1n}x_n=\overline{b}_1, \\  & \overline{a}_{22}x_2+ & \cdots & +\overline{a}_{2n}x_n=\overline{b}_2, \\  & & & \cdots \cdots \cdots\\  & & & \overline{a}_{nn}x_n=\overline{b}_n,\\  \end{array}\\ \tag{5}  $$</span>
+
+<p>如果我们不在意对任意$i$，是否有$\overline{a}_{ii}\neq 0$.事实上，记法$(5)$仅仅表明，方程组中的第$k$个方程不包含未知数$x_i$，其中$i &lt; k$，而阶梯形方程组显然满足这一条件.</p>
+<p>设<span>$(a_{ij})$</span>是一个矩阵，如果当$i&gt; j$时，元素<span>$a_{ij}=0$</span>，则称矩阵为<strong>上三角</strong>矩阵.类似地可定义<strong>下三角</strong>矩阵.</p>
+<p>从定理$3$和公式$(4)$引出</p>
+<p><strong>推论$1$</strong> 线性方程组$(2)$当$m=n$时是相容且确定的，当且仅当将它化为阶梯形后，所得的线性方程组$(5)$满足条件<span>$\overline{a}_{11}\overline{a}_{22}\cdots \overline{a}_{nn}\neq 0$</span>.$square$</p>
+<p>注意到一个事实，即这一条件不信赖于方程组中方程的右半部分.所以当$m=n$时，方程组$(2)$是相容且确定的，当且仅当与之对应的齐次方程组$(2°)$是相容且确定的.但是一个齐次方程组永远相容：它至少有一个零解</p>
+<p>$$x_1^0=0,\cdots ,x_n^0=0.$$</p>
+<p>条件<span>$\overline{a}_{11}\overline{a}_{22}\cdots \overline{a}_{nn}\neq 0$</span>意味着，齐次方程组仅有零解.我们得到了推论$1$的另一种形式，它与方程组的阶梯形无关.</p>
+<p><strong>推论$1’$</strong> 线性方程组$(2)$在$m=n$的情况下是相容的且确定的，当且仅当与之对应的齐次线性方程组$(2°)$只有零解. $square$</p>
+<p>$n&gt; m$的情况值得特别的关注.</p>
+<p><strong>推论$2$</strong> 当$n &gt; m$时，相容的方程组$(2)$是不定的.特别地，齐次方程组当$n &gt; m$时永远有非零解.</p>
+<p><strong>证明</strong> 事实上，因为方程组$(4)$的方程个数不会多于方程组$(2)$(去掉左右两边恒等于零的方程)，在任何情况下都有$r \leq m$.所以不等式$n &gt; m$意味着$n &gt; r$，根据定理$4$方程组$(2)$是不定的.最后要指出，齐次方程组的不定性，等价于非零解的存在性.</p>
+<p>我们得到的结果反映在下表中.</p>
+<span>$$  \begin{array}{|c|c|c|c|c|}  \hline  线性方程组的类型 & 一般 & 齐次 & n > m非齐次 & n > m齐次 \\  \hline  解的个数 & 0、1、\infty & 1、\infty & 0、\infty & \infty \\  \hline  \end{array}\\  $$</span>
+
+<h2 id="评注和例子">评注和例子</h2>
+<p>上述解线性方程组的方法叫作<strong>高斯法</strong>或<strong>逐次消元法</strong>.当$n$不大时这种方法是非常方便的，并且适用于计算机实现.可是由于种种原因，其他的一些解法，例如迭代法往往更切实际.当系数给定时，寻找具有确定精确度的解就属于这种情况.但是在理论研究中，最重要的问题是得到线性方程组相容性或确定性条件的表述，并寻求用系数和常数项表示解的一般公式，而不必将方程组化为阶梯形.推论$1’$就在某种程度上符合这一点.</p>
+<p><strong>例$1$</strong> 重新回到$\S 2$的薄板受热问题.正如本节第一段所示，引起我们兴趣的这一问题变成了一个非常具体的线性问题（为确定起见，将其记作$\text{HP}$）的求解问题，该方程组含有非常多的未知数$t_i$.按照推论$1’$中陈述的判别法，我们来研究对应于$\text{HP}$的齐次线性方程组($\text{HHP}$).换言之，薄板所有的边界点的温度现在取零.设$e$是一个内顶点的脚标，该点的温度有极大值$\mid t_e \mid $.这时条件</p>
+<p>$$t_e =\dfrac{t_a +t_b +t_c +t_d }{4}$$</p>
+<p>意味着$\mid t_e \mid =\mid t_a \mid =\mid t_b \mid =\mid t_c \mid =\mid t_d \mid = $.在没有达到温度为$0$的边界点之前，我们沿着点阵中由一个内点给出的四个方向中的任意五个方向移动一步，就会看到所有的点均取值$\mid t_i \mid =\mid t_e \mid $.这就意味着$\mid t_e \mid =0$，所以对任意的脚标$i$，$t_i =0$.因而方程组$\text{HHP}$仅有零解，故$\text{HP}$是一个相容的且确定的线性方程组.这样最初提到的薄板受热问题本身也就解决了.</p>
+<p><strong>例$2$</strong> 给出线性方程组</p>
+<span>$$  \begin{array}{ccccc}  x_1 &  &  &  & =1,\\  &  x_2 &  &  & =1,\\  & -x_1-x_2+x_3 &  &  & =0, \\  &  & \cdots \cdots \cdots &  & \\  &  & -x_{n-2} & -x_{n-1}+x_n &  =0,\\  \end{array}\\  $$</span>
+
+<p>这显然是一个相容的且确定的方程组，它已经尤为阶梯形(三角形)了.只不过求解时不是自下而上，而是自上而下.按照定义，它的解是前$n$个<strong>斐波那契数</strong><span>$f_1,f_2,\cdots ,f_n$</span>.这些数与植物中的叶序数(叶子在茎上的排列)有关.与其孤立地求解$n=1000$或做任意给定的$n$.不如得到对第$n$个斐波那契数的一般表达式(解析公式).你可能会反对说，我们有足够的耐心，就可以根据这些数的归纳定义给出<span>$f_{1000}$</span>.但这不是解决数学问题的根本办法.我们将在第二章和第三章中给出$f_n$的两个表达式，尽管这个具体问题可以用更直接的办法来解.</p>
+<p><strong>注记$1$</strong> 有时不必化阶梯形就可以更方便地求出线性方程组的解.特别是当线性方程组的矩阵包含很多零时.此时简短的实际解法取代了冗长的解释.</p>
+<p><strong>注记$2$</strong> 当我们用高斯法解$n$元$n$个方程的线性方程组时经过多少步必要的算术$\Gamma _n$可以求解？这不是一个等闲的问题，因为在通常情况下，当我们对大数$n$使用计算机时，应当对求解问题所需的机时进行预先估计.</p>
+<p>因为两数相乘要比相加工作量大，所以建议只计算做乘法的次数，自然也包括除法，以后简称运算.不失一般性，可以假定线性方程组有唯一解，即所有的未知数都是主未知数.暂且忽略方程的右边.为了从第$i$个方程($i &gt;1$)消去未知数$x_1$需准备好数<span>$l_i=\dfrac{a_{i1}}{a_{11}}$</span>(做一次除法)，还要算出$n-1$个乘积<span>$l_ia_{ij}$</span>，$j=2,3,\cdots ,n$，即共需要$n$次运算.按照我们的约定，忽略从第$i$个方程减去第一个方程的$l_i$倍的过程.因为$i=2,3,\cdots ,n$，那么为了消去$x_1$，需要$n(n-1)$次运算.第二步，我们对得到的$n-1$阶方程组需要$(n-1)(n-2)$次运算，第三步相应地为$(n-2)(n-3)$等等.为了将方程组的左边化为如同公式$(5)$的三角形式，总运算次数为和式</p>
+<p>$$\Gamma (n)=n(n-1)+(n-1)(n-2)+\cdots +1(1-1).$$</p>
+<p>不难验证(自己证明或者参看$\S 7$)，</p>
+<p>$$\Gamma (n)=\dfrac{n^3-n}{3}.$$</p>
+<p>找到解的分量<span>$x_n^0,x_{n-1}^0,\cdots ,x_1^0$</span>(按方程组$(5)$自下而上运作)，共需要</p>
+<p>$$1+2+3+\cdots +n=\dfrac{n(n+1)}{2}$$</p>
+<p>次运算，当$n$较大时，并不引起运算次数总和的本质影响.于是，高斯算法相当准确的运算次数是$\Gamma (n)=\dfrac{n^3}{3}$.</p>
+<p>$1969$年，施特拉辛研究出一种方法，(详见$[BAⅡ]$)，仅需</p>
+<p>$$S_n=C\cdot n^{\log_27 }\approx C\cdot n^{2.81}$$</p>
+<p>次运算，当$n$非常大时，可以节省大量运算，诚然，做到这一点是由于增加了加法运算的次数.但$S_n$中常数$C$特别大，而实现它的程序在逻辑上又很复杂，因而这里所谈的节省仍停留在理论上的计划.</p>
+<p>我们所了解的两种方法是典型的数学算法，适用于大量问题的解决.稍后我们会看到算法的其他例子.它们的作用在我们这个全盘计算机化的时代是非常巨大的.这时重要的不但是算法本身，还有对计算复杂性的估计.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="线性方程组初步">线性方程组初步</h1>
+<p>带有实系数$a,b,c,d,e,f$的线性方程$ax=b$，以及形如</p>
+<span>$$  \begin{array}{c}  ax+by=e, \\  cx+dy=f \\  \end{array}\\ \]]>
+    </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="基础代数" scheme="http://jianhanglin.github.io/categories/%E5%9F%BA%E7%A1%80%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 2 几个典型问题]]></title>
-    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun12/"/>
-    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun12/</id>
+    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun112/"/>
+    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun112/</id>
     <published>2014-10-23T01:20:17.000Z</published>
-    <updated>2014-10-23T02:10:43.000Z</updated>
+    <updated>2014-10-23T04:32:42.000Z</updated>
     <content type="html"><![CDATA[<h2 id="几个典型问题">几个典型问题</h2>
 <p>本节列出水平各异的四个问题，前三个问题互不相同，用于引起对不同类型的域，对线性空间，对群及其表示的研究，它们的代数理论将要在下面谈到.许多专门著作是为了“解答”这类问题而写的.第四个问题是为了引出线性方程组的研究，读者不看后面解线性方程组一节的内容，自己试着去解决它是有益处的.</p>
 <h2 id="1-方程的根式解问题">1.方程的根式解问题</h2>
@@ -44,10 +181,27 @@
 <p>$$x^5-x-1=0$$</p>
 <p>是不能用根式求解的.</p>
 <p>我们要注意，从应用的角度出发，一个代数方程的解能否用根式明显地表达出来，并没有本质上的重要意义；反而是计算根的各种近似方法更实用一些.但这丝毫无损于伽罗瓦理论的辉煌，他的成就对后来数学的发展在思想上影响深远.从那时起，伽罗瓦奠定了群论的基础.他建立的分裂域的子域与其伽罗瓦群的子群之间的一一对应到$20$世纪已用新的抽象结构加以充实，成为数学研究中不可缺少的工具.</p>
+<h2 id="2-多原子分子的状态问题">2.多原子分子的状态问题</h2>
+<p>每一个分子都可以被看作是一个粒子系，即原子核及环绕原子核的电子.如果在初始时刻粒子系接近于平衡状态，则在一定条件下，粒子系中的粒子总是停留在平衡位置附近，不会得到较高的速度.这种类型的运动叫作相对不平衡状态的振动，并称这样的系统是<strong>稳定的</strong>.</p>
+<p>我们知道，分子在平衡位置附近的任何小振动都是所谓正常振动的叠加.在很多情况下，注意到分子内部的对称性，可以确定分子的势能及其正常频率.分子结构的对称性用分子的点群来描述.这一有限群的不同的实现(即它的不可约表示)及其与这些实现相联系的群上的函数(表示的特征标)确定了分子振动的参数.</p>
+<p>例如水分子$H_2O$(见图$1$)对应于克莱因四元群(两个二阶循环群的直积)；而磷分子$P_4$(见图$2$)则形如正四面体，磷原子分布在顶点上，$P_4$对应于对称群$S_4$，其阶为$24$.它的不可约表示在$[BAⅢ]$中给出.</p>
+<p>今天分子结构理论的发展没有群论的帮助是难以想象的.群论在很早以前就被应用到结晶学上.早在$1891$年，伟大的俄罗斯结晶学家费得洛夫以及后来德国科学家绍恩费里斯找到了$230$种空间晶体群，描述了自然界已发现的一切晶体对称.从那时起，群论一直被用来研究对称性对晶体物理性质的影响.</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu1tu2.png" alt=""></center>
+
+<h2 id="通信编码问题">通信编码问题</h2>
+<p>在地面上或太空中建立自动通信系统时，被用作基本信息单位的通常是一个有序序列，称之为行(或字)：</p>
+<p>$$a=(a_1,a_2,\cdots ,a_n),$$</p>
+<p>其长度为$n$,$a_i=0$或$a_i=1$.因为模$2$的加法和乘法运算在计算机上很好实现，而信号$1,0$本身以电子信号的形式来传送又很方便($1$和$0$的区分或按照信号时间的相位，或按照信号的有无)；无怪乎$GF(2)$(见第$4$章$\S 3$)被通信专家们用来加工信息.有时将$a_i$看作其他有限域中的元素也很方便.</p>
+<p>为了排除干扰(大气放电，宇宙噪音等)，这些干扰可能会把$0$变成$1$，把$1$变成$0$，必须使$a$足够长，并采用专门的<strong>编码</strong>系统，即从字的全部集合$S$中挑选出由传输行(字码)构成的子集$S_0$(码)，以便当发生的误差不是太大时，从所收到的变形了的字$a’$恢复到原来的$a$。这样就出现了<strong>纠错码</strong>.</p>
+<p>编码的代数理论近年来发展迅速，给出了许多巧妙的编码方法，该理论主要涉及特殊线性编码：$S_0$的选取依赖于特殊长方矩阵的构造和线性方程组的解，它们的系数属于一个给定的有限域，在第$4$章中将给出一个简单的例子.</p>
+<h2 id="平板受热问题">平板受热问题</h2>
+<p>带有三个孔的矩形平板(见图$3$)被被当作一种奇妙装置的阀门，以便得到低温.阀门由正方形方格构成的一个网覆盖着.位于网的四条边界上的正方形的顶点称为<strong>边界点</strong>，而其他的顶点叫作内点.测量表明，当加热或冷却时，任一内点的温度是它相邻的四个顶点(内点或边界点)温度值的算术平均.我们希望边界点的温度取图$3$所示的值.这是可能的吗？如果可能，试问内点的温度分布是不是唯一确定的？</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu3.png" alt=""></center>
+
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="几个典型问题">几个典型问题</h2>
-<p>本节列出水平各异的四个问题，前三个问题互不相同，用于引起对不同类型的域，对线性空间，对群及其表示的研究，它们的代数理论将要在下面谈到.许多专门著作是为了“解答”这类问题而写的.第四个问题是为了引出线性方程组的研究，读者]]>
+    <![CDATA[本节列出水平各异的四个问题，前三个问题互不相同，用于引起对不同类型的域，对线性空间，对群及其表示的研究，它们的代数理论将要在下面谈到.第四个问题是为了引出线性方程组的研究.]]>
+    
     </summary>
     
       <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
@@ -58,8 +212,8 @@
   
   <entry>
     <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 1 简谈代数]]></title>
-    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun11/"/>
-    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun11/</id>
+    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun111/"/>
+    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun111/</id>
     <published>2014-10-22T08:27:50.000Z</published>
     <updated>2014-10-23T01:21:06.000Z</updated>
     <content type="html"><![CDATA[<p>代数从何而来？粗略地说，代数起源于加法，乘法和求整数次方幂的计算艺术.如果用字母代替数(这一点并非显而易见且有多种方式)，就使我们能够在更广泛的代数系统中使用类似的法则进行计算.对这一问题给出透彻回答的尝试将我们带进了久远的时代，带进了数学思想奇妙产生的过程.这一答案，最困难的部分与我们今天的基本代数结构：群、环、域、模等紧密相关.但这恰好是本书的大部分内容，因而第一章的目的目前似乎还达不到.</p>
@@ -99,8 +253,10 @@
     <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun0/"/>
     <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun0/</id>
     <published>2014-10-22T03:36:46.000Z</published>
-    <updated>2014-10-22T08:09:36.000Z</updated>
-    <content type="html"><![CDATA[<div align="right">“代数是慷慨的，它提供给人们的”</div>
+    <updated>2014-10-23T03:29:25.000Z</updated>
+    <content type="html"><![CDATA[<p><strong><a href="http://book.douban.com/subject/2036531/" target="_blank" rel="external">代数学引论(第一卷)基础代数</a></strong> <a href="http://pan.baidu.com/s/1c01XGQ0" target="_blank" rel="external">在线阅读</a> А.И.柯斯特利金 张英伯 高等教育出版社 第2版   </p>
+<p><center><img src="/assets/img/daishuxueyinlun1/cover.jpg" alt=""></center></p>
+<div align="right">“代数是慷慨的，它提供给人们的”</div>
 
 <div align="right">常常比人们要求的还要多.”</div>
 
@@ -487,6 +643,64 @@
   </entry>
   
   <entry>
+    <title><![CDATA[《代数学引论》第零章 集合与整数 2 自然数]]></title>
+    <link href="http://jianhanglin.github.io/2014/09/daishuxueyinlun02/"/>
+    <id>http://jianhanglin.github.io/2014/09/daishuxueyinlun02/</id>
+    <published>2014-10-18T10:21:33.000Z</published>
+    <updated>2014-10-22T01:26:07.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="自然数">自然数</h2>
+<p><strong>自然数系</strong>是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.自然数系是可数无限集合的一个原型.它的良序性质是数学归纳法原理的依据.自然数系的整除性和素数的研究促使了数论的发展.用<strong>皮阿诺(Peano)公理</strong>来描述自然数，容易使我们看清自然数的本质.</p>
+<p>自然数系是这样一个非空集合$\bf N$，其中有一个选定了的元素$0$，和一个$\bf N$到自身的后继映射$a\mapsto a^{+}$，$a^{+}$叫做$a$的后继，满足</p>
+<p>$i)$映射$a\mapsto a^{+}$是单一的.即从$a^{+}=b^{+}$推出$a=b$，</p>
+<p>$ii)0$不是任何元素的后继，即不存在$a\in \bf N$使得$a^{+}=0$，</p>
+<p>$iii)$如果$\bf N$的任一个子集$S$满足1)$0\in S$而且2)对所有元素$a\in \bf N$，从$a\in S$恒有$a^{+}\in S$，则$S=\bf N$.</p>
+<p>从公理$i)$和$ii)0$推出$\bf N$是一个无穷集合，公理$iii)$就是<strong>数学归纳法原理</strong>.它是归纳法证明方法的基础.设$P(n)$是关于自然数$n$的某种性质或陈述.为了证明$P(n)$对所有自然数是真的，我们只需证明两点：1)$P(0)$是真的，2)若对任一自然数$n$，$P(n)$是真的，则$P(n^{+})$也是真的.于是根据数学归纳法原理，$P(n)$对所有自然数都是真的.</p>
+<p>关于自然数的许多性质都可以应用数学归纳法原理予以证明.例如，我们可以应用数字归纳法原理证明命题：$\bf N$的每个非零自然数$a$都是另一个自然数$b$的后继.设<span>$S_{1}=\lbrace x\in \bf N\mid$</span>对$x$存在一个$y\in \bf N$使得$x=y^{+}\rbrace $，<span>$S=\lbrace  0\rbrace  \cup S_{1}$</span>.证明$S=\bf N$.首先$0\in S$，而且若$b\in S$，根据$S$的定义$b^{+}\in S$.根据数学归纳法原理$S=\bf N$.</p>
+<p>归纳法的证明为大家所熟悉，但是归纳法或归纳法构造，则不大为大家所熟悉.归纳法构造是以下列定理为基础的.</p>
+<p><strong>递归定理</strong>设$S$为一集合，$\varphi$为$S$到自身的一个映射，$a$为$S$的一个给定的元素，则存在一个唯一的$\bf N$到$S$的映射$\psi _{a}$使得</p>
+<p>$$\psi _{a}(0)=a$$</p>
+<p>且</p>
+<span>$$\psi _{a}(n^{+})=\varphi (\psi _{a}(n)),n\in \bf N.$$</span>
+
+<p>就是说下图交换</p>
+<center><img src="/assets/img/daishuxueyinlun/2.bmp" alt=""></center>
+
+<p>且</p>
+<p>$$\psi _{a}(0)=a.$$</p>
+<p>(交换图的概念可见第一章$\S 7$).</p>
+<p>我们不打算给出这个定理的详细证明.但是要说一下证明的思路.一个集合$X$到另一个集合$Y$的任一映射$f$规定了笛卡尔积$X\times Y$的一个子集</p>
+<p>$$T=\lbrace  (x,f(x))\mid x\in X\rbrace .$$</p>
+<p>反之，$X\times Y$的一个子集$T$如果满足1)对每个$x\in X$存在一个$y\in Y$使$(x,y)\in T$，而且2)若$(x,y)$，$(x,y’)\in T$，则$y=y’$，那么$T$规定了一个映射$f:X\to Y$使得$T$由所有的$(x,f(x))$，$x\in X$组成.基于这种看法，我们考虑笛卡尔积${\bf N}\times S$的满足下列条件的子集$T$：(1)$(0,a)\in T$，而且(2)若$(n,b)\in T$，则$(n^{+},\varphi (b))\in T$(对所有$n\in \bf N$).用$I$表示${\bf N}\times S$的所有这种子集的交.读者可以根据自然数的公理证明$I$规定了一个映射<span>$\psi _{a}:{\bf N}\to S$</span>而且<span>$\psi _{a}$</span>满足定理的要求.不难证明，满足定理要求的映射<span>$\psi _{a}$</span>是唯一的.</p>
+<p>根据递归定理，在自然数系上我们可以归纳地定义一个概念或归纳地构造一个函数.自然数的加法和乘法的定义就是典型的例子.</p>
+<p>定义$\bf N$的加法如下：对任意$m,n\in \bf N$，规定</p>
+<p>$$m+0=m$$</p>
+<p>$$m+n^{+}=(m+n)^{+}.$$</p>
+<p>注意，我们在递归定理中令$S=\bf N$，$\varphi (n)=n^{+}$，$a=m$，从而得到的映射<span>$\psi _{m}$</span>等于规定了加法运算，<span>$\psi _{m}(n)=m+n$</span>.</p>
+<p>不难证明加法满足结合律、交换律和加法消去律.将$0$的后继记成$1$，$0^{+}=1$，于是有$m+1=m^{+}$.$0$是加法的单位元素.</p>
+<p>定义$\bf N$的乘法如下：对任意$m,n\in \bf N$，规定</p>
+<p>$$m\cdot 0=0$$</p>
+<p>$$m\cdot n^{+}=m\cdot n+m.$$</p>
+<p>注意，在递归定理中我们令$S=\bf N$，$\varphi (n)=n+m$，$a=m$，从而得到的映射<span>$\psi _{m}$</span>等于规定了乘法运算，<span>$\psi _{m}(n)=m\cdot n$</span>.</p>
+<p>不难证明乘法满足结合律、交换律、乘法消去律以及乘法对加法的分配律.由定义可知$m\cdot 1=m$，对所有自然数$m$.$1$是乘法的单位元素.</p>
+<p>自然数系还有一个序“$\leq$”.这个序规定了任意两个自然数$a,b$的大小.我们说$a\leq b$当而且仅当$a+x=b$在$\bf N$内有解.若$a\leq b$且$a\neq b$，则写成$a&lt;b$.$a\neq b$也可写成$b\geq a$.根据定义可知$0\neq n$，$n&lt;n^{+}$，对所有自然数$n$.关于序的一些性质在这里不一一列举了.例如应用数学归纳法可以证明，对任一对自然数$n,n^{+}$，不再存在自然数$m$满足$n&lt;m&lt;n^{+}$.因而从$n&lt;m$就可以断定$n^{+}\leq m$.特别值得提出的是</p>
+<p><strong>良序性质</strong> 自然数系的任一非空子集$S$有一个最小元素，即存在一个$m\in S$使得对所有$x\in S$都有$x\geq m$.</p>
+<p><strong>证明</strong> 如果$S$包含$0$，则$0$是$S$的最小元素.假设：如果$S$包含$n$，则$S$有一个最小元素.由此证明，如果$S$包含$n^{+}$，则$S$有一个最小元素.作$S’=S\cup \lbrace n\rbrace $.根据归纳法假设，$S’$有一个最小元素$m$.若$m\in S$，则$m$就是$S$的最小元素.假设$m\notin S$，则必有$m=n$，因而$n\notin S$，且$n&lt;a$，对所有的$a\in S$.于是，根据上面的说明可以断定$n^{+}\leq a$对所有的$a\in S$.根据$n^{+}\in S$，所以$n^{+}$是$S$的最小元素.$\blacksquare$</p>
+<p>自然数系的良序性质是第二数学归纳法的基础.</p>
+<p><strong>第二数学归纳法</strong> 假设$P(n)$是关于自然数$n$的一种性质或陈述.如果我们能够证明命题“若$P(n)$对所有小于$n$的自然数$x$都真，则$P(n)$也是真的”，其中包含$P(0)$为真的证明.那么可以断言$P$对所有自然数都是真的.</p>
+<p><strong>证明</strong> 我们是在引号中的命题已被证明成立的前提下，来证明$P$对所有自然数$n$都真.设$S=\lbrace  x \in {\bf N}\mid P(x)$假$\rbrace $，求证$S$为空集.反证法.假如$S$非空，则$S$有一个最小自然数$m$.于是$P(m)$假.但是$P(x)$对所有小于$m$的自然数都真.这与上述命题矛盾.所以$S=\varnothing$.$\blacksquare$</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[自然数系是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.]]>
+    
+    </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[《代数学引论》第零章 集合与整数 1 集合上的等价关系]]></title>
     <link href="http://jianhanglin.github.io/2014/09/daishuxueyinlun01/"/>
     <id>http://jianhanglin.github.io/2014/09/daishuxueyinlun01/</id>
@@ -543,64 +757,6 @@
 ]]></content>
     <summary type="html">
     <![CDATA[集合是数学的基本概念之一.它是具有一定属性的事物形成的一个集体.根据这属性可以区别一个事物属于或不属于这个集合.]]>
-    
-    </summary>
-    
-      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[《代数学引论》第零章 集合与整数 2 自然数]]></title>
-    <link href="http://jianhanglin.github.io/2014/09/daishuxueyinlun02/"/>
-    <id>http://jianhanglin.github.io/2014/09/daishuxueyinlun02/</id>
-    <published>2014-10-18T10:21:33.000Z</published>
-    <updated>2014-10-22T01:26:07.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="自然数">自然数</h2>
-<p><strong>自然数系</strong>是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.自然数系是可数无限集合的一个原型.它的良序性质是数学归纳法原理的依据.自然数系的整除性和素数的研究促使了数论的发展.用<strong>皮阿诺(Peano)公理</strong>来描述自然数，容易使我们看清自然数的本质.</p>
-<p>自然数系是这样一个非空集合$\bf N$，其中有一个选定了的元素$0$，和一个$\bf N$到自身的后继映射$a\mapsto a^{+}$，$a^{+}$叫做$a$的后继，满足</p>
-<p>$i)$映射$a\mapsto a^{+}$是单一的.即从$a^{+}=b^{+}$推出$a=b$，</p>
-<p>$ii)0$不是任何元素的后继，即不存在$a\in \bf N$使得$a^{+}=0$，</p>
-<p>$iii)$如果$\bf N$的任一个子集$S$满足1)$0\in S$而且2)对所有元素$a\in \bf N$，从$a\in S$恒有$a^{+}\in S$，则$S=\bf N$.</p>
-<p>从公理$i)$和$ii)0$推出$\bf N$是一个无穷集合，公理$iii)$就是<strong>数学归纳法原理</strong>.它是归纳法证明方法的基础.设$P(n)$是关于自然数$n$的某种性质或陈述.为了证明$P(n)$对所有自然数是真的，我们只需证明两点：1)$P(0)$是真的，2)若对任一自然数$n$，$P(n)$是真的，则$P(n^{+})$也是真的.于是根据数学归纳法原理，$P(n)$对所有自然数都是真的.</p>
-<p>关于自然数的许多性质都可以应用数学归纳法原理予以证明.例如，我们可以应用数字归纳法原理证明命题：$\bf N$的每个非零自然数$a$都是另一个自然数$b$的后继.设<span>$S_{1}=\lbrace x\in \bf N\mid$</span>对$x$存在一个$y\in \bf N$使得$x=y^{+}\rbrace $，<span>$S=\lbrace  0\rbrace  \cup S_{1}$</span>.证明$S=\bf N$.首先$0\in S$，而且若$b\in S$，根据$S$的定义$b^{+}\in S$.根据数学归纳法原理$S=\bf N$.</p>
-<p>归纳法的证明为大家所熟悉，但是归纳法或归纳法构造，则不大为大家所熟悉.归纳法构造是以下列定理为基础的.</p>
-<p><strong>递归定理</strong>设$S$为一集合，$\varphi$为$S$到自身的一个映射，$a$为$S$的一个给定的元素，则存在一个唯一的$\bf N$到$S$的映射$\psi _{a}$使得</p>
-<p>$$\psi _{a}(0)=a$$</p>
-<p>且</p>
-<span>$$\psi _{a}(n^{+})=\varphi (\psi _{a}(n)),n\in \bf N.$$</span>
-
-<p>就是说下图交换</p>
-<center><img src="/assets/img/daishuxueyinlun/2.bmp" alt=""></center>
-
-<p>且</p>
-<p>$$\psi _{a}(0)=a.$$</p>
-<p>(交换图的概念可见第一章$\S 7$).</p>
-<p>我们不打算给出这个定理的详细证明.但是要说一下证明的思路.一个集合$X$到另一个集合$Y$的任一映射$f$规定了笛卡尔积$X\times Y$的一个子集</p>
-<p>$$T=\lbrace  (x,f(x))\mid x\in X\rbrace .$$</p>
-<p>反之，$X\times Y$的一个子集$T$如果满足1)对每个$x\in X$存在一个$y\in Y$使$(x,y)\in T$，而且2)若$(x,y)$，$(x,y’)\in T$，则$y=y’$，那么$T$规定了一个映射$f:X\to Y$使得$T$由所有的$(x,f(x))$，$x\in X$组成.基于这种看法，我们考虑笛卡尔积${\bf N}\times S$的满足下列条件的子集$T$：(1)$(0,a)\in T$，而且(2)若$(n,b)\in T$，则$(n^{+},\varphi (b))\in T$(对所有$n\in \bf N$).用$I$表示${\bf N}\times S$的所有这种子集的交.读者可以根据自然数的公理证明$I$规定了一个映射<span>$\psi _{a}:{\bf N}\to S$</span>而且<span>$\psi _{a}$</span>满足定理的要求.不难证明，满足定理要求的映射<span>$\psi _{a}$</span>是唯一的.</p>
-<p>根据递归定理，在自然数系上我们可以归纳地定义一个概念或归纳地构造一个函数.自然数的加法和乘法的定义就是典型的例子.</p>
-<p>定义$\bf N$的加法如下：对任意$m,n\in \bf N$，规定</p>
-<p>$$m+0=m$$</p>
-<p>$$m+n^{+}=(m+n)^{+}.$$</p>
-<p>注意，我们在递归定理中令$S=\bf N$，$\varphi (n)=n^{+}$，$a=m$，从而得到的映射<span>$\psi _{m}$</span>等于规定了加法运算，<span>$\psi _{m}(n)=m+n$</span>.</p>
-<p>不难证明加法满足结合律、交换律和加法消去律.将$0$的后继记成$1$，$0^{+}=1$，于是有$m+1=m^{+}$.$0$是加法的单位元素.</p>
-<p>定义$\bf N$的乘法如下：对任意$m,n\in \bf N$，规定</p>
-<p>$$m\cdot 0=0$$</p>
-<p>$$m\cdot n^{+}=m\cdot n+m.$$</p>
-<p>注意，在递归定理中我们令$S=\bf N$，$\varphi (n)=n+m$，$a=m$，从而得到的映射<span>$\psi _{m}$</span>等于规定了乘法运算，<span>$\psi _{m}(n)=m\cdot n$</span>.</p>
-<p>不难证明乘法满足结合律、交换律、乘法消去律以及乘法对加法的分配律.由定义可知$m\cdot 1=m$，对所有自然数$m$.$1$是乘法的单位元素.</p>
-<p>自然数系还有一个序“$\leq$”.这个序规定了任意两个自然数$a,b$的大小.我们说$a\leq b$当而且仅当$a+x=b$在$\bf N$内有解.若$a\leq b$且$a\neq b$，则写成$a&lt;b$.$a\neq b$也可写成$b\geq a$.根据定义可知$0\neq n$，$n&lt;n^{+}$，对所有自然数$n$.关于序的一些性质在这里不一一列举了.例如应用数学归纳法可以证明，对任一对自然数$n,n^{+}$，不再存在自然数$m$满足$n&lt;m&lt;n^{+}$.因而从$n&lt;m$就可以断定$n^{+}\leq m$.特别值得提出的是</p>
-<p><strong>良序性质</strong> 自然数系的任一非空子集$S$有一个最小元素，即存在一个$m\in S$使得对所有$x\in S$都有$x\geq m$.</p>
-<p><strong>证明</strong> 如果$S$包含$0$，则$0$是$S$的最小元素.假设：如果$S$包含$n$，则$S$有一个最小元素.由此证明，如果$S$包含$n^{+}$，则$S$有一个最小元素.作$S’=S\cup \lbrace n\rbrace $.根据归纳法假设，$S’$有一个最小元素$m$.若$m\in S$，则$m$就是$S$的最小元素.假设$m\notin S$，则必有$m=n$，因而$n\notin S$，且$n&lt;a$，对所有的$a\in S$.于是，根据上面的说明可以断定$n^{+}\leq a$对所有的$a\in S$.根据$n^{+}\in S$，所以$n^{+}$是$S$的最小元素.$\blacksquare$</p>
-<p>自然数系的良序性质是第二数学归纳法的基础.</p>
-<p><strong>第二数学归纳法</strong> 假设$P(n)$是关于自然数$n$的一种性质或陈述.如果我们能够证明命题“若$P(n)$对所有小于$n$的自然数$x$都真，则$P(n)$也是真的”，其中包含$P(0)$为真的证明.那么可以断言$P$对所有自然数都是真的.</p>
-<p><strong>证明</strong> 我们是在引号中的命题已被证明成立的前提下，来证明$P$对所有自然数$n$都真.设$S=\lbrace  x \in {\bf N}\mid P(x)$假$\rbrace $，求证$S$为空集.反证法.假如$S$非空，则$S$有一个最小自然数$m$.于是$P(m)$假.但是$P(x)$对所有小于$m$的自然数都真.这与上述命题矛盾.所以$S=\varnothing$.$\blacksquare$</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[自然数系是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.]]>
     
     </summary>
     
@@ -1252,7 +1408,7 @@
     <link href="http://jianhanglin.github.io/2014/09/jichushuxuexuexijihua/"/>
     <id>http://jianhanglin.github.io/2014/09/jichushuxuexuexijihua/</id>
     <published>2014-10-16T09:21:56.000Z</published>
-    <updated>2014-10-22T03:36:13.000Z</updated>
+    <updated>2014-10-23T03:27:30.000Z</updated>
     <content type="html"><![CDATA[<p><strong>抽象代数</strong></p>
 <p> <strong><a href="http://book.douban.com/subject/4201293/" target="_blank" rel="external">近世代数引论</a></strong> <a href="http://pan.baidu.com/s/1hqIe368" target="_blank" rel="external">在线阅读</a> 冯克勤 李尚志 章璞 中国科学技术大学出版社 第3版 </p>
 <center><img src="/assets/img/Cover/jinshidaishuyinlun.jpg" alt=""></center> 
@@ -1264,7 +1420,7 @@
 <center><img src="/assets/img/Cover/daishuxueyinlun.jpg" alt=""></center> 
 
 <p> <strong><a href="http://book.douban.com/subject/2036531/" target="_blank" rel="external">代数学引论(第一卷)基础代数</a></strong> <a href="http://pan.baidu.com/s/1c01XGQ0" target="_blank" rel="external">在线阅读</a> А.И.柯斯特利金 张英伯 高等教育出版社 第2版   </p>
-<center><img src="/assets/img/Cover/jinshidaishuyinlun1.jpg" alt=""></center> ]]></content>
+<center><img src="/assets/img/Cover/daishuxueyinlun1.jpg" alt=""></center> ]]></content>
     <summary type="html">
     <![CDATA[关于我的数学学习计划]]>
     
