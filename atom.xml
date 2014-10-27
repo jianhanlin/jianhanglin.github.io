@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我只需要你陪我60年。很傻，对吧？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-10-25T01:28:33.155Z</updated>
+  <updated>2014-10-27T07:15:05.430Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -15,12 +15,127 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 3 线性方程组初步]]></title>
+    <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 4 低阶行列式]]></title>
+    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun114/"/>
+    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun114/</id>
+    <published>2014-10-25T01:30:11.000Z</published>
+    <updated>2014-10-27T07:09:53.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="低阶行列式">低阶行列式</h2>
+<p>在介绍高斯方法时，我们没有过多地关注主未知数系数的值.那时着重关注于这些系数是非零的.现在我们进入消元法的精确步骤，尽管只是解低阶方形线性方程组.这样做将为我们提供一些思考的案例，以及在第三章给出的构造一般行列式理论的原始材料.</p>
+<p>如$\S 3$所示，考虑带有两个未知数的两个方程</p>
+<span>$$\begin{array}{c}    a_{11}x_1+a_{12}x_2=b_1, \\    a_{21}x_1+a_{22}x_2=b_2, \\   \end{array}\\ \tag{1}  $$</span>
+
+<p>并试图寻找解的分量$x_1^0,x_2^0$的一般公式.</p>
+<p>矩阵<span>$\begin{pmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{pmatrix}$</span>的行列式是一个表达式<span>$a_{11}a_{22}-a_{21}a_{12}$</span>，</p>
+<p>记作</p>
+<span>$$  \begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}  $$</span>
+
+<p>这样对二阶方阵本身对应于一个数</p>
+<span>$$  \begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}=a_{11}a_{22}-a_{21}a_{12}. \tag{2}  $$</span>
+
+<p>如果我们希望从方程组$(1)$中消去$x_2$，则将第一个方程乘以<span>$a_{22}$</span>，第二个方程乘以<span>$(-a_{12})$</span>，然后相加，得到</p>
+<span>$$  \begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}x_1=b_1a_{22}-b_2a_{12}.  $$</span>
+
+<p>可以看到，方程的右边恰为矩阵<span>$\begin{pmatrix}  b_1 & a_{12} \\  b_2 & a_{22} \\  \end{pmatrix}$</span>的行列式.设<span>$\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}\neq 0$</span>.于是我们有</p>
+<span>$$  x_1=\dfrac{\begin{vmatrix}  b_1 & a_{12} \\  b_2 & a_{22} \\  \end{vmatrix}}{\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}},  x_2=\dfrac{\begin{vmatrix}  a_{11} & b_1 \\  a_{12} & b_2 \\  \end{vmatrix}}{\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}}.\tag{3}  $$</span>
+
+<p>有了含两个未知数，两个方程的线性方程组的求解公式，我们也能够解某些其他的方程组了(解方程组——意味着找出它们的解).例如，我们考察含三个未知数，两个齐次方程的线性方程组</p>
+<span>$$\begin{array}{c}    a_{11}x_1+a_{12}x_2+a_{13}x_3=0, \\    a_{21}x_1+a_{22}x_2+a_{23}x_3=0. \\   \end{array}\\ \tag{4}  $$</span>
+
+<p>我们的兴趣在于找出这个方程组的非零解，即至少有一个$x_i \neq 0$的解.例如设$x_3 \neq 0$.用$x_3$去除方程的两端，并设$y_1 =-\dfrac{x_1}{x_3},y_2 =-\dfrac{x_2}{x_3}$，将方程组$(4)$写成$(1)$的形式</p>
+<span>$$\begin{array}{c}    a_{11}y_1+a_{12}y_2=a_{13}, \\    a_{21}y_1+a_{22}y_2=a_{23} \\   \end{array}\\  $$</span>
+
+<p>当行列式<span>$\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}\neq 0$</span>时，公式$(3)$给出</p>
+<span>$$  y_1=-\dfrac{x_1}{x_3}=\dfrac{\begin{vmatrix}  a_13 & a_{12} \\  a_23 & a_{22} \\  \end{vmatrix}}{\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}},  y_2=-\dfrac{x_2}{x_3}=\dfrac{\begin{vmatrix}  a_{11} & a_13 \\  a_{21} & a_23 \\  \end{vmatrix}}{\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}}.  $$</span>
+
+<p>毫不奇怪，我们从方程组$(4)$出发得不到$x_1,x_2,x_3$本身，而只能得到它们的比:由方程组的齐次性易见，如果$(x_1^0,x_2^0,x_3^0)$是解，且$c$是任意常数，则$(cx_1^0,cx_2^0,cx_3^0)$也是解.所以我们可以从</p>
+<span>$$  x_1=-\begin{vmatrix}  a_{13} & a_{12} \\  a_{23} & a_{22} \\  \end{vmatrix},  x_2=-\begin{vmatrix}  a_{11} & a_{13} \\  a_{21} & a_{23} \\  \end{vmatrix},  x_3=\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix} \tag{5}  $$</span>
+
+<p>入手，方程组的任意解均可由对所有的$x_i$乘以某个常数$c$得到.为了具有更对称的答案，从公式$(2)$直接导出</p>
+<span>$$  \begin{vmatrix}  a & b \\  c & d \\  \end{vmatrix}=-\begin{vmatrix}  b & a \\  d & c \\  \end{vmatrix}.  $$</span>
+
+<p>因而$(5)$能够写成下述形式：</p>
+<span>$$  x_1=\begin{vmatrix}  a_{12} & a_{13} \\  a_{22} & a_{23} \\  \end{vmatrix},  x_2=-\begin{vmatrix}  a_{11} & a_{13} \\  a_{21} & a_{23} \\  \end{vmatrix},  x_3=\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}. \tag{6}  $$</span>
+
+<p>这些公式是在<span>$\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}\neq 0$</span>的假设下推导出来的.不难验证，只要公式$(6)$任意一个行列式不等于零，所给的结论就是正确的.如果三个行列式都等于零，尽管公式$(6)$给出了一个零解，但我们不能断定所有的解都可以用它乘以一个常数得到(例如考虑由两个相同的方程$x_1+x_2+x_3=0$组成的方程组).</p>
+<p>现在转到含三个未知数三个方程的方程组</p>
+<span>$$\begin{array}{c}    a_{11}x_1+a_{12}x_2+a_{13}x_3=0, \\    a_{21}x_1+a_{22}x_2+a_{23}x_3=0, \\   a_{31}x_1+a_{32}x_2+a_{33}x_3=0. \\   \end{array}\\  $$</span>
+
+<p>我们希望从这个方程组中消去$x_2$和$x_3$，以便得到$x_1$的值.为此将第一个方程乘以$c_1$，第二个方程乘以$c_2$，第三个方程乘以$c_3$，并将所得结果相加.然后选取$c_1,c_2,c_3$使得在所得方程中含$x_2$及$x_3$的项为零.令$x_2$和$x_3$的系数等于零，我们就得到了关于$c_1,c_2,c_3$的方程</p>
+<span>$$a_{12}c_1+a_{22}c_2+a_{32}c_3=0,$$</span>
+
+<span>$$a_{13}c_1+a_{23}c_2+a_{33}c_3=0,$$</span>
+
+<p>与方程组$(4)$属同一类型.因而可取</p>
+<span>$$  c_1=\begin{vmatrix}  a_{22} & a_{32} \\  a_{23} & a_{33} \\  \end{vmatrix},  c_2=-\begin{vmatrix}  a_{12} & a_{32} \\  a_{13} & a_{33} \\  \end{vmatrix},  c_3=\begin{vmatrix}  a_{12} & a_{22} \\  a_{13} & a_{23} \\  \end{vmatrix}.   $$</span>
+
+<p>经过显然的替换之后，我们得到了关于$x_1$的表达式</p>
+<span>$$\begin{array}{c}    (a_{11}\begin{vmatrix}  a_{22} & a_{23} \\  a_{32} & a_{33} \\  \end{vmatrix}    -a_{21}\begin{vmatrix}  a_{12} & a_{13} \\  a_{32} & a_{33} \\  \end{vmatrix}  +a_{31}\begin{vmatrix}  a_{12} & a_{13} \\  a_{22} & a_{23} \\  \end{vmatrix})x_1 \\  =b_1\begin{vmatrix}  a_{22} & a_{23} \\  a_{32} & a_{33} \\  \end{vmatrix}   -b_2\begin{vmatrix}  a_{12} & a_{13} \\  a_{32} & a_{33} \\  \end{vmatrix}  +b_3\begin{vmatrix}  a_{12} & a_{13} \\  a_{22} & a_{23} \\  \end{vmatrix})x_1 .\\ \tag{7}  \end{array}\\  $$</span>
+
+<p>式中$x_1$的系数叫作矩阵</p>
+<span>$$ \begin{pmatrix}  a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\  a_{31} & a_{32} & a_{33} \\  \end{pmatrix}  $$</span>
+
+<p>的行列式，并记作</p>
+<span>$$ \begin{vmatrix}  a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\  a_{31} & a_{32} & a_{33} \\  \end{vmatrix}  $$</span>
+
+<p>这样我们就借助于二阶行列式给出了三阶行列式的表达式</p>
+<span>$$ \begin{array}{c}   \begin{vmatrix}  a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\  a_{31} & a_{32} & a_{33} \\  \end{vmatrix}  =a_{11}\begin{vmatrix}  a_{22} & a_{23} \\  a_{32} & a_{33} \\  \end{vmatrix}    -a_{21}\begin{vmatrix}  a_{12} & a_{13} \\  a_{32} & a_{33} \\  \end{vmatrix}  +a_{31}\begin{vmatrix}  a_{12} & a_{13} \\  a_{22} & a_{23} \\  \end{vmatrix}      \\   =a_{11}a_{22}a_{33}+a_{12}a_{23}a_{31}+a_{13}a_{21}a_{32}-a_{11}a_{23}a_{32}-a_{12}a_{21}a_{33}-a_{13}a_{22}a_{31}.\\  \tag{8}  \end{array}\\  $$</span>
+
+<p>容易发现，等式$(7)$的右边是将$x_1$的系数<span>$a_{11}$</span>换成$b_1$，<span>$a_{21}$</span>换成$b_2$，<span>$a_{31}$</span>换成$b_3$得到的.所以$(7)$式可以写成</p>
+<span>$$ \begin{vmatrix}  a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\  a_{31} & a_{32} & a_{33} \\  \end{vmatrix}x_1=\begin{vmatrix}  b_1 & a_{12} & a_{13} \\  b_2 & a_{22} & a_{23} \\  b_3 & a_{32} & a_{33} \\  \end{vmatrix}  $$</span>
+
+<p>设$x_1$的系数不等于零.这时通过对$x_2$，$x_3$的类似计算，我们可以得到表述$x_1$，$x_2$，$x_3$的下述公式</p>
+<span>$$ x_1=\dfrac{\begin{vmatrix}  b_1 & a_{12} & a_{13} \\  b_2 & a_{22} & a_{23} \\  b_3 & a_{32} & a_{33} \\  \end{vmatrix}}{\begin{vmatrix}  a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\  a_{31} & a_{32} & a_{33} \\  \end{vmatrix}},x_2=\dfrac{\begin{vmatrix}  a_{11} & b_1 & a_{13} \\  a_{21} & b_2 & a_{23} \\  a_{31} & b_3 & a_{33} \\  \end{vmatrix}}{\begin{vmatrix}  a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\  a_{31} & a_{32} & a_{33} \\  \end{vmatrix}},  x_3=\dfrac{\begin{vmatrix}  a_{11} & a_{12} & b_1 \\  a_{21} & a_{22} & b_2 \\  a_{31} & a_{32} & b_3 \\  \end{vmatrix}}{\begin{vmatrix}  a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\  a_{31} & a_{32} & a_{33} \\  \end{vmatrix}}.\tag{9}  $$</span>
+
+<p>显然，同样的推理适用于四个，五个或更多的方程组成的方程组，只要未知数的个数与方程的个数相同.为此我们必须首先引出一个类似于$(6)$的公式，对含有四个未知数，三个方程的齐次线性方程组求解； 然后在含有四个未知数，四个方程的线性方程组消去$x_2$，$x_3$，$x_4$，为此用$c_1$，$c_2$，$c_3$，$c_4$分别去乘四个方程并将结果相加.我们从三个齐次方程的方程组中找到$c_i$($=1,2,3,4$)的值.</p>
+<p>这样得到的$x_1$的系数叫作<strong>四阶行列式</strong>，它可以仿照$(8)$由三阶行列式表出.</p>
+<p>经过对$x_2$，$x_3$，$x_4$的相同认证，我们找到类似于$(9)$的对$x_i$的公式.这一过程可以无限地进行下去.在数学中有广泛应用的数学归纳原理(见$\S 7$)确保我们总会达到目的.</p>
+<h2 id="习题">习题</h2>
+<p>$1$.如果用下列直观的符号法则来描述三阶行列式展开式中出现的乘积，就容易记住公式$(8)$了.</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu5.png" alt=""></center>
+
+<p>对四阶行列式可找到类似的法则.</p>
+<p><strong>解</strong>：先将$1$个四阶行列式写成$3$种不同形式，分别求出它们的值.</p>
+<p>第$1$种形式：将第$1$，第$2$，第$3$列按顺序添加在第$4$列的后面.其中每列上方标注“$+$”和“$-$”分别表示该列按箭头方向$4$个元素乘积的符号.</p>
+<span>$$\begin{array}{|cccc|ccc}    + & - & + & -/+ & - & + & - \\    a_{11} & a_{12} & a_{13} & a_{14} & a_{11} & a_{12} &  a_{13}\\   a_{21} & a_{22} & a_{23} & a_{24} & a_{21} & a_{22} &  a_{23}\\  a_{31} & a_{32} & a_{33} & a_{34} & a_{31} & a_{32} &  a_{33}\\   a_{41} & a_{42} & a_{43} & a_{44} & a_{41} & a_{42} &  a_{43}\\  \end{array}\\  =a_{11}a_{22}a_{33}a_{44}-a_{12}a_{23}a_{34}a_{41}+a_{13}a_{24}a_{31}a_{42}-a_{14}a_{21}a_{32}a_{43}+a_{14}a_{23}a_{32}a_{41}-a_{11}a_{24}a_{33}a_{42}+a_{12}a_{21}a_{34}a_{43}-a_{13}a_{22}a_{31}a_{44}  $$</span>
+
+<p>第$2$种形式：将原四阶行列式的前$3$列进行一次轮换形成一个新的四阶行列式，再按第$1$种形式的方法计算.</p>
+<span>$$\begin{array}{|cccc|ccc}    + & - & + & -/+ & - & + & - \\    a_{12} & a_{13} & a_{11} & a_{14} & a_{12} & a_{13} &  a_{11}\\   a_{22} & a_{33} & a_{21} & a_{24} & a_{22} & a_{23} &  a_{21}\\  a_{32} & a_{33} & a_{31} & a_{34} & a_{32} & a_{33} &  a_{31}\\   a_{42} & a_{43} & a_{41} & a_{44} & a_{42} & a_{43} &  a_{41}\\  \end{array}\\  =a_{12}a_{23}a_{31}a_{44}-a_{13}a_{21}a_{34}a_{42}+a_{11}a_{24}a_{32}a_{43}-a_{14}a_{22}a_{33}a_{41}+a_{14}a_{21}a_{33}a_{42}-a_{12}a_{24}a_{31}a_{43}+a_{13}a_{22}a_{34}a_{41}-a_{11}a_{23}a_{32}a_{44}  $$</span>
+
+<p>第$3$种形式：将原四阶行列式的前$3$列进行二次轮换形成一个新的四阶行列式，再按第$1$种形式的方法计算.</p>
+<span>$$\begin{array}{|cccc|ccc}    + & - & + & -/+ & - & + & - \\    a_{13} & a_{11} & a_{12} & a_{14} & a_{13} & a_{11} &  a_{12}\\   a_{23} & a_{21} & a_{22} & a_{24} & a_{23} & a_{21} &  a_{22}\\  a_{33} & a_{31} & a_{32} & a_{34} & a_{33} & a_{31} &  a_{32}\\   a_{43} & a_{41} & a_{42} & a_{44} & a_{43} & a_{41} &  a_{42}\\  \end{array}\\  =a_{13}a_{21}a_{32}a_{44}-a_{11}a_{22}a_{34}a_{43}+a_{12}a_{24}a_{33}a_{41}-a_{14}a_{22}a_{3}a_{42}+a_{14}a_{22}a_{31}a_{43}-a_{13}a_{24}a_{32}a_{41}+a_{11}a_{23}a_{34}a_{42}-a_{12}a_{21}a_{33}a_{44}  $$</span>
+
+<p>综合分析上述$3$种形式的计算，不难发现原四阶行列式的值等于这$3$种形式计算结果之和.</p>
+<p>$2$.证明在三阶行列式展开式中的六项不可能同时为正.</p>
+<p>证明：由三阶行列式的表达式$(8)$可知，其展开式中的六项不可能同时为正.</p>
+<p>$3$.验证</p>
+<span>$$ \begin{vmatrix}  a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\  a_{31} & a_{32} & a_{33} \\  \end{vmatrix}=\begin{vmatrix}  a_{11} & a_{21} & a_{31} \\  a_{12} & a_{22} & a_{32} \\  a_{13} & a_{23} & a_{33} \\  \end{vmatrix}，\begin{vmatrix}  0 & a & b \\  -a & 0 & c \\  -b & -c & 0 \\  \end{vmatrix}=0.$$</span>
+
+<p>证明:由三阶行列式的表达式$(8)$可知，按其展开，可知上述两个等式成立.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="低阶行列式">低阶行列式</h2>
+<p>在介绍高斯方法时，我们没有过多地关注主未知数系数的值.那时着重关注于这些系数是非零的.现在我们进入消元法的精确步骤，尽管只是解低阶方形线性方程组.这样做将为我们提供一些思考的案例，以及在第三章给出的构造一般行列式理论的原始]]>
+    </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="基础代数" scheme="http://jianhanglin.github.io/categories/%E5%9F%BA%E7%A1%80%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[]]></title>
     <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun113/"/>
     <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun113/</id>
     <published>2014-10-23T04:30:34.000Z</published>
-    <updated>2014-10-25T01:27:45.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="线性方程组初步">线性方程组初步</h1>
+    <updated>2014-10-25T01:30:00.000Z</updated>
+    <content type="html"><![CDATA[<p>title: 《代数学引论(第一卷)基础代数》 第1章 代数的起源 3 线性方程组初步<br>description: 带有实系数$a,b,c,d,e,f$的线性方程$ax=b$，以及形如</p>
+<span>$$  \begin{array}{c}  ax+by=e, \\  cx+dy=f \\  \end{array}\\ \tag{1}  $$</span>
+
+<p>方程组的求解问题在中学已经学习过了.<br>category: 基础代数</p>
+<h2 id="tags:_代数">tags: 代数</h2>
+<h1 id="线性方程组初步">线性方程组初步</h1>
 <p>带有实系数$a,b,c,d,e,f$的线性方程$ax=b$，以及形如</p>
 <span>$$  \begin{array}{c}  ax+by=e, \\  cx+dy=f \\  \end{array}\\ \tag{1}  $$</span>
 
@@ -140,14 +255,9 @@
 <p>我们所了解的两种方法是典型的数学算法，适用于大量问题的解决.稍后我们会看到算法的其他例子.它们的作用在我们这个全盘计算机化的时代是非常巨大的.这时重要的不但是算法本身，还有对计算复杂性的估计.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h1 id="线性方程组初步">线性方程组初步</h1>
-<p>带有实系数$a,b,c,d,e,f$的线性方程$ax=b$，以及形如</p>
-<span>$$  \begin{array}{c}  ax+by=e, \\  cx+dy=f \\  \end{array}\\ \]]>
+    <![CDATA[<p>title: 《代数学引论(第一卷)基础代数》 第1章 代数的起源 3 线性方程组初步<br>description: 带有实系数$a,b,c,d,e,f$的线性方程$ax=b$，以及形如</p>
+<span>$$  \begin{array}{c}  ax+by=e, \]]>
     </summary>
-    
-      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="基础代数" scheme="http://jianhanglin.github.io/categories/%E5%9F%BA%E7%A1%80%E4%BB%A3%E6%95%B0/"/>
     
   </entry>
   

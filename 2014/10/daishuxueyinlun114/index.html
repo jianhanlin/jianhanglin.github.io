@@ -1,0 +1,597 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《代数学引论(第一卷)基础代数》 第1章 代数的起源 4 低阶行列式 | JianhangLin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="JianhangLin">
+    
+    <meta name="description" content="低阶行列式
+在介绍高斯方法时，我们没有过多地关注主未知数系数的值.那时着重关注于这些系数是非零的.现在我们进入消元法的精确步骤，尽管只是解低阶方形线性方程组.这样做将为我们提供一些思考的案例，以及在第三章给出的构造一般行列式理论的原始材料.
+如$\S 3$所示，考虑带有两个未知数的两个方程
+$$\b">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="JianhangLin" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="JianhangLin" title="JianhangLin"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="JianhangLin">JianhangLin</a></h1>
+				<h2 class="blog-motto">我只需要你陪我60年。很傻，对吧？</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">首页</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Google" />
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/10/daishuxueyinlun114/" title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 4 低阶行列式" itemprop="url">《代数学引论(第一卷)基础代数》 第1章 代数的起源 4 低阶行列式</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
+		
+  <p class="article-time">
+    <time datetime="2014-10-25T01:30:11.000Z" itemprop="datePublished"> 发表于 10月 25 2014</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#低阶行列式"><span class="toc-number">1.</span> <span class="toc-text">低阶行列式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">2.</span> <span class="toc-text">习题</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="低阶行列式">低阶行列式</h2>
+<p>在介绍高斯方法时，我们没有过多地关注主未知数系数的值.那时着重关注于这些系数是非零的.现在我们进入消元法的精确步骤，尽管只是解低阶方形线性方程组.这样做将为我们提供一些思考的案例，以及在第三章给出的构造一般行列式理论的原始材料.</p>
+<p>如$\S 3$所示，考虑带有两个未知数的两个方程</p>
+<span>$$\begin{array}{c}    a_{11}x_1+a_{12}x_2=b_1, \\    a_{21}x_1+a_{22}x_2=b_2, \\   \end{array}\\ \tag{1}  $$</span>
+
+<p>并试图寻找解的分量$x_1^0,x_2^0$的一般公式.</p>
+<p>矩阵<span>$\begin{pmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{pmatrix}$</span>的行列式是一个表达式<span>$a_{11}a_{22}-a_{21}a_{12}$</span>，</p>
+<p>记作</p>
+<span>$$  \begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}  $$</span>
+
+<p>这样对二阶方阵本身对应于一个数</p>
+<span>$$  \begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}=a_{11}a_{22}-a_{21}a_{12}. \tag{2}  $$</span>
+
+<p>如果我们希望从方程组$(1)$中消去$x_2$，则将第一个方程乘以<span>$a_{22}$</span>，第二个方程乘以<span>$(-a_{12})$</span>，然后相加，得到</p>
+<span>$$  \begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}x_1=b_1a_{22}-b_2a_{12}.  $$</span>
+
+<p>可以看到，方程的右边恰为矩阵<span>$\begin{pmatrix}  b_1 & a_{12} \\  b_2 & a_{22} \\  \end{pmatrix}$</span>的行列式.设<span>$\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}\neq 0$</span>.于是我们有</p>
+<span>$$  x_1=\dfrac{\begin{vmatrix}  b_1 & a_{12} \\  b_2 & a_{22} \\  \end{vmatrix}}{\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}},  x_2=\dfrac{\begin{vmatrix}  a_{11} & b_1 \\  a_{12} & b_2 \\  \end{vmatrix}}{\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}}.\tag{3}  $$</span>
+
+<p>有了含两个未知数，两个方程的线性方程组的求解公式，我们也能够解某些其他的方程组了(解方程组——意味着找出它们的解).例如，我们考察含三个未知数，两个齐次方程的线性方程组</p>
+<span>$$\begin{array}{c}    a_{11}x_1+a_{12}x_2+a_{13}x_3=0, \\    a_{21}x_1+a_{22}x_2+a_{23}x_3=0. \\   \end{array}\\ \tag{4}  $$</span>
+
+<p>我们的兴趣在于找出这个方程组的非零解，即至少有一个$x_i \neq 0$的解.例如设$x_3 \neq 0$.用$x_3$去除方程的两端，并设$y_1 =-\dfrac{x_1}{x_3},y_2 =-\dfrac{x_2}{x_3}$，将方程组$(4)$写成$(1)$的形式</p>
+<span>$$\begin{array}{c}    a_{11}y_1+a_{12}y_2=a_{13}, \\    a_{21}y_1+a_{22}y_2=a_{23} \\   \end{array}\\  $$</span>
+
+<p>当行列式<span>$\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}\neq 0$</span>时，公式$(3)$给出</p>
+<span>$$  y_1=-\dfrac{x_1}{x_3}=\dfrac{\begin{vmatrix}  a_13 & a_{12} \\  a_23 & a_{22} \\  \end{vmatrix}}{\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}},  y_2=-\dfrac{x_2}{x_3}=\dfrac{\begin{vmatrix}  a_{11} & a_13 \\  a_{21} & a_23 \\  \end{vmatrix}}{\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}}.  $$</span>
+
+<p>毫不奇怪，我们从方程组$(4)$出发得不到$x_1,x_2,x_3$本身，而只能得到它们的比:由方程组的齐次性易见，如果$(x_1^0,x_2^0,x_3^0)$是解，且$c$是任意常数，则$(cx_1^0,cx_2^0,cx_3^0)$也是解.所以我们可以从</p>
+<span>$$  x_1=-\begin{vmatrix}  a_{13} & a_{12} \\  a_{23} & a_{22} \\  \end{vmatrix},  x_2=-\begin{vmatrix}  a_{11} & a_{13} \\  a_{21} & a_{23} \\  \end{vmatrix},  x_3=\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix} \tag{5}  $$</span>
+
+<p>入手，方程组的任意解均可由对所有的$x_i$乘以某个常数$c$得到.为了具有更对称的答案，从公式$(2)$直接导出</p>
+<span>$$  \begin{vmatrix}  a & b \\  c & d \\  \end{vmatrix}=-\begin{vmatrix}  b & a \\  d & c \\  \end{vmatrix}.  $$</span>
+
+<p>因而$(5)$能够写成下述形式：</p>
+<span>$$  x_1=\begin{vmatrix}  a_{12} & a_{13} \\  a_{22} & a_{23} \\  \end{vmatrix},  x_2=-\begin{vmatrix}  a_{11} & a_{13} \\  a_{21} & a_{23} \\  \end{vmatrix},  x_3=\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}. \tag{6}  $$</span>
+
+<p>这些公式是在<span>$\begin{vmatrix}  a_{11} & a_{12} \\  a_{21} & a_{22} \\  \end{vmatrix}\neq 0$</span>的假设下推导出来的.不难验证，只要公式$(6)$任意一个行列式不等于零，所给的结论就是正确的.如果三个行列式都等于零，尽管公式$(6)$给出了一个零解，但我们不能断定所有的解都可以用它乘以一个常数得到(例如考虑由两个相同的方程$x_1+x_2+x_3=0$组成的方程组).</p>
+<p>现在转到含三个未知数三个方程的方程组</p>
+<span>$$\begin{array}{c}    a_{11}x_1+a_{12}x_2+a_{13}x_3=0, \\    a_{21}x_1+a_{22}x_2+a_{23}x_3=0, \\   a_{31}x_1+a_{32}x_2+a_{33}x_3=0. \\   \end{array}\\  $$</span>
+
+<p>我们希望从这个方程组中消去$x_2$和$x_3$，以便得到$x_1$的值.为此将第一个方程乘以$c_1$，第二个方程乘以$c_2$，第三个方程乘以$c_3$，并将所得结果相加.然后选取$c_1,c_2,c_3$使得在所得方程中含$x_2$及$x_3$的项为零.令$x_2$和$x_3$的系数等于零，我们就得到了关于$c_1,c_2,c_3$的方程</p>
+<span>$$a_{12}c_1+a_{22}c_2+a_{32}c_3=0,$$</span>
+
+<span>$$a_{13}c_1+a_{23}c_2+a_{33}c_3=0,$$</span>
+
+<p>与方程组$(4)$属同一类型.因而可取</p>
+<span>$$  c_1=\begin{vmatrix}  a_{22} & a_{32} \\  a_{23} & a_{33} \\  \end{vmatrix},  c_2=-\begin{vmatrix}  a_{12} & a_{32} \\  a_{13} & a_{33} \\  \end{vmatrix},  c_3=\begin{vmatrix}  a_{12} & a_{22} \\  a_{13} & a_{23} \\  \end{vmatrix}.   $$</span>
+
+<p>经过显然的替换之后，我们得到了关于$x_1$的表达式</p>
+<span>$$\begin{array}{c}    (a_{11}\begin{vmatrix}  a_{22} & a_{23} \\  a_{32} & a_{33} \\  \end{vmatrix}    -a_{21}\begin{vmatrix}  a_{12} & a_{13} \\  a_{32} & a_{33} \\  \end{vmatrix}  +a_{31}\begin{vmatrix}  a_{12} & a_{13} \\  a_{22} & a_{23} \\  \end{vmatrix})x_1 \\  =b_1\begin{vmatrix}  a_{22} & a_{23} \\  a_{32} & a_{33} \\  \end{vmatrix}   -b_2\begin{vmatrix}  a_{12} & a_{13} \\  a_{32} & a_{33} \\  \end{vmatrix}  +b_3\begin{vmatrix}  a_{12} & a_{13} \\  a_{22} & a_{23} \\  \end{vmatrix})x_1 .\\ \tag{7}  \end{array}\\  $$</span>
+
+<p>式中$x_1$的系数叫作矩阵</p>
+<span>$$ \begin{pmatrix}  a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\  a_{31} & a_{32} & a_{33} \\  \end{pmatrix}  $$</span>
+
+<p>的行列式，并记作</p>
+<span>$$ \begin{vmatrix}  a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\  a_{31} & a_{32} & a_{33} \\  \end{vmatrix}  $$</span>
+
+<p>这样我们就借助于二阶行列式给出了三阶行列式的表达式</p>
+<span>$$ \begin{array}{c}   \begin{vmatrix}  a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\  a_{31} & a_{32} & a_{33} \\  \end{vmatrix}  =a_{11}\begin{vmatrix}  a_{22} & a_{23} \\  a_{32} & a_{33} \\  \end{vmatrix}    -a_{21}\begin{vmatrix}  a_{12} & a_{13} \\  a_{32} & a_{33} \\  \end{vmatrix}  +a_{31}\begin{vmatrix}  a_{12} & a_{13} \\  a_{22} & a_{23} \\  \end{vmatrix}      \\   =a_{11}a_{22}a_{33}+a_{12}a_{23}a_{31}+a_{13}a_{21}a_{32}-a_{11}a_{23}a_{32}-a_{12}a_{21}a_{33}-a_{13}a_{22}a_{31}.\\  \tag{8}  \end{array}\\  $$</span>
+
+<p>容易发现，等式$(7)$的右边是将$x_1$的系数<span>$a_{11}$</span>换成$b_1$，<span>$a_{21}$</span>换成$b_2$，<span>$a_{31}$</span>换成$b_3$得到的.所以$(7)$式可以写成</p>
+<span>$$ \begin{vmatrix}  a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\  a_{31} & a_{32} & a_{33} \\  \end{vmatrix}x_1=\begin{vmatrix}  b_1 & a_{12} & a_{13} \\  b_2 & a_{22} & a_{23} \\  b_3 & a_{32} & a_{33} \\  \end{vmatrix}  $$</span>
+
+<p>设$x_1$的系数不等于零.这时通过对$x_2$，$x_3$的类似计算，我们可以得到表述$x_1$，$x_2$，$x_3$的下述公式</p>
+<span>$$ x_1=\dfrac{\begin{vmatrix}  b_1 & a_{12} & a_{13} \\  b_2 & a_{22} & a_{23} \\  b_3 & a_{32} & a_{33} \\  \end{vmatrix}}{\begin{vmatrix}  a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\  a_{31} & a_{32} & a_{33} \\  \end{vmatrix}},x_2=\dfrac{\begin{vmatrix}  a_{11} & b_1 & a_{13} \\  a_{21} & b_2 & a_{23} \\  a_{31} & b_3 & a_{33} \\  \end{vmatrix}}{\begin{vmatrix}  a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\  a_{31} & a_{32} & a_{33} \\  \end{vmatrix}},  x_3=\dfrac{\begin{vmatrix}  a_{11} & a_{12} & b_1 \\  a_{21} & a_{22} & b_2 \\  a_{31} & a_{32} & b_3 \\  \end{vmatrix}}{\begin{vmatrix}  a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\  a_{31} & a_{32} & a_{33} \\  \end{vmatrix}}.\tag{9}  $$</span>
+
+<p>显然，同样的推理适用于四个，五个或更多的方程组成的方程组，只要未知数的个数与方程的个数相同.为此我们必须首先引出一个类似于$(6)$的公式，对含有四个未知数，三个方程的齐次线性方程组求解； 然后在含有四个未知数，四个方程的线性方程组消去$x_2$，$x_3$，$x_4$，为此用$c_1$，$c_2$，$c_3$，$c_4$分别去乘四个方程并将结果相加.我们从三个齐次方程的方程组中找到$c_i$($=1,2,3,4$)的值.</p>
+<p>这样得到的$x_1$的系数叫作<strong>四阶行列式</strong>，它可以仿照$(8)$由三阶行列式表出.</p>
+<p>经过对$x_2$，$x_3$，$x_4$的相同认证，我们找到类似于$(9)$的对$x_i$的公式.这一过程可以无限地进行下去.在数学中有广泛应用的数学归纳原理(见$\S 7$)确保我们总会达到目的.</p>
+<h2 id="习题">习题</h2>
+<p>$1$.如果用下列直观的符号法则来描述三阶行列式展开式中出现的乘积，就容易记住公式$(8)$了.</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu5.png" alt=""></center>
+
+<p>对四阶行列式可找到类似的法则.</p>
+<p><strong>解</strong>：先将$1$个四阶行列式写成$3$种不同形式，分别求出它们的值.</p>
+<p>第$1$种形式：将第$1$，第$2$，第$3$列按顺序添加在第$4$列的后面.其中每列上方标注“$+$”和“$-$”分别表示该列按箭头方向$4$个元素乘积的符号.</p>
+<span>$$\begin{array}{|cccc|ccc}    + & - & + & -/+ & - & + & - \\    a_{11} & a_{12} & a_{13} & a_{14} & a_{11} & a_{12} &  a_{13}\\   a_{21} & a_{22} & a_{23} & a_{24} & a_{21} & a_{22} &  a_{23}\\  a_{31} & a_{32} & a_{33} & a_{34} & a_{31} & a_{32} &  a_{33}\\   a_{41} & a_{42} & a_{43} & a_{44} & a_{41} & a_{42} &  a_{43}\\  \end{array}\\  =a_{11}a_{22}a_{33}a_{44}-a_{12}a_{23}a_{34}a_{41}+a_{13}a_{24}a_{31}a_{42}-a_{14}a_{21}a_{32}a_{43}+a_{14}a_{23}a_{32}a_{41}-a_{11}a_{24}a_{33}a_{42}+a_{12}a_{21}a_{34}a_{43}-a_{13}a_{22}a_{31}a_{44}  $$</span>
+
+<p>第$2$种形式：将原四阶行列式的前$3$列进行一次轮换形成一个新的四阶行列式，再按第$1$种形式的方法计算.</p>
+<span>$$\begin{array}{|cccc|ccc}    + & - & + & -/+ & - & + & - \\    a_{12} & a_{13} & a_{11} & a_{14} & a_{12} & a_{13} &  a_{11}\\   a_{22} & a_{33} & a_{21} & a_{24} & a_{22} & a_{23} &  a_{21}\\  a_{32} & a_{33} & a_{31} & a_{34} & a_{32} & a_{33} &  a_{31}\\   a_{42} & a_{43} & a_{41} & a_{44} & a_{42} & a_{43} &  a_{41}\\  \end{array}\\  =a_{12}a_{23}a_{31}a_{44}-a_{13}a_{21}a_{34}a_{42}+a_{11}a_{24}a_{32}a_{43}-a_{14}a_{22}a_{33}a_{41}+a_{14}a_{21}a_{33}a_{42}-a_{12}a_{24}a_{31}a_{43}+a_{13}a_{22}a_{34}a_{41}-a_{11}a_{23}a_{32}a_{44}  $$</span>
+
+<p>第$3$种形式：将原四阶行列式的前$3$列进行二次轮换形成一个新的四阶行列式，再按第$1$种形式的方法计算.</p>
+<span>$$\begin{array}{|cccc|ccc}    + & - & + & -/+ & - & + & - \\    a_{13} & a_{11} & a_{12} & a_{14} & a_{13} & a_{11} &  a_{12}\\   a_{23} & a_{21} & a_{22} & a_{24} & a_{23} & a_{21} &  a_{22}\\  a_{33} & a_{31} & a_{32} & a_{34} & a_{33} & a_{31} &  a_{32}\\   a_{43} & a_{41} & a_{42} & a_{44} & a_{43} & a_{41} &  a_{42}\\  \end{array}\\  =a_{13}a_{21}a_{32}a_{44}-a_{11}a_{22}a_{34}a_{43}+a_{12}a_{24}a_{33}a_{41}-a_{14}a_{22}a_{3}a_{42}+a_{14}a_{22}a_{31}a_{43}-a_{13}a_{24}a_{32}a_{41}+a_{11}a_{23}a_{34}a_{42}-a_{12}a_{21}a_{33}a_{44}  $$</span>
+
+<p>综合分析上述$3$种形式的计算，不难发现原四阶行列式的值等于这$3$种形式计算结果之和.</p>
+<p>$2$.证明在三阶行列式展开式中的六项不可能同时为正.</p>
+<p>证明：由三阶行列式的表达式$(8)$可知，其展开式中的六项不可能同时为正.</p>
+<p>$3$.验证</p>
+<span>$$ \begin{vmatrix}  a_{11} & a_{12} & a_{13} \\  a_{21} & a_{22} & a_{23} \\  a_{31} & a_{32} & a_{33} \\  \end{vmatrix}=\begin{vmatrix}  a_{11} & a_{21} & a_{31} \\  a_{12} & a_{22} & a_{32} \\  a_{13} & a_{23} & a_{33} \\  \end{vmatrix}，\begin{vmatrix}  0 & a & b \\  -a & 0 & c \\  -b & -c & 0 \\  \end{vmatrix}=0.$$</span>
+
+<p>证明:由三阶行列式的表达式$(8)$可知，按其展开，可知上述两个等式成立.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/基础代数/">基础代数</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数/">代数</a>
+  </div>
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://jianhanglin.github.io/2014/10/daishuxueyinlun114/" data-title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 4 低阶行列式 | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2014/10/daishuxueyinlun113/"  title="">
+ <strong>下一篇：</strong><br/> 
+ <span>(no title)
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#低阶行列式"><span class="toc-number">1.</span> <span class="toc-text">低阶行列式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">2.</span> <span class="toc-text">习题</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/基础代数/" title="基础代数">基础代数<sup>4</sup></a></li>
+		
+			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>12</sup></a></li>
+		
+			<li><a href="/categories/计划/" title="计划">计划<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/代数/" title="代数">代数<sup>16</sup></a></li>
+		
+			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
+		
+			<li><a href="/tags/计划/" title="计划">计划<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/代数/" style="font-size: 20.00px;">代数</a><a href="/tags/计划/" style="font-size: 10.00px;">计划</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+      <li><a href="http://www.math.ac.cn/" target="_blank" title="mathac">中科院数学与系统科学研究院</a></li>
+      <li><a href="http://www.math.org.cn/" target="_blank" title="mathorg">博士数学论坛</a></li>
+      <li><a href="http://emuch.net/bbs/index.php" target="_blank" title="emuch">小木虫</a></li>
+      <li><a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="zhangzujin">张祖锦的数学博客</a></li>
+      <li><a href="http://www.maplesoft.com/" target="_blank" title="maplesoft">Maple</a></li>
+      <li><a href="http://www.wolfram.com" target="_blank" title="wolfram">Mathematica</a></li>
+      <li><a href="http://www.mathworks.cn/" target="_blank" title="mathworks">Matlab</a></li>
+      <li><a href="http://www.google.com.hk" target="_blank" title="Google">谷歌Google</a></li>
+      <li><a href="http://www.baidu.com" target="_blank" title="baidu">百度Baidu</a></li>
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+
+</div>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="weibo"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://jianhanglin.github.io/about" target="_blank" title="JianhangLin">JianhangLin</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [  
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<div id="totop" style="position:fixed;bottom:150px;right:50px;cursor: pointer;">
+<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<script src="/js/totop.js"></script>
+<script src="/js/totop.js"></script>
+
+
+
+
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-1', 'linjianhang.me');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>
