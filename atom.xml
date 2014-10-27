@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我只需要你陪我60年。很傻，对吧？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-10-27T07:15:05.430Z</updated>
+  <updated>2014-10-27T07:17:55.920Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun114/"/>
     <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun114/</id>
     <published>2014-10-25T01:30:11.000Z</published>
-    <updated>2014-10-27T07:09:53.000Z</updated>
+    <updated>2014-10-27T07:17:43.000Z</updated>
     <content type="html"><![CDATA[<h2 id="低阶行列式">低阶行列式</h2>
 <p>在介绍高斯方法时，我们没有过多地关注主未知数系数的值.那时着重关注于这些系数是非零的.现在我们进入消元法的精确步骤，尽管只是解低阶方形线性方程组.这样做将为我们提供一些思考的案例，以及在第三章给出的构造一般行列式理论的原始材料.</p>
 <p>如$\S 3$所示，考虑带有两个未知数的两个方程</p>
@@ -114,8 +114,8 @@
 <p>证明:由三阶行列式的表达式$(8)$可知，按其展开，可知上述两个等式成立.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="低阶行列式">低阶行列式</h2>
-<p>在介绍高斯方法时，我们没有过多地关注主未知数系数的值.那时着重关注于这些系数是非零的.现在我们进入消元法的精确步骤，尽管只是解低阶方形线性方程组.这样做将为我们提供一些思考的案例，以及在第三章给出的构造一般行列式理论的原始]]>
+    <![CDATA[我们进入消元法的精确步骤，尽管只是解低阶方形线性方程组.这样做将为我们提供一些思考的案例，以及在第三章给出的构造一般行列式理论的原始材料.]]>
+    
     </summary>
     
       <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
