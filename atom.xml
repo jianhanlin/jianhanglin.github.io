@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我只需要你陪我60年。很傻，对吧？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-10-27T07:19:31.796Z</updated>
+  <updated>2014-10-27T07:20:57.216Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -129,12 +129,12 @@
     <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun113/"/>
     <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun113/</id>
     <published>2014-10-23T04:30:34.000Z</published>
-    <updated>2014-10-27T07:19:16.000Z</updated>
+    <updated>2014-10-27T07:20:49.000Z</updated>
     <content type="html"><![CDATA[<h1 id="线性方程组初步">线性方程组初步</h1>
 <p>带有实系数$a,b,c,d,e,f$的线性方程$ax=b$，以及形如</p>
 <span>$$  \begin{array}{c}  ax+by=e, \\  cx+dy=f \\  \end{array}\\ \tag{1}  $$</span>
 
-<p>方程组的求解问题在中学已经学习过了.我们现在的目的是学会解形如</p>
+<p>方程组的求解问题在中学已经学习过了.&lt;—!more—&gt;我们现在的目的是学会解形如</p>
 <span>$$  \begin{array}{c}  a_{11}x_1+a_{12}x_2+\cdots +a_{1n}x_n=b_1, \\  a_{21}x_1+a_{22}x_2+\cdots +a_{2n}x_n=b_2, \\  \cdots \cdots \cdots \cdots \\  a_{m1}x_1+a_{m2}x_2+\cdots +a_{mn}x_n=b_m, \\  \end{array}\\ \tag{2}  $$</span>
 
 <p>的一般线性代数方程组(或简称线性方程组).此处$m,n$是任意正整数.看起来，从方程$(1)$过渡到方程$(2)$时纯粹数量上的增长是一件具有本质意义的事情.形如$(2)$的线性方程组直接出现在几乎所有的数学分支中，而所谓线性方法，其最终产物往往是线性方程组的解，已经成为数学中发展最充分的部分.简略地说，形如$(2)$的线性方程组为$19$世纪创立积分方程的理论提供了原型，而后者在力学和物理学中有着特殊重要的作用.再如计算机处理的大量实际问题也要归结为线性方程组$(2)$.</p>
