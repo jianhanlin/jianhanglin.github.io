@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我只需要你陪我60年。很傻，对吧？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-10-27T07:20:57.216Z</updated>
+  <updated>2014-10-28T08:20:19.096Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -13,6 +13,74 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[《微积分学教程(第一卷)》 绪论 实数 1 有理数域]]></title>
+    <link href="http://jianhanglin.github.io/2014/10/weijifenxuejiaocheng101/"/>
+    <id>http://jianhanglin.github.io/2014/10/weijifenxuejiaocheng101/</id>
+    <published>2014-10-28T02:21:24.000Z</published>
+    <updated>2014-10-28T03:57:09.000Z</updated>
+    <content type="html"><![CDATA[<p><strong><a href="http://book.douban.com/subject/1707158/" target="_blank" rel="external">微积分学教程(第一卷)</a></strong> <a href="http://pan.baidu.com/s/1i31NAN7" target="_blank" rel="external">在线阅读</a> Г.М.菲赫金哥尔茨 杨弢亮 叶彦谦  高等教育出版社 第8版 </p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/cover.jpg" alt=""></center> 
+
+<h2 id="前言">前言</h2>
+<p>读者对于有理数及其性质，从中学的教材内便很熟悉了.在那时，初等数学的要求，已趋向于必须扩大数的领域.的确，在有理数中即使是正整数(自然数)的根，例如$\sqrt{2}$，也常常并不存在.就是说，并没有这样的有理数$\dfrac{p}{q}$(式中$p$及$q$——自然数)，其平方能等于$2$.</p>
+<p>为了证明，试假定其反面：设有分数$\dfrac{p}{q}$，其平方为$(\dfrac{p}{q})^2=2$.我们可以假设$\dfrac{p}{q}$是既约分数，即$p$和$q$是没有公约数的.因$p^2=2q^2$，故$p$为偶数：$p=2r$($r$——整数)，于是$q$为奇数.用$p$的式子代入，得：$q^2=2r^2$，由此推得$q$为偶数.所得的矛盾便证明了我们的命题.</p>
+<p>同时，若我们仅停留在有理数的范围内，那么在几何学上便已显然知道，并非一切的线段都能有一个长度.例如考察边长为单位长度的正方形，其对角线就不可能有有理长度$\dfrac{p}{q}$，因若不然，依毕达哥拉斯定理，这长度的平方应等于$2$，而我们已看到这是不可能的.</p>
+<p>在本绪论内，我们要做这样一件工作：在有理数域中添上新的数——无理数，以扩大有理数域的范围.同时，我们要证明，对有理数施行算术运算及用等号、不等号结合它们等变通性质，在扩大的领域内仍然是真实的.为了对扩大后的数域验证上述性质，需选出为数最少的<strong>基本性质</strong>，使其余的一切性质都能作为形式逻辑的结果而从之推出：所要验证的便仅限于这些基本性质了.</p>
+<p>因此，我们列举有理数域的下列一些基本性质.同时我们将用一些例子来证明，它们的另一些众所周知的性质是怎样从基本性质推导出来的.我们这里所说的“数”，总是指的有理数，用字母$a,b\cdots $等来表示它们.</p>
+<h2 id="有理数域的序">有理数域的序</h2>
+<p>首先让我们约定：所谓相等的数就是同一数的各种不同形式.换言之，“相等”($=$)的概念即指“恒等”.因此，我们不再列举相等的数的性质.</p>
+<p>有理数域的序得自“大于”($&gt;$)的概念，与之有关的是第一组性质.</p>
+<p>Ⅰ$1°$每一对数$a$与$b$之间必有且仅有下列关系之一</p>
+<p>$$a=b,a &gt; b,a &lt; b;$$</p>
+<p>Ⅰ$2°$由$a &gt; b$及$b &gt; c$推得$a &gt; c$($&gt;$的传递性)；</p>
+<p>Ⅰ$3°$若$a &gt; b$，则必能求得一数$c$，使</p>
+<p>$$a &gt; c,且c &gt; b $$</p>
+<p>(稠密性).在这条件下也说成：数$c$位于数$a$与$b$之间；显然，这样的数有无限个之多.</p>
+<p>“小于”($&lt;$)的概念作为派生的而引入.说$a &lt; b$，当且仅当$b &gt; a$时.显而易见，由$a &lt; b$及$b &lt; c$，即得$a &lt; c$($&lt;$的传递性).实则，由假设，不等式$a &lt; b$及$b &lt; c$，相当于不等式$b &gt; a$及$c &gt; b$；由此推得$c &gt; a$(Ⅰ$2°$)，或即$a &lt; c$.</p>
+<p>在对有理数施行算术运算时所要牵涉到的“大于”这一概念的其他性质，将在以后随时指出之.</p>
+<h2 id="有理数的加法及减法">有理数的加法及减法</h2>
+<p>第二组性质是关于加法的，即关于求两数之和的运算的.对于每一对数$a$及$b$，存在着一个(唯一的)数，被称为$a$和$b$的和(记成$a+b$).这概念具有下列的性质：</p>
+<p>Ⅱ$1°$ $a+b=b+a$(加法的交换性)；</p>
+<p>Ⅱ$2°$ $(a+b)+c=a+(b+c)$(加法的结合性).</p>
+<p>零这个数比较特殊，它具有下列特性：</p>
+<p>Ⅱ$3°$ $a+0=a$；</p>
+<p>此外，</p>
+<p>Ⅱ$4°$ 对每一数$a$存在着(与它对称的)数$-a$，使$a+(-a)=0$.</p>
+<p>在这些性质的基础上，首先解决加法的逆运算即减法的问题.通常称使$c+b=a$的数$c$为$a$及$b$的差，假若如此，便发生这样的数的存在及唯一性的问题.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><strong><a href="http://book.douban.com/subject/1707158/" target="_blank" rel="external">微积分学教程(第一卷)</a></strong> <a href="http://pan.bai]]>
+    </summary>
+    
+      <category term="微积分" scheme="http://jianhanglin.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/"/>
+    
+      <category term="微积分" scheme="http://jianhanglin.github.io/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 5 集合与映射]]></title>
+    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun115/"/>
+    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun115/</id>
+    <published>2014-10-27T07:22:40.000Z</published>
+    <updated>2014-10-27T07:30:14.000Z</updated>
+    <content type="html"><![CDATA[<p>在前两节中，我们遇到了各式各样的元素的集合，也遇到了集合之间的映射.例如给定的线性方程组的解的集合，或使每一个二阶矩阵对应于它的行列式的法则——都是某些形式概念的特例，了解形式概念(哪怕在直观的层面上)对今后的学习是非常有益的.</p>
+<h2 id="集合">集合</h2>
+<p><strong>集合</strong>指某些对象的总合，这些对象被称为<strong>元素</strong>.</p>
+<p>含有有限个不同元素的集合可以用明确地列出全部元素的办法来描述，通常将这些元素写在花括号内.例如${1,2,4,8}$——从$1$到$10$之间$2$的方幂的集合.我们总是用某个字母表中的大写字母表示集合，用同一个或另一个字母表中的小写字母表示它的元素.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[我们进入消元法的精确步骤，尽管只是解低阶方形线性方程组.这样做将为我们提供一些思考的案例，以及在第三章给出的构造一般行列式理论的原始材料.]]>
+    
+    </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="基础代数" scheme="http://jianhanglin.github.io/categories/%E5%9F%BA%E7%A1%80%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 4 低阶行列式]]></title>
@@ -753,64 +821,6 @@
   </entry>
   
   <entry>
-    <title><![CDATA[《代数学引论》第零章 集合与整数 2 自然数]]></title>
-    <link href="http://jianhanglin.github.io/2014/09/daishuxueyinlun02/"/>
-    <id>http://jianhanglin.github.io/2014/09/daishuxueyinlun02/</id>
-    <published>2014-10-18T10:21:33.000Z</published>
-    <updated>2014-10-22T01:26:07.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="自然数">自然数</h2>
-<p><strong>自然数系</strong>是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.自然数系是可数无限集合的一个原型.它的良序性质是数学归纳法原理的依据.自然数系的整除性和素数的研究促使了数论的发展.用<strong>皮阿诺(Peano)公理</strong>来描述自然数，容易使我们看清自然数的本质.</p>
-<p>自然数系是这样一个非空集合$\bf N$，其中有一个选定了的元素$0$，和一个$\bf N$到自身的后继映射$a\mapsto a^{+}$，$a^{+}$叫做$a$的后继，满足</p>
-<p>$i)$映射$a\mapsto a^{+}$是单一的.即从$a^{+}=b^{+}$推出$a=b$，</p>
-<p>$ii)0$不是任何元素的后继，即不存在$a\in \bf N$使得$a^{+}=0$，</p>
-<p>$iii)$如果$\bf N$的任一个子集$S$满足1)$0\in S$而且2)对所有元素$a\in \bf N$，从$a\in S$恒有$a^{+}\in S$，则$S=\bf N$.</p>
-<p>从公理$i)$和$ii)0$推出$\bf N$是一个无穷集合，公理$iii)$就是<strong>数学归纳法原理</strong>.它是归纳法证明方法的基础.设$P(n)$是关于自然数$n$的某种性质或陈述.为了证明$P(n)$对所有自然数是真的，我们只需证明两点：1)$P(0)$是真的，2)若对任一自然数$n$，$P(n)$是真的，则$P(n^{+})$也是真的.于是根据数学归纳法原理，$P(n)$对所有自然数都是真的.</p>
-<p>关于自然数的许多性质都可以应用数学归纳法原理予以证明.例如，我们可以应用数字归纳法原理证明命题：$\bf N$的每个非零自然数$a$都是另一个自然数$b$的后继.设<span>$S_{1}=\lbrace x\in \bf N\mid$</span>对$x$存在一个$y\in \bf N$使得$x=y^{+}\rbrace $，<span>$S=\lbrace  0\rbrace  \cup S_{1}$</span>.证明$S=\bf N$.首先$0\in S$，而且若$b\in S$，根据$S$的定义$b^{+}\in S$.根据数学归纳法原理$S=\bf N$.</p>
-<p>归纳法的证明为大家所熟悉，但是归纳法或归纳法构造，则不大为大家所熟悉.归纳法构造是以下列定理为基础的.</p>
-<p><strong>递归定理</strong>设$S$为一集合，$\varphi$为$S$到自身的一个映射，$a$为$S$的一个给定的元素，则存在一个唯一的$\bf N$到$S$的映射$\psi _{a}$使得</p>
-<p>$$\psi _{a}(0)=a$$</p>
-<p>且</p>
-<span>$$\psi _{a}(n^{+})=\varphi (\psi _{a}(n)),n\in \bf N.$$</span>
-
-<p>就是说下图交换</p>
-<center><img src="/assets/img/daishuxueyinlun/2.bmp" alt=""></center>
-
-<p>且</p>
-<p>$$\psi _{a}(0)=a.$$</p>
-<p>(交换图的概念可见第一章$\S 7$).</p>
-<p>我们不打算给出这个定理的详细证明.但是要说一下证明的思路.一个集合$X$到另一个集合$Y$的任一映射$f$规定了笛卡尔积$X\times Y$的一个子集</p>
-<p>$$T=\lbrace  (x,f(x))\mid x\in X\rbrace .$$</p>
-<p>反之，$X\times Y$的一个子集$T$如果满足1)对每个$x\in X$存在一个$y\in Y$使$(x,y)\in T$，而且2)若$(x,y)$，$(x,y’)\in T$，则$y=y’$，那么$T$规定了一个映射$f:X\to Y$使得$T$由所有的$(x,f(x))$，$x\in X$组成.基于这种看法，我们考虑笛卡尔积${\bf N}\times S$的满足下列条件的子集$T$：(1)$(0,a)\in T$，而且(2)若$(n,b)\in T$，则$(n^{+},\varphi (b))\in T$(对所有$n\in \bf N$).用$I$表示${\bf N}\times S$的所有这种子集的交.读者可以根据自然数的公理证明$I$规定了一个映射<span>$\psi _{a}:{\bf N}\to S$</span>而且<span>$\psi _{a}$</span>满足定理的要求.不难证明，满足定理要求的映射<span>$\psi _{a}$</span>是唯一的.</p>
-<p>根据递归定理，在自然数系上我们可以归纳地定义一个概念或归纳地构造一个函数.自然数的加法和乘法的定义就是典型的例子.</p>
-<p>定义$\bf N$的加法如下：对任意$m,n\in \bf N$，规定</p>
-<p>$$m+0=m$$</p>
-<p>$$m+n^{+}=(m+n)^{+}.$$</p>
-<p>注意，我们在递归定理中令$S=\bf N$，$\varphi (n)=n^{+}$，$a=m$，从而得到的映射<span>$\psi _{m}$</span>等于规定了加法运算，<span>$\psi _{m}(n)=m+n$</span>.</p>
-<p>不难证明加法满足结合律、交换律和加法消去律.将$0$的后继记成$1$，$0^{+}=1$，于是有$m+1=m^{+}$.$0$是加法的单位元素.</p>
-<p>定义$\bf N$的乘法如下：对任意$m,n\in \bf N$，规定</p>
-<p>$$m\cdot 0=0$$</p>
-<p>$$m\cdot n^{+}=m\cdot n+m.$$</p>
-<p>注意，在递归定理中我们令$S=\bf N$，$\varphi (n)=n+m$，$a=m$，从而得到的映射<span>$\psi _{m}$</span>等于规定了乘法运算，<span>$\psi _{m}(n)=m\cdot n$</span>.</p>
-<p>不难证明乘法满足结合律、交换律、乘法消去律以及乘法对加法的分配律.由定义可知$m\cdot 1=m$，对所有自然数$m$.$1$是乘法的单位元素.</p>
-<p>自然数系还有一个序“$\leq$”.这个序规定了任意两个自然数$a,b$的大小.我们说$a\leq b$当而且仅当$a+x=b$在$\bf N$内有解.若$a\leq b$且$a\neq b$，则写成$a&lt;b$.$a\neq b$也可写成$b\geq a$.根据定义可知$0\neq n$，$n&lt;n^{+}$，对所有自然数$n$.关于序的一些性质在这里不一一列举了.例如应用数学归纳法可以证明，对任一对自然数$n,n^{+}$，不再存在自然数$m$满足$n&lt;m&lt;n^{+}$.因而从$n&lt;m$就可以断定$n^{+}\leq m$.特别值得提出的是</p>
-<p><strong>良序性质</strong> 自然数系的任一非空子集$S$有一个最小元素，即存在一个$m\in S$使得对所有$x\in S$都有$x\geq m$.</p>
-<p><strong>证明</strong> 如果$S$包含$0$，则$0$是$S$的最小元素.假设：如果$S$包含$n$，则$S$有一个最小元素.由此证明，如果$S$包含$n^{+}$，则$S$有一个最小元素.作$S’=S\cup \lbrace n\rbrace $.根据归纳法假设，$S’$有一个最小元素$m$.若$m\in S$，则$m$就是$S$的最小元素.假设$m\notin S$，则必有$m=n$，因而$n\notin S$，且$n&lt;a$，对所有的$a\in S$.于是，根据上面的说明可以断定$n^{+}\leq a$对所有的$a\in S$.根据$n^{+}\in S$，所以$n^{+}$是$S$的最小元素.$\blacksquare$</p>
-<p>自然数系的良序性质是第二数学归纳法的基础.</p>
-<p><strong>第二数学归纳法</strong> 假设$P(n)$是关于自然数$n$的一种性质或陈述.如果我们能够证明命题“若$P(n)$对所有小于$n$的自然数$x$都真，则$P(n)$也是真的”，其中包含$P(0)$为真的证明.那么可以断言$P$对所有自然数都是真的.</p>
-<p><strong>证明</strong> 我们是在引号中的命题已被证明成立的前提下，来证明$P$对所有自然数$n$都真.设$S=\lbrace  x \in {\bf N}\mid P(x)$假$\rbrace $，求证$S$为空集.反证法.假如$S$非空，则$S$有一个最小自然数$m$.于是$P(m)$假.但是$P(x)$对所有小于$m$的自然数都真.这与上述命题矛盾.所以$S=\varnothing$.$\blacksquare$</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[自然数系是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.]]>
-    
-    </summary>
-    
-      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[《代数学引论》第零章 集合与整数 1 集合上的等价关系]]></title>
     <link href="http://jianhanglin.github.io/2014/09/daishuxueyinlun01/"/>
     <id>http://jianhanglin.github.io/2014/09/daishuxueyinlun01/</id>
@@ -867,6 +877,64 @@
 ]]></content>
     <summary type="html">
     <![CDATA[集合是数学的基本概念之一.它是具有一定属性的事物形成的一个集体.根据这属性可以区别一个事物属于或不属于这个集合.]]>
+    
+    </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[《代数学引论》第零章 集合与整数 2 自然数]]></title>
+    <link href="http://jianhanglin.github.io/2014/09/daishuxueyinlun02/"/>
+    <id>http://jianhanglin.github.io/2014/09/daishuxueyinlun02/</id>
+    <published>2014-10-18T10:21:33.000Z</published>
+    <updated>2014-10-22T01:26:07.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="自然数">自然数</h2>
+<p><strong>自然数系</strong>是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.自然数系是可数无限集合的一个原型.它的良序性质是数学归纳法原理的依据.自然数系的整除性和素数的研究促使了数论的发展.用<strong>皮阿诺(Peano)公理</strong>来描述自然数，容易使我们看清自然数的本质.</p>
+<p>自然数系是这样一个非空集合$\bf N$，其中有一个选定了的元素$0$，和一个$\bf N$到自身的后继映射$a\mapsto a^{+}$，$a^{+}$叫做$a$的后继，满足</p>
+<p>$i)$映射$a\mapsto a^{+}$是单一的.即从$a^{+}=b^{+}$推出$a=b$，</p>
+<p>$ii)0$不是任何元素的后继，即不存在$a\in \bf N$使得$a^{+}=0$，</p>
+<p>$iii)$如果$\bf N$的任一个子集$S$满足1)$0\in S$而且2)对所有元素$a\in \bf N$，从$a\in S$恒有$a^{+}\in S$，则$S=\bf N$.</p>
+<p>从公理$i)$和$ii)0$推出$\bf N$是一个无穷集合，公理$iii)$就是<strong>数学归纳法原理</strong>.它是归纳法证明方法的基础.设$P(n)$是关于自然数$n$的某种性质或陈述.为了证明$P(n)$对所有自然数是真的，我们只需证明两点：1)$P(0)$是真的，2)若对任一自然数$n$，$P(n)$是真的，则$P(n^{+})$也是真的.于是根据数学归纳法原理，$P(n)$对所有自然数都是真的.</p>
+<p>关于自然数的许多性质都可以应用数学归纳法原理予以证明.例如，我们可以应用数字归纳法原理证明命题：$\bf N$的每个非零自然数$a$都是另一个自然数$b$的后继.设<span>$S_{1}=\lbrace x\in \bf N\mid$</span>对$x$存在一个$y\in \bf N$使得$x=y^{+}\rbrace $，<span>$S=\lbrace  0\rbrace  \cup S_{1}$</span>.证明$S=\bf N$.首先$0\in S$，而且若$b\in S$，根据$S$的定义$b^{+}\in S$.根据数学归纳法原理$S=\bf N$.</p>
+<p>归纳法的证明为大家所熟悉，但是归纳法或归纳法构造，则不大为大家所熟悉.归纳法构造是以下列定理为基础的.</p>
+<p><strong>递归定理</strong>设$S$为一集合，$\varphi$为$S$到自身的一个映射，$a$为$S$的一个给定的元素，则存在一个唯一的$\bf N$到$S$的映射$\psi _{a}$使得</p>
+<p>$$\psi _{a}(0)=a$$</p>
+<p>且</p>
+<span>$$\psi _{a}(n^{+})=\varphi (\psi _{a}(n)),n\in \bf N.$$</span>
+
+<p>就是说下图交换</p>
+<center><img src="/assets/img/daishuxueyinlun/2.bmp" alt=""></center>
+
+<p>且</p>
+<p>$$\psi _{a}(0)=a.$$</p>
+<p>(交换图的概念可见第一章$\S 7$).</p>
+<p>我们不打算给出这个定理的详细证明.但是要说一下证明的思路.一个集合$X$到另一个集合$Y$的任一映射$f$规定了笛卡尔积$X\times Y$的一个子集</p>
+<p>$$T=\lbrace  (x,f(x))\mid x\in X\rbrace .$$</p>
+<p>反之，$X\times Y$的一个子集$T$如果满足1)对每个$x\in X$存在一个$y\in Y$使$(x,y)\in T$，而且2)若$(x,y)$，$(x,y’)\in T$，则$y=y’$，那么$T$规定了一个映射$f:X\to Y$使得$T$由所有的$(x,f(x))$，$x\in X$组成.基于这种看法，我们考虑笛卡尔积${\bf N}\times S$的满足下列条件的子集$T$：(1)$(0,a)\in T$，而且(2)若$(n,b)\in T$，则$(n^{+},\varphi (b))\in T$(对所有$n\in \bf N$).用$I$表示${\bf N}\times S$的所有这种子集的交.读者可以根据自然数的公理证明$I$规定了一个映射<span>$\psi _{a}:{\bf N}\to S$</span>而且<span>$\psi _{a}$</span>满足定理的要求.不难证明，满足定理要求的映射<span>$\psi _{a}$</span>是唯一的.</p>
+<p>根据递归定理，在自然数系上我们可以归纳地定义一个概念或归纳地构造一个函数.自然数的加法和乘法的定义就是典型的例子.</p>
+<p>定义$\bf N$的加法如下：对任意$m,n\in \bf N$，规定</p>
+<p>$$m+0=m$$</p>
+<p>$$m+n^{+}=(m+n)^{+}.$$</p>
+<p>注意，我们在递归定理中令$S=\bf N$，$\varphi (n)=n^{+}$，$a=m$，从而得到的映射<span>$\psi _{m}$</span>等于规定了加法运算，<span>$\psi _{m}(n)=m+n$</span>.</p>
+<p>不难证明加法满足结合律、交换律和加法消去律.将$0$的后继记成$1$，$0^{+}=1$，于是有$m+1=m^{+}$.$0$是加法的单位元素.</p>
+<p>定义$\bf N$的乘法如下：对任意$m,n\in \bf N$，规定</p>
+<p>$$m\cdot 0=0$$</p>
+<p>$$m\cdot n^{+}=m\cdot n+m.$$</p>
+<p>注意，在递归定理中我们令$S=\bf N$，$\varphi (n)=n+m$，$a=m$，从而得到的映射<span>$\psi _{m}$</span>等于规定了乘法运算，<span>$\psi _{m}(n)=m\cdot n$</span>.</p>
+<p>不难证明乘法满足结合律、交换律、乘法消去律以及乘法对加法的分配律.由定义可知$m\cdot 1=m$，对所有自然数$m$.$1$是乘法的单位元素.</p>
+<p>自然数系还有一个序“$\leq$”.这个序规定了任意两个自然数$a,b$的大小.我们说$a\leq b$当而且仅当$a+x=b$在$\bf N$内有解.若$a\leq b$且$a\neq b$，则写成$a&lt;b$.$a\neq b$也可写成$b\geq a$.根据定义可知$0\neq n$，$n&lt;n^{+}$，对所有自然数$n$.关于序的一些性质在这里不一一列举了.例如应用数学归纳法可以证明，对任一对自然数$n,n^{+}$，不再存在自然数$m$满足$n&lt;m&lt;n^{+}$.因而从$n&lt;m$就可以断定$n^{+}\leq m$.特别值得提出的是</p>
+<p><strong>良序性质</strong> 自然数系的任一非空子集$S$有一个最小元素，即存在一个$m\in S$使得对所有$x\in S$都有$x\geq m$.</p>
+<p><strong>证明</strong> 如果$S$包含$0$，则$0$是$S$的最小元素.假设：如果$S$包含$n$，则$S$有一个最小元素.由此证明，如果$S$包含$n^{+}$，则$S$有一个最小元素.作$S’=S\cup \lbrace n\rbrace $.根据归纳法假设，$S’$有一个最小元素$m$.若$m\in S$，则$m$就是$S$的最小元素.假设$m\notin S$，则必有$m=n$，因而$n\notin S$，且$n&lt;a$，对所有的$a\in S$.于是，根据上面的说明可以断定$n^{+}\leq a$对所有的$a\in S$.根据$n^{+}\in S$，所以$n^{+}$是$S$的最小元素.$\blacksquare$</p>
+<p>自然数系的良序性质是第二数学归纳法的基础.</p>
+<p><strong>第二数学归纳法</strong> 假设$P(n)$是关于自然数$n$的一种性质或陈述.如果我们能够证明命题“若$P(n)$对所有小于$n$的自然数$x$都真，则$P(n)$也是真的”，其中包含$P(0)$为真的证明.那么可以断言$P$对所有自然数都是真的.</p>
+<p><strong>证明</strong> 我们是在引号中的命题已被证明成立的前提下，来证明$P$对所有自然数$n$都真.设$S=\lbrace  x \in {\bf N}\mid P(x)$假$\rbrace $，求证$S$为空集.反证法.假如$S$非空，则$S$有一个最小自然数$m$.于是$P(m)$假.但是$P(x)$对所有小于$m$的自然数都真.这与上述命题矛盾.所以$S=\varnothing$.$\blacksquare$</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[自然数系是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.]]>
     
     </summary>
     
@@ -1510,35 +1578,6 @@
       <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
     
       <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[基础数学学习计划]]></title>
-    <link href="http://jianhanglin.github.io/2014/09/jichushuxuexuexijihua/"/>
-    <id>http://jianhanglin.github.io/2014/09/jichushuxuexuexijihua/</id>
-    <published>2014-10-16T09:21:56.000Z</published>
-    <updated>2014-10-23T03:27:30.000Z</updated>
-    <content type="html"><![CDATA[<p><strong>抽象代数</strong></p>
-<p> <strong><a href="http://book.douban.com/subject/4201293/" target="_blank" rel="external">近世代数引论</a></strong> <a href="http://pan.baidu.com/s/1hqIe368" target="_blank" rel="external">在线阅读</a> 冯克勤 李尚志 章璞 中国科学技术大学出版社 第3版 </p>
-<center><img src="/assets/img/Cover/jinshidaishuyinlun.jpg" alt=""></center> 
-
-<p> <strong><a href="http://book.douban.com/subject/1462025/" target="_blank" rel="external">Algebra</a></strong> <a href="http://pan.baidu.com/s/1jGf0HM2" target="_blank" rel="external">在线阅读</a> Serge Lang Springer Revised Third Edition </p>
-<center><img src="/assets/img/Cover/Algebra.jpg" alt=""></center> 
-
-<p> <strong><a href="http://book.douban.com/subject/1230310/" target="_blank" rel="external">代数学引论</a></strong> <a href="http://pan.baidu.com/s/1dD1V5lf" target="_blank" rel="external">在线阅读</a> 聂灵沼 丁石孙 高等教育出版社 第2版   </p>
-<center><img src="/assets/img/Cover/daishuxueyinlun.jpg" alt=""></center> 
-
-<p> <strong><a href="http://book.douban.com/subject/2036531/" target="_blank" rel="external">代数学引论(第一卷)基础代数</a></strong> <a href="http://pan.baidu.com/s/1c01XGQ0" target="_blank" rel="external">在线阅读</a> А.И.柯斯特利金 张英伯 高等教育出版社 第2版   </p>
-<center><img src="/assets/img/Cover/daishuxueyinlun1.jpg" alt=""></center> ]]></content>
-    <summary type="html">
-    <![CDATA[关于我的数学学习计划]]>
-    
-    </summary>
-    
-      <category term="计划" scheme="http://jianhanglin.github.io/tags/%E8%AE%A1%E5%88%92/"/>
-    
-      <category term="计划" scheme="http://jianhanglin.github.io/categories/%E8%AE%A1%E5%88%92/"/>
     
   </entry>
   
