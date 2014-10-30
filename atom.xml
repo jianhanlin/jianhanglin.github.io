@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我只需要你陪我60年。很傻，对吧？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-10-28T08:20:19.096Z</updated>
+  <updated>2014-10-30T02:37:47.701Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://jianhanglin.github.io/2014/10/weijifenxuejiaocheng101/"/>
     <id>http://jianhanglin.github.io/2014/10/weijifenxuejiaocheng101/</id>
     <published>2014-10-28T02:21:24.000Z</published>
-    <updated>2014-10-28T03:57:09.000Z</updated>
+    <updated>2014-10-30T02:34:22.000Z</updated>
     <content type="html"><![CDATA[<p><strong><a href="http://book.douban.com/subject/1707158/" target="_blank" rel="external">微积分学教程(第一卷)</a></strong> <a href="http://pan.baidu.com/s/1i31NAN7" target="_blank" rel="external">在线阅读</a> Г.М.菲赫金哥尔茨 杨弢亮 叶彦谦  高等教育出版社 第8版 </p>
 <center><img src="/assets/img/weijifenxuejiaocheng/1/cover.jpg" alt=""></center> 
 
@@ -48,7 +48,80 @@
 <p>Ⅱ$3°$ $a+0=a$；</p>
 <p>此外，</p>
 <p>Ⅱ$4°$ 对每一数$a$存在着(与它对称的)数$-a$，使$a+(-a)=0$.</p>
-<p>在这些性质的基础上，首先解决加法的逆运算即减法的问题.通常称使$c+b=a$的数$c$为$a$及$b$的差，假若如此，便发生这样的数的存在及唯一性的问题.</p>
+<p>在这些性质的基础上，首先解决加法的逆运算即减法的问题.通常称使$c+b=a$的数$c$为$a$及$b$的差，定义差的这个等式可写成：$b+c=a$.假若如此，便发生这样的数的存在及唯一性的问题.</p>
+<p>设$c=a+(-b)$，则得[Ⅱ$2°,1°,4°,3°$]</p>
+<p>$$c+b=[a+(-b)]+b=a+[(-b)+b]=a+[b+(-b)]=a+0=a,$$</p>
+<p>反之，令$c’$为数$a$及$b$的差，即有$c’+b=a$.在这等式两边各加$(-b)$，并交换其左边[Ⅱ$2°,4°,3°$]：</p>
+<p>$$(c’+b)+(-b)=c’+[b+(-b)]=c’+0=c’.$$</p>
+<p>结果得$c’=a+(-b)=c$.</p>
+<p>这样，就证明了数$a$及$b$的差的存在及单值性；把它记成$a-b$.</p>
+<p>由差的单值性可以推得一系列的推论.首先，由Ⅱ$3°$推得$0=a-a$，因而得出结论：除去数$0$以外，具有相似于Ⅱ$3°$的性质的数不存在.其次，由此推得与所给数对称的数的唯一性：$-a=0-a$.</p>
+<p>因为由$a+(-a)=0$可推得$(-a)+a=0$[Ⅱ$1°$]，所以$a=-(-a)$，即数$a$及$-a$为互相对称的数.我们再来证明对称数满足下述性质：</p>
+<p>$$-(a+b)=(-a)+(-b).$$</p>
+<p>为此，只需证明</p>
+<p>$$(a+b)+[(-a)+(-b)]=0,$$</p>
+<p>而这由Ⅱ$1°,2°,4°,3°$，便可推得.</p>
+<p>最后，再引进联系$&gt;$与加号的一个性质.</p>
+<p>Ⅱ$5°$ 由$a &gt; b$推得$a+c &gt; b+c$.</p>
+<p>它使我们得以在不等式的两边各加上一个等量；用它又可证明两不等式</p>
+<p>$$a &gt; b和a-b &gt; 0$$</p>
+<p>是相当的.其次，由$a &gt; b$推得$-a &lt; -b$.实则，由$a &gt; b$引致$a-b &gt; 0$；但$a-b=a+(-b)=(-b)+a=(-b)+[-(-a)]=(-b)-(-a)$，因此这不等式可改写成：$(-b)-(-a) &gt; 0$，由此$-b &gt; -a$或$-a &lt; -b$.</p>
+<p>特别是，由$a &gt; 0$推得$-a &lt; 0$，由$a &lt; 0$推得$-a &gt; 0$.若$a\neq 0$，则在两个互相对称的数$a$及$-a$中，必有一个(且仅一个)将大于$0$；它即称为数$a$或数$-a$的绝对值，记成</p>
+<p>$$\mid a\mid =\mid -a\mid .$$</p>
+<p>零的绝对值就定为零：$\mid 0\mid =0$.</p>
+<p>根据性质Ⅱ$5°$，可以逐项地合并不等式：由$a &gt; b$及$c &gt; d$推得$a+c &gt; b+d$.实际上，由$a &gt; b$推得$a+c &gt; b+c$；仿此，由$c+d$推得$c+b &gt; d+b$，或[Ⅱ$1°$]$b+c &gt; b+d$，然后由Ⅰ$2°$，最后即得$a+c &gt; b+d$.</p>
+<h2 id="有理数的乘法及除法">有理数的乘法及除法</h2>
+<p>第三组性质是关于乘法的，即关于求两数之乘积的运算的.对于每一对数$a$及$b$存在着一个(唯一的)数，被称为$a$及$b$的乘积(记成$a\cdot b$或$ab$).这概念具有下列性质：</p>
+<p>Ⅲ$1°$ $ab=ba$(乘法的交换性)；</p>
+<p>Ⅲ$2°$ $(ab)c=a(bc)$(乘法的结合性).</p>
+<p>“$1$”这个数比较特殊，它具有下列特性：</p>
+<p>Ⅲ$3°$ $a\cdot 1=a$；</p>
+<p>此外，</p>
+<p>Ⅲ$4°$ 对于每一异于$0$的数$a$，必有数$\dfrac{1}{a}$(其倒数)，使$a\cdot \dfrac{1}{a}=1$.</p>
+<p>关于除法的问题，作为乘法的逆运算，亦可根据乘法的性质来解决，正如前面根据加法的性质来解决关于减法的问题一样.倒数在这里的作用正如对称数在那里的作用一样.</p>
+<p>如果一数$c$满足关系</p>
+<p>$$c\cdot b=a$$</p>
+<p>依Ⅲ$1°$，定义商的这个等式也可写成：$b\cdot c=a$.</p>
+<p>(其中$b$常预先假定异于$0$)，则$c$称为$a$及$b$的商.</p>
+<p>令$c=a\cdot \dfrac{1}{b}$，就可以满足这定义.因[Ⅲ$2°,1°,4°,3°$]</p>
+<p>$$c\cdot b=(a\cdot \dfrac{1}{b})\cdot b=a\cdot (\dfrac{1}{b} \cdot b)=a\cdot (b\cdot \dfrac{1}{b})=a\cdot 1=a.$$</p>
+<p>反之，若数$c’$满足数$a$及$b$的商的定义，于是$c’\cdot b=a$，则在这等式两边乘以$\dfrac{1}{b}$，并变换左边[Ⅲ$2°,4°,3°$]：</p>
+<p>$$(c’\cdot b)\cdot \dfrac{1}{b}=c’\cdot (b\cdot \dfrac{1}{b})=c’\cdot 1=c’,$$</p>
+<p>就得到了$c’=a\cdot \dfrac{1}{b}=c$.</p>
+<p>这样，就证明了数$a$及$b$(设$b\neq 0$)的商的存在及单值性；把它记成$a:b$或$\dfrac{a}{b}$.</p>
+<p>由商的单值性可知，除了$1$以外，再没有什么数能具有类似于Ⅲ$3°$的性质.由此，如前所述.推得倒数(看成$1$及$a$的商)的唯一性；此外，容易证明数$a$及$\dfrac{1}{a}$是互为倒数.</p>
+<p>下列性质与算术的基本运算——加法及乘法双方都有关系：</p>
+<p>Ⅲ$5°$ $(a+b)c=a\cdot c+b\cdot c$(乘法关于和的分配性).</p>
+<p>由此很易导出关于乘法关于差的分配性：</p>
+<p>$$(a-b)\cdot c=a\cdot c-b\cdot c.$$</p>
+<p>依差的定义，这可以直接由下式推出</p>
+<p>$$(a-b)\cdot c+b\cdot c=[(a-b)+b]\cdot c=a\cdot c.$$</p>
+<p>再应用性质Ⅲ$5°$，可证</p>
+<p>$$b\cdot 0=0\cdot b=0.$$</p>
+<p>实际上[Ⅱ$3°$]</p>
+<p>$$a+0=a,(a+0)\cdot b=a\cdot b+0\cdot b=a\cdot b,$$</p>
+<p>由此推得$0\cdot b=0$，再由Ⅲ$1°$得$b\cdot 0=0$.</p>
+<p>反之，若$a\cdot b=0$又$b\neq 0$，则必须$a=0$.实际上，$a=\dfrac{0}{b}$，但同时又有$0=\dfrac{0}{b}$(因$b\cdot 0=0$)，因为商是唯一的，故$a=0$.</p>
+<p>最后，我们指出联系符号$&gt;$与乘号的一个性质：</p>
+<p>Ⅲ$6°$ 由$a &gt; b$及$c &gt;0$推得$a\cdot c &gt; b\cdot c$.</p>
+<p>据此可以用正数乘不等式的两边.由此可知，当$a &gt; 0$及$b &gt; 0$时，亦必有$a\cdot b &gt; 0$.</p>
+<p>注意，$(-a)\cdot b=-(a\cdot b)$；这由下面推得</p>
+<p>$$a\cdot b+(-a)\cdot b=[a+(-a)]\cdot b=0\cdot b=0.$$</p>
+<p>现在不难看出，若$a &lt; 0,b &gt; 0$，于是$a=-\mid a\mid,b=\mid b\mid$，则</p>
+<p>$$a\cdot b=(-\mid a\mid)\cdot \mid b\mid=-(\mid a\mid \cdot \mid b\mid) &lt; 0;$$</p>
+<p>当$a &gt; 0,b &lt; 0$时亦如此，又若$a &lt; 0,b &lt; 0$，则</p>
+<p>$$a\cdot b=(-\mid a\mid)(-\mid b\mid)=-[\mid a\mid \cdot (-\mid b\mid)]=-[-(\mid a\mid \cdot \mid b\mid]=\mid a\mid \cdot \mid b\mid &gt; 0.$$</p>
+<p>这样，我们已完全重新建立了关于乘法的符号规则，这些符号规则现在已成为有理数的上述性质的逻辑推论了.换言之，如果有理数满足上述诸性质，就必定要遵守这些符号规则.关于乘以$0$的规则，也可以这样说(如上所述).</p>
+<p>在处理了加法和乘法的性质以后，我们现在能够证明在前面数的基本性质[Ⅰ$3°$]中已述及的有理数域的<strong>稠密性</strong>了.就是，可以用它们证明，例如，由$a &gt; b$推得$a &gt; \dfrac{a+b}{2} &gt; b$.</p>
+<h2 id="阿基米德公理">阿基米德公理</h2>
+<p>我们用下列的简单而重要的论证，来结束我们的有理数基本性质一览表.这一性质是不能由上述的诸性质里推得的.</p>
+<p>Ⅳ$1°$ 不论$c &gt; 0$是怎样的数，总有大于$c$的自然数$n$存在着(<strong>阿基米德公理</strong>).</p>
+<p>实际上，阿基米德曾说明一个几何的命题，即为众所周知的阿基米德公理：</p>
+<p>若在直线上给定做任意两线段$A$及$B$，则$A$重复相加若干次后，其和总可以大于$B$：</p>
+<p>$$\underbrace{A+A+\cdots +A}_{n~次}=A\cdot n &gt; B.$$</p>
+<p>若将这论证转而对正数$a$及$b$来叙述，它便肯定有这样的自然数$n$存在使</p>
+<p>$$\underbrace{a+a+\cdots +a}_{n~次}=a\cdot n &gt; B.$$</p>
+<p>若应用已研究过的有理数的性质，则这不等式相当于$n &gt; \dfrac{b}{a}$；把商$\dfrac{b}{a}$记成$c$，我们便得出上面所叙述的Ⅳ$1°$.</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p><strong><a href="http://book.douban.com/subject/1707158/" target="_blank" rel="external">微积分学教程(第一卷)</a></strong> <a href="http://pan.bai]]>
