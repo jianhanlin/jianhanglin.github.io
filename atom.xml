@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我只需要你陪我60年。很傻，对吧？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-10-30T02:37:47.701Z</updated>
+  <updated>2014-11-04T08:00:56.206Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -15,11 +15,61 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[《微积分学教程(第一卷)》 绪论 实数 2 无理数的导入·实数域的序]]></title>
+    <link href="http://jianhanglin.github.io/2014/10/weijifenxuejiaocheng102/"/>
+    <id>http://jianhanglin.github.io/2014/10/weijifenxuejiaocheng102/</id>
+    <published>2014-10-30T02:42:03.000Z</published>
+    <updated>2014-10-30T05:40:45.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="无理数的定义">无理数的定义</h2>
+<p>有理数集及其在第一节内列举的一切性质，作为是已给的.</p>
+<p>我们仿效戴德金($\text{R.Dedekind}$)来叙述无理数的理论.有理数域内的分划的概念是这理论的基础.若将有理数全体所成的集合分拆为两个非空集合(即至少包含一个数的)$A,A’$.我们把这样的分拆叫做<strong>分划</strong>，只要满足条件：</p>
+<p>$1°$ 任一有理数，必在且仅在$A$及$A’$二集之一中出现；</p>
+<p>$2°$ 集$A$内的任一数$a$，必小于集$A’$内的任一数$a’$.</p>
+<p>集$A$称为分划的<strong>下组</strong>，集$A’$称为分划的<strong>上组</strong>.分划记成$A\mid A’$.</p>
+<p>由分划的定义推得，小于下组内的数$a$的一切有理数也都属于下组.仿此，大于上组内的数$a’$的一切有理数亦都属于上组.</p>
+<p>例$1$ 一切满足不等式$a &lt; 1$的有理数$a$，定为集$A$，一切满足$a’\geq 1$的$a’$，都算入集$A’$.</p>
+<p>很易验证，这样，我们实际上已得出分划了.数$1$属于$A’$组，且显然成为其中最小的数.由另一方面看，在$A$组内并无最大数，因不论我们在$A$内取怎样的数$a$，怛能在$a$与$1$之间指出有理数$a_1$来，因而它必大于$a$并且属于$A$组.</p>
+<p>例$2$ 取小于或等于$1$的一切有理数$a$，$a\leq 1$，归入下组$A$；取大于$1$的一切有理数$a’$.$a’ &gt; 1$.归入上组.则亦得一分划，且其中在上组无最小数，而在下组有最大数(即$1$).</p>
+<p>例$3$ 取使$a^2 &lt; 2$的一切正有理数$a$，数$0$及一切负有理数归入$A$组，使${a’}^2 &gt;2$的一切正有理数$a’$归入$A$组.</p>
+<p>很易证明，我们亦已得出分划.此处，在$A$组内既无最大数，在$A’$组内亦无最小数.我们将证明，例如，这论断的第一点(第二点同样可以证明).设$a$为$A$组内的任意正数，则$a^2 &lt; 2$.再证，必能得这样的正整数$n$，使</p>
+<p>$$(a+\dfrac{1}{n})^2 &lt; 2,$$</p>
+<p>于是$a+\dfrac{1}{n}$亦属于$A$.</p>
+<p>这不等式相当于：</p>
+<p>$$a^2+\dfrac{2a}{n}+\dfrac{1}{n^2} &lt; 2,\dfrac{2a}{n}+\dfrac{1}{n^2} &lt; 2-a^2,$$</p>
+<p>若$n$满足不等式$\dfrac{2a+1}{n} &lt; 2-a^2$，则上面第二个不等式也自然能满足了.为此，只需取</p>
+<p>$$n &gt; \dfrac{2a+1}{2-a^2},$$</p>
+<p>而这是恒为可能的[依阿基米德公理，Ⅳ$1°$].因此，不论$a$为$A$组内的怎样的正数，在这$A$组内终能求得大于它的数；又因为当$a\leq 0$时这论证显也成立，故在$A$组内没有任何数能成为最大的.</p>
+<p>很易明了，不可能有这样的分划存在，在它的下组内有最大数$a_0$，同时在上组内又有最小数$a_0’$.实际上，假设这样的分划存在着，则应用有理数域的稠密性[Ⅰ$3°$]，必能取得一个位于$a_0$与$a_0’$之间的有理数$c$：$a_0 &lt; c &lt; a_0’$.数$c$不能属于$A$组；因否则，$a_0$就不是此组的最大数.仿此，$c$亦不通属于$A’$组，但这是与定义分划的概念的性质$1°$相矛盾的.</p>
+<p>这样，分划仅能有三种类型，如刚才例$1,2,3$所表明的：</p>
+<p>$1)$在下组$A$内无最大数，而在上组$A’$内有最小数$r$；</p>
+<p>$2)$在下组$A$内有最大数$r$，而在上组$A’$内无最小数；</p>
+<p>$3)$在下组内既无最大数，在上组内亦无最小数.</p>
+<p>在前两种情形，我们说，分划由有理数$r$所产生($r$成为$A$与$A’$之间的<strong>界数</strong>)，或说分划定义有理数$r$.在例$1,2$中，$1$便是这样的数.在第三种情形界数并不存在，分划并不定义任何有理数.今引入新的对象——<strong>无理数</strong>.让我们约定，任一$3)$型的分划定义某一无理数$\alpha$.这个数$\alpha$便代替缺少的界数，我们好像把它插入在$A$组的一切数$a$与$A’$组的一切数$a’$之间.在例$3$中，这新创的数，很易推想而知，即是$\sqrt{2}$.</p>
+<p>我们并不引入无理数的任何同一式样的记法，我们总是把无理数$\alpha$理解为有理数域中确定它的分划$A\mid A’$.</p>
+<p>为了一致起见，同样来理解有理数$r$也常是很方便的.但对于任一有理数$r$存在着确定它的两种分划：在两种情形中，数$a &lt; r$总是属于下组，数$a’ &gt; r$总是属于上组，而数$r$本身可以任意包含在下组(这时$r$为下组的最大数)，或包含在上组($r$为上组的最小数).为了确定起见，我们约定：凡说到确定有理数$r$的分划时，常把这数放在上组内.</p>
+<p>有理数及无理数总称为<strong>实数</strong>.实数的概念，为数学分析的基本概念之一.</p>
+<h2 id="实数域的序">实数域的序</h2>
+<p>由分划$A\mid A’$及$B\mid B’$所确定的二无理数$\alpha$及$\beta$，当且仅当二分划为恒等时，始认为相等.实际上只要下组$A$及$B$互相重合就够了，因为这时$A’$与$B’$亦必互相重合.这定义在数$\alpha$及$\beta$为有理数时，仍可保持不变.换言之，若二有理数$\alpha$与$\beta$相等，则确定它们的分划相重合，反之，由分划的重合推得数$\alpha$与\beta$相等.在这里，自然仍须注意到，以分划来确定有理数时的上述约定.</p>
+<p>现在转而建立关于实数“大于”的概念.关于有理数这概念早已建立了.对于有理数$r$与无理数$\alpha$之间，“大于”的概念实际在[无理数的定义]中已建立了：即，若$\alpha$由分划$A\mid A’$所确定，我们便算作$\alpha$大于$A$组中的一切有理数，同时$A’$组中的一切有理数大于$\alpha$.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="无理数的定义">无理数的定义</h2>
+<p>有理数集及其在第一节内列举的一切性质，作为是已给的.</p>
+<p>我们仿效戴德金($\text{R.Dedekind}$)来叙述无理数的理论.有理数域内的分划的概念是这理论的基础.若将有理数全体所成的集合分拆为两个非]]>
+    </summary>
+    
+      <category term="微积分" scheme="http://jianhanglin.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/"/>
+    
+      <category term="微积分" scheme="http://jianhanglin.github.io/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[《微积分学教程(第一卷)》 绪论 实数 1 有理数域]]></title>
     <link href="http://jianhanglin.github.io/2014/10/weijifenxuejiaocheng101/"/>
     <id>http://jianhanglin.github.io/2014/10/weijifenxuejiaocheng101/</id>
     <published>2014-10-28T02:21:24.000Z</published>
-    <updated>2014-10-30T02:34:22.000Z</updated>
+    <updated>2014-10-30T02:50:42.000Z</updated>
     <content type="html"><![CDATA[<p><strong><a href="http://book.douban.com/subject/1707158/" target="_blank" rel="external">微积分学教程(第一卷)</a></strong> <a href="http://pan.baidu.com/s/1i31NAN7" target="_blank" rel="external">在线阅读</a> Г.М.菲赫金哥尔茨 杨弢亮 叶彦谦  高等教育出版社 第8版 </p>
 <center><img src="/assets/img/weijifenxuejiaocheng/1/cover.jpg" alt=""></center> 
 
@@ -124,7 +174,8 @@
 <p>若应用已研究过的有理数的性质，则这不等式相当于$n &gt; \dfrac{b}{a}$；把商$\dfrac{b}{a}$记成$c$，我们便得出上面所叙述的Ⅳ$1°$.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><strong><a href="http://book.douban.com/subject/1707158/" target="_blank" rel="external">微积分学教程(第一卷)</a></strong> <a href="http://pan.bai]]>
+    <![CDATA[在有理数域中添上新的数——无理数，以扩大有理数域的范围.同时，我们要证明，对有理数施行算术运算及用等号、不等号结合它们等变通性质，在扩大的领域内仍然是真实的.]]>
+    
     </summary>
     
       <category term="微积分" scheme="http://jianhanglin.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/"/>
@@ -138,11 +189,156 @@
     <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun115/"/>
     <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun115/</id>
     <published>2014-10-27T07:22:40.000Z</published>
-    <updated>2014-10-27T07:30:14.000Z</updated>
+    <updated>2014-11-04T07:59:10.000Z</updated>
     <content type="html"><![CDATA[<p>在前两节中，我们遇到了各式各样的元素的集合，也遇到了集合之间的映射.例如给定的线性方程组的解的集合，或使每一个二阶矩阵对应于它的行列式的法则——都是某些形式概念的特例，了解形式概念(哪怕在直观的层面上)对今后的学习是非常有益的.</p>
 <h2 id="集合">集合</h2>
 <p><strong>集合</strong>指某些对象的总合，这些对象被称为<strong>元素</strong>.</p>
-<p>含有有限个不同元素的集合可以用明确地列出全部元素的办法来描述，通常将这些元素写在花括号内.例如${1,2,4,8}$——从$1$到$10$之间$2$的方幂的集合.我们总是用某个字母表中的大写字母表示集合，用同一个或另一个字母表中的小写字母表示它的元素.</p>
+<p>含有有限个不同元素的集合可以用明确地列出全部元素的办法来描述，通常将这些元素写在花括号内.例如$\lbrace  1,2,4,8\rbrace $——从$1$到$10$之间$2$的方幂的集合.我们总是用某个字母表中的大写字母表示集合，用同一个或另一个字母表中的小写字母表示它的元素.</p>
+<p>对于某些特殊重要的集合采用应当遵循的标准化记法.例如字母$\mathbb{N,Z,Q,R}$分别表示正整数(自然数)的集合，全体整数的集合，有理数集和实数集.</p>
+<p>给定一个集合$S$，<strong>包含</strong>符号$a\in S$表明$a$是$S$的一个元素；反之，写$a\notin S$.</p>
+<p>如果蕴含关系</p>
+<p>$$\forall x,x\in S\Rightarrow x\in T$$</p>
+<p>成立，则称$S$是$T$的一个<strong>子集</strong>，并记作$S\subset T$($S$包含在$T$中)(关于这一记法，请参考“给读者的建议”一节).</p>
+<p>如果两个集合$S$与$T$有相同的元素，则称它们重合(或相等)，用符号的形式写成：</p>
+<p>$$ S=T \Leftrightarrow S\subset T,T\subset S$$</p>
+<p>($\Leftrightarrow$表示“当且仅当”或“双向蕴含”).</p>
+<p>不包含任何元素的集合叫作<strong>空集</strong>，记作$\varnothing$，根据定义，空集是任意集合的子集.如果$S\subset T$，但$S\neq \varnothing$，且$S\neq T$，则$S$叫作$T$的<strong>真子集</strong>.为了区分出子集$S\subset T$，常常指明只有$S$中的元素才有的性质.例如</p>
+<p>$$\lbrace n\in \mathbb{Z} \mid n=2m,m\in \mathbb{Z}\rbrace $$</p>
+<p>是全体偶整数的集合，而</p>
+<p>$$\mathbb{Z}=\lbrace n\in \mathbb{Z} \mid n &gt; 0\rbrace $$</p>
+<p>是自然数的集合.</p>
+<p>两个集合$S$与$T$的<strong>交集</strong>是指集合</p>
+<p>$$S\cap T=\lbrace  x\mid x\in S且x\in T\rbrace ,$$</p>
+<p>而<strong>并集</strong>指集合</p>
+<p>$$S\cup T=\lbrace  x\mid x\in S或x\in T\rbrace .$$</p>
+<p>交集$S\cap T$可能是空集.这时称$S$和$T$是<strong>不相交的集合</strong>.交和并的运算满足恒等式</p>
+<p>$$R\cap (S\cup T)=(R\cap S)\cup (R\cap T),$$</p>
+<p>$$R\cup (S\cap T)=(R\cup S)\cap (R\cup T),$$</p>
+<p>我们将这些式子的验证留作习题.图$5$有助于得出简单的论证.</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu5-.png" alt=""></center>
+
+<p>两个集合$S$与$T$的<strong>差集</strong>$S \backslash T$指属于$S$但不属于$T$的元素的全体.在这里一般不假设$T\subset S$，有时也写$S-T$代替$S\backslash T$.</p>
+<p>如果$T$是$S$的子集，也称$S\backslash T$为$T$在$S$中的补集.设$R=S\backslash T$，则$R\cap T=\varnothing$，$R\cup T=S$.注意集合的运算交、并、补与逻辑连词“且”、“或”、“非”之间存在着对应关系.</p>
+<p>设$X,Y$是任意两个集合.任取$x\in X,y\in Y$，给定顺序的元素对$(x,y)$，叫作一个<strong>有序对</strong>，这时两个有序对$(x_1,y_1)=(x_2,y_2)$，当且仅当$x_1=x_2,y_1=y_2$.</p>
+<p>全体有序对$(x,y)$的集合：</p>
+<p>$$X\times Y=\lbrace (x,y)\mid x\in X,y\in Y\rbrace $$</p>
+<p>叫作两个集合$X$和$Y$的<strong>笛卡儿积</strong>.</p>
+<p>例如设$\mathbb{R}$是实数集.这时<strong>笛卡儿平方</strong>$\mathbb{R}^2=\mathbb{R} \times \mathbb{R}$就是在选定了坐标系的平面上点的笛卡儿坐标的集合.类似地，可以引出三个集合的笛卡尔积$X_1 \times X_2 \times X_3$($=(X_1 \times X_2)\times X_3=X_1 \times (X_2 \times X_3)$)，以及四个集合的笛卡儿积等等.</p>
+<p>当$X_1 =X_2 =\cdots =X_k$时，简记作</p>
+<p>$$X^k=X \times X \times \cdots \times X$$</p>
+<p>并称之为集合$X$的$k$次笛卡儿方幂.$X^k$的元素是长为$k$的序列(或行)$(x_1 ,x_2 ,\cdots ,x_k)$.</p>
+<p>为了区分集合$X\times Y$和$X\cup Y$，我们来看$X$和$Y$都具有有限基数($\text{cardinality}$)的情况：</p>
+<p>$$\mid X\mid =\text{Card}X=n,\mid Y\mid=\text{Card}Y=m.$$</p>
+<p>这时</p>
+<p>$$\mid X\times Y \mid =n\cdot m,\mid X\cup Y\mid =n+m- \mid X\cap Y\mid .$$</p>
+<p>如果还不清楚，请从头细读有关的定义.</p>
+<h2 id="映射">映射</h2>
+<p><strong>映射</strong>或<strong>函数</strong>的概念在数学中扮演着中心的角色.给定两个集合$X$和$Y$，以$X$为<strong>定义域</strong>，$Y$为<strong>值域</strong>的映射$f$将每个元素$x\in X$都对应于一个元素$f(x)\in Y$，$f(x)$亦可记作$fx$或$f_x$.当$X=Y$时，$f$也叫作集合$X$到自身的一个<strong>变换</strong>.用符号表示映射时写作$f:X\to Y$或$X\xrightarrow{f} Y$.</p>
+<p>所有形如$f(x)$的元素的集合叫作映射$f$的像：</p>
+<p>$$\text{Im}f=\lbrace  f(x)\mid x\in X\rbrace  =f(X)\subset Y$$</p>
+<p>($\text{Im}$取自$\text{image}$(英文)).</p>
+<p>集合</p>
+<p>$$f^{-1}(y)=\lbrace  x\in X \mid f(x)=y\rbrace $$</p>
+<p>叫作元素$y\in Y$的<strong>原像</strong>.更一般地：对于$Y_0 \subset Y$，令</p>
+<p>$$f^{-1}(Y_0 )=\lbrace  x\in X\mid f(x)\in Y_0 \rbrace =\underset{y\in Y_0 }{\bigcup}f^{-1}(y).$$</p>
+<p>如果$y\in Y\ \text{Im}f$，则显然有$f^{-1}(y)=\varnothing$.</p>
+<p>设$f:X\to Y$是一个映射，如果$\text{Im}f=Y$，则称$f$为<strong>满射</strong>($\text{surjective}$(法文))或映上的；如果$x\neq x’$意味着$f(x)\neq f(x’)$，则称$f$为<strong>单射</strong>($\text{injective}$(法文)).最后，如果$f:X\to Y$既是满射又是单射，则称$f$为<strong>双射</strong>($\text{bijective}$(法文))或<strong>一一映射</strong>.</p>
+<p>两个映射相等$f=g$，指它们有相同的定义域和值域：</p>
+<p>$$X\xrightarrow{f} Y,X\xrightarrow{g} Y,$$</p>
+<p>并且$\forall x\in X,f(x)=g(x)$，自变量$x$，即元素$x\in X$与其值$f(x)\in Y$的对应通常借助于一个短箭号表示出来：$x\mapsto f(x)$.</p>
+<p>例如设<span>$f_n$</span>是第$n$个斐波那契数(见$\S 3$).则对应关系<span>$n\mapsto f_n$</span>定义了一个$\mathbb{N}\to \mathbb{N}$的映射，它既不是满射，也因为<span>$f_1 =f_2$</span>显然不是单射.再如若$\mathbb{R}_+$是正实数的集合，则由同一个规则$x\mapsto x^2$定义的映射</p>
+<span>$$f: \mathbb{R}\to \mathbb{R},g:\mathbb{R}\to \mathbb{R}_+ \bigcup \lbrace  0\rbrace ,h:\mathbb{R}_+ \to \mathbb{R}_+$$</span>
+
+<p>是彼此不同的：$f$既不满也不单，$g$是满射但不是单射，$h$是双射.由此看来，确定定义域和值域是定义一个映射(函数)的本质部分.</p>
+<p>将每一个元素$x\in X$映到自身映射$e_x :X\to X$叫作<strong>单位映射</strong>（或<strong>恒等映射</strong>）.如果$X$是$Y$的子集：$X\subset Y$，有时定义五个专门的<strong>包含映射</strong>$I:X\to Y$是有益的，$I$将任意元素$x\in X$映到自身，但将后者看作是在集合$Y$中.映射$f:X\to Y$叫作<strong>映射</strong>$g:X’ \to Y’$的<strong>收缩</strong>(或<strong>限制</strong>)，如果$X\subset X’,Y\subset Y’$，且$\forall x\in X$，$f(x)=g(x)$.而$g$叫作映射$f$的<strong>扩张</strong>.例如嵌入映射$I:X\to Y$是恒等映射$e_y :Y\to Y$的限制.</p>
+<p>我们也可以考虑多变元函数.集合$X$的笛卡儿方幂$X^n$的概念为我们提供了定义多变元函数$f(x_1 ,\cdots ,x_n )$的可能性，其中$x_i \in X$，$i=1,\cdots ,n$，这个函数就是一般的映射$f:X^n \to Y$.了解此点是有益处的.</p>
+<p>设$g:U\to V,f:V\to W$是两个映射，由法则</p>
+<p>$$(f\circ g)(u)=f(g(u))$$</p>
+<p>定义的映射</p>
+<p>$$f\circ g:U\to W$$</p>
+<p>叫作$g$和$f$的<strong>乘积</strong>(<strong>叠加</strong>或<strong>合成</strong>).用下述三角图可以将$f\circ g$直观地描述出来：</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu6.png" alt=""></center> 
+
+
+<p>我们说这个图形<strong>可换</strong>(或是<strong>变换的</strong>)，即从$U$到$W$的结果不信赖于从$f\circ g$直接得到或通过中间阶段$V$得到.注意合成的定义不是对任意映射$f$和$g$都适用的.在上述记法中，它们必须有一个公共的集合$V$.但是集合$X$到自身的两个映射的合成永远有意义.</p>
+<p>今后我们用简写$fg$代替$f\circ g$.任取映射$f:X\to Y$，我们有</p>
+<p>$$fe_X =f,e_Y f=f.$$</p>
+<p>这一性质的验证是显然的.合成(乘积)的一个重要性质表述如下.</p>
+<p><strong>定理$1$</strong> 映射的合成满足结合律.也就是说，如果</p>
+<p>$$h:U\to V,g:V\to W,f:W\to T$$</p>
+<p>是三个映射，则</p>
+<p>$$f(gh)=(fg)h.$$</p>
+<p><strong>证明</strong> 直观地讲，所有必要的论证包含在下图中：</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu7.png" alt=""></center> 
+
+<p>此处$\alpha =gh,\beta =fg$.根据映射相等的定义，需要比较映射$f(gh):U\to T$和$(fg)h:U\to T$在任意点$u\in U$的值.但按照映射合成的定义，我们有</p>
+<p>$$(f(gh))(u)=f((gh)(u))=f(g(h(u)))=(fg)(h(u))=((fg)h)(u).\square$$</p>
+<p>一般来说，集合$X$的映射的合成是不交换的，即$fg\neq gf$.这很容易从下例中看到，设$X=\lbrace  a,b\rbrace $是两个元素的集合，令$f(a)=b$，$f(b)=a$，$g(a)=a$，$g(b)=a$.另一个例子：设$f$和$g$都是集合$X$的<strong>常值映射</strong>，即$f(x)$和$g(x)$不信赖于$x$的选取.则$f\neq g$意味着$fg\neq gf$.</p>
+<p>某些映射有<strong>逆映射</strong>.设$f:X\to Y$，$g:Y\to X$是两个映射，则合成映射$fg$和$gf$是确定的.如果$fg=e_Y$，那么$f$叫作$g$的<strong>左逆</strong>，而$g$叫作$f$的<strong>右逆</strong>.当任意顺序的合成都是恒等映射，即：</p>
+<p>$$fg=e_Y ,gf=e_X \tag{1}$$</p>
+<p>时，则称$g$为$f$的<strong>双边逆</strong>(或简称<strong>逆</strong>)(而$f$也叫作$g$的逆)，并记作$f^{-1}$.这样，$f(u)=v\Leftrightarrow f^{-1}(v)=u$.</p>
+<p>假设还存在着另一个映射$g’:Y\to X$，使得</p>
+<p>$$fg’=e_Y ,g’f=e_X ,\tag{1′}$$</p>
+<p>则根据等式$(1),(1’)$和定理$1$，我们得到</p>
+<p>$$g’=e_X g’=(gf)g’=g(fg’)=ge_Y =g.$$</p>
+<p>所以$f$的双边逆一旦存在，必定是唯一的.这也证实了符号$f^{-1}$的含意是明确的.</p>
+<p><strong>定理$2$</strong> 映射$f:X\to Y$有逆，当且仅当$f$是双射.</p>
+<p><strong>证明</strong> 定理的证明信赖于下述引理，引理自身也是有趣的.</p>
+<p><strong>引理</strong> 设</p>
+<p>$$f:X\to Y,g:Y\to X$$</p>
+<p>是任意两个映射，如果$gf=e_X$，则$f$是单的，而$g$是满的.</p>
+<p><strong>证明</strong> 事实上，设$x,x’\in X$，且$f(x)=f(x’)$.则</p>
+<p>$$x=e_X (x)=(gf)(x)=g(f(x))=g(f(x’))=(gf)(x’)=e_X (x’)=x’.$$</p>
+<p>因此$f$是单射.如果给出$X$的任意元素$x$，则</p>
+<p>$$x=e_X (x)=(gf)(x)=g(f(x)),$$</p>
+<p>这就证明了$g$是满射.$\square$</p>
+<p>回到定理$2$，先设$f$有逆映射$g=f^{-1}$.则等式$(1)$和引理给出了$f$的满单性.换言之，$f$是双射.反过来，设$f$是一个双射，则任取$y\in Y$，可以求出唯一的元素$x\in X$，使得$f(x)=y$.令$g(y)=x$，我们就定义了一个映射$g:Y\to X$，且$g$满足性质$(1)$.这就意味着$f^{-1}=g$.$\square$</p>
+<p><strong>推论</strong> 从双射$f:X\to Y$得到一个双射$f^{-1}$，且</p>
+<p>$$(f^{-1})^{-1}=f.\tag{2}$$</p>
+<p>设$f:X\to Y$，$h:Y\to Z$都是双射，则合成映射$hf$也是双射，并且</p>
+<p>$$(hf)^{-1}=f^{-1}h^{-1}.\tag{3}$$</p>
+<p><strong>证明</strong> 根据定理$2$，$f$的双射性导出了$f^{-1}$的存在性.将条件$(1)$写成形式$ff^{-1}=_Y$，$f^{-1}f=e_X$，它的对称性给出了等式$(2)$.再根据定理$2$，$f^{-1}$也是双射.其次，由推论的条件和定理$2$，存在着映射</p>
+<p>$$f^{-1}:Y\to X,h^{-1}:Z\to Y$$</p>
+<p>及其合成</p>
+<p>$$f^{-1}h^{-1}:Z\to X.$$</p>
+<p>由等式</p>
+<p>$$(hf)(f^{-1}h^{-1})=((hf)f^{-1})h^{-1}=(h(ff^{-1}))h^{-1}=hh^{-1}=e_Z ,$$</p>
+<p>$$(f^{-1}h^{-1})(hf)=f^{-1}(h^{-1}(hf))=f^{-1}((h^{-1}h)f)=f^{-1}f=e_X ,$$</p>
+<p>可以得到，$f^{-1}h^{-1}$是$fh$的逆映射.$\square$</p>
+<p>由法则$\sigma (n)=n+1$定义的映射$\sigma :\mathbb{N} \to \mathbb{N}$是单射而不是满射，因为第一个元素$1$不属于$\text{Im}\sigma$.有趣的是对于有限集合，类似情况不会出现.</p>
+<p><strong>定理$3$</strong> 如果$X$是有限集，且变换$f:X\to X$是单射，则$f$是双射.</p>
+<p><strong>证明</strong> 我们仅需指出$f$是满的，即对任意元素$x\in X$，找到$x’$，使得$f(x’)=x$.令</p>
+<p>$$f^k(x)=f(f\cdots (f(x))\cdots )=f(f^{k-1}(x)),k=0,1,2,\cdots $$</p>
+<p>由于$X$的有限性，在这一序列中必有重复的元素. 设$f^m(x)=f^n(x)$，$m&gt;n$.若$n&gt;0$，由等式$f(f^{m-1}(x))=f(f^{n-1}(x))$和$f$的单射性，得到$f^{m-1}(x)=f^{n-1}(x)$.</p>
+<p>重复地消去$f$，经过足够多次，我们得到等式</p>
+<p>$$f^{m-n}(x)=f^0(x)=e(x)=x.$$</p>
+<p>这时取$x’=f^{m-n-1}(x)$，则$f(x’)=x$.$\square$</p>
+<p>易见，有限集合到自身的一个满变换也是双射.</p>
+<p>下面对基数谈几句.认为两个集合有相同的基数，当且仅当存在着双射$f:X\to Y$，与$\mathbb{N}$(或$\mathbb{Z}$)基数相同的集合叫作<strong>可数集</strong>.</p>
+<h2 id="习题">习题</h2>
+<p>$1$.设$\Omega=\lbrace  +,-,++,+-,-+,—,+++,\cdots \rbrace $是加号与减号的有限序列的集合，而$f:\Omega \to \Omega$是一个变换，将元素$\omega =\omega _1 \omega _2 \cdots \omega _n \in \Omega $对应到$\omega ‘=\omega _1 \dot{\omega _1} \omega _2 \dot{\omega _2} \cdots \omega _n \dot{\omega _n}$，其中若$\omega _k =+$，则$\dot{\omega _k}=-$，若$\omega _k =-$，则$\dot{\omega _k}=+$.证明在$f(f\omega )$的长度$&gt;4$的任意区间内包含$++$或$—$.</p>
+<p>$2$.由法则$n\to n^2$给出的映射$f:\mathbb{N} \to \mathbb{N}$有右逆吗？给出$f$的两个左逆.</p>
+<p>$3$.设$f:X\to Y$是一个映射，且$S,T$都是$X$的子集.</p>
+<p>证明</p>
+<p>$$f(S\cup T)=f(S)\cup f(T),f(S\cap T)\subset f(S)\cap f(T).$$</p>
+<p>试举一例，说明后一个式子中的包含关系一般来说不能换成相等关系.</p>
+<p>$4$.集合$S$的全体子集的集合记作</p>
+<p>$$P(S)=\lbrace  T\mid T\subset S\rbrace  .$$</p>
+<p>例如$S=\lbrace  s_1 ,s_2 ,\cdots ,s_n \rbrace $是$n$个元素的有限集，则$P(S)$由空集$\varnothing$，$n$个单元集$\lbrace  s_1 \rbrace $，$\lbrace  s_2 \rbrace $，$\cdots $，$\lbrace  s_n \rbrace $，$\dfrac{n(n-2)}{2}$个二元集$\lbrace  s_i ,s_j \rbrace $，$1 \leq i &lt; j \leq n$，等等，直到全集$T=S$组成.集合$P(S)$的基数是多少？</p>
+<p>$5$.设$f:X\to Y$是一个映射，且设对某个元素$a\in X$，$b=f(a)$.原像</p>
+<p>$$f^{-1}(b)=f^{-1}(f(a))=\lbrace  x\mid f(x)=f(a)\rbrace $$</p>
+<p>叫作元素$b\in \text{Im}f$上的<strong>纤维</strong>.证明集合$X$是互不相交的纤维的并(也就是说，给出了$X$的一个划分).</p>
+<p>注意：符号$f^{-1}(b)$不能联想到逆映射，后者可能并不存在.</p>
+<p>$6$.证明有限个可数集的笛卡儿积也是可数集.</p>
+<p>$7$.符号$S\vartriangle T$表示两个集合$S$与$T$的<strong>对称差</strong>：$S\vartriangle T=(S \ T)\cup (T\ S)$(见图$6$).证明$S\vartriangle T=(S\cup T)(S\cap T)$.</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu8.png" alt=""></center> 
+
+
+
+
+
+
+
 ]]></content>
     <summary type="html">
     <![CDATA[我们进入消元法的精确步骤，尽管只是解低阶方形线性方程组.这样做将为我们提供一些思考的案例，以及在第三章给出的构造一般行列式理论的原始材料.]]>
@@ -1491,160 +1687,6 @@
 ]]></content>
     <summary type="html">
     <![CDATA[集合$S$和$S$上满足结合律的二元运算$\cdot$所形成的代数结构叫做半群.]]>
-    
-    </summary>
-    
-      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[《近世代数引论》第1章 群 1.1 集合论预备知识]]></title>
-    <link href="http://jianhanglin.github.io/2014/09/jinshidaishuyinlun111/"/>
-    <id>http://jianhanglin.github.io/2014/09/jinshidaishuyinlun111/</id>
-    <published>2014-10-18T03:34:27.000Z</published>
-    <updated>2014-10-19T01:29:44.000Z</updated>
-    <content type="html"><![CDATA[<p><strong><a href="http://book.douban.com/subject/4201293/" target="_blank" rel="external">近世代数引论</a></strong> <a href="http://pan.baidu.com/s/1hqIe368" target="_blank" rel="external">在线阅读</a> 冯克勤 李尚志 章璞 中国科学技术大学出版社 第3版  </p>
-<center><img src="/assets/img/Jinshidaishuyinlun/cover.jpg" alt=""></center>
-
-<h2 id="简介">简介</h2>
-<p>近世代数是代数学一个基础学科，讲述代数基本结构的特性。本书除系统介绍群、环和域的基础知识（包括域的有限伽罗瓦扩张理论）之外，还力图强调近世代数中的思想和方法.书中有大量习题.除主线内容外，还增加一些附录用来开拓和深化所学内容.</p>
-<p>本书在中国科学技术大学讲授多年的讲义基础上修改写成.可作为高等学校数学系基础课教材，也可供数学工作者和通信、计算机科学等领域的工程技术人员参考.</p>
-<h2 id="群">群</h2>
-<h2 id="集合论预备知识">集合论预备知识</h2>
-<p>群是集合上赋予某种二元运算的一种代数结构.  </p>
-<p>一些特定的对象放在一起就叫做一个<strong>集合</strong>. 集合$A$中每个对象$a$叫做$A$中的<strong>元素</strong>，表示成$a\in A$.否则，如果某个对象$b$不属于$A$，则表示成$b\notin A$.</p>
-<p>全体正整数所构成的一个集合，表示成$\bf N$.全体整数所构成的整数集合，表示成$\bf Z$.全体复数所构成的一个集合，表示成$\bf C$.全体实数所构成的一个集合，表示成$\bf R$.全体有理数构成的一个集合，表示成$\bf Q$.  </p>
-<p>设$A$和$B$是两个集合，如果$A$中每个元素均是$B$中元素，即   </p>
-<p>$$a\in A\Rightarrow a\in B,$$</p>
-<p>则$A$叫做$B$的一个<strong>子集</strong>，表示成$A\subseteq B$或者$B\supseteq A$.如果$A\subseteq B$并且$B\supseteq A$，即 </p>
-<p>$$a\in A\Leftrightarrow a\in B,$$  </p>
-<p>这也相当于说集合$A$与$B$包含同样的元素，这时叫做集合$A$与$B$相等，表示成$A=B$.如果$A$是$B$的子集并且不等于$B$，则$A$叫$B$的<strong>真子集</strong>，表示成$A\varsubsetneqq B$或者$B\varsupsetneqq A$.不包含任何元素的集合叫做<strong>空集</strong>，表示成$\varnothing$.空集显然是每个集合的子集.  </p>
-<p>可以有许多方式来表达一个确定的集合.例如若集合$A$只有有限多(不同)元素$a_1,\cdots,a_n(n\in\bf N)$，则这个集合可表成  </p>
-<p>$$A= \lbrace a_1,\cdots,a_n \rbrace .$$</p>
-<p>只有有限多个元素的集合叫<strong>有限集</strong>，否则叫<strong>无限集</strong>.具有$n$个元素的集合叫$n$<strong>元集</strong>，元素个数表示成$\mid A\mid =n$.在一般情形下，集合$S$中具有某种性质$P$的全体元素构成的集合通常表成  </p>
-<p>$$\lbrace x\in S\mid x有性质P \rbrace .$$</p>
-<p>例如：偶数集合$\lbrace 0,\pm 2,\pm 4,\cdots \rbrace$可以表成  </p>
-<p>$$\lbrace n\in{\bf Z}\mid n\equiv 0\pmod{2}\rbrace .$$  </p>
-<p>由一些已知集合构作新的集合通常用集合上的运算来实现。设$A$和$B$是两个集合，它们的公共元素组成的集合叫做$A$和$B$的<strong>交</strong>，表示成$A\cap B$，即  </p>
-<p>$$A\cap B=\lbrace x\mid x\in A并且x\in B\rbrace .$$  </p>
-<p>类似地，$n$个集合$A_1,\cdots,A_n$的交为  </p>
-<p>$$\underset{i=1}{\overset{n}{\bigcap}} A_i=A_1\cap A_2\cap\cdots\cap A_n=\lbrace x\mid x\in A_i,1\leq i\leq n\rbrace .$$  </p>
-<p>更一般地，对于任意多个集合形成的集族$\lbrace A_i \mid i\in I\rbrace $,(其中$I$是一个集合，叫该集族的<strong>下标集合</strong>，对于每个$i\in I$,$A_i$是该集族中的一个集合)，它们的交为  </p>
-<p>$$\underset{i\in I}{\bigcap}A_i=\lbrace x\mid x\in A_i，对每个i\in I\rbrace .$$  </p>
-<p>第二个集合运算是集合的<strong>并</strong>，集合$A$与$B$的并表示成$A\cup B$，定义为  </p>
-<p>$$A\cup B=\lbrace x\mid x\in A或者x\in B\rbrace .$$  </p>
-<p>类似地，  </p>
-<p>$$\underset{i=1}{\overset{n}{\bigcup}} A_i=A_1\cup A_2\cup\cdots\cup A_n=\lbrace x\mid x\in A_i对某个i,1\leq i\leq n\rbrace ,$$   </p>
-<p>$$\underset{i\in I}{\bigcup}A_i=\lbrace x\mid x\in A_i，对某个i\in I\rbrace .$$    </p>
-<p>设$A$是$B$的子集，则$B-A=\lbrace x\mid x\in B,x\notin A\rbrace $叫做子集$A$(关于$B$)的<strong>补集</strong>.如果在讨论问题中所涉及的集合均是某个固定集合$\Omega$的子集，则$\Omega-A$也常常简称作$A$的补集，表示成$\overline{A}$.  </p>
-<p>设$A$和$B$是两个集合，我们把集合  </p>
-<p>$$A\times B=\lbrace (a,b)\mid a\in A,b\in B\rbrace $$</p>
-<p>叫做$A$和$B$的<strong>直积</strong>.在$A\times B$中，$(a,b）=(a’,b’)$当且仅当$a=a’$并且$b=b’$.类似可定义多个集合的直积.  </p>
-<span>$$A_1\times \cdots \times A_n=\prod \limits_{i=1}^nA_i=\lbrace (a_1,\cdots ,a_n\mid a_i\in A_i,1\leq i\leq n\rbrace $$</span>
-
-<span>$$\prod\limits_{i\in I}A_i=\lbrace (a_i)_{i\in I}\mid a_i\in A_i，对每个i\in I\rbrace .$$</span> 
-
-<p>为了比较不同的集合，需要将不同集合发生联系，这就是集合之间的映射.$f$叫做从集合$A$到集合$B$的<strong>映射</strong>，是指对每个$a\in A$均有确定办法给出集合$B$中唯一的对应元素，这个对应元素叫做$a$在映射$f$之下的像，表示成$f(a)$.而“$f$把$a$映成$f(a)$”这件事表示成$a\mapsto f(a)$.从$A$到$B$的映射$f$表示成$f:A\to B$或者$A\xrightarrow{f} B$.    </p>
-<p>设$f:A\to B$和$g:B\to C$都是集合之间的映射，则可经过连续作用，得到一个从$A$到$C$的映射  </p>
-<p>$$g\circ f:A\to C，(g\circ f)(a)=g(f(a)).$$  </p>
-<p>映射$g\circ f$叫做$f$与$g$的<strong>合成</strong>映射.  </p>
-<p>设$f$和$g$均是从集合$A$到集合$B$的映射，我们称$f$和$g$<strong>相等</strong>(表示成$f=g$)，是指对于每个$a\in A$，均有$f(a)=g(a)$.  </p>
-<p><strong>引理1(合成运算满足结合律)</strong>&nbsp;&nbsp;设$f:A\to B$，$g:B\to C$，$h:C\to D$均是集合的映射，则  </p>
-<p>$$h\circ (g\circ f)=(h\circ g)\circ f.$$  </p>
-<p><strong>证明</strong>&nbsp;&nbsp;对于$a\in A$，令$f(a)=b$，$g(b)=c$，$h(c)=d$.则  </p>
-<p>$$(g\circ f)(a)=c，(h\circ g)(b)=d.$$  </p>
-<p>于是  </p>
-<p>$$(h\circ (g\circ f))(a)=h(c)=d，((h\circ g)\circ f)(a)=(h\circ g)(b)=d.$$  </p>
-<p>从而对每个$a\in A$，$(h\circ (g\circ f))(a)=((h\circ g)\circ f)(a)$；这就表明$h\circ (g\circ f)=(h\circ g)\circ f$.证毕.</p>
-<p>设$f:A\to B$是集合的映射.对于$A$的每个子集$A’$，令  </p>
-<p>$$f(a’)=\lbrace f(x)\mid x\in A’\rbrace .$$  </p>
-<p>这是$B$的子集，叫做$A’$在$f$之下的<strong>像</strong>.另一方面，对于$B$的子集$B’$，令$f^{-1}(B’)=\lbrace x\in A\mid f(x)\in B’\rbrace $，这是$A$的子集，叫做$B’$的<strong>原像</strong>.如果$f(A)=B$，即$B$中每个元素均是$A$中某个元素(在$f$之下)的像，则$f$叫做<strong>满射</strong>.另一方面，如果$A$中不同元素被$f$映成$B$中不同元素，即：$a$，$a’\in A$，$a\neq a’\Rightarrow f(a)\neq f(a’)$，则$f$叫做<strong>单射</strong>.最后，若$f:A\to B$同时是单射和满射，则$f$叫做<strong>一一映射</strong>或<strong>一一对应</strong>.例如：将集合$A$中每个元素均映成其自身的映射  </p>
-<p>$$1_A:A\to A，1_A(a)=a.$$  </p>
-<p>就是$A$到$A$的一一对应.映射$1_A$叫做集合$A$的<strong>恒等映射</strong>.通常采用下面引理来判断一个映射是否为一一对应.  </p>
-<p><strong>引理2</strong>&nbsp;&nbsp;映射$f:A\to B$是一一对应的充分必要条件是存在映射$g:B\to A$，使得$f\circ g=1_B$，$g\circ f=1_A$.  </p>
-<p><strong>证明</strong>&nbsp;&nbsp;如果$f$是一一对应，由定义知这意味着对每个$b\in B$，均存在唯一的$a\in A$使得$f^{-1}(b)=a$(存在性由于$f$是满射，唯一性由于$f$是单射)于是可定义映射  </p>
-<p>$$g:B\to A，g(b)=f^{-1}(b).$$  </p>
-<p>直接验证$g\circ f=1_A$和$f\circ g=1_B$成立.  </p>
-<p>另一方面，如果$f$不是满射，则存在$b\in B$，使得$f^{-1}(b)=\varnothing$.所以对每个映射$g:B\to A$，均有$(f\circ g)(b)=f(g(b))\neq b$.于是$f\circ g\neq 1_B$.如果$f$不是单射，则存在$a$，$a’\in A$，$a\neq a’$，使得$f(a)=f(a’)=b$.那么对于每个映射$g:B\to A$，$(g\circ f)(a)=g(b)=(g\circ f)(a’)$，于是$g\circ f\neq 1_A$.所以若存在$g:B\to A$使得$f\circ g=1_B$并且$g\circ f=1_A$.则$f$必然是一一对应的.证毕.  </p>
-<p>当$f:A\to B$是一一对应时，满足$f\circ g=1_B$和$g\circ f=1_A$的映射$g:B\to A$是唯一的。这是因为：若$g’:B\to A$也有性质$f\circ g’=1_B$，$g’\circ f=1_A$，则  </p>
-<p>$$g’=g’\circ 1_B=g’\circ (f\circ g)=(g’\circ f)\circ g=1_A\circ g=g.$$</p>
-<p>我们将这个唯一存在的映射$g$叫做$f$的<strong>逆映射</strong>，表示成$f^{-1}$.</p>
-<p>设$A$是集合，集合$A\times A$的每个子集${\bf R}$叫做集合$A$上的一个<strong>关系</strong>.如果$(a,b)\in {\bf R}$,便称$a$和$b$有关系${\bf R}$，写成$a{\bf R}b$.例如${\bf R}\times {\bf R}$中子集</p>
-<p>$${\bf R}=\lbrace (a,b)\in {\bf R}\times {\bf R}\mid a比b大\rbrace ,$$</p>
-<p>则实数$a$和$b$有关系${\bf R}$即指$a$比$b$大，这就是“大于”关系.通常将这个关系记成$a&gt;b$.同样还有${\bf R}$上的关系$\geq$(大于或等于)，$&lt;$(小于)，$\leq$(小于或等于)，$=$(等于).集合$A$上的关系$\sim$叫做<strong>等价关系</strong>，是指它满足如下三个条件：</p>
-<p>(1)自反性：$a\sim a$(对于每个$a\in A$);</p>
-<p>(2)对称性：若$a\sim b$，则$b\sim a$;</p>
-<p>(3)传递性：若$a\sim b$，$b\sim c$，则$a\sim c$.</p>
-<p>设$\sim$是集合$A$上的等价关系.如果$a\sim b$，由对称性知$b\sim a$.这时称元素$a$和$b$等价.对于每个$a\in A$，以$\left[ a\right]$表示$A$中与$a$等价的全部元素构成的集合，即</p>
-<p>$$\left[ a\right]=\lbrace b\in A\mid b\sim a\rbrace .$$</p>
-<p>由自反性知$a\in \left[ a\right]$，称$\left[ a\right]$为$a$所在的<strong>等价类</strong>，由传递性可知同一等价类中任意二元素彼此等价(设$b$，$c\in \left[ a\right]$，则$b\sim a$，$a\sim c$，于是$b\sim c$).不同等价类之间没有公共元素.</p>
-<p>若两个不同等价类之间有一个公共元素，则这两个等价类中的每个元素都与这个公共元素等价，它们之间也互相等价，按等价类的定义，它们应该在同一个等价类里，而不是在两个不同的等价类里。因此不同等价类之间没有公共元素.</p>
-<p>因此集合$A$是一些等价类$\lbrace \left[ a\right]\mid i\in I\rbrace $的并，而这些等价类是两两不相交的.我们从每个等价类$\left[ a\right]$中取出一个元素$b_i$(即$b_i\in \left[ a\right]$)，则$R=\lbrace b_i\mid i\in I\rbrace $具有如下性质：$A$中每个元素均等价于某个$b_i$，而不同的$b_i$彼此不等价.我们把具有这样性质的${\bf R}$叫做$A$对于等价关系$\sim$的<strong>完全代表系</strong>.于是</p>
-<p>$$A=\underset{a\in R}{\bigcup}\left[ a\right] (两两不相交之并).  \ast$$</p>
-<p>一般地，若集合$A$是它的某些子集$\lbrace A_i\mid i\in I\rbrace $之并，并且$A_i$两两不相交，便称$\lbrace A_i\mid i\in I\rbrace $是集合$A$的一个<strong>分拆</strong>.如上所述，$A$上的每个等价关系给出集合$A$的一个分拆($\ast$).反过来，如果$\lbrace A_i\mid i\in I\rbrace $是集合$A$的一个分拆，可如下定义$A$上的一个关系：对于$a$,$b\in A$，</p>
-<p>$$a\sim b\Leftrightarrow a和b在同一A_i之中.$$</p>
-<p>以$E$表示$A$的全部等价关系，以$P$表示$A$的全部分拆，则上面由等价关系到分拆的映射$f:E\to P$和从分拆到等价关系的映射$g:P\to E$满足$f\circ g=1_P$，$g\circ f=1_E$，从而$f$是一一对应(引理2).换句话说，集合$A$上的等价关系和$A$的分拆是一一对应的.</p>
-<p>例如，设$F$是由某些集合构成的集族.在$F$上定义如下的关系：对于$A$，$B\in F$，</p>
-<p>$$A\sim B\Leftrightarrow 存在从A到B的一一对应.$$</p>
-<p>这是$F$上的等价关系.</p>
-<p>自反性：$1_A:A\to A$是一一对应，从而$A\sim A$.  </p>
-<p>对称性：若$f:A\to B$是一一对应，则$f^{-1}:B\to A$是一一对应，从而$A\sim B \Rightarrow B\sim A$. </p>
-<p>传递性基于习题3.如果$f:A\to B$,$g:B\to C$均是一一对应，则$g\circ f：A\to C$也是一一对应，且$(g\circ f)^{-1}=f^{-1}\circ g^{-1}$.</p>
-<p>对于这种等价关系，彼此等价的集合叫做是<strong>等势</strong>的.比如说，两个有限集合等势(即存在一一对应)的充要条件是它们有同样多元素，即$\mid A\mid =\mid B\mid$.与正整数集合$\bf N$等势的集合叫做<strong>可数无限集合</strong>，其他无限集合叫做<strong>不可数集合</strong>.熟知实数集合${\bf R}$是不可数集合.而正偶整数的全体$E$是可数(无穷)集合，因为存在着一一对应${\bf N} \to E$，$n\mapsto 2n$.这个例子也表明，无限集合$A$的一个真子集可以与$A$等势！</p>
-<p>设$A$是集合.从$A\times A$到$A$的映射</p>
-<p>$$f:A\times A\to A$$</p>
-<p>叫做集合$A$上的一个(二元)<strong>运算</strong>.例如：通常复数加法就是运算</p>
-<p>$$f:{\bf C}\times {\bf C}\to {\bf C}，f(\alpha,\beta)=\alpha+\beta.$$</p>
-<p>我们经常把集合$A$上的运算表示成$\cdot$，即对于$a$，$B\in A$，$f(a,b)$写成$a\cdot b(\in A)$或者更简单地写成$ab$.</p>
-<p>运算$\cdot$叫做满足结合律，是指  </p>
-<p>$$a\cdot (b\cdot c)=(a\cdot b)\cdot c (对任意a，b，c\in A).$$  </p>
-<p>运算$\cdot$叫做满足交换律，是指  </p>
-<p>$$a\cdot b=b\cdot a (对任意a，b\in A).$$  </p>
-<p>一个集合赋予满足某些特定性质的(一个或多个)二元运算，便得到各种代数结构.本书讲述群、环和域三种代数结构.</p>
-<h2 id="习题">习题</h2>
-<p>$1$.设$B$，$A_i(i\in I)$均是集合$\Omega$的子集.试证：  </p>
-<p>$$(1)B\cap (\underset{i\in I}{\bigcup}A_i)=\underset{i\in I}{\bigcup}(B\cap A_i).$$  </p>
-<p>$$(2)B\cup (\underset{i\in I}{\bigcap}A_i)=\underset{i\in I}{\bigcap}(B\cup A_i).$$  </p>
-<p>$$(3)\overline{\underset{i\in I}{\bigcup}A_i}=\underset{i\in I}{\bigcap}\overline{A_i}.$$  </p>
-<p>$$(4)\overline{\underset{i\in I}{\bigcap}A_i}=\underset{i\in I}{\bigcup}\overline{A_i}.$$  </p>
-<p>证：</p>
-<p>$$(1)由定义x\in B\cap (\underset{i\in I}{\bigcup}A_i)当且仅当x\in B且x属于某一A_i，i\in I；当且仅当x属于某一B\cap A_i；当且仅当 x\in \underset{i\in I}{\bigcup}(B\cap A_i).$$</p>
-<p>$$(2)由定义x\in B\cup (\underset{i\in I}{\bigcap}A_i)当且仅当x\in B，或者x属于任一A_i，i\in I；当且仅当x属于任一B\cup A_i，i\in I；当且仅当x\in \underset{i\in I}{\bigcap}(B\cup A_i).$$</p>
-<p>$$(3)由定义x\in \overline{\underset{i\in I}{\bigcup}A_i}当且仅当x\in \Omega，x\notin \underset{i\in I}{\bigcup}A_i当且仅当x\in \Omega，x不属于任何一个A_i，i\in I当且仅当x\in \underset{i\in I}{\bigcap}\overline{A_i}.$$</p>
-<p>$$(4)由定义x\in \overline{\underset{i\in I}{\bigcap}A_i}当且仅当 x\in \Omega，x\notin \underset{i\in I}{\bigcap}A_i当且仅当x\in \Omega，x不属于某一个A_i，i\in I当且仅当x\in \underset{i\in I}{\bigcup}\overline{A_i}.$$</p>
-<p>$2$.设$f:A\to B$是集合的映射，$A$是非空集合.试证：</p>
-<p>$(1)f$为单射$\Leftrightarrow$存在$g:B\to A$，使得$g\circ f=1_A$;</p>
-<p>$(2)f$为满射$\Leftrightarrow$存在$h:B\to A$，使得$f\circ h=1_B$;</p>
-<p>证：$(1)$若$f$为单射，则可以定义$g:B\to A$如下：</p>
-<p>$$g(b)=\begin{cases} a, &amp; 若b=f(a)， \\ a_0 &amp; 若b\neq f(a)，\end{cases}$$</p>
-<p>其中$a_0$是$A$中某一固定元.因$f$是单射，$g$的定义是合理的，则$g\circ f=1_A$.</p>
-<p>反之，设$f(a_1)=f(a_2),a_1,a_2\in A$.则$a_1=gf(a_1)=gf(a_2)=a_2$，即$f$为单射.</p>
-<p>$(2)$设存在映射$h:B\to A$，使$\forall b\in B$，有$fh(b)=b$，即$f\left[ h(b)\right]=b$，即$\forall b\in B$，$\exists x=h(b)$使$f(x)=b$.所以$f$是满射.</p>
-<p>反之，设$f$是满射，我们定义一个$B$到$A$的对应关系$h,\forall b\in B$，因为$f$是满射，存在一个$a$，使$f(a)=b$，于是，令$h(b)=a$，则$h$是$B$到$A$的一个映射，且有：$fh(b)=f(h(b))=f(a)=b$，所以$fh=1_B$. </p>
-<p>$3$.如果$f:A\to B$，$g:B\to C$均是一一对应，则$g\circ f:A\to C$也是一一对应，且$(g\circ f)^{-1}=f^{-1}\circ g^{-1}$.</p>
-<p>证：$(gf)(f^{-1}g^{-1})=g1_Bg^{-1}=1_C$，$(f^{-1}g^{-1})(gf)=f^{-1}1_Bf=1_A$.故$gf$也是一一对应的，且$(gf)^{-1}=f^{-1}g^{-1}$.</p>
-<p>$4$.设$A$是有限集，$P(A)$是$A$的全部子集(包括空集)所构成的集族，试证$\mid P(A)\mid =2^{\mid A\mid}$，换句话说，$n$元集合共有$2^n$个不同的子集.</p>
-<p>证：设$\mid A\mid =n$，则$A$共有$C_n^m$个$m$元子集，$0\leq m\leq n$.故$\mid P(A)\mid =C_n^0+C_n^1+\cdots +C_n^{n-1}+C_n^n=2^n$.</p>
-<p>$5$.设$f:A\to B$是集合的映射.在集合$A$上如下定义一个关系：对任意$a,a’\in A$,$a\sim a’$当且仅当$f(a)=f(a’)$.试证这样定义的关系是一个等价关系.</p>
-<p>证：容易看出这种关系具有自反性(即$f(a)=f(a),\forall a \in A$)、对称性(即由$f(a)=f(b)$可推出$f(b)=f(a)$)和传递性(即由$f(a)=f(b)$和$f(b)=f(c)$可推出$f(a)=f(c)$)，从而它是等价关系.</p>
-<p>$6$.证明等价关系的三个条件是互相独立的，也就是说，已知任意两个条件不能推出第三个条件.</p>
-<p>证：例如，实数集$\bf R$中的关系$\leq$满足自反性和传递性，但不满足对称性.</p>
-<p>实数集中关系$\sim$满足自反性的对称性，但不满足传递性，其中$a\sim b\Leftrightarrow \mid a-b\mid \leq 1$.</p>
-<p>在非负整数集$\bf N_0$中定义关系$\sim$，其中$a\sim b\Leftrightarrow a$与$b$均为正数且有相同的奇偶性.则易见$\sim$满足对称性和传递性但不满足自反性：因为没有$0\sim 0$.</p>
-<p>注:设关系$\sim$满足：对任一元$a$，均有元$b$使得$a\sim b$.则由$\sim$的对称性和传递性可推出$\sim$具有自反性.</p>
-<p>$7$.设$A,B$是两个有限集合.</p>
-<p>$(1)A$到$B$的不同映射共有多少个？</p>
-<p>$(2)A$上不同的二元运算共有多少个？</p>
-<p>$(3)A$到$B$的单射共有多少个？</p>
-<p>解：$(1)$设$\mid A\mid =n$，$\mid B\mid =m$，则$A$到$B$有$m^n$个不同的映射.</p>
-<p>$(2)$设$\mid A\mid =n$，则$\mid A\times A\mid =n^2$.故由$(1)$知$A\times A$到$A$有$n^{n^{2}}$个不同的映射.即$A$上有$n^{n^{2}}$个不同的二元运算.</p>
-<p>$(3)$设$\mid A\mid =n$，$\mid B\mid =m$.若$n&gt;m$，显然$A$到$B$没有单射；若$n\leq m$，则$A$到$B$有$\dfrac{m!}{(m-n)!}$个单射.</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[近世代数是代数学一个基础学科，讲述代数基本结构的特性。]]>
     
     </summary>
     
