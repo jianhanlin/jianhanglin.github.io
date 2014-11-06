@@ -118,7 +118,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#无理数的定义"><span class="toc-number">1.</span> <span class="toc-text">无理数的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实数域的序"><span class="toc-number">2.</span> <span class="toc-text">实数域的序</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#无理数的定义"><span class="toc-number">1.</span> <span class="toc-text">无理数的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实数域的序"><span class="toc-number">2.</span> <span class="toc-text">实数域的序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#辅助命题"><span class="toc-number">3.</span> <span class="toc-text">辅助命题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用无限小数来表示实数"><span class="toc-number">4.</span> <span class="toc-text">用无限小数来表示实数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实数域的连续性"><span class="toc-number">5.</span> <span class="toc-text">实数域的连续性</span></a></li></ol>
 		
 		</div>
 		
@@ -153,6 +153,73 @@
 <h2 id="实数域的序">实数域的序</h2>
 <p>由分划$A\mid A’$及$B\mid B’$所确定的二无理数$\alpha$及$\beta$，当且仅当二分划为恒等时，始认为相等.实际上只要下组$A$及$B$互相重合就够了，因为这时$A’$与$B’$亦必互相重合.这定义在数$\alpha$及$\beta$为有理数时，仍可保持不变.换言之，若二有理数$\alpha$与$\beta$相等，则确定它们的分划相重合，反之，由分划的重合推得数$\alpha$与\beta$相等.在这里，自然仍须注意到，以分划来确定有理数时的上述约定.</p>
 <p>现在转而建立关于实数“大于”的概念.关于有理数这概念早已建立了.对于有理数$r$与无理数$\alpha$之间，“大于”的概念实际在[无理数的定义]中已建立了：即，若$\alpha$由分划$A\mid A’$所确定，我们便算作$\alpha$大于$A$组中的一切有理数，同时$A’$组中的一切有理数大于$\alpha$.</p>
+<p>现在设有二无理数$\alpha$及$\beta$，$\alpha $由分划$A\mid A’$，$\beta$由分划$B\mid B’$所确定.我们将称有较大下组的那个数为较大数.更准确些说，若$A$组整个包含着$B$组，并且不与它重合，则算作$\alpha &gt; \beta$(这条件，显然相当于：$B’$组整个包含着$A’$组，并且不与它重合).很易验证，当$\alpha ,\beta$之一是或甚至二者都是有理数时，这定义仍可保持.</p>
+<p>现在证明实数均能满足性质Ⅰ$1°$及Ⅰ$2°$.</p>
+<p>Ⅰ$1°$ 任一对(实)数$\alpha $与$\beta$之间必有且仅有下列三种关系之一：</p>
+<p>$$\alpha =\beta ,\alpha &gt; \beta ,\beta &gt; \alpha .$$</p>
+<p>若确定$\alpha$的分划$A\mid A’$与确定$\beta$的分划$B\mid B’$相重合，则$\alpha =\beta$.若这二分划不相重合，则或$A$整个包含$B$(这时$\alpha &gt; \beta$)，或不是这样.在后一情形，$B$组内有元素$b_0$落在$A’$内，则对于$A$组内的任何元素$a$，必有$a &lt; b_0$.因此$B$组整个包含$A$组，且不与它重合，于是我们有$\beta &gt; \alpha$.</p>
+<p>Ⅰ$2°$ 由$\alpha &gt; \beta$，$\beta &gt; \gamma$推得$\alpha &gt; \gamma$.</p>
+<p>设数$\alpha ,\beta ,\gamma$(它们中间可能有有理数)是由分划$A\mid A’,B\mid B’,C\mid C’$来确定的.若$\alpha &gt; \beta$，则依“大于”的定义，$A$组包含$B$组，且并不与它重合.但因$\beta &gt; \gamma$，故$B$组包含$C$组，且不与它重合.因此，$A$组亦包含$C$组，并且不与它重合，即$\alpha &gt; \gamma$.</p>
+<p>如在$2$有理数域的序中一样，现在可以建立“小于”的概念：若$\beta &gt; \alpha$，则我们说$\alpha &lt; \beta$.$&lt;$号亦与$&gt;$号一样具有传递性.</p>
+<h2 id="辅助命题">辅助命题</h2>
+<p>现在我们来建立实数域的<strong>稠密性</strong>(比较Ⅰ$3°$)；准确些说，我们将证明下列论断：</p>
+<p><strong>引理$1$</strong> 对于不论怎样的两个实数$\alpha$及$\beta$，其中$\alpha &gt; \beta$，恒有一个位于它们中间的有理数$r$：$\alpha &gt; r &gt; \beta$(因此，这种有理数有无穷个).</p>
+<p>因$\alpha &gt; \beta$，故确定数$\alpha$的分划的下组$A$整个包含确定$\beta$的下组$B$，且不与$B$重合.因此在$A$内必有有理数$r$，它不包含在$B$内，于是必属于$B’$；对于它</p>
+<p>$$\alpha &gt; r \geq \beta$$</p>
+<p>(只有在$\beta$为有理数时始能成立等式).但因为在$A$内无最大数，故在必要时，把$r$取得大一些就可以取消等式.</p>
+<p><strong>附注</strong> 我们事实上已证明了比实数域的稠密性还要强的性质：即在实数$\alpha$与$\beta$(若$\alpha &gt; \beta$)之间必定存在着有理数(不仅是实数).以后我们就将引用这个更强的稠密性.</p>
+<p>由此直接推得 </p>
+<p><strong>引理$2$</strong> 设给定两个实数$\alpha$和$\beta$.如果任取一个数$e &gt; 0$，数$\alpha$及$\beta$都能位于一对有理数$s$与$s’$之间：</p>
+<p>$$s’ &gt; \alpha &gt; s,s’ &gt; \beta &gt; s,$$</p>
+<p>这对数的差小于$e$：</p>
+<p>$$s’-s &lt; e,$</p>
+<p>则数$\alpha$与$\beta$必须相等.</p>
+<p><strong>证明</strong> 我们用反证法来证明.例如，设$\alpha &gt; \beta$，依引理$1$，在$\alpha$与$\beta$间可以插入两个有理数$r$及$r’ &gt; r$：</p>
+<p>$$\alpha &gt; r’ &gt; r &gt; \beta .$$</p>
+<p>于是对于任何二数$s$及$s’$，当$\alpha$及$\beta$都在它们之间时，显然成立如下不等式</p>
+<p>$$s’ &gt; r’ &gt; r &gt; s,$$ </p>
+<p>由此</p>
+<p>$$s’-s &gt; r’-r &gt; 0,$$</p>
+<p>因此差$s’-s$不通小于数$e=r’-r$，违背引理的条件.这矛盾即证明了引理.</p>
+<h2 id="用无限小数来表示实数">用无限小数来表示实数</h2>
+<p>现在我们考虑这样的表示实数的方法，即其分数部分(尾数)是正的，而同时，其整数部分可以为正的、负的或零.</p>
+<p>首先假定被考察的实数$\alpha$并非整数，亦非有限十进小数.现在要来求它的十进小数近似值.若$\alpha$由分划$A\mid A’$所确定，则首先易见在$A$组内必有整数$M$，又在$A’$组内亦必有整数$N &gt; M$.在$M$上依次加$1$，必能得出这样两个相邻的整数$C_0$及$C_0 +1$，使</p>
+<p>$$C_0 &lt; \alpha &lt; C_0 +1.$$</p>
+<p>这里的数$C_0$可以为正的、负的或零.</p>
+<p>若再用数</p>
+<p>$$C_0.1;C_0.2;\cdots ;C_0.9,$$</p>
+<p>分$C_0$与$C_0+1$间的区间为十等份，则$\alpha$必(且仅)落在其中之一个部分区间内，因此我们又求得相差为$\dfrac{1}{10}$的两数：$C_0.c_1$及$C_0.c_1 +\dfrac{1}{10}$，且有</p>
+<p>$$ C_0.c_1 &lt; \alpha &lt; C_0.c_1 +\dfrac{1}{10}.$$</p>
+<p>继续这样分下去，在确定数码<span>$c_1 ,c_2 ,\cdots ,c_{n-1}$</span>后，我们就用不等式</p>
+<p>$$ C_0.c_1c_2 \cdots c_n &lt; \alpha &lt; C_0.c_1c_2 \cdots c_n +\dfrac{1}{10^n}.\tag{1}$$</p>
+<p>定义第$n$位数码$c_n$.</p>
+<p>这样，在求数$\alpha$的十进小数近似值的过程中，我们求得整数$C_0$及数码$c_1 ,C_2 ,\cdots ,c_n ,\cdots$的无限序列.由此组成的无限小数，即记号</p>
+<p>$$C_0.c_1c_2 \cdots c_n \cdots \tag{2}$$</p>
+<p>可以看成是实数$\alpha$的一种表示.</p>
+<p>在例外的情形，当$\alpha$本身就是整数或有限小数，亦可以用相似的方法由比$(1)$更普遍的关系式</p>
+<p>$$ C_0.c_1c_2 \cdots c_n \leq \alpha \leq C_0.c_1c_2 \cdots c_n +\dfrac{1}{10^n} \tag{1a}$$</p>
+<p>来相继地确定数$C_0$及数码$c_1 ,C_2 ,\cdots ,c_n ,\cdots$.事情是这样的，到某时，数$\alpha$会重合于包含它的区间的一端，重合于左端或右端都行；从这时开始，相应地，在$(1a)$中左端或右端就将经常不变地成立等式.按照成立等式的是左端还是右端，这以后的各数码就将全是$0$或全是$9$.因此，这时$\alpha$就有了双重的表示，一种是用零循环的，一种是用$9$循环的.例如，</p>
+<p>$$3.826=3.826000\cdots =3.825999\cdots ,$$</p>
+<p>$$-3.826=\overline{4}.174000\cdots =\overline{4}.173999\cdots .$$</p>
+<p>记法$x=\overline{4}.174000$表示$x=-4+0.174000$.</p>
+<p>反之，今设任给一无限十进小数$(2)$；我们要证明总可以找到一实数$\alpha$，刚好是被这小数所表示的.为此，我们来考察小数$(2)$的一段：</p>
+<p>$$C_n=C_0.c_1c_2 \cdots c_n ,\tag{3}$$</p>
+<p>把它作为所求数的“亏(不足的)近似值”，同样把</p>
+<p>$$C_n ‘=C_0.c_1c_2 \cdots c_n +\dfrac{1}{10^n} \tag{4}$$</p>
+<p>作为其“盈(过剩的)近似值”.不难看出，每一$C_n$小于每一$C_n’$.现在我们用如下法来定有理数域的一个分划：把大于一切$C_n$的有理数$a’$(例如，一切数$C_n’$)放在上组$A’$内，而把一切余下的数(例如，数$C_n$本身)放在$A$组内.很易验证，这就是我们所要的分划，它确定了所求的实数$\alpha$.</p>
+<p>实则，因$\alpha$就是在两组之间的界数，因此，当然成立</p>
+<p>$$C_n \leq \alpha \leq C_n’ ,$$</p>
+<p>即数$\alpha$满足于一切$(1a)$型的不等式.这就证明了小数$(2)$就是所求实数的表示式.</p>
+<p>盈十进近似值$(4)$和亏十进近似值$(3)$的差等于$\dfrac{1}{10^n}$，随着$n$的增大，这差可小于任何有理数$e &gt; 0$.事实上，因不超出数$\dfrac{1}{e}$的自然数仅能是有限多个，故不等式$10^n \leq \dfrac{1}{e}$，或相当的不等式$\dfrac{1}{10^n} \geq e$仅能对有限个$n$的值满足；对于其余一切$n$的值，将有</p>
+<p>$$\dfrac{1}{10^n} &lt; e.$$</p>
+<p>由这附注，依引理$2$，可得结论：任一异于$\alpha$的数$\beta$，既不能像$\alpha$那样满足一切不等式$(1)$或$(1a)$，故其无限十进小数表示式必与$\alpha$的表示式不同.</p>
+<p>特别是由此推得：不等于有限小数的数，其表示式不能以$0$或$9$来循环，因为任一以$0$或$9$来循环的小数显然表示有限小数.</p>
+<p>今后读者就可以将实数想象为无限十进小数.由中学课本内，人们知道，无限循环小数表示有理数，反之，任一有理数总可化成循环小数.这样，不循环的无限小数，就用来表示我们新引入的无理数(这一概念也可作为建立无理数的理论的出发点).</p>
+<p>附注 下面我们将常应用有理近似值$a$及$a’$以接近实数$\alpha$，这时，</p>
+<p>$$a &lt; \alpha &lt; a’.$$</p>
+<p>其差$a’-a$可为任意小.对于有理数$\alpha$，显然存在着这种数$a$及$a’$；对于无理数$\alpha$也可以有这样的$a$及$a’$，例如，当$n$充分大时应用十进近似值$C_n$及$C_n’$.</p>
+<h2 id="实数域的连续性">实数域的连续性</h2>
+<p>今转而考察一切实数所成之域的一个极重要的性质.这种性质使实数域在本质上异于有理数域.在</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -206,7 +273,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#无理数的定义"><span class="toc-number">1.</span> <span class="toc-text">无理数的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实数域的序"><span class="toc-number">2.</span> <span class="toc-text">实数域的序</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#无理数的定义"><span class="toc-number">1.</span> <span class="toc-text">无理数的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实数域的序"><span class="toc-number">2.</span> <span class="toc-text">实数域的序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#辅助命题"><span class="toc-number">3.</span> <span class="toc-text">辅助命题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用无限小数来表示实数"><span class="toc-number">4.</span> <span class="toc-text">用无限小数来表示实数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实数域的连续性"><span class="toc-number">5.</span> <span class="toc-text">实数域的连续性</span></a></li></ol>
  
   </div>
 
@@ -260,6 +327,21 @@
   <div class="linkslist">
   <p class="asidetitle">友情链接</p>
     <ul>
+      <li><a href="http://www.ox.ac.uk/" target="_blank" title="mathac">University of Oxford</a></li>
+      <li><a href="http://www.cam.ac.uk/" target="_blank" title="mathac">University of Cambridge</a></li>
+      <li><a href="http://www.harvard.edu/" target="_blank" title="mathac">Harvard University</a></li>
+      <li><a href="http://www.caltech.edu/" target="_blank" title="mathac">California Institute of Technology</a></li>
+      <li><a href="http://www.stanford.edu/" target="_blank" title="mathac">Stanford University</a></li>
+      <li><a href="http://web.mit.edu/" target="_blank" title="mathac">Massachusetts Institute of Technology</a></li>
+      <li><a href="http://www.princeton.edu/" target="_blank" title="mathac">Princeton University</a></li>
+      <li><a href="http://www.yale.edu/" target="_blank" title="mathac">Yale University</a></li>
+      <li><a href="http://www3.imperial.ac.uk/" target="_blank" title="mathac">Imperial College London</a></li>
+      <li><a href="http://www.ucl.ac.uk/" target="_blank" title="mathac">London's Global University</a></li>
+      <li><a href="http://berkeley.edu/" target="_blank" title="mathac">University of California-Berkeley</a></li>
+      <li><a href="http://www.ucla.edu/" target="_blank" title="mathac">University of California, Los Angeles</a></li>
+      <li><a href="http://www.u-psud.fr/" target="_blank" title="mathac">Université Paris-Sud 11</a></li>
+      <li><a href="http://www.upmc.fr/" target="_blank" title="mathac">Université Paris VI</a></li>
+      <li><a href="http://www.uchicago.edu/" target="_blank" title="mathac">The University of Chicago</a></li>
       <li><a href="http://www.math.ac.cn/" target="_blank" title="mathac">中科院数学与系统科学研究院</a></li>
       <li><a href="http://www.math.org.cn/" target="_blank" title="mathorg">博士数学论坛</a></li>
       <li><a href="http://emuch.net/bbs/index.php" target="_blank" title="emuch">小木虫</a></li>
