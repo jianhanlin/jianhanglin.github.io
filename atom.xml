@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我只需要你陪我60年。很傻，对吧？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-11-06T07:11:03.076Z</updated>
+  <updated>2014-11-07T07:11:27.713Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -15,11 +15,122 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 6 等价关系. 商映射]]></title>
+    <link href="http://jianhanglin.github.io/2014/11/daishuxueyinlun116/"/>
+    <id>http://jianhanglin.github.io/2014/11/daishuxueyinlun116/</id>
+    <published>2014-11-06T07:18:52.000Z</published>
+    <updated>2014-11-07T07:10:39.000Z</updated>
+    <content type="html"><![CDATA[<p>在$\S 3$中引入的线性方程组的等价性，以及我们不自觉地在逻辑学，在日常生活等各个方面使用的各种形态的等价性使人们想到应该一般地定义这一概念.</p>
+<h2 id="二元关系">二元关系</h2>
+<p>设$X,Y$是任意两个集合，任意子集$\omega \subset X\times Y$叫作$X$与$Y$之间的一个<strong>二元关系</strong>.(若$X=Y$，则简称为$X$上的一个二元关系.)有序对$(x,y)\in \omega$，用记号$x\omega y$表示，并称$x$与$y$有关系$\omega$.这种记法是方便的，例如实数集$\mathbb{R}$中的顺序$&lt;$是$\mathbb{R}$上的一个二元关系，由实平面$\mathbb{R}^2$上位于直线$x-y=0$上方的点组成(见图$7$)；用通常的不等式$x &lt; y$代替了繁琐的包含号$(x,y)\in \omega$.</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu9.png" alt=""></center>
+
+<p>每一个函数$f:X\to Y$都对应于它的图像，也就是子集</p>
+<p>$$\Gamma (f)=\lbrace (x,y)\mid x\in X,y=f(x)\rbrace \subset X\times Y,$$</p>
+<p>这是$X$与$Y$之间的一个二元关系.研究函数$\mathbb{R} \to \mathbb{R}$在$\mathbb{R}^2$上的图像是数学分析的内容.显然，并非每一个二元关系都可以作为某个映射$X\to Y$的图像.二元关系成为某个映射的图像的充要条件在于，任取$x\in X$，刚好有一个元素$y$使得$x\omega y$.事实上，给定$X,Y$和图像$\Gamma (f)$，可以重建映射$f$.</p>
+<h2 id="等价关系">等价关系</h2>
+<p>集合$X$上的二元关系$\sim$叫作<strong>等价关系</strong>，若任取$x,x’,x’’\in X$，满足关系：</p>
+<p>$\text{i} )$ $x\sim x$(反身性)；</p>
+<p>$\text{ii} )$ $x\sim x’ \Rightarrow x’\sim x$(对称性)；</p>
+<p>$\text{iii} )$ $x\sim x’,x’ \sim x’’ \Rightarrow x\sim x’’$(传递性).</p>
+<p>元素$a,b\in X$不具有等价关系记作$a \nsim b$.</p>
+<p>与给定元素$x$等价的所有元素的子集</p>
+<p>$$\overline{x} =\lbrace x’\in X\mid x’\sim x\rbrace \subset X$$</p>
+<p>叫作包含$x$的<strong>等价类</strong>.由于$x\sim x$(见$(\text{i})$)，故确有$x\in \overline{x}$.任意元素$x’\in \overline{x}$都叫作类$\overline{x}$的<strong>代表元</strong>.</p>
+<p>下述论断成立.</p>
+<p><strong>命题</strong> 由关系$\sim $确定的等价类的集合是集合$X$的一个划分，即$X$是这些子集的不交并(记作$\pi \sim (X)$).</p>
+<p><strong>证明</strong> 事实上，$x\in \overline{x}$，所以</p>
+<p>$$X=\underset{x\in X}{\bigcup}\overline{x} .$$</p>
+<p>现在如果$\overline{x}’\cap \overline{x}’’\neq \varnothing$且$x \in \overline{x}’\cap \overline{x}’’$，则$x\sim x’$且$x\sim x’’$，由传递性$(\text{iii})$，有$x’\sim x’’$，以及$\overline{x}’=\overline{x}’’$，这就意味着不同的等价类互不相交.$\qquad \Box$</p>
+<p>设$\Pi=\mathbb{R}^2$是带有直角坐标系的实平面.</p>
+<p>将两点$p,p’\in \Pi$属于同一条水平直线取作性质$\sim$，我们显然得到了一个等价关系，它的等价类是水平直线(见图$8$).</p>
+<p>形如$xy=\rho &gt; 0$的双曲线<span>$\Gamma _\rho$</span>定义了区域<span>$\Pi _+$</span>上的一个等价关系，其中$\Pi _+\subset \Pi$，由点$P(x,y)$，$x &gt; 0$，$y &gt; 0$组成(见图$9$).这些几何例子直观地说明了下述逆命题成立.</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu10.png" alt=""></center>
+
+<p><strong>命题</strong> 如果$\pi (X)$是将集合$X$分成不相交子集$C_x$的一个划分，则$C_x$是由某一等价关系$\sim$确定的等价类.</p>
+<p><strong>证明</strong> 事实上，根据条件，每个元素$x\in X$仅被包含在一个子集$C_a$中.定义$x\sim x’$当且仅当$x$与$x’$属于同一个子集$C_a$.显然，这个关系是反身，对称，且传递的，即$\sim$是一个等价关系.进一步根据定义，$x\in C_a \Rightarrow \overline{x}=C_a$.所以$\pi (X)=\pi \sim (X)$.$\qquad \Box$</p>
+<h2 id="商映射">商映射</h2>
+<p>由于上述给出的集合$X$的等价关系与划分之间的一一对应，对应于等价关系$\sim$的划分通常记作$X/\sim$，并称之为$X$关于$\sim$的商集(或由关系$\sim$确定的商集).满射</p>
+<p>$$p:x\mapsto p(x)=\overline{x}\tag{1}$$</p>
+<p>叫作$X$到商集$X/\sim$上的<strong>自然映射</strong>(或<strong>典范投影</strong>).</p>
+<p>设$X,Y$是两个集合，且$f:X\to Y$是一个映射.二元关系$\omega _f$：</p>
+<p>$$\forall x,x’\in X,\qquad x\omega _f x’\Leftrightarrow f(x)=f(x’)$$</p>
+<p>显然是反身的($f(x)=f(x)$)，对称的($f(x’)=f(x)\Rightarrow f(x)=f(x’)$)，并且还是传递的($f(x)=f(x’)$和$f(x’)=f(x’’)\Rightarrow f(x)=f(x’’)$).这样$\omega _f$是$X$上的一个等价关系.对应的等价类$\overline{x}$就是在$\S 5$习题$5$意义下的纤维(原像).换言之</p>
+<p>$$\overline{x}=\lbrace x’\mid f(x’)=f(x)\rbrace .$$</p>
+<p>映射$f:X\to Y$诱导出一个映射$\overline{f}:X/\omega _f \to Y$，由法则</p>
+<p>$$\overline{f} (\overline{x})=f(x),$$</p>
+<p>或</p>
+<p>$$\overline{f} p(x)=f(x)\tag{2}$$</p>
+<p>给出，此处$p$是$(1)$式中给出的自然映射.由于</p>
+<p>$$\overline{x}=\overline{x}’\Leftrightarrow f(x)=f(x’),$$</p>
+<p>所以给定$f$，关系式$(2)$不信赖于类$\overline{x}$中代表元$x$的选取.这时我们说$\overline{f}$的定义是合理的(或良定义的).交换图</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu11.png" alt=""></center>
+
+<p>直观地描述了一个分解式</p>
+<p>$$f=\overline{f}\cdot p\tag{3}$$</p>
+<p>映射$f$写成了一个满射$p$与一个单射$\overline{f}$的乘积.$\overline{f}$的单性由下式给出</p>
+<p>$$\overline{f}(\overline{x} _1 )=\overline{f}(\overline{x} _2 )\Leftrightarrow f(x _1 )=f(x _2 )\Leftrightarrow \overline{x} _1 =\overline{x} _2 .$$ </p>
+<p>显然$\overline{f}$的满性等价于$f$的满性.我们指出，如果$f’:X/\omega _f \to Y$是满足条件$(3)$：$f’\cdot p=f$的另一个映射，则由</p>
+<p>$$f’(\overline{x})=f’(p(x))=(f’p)(x)=f(x)=\overline{f}(\overline{x})$$</p>
+<p>(见公式$(2)$)得到等式$f’=\overline{f}$.因而上述三角交换图中给出的映射$\overline{f}$是唯一确定的.</p>
+<h2 id="序集">序集</h2>
+<p>一个<strong>有序集</strong>$X$(或集合$X$上的一个序)指$X$上的一个二元关系$\leq$，满足反身性$(x\leq x)$，反对称性(若$x\leq y$且$y\leq x$，则$x=y$)和传递性(若$x\leq y,y\leq z$，则$x\leq z$).当$x\leq y$且$x\neq y$时，记作$x &lt; y$.$x\leq y$也可以用记号$y\geq x$表示.一对元素$x,x’\in X$可能没有$\leq $关系.但是如果对于$X$的每一对元素都有$x\leq x’$或$x’\leq x$则称$X$为<strong>线性序集</strong>或<strong>全序集</strong>.在一般情况下，称$X$上有一个<strong>偏序</strong>.</p>
+<p>给出偏序集的两个例子.集合$S$的子集的集合$\mathcal{P}(S)$(见$\S 5$习题$4$)连同通常的子集之间的包含关系$R\subset T$是一个偏序集.而自然数集$\mathbb{N}$连同关系$d\mid n$($n$被$d$整除)也是一个偏序集.</p>
+<p>设$X$是一个偏序集，$x$和$y$是$X$的元素.称$y$<strong>紧跟</strong>(或<strong>覆盖</strong>)$x$，如果$x &lt; y$，且不存在元素$z$，使得$x &lt; z &lt; y$.在$\text{Card}X &lt; \infty$的情况下，$x &lt; y$(即$x$与$y$是可比的)当且仅当可以找到一个元素列<span>$x=x_1 ,x_2 ,\cdots ,x_{n-1},x_n =y$</span>，其中<span>$x_{i+1}$</span>紧跟$x_i$.紧跟的概念可以用于绘制有限偏序集的平面图.用点表示集合$X$的元素.若$y$紧跟$x$，则把$y$放在高于$x$的位置上，并将$x$与$y$用直线段连接赶来.$y$与$x$的可比性表现为连接$y$和$x$的一条下降的折线，这样的折线可能同时有几条，$x$与$y$是不可比的则没有折线连接.</p>
+<p>在图$10$的前两个图中描述了自然序数的“线段”以及集合$\mathcal{P}(\lbrace a,b,c\rbrace)$($\mathbb{N}$是自然的线性序集，而$\mathcal{p}(S)$的序已在上面给出).</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu12.png" alt=""></center>
+
+<p>一个偏序集$X$的<strong>最大元</strong>指元素$n\in X$，使得任取$x\in X$都有$x\leq n$，而<strong>极大元</strong>指元素$m\in X$，使得从$m\leq \in X$可得$x=m$.最大元永远是极大的，但反之不真.极大元可以有很多个，但最大元如果存在的话，必定是唯一确定的.相应地可以定义<strong>最小元</strong>和<strong>极小元</strong>.在图$10$中，左边的两个图有最大元和最小元，右边的图有三个极大元(一个最小元)，但没有最大元.</p>
+<p>偏序代数系统的理论(布尔代数，格论)充满了丰富的结果并在代数学中占有重要地位，但我们不可能去涉及它.本段的目的仅在于使读者认识自然的二元关系并提供图解，它将有助于理解在群当中子群或者域当中子域的相互位置.</p>
+<h2 id="习题">习题</h2>
+<p>$1$.设$\mathbb{R}^2/\sim$是图$8$中给出的商集，$l$是与$OX$轴相交的任意直线，试给出$\mathbb{R}^2/\sim$的元素与$l$的点之间的一一对应.</p>
+<p>$2$.令实坐标平面$\mathbb{R}^2$上的两点$P(x,y)\sim P(x’,y’)$，当且仅当$x-x’\in \mathbb{Z}$且$y-y’\in \mathbb{Z}$.证明$\sim$是等价关系，且商集可以几何地表示为环面(例如小面包圈的表面，见图$11$)上的点集.</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu13.png" alt=""></center>
+
+<p>$3$.证明$2$元、$3$元和$4$元集分别有$2$，$5$和$15$个不同的商集.</p>
+<p>$4$.设$\sim$是集合$X$上的一个等价关系，且$f:X\to Y$是一个映射，使得</p>
+<p>$$x\sim X’ \Rightarrow f(x)=f(x’)$$</p>
+<p>证明$f$与$\sim$的这一相容性条件(比第$2$段讨论的条件要弱)允许我们定义一个从$X/\sim$到$Y$的诱导映射$\overline{f}:\overline{x}\mapsto f(x)$，它给出了分解式$f=\overline{f}\cdot p$，但$\overline{f}$不一定是单射.$\overline{f}$成为单射的条件是什么？</p>
+<p>$5$.画出下述偏序集的图解：</p>
+<p>$1)\mathcal{P}(\lbrace a,b,c,d\rbrace)$;</p>
+<p>$2)$整数$24$的全体因子的集合(偏序关系由整除给出).</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[在日常生活等各个方面使用的各种形态的等价性使人们想到应该一般地定义这一概念.]]>
+    
+    </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="基础代数" scheme="http://jianhanglin.github.io/categories/%E5%9F%BA%E7%A1%80%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[《微积分学教程(第一卷)》 绪论 实数 3 实数的算术运算]]></title>
+    <link href="http://jianhanglin.github.io/2014/11/weijifenxuejiaocheng103/"/>
+    <id>http://jianhanglin.github.io/2014/11/weijifenxuejiaocheng103/</id>
+    <published>2014-11-06T07:13:39.000Z</published>
+    <updated>2014-11-06T07:15:27.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="实数的和的定义">实数的和的定义</h2>
+]]></content>
+    <summary type="html">
+    <![CDATA[建立实数的运算的概念.]]>
+    
+    </summary>
+    
+      <category term="微积分" scheme="http://jianhanglin.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/"/>
+    
+      <category term="微积分" scheme="http://jianhanglin.github.io/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[《微积分学教程(第一卷)》 绪论 实数 2 无理数的导入·实数域的序]]></title>
     <link href="http://jianhanglin.github.io/2014/10/weijifenxuejiaocheng102/"/>
     <id>http://jianhanglin.github.io/2014/10/weijifenxuejiaocheng102/</id>
     <published>2014-10-30T02:42:03.000Z</published>
-    <updated>2014-11-06T07:10:09.000Z</updated>
+    <updated>2014-11-06T07:13:16.000Z</updated>
     <content type="html"><![CDATA[<h2 id="无理数的定义">无理数的定义</h2>
 <p>有理数集及其在第一节内列举的一切性质，作为是已给的.</p>
 <p>我们仿效戴德金($\text{R.Dedekind}$)来叙述无理数的理论.有理数域内的分划的概念是这理论的基础.若将有理数全体所成的集合分拆为两个非空集合(即至少包含一个数的)$A,A’$.我们把这样的分拆叫做<strong>分划</strong>，只要满足条件：</p>
@@ -168,9 +279,8 @@
 <p>最后我们约定，若数集$\chi =\lbrace x\rbrace $不上有界，便说，它的上确界是$+\infty $：$\text{sup} \lbrace x\rbrace = +\infty$.仿此，若数集$\chi =\lbrace x\rbrace $不下有界，便说，它的下确界是$-\infty $：$\text{inf} \lbrace x\rbrace = -\infty$.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="无理数的定义">无理数的定义</h2>
-<p>有理数集及其在第一节内列举的一切性质，作为是已给的.</p>
-<p>我们仿效戴德金($\text{R.Dedekind}$)来叙述无理数的理论.有理数域内的分划的概念是这理论的基础.若将有理数全体所成的集合分拆为两个非]]>
+    <![CDATA[我们仿效戴德金($\text{R.Dedekind}$)来叙述无理数的理论.]]>
+    
     </summary>
     
       <category term="微积分" scheme="http://jianhanglin.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/"/>
@@ -304,7 +414,7 @@
     <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun115/"/>
     <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun115/</id>
     <published>2014-10-27T07:22:40.000Z</published>
-    <updated>2014-11-04T07:59:10.000Z</updated>
+    <updated>2014-11-07T06:19:59.000Z</updated>
     <content type="html"><![CDATA[<p>在前两节中，我们遇到了各式各样的元素的集合，也遇到了集合之间的映射.例如给定的线性方程组的解的集合，或使每一个二阶矩阵对应于它的行列式的法则——都是某些形式概念的特例，了解形式概念(哪怕在直观的层面上)对今后的学习是非常有益的.</p>
 <h2 id="集合">集合</h2>
 <p><strong>集合</strong>指某些对象的总合，这些对象被称为<strong>元素</strong>.</p>
@@ -438,8 +548,8 @@
 <p>$$f(S\cup T)=f(S)\cup f(T),f(S\cap T)\subset f(S)\cap f(T).$$</p>
 <p>试举一例，说明后一个式子中的包含关系一般来说不能换成相等关系.</p>
 <p>$4$.集合$S$的全体子集的集合记作</p>
-<p>$$P(S)=\lbrace  T\mid T\subset S\rbrace  .$$</p>
-<p>例如$S=\lbrace  s_1 ,s_2 ,\cdots ,s_n \rbrace $是$n$个元素的有限集，则$P(S)$由空集$\varnothing$，$n$个单元集$\lbrace  s_1 \rbrace $，$\lbrace  s_2 \rbrace $，$\cdots $，$\lbrace  s_n \rbrace $，$\dfrac{n(n-2)}{2}$个二元集$\lbrace  s_i ,s_j \rbrace $，$1 \leq i &lt; j \leq n$，等等，直到全集$T=S$组成.集合$P(S)$的基数是多少？</p>
+<p>$$\mathcal{P}(S)=\lbrace  T\mid T\subset S\rbrace  .$$</p>
+<p>例如$S=\lbrace  s_1 ,s_2 ,\cdots ,s_n \rbrace $是$n$个元素的有限集，则$\mathcal{P}(S)$由空集$\varnothing$，$n$个单元集$\lbrace  s_1 \rbrace $，$\lbrace  s_2 \rbrace $，$\cdots $，$\lbrace  s_n \rbrace $，$\dfrac{n(n-2)}{2}$个二元集$\lbrace  s_i ,s_j \rbrace $，$1 \leq i &lt; j \leq n$，等等，直到全集$T=S$组成.集合$\mathcal{P}(S)$的基数是多少？</p>
 <p>$5$.设$f:X\to Y$是一个映射，且设对某个元素$a\in X$，$b=f(a)$.原像</p>
 <p>$$f^{-1}(b)=f^{-1}(f(a))=\lbrace  x\mid f(x)=f(a)\rbrace $$</p>
 <p>叫作元素$b\in \text{Im}f$上的<strong>纤维</strong>.证明集合$X$是互不相交的纤维的并(也就是说，给出了$X$的一个划分).</p>
@@ -1205,6 +1315,64 @@
   </entry>
   
   <entry>
+    <title><![CDATA[《代数学引论》第零章 集合与整数 2 自然数]]></title>
+    <link href="http://jianhanglin.github.io/2014/09/daishuxueyinlun02/"/>
+    <id>http://jianhanglin.github.io/2014/09/daishuxueyinlun02/</id>
+    <published>2014-10-18T10:21:33.000Z</published>
+    <updated>2014-10-22T01:26:07.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="自然数">自然数</h2>
+<p><strong>自然数系</strong>是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.自然数系是可数无限集合的一个原型.它的良序性质是数学归纳法原理的依据.自然数系的整除性和素数的研究促使了数论的发展.用<strong>皮阿诺(Peano)公理</strong>来描述自然数，容易使我们看清自然数的本质.</p>
+<p>自然数系是这样一个非空集合$\bf N$，其中有一个选定了的元素$0$，和一个$\bf N$到自身的后继映射$a\mapsto a^{+}$，$a^{+}$叫做$a$的后继，满足</p>
+<p>$i)$映射$a\mapsto a^{+}$是单一的.即从$a^{+}=b^{+}$推出$a=b$，</p>
+<p>$ii)0$不是任何元素的后继，即不存在$a\in \bf N$使得$a^{+}=0$，</p>
+<p>$iii)$如果$\bf N$的任一个子集$S$满足1)$0\in S$而且2)对所有元素$a\in \bf N$，从$a\in S$恒有$a^{+}\in S$，则$S=\bf N$.</p>
+<p>从公理$i)$和$ii)0$推出$\bf N$是一个无穷集合，公理$iii)$就是<strong>数学归纳法原理</strong>.它是归纳法证明方法的基础.设$P(n)$是关于自然数$n$的某种性质或陈述.为了证明$P(n)$对所有自然数是真的，我们只需证明两点：1)$P(0)$是真的，2)若对任一自然数$n$，$P(n)$是真的，则$P(n^{+})$也是真的.于是根据数学归纳法原理，$P(n)$对所有自然数都是真的.</p>
+<p>关于自然数的许多性质都可以应用数学归纳法原理予以证明.例如，我们可以应用数字归纳法原理证明命题：$\bf N$的每个非零自然数$a$都是另一个自然数$b$的后继.设<span>$S_{1}=\lbrace x\in \bf N\mid$</span>对$x$存在一个$y\in \bf N$使得$x=y^{+}\rbrace $，<span>$S=\lbrace  0\rbrace  \cup S_{1}$</span>.证明$S=\bf N$.首先$0\in S$，而且若$b\in S$，根据$S$的定义$b^{+}\in S$.根据数学归纳法原理$S=\bf N$.</p>
+<p>归纳法的证明为大家所熟悉，但是归纳法或归纳法构造，则不大为大家所熟悉.归纳法构造是以下列定理为基础的.</p>
+<p><strong>递归定理</strong>设$S$为一集合，$\varphi$为$S$到自身的一个映射，$a$为$S$的一个给定的元素，则存在一个唯一的$\bf N$到$S$的映射$\psi _{a}$使得</p>
+<p>$$\psi _{a}(0)=a$$</p>
+<p>且</p>
+<span>$$\psi _{a}(n^{+})=\varphi (\psi _{a}(n)),n\in \bf N.$$</span>
+
+<p>就是说下图交换</p>
+<center><img src="/assets/img/daishuxueyinlun/2.bmp" alt=""></center>
+
+<p>且</p>
+<p>$$\psi _{a}(0)=a.$$</p>
+<p>(交换图的概念可见第一章$\S 7$).</p>
+<p>我们不打算给出这个定理的详细证明.但是要说一下证明的思路.一个集合$X$到另一个集合$Y$的任一映射$f$规定了笛卡尔积$X\times Y$的一个子集</p>
+<p>$$T=\lbrace  (x,f(x))\mid x\in X\rbrace .$$</p>
+<p>反之，$X\times Y$的一个子集$T$如果满足1)对每个$x\in X$存在一个$y\in Y$使$(x,y)\in T$，而且2)若$(x,y)$，$(x,y’)\in T$，则$y=y’$，那么$T$规定了一个映射$f:X\to Y$使得$T$由所有的$(x,f(x))$，$x\in X$组成.基于这种看法，我们考虑笛卡尔积${\bf N}\times S$的满足下列条件的子集$T$：(1)$(0,a)\in T$，而且(2)若$(n,b)\in T$，则$(n^{+},\varphi (b))\in T$(对所有$n\in \bf N$).用$I$表示${\bf N}\times S$的所有这种子集的交.读者可以根据自然数的公理证明$I$规定了一个映射<span>$\psi _{a}:{\bf N}\to S$</span>而且<span>$\psi _{a}$</span>满足定理的要求.不难证明，满足定理要求的映射<span>$\psi _{a}$</span>是唯一的.</p>
+<p>根据递归定理，在自然数系上我们可以归纳地定义一个概念或归纳地构造一个函数.自然数的加法和乘法的定义就是典型的例子.</p>
+<p>定义$\bf N$的加法如下：对任意$m,n\in \bf N$，规定</p>
+<p>$$m+0=m$$</p>
+<p>$$m+n^{+}=(m+n)^{+}.$$</p>
+<p>注意，我们在递归定理中令$S=\bf N$，$\varphi (n)=n^{+}$，$a=m$，从而得到的映射<span>$\psi _{m}$</span>等于规定了加法运算，<span>$\psi _{m}(n)=m+n$</span>.</p>
+<p>不难证明加法满足结合律、交换律和加法消去律.将$0$的后继记成$1$，$0^{+}=1$，于是有$m+1=m^{+}$.$0$是加法的单位元素.</p>
+<p>定义$\bf N$的乘法如下：对任意$m,n\in \bf N$，规定</p>
+<p>$$m\cdot 0=0$$</p>
+<p>$$m\cdot n^{+}=m\cdot n+m.$$</p>
+<p>注意，在递归定理中我们令$S=\bf N$，$\varphi (n)=n+m$，$a=m$，从而得到的映射<span>$\psi _{m}$</span>等于规定了乘法运算，<span>$\psi _{m}(n)=m\cdot n$</span>.</p>
+<p>不难证明乘法满足结合律、交换律、乘法消去律以及乘法对加法的分配律.由定义可知$m\cdot 1=m$，对所有自然数$m$.$1$是乘法的单位元素.</p>
+<p>自然数系还有一个序“$\leq$”.这个序规定了任意两个自然数$a,b$的大小.我们说$a\leq b$当而且仅当$a+x=b$在$\bf N$内有解.若$a\leq b$且$a\neq b$，则写成$a&lt;b$.$a\neq b$也可写成$b\geq a$.根据定义可知$0\neq n$，$n&lt;n^{+}$，对所有自然数$n$.关于序的一些性质在这里不一一列举了.例如应用数学归纳法可以证明，对任一对自然数$n,n^{+}$，不再存在自然数$m$满足$n&lt;m&lt;n^{+}$.因而从$n&lt;m$就可以断定$n^{+}\leq m$.特别值得提出的是</p>
+<p><strong>良序性质</strong> 自然数系的任一非空子集$S$有一个最小元素，即存在一个$m\in S$使得对所有$x\in S$都有$x\geq m$.</p>
+<p><strong>证明</strong> 如果$S$包含$0$，则$0$是$S$的最小元素.假设：如果$S$包含$n$，则$S$有一个最小元素.由此证明，如果$S$包含$n^{+}$，则$S$有一个最小元素.作$S’=S\cup \lbrace n\rbrace $.根据归纳法假设，$S’$有一个最小元素$m$.若$m\in S$，则$m$就是$S$的最小元素.假设$m\notin S$，则必有$m=n$，因而$n\notin S$，且$n&lt;a$，对所有的$a\in S$.于是，根据上面的说明可以断定$n^{+}\leq a$对所有的$a\in S$.根据$n^{+}\in S$，所以$n^{+}$是$S$的最小元素.$\blacksquare$</p>
+<p>自然数系的良序性质是第二数学归纳法的基础.</p>
+<p><strong>第二数学归纳法</strong> 假设$P(n)$是关于自然数$n$的一种性质或陈述.如果我们能够证明命题“若$P(n)$对所有小于$n$的自然数$x$都真，则$P(n)$也是真的”，其中包含$P(0)$为真的证明.那么可以断言$P$对所有自然数都是真的.</p>
+<p><strong>证明</strong> 我们是在引号中的命题已被证明成立的前提下，来证明$P$对所有自然数$n$都真.设$S=\lbrace  x \in {\bf N}\mid P(x)$假$\rbrace $，求证$S$为空集.反证法.假如$S$非空，则$S$有一个最小自然数$m$.于是$P(m)$假.但是$P(x)$对所有小于$m$的自然数都真.这与上述命题矛盾.所以$S=\varnothing$.$\blacksquare$</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[自然数系是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.]]>
+    
+    </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[《代数学引论》第零章 集合与整数 1 集合上的等价关系]]></title>
     <link href="http://jianhanglin.github.io/2014/09/daishuxueyinlun01/"/>
     <id>http://jianhanglin.github.io/2014/09/daishuxueyinlun01/</id>
@@ -1261,64 +1429,6 @@
 ]]></content>
     <summary type="html">
     <![CDATA[集合是数学的基本概念之一.它是具有一定属性的事物形成的一个集体.根据这属性可以区别一个事物属于或不属于这个集合.]]>
-    
-    </summary>
-    
-      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[《代数学引论》第零章 集合与整数 2 自然数]]></title>
-    <link href="http://jianhanglin.github.io/2014/09/daishuxueyinlun02/"/>
-    <id>http://jianhanglin.github.io/2014/09/daishuxueyinlun02/</id>
-    <published>2014-10-18T10:21:33.000Z</published>
-    <updated>2014-10-22T01:26:07.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="自然数">自然数</h2>
-<p><strong>自然数系</strong>是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.自然数系是可数无限集合的一个原型.它的良序性质是数学归纳法原理的依据.自然数系的整除性和素数的研究促使了数论的发展.用<strong>皮阿诺(Peano)公理</strong>来描述自然数，容易使我们看清自然数的本质.</p>
-<p>自然数系是这样一个非空集合$\bf N$，其中有一个选定了的元素$0$，和一个$\bf N$到自身的后继映射$a\mapsto a^{+}$，$a^{+}$叫做$a$的后继，满足</p>
-<p>$i)$映射$a\mapsto a^{+}$是单一的.即从$a^{+}=b^{+}$推出$a=b$，</p>
-<p>$ii)0$不是任何元素的后继，即不存在$a\in \bf N$使得$a^{+}=0$，</p>
-<p>$iii)$如果$\bf N$的任一个子集$S$满足1)$0\in S$而且2)对所有元素$a\in \bf N$，从$a\in S$恒有$a^{+}\in S$，则$S=\bf N$.</p>
-<p>从公理$i)$和$ii)0$推出$\bf N$是一个无穷集合，公理$iii)$就是<strong>数学归纳法原理</strong>.它是归纳法证明方法的基础.设$P(n)$是关于自然数$n$的某种性质或陈述.为了证明$P(n)$对所有自然数是真的，我们只需证明两点：1)$P(0)$是真的，2)若对任一自然数$n$，$P(n)$是真的，则$P(n^{+})$也是真的.于是根据数学归纳法原理，$P(n)$对所有自然数都是真的.</p>
-<p>关于自然数的许多性质都可以应用数学归纳法原理予以证明.例如，我们可以应用数字归纳法原理证明命题：$\bf N$的每个非零自然数$a$都是另一个自然数$b$的后继.设<span>$S_{1}=\lbrace x\in \bf N\mid$</span>对$x$存在一个$y\in \bf N$使得$x=y^{+}\rbrace $，<span>$S=\lbrace  0\rbrace  \cup S_{1}$</span>.证明$S=\bf N$.首先$0\in S$，而且若$b\in S$，根据$S$的定义$b^{+}\in S$.根据数学归纳法原理$S=\bf N$.</p>
-<p>归纳法的证明为大家所熟悉，但是归纳法或归纳法构造，则不大为大家所熟悉.归纳法构造是以下列定理为基础的.</p>
-<p><strong>递归定理</strong>设$S$为一集合，$\varphi$为$S$到自身的一个映射，$a$为$S$的一个给定的元素，则存在一个唯一的$\bf N$到$S$的映射$\psi _{a}$使得</p>
-<p>$$\psi _{a}(0)=a$$</p>
-<p>且</p>
-<span>$$\psi _{a}(n^{+})=\varphi (\psi _{a}(n)),n\in \bf N.$$</span>
-
-<p>就是说下图交换</p>
-<center><img src="/assets/img/daishuxueyinlun/2.bmp" alt=""></center>
-
-<p>且</p>
-<p>$$\psi _{a}(0)=a.$$</p>
-<p>(交换图的概念可见第一章$\S 7$).</p>
-<p>我们不打算给出这个定理的详细证明.但是要说一下证明的思路.一个集合$X$到另一个集合$Y$的任一映射$f$规定了笛卡尔积$X\times Y$的一个子集</p>
-<p>$$T=\lbrace  (x,f(x))\mid x\in X\rbrace .$$</p>
-<p>反之，$X\times Y$的一个子集$T$如果满足1)对每个$x\in X$存在一个$y\in Y$使$(x,y)\in T$，而且2)若$(x,y)$，$(x,y’)\in T$，则$y=y’$，那么$T$规定了一个映射$f:X\to Y$使得$T$由所有的$(x,f(x))$，$x\in X$组成.基于这种看法，我们考虑笛卡尔积${\bf N}\times S$的满足下列条件的子集$T$：(1)$(0,a)\in T$，而且(2)若$(n,b)\in T$，则$(n^{+},\varphi (b))\in T$(对所有$n\in \bf N$).用$I$表示${\bf N}\times S$的所有这种子集的交.读者可以根据自然数的公理证明$I$规定了一个映射<span>$\psi _{a}:{\bf N}\to S$</span>而且<span>$\psi _{a}$</span>满足定理的要求.不难证明，满足定理要求的映射<span>$\psi _{a}$</span>是唯一的.</p>
-<p>根据递归定理，在自然数系上我们可以归纳地定义一个概念或归纳地构造一个函数.自然数的加法和乘法的定义就是典型的例子.</p>
-<p>定义$\bf N$的加法如下：对任意$m,n\in \bf N$，规定</p>
-<p>$$m+0=m$$</p>
-<p>$$m+n^{+}=(m+n)^{+}.$$</p>
-<p>注意，我们在递归定理中令$S=\bf N$，$\varphi (n)=n^{+}$，$a=m$，从而得到的映射<span>$\psi _{m}$</span>等于规定了加法运算，<span>$\psi _{m}(n)=m+n$</span>.</p>
-<p>不难证明加法满足结合律、交换律和加法消去律.将$0$的后继记成$1$，$0^{+}=1$，于是有$m+1=m^{+}$.$0$是加法的单位元素.</p>
-<p>定义$\bf N$的乘法如下：对任意$m,n\in \bf N$，规定</p>
-<p>$$m\cdot 0=0$$</p>
-<p>$$m\cdot n^{+}=m\cdot n+m.$$</p>
-<p>注意，在递归定理中我们令$S=\bf N$，$\varphi (n)=n+m$，$a=m$，从而得到的映射<span>$\psi _{m}$</span>等于规定了乘法运算，<span>$\psi _{m}(n)=m\cdot n$</span>.</p>
-<p>不难证明乘法满足结合律、交换律、乘法消去律以及乘法对加法的分配律.由定义可知$m\cdot 1=m$，对所有自然数$m$.$1$是乘法的单位元素.</p>
-<p>自然数系还有一个序“$\leq$”.这个序规定了任意两个自然数$a,b$的大小.我们说$a\leq b$当而且仅当$a+x=b$在$\bf N$内有解.若$a\leq b$且$a\neq b$，则写成$a&lt;b$.$a\neq b$也可写成$b\geq a$.根据定义可知$0\neq n$，$n&lt;n^{+}$，对所有自然数$n$.关于序的一些性质在这里不一一列举了.例如应用数学归纳法可以证明，对任一对自然数$n,n^{+}$，不再存在自然数$m$满足$n&lt;m&lt;n^{+}$.因而从$n&lt;m$就可以断定$n^{+}\leq m$.特别值得提出的是</p>
-<p><strong>良序性质</strong> 自然数系的任一非空子集$S$有一个最小元素，即存在一个$m\in S$使得对所有$x\in S$都有$x\geq m$.</p>
-<p><strong>证明</strong> 如果$S$包含$0$，则$0$是$S$的最小元素.假设：如果$S$包含$n$，则$S$有一个最小元素.由此证明，如果$S$包含$n^{+}$，则$S$有一个最小元素.作$S’=S\cup \lbrace n\rbrace $.根据归纳法假设，$S’$有一个最小元素$m$.若$m\in S$，则$m$就是$S$的最小元素.假设$m\notin S$，则必有$m=n$，因而$n\notin S$，且$n&lt;a$，对所有的$a\in S$.于是，根据上面的说明可以断定$n^{+}\leq a$对所有的$a\in S$.根据$n^{+}\in S$，所以$n^{+}$是$S$的最小元素.$\blacksquare$</p>
-<p>自然数系的良序性质是第二数学归纳法的基础.</p>
-<p><strong>第二数学归纳法</strong> 假设$P(n)$是关于自然数$n$的一种性质或陈述.如果我们能够证明命题“若$P(n)$对所有小于$n$的自然数$x$都真，则$P(n)$也是真的”，其中包含$P(0)$为真的证明.那么可以断言$P$对所有自然数都是真的.</p>
-<p><strong>证明</strong> 我们是在引号中的命题已被证明成立的前提下，来证明$P$对所有自然数$n$都真.设$S=\lbrace  x \in {\bf N}\mid P(x)$假$\rbrace $，求证$S$为空集.反证法.假如$S$非空，则$S$有一个最小自然数$m$.于是$P(m)$假.但是$P(x)$对所有小于$m$的自然数都真.这与上述命题矛盾.所以$S=\varnothing$.$\blacksquare$</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[自然数系是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.]]>
     
     </summary>
     
@@ -1495,314 +1605,6 @@
     <summary type="html">
     <![CDATA[<h2 id="Groups">Groups</h2>
 <p>A <strong>group</strong> $G$ is a monoid,such that for every element $x\in G$ there exists an element $y\in G]]>
-    </summary>
-    
-      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[《Algebra》Chapter I Groups 1. Monoids]]></title>
-    <link href="http://jianhanglin.github.io/2014/09/Algebra11/"/>
-    <id>http://jianhanglin.github.io/2014/09/Algebra11/</id>
-    <published>2014-10-18T10:11:19.000Z</published>
-    <updated>2014-10-19T00:42:08.000Z</updated>
-    <content type="html"><![CDATA[<p><strong><a href="http://book.douban.com/subject/1462025/" target="_blank" rel="external">Algebra</a></strong> <a href="http://pan.baidu.com/s/1jGf0HM2" target="_blank" rel="external">在线阅读</a> Serge Lang Springer Revised Third Edition</p>
-<center><img src="/assets/img/Algebra/cover.jpg" alt=""></center> 
-
-<h2 id="Logical_Prerequisites">Logical Prerequisites</h2>
-<pre><code>逻辑前提
-</code></pre><p>If $A,B$ are sets,we use the symbol $A\subset B$ to mean that $A$ is contained in $B$ but may be equal to $B$. Similarly for $A\supset B$.</p>
-<p>If $f:A\to B$ is a mapping of one set into another,we write</p>
-<p>$$x\mapsto f(x)$$</p>
-<p>to denote the effect of $f$ on an element $x$ of $A$. We distinguish between the arrows $\to$ and $\mapsto$. We denote by $f(A)$ the set of all elements $f(x)$,with $x\in A$.</p>
-<pre><code><span class="operator">a</span> mapping <span class="operator">of</span> <span class="constant">one</span> <span class="built_in">set</span>:集合映射,<span class="built_in">to</span> denote:表示,distinguish区分,denote <span class="keyword">by</span>:用
-</code></pre><p>Let $f:A\to B$ be a mapping (also called a map). We say that $f$ is <strong>injective</strong> if $x\neq y$ implies $f(x)\neq f(y)$. We say <strong>surjective</strong> if given $b\in B$ there exists $a\in A$ such that $f(a)=b$. We say that $f$ is <strong>bijective</strong> if it is both surjective and injective.</p>
-<pre><code><span class="label">injective:</span>单射，surjective:满射，bijective:双射
-</code></pre><p>A subset $A$ of a set $B$ is said to be proper if $A\neq B$.</p>
-<pre><code><span class="label">proper:</span>真
-</code></pre><p>Let $f:A\to B$ be a map, and $A’$ a subset of $A$. The restriction of $f$ to $A’$ is a map of $a’$ into $B$ denoted by $f\mid A’$.</p>
-<p>If $f:A\to B$ and $g:B\to C$ are maps, then we have a composite map $g\circ f$ such that $(g\circ f)(x)=g(f(x))$ for all $x\in A$.</p>
-<p>Let $f:A\to B$ be a map, and $B’$ a subset of $B$. By $f^{-1}(B’)$ we mean the subset of A consisting of all $x\in A$ such that $f(x)\in B’$. We call it the <strong>inverse image</strong> of $B’$. We call $f(A)$ the <strong>image</strong> of $f$.</p>
-<pre><code><span class="built_in">inverse</span> image:逆象
-</code></pre><p>A <strong>diagram</strong></p>
-<center><img src="/assets/img/Algebra/1diagram.bmp" alt=""></center>
-
-<p>is said to be <strong>commutative</strong> if $g\circ f=h$. Similarly, a <strong>diagram</strong></p>
-<center><img src="/assets/img/Algebra/2diagram.bmp" alt=""></center>
-
-<p>is said to be <strong>commutative</strong> if $g\circ f=\psi\circ \varphi$. We deal sometimes with more complicated diagrams, consisting of arrows between various objects. Such diagrams are called commutative if, whenever it is possible to go from one object to another by means of two sequences of arrows, say</p>
-<span>$$A_{1}\xrightarrow{f_{1}} A_{2}\xrightarrow{f_{2}}\cdots \xrightarrow{f_{n-1}} A_{n}$$</span>
-
-<p>and</p>
-<span>$$A_{1}\xrightarrow{g_{1}} B_{2}\xrightarrow{g_{2}}\cdots \xrightarrow{g_{n-1}} B_{m}=A_{n}$$</span>
-
-<p>then</p>
-<span>$$f_{n-1}\circ \cdots \circ f_{1}=g_{m-1}\circ \cdots \circ g_{1}$$</span>
-
-<p>in other words, the composite maps are equal. Most of our diagrams are composed of triangles or squares as above, and to verify that a diagram consisting of triangles or squares is commutative, it suffices to verify that each triangle and square in it is commutative.</p>
-<pre><code><span class="label">commutative:</span>交换,verify:验证
-</code></pre><p>We assume that the reader is acquained with the integers and rational numbers, denoted respectively by $\bf Z$ and $\bf Q$. For many of our examples, we also assume that the reader knows the real and complex numbers, denoted by $\bf R$ and $\bf C$.</p>
-<pre><code>integer<span class="variable">s:</span>整数，rationa<span class="variable">l:</span>有理
-</code></pre><p>Let $A$ and $I$ be two sets. By a family of elements of $A$, indexed by $I$, one means a map $f:I\to A$. Thus for each $i\in I$ we are given an element $f(i)\in A$. Although a family does not differ from a map, we think of it as determining a collection of objects from $A$, and write it often as </p>
-<p>$$\lbrace f(i)\rbrace _{i\in I}$$</p>
-<p>or </p>
-<span>$$\lbrace a_i\rbrace _{i\in I}$$</span>
-
-<p>writing $a_{i}$ instead of $f(i)$. We call $I$ the indexing set.</p>
-<p>We assume that the reader knows what an equivalence ralation is. Let $A$ be a set with an equivalence relation, let $E$ be an equivalence class of elements of $A$. We sometimes try to define a map of equivalence classes into some set $B$. To define such a map $f$ on the class $E$, we sometimes first give its value on an element $x\in E$(called a representative of $E$), and then show that it is independent of the choice of representative $x\in E$. In that case we say that $f$ is <strong>well defined</strong>. </p>
-<pre><code>equivalence:等价，well <span class="keyword">defined</span>:明确定义
-</code></pre><p>We have products of sets,say finite products $A\times B$, or $A_1\times \cdots \times A_n$, and prouducts of families of sets.</p>
-<p>We shall use Zorn’s lemma, which we describe in Appendix 2.</p>
-<pre><code>lemm<span class="variable">a:</span>引理，appendix：附录
-</code></pre><p>We let #($S$) denote the number of elements of a set $S$, also called the <strong>cardinality</strong> of $S$. The notation is usually employed when $S$ is finite. We also write #($S$)$=$card($S$) </p>
-<pre><code><span class="label">cardinality:</span>基数,notation:符号,finite：有限
-</code></pre><h2 id="THE_BASIC_OBJECTS_OF_ALGEBRA"><strong>THE BASIC OBJECTS OF ALGEBRA</strong></h2>
-<p>This part introduces the basic notions of algebra, and the main difficulty for the beginner is to absorb a reasonable vocabulary in a short time. None of the concepts is difficult, but there is an accumulation of new concepts which may sometimes seem heavy.</p>
-<p>To understand the next parts of the book,the reader needs to know essentially only the basic definitions of this first part. Of course, a theorem may be used later for some specific and isolated applications, but on the whole, we have avoided making long logical chains of interdependence.</p>
-<pre><code><span class="label">absorb:</span>吸收,accumulation:积累,theorem:定理,logical chains:逻辑链,interdependence:相互依存
-</code></pre><h2 id="Groups">Groups</h2>
-<h2 id="Monoids">Monoids</h2>
-<p>monoid:单式半群，幺半群</p>
-<p>Let $S$ be a set. A mapping</p>
-<p>$$S\times S\to S$$</p>
-<p>is sometimes called a <strong>law of composition</strong><br>(of $S$ into itself). If $x$,$y$ are elements of $S$, the image of the pair $(x,y)$ under this mapping is also called their <strong>product</strong> under the law of composition, and will be denoted by $xy$. (Sometimes, we also write $x\cdot y$, and in many cases it is also convention to use an additive notation, and thus to write $x+y$. In that case, we call this element the <strong>sum</strong> of $x$ and $y$. It is customary to use the notation $x+y$ only when the relation $x+y=y+x$ holds.) </p>
-<p>Let $S$ be a set with a law of composition. If $x$,$y$,$z$ are elements of $S$, then we may form their product in two ways:$(xy)z$ and $x(yz)$. If $(xy)z=x(yz)$ for all $x$,$y$,$z$ in $S$ then we say that the law of composition is <strong>associative</strong>.</p>
-<pre><code><span class="label">associative:</span>关联，associative law：结合律
-</code></pre><p>An element $e$ of $S$ such that $ex=x=xe$ for all $x\in S$ is called a <strong>unit element</strong>.(When the law of composition is written additively, the unit element is denoted by $0$, and is called a <strong>zero element</strong>.) A unit element is unique, for if $e’$ is another unit element, we have </p>
-<p>$$e=ee’=e’$$</p>
-<p>by assumption. In most cases, the unit element is written simply $1$(instead of $e$). For most of this chapter, however, we shall write $e$ so as to avoid confusion in proving the most basic properties.</p>
-<pre><code><span class="keyword">property</span>:性质、属性
-</code></pre><p>A <strong>monoid</strong> is a set $G$, with a law of composition which is associative, and having a unit element(so that in particular, $G$ is not empty). </p>
-<p>Let $G$ be a monoid, and $x_1,\cdots ,x_n$ elements of $G$ (where $n$ is an integer $&gt;1$).We definie their product inductively:</p>
-<pre><code><span class="label">inductively:</span>感性
-</code></pre><span>$$\prod\limits_{\nu=1}^{n}x_{\nu}=x_{1}\cdots x_{n}=(x_{1}\cdots x_{n-1})x_{n}.$$</span>
-
-<p>We then have the following rule:</p>
-<span>$$\prod\limits_{\mu=1}^{m}x_{\mu}\cdot \prod\limits_{\nu=1}^{n}x_{m+\nu}=\prod\limits_{\nu=1}^{m+n}x_{\nu},$$</span>
-
-<p>which essentially asserts that we can insert parentheses in any manner in our product without changing its value.</p>
-<pre><code>asser<span class="variable">t:</span>声称,parenthese<span class="variable">s:</span>括号
-</code></pre><p>One alse writes </p>
-<span>$$\prod\limits_{m+1}^{m+n}x_{\nu}~~instead~~of~~\prod\limits_{\nu=1}^{n}x_{m+\nu}$$</span>
-
-<p>and we define</p>
-<span>$$\prod\limits_{\nu=1}^{0}x_{\nu}=e.$$</span>
-
-<p>As a matter of convention, we agree also that the empty product is equal to the unit element.</p>
-<p>It would be possible to define more general laws of composition,i.e. maps $S_1\times S_2\to S_3$ using arbitrary sets. One can then express associativity and commutativity in any setting for which they make sense. For instance, for commutativity we need a law of composition:</p>
-<pre><code><span class="label">arbitrary:</span>任意
-</code></pre><p>$$f:S\times S\to T$$</p>
-<p>where the two sets of departure are the same. <strong>Commutativity</strong> then means $f(x,y)=f(y,x)$, or $xy=yx$ if we omit the mapping $f$ from the notation. For associativity, we leave it to the reader to formulate the most general combination of sets under which it will work. We shall meet special cases later, for instance arising from maps</p>
-<pre><code><span class="label">omit:</span>省略,formulate:制定
-</code></pre><span>$$S\times S\to S~~and~~S\times T\to T.$$</span>
-
-<p>Then a product $(xy)z$ makes sense with $x\in S$,$y\in S$, and $z\in T$. The product $x(yz)$ also makes sense for such elements $x,y,z$ and thus it makes sense to say that our law of composition is associative, namely to say that for all $x,y,z$ as above we have $(xy)z=x(yz)$.    </p>
-<p>If the law of composition of $G$ is commutative, we also say that $G$ is <strong>commutative(or abelian)</strong>.</p>
-<pre><code><span class="label">abelian:</span>阿贝尔
-</code></pre><p>Let $G$ be a commutative monoid,and $x_1,\cdots ,x_n$ elements of $G$.Let $\psi$ be a bijection of the set of integers$(1,\cdots ,n)$ onto itself.Then</p>
-<span>$$\prod\limits_{\nu =1}^{n}x_{\psi (\nu )}=\prod\limits_{\nu =1}^{n}x_{\nu}.$$</span>
-
-<pre><code>bijection：双射
-</code></pre><p>We prove this by induction,it being obvious for $n=1$.We assume it for $n-1$.Let $k$ be an integer such that $\psi (k)=n$.Then</p>
-<span>$$\prod\limits_{1}^{n}x_{\psi (\nu )}=\prod\limits_{1}^{k-1}x_{\psi (\nu )}\cdot x_{\psi (k)}\cdot \prod\limits_{1}^{n-k}x_{\psi (k+\nu )}=\prod\limits_{1}^{k-1}x_{\psi (\nu )}\cdot \prod\limits_{1}^{n-k}x_{\psi (k+\nu )}\cdot x_{\psi (k)}.$$</span>
-
-<pre><code>induction：归纳
-</code></pre><p>Define a map $\varphi$ of $(1,\cdots ,n-1)$ into itself by the rule</p>
-<p>$$\varphi (\nu )=\psi (\nu ),if \nu &lt;k,$$</p>
-<p>$$\varphi (\nu )=\psi (\nu +1),if \nu \geqq k.$$</p>
-<p>Then</p>
-<span>$$\prod\limits_{1}^{n}x_{\psi (\nu )}=\prod\limits_{1}^{k-1}x_{\varphi (\nu )}\prod\limits_{1}^{n-k}x_{\varphi (k-1+\nu )}\cdot x_{n}=\prod\limits_{1}^{n-1}x_{\varphi (\nu )}\cdot x_{n},$$</span>
-
-<p>which,by induction,is equal to $x<em>{1}\cdots x</em>{n}$,as desired.</p>
-<p>Let $G$ be a commutative monoid,let $I$ be a set,and let $f:I\to G$ be a mapping such that $f(i)=e$ for almost all $i\in I$.(Here and thereafter,almost all will mean all but a finite number.)Let $I_{0}$ be the subset of $I$ consisting of those $i$ such that $f(i)\neq e$.By</p>
-<p>$$\prod\limits_{i\in I}f(i)$$</p>
-<p>we shall mean the product</p>
-<span>$$\prod\limits_{i\in I_{0}}f(i)$$</span>
-
-<p>taken in any order(the value does not depend on the order,according to the preceding remark).It is understood that the empty product is equal to $e$.</p>
-<p>When $G$ is written additively,then instead of a product sign,we write the sum sign $\sum$.</p>
-<p>There are a number of formal rules for dealing with products which it would be tedious to list completely.We give one example.Let $I,J$ be two sets,and $f:I\times J\to G$ a mapping into a commutative monoid which takes the value $e$ for almost all pairs $(i,j)$.Then </p>
-<span>$$\prod\limits_{i\in I}\left[ \prod\limits_{j\in J}f(i,j)\right]=\prod\limits_{j\in J}\left[ \prod\limits_{i\in I}f(i,j)\right].$$</span>
-
-<pre><code>tedious：单调沉闷的，冗长乏味的，令人生厌的
-</code></pre><p>As a matter of notation,we sometimes write $\prod\limits f(i)$,omitting the signs $i\in I$,if the reference to the indexing set is clear.</p>
-<pre><code>omit：省略
-</code></pre><p>Let $x$ be an element of a monoid $G$.For every integer $n\geqq 0$ we define $x^n$ to be</p>
-<p>$$\prod\limits_{1}^{n}x,$$</p>
-<p>so that in particular we have $x^0=e,x^1=x,x^2=xx,\cdots$ We obviously have $x^{(n+m)}=x^nx^m$ and $(x^n)^m=x^{nm}$.Furthermore,from our preceding rules of associativity and commutativity,if $x,y$ are elements of $G$ such that $xy=yx$,then $(xy)^n=x^ny^n$.</p>
-<pre><code><span class="keyword">associativity</span>：关联性
-</code></pre><p>If $S,S’$ are two subsets of a monoid $G$,then we define $SS’’$ to be the subset consisting of all elements $xy$,with $x\in S$ and $y\in S’$.Inductively,we can define the product of a finite number of subsets,and we have associativity.For instance,if $S,S’,S’’$ are subsets of $G$,then $(SS’)S’’=S(S’S’’)$.Observe that $GG=G$(because $G$ has a unit element).If $x\in G$,then we define $xS$ to be $\lbrace x\rbrace S$,where $\lbrace x\rbrace $ is the set consisting of the single element $x$.Thus $xS$ consists of all elements $xy$,with $y\in S$.</p>
-<p>By a <strong>submonoid</strong> of $G$,we shall mean a subset $H$ of $G$ containing the unit element $e$,and such that,if $x,y\in H$ then $xy\in H$(we say that $H$ is closed under the law of composition).It is then clear thar $H$ is itself a monoid,under the law of composition induced by that of $G$.</p>
-<p>If $x$ is an element of a monoid $G$,then the subset of powers $x^n(n=0,1,\cdots )$ is a submonoid of $G$.</p>
-<p>The set of integers $\geqq 0$ under addition is a monoid.</p>
-<p>Later we shall define rings.If $R$ is a commutative ring, we shall deal with multiplicative subsets $S$,that is subsets containing the unit element,and such that if $x,y\in S$ then $xy\in S$.Such subsets are monoids.</p>
-<pre><code>multiplicative：倍增的
-</code></pre><p><strong>A routine example.</strong>Let $\bf N$ be the natural numbers,i.e.the integers $\geqq 0$. Then $\bf N$ is an additive monoid.In some applications,it is useful to deal with a multiplicative version.See the definition of polynomials in Chapter II, $\S 3$,where a higher-dimensional version is also used for polynomials in several variables. </p>
-<pre><code>polynomials：多项式 
-</code></pre><p><strong>An interesting example.</strong>We assume that the reader is familiar with the terminology of elementary topology.Let $M$ be the set of homeomorphism classes of compact(connected)surfaces.We shall define an addition in $M$.Let $S,S’$ be compact surfaces.Let $D$ be a small disc in $S$,and $D’$ a small disc in $S’$.Let $C,C’$ be the circles which form the boundaries of $D$ and $D’$ respectively.Let <span>$D_0,D_0'$</span> be the interiors of $D$ and $D’$ respectively,and glue <span>$S—D_0$</span> to <span>$S'—D_{0}'$</span> by identifying $C$ with $C’$.It can be shown that the resulting surface is independent,up to homeomorphism,of the various choices made in the preceding construction.If $\sigma ,\sigma ‘$ denote the homeomorphism classes of $S$ and $S’$ respectively,we define $\sigma +\sigma ‘$ to be the class of the surface obtained by the preceding gluing process.It can be shown that this addition defines a monoid structure on $M$,whose unit element is the class of the ordinary $2-$sphere.Furthermore,if $\tau$ denotes the class of the torus,and $\pi$ denotes the class of the projective plane,then every element $\sigma$ of $M$ has a unique expression of the form</p>
-<p>$$\sigma =n\tau +m\pi$$</p>
-<p>where $n$ is an integer $\geqq 0$ and $m=0,1$,or $2$.We have $3\pi =\tau +\pi$$.</p>
-<pre><code>terminology：术语;topology：拓扑学;homeomorphism：异质同晶;compact：紧密的;<span class="keyword">torus</span>：环面;projective：射影的
-</code></pre><p>(The reasons for inserting the preceding example are twofold:First to relieve the essential dullness of the section.Second to show the reader that monoids exist in nature.Needless to say,the example will not be used in any way throughout the rest of the book.)</p>
-<pre><code>twofold：双重的;dullness：单调
-</code></pre><p><strong>Still other examples.</strong>At the end of Chapter $III$,$\S 4$,we shall remark that isomorphism classes of modules over a ring form a monoid under the direct sum.In Chapter $XV$,$\S 1$,we shall consider a monoid consisting of equivalence classes of quadratic forms.</p>
-<pre><code>isomorphism：同形，类质同像;quadratic：二次方程式
-</code></pre>]]></content>
-    <summary type="html">
-    <![CDATA[If $A,B$ are sets,we use the symbol $A\subset B$ to mean that $A$ is contained in $B$ but may be equal to $B$. Similarly for $A\supset B$.]]>
-    
-    </summary>
-    
-      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[《近世代数引论》第1章 群 1.2 什么是群]]></title>
-    <link href="http://jianhanglin.github.io/2014/09/jinshidaishuyinlun112/"/>
-    <id>http://jianhanglin.github.io/2014/09/jinshidaishuyinlun112/</id>
-    <published>2014-10-18T08:07:43.000Z</published>
-    <updated>2014-10-22T01:27:05.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="什么是群">什么是群</h2>
-<p><strong>定义1</strong>&nbsp;&nbsp;集合$S$和$S$上满足结合律的二元运算$\cdot$所形成的代数结构叫做<strong>半群</strong>.这个半群记成$(S,\cdot )$或者简记成$S$，运算$x\cdot y$也常常简写成$xy$.</p>
-<p>如果运算又满足交换律，则$(S,\cdot )$叫做<strong>交换半群</strong>.像通常那样令$x^2=x\cdot x$，$x^{n+1}=x^n\cdot x(=x\cdot x^n$,$n\geq 1)$.</p>
-<p><strong>定义2</strong>&nbsp;&nbsp;设$S$是半群，元素$e\in S$叫做半群$S$的幺元素，是指对每个$x\in S$,$xe=ex=x$.</p>
-<p>如果半群$S$有幺元素$e$，则它是唯一的，因若$e’$也是幺元素，则$e’=e’e=e$.我们将半群$S$中这个唯一的幺元素（如果存在的话）通常记作$1_{S}$或者$1$，具有幺元素的半群叫<strong>含幺半群</strong>.</p>
-<p><strong>定义3</strong>&nbsp;&nbsp;设$S$是含幺半群.元素$y\in S$叫做元素$x\in S$的逆元素，是指$xy=yx=1$.</p>
-<p>如果$x$有逆元素，则它一定唯一.因为若$y’$也是$x$的逆元素，则$xy’=y’x=1$.于是</p>
-<p>$$y=y\cdot 1=y(xy’)=(yx)y’=1\cdot y’=y’.$$</p>
-<p>所以，若$x$具有逆元素，我们把这个唯一的逆元素记作$x^{-1}$，则$xx^{-1}=x^{-1}x=1$.</p>
-<p><strong>定义4</strong>&nbsp;&nbsp;半群$G$如果有幺元素，并且每个元素均可逆，则$G$叫做<strong>群</strong>.此外，若运算又满足交换律，则$G$叫做<strong>交换群</strong>或叫<strong>阿贝尔（Abel）群</strong>. </p>
-<p><strong>例1</strong>&nbsp;&nbsp;设$M$为非负整数全体，$(M,+)$是含幺交换半群，幺元素是数$0$，但它不是群，因为只有$0$对于加法在$M$中才可逆.</p>
-<p>$\bf Z$，$\bf Q$，$\bf R$，$\bf C$对于加法均是阿贝尔群，分别叫做整数加法群，有理数加法群等等.</p>
-<p>$(N,\cdot)$是含幺交换（乘法）半群，幺元素为$1$.它不是群.令$Q^{\ast}$为非零有理数全体，则$(Q^{\ast},\cdot)$是交换群，幺元素为$1$，非零有理数$\alpha$的乘法逆为$\alpha ^{-1}$.这叫非零有理数乘法群，同样有$(R^{\ast},\cdot)$和$(C^{\ast},\cdot)$，这些都是阿贝尔群.</p>
-<p><strong>例2</strong>&nbsp;&nbsp;以<span>$M_{m,n}(C)$</span>表示全体$m$行$n$列复矩阵组成的集合，它对矩阵加法形成阿贝尔群.幺元素是全零矩阵，而矩阵<span>$A=(\alpha _{ij})$</span>的加法逆是<span>$-A=(-\alpha _{ij})$</span>.以<span>$M_n(C)$</span>表示$n$阶复方阵全体，它对乘法形成幺半群，幺元素是单位方阵<span>$I_n$</span>.由线性代数可知，$n$阶复方阵$A$有乘法逆的充要条件是$\det A\neq 0$.从而$M_{n}(C)$不是群，并且当$n\geq 2$时，易知半群<span>$M_n(C)$</span>不是交换的.类似有加法交换群<span>$M_{m,n}(R)$</span>，含幺半群<span>$M_{n}(Q)$</span>等等.</p>
-<p><strong>例3</strong>&nbsp;&nbsp;设$A$是非空集合，以$\Sigma (A)$表示从$A$到$A$全体映射组成的集合.则$\Sigma (A)$对于映射合成运算形成含幺半群.幺元素为$A$上恒等映射$1_{A}$.由$1.1$的引理2可知,$\Sigma (A)$中映射$f$可逆的充要条件是$f$为一一对应.所以当$\mid A\mid &gt;1$时，$\Sigma (A)$不是群，并且半群$\Sigma (A)$不是交换的.</p>
-<p><strong>例4</strong>&nbsp;&nbsp;欧氏平面${\bf R}^2$中保持欧氏距离不变的运动叫做<strong>欧氏运动</strong>.由于欧氏运动必为${\bf R}^2$到自身之上的一一对应，并且它的逆仍是欧氏运动，而两欧氏运动的合成仍是欧氏运动，从而全体欧氏运动形成群，叫做平面上的<strong>欧氏运动群</strong>，这也是非阿贝尔群.</p>
-<p><strong>例5</strong>&nbsp;&nbsp;设$n$为正整数，我们在$\bf Z$上定义如下关系：对于整数$a$和$b$，</p>
-<p>$$a\sim b\Leftrightarrow n\mid a-b(即a\equiv b\pmod{n}).$$</p>
-<p>易知这是等价关系，于是整数集合$\bf Z$分拆成$n$个等价类：$\overline{0}$，$\overline{1}$，$\cdots$，$\overline{n-1}$，其中$\overline{i}$，表示$i$所在的等价类，即$\overline{i}=\lbrace m\in {\bf Z}\mid m\equiv i\pmod{n}\rbrace $.而$\lbrace 0,1,2,\cdots ,n-1\rbrace $是$\bf Z$对于上述模$m$同余关系的一个完全代表系.</p>
-<p>以<span>$\bf Z_n$</span>表示上述$n$个等价类组成的集合.在${\bf Z}_{n}$上定义加法：</p>
-<p>$$\overline{a}+\overline{b}=\overline{a+b}.$$</p>
-<p>由同余式基本性质可知这个加法是可以定义的，即与等价类（或叫<strong>模$n$同余类</strong>）中代表元的取法无关，并且${\bf Z}_{n}$对于这个运算形成交换群，幺元素是$\overline{0}$，这叫<strong>整数模$n$加法群</strong></p>
-<p>如果${\bf Z}_{n}$中定义乘法</p>
-<p>$$\overline{a}\overline{b}=\overline{ab},$$</p>
-<p>则${\bf Z}_{n}$对此乘法是含幺交换半群，幺元素为$\overline{1}$.由于等式$\overline{a}\overline{b}=\overline{1}$相当于同余式$ab\equiv 1\pmod{n}$.从初等数论知道，对于给定的$a$，存在$b$满足$ab\equiv 1\pmod{n}$的充要条件是$(a,n)=1$.从而$\overline{a}$对于上述乘法可逆的充要条件是$(a,n)=1$.</p>
-<p>设$(M,\cdot)$是含幺半群，我们以$U(M)$或者$M^{\ast}$表示半群$M$中可逆元素全体.</p>
-<p><strong>定理</strong>&nbsp;&nbsp;若$(M,\cdot)$是含幺半群，则$(U(M),\cdot)$是群.</p>
-<p><strong>证明</strong>&nbsp;&nbsp;由$1_M^{-1}=1_M$可知$1=1_M\in U(M)$.若$a,b\in U(M)$，则$a,b$均可逆，易知$b^{-1}a^{-1}$是$ab$的逆元素，从而$ab\in U(M)$.因此$\cdot$是$U(M)$上的二元运算.这运算在$U(M)$中当然也满足结合律，于是$(U(M),\cdot)$是含幺半群.由于$U(M)$中每元素$a$均可逆，从而$a^{-1}\in M$也可逆(因为$a$是$a^{-1}$的逆)，因此$a^{-1}\in U(M)$.从而$U(M)$中每个元素在$U(M)$中均可逆.根据定义，$U(M)$为群.证毕.</p>
-<p>于是，由前面的例子便知：</p>
-<p>$(a)$全体$n$阶可逆复方阵形成乘法群，叫做复数上的$n$次<strong>一般线性群</strong>，表示成${\bf GL}(n,{\bf C})$.同样有群${\bf GL}(n,{\bf R})$，${\bf GL}(n,{\bf Q})$等.</p>
-<p>$(b)$设$A$为非空集合，$A$到自身之上的所有一一对应对于合成运算形成群，叫做集合$A$上的<strong>对称群</strong>或<strong>全置换群</strong>，表示成$S(A)$，其中元素（即$A$到$A$的一一对应）叫做集合$A$上的<strong>置换</strong>.</p>
-<p>$(c)$设$n$为正整数，$\overline{a}$为整数$a$的模$n$同余类.则集合</p>
-<p>$${\bf Z}_{n}^{\ast}=\lbrace\overline{a}\mid (a,n)=1\rbrace $$</p>
-<p>对于乘法形成阿贝尔群.这个群有$\varphi (n)$个元素，其中$\varphi (n)$是$1$到$n$中与$n$互素的整数个数（$\varphi (n)$叫<strong>欧拉函数</strong>）.</p>
-<p>设$G$是群.若集合$G$有限，称$G$为有限群，否则叫无限群.若有限群$G$有$n$个元素，则$G$叫<strong>$n$阶群</strong>或<strong>$n$元群</strong>，$n=\mid G\mid$叫有限群$G$的<strong>阶</strong>.</p>
-<p>为了考查各种群之间的联系，我们要研究群之间的映射.但是群不仅是集合还有运算，所以我们需要映射与群运算保持协调.确切地说：</p>
-<p><strong>定义5</strong>&nbsp;&nbsp;设$(G,\cdot)$和$(G’,\circ)$是两个群.映射$f:G\to G’$叫做群$G$到$G’$的<strong>同态</strong>，是指对$a,b\in G$，</p>
-<p>$$f(a\cdot b)=f(a)\circ f(b)，(简记成f(ab)=f(a)f(b)).$$</p>
-<p>此外，若$f$又为单射或满射，则$f$分别叫<strong>单同态</strong>或<strong>满同态</strong>.如果同态$f$是一一对应，则称$f$是群$G$到$G’$的<strong>同构</strong>.这时，称群$G$和$G’$是<strong>同构</strong>的，表示成$G\cong G’$或者$f:G\overset{\sim}{\rightarrow}G’$.</p>
-<p>彼此同构的群具有完全相同的群结构.在群论中，同构的群认为本质上是同一个群，我们更主要的是研究本质不同的群之间的联系，所以，同态是群论中更重要的研究手段.</p>
-<p><strong>例6</strong>&nbsp;&nbsp;考虑映射</p>
-<p>$$\det :{\bf GL}(n,{\bf C})\rightarrow {\bf C^{\ast}},{\bf A}\mapsto \overline{a}\det {\bf A}.$$</p>
-<p>即把每个$n$阶可逆复方阵${\bf A}$映成它的行列式$\det A$（这是非零复数）.由于$\det ({\bf AB})=(\det {\bf A})(\det {B})$，可知$\det$是乘法群同态，并且易知这是满同态.当$n\geq 2$时，这不是单同态.</p>
-<p><strong>例7</strong>&nbsp;&nbsp;设$n$为正整数.$C_n=\lbrace e^{\frac{2\pi ia}{n}}\mid 0\leq a\leq n-1\rbrace $.则$C_n$中$n$个复数形成乘法群（叫<strong>$n$次单位根群</strong>）.作映射</p>
-<p>$$f:C_n\to ({\bf Z},+),e^{\frac{2\pi ia}{n}}\mapsto \overline{a}.$$</p>
-<p>则</p>
-<p>$$f(e^{\frac{2\pi ia}{n}}\cdot e^{\frac{2\pi ib}{n}})=f(e^{\frac{2\pi i(a+b)}{n}})=\overline{a+b}=\overline{a}+\overline{b}=f(e^{\frac{2\pi ia}{n}})\cdot f(e^{\frac{2\pi ib}{n}}).$$</p>
-<p>所以$f$是群同态，显然$f$是一一对应，从而$f$为群同构.</p>
-<p>如果$n\geq 3$.考虑以点$O$为中心的正$n$边形.设<span>$G_n$</span>是以点$O$为中心将此正$n$边形变成自身的旋转群.如果用$\sigma$表示逆时针旋转$\dfrac{360^{\circ}}{n}$，则<span>$G_n=\lbrace 1,\sigma ,\sigma ^2,\cdots ,\sigma ^{n-1}\rbrace$</span>(注意$\sigma ^n=1=\sigma ^0)$.不难看出，群<span>$G_n$</span>与前面的群$C<em>n,{\bf Z}</em>{n}$均同构.尽管它们分别来自几何、代数或者数论，但是它们本质上是同一个群，即有同样的群结构.</p>
-<p>群$G$到自身的同态(同构)叫群$G$的自同态(自同构).以$Aut (G)$表示群$G$的自同构全体，请读者验证它对于合成运算为群，其幺元素为$G$上的恒等自同构(即恒等映射).对于群$G$决定出它的自同构群$Aut (G)$(即确定$G$的全部自同构并刻画出$Aut (G)$的群结构)，是群论的一个基本问题.</p>
-<p><strong>例8</strong>&nbsp;&nbsp;考虑整数加法群$({\bf Z},+)$.设$f:{\bf Z}\to {\bf Z}$是${\bf Z}$的自同态.则必然有$f(0)=0$，$f(-n)=-f(n)$.从而若$f(1)=t\in {\bf Z}$，则$f(2)=f(1+1)=f(1)+f(1)=t+t=2t$.用数学归纳法即知对每个正整数$n,f(n)=nt$，从而$f(-n)=-nt$.不难看出如此定义的映射是加法群${\bf Z}$的自同态.将此自同态记成<span>$f_t$</span>.不同的$t$对应不同的自同态.因此${\bf Z}$的自同态(含幺半群)为$\lbrace f_{t}\mid t\in {\bf Z}\rbrace $.</p>
-<p>自同态<span>$f_{t}$</span>的像为<span>$\lbrace tn\mid n\in {\bf Z}\rbrace$</span>.从而<span>$f_{t}$</span>为自同构<span>$\Leftrightarrow \lbrace tn \mid n\in {\bf Z}={\bf Z}\rbrace \Leftrightarrow t=\pm 1$</span>.因此<span>$Aut ({\bf Z})=\lbrace f_{1},f_{-1}\rbrace$</span>(二元群).其中幺元素<span>$f_1$</span>为恒等自同构，而<span>$f_{-1}$</span>为自同构$n\mapsto -n$.$Aut (Z)$中群运算是<span>$f_{-1}\cdot f_{-1}=f_{1}$</span>.</p>
-<h2 id="习题">习题</h2>
-<p>$1$.令$N$是所有$n\times n$上三角非奇异复方阵的集合，$P$是主对角线上的元素都是$1$的上三角方阵的集合，运算定义为矩阵的乘法.试证$N$和$P$都是群.</p>
-<p>证：方阵的乘法有结合律；$n$阶单位阵是$N$的单位元；两个奇异复阵的积仍是$n$阶上三角非奇异复阵；一个$n$阶上三角非奇异复阵的逆仍是$n$阶上三角非奇异复阵.故依群的定义知$N$是群.</p>
-<p>同理$P$是群.</p>
-<p>$2$.令$G$是实数对$(a,b),a\neq 0$的集合.在$G$上定义</p>
-<p>$$(a,b)(c,d)=(ac,ad+b).$$</p>
-<p>试证$G$是群.</p>
-<p>证：易证上述定义的乘法有结合律，$(1,0)$是其单位元，任意元$(a,b)\in G$有逆元$(\dfrac{1}{a},-\dfrac{b}{a})$.故由群的定义知$G$对于上述乘法成为群.</p>
-<p>$3$.令$\Omega$是任意一个集合，$G$是一个群，$G^\Omega$是$\Omega$到$G$的所有映射的集合.对任意两个映射$f,g\in G^\Omega$，定义乘法$fg$是这样的映射:对任意$\alpha \in \Omega$,$fg(\alpha)=f(\alpha)g(\alpha)$.试证$G^\Omega$是群.</p>
-<p>证：易知上述乘法有结合律，$1\in G^\Omega$是其单位元，其中<span>$1(\alpha)=1_{G},\forall \alpha \in \Omega$</span>(<span>$1_{G}$</span>表示群$G$的单位元)；任一元$f\in G^\Omega$有逆元$f^{-1}$，其中$f^{-1}(\alpha)=(f(\alpha))^{-1}$，$\forall \alpha \in \Omega$.故$G^\Omega$成为群.这个群为$Abel$群仅当$G$是$Abel$群.</p>
-<p>$4$.令$G$是所有秩不大于$r$的$n\times n$复方阵的集合，试证在矩阵的乘法下$G$成半群.</p>
-<p>证：注意到两个秩不大于$r$的$n$阶矩阵的积仍然是一个秩不大于$r$的$n$阶矩阵，并且方阵的乘法满足结合律.由定义即知$G$是半群.</p>
-<p>$5$.举出一个半群的例子，它不是含幺半群；再举出一个含幺半群的例子，它不是群.</p>
-<p>解：$4$中的$G$是一个半群，当$r&lt;n$时，它不是一个含幺半群；当$r=n$时，它是一个含幺半群，但不是群.</p>
-<p>又如，整数集$\bf Z$对于乘法成为一个含幺半群，但不是群.</p>
-<p>$6$.设$G$是一个半群.如果</p>
-<p>$(1)$&nbsp;&nbsp;$G$中含有左幺元$e$，即对任意$a\in G,ea=a$;</p>
-<p>$(2)$&nbsp;&nbsp;$G$的每个元$a$有左逆$a^{-1}$，使得$a^{-1}\cdot a=e$.</p>
-<p>试证$G$是群.</p>
-<p>证：用$(a^{-1})^{-1}$表示$a^{-1}$的左逆元，则</p>
-<p>$a\cdot a^{-1}=e(a\cdot a^{-1})=(a^{-1})^{-1}a^{-1}aa^{-1}=(a^{-1})^{-1}ea^{-1}=(a^{-1})^{-1}a^{-1}=e.$</p>
-<p>这表明$a$的左逆元$a^{-1}$也满足$a\cdot a^{-1}=e$.而$ae=a(a^{-1}a)=ea=a$，这表明$e$是$G$的单位元，$a^{-1}$是$a$的逆元，故$G$是群.</p>
-<p>$7$.设$G$是半群.如果对任意$a,b\in G$，方程$xa=b$和方程$ay=b$在$G$内有解，则$G$是群.</p>
-<p>证：首先$G$非空，故有$a\in G$.则$xa=a$有解$e$.对于任一$b\in G$，有$y\in G$使$ay=b$.于是</p>
-<p>$$eb=eay=ay=b.$$</p>
-<p>这表明$e$是$G$的左单位元.而$xb=e$有解则意味着$b$有左逆元.由$6$的结论可知$G$是群.</p>
-<p>$8$.设$G$是一个有限半群，如果在$G$内消去律成立，即由$ax=ay$或$xa=ya$可推出$x=y$，则$G$是群.</p>
-<p>证：设<span>$G=\lbrace a_{1},\cdots ,a_{n}\rbrace$</span>，由消去律知</p>
-<span>$$\lbrace a_{1}a_{i},\cdots ,a_{n}a_{i}\rbrace =G=\lbrace a_{i}a_{1},\cdots ,a_{i}a_{n}\rbrace ,\forall a_{i}\in G.$$</span>
-
-<p>故存在$e\in G$，使得$a_i=ea_i$.</p>
-<p>于是对于任一<span>$a_{j}\in G$</span>，有<span>$a_{k}\in G$</span>使得<span>$a_{j}=a_{i}a_{k}$</span>.从而</p>
-<span>$$ea_{j}=ea_{i}a_{k}=a_{i}a_{k}=a_{j}.$$</span>
-
-<p>这表明$e$是左单位元，又因为<span>$e\in G=Ga_{j}$</span>，故$a_j$有左逆元.由此即知$G$是群.</p>
-<p>$9$.设$G$是含幺半群，$a,b\in G$.</p>
-<p>$(1)$&nbsp;&nbsp;如果$a$有逆元素$a^{-1}$，则$a^{-1}$也有逆元素且$(a^{-1})^{-1}=a$;</p>
-<p>$(2)$&nbsp;&nbsp;如果$a$和$b$都具有逆元素，则$ab$也有逆元素，且</p>
-<p>$$(ab)^{-1}=b^{-1}a^{-1}.$$</p>
-<p>证：由定义直接验证.</p>
-<p>$10$.$b$是含幺半群$G$中元素$a$的逆元素当且仅当成立</p>
-<p>$$aba=a和ab^2a=1.$$</p>
-<p>证：设$b$是$a$的逆元，显然有$aba=a$和$ab^2a=1$.反之，若$aba=a,ab^2a=1$，则</p>
-<p>$$ab=ab(ab^2a)=ab^2a=1,ba=(ab^2a)ba=ab^2a=1.$$</p>
-<p>即$b$是$a$的逆元.</p>
-<p>$11$.令$G$是$n$阶有限群，<span>$a_{1},a_{2},\cdots ,a_{n}$</span>是群$G$的任意$n$个元素，不一定两两不同.试证：存在整数$p$和$q$，$1\leq p\leq q\leq n$，使得</p>
-<span>$$a_{p}a_{p+1}\cdots a_{q}=1.$$</span>
-
-<p>证：令<span>$S=\lbrace a_1,a_1a_2,\cdots ,a_1a_2\cdots a_n\rbrace$</span>.若$1\in S$，则结论已得证.若$1 \notin S$，因$\mid G\mid=n$，故$S$中至少有两个元是相等的.设<span>$a_{1}\cdots a_{i}=a_{1}\cdots a_{i}a_{i+1}\cdots a_{j}$</span>，则<span>$a_{i+1}\cdots a_{j}=1$</span>.</p>
-<p>$12$.在偶数阶群$G$中，方程$x^2=1$总有偶数个解.</p>
-<p>证：注意到若$g^2\neq 1$，则$(g^{-1})^2\neq 1$且$g\neq g^{-1}$.因此$G$中满足$x^2\neq 1$的元$x$是成对出现的.从而$G$中满足$x^2\neq 1$的元$x$有偶数个.因此在偶数阶群$G$中，方程$x^2=1$总有偶数个解.</p>
-<p>$13$.令$G$是$n$阶有限群，$S$是$G$的一个子集，$\mid S\mid &gt;\dfrac{n}{2}$.试证：对任意$g\in G$，存在$a,b\in S$使得$g=ab$.</p>
-<p>证：由消去律知，对任一$g\in G,gS^{-1}$含有$\mid S\mid$个元，这里$S^{-1}$是$S$中元的所有逆元组成的集合.因为$\mid S\mid &gt;\dfrac{\mid G\mid}{2}$，故$gS^{-1}\cap S\neq \varnothing$.从而存在$a,b\in S$，使得$gb^{-1}=a$，即$g=ab$.</p>
-<p>$14$.设$f:G\to H$是群的同态.试证：</p>
-<span>$$f(1_{G})=1_{H}$$</span>
-
-<p>且对任意</p>
-<p>$$x\in G,f(x^{-1})=f(x)^{-1}.$$</p>
-<p>证：<span>$f(1_{G})f(1_{G})=f(1_{G}\cdot 1_{G})=f(1_{G})=f(1_{G})1_{H}$</span>，故由消去律知<span>$f(1_{G})=1_{H}$</span>.因为<span>$f(x^{-1})f(x)=f(x^{-1}x)=f(1_{G})=1_{H}$</span>，故$f(x^{-1})=f(x)^{-1}$.</p>
-<p>$15$.对任意$a\in G,a \mapsto a^{-1}$是群$G$的自同构当且仅当$G$是阿贝尔群.</p>
-<p>证：将每一元变成其逆元是自同构$\Leftrightarrow (ab)^{-1}=a^{-1}b^{-1}$，$\forall a,b\in G\Leftrightarrow$ $ab=(a^{-1}b^{-1})^{-1}=ba$，$\forall a,b \in G\Leftrightarrow G$是$Abel$群.</p>
-<p>$16$.求有理数加群$Q$的自同构群$Aut (Q)$.</p>
-<p>解：一方面，对任一非零有理数$a$，将$x$变成$ax$是有理加法群$Q$的一个自同构.记这个自同构为$f_{a}$.另一方面，设$f$是有理数加群$Q$的任一自同构.令$f(1)=a$，则$a$是非零有理数.因为对任一正整数$n$和$m$有</p>
-<p>$$f(n)=f(1+\cdots +1)=f(1)+\cdots +f(1)=nf(1)=na,$$</p>
-<p>$$f(n)=f(\dfrac{n}{m}+\cdots +\dfrac{n}{m})=f(\dfrac{n}{m})+\cdots +f(\dfrac{n}{m})=mf(\dfrac{n}{m}).$$</p>
-<p>故得到</p>
-<p>$$f(\dfrac{n}{m})=\dfrac{1}{m}f(n)=\dfrac{n}{m}a.$$</p>
-<p>由此推知$f(x)=ax,\forall x\in Q$，即$f=f_{a}$.于是</p>
-<p>$$Aut (Q,+)=\lbrace f_{a}\mid a\in Q,a\neq 0\rbrace .$$</p>
-<p>因为<span>$f_{a}f_{b}=f_{ab}$</span>，故有群同构$Aut (Q,+)\cong (Q^{\ast},\cdot)$，其中$(Q^{\ast},\cdot)$是非零有理数的乘法群.</p>
-<p>$17$.证明有理数加群$Q$和非零有理数乘法群$Q^{\ast}$不同构.</p>
-<p>证：若$(Q,+)\cong (Q^{\ast},\cdot)$，则有群同构$f$和$a\in Q$使得$f(a)=2$，从而$2=f(a)=f(\dfrac{a}{2} +\dfrac{a}{2})=f(\dfrac{a}{2})^2$，即$\sqrt{2}$是有理数，矛盾.</p>
-<p>$18$.证明：</p>
-<p>$(1)$&nbsp;&nbsp;有理数加群$Q$和正有理数乘法群$Q^{+}$不同构;</p>
-<p>$(2)$&nbsp;&nbsp;实数加群$R$同构于正实数乘法群$R^{+}$.</p>
-<p>证：$(1)17$的证明也适用于本题.</p>
-<p>$(2)$将每一实数$x$变到$e^x$就给出了实数加法群$R$到正实数乘法群$R^{+}$的同构映射.</p>
-<p>$19$.群$G$的自同构$\alpha$称为没有不动点的自同构，是指对$G$的任意元素$g\neq 1$，$\alpha (g)\neq g$.如果有限群$G$具有一个没有不动点的自同构$\alpha$且$\alpha ^2=1$，则$G$一定是奇数阶阿贝尔群.</p>
-<p>证：令$H=\lbrace g^{-1}\alpha (g)\mid g\in G\rbrace $，则$H=G$.(事实上，若$g\neq h$，则$g^{-1}\alpha (g)\neq h^{-1}\alpha (h)$：否则$hg^{-1}$是$\alpha$的不动点，从而$g=h$.矛盾！)于是，对任一$a\in G,a=g^{-1}\alpha (g)$.因$\alpha ^2=1$，故$a^{-1}=\alpha (g^{-1})g=\alpha (a)$.从而$\alpha (ab)=(ab)^{-1}=b^{-1}a^{-1}=\alpha (b)\alpha (a)=\alpha (ba)$.故$ba=ab,\forall a,b \in G$.即$G$是$Abel$群.因$a^{-1}\neq a,\forall 1\neq a\in G$，故$G$的阶为奇数.</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[集合$S$和$S$上满足结合律的二元运算$\cdot$所形成的代数结构叫做半群.]]>
-    
     </summary>
     
       <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
