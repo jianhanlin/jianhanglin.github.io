@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>《代数学引论》第零章 集合与整数 2 自然数 | JianhangLin</title>
+    <title>《代数学引论(第一卷)基础代数》 第1章 代数的起源 7 数学归纳法原理 | JianhangLin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="JianhangLin">
     
-    <meta name="description" itemprop="description" content="自然数系是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.">
+    <meta name="description" itemprop="description" content="在日常生活等各个方面使用的各种形态的等价性使人们想到应该一般地定义这一概念.">
     
     
     
@@ -99,14 +99,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2014/09/daishuxueyinlun02/" title="《代数学引论》第零章 集合与整数 2 自然数" itemprop="url">《代数学引论》第零章 集合与整数 2 自然数</a>
+      <a href="/2014/11/daishuxueyinlun117/" title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 7 数学归纳法原理" itemprop="url">《代数学引论(第一卷)基础代数》 第1章 代数的起源 7 数学归纳法原理</a>
   </h1>
   <p class="article-author">By
        
 		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
 		
   <p class="article-time">
-    <time datetime="2014-10-18T10:21:33.000Z" itemprop="datePublished"> 发表于 10月 18 2014</time>
+    <time datetime="2014-11-15T03:55:24.000Z" itemprop="datePublished"> 发表于 11月 15 2014</time>
     
   </p>
 </header>
@@ -116,50 +116,35 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#自然数"><span class="toc-number">1.</span> <span class="toc-text">自然数</span></a></li></ol>
+			
 		
 		</div>
 		
-		<h2 id="自然数">自然数</h2>
-<p><strong>自然数系</strong>是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.自然数系是可数无限集合的一个原型.它的良序性质是数学归纳法原理的依据.自然数系的整除性和素数的研究促使了数论的发展.用<strong>皮阿诺(Peano)公理</strong>来描述自然数，容易使我们看清自然数的本质.</p>
-<p>自然数系是这样一个非空集合$\bf N$，其中有一个选定了的元素$0$，和一个$\bf N$到自身的后继映射$a\mapsto a^{+}$，$a^{+}$叫做$a$的后继，满足</p>
-<p>$i)$映射$a\mapsto a^{+}$是单一的.即从$a^{+}=b^{+}$推出$a=b$，</p>
-<p>$ii)0$不是任何元素的后继，即不存在$a\in \bf N$使得$a^{+}=0$，</p>
-<p>$iii)$如果$\bf N$的任一个子集$S$满足1)$0\in S$而且2)对所有元素$a\in \bf N$，从$a\in S$恒有$a^{+}\in S$，则$S=\bf N$.</p>
-<p>从公理$i)$和$ii)0$推出$\bf N$是一个无穷集合，公理$iii)$就是<strong>数学归纳法原理</strong>.它是归纳法证明方法的基础.设$P(n)$是关于自然数$n$的某种性质或陈述.为了证明$P(n)$对所有自然数是真的，我们只需证明两点：1)$P(0)$是真的，2)若对任一自然数$n$，$P(n)$是真的，则$P(n^{+})$也是真的.于是根据数学归纳法原理，$P(n)$对所有自然数都是真的.</p>
-<p>关于自然数的许多性质都可以应用数学归纳法原理予以证明.例如，我们可以应用数字归纳法原理证明命题：$\bf N$的每个非零自然数$a$都是另一个自然数$b$的后继.设<span>$S_{1}=\lbrace x\in \bf N\mid$</span>对$x$存在一个$y\in \bf N$使得$x=y^{+}\rbrace $，<span>$S=\lbrace  0\rbrace  \cup S_{1}$</span>.证明$S=\bf N$.首先$0\in S$，而且若$b\in S$，根据$S$的定义$b^{+}\in S$.根据数学归纳法原理$S=\bf N$.</p>
-<p>归纳法的证明为大家所熟悉，但是归纳法或归纳法构造，则不大为大家所熟悉.归纳法构造是以下列定理为基础的.</p>
-<p><strong>递归定理</strong>设$S$为一集合，$\varphi$为$S$到自身的一个映射，$a$为$S$的一个给定的元素，则存在一个唯一的$\bf N$到$S$的映射$\psi _{a}$使得</p>
-<p>$$\psi _{a}(0)=a$$</p>
-<p>且</p>
-<span>$$\psi _{a}(n^{+})=\varphi (\psi _{a}(n)),n\in \bf N.$$</span>
+		<p>假设读者对全体自然数(或正整数)的集合$\mathbb{N}=\lbrace 1,2,3,\cdots \rbrace$了解得很清楚.事实上，研究集合$\mathbb{N}$的出发点是<a href="http://zh.wikipedia.org/wiki/%E7%9A%AE%E4%BA%9A%E8%AF%BA%E5%85%AC%E7%90%86" target="_blank" rel="external">皮亚诺公理</a>(<a href="http://baike.baidu.com/view/454509.htm?fr=aladdin" target="_blank" rel="external">皮亚诺</a>，$1858-1932$).从皮亚诺公理可以推导出自然数集，更精确地，非负整数集中加法和乘法的性质以及线性序(见$\S 6$第$4$段).特别是证明了一个直观而清晰的论断：每一个非空集合$S\subset \mathbb{N}$都有最小元，即存在一个自然数$s\in S$它小于$S$中的所有的数.根据皮亚诺公理得到的这一论断推导下述</p>
+<p><strong>归纳法原理</strong> 假设对每一个$n\in \mathbb{N}$，我们有某一命题$M(n)$.又假设我们有一个法则，对于任意给定的$l$，只要$M(k)$对所有的$k &lt; l$真就可以证明$M(l)$真，特别指出，我们能够验证$M(l)$真.</p>
+<p>则对任意的$n\in \mathbb{N}$，$M(n)$真.</p>
+<p>事实上，设子集</p>
+<p>$$S=\lbrace s\mid s\in \mathbb{N},M(s)不真\rbrace \subset \mathbb{N}$$</p>
+<p>不是一个空集.按照上述讨论，$S$包含有一个最小元$s_0$.这时论断$M(s_0 )$不真，而对任意的$s &lt; s_0$，$M(s)$真.这就和我们在假设条件下能够证明$M(s_0 )$真矛盾.</p>
+<p>此处我们不能对数学归纳法原理进行全面的讨论.而仅局限于指出它反映了自然数列的本质，对自然数列的认识不能再归结到本质上更简单的事实了.再次将注意力转到归纳法.“完全归纳法证明”必不可少的一步是归纳的基础，即性质或命题对某些不太大的$n$成立.缺少这一验证，就可能推出类似于“所有的学生都一样高”的随意性命题.论证如下.空集和一个学生的集合具有这一性质.给出归纳假设，即任意学生数$\leq n$的集合具有这一性质.则在$(n+1)$个学生的集合中，根据归纳假设，前$n$个学生和后$n$个学生的身高相同.这两个集合有一个有$n-1$个身高相同的学生的子集.因此所有的$n+1$个学生身高相同.事实上，第一步有意义的论断应当对任意两个学生的集合给出，而它恰好是不对的.归纳的基础取多长才够呢？一般来说，这件事从证明中就可以清楚地看出来.在我们这个初等例子中，重要的条件是两个集合的交不空，即不等式$n-1 \geq 1$成立，从而$n \geq 2$.</p>
+<p>在更复杂的情况下，特别是当我们借助递推关系用归纳法定义或构造一个对象时，必须对归纳基础格外关心.例如脚标可以被$5$整除的斐波那契数<span>$f_{5m}$</span>(见$\S 3$，例$2$，此处$m \geq 1$)可以由等式$f_5 =5$及递推关系<span>$f_{5(m+1)} =5f_{5m+1} +3f_{5m}$</span>导出，首先得到的是归纳基础.另一方面，也不能陷入另一个极端：对充分长的自然数列$1\leq k\leq l$中的一切$k$验证$M(k)$的正确性，然后作出没有根据的结论，对一切$n\in \mathbb{N} ,M(n)$真(称这一作法为不完全归纳法).</p>
+<p>在这里给出两个令人不愉快的例子.</p>
+<p><strong>例$1$</strong> 费马猜想，所有形如$F_n =2^{2^n}+1$的<strong>费马数</strong>都是素数，此处$n=0,1,2,\cdots $.前$5$个费马数是素数.但欧拉找到了$F_5$的一个分解式：$F_5 =4294967297=641\cdot 6700417$.人们执拗地企图在最新式计算机的帮助下找到哪怕一个新的费马素数，但直到现在也没有成功.这一方向的最新“成果”是验证了<span>$F_{1945}$</span>可以被$5\cdot 2^{1947}+1$整除.</p>
+<p><strong>例$2$</strong> 观察当$n=1,2,\cdots ,40$时，形如$n^2-n+41$的数(这是欧拉研究的一个多项式)，人们可能会猜想这个多项式对任意$n$都得到素数(关于素数见$\S 9$).但是$41^2-41+41=41^2$.</p>
+<p>这种类型的例子要多少有多少.</p>
+<p>在用归纳法研究问题时，有时最重要的事情是，使所证的论断具有恰当的形式.假设要求和式</p>
+<p>$${\bf p}_k (n)=1^k+2^k+3^k+\cdots +(n-1)^k+n^k,k=1,2,3.$$</p>
+<p>如果告诉我们，答案包含在下述表达式中，问题就大大简化了</p>
+<p>$${\bf p}_1 (n)=\dfrac{n(n+1)}{2},{\bf p}_2 (n)=\dfrac{n(n+1)(2n+1)}{2},{\bf p}_3 (n)=\left[ \dfrac{n(n+1)}{2} \right] ^2.$$</p>
+<p>幂和${\bf p}_k (n)$的一般形式将联系到多项式的根再一次进行讨论(见第$6$章)，此刻我们指出，在$\S 3$第$5$段中遇到的公式$\Gamma (n)$有下述形式</p>
+<span>$$\begin{align*}  \Gamma (n) & = n(n-1)+\cdots +k(k-1)+\cdots +1(1-1)\\  & = \sum_{k=1}^nk^2-\sum_{k=1}^nk={\bf p}_2 (n)-{\bf p}_1 (n)  \end{align*}$$</span>
 
-<p>就是说下图交换</p>
-<center><img src="/assets/img/daishuxueyinlun/2.bmp" alt=""></center>
+<p>(今后将会经常用到求和号$\sum$).基于上述${\bf p}_2 (n)$和${\bf p}_1 (n)$的表达式，我们得到$\Gamma (n)=\dfrac{n^3-n}{3}$.显然这一结果可以直接对$\Gamma (n)$作归纳论证得到.</p>
+<p>如果说想出${\bf p}_1 (n)$的形式不太困难，那么想出${\bf p}_2 (n)$，${\bf p}_3 (n)$的形式就没那么平凡了，而关系式</p>
+<p>$${\bf p}_5 (n)+{\bf p}_7 (n)=2\left( \dfrac{n(n+1)}{2} \right) ^2$$</p>
+<p>一般需要按照某种确定的步骤寻找.目前这样的步骤是能够给出的，但我们在这里不考虑它.而证明上述已经给出的对应关系，只需要直接计算从$n$到$n+1$的一步归纳.我们把它留给读者作为有益的练习.</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu9.png" alt=""></center>
 
-<p>且</p>
-<p>$$\psi _{a}(0)=a.$$</p>
-<p>(交换图的概念可见第一章$\S 7$).</p>
-<p>我们不打算给出这个定理的详细证明.但是要说一下证明的思路.一个集合$X$到另一个集合$Y$的任一映射$f$规定了笛卡尔积$X\times Y$的一个子集</p>
-<p>$$T=\lbrace  (x,f(x))\mid x\in X\rbrace .$$</p>
-<p>反之，$X\times Y$的一个子集$T$如果满足1)对每个$x\in X$存在一个$y\in Y$使$(x,y)\in T$，而且2)若$(x,y)$，$(x,y’)\in T$，则$y=y’$，那么$T$规定了一个映射$f:X\to Y$使得$T$由所有的$(x,f(x))$，$x\in X$组成.基于这种看法，我们考虑笛卡尔积${\bf N}\times S$的满足下列条件的子集$T$：(1)$(0,a)\in T$，而且(2)若$(n,b)\in T$，则$(n^{+},\varphi (b))\in T$(对所有$n\in \bf N$).用$I$表示${\bf N}\times S$的所有这种子集的交.读者可以根据自然数的公理证明$I$规定了一个映射<span>$\psi _{a}:{\bf N}\to S$</span>而且<span>$\psi _{a}$</span>满足定理的要求.不难证明，满足定理要求的映射<span>$\psi _{a}$</span>是唯一的.</p>
-<p>根据递归定理，在自然数系上我们可以归纳地定义一个概念或归纳地构造一个函数.自然数的加法和乘法的定义就是典型的例子.</p>
-<p>定义$\bf N$的加法如下：对任意$m,n\in \bf N$，规定</p>
-<p>$$m+0=m$$</p>
-<p>$$m+n^{+}=(m+n)^{+}.$$</p>
-<p>注意，我们在递归定理中令$S=\bf N$，$\varphi (n)=n^{+}$，$a=m$，从而得到的映射<span>$\psi _{m}$</span>等于规定了加法运算，<span>$\psi _{m}(n)=m+n$</span>.</p>
-<p>不难证明加法满足结合律、交换律和加法消去律.将$0$的后继记成$1$，$0^{+}=1$，于是有$m+1=m^{+}$.$0$是加法的单位元素.</p>
-<p>定义$\bf N$的乘法如下：对任意$m,n\in \bf N$，规定</p>
-<p>$$m\cdot 0=0$$</p>
-<p>$$m\cdot n^{+}=m\cdot n+m.$$</p>
-<p>注意，在递归定理中我们令$S=\bf N$，$\varphi (n)=n+m$，$a=m$，从而得到的映射<span>$\psi _{m}$</span>等于规定了乘法运算，<span>$\psi _{m}(n)=m\cdot n$</span>.</p>
-<p>不难证明乘法满足结合律、交换律、乘法消去律以及乘法对加法的分配律.由定义可知$m\cdot 1=m$，对所有自然数$m$.$1$是乘法的单位元素.</p>
-<p>自然数系还有一个序“$\leq$”.这个序规定了任意两个自然数$a,b$的大小.我们说$a\leq b$当而且仅当$a+x=b$在$\bf N$内有解.若$a\leq b$且$a\neq b$，则写成$a&lt;b$.$a\neq b$也可写成$b\geq a$.根据定义可知$0\neq n$，$n&lt;n^{+}$，对所有自然数$n$.关于序的一些性质在这里不一一列举了.例如应用数学归纳法可以证明，对任一对自然数$n,n^{+}$，不再存在自然数$m$满足$n&lt;m&lt;n^{+}$.因而从$n&lt;m$就可以断定$n^{+}\leq m$.特别值得提出的是</p>
-<p><strong>良序性质</strong> 自然数系的任一非空子集$S$有一个最小元素，即存在一个$m\in S$使得对所有$x\in S$都有$x\geq m$.</p>
-<p><strong>证明</strong> 如果$S$包含$0$，则$0$是$S$的最小元素.假设：如果$S$包含$n$，则$S$有一个最小元素.由此证明，如果$S$包含$n^{+}$，则$S$有一个最小元素.作$S’=S\cup \lbrace n\rbrace $.根据归纳法假设，$S’$有一个最小元素$m$.若$m\in S$，则$m$就是$S$的最小元素.假设$m\notin S$，则必有$m=n$，因而$n\notin S$，且$n&lt;a$，对所有的$a\in S$.于是，根据上面的说明可以断定$n^{+}\leq a$对所有的$a\in S$.根据$n^{+}\in S$，所以$n^{+}$是$S$的最小元素.$\blacksquare$</p>
-<p>自然数系的良序性质是第二数学归纳法的基础.</p>
-<p><strong>第二数学归纳法</strong> 假设$P(n)$是关于自然数$n$的一种性质或陈述.如果我们能够证明命题“若$P(n)$对所有小于$n$的自然数$x$都真，则$P(n)$也是真的”，其中包含$P(0)$为真的证明.那么可以断言$P$对所有自然数都是真的.</p>
-<p><strong>证明</strong> 我们是在引号中的命题已被证明成立的前提下，来证明$P$对所有自然数$n$都真.设$S=\lbrace  x \in {\bf N}\mid P(x)$假$\rbrace $，求证$S$为空集.反证法.假如$S$非空，则$S$有一个最小自然数$m$.于是$P(m)$假.但是$P(x)$对所有小于$m$的自然数都真.这与上述命题矛盾.所以$S=\varnothing$.$\blacksquare$</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -167,7 +152,7 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/抽象代数/">抽象代数</a>
+  <a class="article-category-link" href="/categories/基础代数/">基础代数</a>
 </div>
 
 
@@ -181,7 +166,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://jianhanglin.github.io/2014/09/daishuxueyinlun02/" data-title="《代数学引论》第零章 集合与整数 2 自然数 | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  <div data-url="http://jianhanglin.github.io/2014/11/daishuxueyinlun117/" data-title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 7 数学归纳法原理 | JianhangLin" data-tsina="1763313312" class="share clearfix">
   </div>
 
 </div>
@@ -191,18 +176,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2014/09/daishuxueyinlun03/" title="《代数学引论》第零章 集合与整数 3 整数. 整数的整除性">
+ <a href="/2014/11/weijifenxuejiaocheng104/" title="《微积分学教程(第一卷)》 绪论 实数 4 实数的其他性质及应用">
   <strong>上一篇：</strong><br/>
   <span>
-  《代数学引论》第零章 集合与整数 3 整数. 整数的整除性</span>
+  《微积分学教程(第一卷)》 绪论 实数 4 实数的其他性质及应用</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2014/09/daishuxueyinlun01/"  title="《代数学引论》第零章 集合与整数 1 集合上的等价关系">
+<a href="/2014/11/daishuxueyinlun116/"  title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 6 等价关系. 商映射">
  <strong>下一篇：</strong><br/> 
- <span>《代数学引论》第零章 集合与整数 1 集合上的等价关系
+ <span>《代数学引论(第一卷)基础代数》 第1章 代数的起源 6 等价关系. 商映射
 </span>
 </a>
 </div>
@@ -221,7 +206,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#自然数"><span class="toc-number">1.</span> <span class="toc-text">自然数</span></a></li></ol>
+ 
  
   </div>
 
