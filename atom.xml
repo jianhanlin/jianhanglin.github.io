@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我只需要你陪我60年。很傻，对吧？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-11-18T07:47:31.752Z</updated>
+  <updated>2014-11-19T04:31:33.066Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -13,6 +13,25 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[《微积分学教程(第一卷)》 第一章 极限论 1 整序变量及其极限]]></title>
+    <link href="http://jianhanglin.github.io/2014/11/weijifenxuejiaocheng111/"/>
+    <id>http://jianhanglin.github.io/2014/11/weijifenxuejiaocheng111/</id>
+    <published>2014-11-18T07:58:44.000Z</published>
+    <updated>2014-11-18T08:09:57.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="变量、整序变量">变量、整序变量</h2>
+]]></content>
+    <summary type="html">
+    <![CDATA[实数的其他性质及应用]]>
+    
+    </summary>
+    
+      <category term="微积分" scheme="http://jianhanglin.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/"/>
+    
+      <category term="微积分" scheme="http://jianhanglin.github.io/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[《微积分学教程(第一卷)》 绪论 实数 4 实数的其他性质及应用]]></title>
@@ -169,7 +188,7 @@
     <link href="http://jianhanglin.github.io/2014/11/daishuxueyinlun117/"/>
     <id>http://jianhanglin.github.io/2014/11/daishuxueyinlun117/</id>
     <published>2014-11-15T03:55:24.000Z</published>
-    <updated>2014-11-17T05:40:31.000Z</updated>
+    <updated>2014-11-19T04:30:44.000Z</updated>
     <content type="html"><![CDATA[<p>假设读者对全体自然数(或正整数)的集合$\mathbb{N}=\lbrace 1,2,3,\cdots \rbrace$了解得很清楚.事实上，研究集合$\mathbb{N}$的出发点是<a href="http://zh.wikipedia.org/wiki/%E7%9A%AE%E4%BA%9A%E8%AF%BA%E5%85%AC%E7%90%86" target="_blank" rel="external">皮亚诺公理</a>(<a href="http://baike.baidu.com/view/454509.htm?fr=aladdin" target="_blank" rel="external">皮亚诺</a>，$1858-1932$).从皮亚诺公理可以推导出自然数集，更精确地，非负整数集中加法和乘法的性质以及线性序(见$\S 6$第$4$段).特别是证明了一个直观而清晰的论断：每一个非空集合$S\subset \mathbb{N}$都有最小元，即存在一个自然数$s\in S$它小于$S$中的所有的数.根据皮亚诺公理得到的这一论断推导下述</p>
 <p><strong>归纳法原理</strong> 假设对每一个$n\in \mathbb{N}$，我们有某一命题$M(n)$.又假设我们有一个法则，对于任意给定的$l$，只要$M(k)$对所有的$k &lt; l$真就可以证明$M(l)$真，特别指出，我们能够验证$M(l)$真.</p>
 <p>则对任意的$n\in \mathbb{N}$，$M(n)$真.</p>
@@ -193,8 +212,54 @@
 <p>如果说想出${\bf p}_1 (n)$的形式不太困难，那么想出${\bf p}_2 (n)$，${\bf p}_3 (n)$的形式就没那么平凡了，而关系式</p>
 <p>$${\bf p}_5 (n)+{\bf p}_7 (n)=2\left( \dfrac{n(n+1)}{2} \right) ^2$$</p>
 <p>一般需要按照某种确定的步骤寻找.目前这样的步骤是能够给出的，但我们在这里不考虑它.而证明上述已经给出的对应关系，只需要直接计算从$n$到$n+1$的一步归纳.我们把它留给读者作为有益的练习.</p>
-<center><img src="/assets/img/daishuxueyinlun1/tu9.png" alt=""></center>
+<p>恰好在这一练习中用到下述<strong>二项式公式</strong></p>
+<p>$$(a+b)^n=a^n+ {n\choose 1} a^{n-1}b+\cdots +{n\choose k} a^{n-k}b^k+\cdots +b^n\label{1}\tag{1}$$</p>
+<p>此处$a$和$b$是任意数，而单项式$a^{n-k}b^k$的<strong>二项式系数</strong>$\LARGE {n\choose k}$形如</p>
+<p>$${n\choose k} =\dfrac{n!}{k!(n-k)!}=\dfrac{n(n-1)\cdots (n-k+1)}{k(k-1)\cdots 2\cdot 1},\label{2}\tag{2}$$</p>
+<p>这里$n!=n(n-1)\cdots 2\cdot 1$($n$的阶乘).其值快速增长，例如$6!=720$，$10!=3628800$，而$100! &gt; 10^{150}$.对公式$\eqref{2}$进行补充，允许$0!=1$以及当$k &lt; 0$时${\LARGE {n\choose k}}=0$是有益处的.我们还要指出，</p>
+<p>$${n\choose n-k}={n\choose k}$$</p>
+<p>(二项式系数的对称性).</p>
+<p>当$n=1,2$时，公式$\eqref{1}$显然成立，我们对$n$作归纳.假设公式对所有$\leq n$的数成立，用$a+b$去乘$\eqref{1}$式的两端，我们有</p>
+<span>$$\begin{align*}  (a+b)^{n+1} & =(a+b)^n(a+b)\\  & = a^n(a+b)+\cdots +{n\choose k}a^{n-k}b^k(a+b)+\cdots +b^n(a+b)\\  & = a^{n+1}+a^nb+\cdots +{n\choose k-1}a^{n+2-k}b^{k-1}+{n\choose k-1}a^{n+1-k}b^k\\  &  ~ +{n\choose k}a^{n+1-k}b^k+{n\choose k}a^{n-k}b^{k+1}+\cdots +ab^n+b^{n+1}.  \end{align*}$$</span>
 
+<p>合并同类项，单项式$a^{n+1-k}b^k$的系数为</p>
+<span>$$\begin{align*}  & {n\choose k-1}+{n\choose k}\\  & = \dfrac{n!}{(k-1)!(n-k+1)!}+\dfrac{n!}{k!(n-k)!}\\  & = \dfrac{n!}{(k-1)!(n-k)!}\left[ \dfrac{1}{n-k+1}+\dfrac{1}{k} \right] \\  & = \dfrac{n!}{(k-1)!(n-k)!}\cdot \dfrac{n+1}{k(n-k+1)}\\  & = \dfrac{(n+1)!}{k!(n+1-k)!}\\  & = {n+1\choose k}  \end{align*}$$</span>
+
+<p>即恰好对形如$\eqref{2}$的二项式系数的上指标增加$1$.这就证明了公式对一切$n\in \mathbb{N}$成立.</p>
+<p>如果写成</p>
+<p>$$(a+b)^n=(a+b)(a+b)\cdots (a+b),$$</p>
+<p>给右边的因子从$1$到$n$编号，并考察所有的编号为</p>
+<p>$$1 \leq i_1 &lt; i_2 &lt; \cdots &lt; i_k \leq n$$</p>
+<p>的子集，它们与乘积中的单项式$a^{n-k}b^k$相符，所以我们断言，$\LARGE {n\choose k}$恰为$n$元集中所有$k$元子集的个数.比较老式的术语是从$n$个元素中每次取$k$个元素的组合数</p>
+<p>$$C_n^k={n\choose k},$$</p>
+<p>这是一种本质上的表述.</p>
+<p>特别地，集合$\mathcal{P}(\lbrace s_1 ,\cdots ,s_n \rbrace )$(见$\S 5$习题$4$)的基数等于</p>
+<p>$${n\choose 0}+{n\choose 1}+\cdots +{n\choose n-1}+{n\choose n}.$$</p>
+<p>在公式$\eqref{1}$中令$a=b=1$，我们得到</p>
+<p>$$2^n={n\choose 0}+{n\choose 1}+\cdots +{n\choose n-1}+{n\choose n}.$$</p>
+<p>于是，</p>
+<p>$$\text{Card}\mathcal{P}(\lbrace s_1 ,\cdots ,s_n \rbrace )=2^n.$$</p>
+<p>二项式系数在初等组合论中几乎是必不可少的.下面是一个直观的几何例子.</p>
+<p>例(美国数学月刊，$\text{1977,V.84,No.6}$)给定圆周上任意$n$个点，确定由$\LARGE {n\choose 2}$条弦划分的圆内的区域数$R_n$.此处假设任意三条弦在圆内不相交(见图$12$).这是一个著名的问题.</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu14.png" alt=""></center>
+
+<p>当$n=1,2,3,4,5$时的结果使人们想到$R_n =2^{n-1}$，但事实上，正确的公式为$R_n =1+{\LARGE {n\choose 2}}+{\LARGE {n\choose 4}}$.试证明之.</p>
+<p>证明定理或构造数学对象时，有时需要借助更复杂的归纳形式.例如下面的二重归纳原理.设任取自然数$m$和$n$，有某一命题$Y(m,n)$，并且：</p>
+<p>$i)~Y(m,1)$和$Y(1,n)$对所有的$m,n$真；</p>
+<p>$ii)$如果$Y(k-1,l)$和$Y(k,l-1)$真，则$Y(k,l)$亦真.</p>
+<p>(这就等价于说：</p>
+<p>$ii’)$如果对一切满足$k’ \leq k$，$l’ \leq l$，$k’+l’ &lt; k+l$的数对$(k’,l’)$，$Y(k’,l’)$真，则$Y(k,l)$亦真.)</p>
+<p>那么命题$Y(m,n)$对所有的自然数$m$和$n$都真.</p>
+<h2 id="习题">习题</h2>
+<p>$1$.令</p>
+<p>$$s(n)=\sin \varphi +\sin 2\varphi +\cdots +\sin n\varphi ,$$</p>
+<p>$$c(n)=\cos \varphi +\cos 2\varphi +\cdots +\cos n\varphi .$$</p>
+<p>对$n$作归纳证明公式</p>
+<p>$$s(n)=\dfrac{\sin (n\varphi /2)\sin ((n+1)\varphi /2)}{\sin (\varphi /2)},c(n)=\dfrac{\sin (n\varphi /2)\cos ((n+1)\varphi /2)}{\sin (\varphi /2)}.$$</p>
+<p>$2$.下述公式成立：</p>
+<p>$$a)~ \sum_{k=1}^{n}\cot^2(\dfrac{k\pi}{2n+1})=\dfrac{n(2n-1)}{3};$$</p>
+<p>$$b)~ \sum_{k=0}^{n}{2k\choose n}{2n-2k\choose n-k}=4^n.$$</p>
+<p>至少在$n\leq 5$时，验证它们的正确性.</p>
 ]]></content>
     <summary type="html">
     <![CDATA[在日常生活等各个方面使用的各种形态的等价性使人们想到应该一般地定义这一概念.]]>
@@ -1689,72 +1754,6 @@
 ]]></content>
     <summary type="html">
     <![CDATA[自然数系是由$0,1,2,\cdots$组成的，记作$\bf N$.自然数在代数中是基本的，人们首先认识的是自然数，然后才逐渐认识整数、有理数、实数和复数.]]>
-    
-    </summary>
-    
-      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[《代数学引论》第零章 集合与整数 1 集合上的等价关系]]></title>
-    <link href="http://jianhanglin.github.io/2014/09/daishuxueyinlun01/"/>
-    <id>http://jianhanglin.github.io/2014/09/daishuxueyinlun01/</id>
-    <published>2014-10-18T10:21:33.000Z</published>
-    <updated>2014-10-19T00:39:51.000Z</updated>
-    <content type="html"><![CDATA[<p><strong><a href="http://book.douban.com/subject/1230310/" target="_blank" rel="external">代数学引论</a></strong> <a href="http://pan.baidu.com/s/1dD1V5lf" target="_blank" rel="external">在线阅读</a> 聂灵沼 丁石孙 高等教育出版社 第2版   </p>
-<center><img src="/assets/img/daishuxueyinlun/cover.jpg" alt=""></center>
-
-<h2 id="集合与整数">集合与整数</h2>
-<p>集合是数学的基本概念之一.它是具有一定属性的事物形成的一个集体.根据这属性可以区别一个事物属于或不属于这个集合.例如空间的点集、实系数多项式集合、定义在区间$\left[ 0,1\right]$上的实函数集合等.本章主要讨论一个集合上的等价关系、偏序关系以及整数的算术性质.关于集合的子集、交集、并集以及一个集合到另一个集合的映射等概念，在高等代数课程中已有介绍，在这里不再重复.</p>
-<h2 id="集合上的等价关系">集合上的等价关系</h2>
-<p>在一个集合的元素之间常常存在某种关系.例如，两个$n\times n$的复矩阵的相似或不相似；空间两直线平行或不平行；数学分析中两个哥西序列的等价或不等价，都是特殊集合上的重要关系.</p>
-<p>设$S$为一非空集合，$a,b,c,\cdots$表示它的元素.设在$S$中任意两个元素之间存在(或不存在)某种属性$R$.只要$R$满足下面的条件，即对于$S$中任一对有次序的元素$a,b$来说，$a,b$有这种属性$R$或者$a,b$没有这种属性$R$，这两者必定有一成立而且只有一成立，那么我们说$R$是集合$S$上的一个<strong>二元关系</strong>，或简称关系.若$a,b$有关系$R$，则记作$aRb$.</p>
-<p>上面列举的“相似”、“平行”和“等价”都是它们的相应集合上的二元关系.又如，实数集合上的大小关系“$\leq$”，整数集合上的整除关系$a\arrowvert b$都是该集合上的二元关系.再如一个非空集合$S$中元素之间的相等(或不相等)，子集之间的包含(或不包含)分别是$S$上和$S$上的幂集$P(S)$上的二元关系.所谓$S$的幂集$P(S)$就是$S$的所有子集作元素构成的集合.</p>
-<p>非空集合$S$上一个二元关系$R$还可用笛卡尔积$S\times S$的一个子集$T$表示.$T$规定如下</p>
-<p>$$T=\lbrace (a,b)\in S\times S\arrowvert a,b有关系R\rbrace .$$</p>
-<p>于是可以说，元素$a,b$有关系$R$当而且仅当$(a,b)\in T$.$T$称为关系$R$在$S\times S$中的<strong>图象</strong>.反之，$S\times S$的任一个子集$T$可以给出$S$上的一个二元关系$R$，称元素$a,b$有关系$R$当有仅当$(a,b)\in T$.由此可知$R$满足二元关系的条件.</p>
-<p>按照矩阵的相似关系可以将$n\times n$复矩阵分成若干相似类，使之每一类有一个标准形作为代表；按照哥西序列的等价关系可以将哥西序列分成一些等价类，使之每一类代表一个实数.这些都是数学中常见的基本方法.“相似”和“等价”它们有三条共性，就是反身性、对称性和传递性.</p>
-<p><strong>定义1</strong>如果一个非空集合$S$的一个二元关系$R$满足下列三条：</p>
-<p>$(i)$反身性.$aRa$，对所有$a\in S$，</p>
-<p>$(ii)$对称性.若$aRb$，则$bRa$，</p>
-<p>$(iii)$传递性.若$aRb$且$bRc$，则$aRc$，</p>
-<p>则称$R$是$S$的一个<strong>等价关系</strong>.等价关系$R$通常记成“$\sim$”.</p>
-<p>显然，“相似”、“平行”、“哥西序列等价”都是等价关系.但是“$\leq$”和“$a\arrowvert b$”则不是等价关系.而”$=$”和“$a\arrowvert b$且$b\arrowvert a$”是等价关系.</p>
-<p>如果非空集合$S$的一组子集$\lbrace S_{\lambda}\arrowvert \lambda \in I\rbrace $，$I$为指标集，满足下列条件：</p>
-<p>$(1)S=\underset{\lambda \in I}{\bigcup}S_{\lambda},$</p>
-<p><span>$(2)S_{\lambda}\cap S_{\mu}=\varnothing ,\lambda \neq \mu ,\lambda ,\mu \in I$</span>,</p>
-<p>则${S_{\lambda}}$叫做$S$的一个<strong>划分</strong>.</p>
-<p>非空集合$S$的任一个等价关系$\sim$确定$S$的一个划分如下：对每个元素$a\in S$，规定</p>
-<p>$$S_{a}=\lbrace  x\in S\arrowvert x\sim a\rbrace $$</p>
-<p>这样得到$S$的一组子集<span>$\lbrace S_{a}\mid a\in S\rbrace$</span>.证明它是$S$的一个划分.首先，由于反身性，$a\sim a$，所以$a\in S_{a}$，于是</p>
-<p>$$S=\underset{a\in S}{\bigcup}S_{a}.$$</p>
-<p>其次证明，若<span>$S_{a}\cap S_{b}\neq \varnothing$</span>，则$a\sim b$且<span>$S_{a}=S_{b}$</span>.设<span>$S_{a}\cap S_{b}\neq \varnothing$</span>，取一个<span>$c\in S_{a}\cap S_{b}$</span>，于是$c\sim a$，$c\sim b$，由对称性，$a\sim c$，再由传递性，得$a\sim b$.其次对任一元素<span>$x\in S_{a}$</span>，有$x\sim a$，由传递性得$x\sim b$，从而<span>$x\in S_{b}$</span>，所以<span>$S_{a}\subset S_{b}$</span>.再由对称性，$b\sim a$，同理得<span>$S_{b}\subset S_{a}$</span>.所以<span>$S_{a}=S_{b}$</span>.由此可知<span>$\lbrace S_{a} \arrowvert a\in S\rbrace$</span>，把重复的去掉之后，就是$S$的一个划分.这个划分中的每个元素叫做由等价关系确定的等价类.</p>
-<p>反之，$S$的任一个划分$\lbrace S_{\lambda}\mid \lambda \in I\rbrace$决定一个等价关系如下：规定</p>
-<p>$$a\sim b\Leftrightarrow a,b 属于同一个S_{\lambda}.$$</p>
-<p>首先，由划分的定义可知$a,b$属于同一个<span>$S_{\lambda}$</span>或者$a,b$分属于不同的<span>$S_{\lambda}$</span>，这两者有一而且只有一成立.因而”$\sim$”是一个二元关系.进一步由划分的定义，不难证明，“$\sim$”是一个等价关系，而且这个等价关系如上决定的划分就是原来的划分.</p>
-<p>一个集合的等价关系的重要性在于由它可以产生出新的集合.设”$\sim$”是非空集合$S$的一个等价关系.如上，”$\sim$”将$S$分成一些互不相交的等价类<span>$\lbrace S_{\lambda}\mid \lambda \in I\rbrace$</span>的并.为表法简明起见，在每个等价类<span>$S_{\lambda}$</span>中取一个代表$a$，将<span>$S_{\lambda}$</span>写成$\overline{a}$.这种表示与代表的取法无关，就是说，$\overline{a} =\overline{b}$当且仅当$a\sim b$.用这些等价类$\overline{a} ,\overline{b} ,\cdots$作元素得到一个新的集合，记作$S/\sim $，叫做$S$关于等价关系$\sim$的<strong>商集</strong>.今后将会看到，对于各种不同的具体集合$S$和等价关系$\sim$，商集$S/\sim$将会有它崭新的意义.</p>
-<p><strong>例</strong>三维仿射空间的直线集合按平行关系分成一些平行直线束，设想每一平行直线束相交于同一个无穷远点.这样，以平行直线束为元素得到的商集就表示一个无穷远平面，它是一个射影平面.把这个射影平面添加到三维仿射空间就得到一个三维射影空间.这就是历史上将仿射空间扩充成射影空间的朴素的几何直观的方法.</p>
-<p>集合$S$到商集$S/\sim$存在一个<strong>自然映射</strong></p>
-<p>$$\nu :x\mapsto \overline{x},x\in S.$$</p>
-<p>它是一个满射，而且$\nu (a)=\nu (b)$当且仅当$a\sim b$.</p>
-<p>反之，设$\varphi$是集合$S$到集合$T$的一个映射.于是在$S$上可以如下定义一个关系$\sim$:</p>
-<p>$$a\sim b当且仅当\varphi (a)=\varphi (b),a,b\in S.$$</p>
-<p>容易看出，这是一个等价关系.而且$\varphi$诱导出商集$S/\sim$到$T$的一个映射$\overline{\varphi}$如下：</p>
-<p>$$\overline{\varphi}(\overline{x})=\varphi (x),x\in S.$$</p>
-<p>显然$\overline{\varphi}$是单一的.这样，映射$\varphi$就分解成一个自然映射$\nu :S\to S/\sim$和一个单射$\overline{\varphi}$的积</p>
-<p>$￥\varphi=\overline{\varphi} \cdot \nu.$$</p>
-<p>用图表示就是</p>
-<center><img src="/assets/img/daishuxueyinlun/1.png" alt=""></center>
-
-<p>综上所述，我们得到</p>
-<p><strong>定理1</strong> 非空集合$S$上的一个等价关系$\sim$的一个商集$S/\sim$并诱导出一个自然映射$\nu :S\to S/\sim$使得$x\sim y$，$x$，$y\in S\Leftrightarrow \nu (x)=\nu (y)$，反之，任一个集合映射$\varphi :S\to T$决定$S$上的一个等价关系$\sim$使得$x\sim y$，$x$，$y\in S\Leftrightarrow \varphi (x)=\varphi (y)$.而且$\varphi$诱导出商集$S/\sim$到$T$的单一映射$\overline{\varphi}$：$\overline{\varphi}(\overline{x})=\varphi (x)$，$x\in S$，使得$\varphi$有分解</p>
-<p>$$\varphi =\overline{\varphi} \cdot \nu.$$</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[集合是数学的基本概念之一.它是具有一定属性的事物形成的一个集体.根据这属性可以区别一个事物属于或不属于这个集合.]]>
     
     </summary>
     

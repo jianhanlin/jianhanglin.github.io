@@ -116,7 +116,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">1.</span> <span class="toc-text">习题</span></a></li></ol>
 		
 		</div>
 		
@@ -143,8 +143,54 @@
 <p>如果说想出${\bf p}_1 (n)$的形式不太困难，那么想出${\bf p}_2 (n)$，${\bf p}_3 (n)$的形式就没那么平凡了，而关系式</p>
 <p>$${\bf p}_5 (n)+{\bf p}_7 (n)=2\left( \dfrac{n(n+1)}{2} \right) ^2$$</p>
 <p>一般需要按照某种确定的步骤寻找.目前这样的步骤是能够给出的，但我们在这里不考虑它.而证明上述已经给出的对应关系，只需要直接计算从$n$到$n+1$的一步归纳.我们把它留给读者作为有益的练习.</p>
-<center><img src="/assets/img/daishuxueyinlun1/tu9.png" alt=""></center>
+<p>恰好在这一练习中用到下述<strong>二项式公式</strong></p>
+<p>$$(a+b)^n=a^n+ {n\choose 1} a^{n-1}b+\cdots +{n\choose k} a^{n-k}b^k+\cdots +b^n\label{1}\tag{1}$$</p>
+<p>此处$a$和$b$是任意数，而单项式$a^{n-k}b^k$的<strong>二项式系数</strong>$\LARGE {n\choose k}$形如</p>
+<p>$${n\choose k} =\dfrac{n!}{k!(n-k)!}=\dfrac{n(n-1)\cdots (n-k+1)}{k(k-1)\cdots 2\cdot 1},\label{2}\tag{2}$$</p>
+<p>这里$n!=n(n-1)\cdots 2\cdot 1$($n$的阶乘).其值快速增长，例如$6!=720$，$10!=3628800$，而$100! &gt; 10^{150}$.对公式$\eqref{2}$进行补充，允许$0!=1$以及当$k &lt; 0$时${\LARGE {n\choose k}}=0$是有益处的.我们还要指出，</p>
+<p>$${n\choose n-k}={n\choose k}$$</p>
+<p>(二项式系数的对称性).</p>
+<p>当$n=1,2$时，公式$\eqref{1}$显然成立，我们对$n$作归纳.假设公式对所有$\leq n$的数成立，用$a+b$去乘$\eqref{1}$式的两端，我们有</p>
+<span>$$\begin{align*}  (a+b)^{n+1} & =(a+b)^n(a+b)\\  & = a^n(a+b)+\cdots +{n\choose k}a^{n-k}b^k(a+b)+\cdots +b^n(a+b)\\  & = a^{n+1}+a^nb+\cdots +{n\choose k-1}a^{n+2-k}b^{k-1}+{n\choose k-1}a^{n+1-k}b^k\\  &  ~ +{n\choose k}a^{n+1-k}b^k+{n\choose k}a^{n-k}b^{k+1}+\cdots +ab^n+b^{n+1}.  \end{align*}$$</span>
 
+<p>合并同类项，单项式$a^{n+1-k}b^k$的系数为</p>
+<span>$$\begin{align*}  & {n\choose k-1}+{n\choose k}\\  & = \dfrac{n!}{(k-1)!(n-k+1)!}+\dfrac{n!}{k!(n-k)!}\\  & = \dfrac{n!}{(k-1)!(n-k)!}\left[ \dfrac{1}{n-k+1}+\dfrac{1}{k} \right] \\  & = \dfrac{n!}{(k-1)!(n-k)!}\cdot \dfrac{n+1}{k(n-k+1)}\\  & = \dfrac{(n+1)!}{k!(n+1-k)!}\\  & = {n+1\choose k}  \end{align*}$$</span>
+
+<p>即恰好对形如$\eqref{2}$的二项式系数的上指标增加$1$.这就证明了公式对一切$n\in \mathbb{N}$成立.</p>
+<p>如果写成</p>
+<p>$$(a+b)^n=(a+b)(a+b)\cdots (a+b),$$</p>
+<p>给右边的因子从$1$到$n$编号，并考察所有的编号为</p>
+<p>$$1 \leq i_1 &lt; i_2 &lt; \cdots &lt; i_k \leq n$$</p>
+<p>的子集，它们与乘积中的单项式$a^{n-k}b^k$相符，所以我们断言，$\LARGE {n\choose k}$恰为$n$元集中所有$k$元子集的个数.比较老式的术语是从$n$个元素中每次取$k$个元素的组合数</p>
+<p>$$C_n^k={n\choose k},$$</p>
+<p>这是一种本质上的表述.</p>
+<p>特别地，集合$\mathcal{P}(\lbrace s_1 ,\cdots ,s_n \rbrace )$(见$\S 5$习题$4$)的基数等于</p>
+<p>$${n\choose 0}+{n\choose 1}+\cdots +{n\choose n-1}+{n\choose n}.$$</p>
+<p>在公式$\eqref{1}$中令$a=b=1$，我们得到</p>
+<p>$$2^n={n\choose 0}+{n\choose 1}+\cdots +{n\choose n-1}+{n\choose n}.$$</p>
+<p>于是，</p>
+<p>$$\text{Card}\mathcal{P}(\lbrace s_1 ,\cdots ,s_n \rbrace )=2^n.$$</p>
+<p>二项式系数在初等组合论中几乎是必不可少的.下面是一个直观的几何例子.</p>
+<p>例(美国数学月刊，$\text{1977,V.84,No.6}$)给定圆周上任意$n$个点，确定由$\LARGE {n\choose 2}$条弦划分的圆内的区域数$R_n$.此处假设任意三条弦在圆内不相交(见图$12$).这是一个著名的问题.</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu14.png" alt=""></center>
+
+<p>当$n=1,2,3,4,5$时的结果使人们想到$R_n =2^{n-1}$，但事实上，正确的公式为$R_n =1+{\LARGE {n\choose 2}}+{\LARGE {n\choose 4}}$.试证明之.</p>
+<p>证明定理或构造数学对象时，有时需要借助更复杂的归纳形式.例如下面的二重归纳原理.设任取自然数$m$和$n$，有某一命题$Y(m,n)$，并且：</p>
+<p>$i)~Y(m,1)$和$Y(1,n)$对所有的$m,n$真；</p>
+<p>$ii)$如果$Y(k-1,l)$和$Y(k,l-1)$真，则$Y(k,l)$亦真.</p>
+<p>(这就等价于说：</p>
+<p>$ii’)$如果对一切满足$k’ \leq k$，$l’ \leq l$，$k’+l’ &lt; k+l$的数对$(k’,l’)$，$Y(k’,l’)$真，则$Y(k,l)$亦真.)</p>
+<p>那么命题$Y(m,n)$对所有的自然数$m$和$n$都真.</p>
+<h2 id="习题">习题</h2>
+<p>$1$.令</p>
+<p>$$s(n)=\sin \varphi +\sin 2\varphi +\cdots +\sin n\varphi ,$$</p>
+<p>$$c(n)=\cos \varphi +\cos 2\varphi +\cdots +\cos n\varphi .$$</p>
+<p>对$n$作归纳证明公式</p>
+<p>$$s(n)=\dfrac{\sin (n\varphi /2)\sin ((n+1)\varphi /2)}{\sin (\varphi /2)},c(n)=\dfrac{\sin (n\varphi /2)\cos ((n+1)\varphi /2)}{\sin (\varphi /2)}.$$</p>
+<p>$2$.下述公式成立：</p>
+<p>$$a)~ \sum_{k=1}^{n}\cot^2(\dfrac{k\pi}{2n+1})=\dfrac{n(2n-1)}{3};$$</p>
+<p>$$b)~ \sum_{k=0}^{n}{2k\choose n}{2n-2k\choose n-k}=4^n.$$</p>
+<p>至少在$n\leq 5$时，验证它们的正确性.</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -206,7 +252,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">1.</span> <span class="toc-text">习题</span></a></li></ol>
  
   </div>
 
@@ -221,7 +267,7 @@
 		
 			<li><a href="/categories/基础代数/" title="基础代数">基础代数<sup>8</sup></a></li>
 		
-			<li><a href="/categories/微积分/" title="微积分">微积分<sup>4</sup></a></li>
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>5</sup></a></li>
 		
 			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>12</sup></a></li>
 		
@@ -238,7 +284,7 @@
 		
 			<li><a href="/tags/代数/" title="代数">代数<sup>20</sup></a></li>
 		
-			<li><a href="/tags/微积分/" title="微积分">微积分<sup>4</sup></a></li>
+			<li><a href="/tags/微积分/" title="微积分">微积分<sup>5</sup></a></li>
 		
 			<li><a href="/tags/计划/" title="计划">计划<sup>1</sup></a></li>
 		
