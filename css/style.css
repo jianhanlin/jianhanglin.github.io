@@ -635,6 +635,30 @@ header nav ul li a:hover {
   margin: 0.5em 0;
   font-size: 0.9em;
 }
+article.post-expand {
+  background: #fafafa;
+  margin-bottom: 3.5em;
+}
+article.post-expand .article-more-link {
+  margin-top: 1.5em;
+  padding-top: 1em;
+  border-top: 2px solid #ddd;
+}
+article.post-expand .article-more-link a {
+  display: inline-block;
+  line-height: 1em;
+}
+article.post-expand .article-more-link padding: 6px 15px {
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background: #ddd;
+  color: #817c7c;
+  text-decoration: none;
+}
+article.post-expand .article-more-link padding: 6px 15px:hover {
+  background: #ccf;
+  color: #fff;
+}
 #archive-page section.post a {
   font-size: 0.9em;
   padding: 0.5em !important;
@@ -646,6 +670,12 @@ header nav ul li a:hover {
 }
 .moveMain {
   margin-left: 10% !important;
+}
+.unexpand .prev {
+  border-left: 0.5em solid #ccc;
+}
+.unexpand .prev:hover {
+  border-left: 0.5em solid #ccf;
 }
 #page-nav {
   background: #fafafa;
@@ -665,15 +695,11 @@ header nav ul li a:hover {
 }
 #page-nav .prev {
   float: left;
-  border-left: 0.5em solid #ccc;
   -webkit-transition: border-left 0.5s;
   -moz-transition: border-left 0.5s;
   -o-transition: border-left 0.5s;
   -ms-transition: border-left 0.5s;
   transition: border-left 0.5s;
-}
-#page-nav .prev:hover {
-  border-left: 0.5em solid #ccf;
 }
 #page-nav .prev span:before {
   font-family: "FontAwesome";
@@ -814,15 +840,21 @@ header nav ul li a:hover {
   min-height: 400px;
 }
 .post,
-.page {
+.page,
+.link,
+.photo {
   background: #fafafa;
 }
 .post a,
-.page a {
+.page a,
+.link a,
+.photo a {
   color: #2ca6cb;
 }
 .post a:hover,
-.page a:hover {
+.page a:hover,
+.link a:hover,
+.photo a:hover {
   color: #ea6753;
 }
 @media only screen and (min-width: 768px) {
@@ -952,6 +984,7 @@ article .article-content blockquote {
   padding-left: 1%;
   line-height: 1.5;
   font-size: 100%;
+  color: #808080;
 }
 article .article-content blockquote footer {
   background: #fafafa;
@@ -990,7 +1023,9 @@ article .article-content ul li>code,
 article .article-content ol li>code,
 article .article-content p code,
 article .article-content strong code,
-article .article-content em code {
+article .article-content em code,
+article .article-content table th>code,
+article .article-content table td>code {
   font-family: Monaco, Menlo, Consolas, Courier New, monospace;
   background: #eee;
   color: #d14;
@@ -1033,10 +1068,21 @@ article .article-content figure img {
 }
 article .article-content figcaption,
 article .article-content .caption {
-  text-align: center;
   display: block;
+  margin-top: 0.3em;
+  color: #808080;
+  position: relative;
   font-size: 0.9em;
-  font-weight: blod;
+  padding-left: 1.3em;
+}
+article .article-content figcaption:before,
+article .article-content .caption:before {
+  content: '\f040';
+  position: absolute;
+  font: 0.9em "FontAwesome";
+  position: absolute;
+  left: 0;
+  top: 0.3em;
 }
 article .article-content .video-container {
   position: relative;
@@ -1055,18 +1101,21 @@ article .article-content .video-container embed {
   margin-top: 0;
 }
 article .article-content table {
-  width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
+  margin-top: 1em;
 }
 article .article-content table th {
   font-weight: bold;
-  border-bottom: 3px solid #dbdbdb;
-  padding-bottom: 0.5em;
+  border-bottom: 2px solid #dbdbdb;
+  padding: 0.5em;
+  line-height: 1.3em;
 }
 article .article-content table td {
   border-bottom: 1px solid #dbdbdb;
-  padding: 10px 0;
+  padding: 0.5em;
+  line-height: 1.3em;
 }
 article .article-content .pullquote {
   text-align: left;
@@ -1138,7 +1187,7 @@ footer.article-footer {
   position: relative;
 }
 .share a:before {
-  font-size: 100%;
+  font-size: 1.2em;
   font-family: "FontAwesome";
   text-align: center;
   color: #817c7c;
@@ -1177,7 +1226,8 @@ footer.article-footer {
   text-shadow: 0 1px #a13c2f;
 }
 .article-share-qrcode:before {
-  content: "\f029";
+  font-family: "fontdiao" !important;
+  content: "\f132";
 }
 .article-share-qrcode:hover {
   background: #49ae0f;
@@ -1293,7 +1343,6 @@ footer.article-footer {
 }
 .article-tags {
   color: #d6d6d6;
-  margin-left: 3em;
 }
 @media only screen and (max-width: 568px) {
   .article-tags {
@@ -1333,6 +1382,7 @@ footer.article-footer {
 .article-categories {
   color: #d6d6d6;
   margin-top: 0.3em;
+  margin-right: 3em;
 }
 .article-categories span:before {
   font-family: "FontAwesome";
@@ -1937,7 +1987,8 @@ footer {
 .icon-facebook:before,
 .icon-stack-overflow:before,
 .icon-email:before,
-.icon-google_plus:before {
+.icon-google_plus:before,
+.icon-linkedin:before {
   font-family: "FontAwesome";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1962,6 +2013,9 @@ footer {
 }
 .icon-google_plus:before {
   content: "\f0d5";
+}
+.icon-linkedin:before {
+  content: "\f08c";
 }
 .icon-douban:before {
   font-family: "fontdiao";
@@ -2185,28 +2239,68 @@ pre .keyword,
 pre .javascript .function {
   color: #c9c;
 }
-.article-gallery {
-  background: #fafafa;
-  position: relative;
-}
-.article-gallery-photos {
-  position: relative;
+.gallery {
   overflow: hidden;
+  position: relative;
 }
-.article-gallery-img {
-  display: none;
+.gallery:hover .control {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+img {
+  min-width: 100%;
   max-width: 100%;
-img
-  display: block;
-  max-width: 100%;
-  margin: 0 auto;
-}
-.article-gallery-img:first-child {
-  display: block;
-}
-.article-gallery-img .loaded {
+  height: auto;
   position: absolute;
-  display: block;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.control {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+}
+.prev:before,
+.next:before {
+  position: absolute;
+  font: 24px/1 "FontAwesome";
+  text-align: center;
+  width: 24px;
+  text-shadow: 0 0 15px rgba(0,0,0,0.5);
+  color: #fff;
+  margin-top: -12px;
+  top: 50%;
+}
+.prev {
+  left: 0;
+}
+.prev:before {
+  content: '\f053';
+  left: 10px;
+}
+.next {
+  right: 0;
+}
+.next:before {
+  content: '\f054';
+  right: 10px;
 }
 #totop {
   position: fixed;
