@@ -4,7 +4,7 @@
   <subtitle><![CDATA[春水初生，春林初盛，春风十里，不如你.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-11-20T13:12:09.754Z</updated>
+  <updated>2014-11-20T13:14:57.593Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -268,14 +268,12 @@
   </entry>
   
   <entry>
-    <title><![CDATA[]]></title>
+    <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 7 数学归纳法原理]]></title>
     <link href="http://jianhanglin.github.io/blog/2014/11/daishuxueyinlun117/"/>
     <id>http://jianhanglin.github.io/blog/2014/11/daishuxueyinlun117/</id>
     <published>2014-11-15T03:55:24.000Z</published>
-    <updated>2014-11-20T05:31:39.000Z</updated>
-    <content type="html"><![CDATA[<p>title: 《代数学引论(第一卷)基础代数》 第1章 代数的起源 7 数学归纳法原理<br>description: 归纳法原理: 假设对每一个$n\in \mathbb{N}$，我们有某一命题$M(n)$.又假设我们有一个法则，对于任意给定的$l$，只要$M(k)$对所有的$k &lt; l$真就可以证明$M(l)$真，特别指出，我们能够验证$M(l)$真.则对任意的$n\in \mathbb{N}$，$M(n)$真.<br>category: 基础代数</p>
-<h2 id="tags:_代数">tags: 代数</h2>
-<p>假设读者对全体自然数(或正整数)的集合$\mathbb{N}=\lbrace 1,2,3,\cdots \rbrace$了解得很清楚.事实上，研究集合$\mathbb{N}$的出发点是<a href="http://zh.wikipedia.org/wiki/%E7%9A%AE%E4%BA%9A%E8%AF%BA%E5%85%AC%E7%90%86" target="_blank" rel="external">皮亚诺公理</a>(<a href="http://baike.baidu.com/view/454509.htm?fr=aladdin" target="_blank" rel="external">皮亚诺</a>，$1858-1932$).从皮亚诺公理可以推导出自然数集，更精确地，非负整数集中加法和乘法的性质以及线性序(见$\S 6$第$4$段).特别是证明了一个直观而清晰的论断：每一个非空集合$S\subset \mathbb{N}$都有最小元，即存在一个自然数$s\in S$它小于$S$中的所有的数.根据皮亚诺公理得到的这一论断推导下述</p>
+    <updated>2014-11-20T13:14:40.000Z</updated>
+    <content type="html"><![CDATA[<p>假设读者对全体自然数(或正整数)的集合$\mathbb{N}=\lbrace 1,2,3,\cdots \rbrace$了解得很清楚.事实上，研究集合$\mathbb{N}$的出发点是<a href="http://zh.wikipedia.org/wiki/%E7%9A%AE%E4%BA%9A%E8%AF%BA%E5%85%AC%E7%90%86" target="_blank" rel="external">皮亚诺公理</a>(<a href="http://baike.baidu.com/view/454509.htm?fr=aladdin" target="_blank" rel="external">皮亚诺</a>，$1858-1932$).从皮亚诺公理可以推导出自然数集，更精确地，非负整数集中加法和乘法的性质以及线性序(见$\S 6$第$4$段).特别是证明了一个直观而清晰的论断：每一个非空集合$S\subset \mathbb{N}$都有最小元，即存在一个自然数$s\in S$它小于$S$中的所有的数.根据皮亚诺公理得到的这一论断推导下述</p>
 <p><strong>归纳法原理</strong> 假设对每一个$n\in \mathbb{N}$，我们有某一命题$M(n)$.又假设我们有一个法则，对于任意给定的$l$，只要$M(k)$对所有的$k &lt; l$真就可以证明$M(l)$真，特别指出，我们能够验证$M(l)$真.</p>
 <p>则对任意的$n\in \mathbb{N}$，$M(n)$真.</p>
 <p>事实上，设子集</p>
@@ -348,8 +346,13 @@
 <p>至少在$n\leq 5$时，验证它们的正确性.</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>title: 《代数学引论(第一卷)基础代数》 第1章 代数的起源 7 数学归纳法原理<br>description: 归纳法原理: 假设对每一个$n\in \mathbb{N}$，我们有某一命题$M(n)$.又假设我们有一个法则，对于任意给定的$l$，只要$M(k)$对所]]>
+    <![CDATA[归纳法原理 假设对每一个$n\in \mathbb{N}$，我们有某一命题$M(n)$.又假设我们有一个法则，对于任意给定的$l$，只要$M(k)$对所有的$k < l$真就可以证明$M(l)$真，特别指出，我们能够验证$M(l)$真.则对任意的$n\in \mathbb{N}$，$M(n)$真.]]>
+    
     </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="基础代数" scheme="http://jianhanglin.github.io/categories/%E5%9F%BA%E7%A1%80%E4%BB%A3%E6%95%B0/"/>
     
   </entry>
   
