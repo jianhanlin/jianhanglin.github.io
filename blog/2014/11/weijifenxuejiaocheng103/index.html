@@ -1,0 +1,700 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《微积分学教程(第一卷)》 绪论 实数 3 实数的算术运算 | JianhangLin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="JianhangLin">
+    
+    <meta name="description" itemprop="description" content="建立实数的运算的概念.">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="JianhangLin" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="JianhangLin" title="JianhangLin"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="JianhangLin">JianhangLin</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于自己</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:jianhanglin.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/blog/2014/11/weijifenxuejiaocheng103/" title="《微积分学教程(第一卷)》 绪论 实数 3 实数的算术运算" itemprop="url">《微积分学教程(第一卷)》 绪论 实数 3 实数的算术运算</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
+		
+  <p class="article-time">
+    <time datetime="2014-11-06T07:13:39.000Z" itemprop="datePublished"> 发表于 11月 6 2014</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#实数的和的定义"><span class="toc-number">1.</span> <span class="toc-text">实数的和的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#加法的性质"><span class="toc-number">2.</span> <span class="toc-text">加法的性质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实数的积的定义"><span class="toc-number">3.</span> <span class="toc-text">实数的积的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#乘法的性质"><span class="toc-number">4.</span> <span class="toc-text">乘法的性质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结论"><span class="toc-number">5.</span> <span class="toc-text">结论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#绝对值"><span class="toc-number">6.</span> <span class="toc-text">绝对值</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="实数的和的定义">实数的和的定义</h2>
+<p>今转而建立实数的运算的概念.在以后，$\alpha ,\beta ,\gamma$表示实数，可以是有理数，也可以是无理数.</p>
+<p>设有二实数$\alpha$及$\beta$.先考察有理数$a,a’$及$b,b’$，它们满足不等式：</p>
+<p>$$a &lt; \alpha &lt; a’及b &lt; \beta &lt;b’.\tag{1}$$</p>
+<p>如果实数$\gamma$位于一切形如$a+b$的和与一切形如$a’+b’$的和之间：</p>
+<p>$$a+b &lt; \gamma &lt; a’+b’\tag{2}$$</p>
+<p>则$\gamma$称为数$\alpha$及$\beta$的和，记为$\alpha +\beta$.</p>
+<p>首先须证明，对于任何一对实数$\alpha ,\beta$必有这样的数$\gamma$存在.</p>
+<p>考察一切可能的和$a+b$所成的数集.这数集是上有界的，例如，任何形如$a’+b’$的和即为其上界.假定</p>
+<p>$$\gamma =\text{sup}\lbrace a+b\rbrace .$$</p>
+<p>则$a+b \leq \gamma $，而同时，$\gamma \leq a’+b’$.</p>
+<p>因为对于任何一组满足于条件$(1)$的有理数$a,b,a’,b’$，不论它们怎样，我们常常可以把$a,b$增大，也可以把$a’,b’$减小，使得条件$(1)$仍能满足，所以在刚才得到的两个含有等号的关系式$a+b \leq \gamma $及$\gamma \leq a’+b’$中，实际上没有一处能成立等式.这样，数$\gamma$便满足于和的定义.</p>
+<p>但又发生了问题，由不等式$(2)$所确定的和$\gamma =\alpha +\beta$是否为单值的？为了要证实和的唯一性，依$9$的附注，选取有理数$a,b,a’,b’$，使</p>
+<p>$$a’-a &lt; e及b’-b &lt; e,$$</p>
+<p>式中$e$为任意小的正有理数.由此，</p>
+<p>$$(a’+b’)-(a+b)=(a’-a)+(b’-b) &lt; 2e,$$</p>
+<p>即这差亦能使成为任意小.[若取$e &lt; \dfrac{e’}{2}$，则数$2e$便小于任何小的数$e’ &gt; 0$.]所以，依引理$2$，位于形式如$a+b$的和与形式如$a’+b’$的和之间的数仅存在着一个.</p>
+<p>最后注意，若数$\alpha$及$\beta$均为有理数，则显然它们的通常的和$\gamma =\alpha +\beta$满足于不等式$(2)$.这样，上述两实数和的一般定义并不与两有理数的和原来定义相矛盾.</p>
+<h2 id="加法的性质">加法的性质</h2>
+<p>很易证实，对于实数下列的性质仍然保持：</p>
+<p>Ⅱ$1°$ $\alpha +\beta=\beta +\alpha ;$</p>
+<p>Ⅱ$2°$ $(\alpha +\beta )+\gamma=\alpha +(\beta +\gamma );$</p>
+<p>Ⅱ$3°$ $\alpha +0=\alpha .$</p>
+<p>例如，我们证明最后一个性质.若有理数$a,a’,b,b’$是这样的数，使</p>
+<p>$$a &lt; \alpha &lt; a’,b &lt; 0 &lt; b’,$$</p>
+<p>则显然</p>
+<p>$$a+b &lt; a &lt; \alpha &lt; a’ &lt; a’+b’.$$</p>
+<p>这样，$\alpha$是位于形如$a+b$与$a’+b’$的数之间的实数，依定义，在那两种数间又存在着和$\alpha +0$.但这样的数仅有一个，因此$\alpha +0 =\alpha$，这就是需要证明的.</p>
+<p>现在证明性质Ⅱ$4°$，对于任一实数$\alpha$，存在着(对称于它的)数$-\alpha$，满足条件$\alpha +(-\alpha )=0$.</p>
+<p>在这里，只要就无理数$\alpha$的情形来证就够了.</p>
+<p>假定，数$\alpha$被分划$A\mid A’$所确定，我们用下法确定$-\alpha$.我们取一切有理数$-a$归入数$-\alpha$的下组$\overline{A}$，此处$a’$是$A’$组的任何数，取一切数$-a$归入$-\alpha$的上组$\overline{A}’$，此处$a$是$A$组的任何数.不难看出，这样构成的分拆实际上就是一个分划，因此确定出一个实数(在现在的情形是无理数)；把这数记成$-\alpha$.</p>
+<p>今证明它满足上述的条件.应用数$-\alpha$的确定法，看出和$\alpha +(-\alpha )$是位于形如$a-a’$与$a’-a$的数中间的唯一实数，此处$a$及$a’$是有理数，且$a &lt; \alpha &lt; a’$.但，显然</p>
+<p>$$a-a’ &lt; 0 &lt; a’-a,$$</p>
+<p>于是数$0$也位于方才所述的数之间.但具有这种性质的数是唯一的，故有</p>
+<p>$$\alpha +(-\alpha )=0.$$</p>
+<p>这就是需要证明的.</p>
+<p>最后，证明性质：</p>
+<p>Ⅱ$3°$ 由$\alpha &gt; \beta $推得$\alpha +\gamma &gt; \beta +\gamma$.</p>
+<p>若$\alpha &gt; \beta $，则在它们中间可以插入二有理数$r_1$及$r_2$：$\alpha &gt; r_1 &gt; r_2 &gt; \beta$.依$9$中的附注，必有二有理数$c$及$c’$存在，使</p>
+<p>$$c &lt; \gamma &lt; c’ 及 c’-c &lt; r_1 -r_2 .$$</p>
+<p>由此</p>
+<p>$$r_1 +c &gt; r_2 +c’ ,$$</p>
+<p>而依和的定义</p>
+<p>$$\alpha +\gamma &gt; r_1 +c,r_2 +c’ &gt; \beta +\gamma .$$</p>
+<p>比较这些不等式，我们就得出所需的结论.</p>
+<p>这样，就加法来说，实数域具有一切基本性质Ⅱ$1°\sim 5°$，有理数的这些性质在$3$内已早叙述过了.由此可知，从这些性质得出的一切形式逻辑上的推论对于实数也都成立.特别对于实数我们能逐字重述$3$内所叙述的紧跟在第二组性质后面的一切性质，即能证明数$\alpha $及$\beta$的差$\alpha -\beta$的存在及其单值性，并能建立数$\alpha$的绝对值(我们保持记法$\mid \alpha \mid $)的概念，等等.</p>
+<h2 id="实数的积的定义">实数的积的定义</h2>
+<p>现在转向实数的乘法，先只讲正数的乘法.设已给二正数$\alpha$及$\beta$.我们在此也先考察满足不等式$(1)$的一切可能的有理数，这些数也假定是正数.</p>
+<p>位于一切形如$ab$的积与一切形如$a’b’$的积之间的实数$\gamma$</p>
+<p>$$ab &lt; \gamma &lt; a’b’,\tag{3}$$</p>
+<p>称为$\alpha$及$\beta$的积，记成$\alpha \beta$.</p>
+<p>要证明这种数$\gamma$的存在，我们取一切可能的积$ab$所成的集，这集被任何形如$a’b’$的积上有界.若假定</p>
+<p>$$\gamma =\text{sup} \lbrace ab\rbrace ,$$</p>
+<p>则当然有$ab \leq \gamma $，但同时又有$\gamma \leq a’b’$.</p>
+<p>因为我们常可将数$a,b$增大，或是将$a’,b’$减小，使得$(3)$仍能满足(如在和的情形一样)，因此在$ab \leq \gamma $及$\gamma \leq a’b’$中实际上不能成立等式，故数$\gamma$满足积的定义.</p>
+<p>由下面的论断可推得积的唯一性.依在$9$[用无限小数来表示实数]内的附注，选取有理数$a,a’$，及$b,b’$，使</p>
+<p>$$a’-a &lt; e及 b’-b &lt; e,$$</p>
+<p>式中的$e$是任意小的正有理数.这时数$a$及$b$算作是正数，而数$a’$及$b’$各不超过某些预先固定的数$a_0’$及$b_0’$.则差</p>
+<p>$$a’b’-ab=a’(b’-b)+b(a’-a) &lt; (a_0’ +b_0’ )\cdot e,$$</p>
+<p>即也能为做任意小，[注意，若取$e &lt; \dfrac{e’}{a_0’ +b_0’ }$，则$(a_0’ +b_0’ )e$便可小于任意小的数$e’ &gt; 0$.]依引理$2$，这便足以证实仅有一数$\gamma$可以满足不等式$(3)$.</p>
+<p>若正数$\alpha$及$\beta$都是有理数，则它们通常的积$\gamma =\alpha \beta$显然满足不等式$(3)$，即与二实数积的一般定义并无矛盾.</p>
+<p>最后，为定义任意(不一定是正的)一对实数的积，我们先作如下约定.</p>
+<p>首先约定，不论$\alpha$是怎样的实数，常有</p>
+<p>$$\alpha \cdot 0=0\cdot \alpha =0.$$</p>
+<p>若二乘数都异于$0$，则根据通常的“符号规则”置：</p>
+<p>$\alpha \cdot \beta =\mid \alpha \mid \cdot \mid \beta \mid $，当$\alpha$与$\beta$同号时，</p>
+<p>$\alpha \cdot \beta =-(\mid \alpha \mid \cdot \mid \beta \mid ) $，当$\alpha$与$\beta$异号时.</p>
+<p>(我们已经知道正数$\mid \alpha \mid$及$\mid \beta \mid $的积指的是什么.)</p>
+<p>假若我们希望实数运算能具有有理数运算的一切基本性质，那么这些约定有如我们在$4$[有理数的乘法及除法]内见到过，对于我们在某些意义上是必需的.</p>
+<h2 id="乘法的性质">乘法的性质</h2>
+<p>如同在有理数的情形一样，对于任何实数仍保持以下性质：</p>
+<p>Ⅲ$1°$ $\alpha \cdot \beta =\beta \cdot \alpha $;</p>
+<p>Ⅲ$2°$ $(\alpha \cdot \beta )\gamma =\alpha \cdot (\beta \cdot \gamma )$;</p>
+<p>Ⅲ$3°$ $\alpha \cdot 1=\alpha $.</p>
+<p>证明第二式作为例子，先从三数$\alpha ,\beta ,\gamma$都是正数的情形开始.设$a,a’,b,b’,c,c’$是任意的有理数，满足不等式</p>
+<p>$$0 &lt; a &lt; \alpha &lt; a’,0 &lt; b &lt; \beta &lt; b’,0 &lt; c &lt; \gamma &lt; c’.$$</p>
+<p>则依二实数的积的定义，有</p>
+<p>$$ab &lt; \alpha \beta &lt; a’b’及bc &lt; \beta \gamma &lt;b’c’.$$</p>
+<p>再应用这一定义，又得</p>
+<p>$$(ab)c &lt; (\alpha \beta )\gamma &lt; (a’b’)c’ 及 a(bc) &lt; \alpha (\beta \gamma ) &lt; a’(b’c’).$$</p>
+<p>因所证的性质Ⅲ$2°$对于有理数是已知的，故实数$(\alpha \beta )\gamma $及$\alpha (\beta \gamma )$都位于同样的界限：</p>
+<p>$$(ab)c=a(bc) 与(a’b’)c’=a’(b’c’)之间.$$</p>
+<p>但很易证明，因乘数$a$与$a’$，$b$与$b’$，$c$与$c’$间都很接近，因而得出积的差$a’b’c’-abc$可为任意小(在这时，可以应用与$14$[实数的积的定义]内有关二乘数之积的相似的论证).由此，依引理$2$，可知数$(\alpha \beta )\gamma$与$\alpha (\beta \gamma)$相等.</p>
+<p>当$\alpha ,\beta ,\gamma$不全为正数时，只需注意到“符号规则”，便可立刻得出结果.又若数$\alpha ,\beta ,\gamma$中至少有一数等于$0$，则两个积都化为$0$.</p>
+<p>现在讲性质：</p>
+<p>Ⅲ$4°$ 对于任一异于零的实数$\alpha$，必有(倒)数$\dfrac{1}{\alpha }$存在，满足条件：</p>
+<p>$$\alpha \cdot \dfrac{1}{\alpha }=1.$$</p>
+<p>这里只要证无理数$\alpha$的情形便够了.先设$\alpha &gt; 0$.</p>
+<p>若$\alpha $由分划$A\mid A’$所确定，则我们可用下法构成对于数$\dfrac{1}{\alpha }$的分划.我们把一切负的有理数，零，以及一切形如$\dfrac{1}{a’}$的数归入下组$\widetilde{A}$，此处$a’$是$A’$组的任何数；把一切形如$\dfrac{1}{a}$的数放在上组$\widetilde{A}’$内，此处$a$是$A$组内的任何正数.容易说明，这样，实际上我们已得出一个分划，它确定出一正的实数(在现在的情形是无理数)；这数记成$\dfrac{1}{\alpha }$.</p>
+<p>让我们证明，它满足所需的条件.由上面所述倒数的构作法以及乘积的定义可知，数$\alpha \cdot \dfrac{1}{\alpha }$是唯一的实数，位于形如$\dfrac{a}{a’}$与$\dfrac{a’}{a}$的二数之间，此处$a$及$a’$是满足不等式$a &lt; \alpha &lt; a’$的正有理数.但数$1$也位于上述两类数之间：</p>
+<p>$$\dfrac{a}{a’} &lt; 1 &lt; \dfrac{a’}{a},$$</p>
+<p>故它是所求的积.</p>
+<p>若$\alpha &lt; 0$，则假定</p>
+<p>$$\dfrac{1}{\alpha }=-\dfrac{1}{\mid \alpha \mid};$$</p>
+<p>于是依“符号规则”</p>
+<p>$$\alpha \cdot \dfrac{1}{\alpha }=\mid \alpha \mid \cdot \dfrac{1}{\mid \alpha \mid}=1.$$</p>
+<p>当我们证明了实数域也具有关于乘法的一切基本性质Ⅲ$1°\sim 4°$以后，显然可知，这数域也保持着在$4$[有理数的乘法及除法]内所述的一切性质，即关于数$\alpha$及$\beta$的商$\dfrac{\alpha}{\beta}$(在$\beta \neq 0$时)的存在及唯一性等.</p>
+<p>分配性：</p>
+<p>Ⅲ$5°$ $(\alpha +\beta )\cdot \gamma =\alpha \cdot \gamma +\beta \cdot \gamma$</p>
+<p>对于任何实数亦成立.在正数的情形(如证明Ⅲ$2°$那样)这很易证明.所有其他的情形可以用等式两边均变号的方法，或由一边移项到另一边的方法化为这个特别情形.但是数$\alpha ,\beta ,\gamma ,(\alpha +\beta )$中之一等于零的情形并不在内；对于这种情形，等式的成立是非常明显的.</p>
+<p>最后，还有性质：</p>
+<p>Ⅲ$6°$ 由$\alpha &gt; \beta$及$\gamma &gt; 0$推得$\alpha \cdot \gamma &gt; \beta \cdot \gamma$.</p>
+<p>其核验并无困难.不等式$\alpha &gt; \beta$相当于$\alpha - \beta &gt; 0$；依“符号规则”有$(\alpha -\beta ) \cdot \gamma &gt; 0$.但乘法也有关于差的分配性，故知$\alpha \cdot \gamma -\beta \cdot \gamma &gt; 0$，而由此即得$\alpha \cdot \gamma &gt; \beta \cdot \gamma$.</p>
+<h2 id="结论">结论</h2>
+<p>最后，还要讲一讲<strong>阿基米德公理</strong>：</p>
+<p>Ⅳ$1°$ 对不论怎样的实数$\gamma$,必有大于$\gamma$的自然数$n$存在.</p>
+<p>这公理的核验是很容易的：因在确定数$\gamma$的分划$C\mid C’$的上组内必能找到大于它的有理数$c’$，而这公理对于有理数$c’$是成立的.</p>
+<p>现在可以说我们已经证明了下述事实：在实数域中，初等数学上关于四则运算及等式与不等式运算的规则，仍旧完全维持不变.</p>
+<h2 id="绝对值">绝对值</h2>
+<p>因以后的需要，特再附加一些关于绝对值的附注.</p>
+<p>首先证明不等式：$\mid \alpha \mid &lt; \beta $(此处当然有$\beta &gt; 0$)相当于二重不等式：$-\beta &lt; \alpha &lt; \beta $.</p>
+<p>实际上，由$\mid \alpha \mid &lt; \beta $推得$\alpha &lt; \beta $及$-\alpha &lt; \beta $(即$\alpha &gt; -\beta $)同时成立.反之，若已给定$\alpha &lt; \beta $及$\alpha &gt; -\beta $，则必同时有：$\alpha &lt; \beta $及$-\alpha &lt; \beta $；但在$\alpha $及$-\alpha$中有一为$\mid \alpha \mid $，故$\mid \alpha \mid &lt; \beta $.</p>
+<p>仿此，不等式：</p>
+<p>$$\mid \alpha \mid \leq \beta 与 -\beta \leq \alpha \leq \beta $$</p>
+<p>显然是相当的.</p>
+<p>再证明有用的不等式：</p>
+<p>$$\mid \alpha +\beta \mid \leq \mid \alpha \mid +\mid \beta \mid .$$</p>
+<p>逐项地相加两个显明的不等式：</p>
+<p>$$-\mid \alpha \mid \leq \alpha \leq \mid \alpha \mid 及 -\mid \beta \mid \leq \beta \mid \beta \mid ,$$</p>
+<p>得</p>
+<p>$$-(\mid \alpha \mid + \mid \beta \mid )\leq \alpha +\beta \leq \mid \alpha \mid +\mid \beta \mid ,$$</p>
+<p>由此，依据上述的附注，即得所求的不等式.</p>
+<p>用数学归纳法可以把它推广到任意个加数的情形：</p>
+<p>$$\mid \alpha +\beta +\cdots +\gamma \mid \leq \mid \alpha \mid +\mid \beta \mid + \cdots + \mid \gamma \mid .$$</p>
+<p>若在已证明的不等式内，把$\beta $换成$-\beta$，则得</p>
+<p>$$\mid \alpha -\beta \mid \leq \mid \alpha \mid +\mid \beta \mid .$$</p>
+<p>因$\alpha =(\alpha +\beta )-\beta$，故$\mid \alpha \mid \leq \mid \alpha +\beta \mid +\mid \beta \mid $，或</p>
+<p>$$\mid \alpha +\beta \mid \geq \mid \alpha \mid -\mid \beta \mid .$$</p>
+<p>同样</p>
+<p>$$\mid \alpha -\beta \mid \geq \mid \alpha \mid -\mid \beta \mid .$$</p>
+<p>因为同时</p>
+<p>$$\mid \beta \mid -\mid \alpha \mid \leq \mid \alpha -\beta \mid .$$</p>
+<p>所以显然</p>
+<p>$$\mid \mid \alpha \mid -\mid \beta \mid \mid \leq \mid \alpha -\beta \mid .$$</p>
+<p>所有这些不等式有极限论内都是很有用的.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/微积分/">微积分</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微积分/">微积分</a>
+  </div>
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng103/" data-title="《微积分学教程(第一卷)》 绪论 实数 3 实数的算术运算 | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/blog/2014/11/daishuxueyinlun116/" title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 6 等价关系. 商映射">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《代数学引论(第一卷)基础代数》 第1章 代数的起源 6 等价关系. 商映射</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/blog/2014/10/weijifenxuejiaocheng102/"  title="《微积分学教程(第一卷)》 绪论 实数 2 无理数的导入·实数域的序">
+ <strong>下一篇：</strong><br/> 
+ <span>《微积分学教程(第一卷)》 绪论 实数 2 无理数的导入·实数域的序
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+<section class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#实数的和的定义"><span class="toc-number">1.</span> <span class="toc-text">实数的和的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#加法的性质"><span class="toc-number">2.</span> <span class="toc-text">加法的性质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实数的积的定义"><span class="toc-number">3.</span> <span class="toc-text">实数的积的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#乘法的性质"><span class="toc-number">4.</span> <span class="toc-text">乘法的性质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结论"><span class="toc-number">5.</span> <span class="toc-text">结论</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#绝对值"><span class="toc-number">6.</span> <span class="toc-text">绝对值</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/基础代数/" title="基础代数">基础代数<sup>8</sup></a></li>
+		
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>5</sup></a></li>
+		
+			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>12</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/代数/" title="代数">代数<sup>20</sup></a></li>
+		
+			<li><a href="/tags/微积分/" title="微积分">微积分<sup>5</sup></a></li>
+		
+			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/代数/" style="font-size: 20.00px;">代数</a><a href="/tags/微积分/" style="font-size: 15.00px;">微积分</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            <a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+          </li>
+        
+          <li>
+            <a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+          </li>
+        
+          <li>
+            <a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+          </li>
+        
+          <li>
+            <a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+          </li>
+        
+          <li>
+            <a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+          </li>
+        
+          <li>
+            <a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+          </li>
+        
+          <li>
+            <a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+          </li>
+        
+          <li>
+            <a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+          </li>
+        
+          <li>
+            <a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+          </li>
+        
+          <li>
+            <a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+          </li>
+        
+          <li>
+            <a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+          </li>
+        
+          <li>
+            <a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+          </li>
+        
+          <li>
+            <a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+          </li>
+        
+          <li>
+            <a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+          </li>
+        
+          <li>
+            <a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+          </li>
+        
+          <li>
+            <a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+          </li>
+        
+          <li>
+            <a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+          </li>
+        
+          <li>
+            <a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+          </li>
+        
+          <li>
+            <a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+          </li>
+        
+          <li>
+            <a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+          </li>
+        
+          <li>
+            <a href="http://www.google.com.hk" target="_blank" title="谷歌Google">谷歌Google</a>
+          </li>
+        
+          <li>
+            <a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://jianhanglin.github.io/about" target="_blank" title="JianhangLin">JianhangLin</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-1', 'linjianhang.me');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

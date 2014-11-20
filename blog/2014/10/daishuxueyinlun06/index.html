@@ -1,0 +1,580 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《代数学引论》第零章 集合与整数 6 偏序集合 | JianhangLin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="JianhangLin">
+    
+    <meta name="description" itemprop="description" content="集合$S$上的一个关系，记作$\leq$，叫做一个偏序，如果$\leq$满足反身性、反对称性和传递性.">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="JianhangLin" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="JianhangLin" title="JianhangLin"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="JianhangLin">JianhangLin</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于自己</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:jianhanglin.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/blog/2014/10/daishuxueyinlun06/" title="《代数学引论》第零章 集合与整数 6 偏序集合" itemprop="url">《代数学引论》第零章 集合与整数 6 偏序集合</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
+		
+  <p class="article-time">
+    <time datetime="2014-10-21T07:34:53.000Z" itemprop="datePublished"> 发表于 10月 21 2014</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#偏序集合"><span class="toc-number">1.</span> <span class="toc-text">偏序集合</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="偏序集合">偏序集合</h2>
+<p>集合$S$上的一个关系，记作$\leq$，叫做一个<strong>偏序</strong>，如果$\leq$满足</p>
+<p>$1)$ 反身性 $a\leq a$对所有$a\in S$；</p>
+<p>$2)$ 反对称性 若$a\leq b$且$b\leq a$，则$a=b$；</p>
+<p>$3)$ 传递性 若$a\leq b$且$b\leq c$，则$a\leq c$.</p>
+<p>一个具有偏序的集合叫做<strong>偏序集合</strong>，如果集合$S$上一个偏序$\leq$对于任意$a,b\in S$恒有$a\leq b$或$b\leq a$，则$\leq $叫做一个<strong>全序</strong>.偏序集合的元素$a,b$叫做<strong>可比较的</strong>，如果$a\leq b$和$b\leq a$有一成立.如果一个偏序集合$S$的一个子集$A$的任一对元素都可比较的，则$A$叫做$S$的一个<strong>链</strong>.</p>
+<p><strong>例$1$</strong> 设$X$为一集合.$X$的幂集$P(X)$按$X$的包含关系构成一个偏序集合，$P(X)$为一个链当且仅当$X$为空集或只含一个元素.</p>
+<pre><code>所谓幂集（<span class="keyword">Power</span> <span class="keyword">Set</span>）， 就是原集合中所有的子集（包括全集和空集）构成的集族。
+</code></pre><p><strong>例$2$</strong> 自然数系$\bf N$按小于等于号$\leq $是一个全序集合.</p>
+<p><strong>例$3$</strong> 自然数系$\bf N$的整除关系$a\mid b$记成$a\leq b$，就是一个偏序.</p>
+<p>设$S$为一个偏序集合.元素$a\in S$叫做$S$的一个<strong>极小元素</strong>，如果$S$没有元素$x$使得$x &lt; a$(即$x\leq a,x\neq a$)，或者说从$x\leq a$推出$x=a$.依此，元素$a\in S$叫做$S$的一个<strong>极大元素</strong>，如果不存在$x\in S$使得$a &lt; x$，或者说如果从$a\leq x$可推出$a=x$.若$S$有极大(小)元素$a$，并不要求$a$与$S$的所有元素可以比较.</p>
+<p><strong>例$4$</strong> 令$N_1 =N-\lbrace 0,1 \rbrace$，$N_1$按整除关系是一偏序集合，此时每个素数是$N_1$的极小元素，$N_1$没有极大元素.</p>
+<p>设$A$为偏序集合$S$的一个子集，元素$a\in S$叫做$A$的一个<strong>下界</strong>，如果对所有的$x\in A$都有$a\leq x$.类似，元素$a\in S$叫做$A$的一个<strong>上界</strong>，如果对所有$x\in A$都有$x\leq a$.$A$可以没有下界或有多个下界.若$A$有下界，也不要求它属于$A$，对上界也如此.在例$2$中令$A=\lbrace 2k\mid k\in \bf N\rbrace$，$A$没有上界但有下界$0$且$0\in A$.在例$3$中令$B=\lbrace 2k+1\mid k\in \bf N\rbrace$，$B$有一上界$0$，但$0\notin B$.</p>
+<p>设$S$为一个偏序集合，$A$为一个子集，如果$A$有一个下界$a$而且$a\in S$，则$a$叫做$A$的一个<strong>最小元素</strong>.类似地，如果$A$有一个上界$a$而且$a\in A$，则$a$叫做$A$的一个<strong>最大元素</strong>.$A$可以没有最小(大)元素，如果$A$有最小(大)元素，则它是唯一的.</p>
+<p>在例$1$中空集是$P(X)$的最小元素，$X$是$P(X)$的最大元素.在例$2$中$0$是$\bf N$的最小元素，$\bf N$没有最大元素.在例$3$中，$1$是$\bf N$的最小元素.$0$是$\bf N$的最大元素.   </p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/抽象代数/">抽象代数</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数/">代数</a>
+  </div>
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun06/" data-title="《代数学引论》第零章 集合与整数 6 偏序集合 | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/blog/2014/10/daishuxueyinlun07/" title="《代数学引论》第零章 集合与整数 7 选择公理、佐恩引理和良序定理">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《代数学引论》第零章 集合与整数 7 选择公理、佐恩引理和良序定理</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/blog/2014/10/daishuxueyinlun05/"  title="《代数学引论》第零章 集合与整数 5 欧拉函数和欧拉-费马定理">
+ <strong>下一篇：</strong><br/> 
+ <span>《代数学引论》第零章 集合与整数 5 欧拉函数和欧拉-费马定理
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+<section class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#偏序集合"><span class="toc-number">1.</span> <span class="toc-text">偏序集合</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/基础代数/" title="基础代数">基础代数<sup>8</sup></a></li>
+		
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>5</sup></a></li>
+		
+			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>12</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/代数/" title="代数">代数<sup>20</sup></a></li>
+		
+			<li><a href="/tags/微积分/" title="微积分">微积分<sup>5</sup></a></li>
+		
+			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/代数/" style="font-size: 20.00px;">代数</a><a href="/tags/微积分/" style="font-size: 15.00px;">微积分</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            <a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+          </li>
+        
+          <li>
+            <a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+          </li>
+        
+          <li>
+            <a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+          </li>
+        
+          <li>
+            <a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+          </li>
+        
+          <li>
+            <a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+          </li>
+        
+          <li>
+            <a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+          </li>
+        
+          <li>
+            <a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+          </li>
+        
+          <li>
+            <a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+          </li>
+        
+          <li>
+            <a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+          </li>
+        
+          <li>
+            <a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+          </li>
+        
+          <li>
+            <a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+          </li>
+        
+          <li>
+            <a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+          </li>
+        
+          <li>
+            <a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+          </li>
+        
+          <li>
+            <a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+          </li>
+        
+          <li>
+            <a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+          </li>
+        
+          <li>
+            <a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+          </li>
+        
+          <li>
+            <a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+          </li>
+        
+          <li>
+            <a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+          </li>
+        
+          <li>
+            <a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+          </li>
+        
+          <li>
+            <a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+          </li>
+        
+          <li>
+            <a href="http://www.google.com.hk" target="_blank" title="谷歌Google">谷歌Google</a>
+          </li>
+        
+          <li>
+            <a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://jianhanglin.github.io/about" target="_blank" title="JianhangLin">JianhangLin</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-1', 'linjianhang.me');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

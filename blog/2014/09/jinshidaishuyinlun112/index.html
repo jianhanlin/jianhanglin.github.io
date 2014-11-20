@@ -1,0 +1,696 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《近世代数引论》第1章 群 1.2 什么是群 | JianhangLin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="JianhangLin">
+    
+    <meta name="description" itemprop="description" content="集合$S$和$S$上满足结合律的二元运算$\cdot$所形成的代数结构叫做半群.">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="JianhangLin" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="JianhangLin" title="JianhangLin"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="JianhangLin">JianhangLin</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于自己</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:jianhanglin.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/blog/2014/09/jinshidaishuyinlun112/" title="《近世代数引论》第1章 群 1.2 什么是群" itemprop="url">《近世代数引论》第1章 群 1.2 什么是群</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
+		
+  <p class="article-time">
+    <time datetime="2014-10-18T08:07:43.000Z" itemprop="datePublished"> 发表于 10月 18 2014</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是群"><span class="toc-number">1.</span> <span class="toc-text">什么是群</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">2.</span> <span class="toc-text">习题</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="什么是群">什么是群</h2>
+<p><strong>定义1</strong>&nbsp;&nbsp;集合$S$和$S$上满足结合律的二元运算$\cdot$所形成的代数结构叫做<strong>半群</strong>.这个半群记成$(S,\cdot )$或者简记成$S$，运算$x\cdot y$也常常简写成$xy$.</p>
+<p>如果运算又满足交换律，则$(S,\cdot )$叫做<strong>交换半群</strong>.像通常那样令$x^2=x\cdot x$，$x^{n+1}=x^n\cdot x(=x\cdot x^n$,$n\geq 1)$.</p>
+<p><strong>定义2</strong>&nbsp;&nbsp;设$S$是半群，元素$e\in S$叫做半群$S$的幺元素，是指对每个$x\in S$,$xe=ex=x$.</p>
+<p>如果半群$S$有幺元素$e$，则它是唯一的，因若$e’$也是幺元素，则$e’=e’e=e$.我们将半群$S$中这个唯一的幺元素（如果存在的话）通常记作$1_{S}$或者$1$，具有幺元素的半群叫<strong>含幺半群</strong>.</p>
+<p><strong>定义3</strong>&nbsp;&nbsp;设$S$是含幺半群.元素$y\in S$叫做元素$x\in S$的逆元素，是指$xy=yx=1$.</p>
+<p>如果$x$有逆元素，则它一定唯一.因为若$y’$也是$x$的逆元素，则$xy’=y’x=1$.于是</p>
+<p>$$y=y\cdot 1=y(xy’)=(yx)y’=1\cdot y’=y’.$$</p>
+<p>所以，若$x$具有逆元素，我们把这个唯一的逆元素记作$x^{-1}$，则$xx^{-1}=x^{-1}x=1$.</p>
+<p><strong>定义4</strong>&nbsp;&nbsp;半群$G$如果有幺元素，并且每个元素均可逆，则$G$叫做<strong>群</strong>.此外，若运算又满足交换律，则$G$叫做<strong>交换群</strong>或叫<strong>阿贝尔（Abel）群</strong>. </p>
+<p><strong>例1</strong>&nbsp;&nbsp;设$M$为非负整数全体，$(M,+)$是含幺交换半群，幺元素是数$0$，但它不是群，因为只有$0$对于加法在$M$中才可逆.</p>
+<p>$\bf Z$，$\bf Q$，$\bf R$，$\bf C$对于加法均是阿贝尔群，分别叫做整数加法群，有理数加法群等等.</p>
+<p>$(N,\cdot)$是含幺交换（乘法）半群，幺元素为$1$.它不是群.令$Q^{\ast}$为非零有理数全体，则$(Q^{\ast},\cdot)$是交换群，幺元素为$1$，非零有理数$\alpha$的乘法逆为$\alpha ^{-1}$.这叫非零有理数乘法群，同样有$(R^{\ast},\cdot)$和$(C^{\ast},\cdot)$，这些都是阿贝尔群.</p>
+<p><strong>例2</strong>&nbsp;&nbsp;以<span>$M_{m,n}(C)$</span>表示全体$m$行$n$列复矩阵组成的集合，它对矩阵加法形成阿贝尔群.幺元素是全零矩阵，而矩阵<span>$A=(\alpha _{ij})$</span>的加法逆是<span>$-A=(-\alpha _{ij})$</span>.以<span>$M_n(C)$</span>表示$n$阶复方阵全体，它对乘法形成幺半群，幺元素是单位方阵<span>$I_n$</span>.由线性代数可知，$n$阶复方阵$A$有乘法逆的充要条件是$\det A\neq 0$.从而$M_{n}(C)$不是群，并且当$n\geq 2$时，易知半群<span>$M_n(C)$</span>不是交换的.类似有加法交换群<span>$M_{m,n}(R)$</span>，含幺半群<span>$M_{n}(Q)$</span>等等.</p>
+<p><strong>例3</strong>&nbsp;&nbsp;设$A$是非空集合，以$\Sigma (A)$表示从$A$到$A$全体映射组成的集合.则$\Sigma (A)$对于映射合成运算形成含幺半群.幺元素为$A$上恒等映射$1_{A}$.由$1.1$的引理2可知,$\Sigma (A)$中映射$f$可逆的充要条件是$f$为一一对应.所以当$\mid A\mid &gt;1$时，$\Sigma (A)$不是群，并且半群$\Sigma (A)$不是交换的.</p>
+<p><strong>例4</strong>&nbsp;&nbsp;欧氏平面${\bf R}^2$中保持欧氏距离不变的运动叫做<strong>欧氏运动</strong>.由于欧氏运动必为${\bf R}^2$到自身之上的一一对应，并且它的逆仍是欧氏运动，而两欧氏运动的合成仍是欧氏运动，从而全体欧氏运动形成群，叫做平面上的<strong>欧氏运动群</strong>，这也是非阿贝尔群.</p>
+<p><strong>例5</strong>&nbsp;&nbsp;设$n$为正整数，我们在$\bf Z$上定义如下关系：对于整数$a$和$b$，</p>
+<p>$$a\sim b\Leftrightarrow n\mid a-b(即a\equiv b\pmod{n}).$$</p>
+<p>易知这是等价关系，于是整数集合$\bf Z$分拆成$n$个等价类：$\overline{0}$，$\overline{1}$，$\cdots$，$\overline{n-1}$，其中$\overline{i}$，表示$i$所在的等价类，即$\overline{i}=\lbrace m\in {\bf Z}\mid m\equiv i\pmod{n}\rbrace $.而$\lbrace 0,1,2,\cdots ,n-1\rbrace $是$\bf Z$对于上述模$m$同余关系的一个完全代表系.</p>
+<p>以<span>$\bf Z_n$</span>表示上述$n$个等价类组成的集合.在${\bf Z}_{n}$上定义加法：</p>
+<p>$$\overline{a}+\overline{b}=\overline{a+b}.$$</p>
+<p>由同余式基本性质可知这个加法是可以定义的，即与等价类（或叫<strong>模$n$同余类</strong>）中代表元的取法无关，并且${\bf Z}_{n}$对于这个运算形成交换群，幺元素是$\overline{0}$，这叫<strong>整数模$n$加法群</strong></p>
+<p>如果${\bf Z}_{n}$中定义乘法</p>
+<p>$$\overline{a}\overline{b}=\overline{ab},$$</p>
+<p>则${\bf Z}_{n}$对此乘法是含幺交换半群，幺元素为$\overline{1}$.由于等式$\overline{a}\overline{b}=\overline{1}$相当于同余式$ab\equiv 1\pmod{n}$.从初等数论知道，对于给定的$a$，存在$b$满足$ab\equiv 1\pmod{n}$的充要条件是$(a,n)=1$.从而$\overline{a}$对于上述乘法可逆的充要条件是$(a,n)=1$.</p>
+<p>设$(M,\cdot)$是含幺半群，我们以$U(M)$或者$M^{\ast}$表示半群$M$中可逆元素全体.</p>
+<p><strong>定理</strong>&nbsp;&nbsp;若$(M,\cdot)$是含幺半群，则$(U(M),\cdot)$是群.</p>
+<p><strong>证明</strong>&nbsp;&nbsp;由$1_M^{-1}=1_M$可知$1=1_M\in U(M)$.若$a,b\in U(M)$，则$a,b$均可逆，易知$b^{-1}a^{-1}$是$ab$的逆元素，从而$ab\in U(M)$.因此$\cdot$是$U(M)$上的二元运算.这运算在$U(M)$中当然也满足结合律，于是$(U(M),\cdot)$是含幺半群.由于$U(M)$中每元素$a$均可逆，从而$a^{-1}\in M$也可逆(因为$a$是$a^{-1}$的逆)，因此$a^{-1}\in U(M)$.从而$U(M)$中每个元素在$U(M)$中均可逆.根据定义，$U(M)$为群.证毕.</p>
+<p>于是，由前面的例子便知：</p>
+<p>$(a)$全体$n$阶可逆复方阵形成乘法群，叫做复数上的$n$次<strong>一般线性群</strong>，表示成${\bf GL}(n,{\bf C})$.同样有群${\bf GL}(n,{\bf R})$，${\bf GL}(n,{\bf Q})$等.</p>
+<p>$(b)$设$A$为非空集合，$A$到自身之上的所有一一对应对于合成运算形成群，叫做集合$A$上的<strong>对称群</strong>或<strong>全置换群</strong>，表示成$S(A)$，其中元素（即$A$到$A$的一一对应）叫做集合$A$上的<strong>置换</strong>.</p>
+<p>$(c)$设$n$为正整数，$\overline{a}$为整数$a$的模$n$同余类.则集合</p>
+<p>$${\bf Z}_{n}^{\ast}=\lbrace\overline{a}\mid (a,n)=1\rbrace $$</p>
+<p>对于乘法形成阿贝尔群.这个群有$\varphi (n)$个元素，其中$\varphi (n)$是$1$到$n$中与$n$互素的整数个数（$\varphi (n)$叫<strong>欧拉函数</strong>）.</p>
+<p>设$G$是群.若集合$G$有限，称$G$为有限群，否则叫无限群.若有限群$G$有$n$个元素，则$G$叫<strong>$n$阶群</strong>或<strong>$n$元群</strong>，$n=\mid G\mid$叫有限群$G$的<strong>阶</strong>.</p>
+<p>为了考查各种群之间的联系，我们要研究群之间的映射.但是群不仅是集合还有运算，所以我们需要映射与群运算保持协调.确切地说：</p>
+<p><strong>定义5</strong>&nbsp;&nbsp;设$(G,\cdot)$和$(G’,\circ)$是两个群.映射$f:G\to G’$叫做群$G$到$G’$的<strong>同态</strong>，是指对$a,b\in G$，</p>
+<p>$$f(a\cdot b)=f(a)\circ f(b)，(简记成f(ab)=f(a)f(b)).$$</p>
+<p>此外，若$f$又为单射或满射，则$f$分别叫<strong>单同态</strong>或<strong>满同态</strong>.如果同态$f$是一一对应，则称$f$是群$G$到$G’$的<strong>同构</strong>.这时，称群$G$和$G’$是<strong>同构</strong>的，表示成$G\cong G’$或者$f:G\overset{\sim}{\rightarrow}G’$.</p>
+<p>彼此同构的群具有完全相同的群结构.在群论中，同构的群认为本质上是同一个群，我们更主要的是研究本质不同的群之间的联系，所以，同态是群论中更重要的研究手段.</p>
+<p><strong>例6</strong>&nbsp;&nbsp;考虑映射</p>
+<p>$$\det :{\bf GL}(n,{\bf C})\rightarrow {\bf C^{\ast}},{\bf A}\mapsto \overline{a}\det {\bf A}.$$</p>
+<p>即把每个$n$阶可逆复方阵${\bf A}$映成它的行列式$\det A$（这是非零复数）.由于$\det ({\bf AB})=(\det {\bf A})(\det {B})$，可知$\det$是乘法群同态，并且易知这是满同态.当$n\geq 2$时，这不是单同态.</p>
+<p><strong>例7</strong>&nbsp;&nbsp;设$n$为正整数.$C_n=\lbrace e^{\frac{2\pi ia}{n}}\mid 0\leq a\leq n-1\rbrace $.则$C_n$中$n$个复数形成乘法群（叫<strong>$n$次单位根群</strong>）.作映射</p>
+<p>$$f:C_n\to ({\bf Z},+),e^{\frac{2\pi ia}{n}}\mapsto \overline{a}.$$</p>
+<p>则</p>
+<p>$$f(e^{\frac{2\pi ia}{n}}\cdot e^{\frac{2\pi ib}{n}})=f(e^{\frac{2\pi i(a+b)}{n}})=\overline{a+b}=\overline{a}+\overline{b}=f(e^{\frac{2\pi ia}{n}})\cdot f(e^{\frac{2\pi ib}{n}}).$$</p>
+<p>所以$f$是群同态，显然$f$是一一对应，从而$f$为群同构.</p>
+<p>如果$n\geq 3$.考虑以点$O$为中心的正$n$边形.设<span>$G_n$</span>是以点$O$为中心将此正$n$边形变成自身的旋转群.如果用$\sigma$表示逆时针旋转$\dfrac{360^{\circ}}{n}$，则<span>$G_n=\lbrace 1,\sigma ,\sigma ^2,\cdots ,\sigma ^{n-1}\rbrace$</span>(注意$\sigma ^n=1=\sigma ^0)$.不难看出，群<span>$G_n$</span>与前面的群$C<em>n,{\bf Z}</em>{n}$均同构.尽管它们分别来自几何、代数或者数论，但是它们本质上是同一个群，即有同样的群结构.</p>
+<p>群$G$到自身的同态(同构)叫群$G$的自同态(自同构).以$Aut (G)$表示群$G$的自同构全体，请读者验证它对于合成运算为群，其幺元素为$G$上的恒等自同构(即恒等映射).对于群$G$决定出它的自同构群$Aut (G)$(即确定$G$的全部自同构并刻画出$Aut (G)$的群结构)，是群论的一个基本问题.</p>
+<p><strong>例8</strong>&nbsp;&nbsp;考虑整数加法群$({\bf Z},+)$.设$f:{\bf Z}\to {\bf Z}$是${\bf Z}$的自同态.则必然有$f(0)=0$，$f(-n)=-f(n)$.从而若$f(1)=t\in {\bf Z}$，则$f(2)=f(1+1)=f(1)+f(1)=t+t=2t$.用数学归纳法即知对每个正整数$n,f(n)=nt$，从而$f(-n)=-nt$.不难看出如此定义的映射是加法群${\bf Z}$的自同态.将此自同态记成<span>$f_t$</span>.不同的$t$对应不同的自同态.因此${\bf Z}$的自同态(含幺半群)为$\lbrace f_{t}\mid t\in {\bf Z}\rbrace $.</p>
+<p>自同态<span>$f_{t}$</span>的像为<span>$\lbrace tn\mid n\in {\bf Z}\rbrace$</span>.从而<span>$f_{t}$</span>为自同构<span>$\Leftrightarrow \lbrace tn \mid n\in {\bf Z}={\bf Z}\rbrace \Leftrightarrow t=\pm 1$</span>.因此<span>$Aut ({\bf Z})=\lbrace f_{1},f_{-1}\rbrace$</span>(二元群).其中幺元素<span>$f_1$</span>为恒等自同构，而<span>$f_{-1}$</span>为自同构$n\mapsto -n$.$Aut (Z)$中群运算是<span>$f_{-1}\cdot f_{-1}=f_{1}$</span>.</p>
+<h2 id="习题">习题</h2>
+<p>$1$.令$N$是所有$n\times n$上三角非奇异复方阵的集合，$P$是主对角线上的元素都是$1$的上三角方阵的集合，运算定义为矩阵的乘法.试证$N$和$P$都是群.</p>
+<p>证：方阵的乘法有结合律；$n$阶单位阵是$N$的单位元；两个奇异复阵的积仍是$n$阶上三角非奇异复阵；一个$n$阶上三角非奇异复阵的逆仍是$n$阶上三角非奇异复阵.故依群的定义知$N$是群.</p>
+<p>同理$P$是群.</p>
+<p>$2$.令$G$是实数对$(a,b),a\neq 0$的集合.在$G$上定义</p>
+<p>$$(a,b)(c,d)=(ac,ad+b).$$</p>
+<p>试证$G$是群.</p>
+<p>证：易证上述定义的乘法有结合律，$(1,0)$是其单位元，任意元$(a,b)\in G$有逆元$(\dfrac{1}{a},-\dfrac{b}{a})$.故由群的定义知$G$对于上述乘法成为群.</p>
+<p>$3$.令$\Omega$是任意一个集合，$G$是一个群，$G^\Omega$是$\Omega$到$G$的所有映射的集合.对任意两个映射$f,g\in G^\Omega$，定义乘法$fg$是这样的映射:对任意$\alpha \in \Omega$,$fg(\alpha)=f(\alpha)g(\alpha)$.试证$G^\Omega$是群.</p>
+<p>证：易知上述乘法有结合律，$1\in G^\Omega$是其单位元，其中<span>$1(\alpha)=1_{G},\forall \alpha \in \Omega$</span>(<span>$1_{G}$</span>表示群$G$的单位元)；任一元$f\in G^\Omega$有逆元$f^{-1}$，其中$f^{-1}(\alpha)=(f(\alpha))^{-1}$，$\forall \alpha \in \Omega$.故$G^\Omega$成为群.这个群为$Abel$群仅当$G$是$Abel$群.</p>
+<p>$4$.令$G$是所有秩不大于$r$的$n\times n$复方阵的集合，试证在矩阵的乘法下$G$成半群.</p>
+<p>证：注意到两个秩不大于$r$的$n$阶矩阵的积仍然是一个秩不大于$r$的$n$阶矩阵，并且方阵的乘法满足结合律.由定义即知$G$是半群.</p>
+<p>$5$.举出一个半群的例子，它不是含幺半群；再举出一个含幺半群的例子，它不是群.</p>
+<p>解：$4$中的$G$是一个半群，当$r&lt;n$时，它不是一个含幺半群；当$r=n$时，它是一个含幺半群，但不是群.</p>
+<p>又如，整数集$\bf Z$对于乘法成为一个含幺半群，但不是群.</p>
+<p>$6$.设$G$是一个半群.如果</p>
+<p>$(1)$&nbsp;&nbsp;$G$中含有左幺元$e$，即对任意$a\in G,ea=a$;</p>
+<p>$(2)$&nbsp;&nbsp;$G$的每个元$a$有左逆$a^{-1}$，使得$a^{-1}\cdot a=e$.</p>
+<p>试证$G$是群.</p>
+<p>证：用$(a^{-1})^{-1}$表示$a^{-1}$的左逆元，则</p>
+<p>$a\cdot a^{-1}=e(a\cdot a^{-1})=(a^{-1})^{-1}a^{-1}aa^{-1}=(a^{-1})^{-1}ea^{-1}=(a^{-1})^{-1}a^{-1}=e.$</p>
+<p>这表明$a$的左逆元$a^{-1}$也满足$a\cdot a^{-1}=e$.而$ae=a(a^{-1}a)=ea=a$，这表明$e$是$G$的单位元，$a^{-1}$是$a$的逆元，故$G$是群.</p>
+<p>$7$.设$G$是半群.如果对任意$a,b\in G$，方程$xa=b$和方程$ay=b$在$G$内有解，则$G$是群.</p>
+<p>证：首先$G$非空，故有$a\in G$.则$xa=a$有解$e$.对于任一$b\in G$，有$y\in G$使$ay=b$.于是</p>
+<p>$$eb=eay=ay=b.$$</p>
+<p>这表明$e$是$G$的左单位元.而$xb=e$有解则意味着$b$有左逆元.由$6$的结论可知$G$是群.</p>
+<p>$8$.设$G$是一个有限半群，如果在$G$内消去律成立，即由$ax=ay$或$xa=ya$可推出$x=y$，则$G$是群.</p>
+<p>证：设<span>$G=\lbrace a_{1},\cdots ,a_{n}\rbrace$</span>，由消去律知</p>
+<span>$$\lbrace a_{1}a_{i},\cdots ,a_{n}a_{i}\rbrace =G=\lbrace a_{i}a_{1},\cdots ,a_{i}a_{n}\rbrace ,\forall a_{i}\in G.$$</span>
+
+<p>故存在$e\in G$，使得$a_i=ea_i$.</p>
+<p>于是对于任一<span>$a_{j}\in G$</span>，有<span>$a_{k}\in G$</span>使得<span>$a_{j}=a_{i}a_{k}$</span>.从而</p>
+<span>$$ea_{j}=ea_{i}a_{k}=a_{i}a_{k}=a_{j}.$$</span>
+
+<p>这表明$e$是左单位元，又因为<span>$e\in G=Ga_{j}$</span>，故$a_j$有左逆元.由此即知$G$是群.</p>
+<p>$9$.设$G$是含幺半群，$a,b\in G$.</p>
+<p>$(1)$&nbsp;&nbsp;如果$a$有逆元素$a^{-1}$，则$a^{-1}$也有逆元素且$(a^{-1})^{-1}=a$;</p>
+<p>$(2)$&nbsp;&nbsp;如果$a$和$b$都具有逆元素，则$ab$也有逆元素，且</p>
+<p>$$(ab)^{-1}=b^{-1}a^{-1}.$$</p>
+<p>证：由定义直接验证.</p>
+<p>$10$.$b$是含幺半群$G$中元素$a$的逆元素当且仅当成立</p>
+<p>$$aba=a和ab^2a=1.$$</p>
+<p>证：设$b$是$a$的逆元，显然有$aba=a$和$ab^2a=1$.反之，若$aba=a,ab^2a=1$，则</p>
+<p>$$ab=ab(ab^2a)=ab^2a=1,ba=(ab^2a)ba=ab^2a=1.$$</p>
+<p>即$b$是$a$的逆元.</p>
+<p>$11$.令$G$是$n$阶有限群，<span>$a_{1},a_{2},\cdots ,a_{n}$</span>是群$G$的任意$n$个元素，不一定两两不同.试证：存在整数$p$和$q$，$1\leq p\leq q\leq n$，使得</p>
+<span>$$a_{p}a_{p+1}\cdots a_{q}=1.$$</span>
+
+<p>证：令<span>$S=\lbrace a_1,a_1a_2,\cdots ,a_1a_2\cdots a_n\rbrace$</span>.若$1\in S$，则结论已得证.若$1 \notin S$，因$\mid G\mid=n$，故$S$中至少有两个元是相等的.设<span>$a_{1}\cdots a_{i}=a_{1}\cdots a_{i}a_{i+1}\cdots a_{j}$</span>，则<span>$a_{i+1}\cdots a_{j}=1$</span>.</p>
+<p>$12$.在偶数阶群$G$中，方程$x^2=1$总有偶数个解.</p>
+<p>证：注意到若$g^2\neq 1$，则$(g^{-1})^2\neq 1$且$g\neq g^{-1}$.因此$G$中满足$x^2\neq 1$的元$x$是成对出现的.从而$G$中满足$x^2\neq 1$的元$x$有偶数个.因此在偶数阶群$G$中，方程$x^2=1$总有偶数个解.</p>
+<p>$13$.令$G$是$n$阶有限群，$S$是$G$的一个子集，$\mid S\mid &gt;\dfrac{n}{2}$.试证：对任意$g\in G$，存在$a,b\in S$使得$g=ab$.</p>
+<p>证：由消去律知，对任一$g\in G,gS^{-1}$含有$\mid S\mid$个元，这里$S^{-1}$是$S$中元的所有逆元组成的集合.因为$\mid S\mid &gt;\dfrac{\mid G\mid}{2}$，故$gS^{-1}\cap S\neq \varnothing$.从而存在$a,b\in S$，使得$gb^{-1}=a$，即$g=ab$.</p>
+<p>$14$.设$f:G\to H$是群的同态.试证：</p>
+<span>$$f(1_{G})=1_{H}$$</span>
+
+<p>且对任意</p>
+<p>$$x\in G,f(x^{-1})=f(x)^{-1}.$$</p>
+<p>证：<span>$f(1_{G})f(1_{G})=f(1_{G}\cdot 1_{G})=f(1_{G})=f(1_{G})1_{H}$</span>，故由消去律知<span>$f(1_{G})=1_{H}$</span>.因为<span>$f(x^{-1})f(x)=f(x^{-1}x)=f(1_{G})=1_{H}$</span>，故$f(x^{-1})=f(x)^{-1}$.</p>
+<p>$15$.对任意$a\in G,a \mapsto a^{-1}$是群$G$的自同构当且仅当$G$是阿贝尔群.</p>
+<p>证：将每一元变成其逆元是自同构$\Leftrightarrow (ab)^{-1}=a^{-1}b^{-1}$，$\forall a,b\in G\Leftrightarrow$ $ab=(a^{-1}b^{-1})^{-1}=ba$，$\forall a,b \in G\Leftrightarrow G$是$Abel$群.</p>
+<p>$16$.求有理数加群$Q$的自同构群$Aut (Q)$.</p>
+<p>解：一方面，对任一非零有理数$a$，将$x$变成$ax$是有理加法群$Q$的一个自同构.记这个自同构为$f_{a}$.另一方面，设$f$是有理数加群$Q$的任一自同构.令$f(1)=a$，则$a$是非零有理数.因为对任一正整数$n$和$m$有</p>
+<p>$$f(n)=f(1+\cdots +1)=f(1)+\cdots +f(1)=nf(1)=na,$$</p>
+<p>$$f(n)=f(\dfrac{n}{m}+\cdots +\dfrac{n}{m})=f(\dfrac{n}{m})+\cdots +f(\dfrac{n}{m})=mf(\dfrac{n}{m}).$$</p>
+<p>故得到</p>
+<p>$$f(\dfrac{n}{m})=\dfrac{1}{m}f(n)=\dfrac{n}{m}a.$$</p>
+<p>由此推知$f(x)=ax,\forall x\in Q$，即$f=f_{a}$.于是</p>
+<p>$$Aut (Q,+)=\lbrace f_{a}\mid a\in Q,a\neq 0\rbrace .$$</p>
+<p>因为<span>$f_{a}f_{b}=f_{ab}$</span>，故有群同构$Aut (Q,+)\cong (Q^{\ast},\cdot)$，其中$(Q^{\ast},\cdot)$是非零有理数的乘法群.</p>
+<p>$17$.证明有理数加群$Q$和非零有理数乘法群$Q^{\ast}$不同构.</p>
+<p>证：若$(Q,+)\cong (Q^{\ast},\cdot)$，则有群同构$f$和$a\in Q$使得$f(a)=2$，从而$2=f(a)=f(\dfrac{a}{2} +\dfrac{a}{2})=f(\dfrac{a}{2})^2$，即$\sqrt{2}$是有理数，矛盾.</p>
+<p>$18$.证明：</p>
+<p>$(1)$&nbsp;&nbsp;有理数加群$Q$和正有理数乘法群$Q^{+}$不同构;</p>
+<p>$(2)$&nbsp;&nbsp;实数加群$R$同构于正实数乘法群$R^{+}$.</p>
+<p>证：$(1)17$的证明也适用于本题.</p>
+<p>$(2)$将每一实数$x$变到$e^x$就给出了实数加法群$R$到正实数乘法群$R^{+}$的同构映射.</p>
+<p>$19$.群$G$的自同构$\alpha$称为没有不动点的自同构，是指对$G$的任意元素$g\neq 1$，$\alpha (g)\neq g$.如果有限群$G$具有一个没有不动点的自同构$\alpha$且$\alpha ^2=1$，则$G$一定是奇数阶阿贝尔群.</p>
+<p>证：令$H=\lbrace g^{-1}\alpha (g)\mid g\in G\rbrace $，则$H=G$.(事实上，若$g\neq h$，则$g^{-1}\alpha (g)\neq h^{-1}\alpha (h)$：否则$hg^{-1}$是$\alpha$的不动点，从而$g=h$.矛盾！)于是，对任一$a\in G,a=g^{-1}\alpha (g)$.因$\alpha ^2=1$，故$a^{-1}=\alpha (g^{-1})g=\alpha (a)$.从而$\alpha (ab)=(ab)^{-1}=b^{-1}a^{-1}=\alpha (b)\alpha (a)=\alpha (ba)$.故$ba=ab,\forall a,b \in G$.即$G$是$Abel$群.因$a^{-1}\neq a,\forall 1\neq a\in G$，故$G$的阶为奇数.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/抽象代数/">抽象代数</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数/">代数</a>
+  </div>
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://jianhanglin.github.io/blog/2014/09/jinshidaishuyinlun112/" data-title="《近世代数引论》第1章 群 1.2 什么是群 | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/blog/2014/09/Algebra11/" title="《Algebra》Chapter I Groups 1. Monoids">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《Algebra》Chapter I Groups 1. Monoids</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/blog/2014/09/jinshidaishuyinlun111/"  title="《近世代数引论》第1章 群 1.1 集合论预备知识">
+ <strong>下一篇：</strong><br/> 
+ <span>《近世代数引论》第1章 群 1.1 集合论预备知识
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+<section class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是群"><span class="toc-number">1.</span> <span class="toc-text">什么是群</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">2.</span> <span class="toc-text">习题</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/基础代数/" title="基础代数">基础代数<sup>8</sup></a></li>
+		
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>5</sup></a></li>
+		
+			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>12</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/代数/" title="代数">代数<sup>20</sup></a></li>
+		
+			<li><a href="/tags/微积分/" title="微积分">微积分<sup>5</sup></a></li>
+		
+			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/代数/" style="font-size: 20.00px;">代数</a><a href="/tags/微积分/" style="font-size: 15.00px;">微积分</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            <a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+          </li>
+        
+          <li>
+            <a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+          </li>
+        
+          <li>
+            <a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+          </li>
+        
+          <li>
+            <a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+          </li>
+        
+          <li>
+            <a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+          </li>
+        
+          <li>
+            <a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+          </li>
+        
+          <li>
+            <a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+          </li>
+        
+          <li>
+            <a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+          </li>
+        
+          <li>
+            <a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+          </li>
+        
+          <li>
+            <a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+          </li>
+        
+          <li>
+            <a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+          </li>
+        
+          <li>
+            <a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+          </li>
+        
+          <li>
+            <a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+          </li>
+        
+          <li>
+            <a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+          </li>
+        
+          <li>
+            <a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+          </li>
+        
+          <li>
+            <a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+          </li>
+        
+          <li>
+            <a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+          </li>
+        
+          <li>
+            <a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+          </li>
+        
+          <li>
+            <a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+          </li>
+        
+          <li>
+            <a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+          </li>
+        
+          <li>
+            <a href="http://www.google.com.hk" target="_blank" title="谷歌Google">谷歌Google</a>
+          </li>
+        
+          <li>
+            <a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://jianhanglin.github.io/about" target="_blank" title="JianhangLin">JianhangLin</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-1', 'linjianhang.me');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

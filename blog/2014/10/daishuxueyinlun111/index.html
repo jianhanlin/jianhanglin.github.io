@@ -1,0 +1,585 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《代数学引论(第一卷)基础代数》 第1章 代数的起源 1 简谈代数 | JianhangLin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="JianhangLin">
+    
+    <meta name="description" itemprop="description" content="代数从何而来？粗略地说，代数起源于加法，乘法和求整数次方幂的计算艺术.">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="JianhangLin" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="JianhangLin" title="JianhangLin"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="JianhangLin">JianhangLin</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于自己</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:jianhanglin.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/blog/2014/10/daishuxueyinlun111/" title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 1 简谈代数" itemprop="url">《代数学引论(第一卷)基础代数》 第1章 代数的起源 1 简谈代数</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
+		
+  <p class="article-time">
+    <time datetime="2014-10-22T08:27:50.000Z" itemprop="datePublished"> 发表于 10月 22 2014</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简谈代数"><span class="toc-number">1.</span> <span class="toc-text">简谈代数</span></a></li></ol>
+		
+		</div>
+		
+		<p>代数从何而来？粗略地说，代数起源于加法，乘法和求整数次方幂的计算艺术.如果用字母代替数(这一点并非显而易见且有多种方式)，就使我们能够在更广泛的代数系统中使用类似的法则进行计算.对这一问题给出透彻回答的尝试将我们带进了久远的时代，带进了数学思想奇妙产生的过程.这一答案，最困难的部分与我们今天的基本代数结构：群、环、域、模等紧密相关.但这恰好是本书的大部分内容，因而第一章的目的目前似乎还达不到.</p>
+<p>幸运的是，在大多数代数公理抽象的外表下，隐含着非常具体的理论和实际问题，它们的解决常常幸运地成为进一步发展抽象理论的动力.同样地，所发展的理论又成为解决这些问题的基础和工具.存在于所有数学领域内的理论与应用之间的复杂的相互作用在代数中表现得尤为明显，同时也在某种程度上说明我们通常采用的围绕中心问题层层深入的教学方法是有道理的.</p>
+<p>在对历史事件进行过简短评注之后，我们将叙述包含在下面章节中的一些问题.这些问题之一成为研究线性方程组，矩阵和行列式理论的出发点.我们介绍高斯方法并得到解线性方程组的初步认识.</p>
+<p>在这一步引入标准的符号和术语是有益的，为此我们将扼要地给出集合与映射的理论.</p>
+<p>我们将引入等价关系和商映射的重要概念.进一步，为了详细讲解数学归纳法原理.建立了一些初等的组合关系式，我们特别引出了置换的概念，它是行列式理念的基础.</p>
+<p>最后在末尾一节中列出了整数的最简单的算术性质.这些性质不仅将来要用，也是在更复杂的代数系统中构造类似算法的原型.</p>
+<p>本章的材料并未超出中学课程太多.仅要求读者准备上升到更高一般的观点。</p>
+<h2 id="简谈代数">简谈代数</h2>
+<p>在我们今天的时代，谈论数学的“代数化”不是没有理由的，即代数的思想和方法渗透到数学各个分支的理论与应用中.这种情况在$20$世纪中叶变得十分明显，但情况并不总是如此.正如人类活动的所有领域一样，数学也会受到时尚的影响.代数方法的流行有其实际的原因，尽管对它的迷恋有时会超越理智的界限.由于掩盖了内容的代数外壳不亚于对代数的基本无知造成的不幸，所以教科书的作者要是擅长于避免代数过分的形式化，那么就会合情合理地受到赞许.</p>
+<p>只要不走极端，代数自古以来就是数学的一个重要的组成部分.几何也是这样，但我们愿意在这里引用索菲·格尔曼的观点.“代数不外是符号的几何，而几何不外是图形的代数.”后来情况有些变化，但仍可以说“数学对象的自然属性实质上是不太重要的第二位的事情，例如我们得到的结果既可以用纯几何定理的形式表述，也可以借助解析几何以代数定理的形式出现.”(<a href="http://baike.baidu.com/view/786982.htm?fr=aladdin" target="_blank" rel="external">尼·布尔巴基</a>).</p>
+<p>根据“重要的不是数学对象，而是它们之间的关系”这一原则，代数被定义为对各种集合的元素施行代数运算的科学(这种说法有些重复，并且使未入门者完全莫名其妙).代数运算本身来源于初等算术.反过来，基于代数学的思想，“高等算术”，即数论中的许多事实得到了最自然的证明.</p>
+<p>但是代数结构，即带有代数运算的集合，意义远远超出了对数论的应用.许多数学对象(拓扑空间，多复变函数等等)，其研究方法是建立相应的代数结构，即便与所研究的对象不完全吻合，但在所有的情况下都能反映出它们的本质方面.在现实世界中没有什么东西是完全相同的.</p>
+<p>对代数学的这明确看法是在$45$年前由量子力学的创始人之一狄拉克提出来的，他说：“现代物理学越来越需要抽象数学及其基础的发展.非欧几何和非交换代数一度被认为是虚构的，是迷恋逻辑推理的简单结果，而现在则被认为是描绘物理世界不可或缺的工具.”</p>
+<p>代数工具在研究量子力学的基本粒子，在考察刚体性质和晶体结构(在这方面，群表示理论特别重要)，在分析经济模式，在制造现代化计算机等方面都是非常有用的.</p>
+<p>与此同时，代数学也受到其他学科新鲜汁液的哺育，其中包括数学中的其他学科.例如代数的同调方法产生于拓扑学和代数理论.因而代数的面貌和人们对代数的看法在不同的时期有所改变是不足为奇的.我们不可能详细地列出这些变化，不仅由于篇幅有限，尤其是因为书写历史必需具体，而这只有在学习了代数的基础知识之后才能办到.我们仅限于列举一个带有人名和年代的图表.</p>
+<span>$$  \begin{array}{|l|l|}  \hline  古代巴比伦和埃及文化，希腊文化.丢番图的 & 自然数与正有理数的四则运算.几何学与 \\  “算术”(公元前3世纪) & 天文学中的代数公式.作图问题的形成 \\  & (立方倍积与三等分角)，代数思想的使用 \\  & 是很久以后的事情. \\  \hline  中世纪的东方文化.穆罕默德·花拉子米 & 一次及二次代数方程.术语“代数”一词 \\  (\text{Muhammad al-Khwārizmī})的著作《代数》 & 的产生. \\  (约825年) & \\  \hline  文艺复兴时代 & 三次和四次代数方程的一般解，建立了现 \\  \text{S.}费罗(1465-1526) & 代的代数符号 \\  \text{N.}塔尔塔利亚(1500-1557) & \\  \text{G.}卡尔达诺(1501-1576) & \\  \text{L.}费拉里(1522-1565) & \\  \text{F.}韦达(1540-1603) & \\  \text{R.}邦贝利(1530-1572) & \\  \hline  17至18世纪 & 出现了解析几何——几何与代数之间的 \\  \text{R.}笛卡儿(1596-1650) & 坚实的桥梁.\\  \text{P.}费马(1601-1665) & 数论研究趋于活跃.\\  \text{I.}牛顿(1643-1727) & 开始研究多项式代数.\\  \text{G.}莱布尼茨(1646-1716) & 深入研究代数方程求解的一般公式.\\  \text{L.}欧拉(1707-1783) & 证明数值系数代数方程根的存在性的首.\\  \text{J.}达朗贝尔(1717-1783) & 批方法.\\  \text{J.L.}拉格朗日(1736-1813) & 行列式理论的开端.\\  \text{G.}克拉默(1704-1752) & \\  \text{P.}拉普拉斯(1749-1827) & \\  \text{A.}范德蒙德(1735-1796) & \\  \hline  19世纪至20世纪初 & 证明数值系数方程根的存在性的基本定理. \\  \text{K.F.}高斯(1777-1855) & 代数理论的深入发展.\\  \text{P.}狄利克雷(1805-1859) & \\  \text{E.}库默尔(1810-1893) & \\  \text{L.}克罗内克(1823-1891) & \\  \text{R.}戴德金(1831-1916) & \\  \text{E.L.}佐洛塔廖夫(1847-1878) & \\  \text{G.F}沃罗诺依(1868-1908) & \\  \text{A.A.}马尔可夫(1856-1922) & \\  \hline  \text{P.L}切比雪夫(1821-1894) & 探讨代数方程近似解的求法.\\  \text{G.}埃尔米特(1822-1901) & 使根处于某一位置时系数应满足的条件.\\  \text{N.I}罗巴切夫斯基(1792-1856) & \\  \text{A.}胡尔维茨(1859-1919) & \\  \text{P.}鲁菲尼(1765-1822) & 证明次数 \geq 5的方程不能用根式求解.\\  \text{N.H.}阿贝尔(1802-1829) & 代数函数论的发展.\\  \text{G.}雅可比(1804-1851) & 伽罗瓦理论的创立.\\  \text{E.}伽罗瓦(1811-1832) & 主要基于转换群的有限群论的开端.\\  \text{G.}黎曼(1826-1866) & \\  \text{A.L.}柯西(1789-1857) & \\  \text{G.}若尔当(1838-1922) & \\  \text{L.}西罗(1832-1918) & \\  \hline  \text{H.}格拉斯曼(1809-1877) & 线性代数方法的深入发展.\\  \text{J.}西尔维斯特(1814-1897) & 发现四元数后引起的超复数的研究\\  \text{A.}凯莱(1821-1895) & (这样的系统现在称为代数).\\  \text{W.}哈密尔顿(1805-1865) & 特别是连续群(李群)的发展为李代\\  \text{G.}布尔(1815-1864) & 数理论奠定了基础.\\  \text{S.}李(1842-1899) & 代数几何和不变量理论成为数学的重要\\  \text{F.}弗罗贝尼乌斯(1849-1918) & 分支.\\  \text{J.}塞雷(1819-1885) & 在19世纪，数学尚未高度专门化，许多大科\\  \text{M.}诺特(1844-1922) & 学家在不同的领域内创造性地工作.\\  \text{D.A.}格拉韦(1863-1939) & \\  \text{H.}庞加莱(1854-1912) & \\  \text{F.}克莱茵(1849-1925) & \\  \text{W.}伯恩赛德(1852-1927) & \\  \text{F.}莫林(1861-1941) & \\  \text{J.}舒尔(1875-1941) & \\  \text{H.}外尔(1885-1955) & \\  \text{F.}恩里克(1871-1946) & \\  \hline  \text{J.}冯·诺依曼(1903-1957) & 20世纪上半叶，整个数学大厦得到了根本\\  \text{D.}希尔伯特(1862-1943) & 性的改造.\\  \text{E.}嘉当(1869-1951) & 代数不再是关于解代数方程的科学，开始\\  \text{K.}亨泽尔(1861-1941) & 坚定地滑道公理化和更加抽象的道路发展.\\  \text{E.}施泰尼茨(1871-1928) & \\  \text{E.}诺特(1882-1935) & \\  \text{E.}阿廷(1898-1962) & \\  \text{H.}布尔巴基《数学原理》. & \\  \hline  \end{array}  $$</span>
+
+<span>$$  \begin{array}{|ll|}  \hline  环、模、范畴、同调理论成为常用的语言.许多不同的理论符合泛代数的通用模式.模型论兴起于 & \\  代数与数理逻辑的交界处.古老的理论焕然一新，扩大了自己的应用领域. & \\  例子有现代代数几何、代数拓扑、代数K-理论、代数群理论.有限群论经历了特殊的飞跃. & \\  \hline  \end{array}  $$</span>
+
+<p>目前代数学正处于生机勃勃的发展中.其中俄罗斯数学家做出了重大贡献.我国高水平的代数研究，应归功于下述学者，如$\text{N.G.}$切博塔廖夫($1894-1947$)，$\text{O.Ju.}$施米特($1891-1956$)，$\text{A.I.}$马尔采夫($1909-1967$)，$\text{A.G.}$库洛什($1908-1971$)，$\text{P.S.}$诺维科夫($1901-1975$)，$\text{D.K.}$法捷耶夫($1907-1989$).</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/基础代数/">基础代数</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数/">代数</a>
+  </div>
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun111/" data-title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 1 简谈代数 | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/blog/2014/10/daishuxueyinlun112/" title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 2 几个典型问题">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《代数学引论(第一卷)基础代数》 第1章 代数的起源 2 几个典型问题</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/blog/2014/10/daishuxueyinlun0/"  title="《代数学引论(第一卷)基础代数》 前言">
+ <strong>下一篇：</strong><br/> 
+ <span>《代数学引论(第一卷)基础代数》 前言
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+<section class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简谈代数"><span class="toc-number">1.</span> <span class="toc-text">简谈代数</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/基础代数/" title="基础代数">基础代数<sup>8</sup></a></li>
+		
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>5</sup></a></li>
+		
+			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>12</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/代数/" title="代数">代数<sup>20</sup></a></li>
+		
+			<li><a href="/tags/微积分/" title="微积分">微积分<sup>5</sup></a></li>
+		
+			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/代数/" style="font-size: 20.00px;">代数</a><a href="/tags/微积分/" style="font-size: 15.00px;">微积分</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            <a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+          </li>
+        
+          <li>
+            <a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+          </li>
+        
+          <li>
+            <a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+          </li>
+        
+          <li>
+            <a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+          </li>
+        
+          <li>
+            <a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+          </li>
+        
+          <li>
+            <a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+          </li>
+        
+          <li>
+            <a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+          </li>
+        
+          <li>
+            <a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+          </li>
+        
+          <li>
+            <a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+          </li>
+        
+          <li>
+            <a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+          </li>
+        
+          <li>
+            <a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+          </li>
+        
+          <li>
+            <a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+          </li>
+        
+          <li>
+            <a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+          </li>
+        
+          <li>
+            <a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+          </li>
+        
+          <li>
+            <a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+          </li>
+        
+          <li>
+            <a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+          </li>
+        
+          <li>
+            <a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+          </li>
+        
+          <li>
+            <a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+          </li>
+        
+          <li>
+            <a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+          </li>
+        
+          <li>
+            <a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+          </li>
+        
+          <li>
+            <a href="http://www.google.com.hk" target="_blank" title="谷歌Google">谷歌Google</a>
+          </li>
+        
+          <li>
+            <a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://jianhanglin.github.io/about" target="_blank" title="JianhangLin">JianhangLin</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-1', 'linjianhang.me');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

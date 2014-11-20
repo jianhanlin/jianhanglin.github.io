@@ -1,0 +1,667 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《微积分学教程(第一卷)》 绪论 实数 1 有理数域 | JianhangLin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="JianhangLin">
+    
+    <meta name="description" itemprop="description" content="在有理数域中添上新的数——无理数，以扩大有理数域的范围.同时，我们要证明，对有理数施行算术运算及用等号、不等号结合它们等变通性质，在扩大的领域内仍然是真实的.">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="JianhangLin" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="JianhangLin" title="JianhangLin"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="JianhangLin">JianhangLin</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于自己</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:jianhanglin.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/blog/2014/10/weijifenxuejiaocheng101/" title="《微积分学教程(第一卷)》 绪论 实数 1 有理数域" itemprop="url">《微积分学教程(第一卷)》 绪论 实数 1 有理数域</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
+		
+  <p class="article-time">
+    <time datetime="2014-10-28T02:21:24.000Z" itemprop="datePublished"> 发表于 10月 28 2014</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#有理数域的序"><span class="toc-number">2.</span> <span class="toc-text">有理数域的序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#有理数的加法及减法"><span class="toc-number">3.</span> <span class="toc-text">有理数的加法及减法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#有理数的乘法及除法"><span class="toc-number">4.</span> <span class="toc-text">有理数的乘法及除法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#阿基米德公理"><span class="toc-number">5.</span> <span class="toc-text">阿基米德公理</span></a></li></ol>
+		
+		</div>
+		
+		<p><strong><a href="http://book.douban.com/subject/1707158/" target="_blank" rel="external">微积分学教程(第一卷)</a></strong> <a href="http://pan.baidu.com/s/1i31NAN7" target="_blank" rel="external">在线阅读</a> Г.М.菲赫金哥尔茨 杨弢亮 叶彦谦  高等教育出版社 第8版 </p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/cover.jpg" alt=""></center> 
+
+<h2 id="前言">前言</h2>
+<p>读者对于有理数及其性质，从中学的教材内便很熟悉了.在那时，初等数学的要求，已趋向于必须扩大数的领域.的确，在有理数中即使是正整数(自然数)的根，例如$\sqrt{2}$，也常常并不存在.就是说，并没有这样的有理数$\dfrac{p}{q}$(式中$p$及$q$——自然数)，其平方能等于$2$.</p>
+<p>为了证明，试假定其反面：设有分数$\dfrac{p}{q}$，其平方为$(\dfrac{p}{q})^2=2$.我们可以假设$\dfrac{p}{q}$是既约分数，即$p$和$q$是没有公约数的.因$p^2=2q^2$，故$p$为偶数：$p=2r$($r$——整数)，于是$q$为奇数.用$p$的式子代入，得：$q^2=2r^2$，由此推得$q$为偶数.所得的矛盾便证明了我们的命题.</p>
+<p>同时，若我们仅停留在有理数的范围内，那么在几何学上便已显然知道，并非一切的线段都能有一个长度.例如考察边长为单位长度的正方形，其对角线就不可能有有理长度$\dfrac{p}{q}$，因若不然，依毕达哥拉斯定理，这长度的平方应等于$2$，而我们已看到这是不可能的.</p>
+<p>在本绪论内，我们要做这样一件工作：在有理数域中添上新的数——无理数，以扩大有理数域的范围.同时，我们要证明，对有理数施行算术运算及用等号、不等号结合它们等变通性质，在扩大的领域内仍然是真实的.为了对扩大后的数域验证上述性质，需选出为数最少的<strong>基本性质</strong>，使其余的一切性质都能作为形式逻辑的结果而从之推出：所要验证的便仅限于这些基本性质了.</p>
+<p>因此，我们列举有理数域的下列一些基本性质.同时我们将用一些例子来证明，它们的另一些众所周知的性质是怎样从基本性质推导出来的.我们这里所说的“数”，总是指的有理数，用字母$a,b\cdots $等来表示它们.</p>
+<h2 id="有理数域的序">有理数域的序</h2>
+<p>首先让我们约定：所谓相等的数就是同一数的各种不同形式.换言之，“相等”($=$)的概念即指“恒等”.因此，我们不再列举相等的数的性质.</p>
+<p>有理数域的序得自“大于”($&gt;$)的概念，与之有关的是第一组性质.</p>
+<p>Ⅰ$1°$每一对数$a$与$b$之间必有且仅有下列关系之一</p>
+<p>$$a=b,a &gt; b,a &lt; b;$$</p>
+<p>Ⅰ$2°$由$a &gt; b$及$b &gt; c$推得$a &gt; c$($&gt;$的传递性)；</p>
+<p>Ⅰ$3°$若$a &gt; b$，则必能求得一数$c$，使</p>
+<p>$$a &gt; c,且c &gt; b $$</p>
+<p>(稠密性).在这条件下也说成：数$c$位于数$a$与$b$之间；显然，这样的数有无限个之多.</p>
+<p>“小于”($&lt;$)的概念作为派生的而引入.说$a &lt; b$，当且仅当$b &gt; a$时.显而易见，由$a &lt; b$及$b &lt; c$，即得$a &lt; c$($&lt;$的传递性).实则，由假设，不等式$a &lt; b$及$b &lt; c$，相当于不等式$b &gt; a$及$c &gt; b$；由此推得$c &gt; a$(Ⅰ$2°$)，或即$a &lt; c$.</p>
+<p>在对有理数施行算术运算时所要牵涉到的“大于”这一概念的其他性质，将在以后随时指出之.</p>
+<h2 id="有理数的加法及减法">有理数的加法及减法</h2>
+<p>第二组性质是关于加法的，即关于求两数之和的运算的.对于每一对数$a$及$b$，存在着一个(唯一的)数，被称为$a$和$b$的和(记成$a+b$).这概念具有下列的性质：</p>
+<p>Ⅱ$1°$ $a+b=b+a$(加法的交换性)；</p>
+<p>Ⅱ$2°$ $(a+b)+c=a+(b+c)$(加法的结合性).</p>
+<p>零这个数比较特殊，它具有下列特性：</p>
+<p>Ⅱ$3°$ $a+0=a$；</p>
+<p>此外，</p>
+<p>Ⅱ$4°$ 对每一数$a$存在着(与它对称的)数$-a$，使$a+(-a)=0$.</p>
+<p>在这些性质的基础上，首先解决加法的逆运算即减法的问题.通常称使$c+b=a$的数$c$为$a$及$b$的差，定义差的这个等式可写成：$b+c=a$.假若如此，便发生这样的数的存在及唯一性的问题.</p>
+<p>设$c=a+(-b)$，则得[Ⅱ$2°,1°,4°,3°$]</p>
+<p>$$c+b=[a+(-b)]+b=a+[(-b)+b]=a+[b+(-b)]=a+0=a,$$</p>
+<p>反之，令$c’$为数$a$及$b$的差，即有$c’+b=a$.在这等式两边各加$(-b)$，并交换其左边[Ⅱ$2°,4°,3°$]：</p>
+<p>$$(c’+b)+(-b)=c’+[b+(-b)]=c’+0=c’.$$</p>
+<p>结果得$c’=a+(-b)=c$.</p>
+<p>这样，就证明了数$a$及$b$的差的存在及单值性；把它记成$a-b$.</p>
+<p>由差的单值性可以推得一系列的推论.首先，由Ⅱ$3°$推得$0=a-a$，因而得出结论：除去数$0$以外，具有相似于Ⅱ$3°$的性质的数不存在.其次，由此推得与所给数对称的数的唯一性：$-a=0-a$.</p>
+<p>因为由$a+(-a)=0$可推得$(-a)+a=0$[Ⅱ$1°$]，所以$a=-(-a)$，即数$a$及$-a$为互相对称的数.我们再来证明对称数满足下述性质：</p>
+<p>$$-(a+b)=(-a)+(-b).$$</p>
+<p>为此，只需证明</p>
+<p>$$(a+b)+[(-a)+(-b)]=0,$$</p>
+<p>而这由Ⅱ$1°,2°,4°,3°$，便可推得.</p>
+<p>最后，再引进联系$&gt;$与加号的一个性质.</p>
+<p>Ⅱ$5°$ 由$a &gt; b$推得$a+c &gt; b+c$.</p>
+<p>它使我们得以在不等式的两边各加上一个等量；用它又可证明两不等式</p>
+<p>$$a &gt; b和a-b &gt; 0$$</p>
+<p>是相当的.其次，由$a &gt; b$推得$-a &lt; -b$.实则，由$a &gt; b$引致$a-b &gt; 0$；但$a-b=a+(-b)=(-b)+a=(-b)+[-(-a)]=(-b)-(-a)$，因此这不等式可改写成：$(-b)-(-a) &gt; 0$，由此$-b &gt; -a$或$-a &lt; -b$.</p>
+<p>特别是，由$a &gt; 0$推得$-a &lt; 0$，由$a &lt; 0$推得$-a &gt; 0$.若$a\neq 0$，则在两个互相对称的数$a$及$-a$中，必有一个(且仅一个)将大于$0$；它即称为数$a$或数$-a$的绝对值，记成</p>
+<p>$$\mid a\mid =\mid -a\mid .$$</p>
+<p>零的绝对值就定为零：$\mid 0\mid =0$.</p>
+<p>根据性质Ⅱ$5°$，可以逐项地合并不等式：由$a &gt; b$及$c &gt; d$推得$a+c &gt; b+d$.实际上，由$a &gt; b$推得$a+c &gt; b+c$；仿此，由$c+d$推得$c+b &gt; d+b$，或[Ⅱ$1°$]$b+c &gt; b+d$，然后由Ⅰ$2°$，最后即得$a+c &gt; b+d$.</p>
+<h2 id="有理数的乘法及除法">有理数的乘法及除法</h2>
+<p>第三组性质是关于乘法的，即关于求两数之乘积的运算的.对于每一对数$a$及$b$存在着一个(唯一的)数，被称为$a$及$b$的乘积(记成$a\cdot b$或$ab$).这概念具有下列性质：</p>
+<p>Ⅲ$1°$ $ab=ba$(乘法的交换性)；</p>
+<p>Ⅲ$2°$ $(ab)c=a(bc)$(乘法的结合性).</p>
+<p>“$1$”这个数比较特殊，它具有下列特性：</p>
+<p>Ⅲ$3°$ $a\cdot 1=a$；</p>
+<p>此外，</p>
+<p>Ⅲ$4°$ 对于每一异于$0$的数$a$，必有数$\dfrac{1}{a}$(其倒数)，使$a\cdot \dfrac{1}{a}=1$.</p>
+<p>关于除法的问题，作为乘法的逆运算，亦可根据乘法的性质来解决，正如前面根据加法的性质来解决关于减法的问题一样.倒数在这里的作用正如对称数在那里的作用一样.</p>
+<p>如果一数$c$满足关系</p>
+<p>$$c\cdot b=a$$</p>
+<p>依Ⅲ$1°$，定义商的这个等式也可写成：$b\cdot c=a$.</p>
+<p>(其中$b$常预先假定异于$0$)，则$c$称为$a$及$b$的商.</p>
+<p>令$c=a\cdot \dfrac{1}{b}$，就可以满足这定义.因[Ⅲ$2°,1°,4°,3°$]</p>
+<p>$$c\cdot b=(a\cdot \dfrac{1}{b})\cdot b=a\cdot (\dfrac{1}{b} \cdot b)=a\cdot (b\cdot \dfrac{1}{b})=a\cdot 1=a.$$</p>
+<p>反之，若数$c’$满足数$a$及$b$的商的定义，于是$c’\cdot b=a$，则在这等式两边乘以$\dfrac{1}{b}$，并变换左边[Ⅲ$2°,4°,3°$]：</p>
+<p>$$(c’\cdot b)\cdot \dfrac{1}{b}=c’\cdot (b\cdot \dfrac{1}{b})=c’\cdot 1=c’,$$</p>
+<p>就得到了$c’=a\cdot \dfrac{1}{b}=c$.</p>
+<p>这样，就证明了数$a$及$b$(设$b\neq 0$)的商的存在及单值性；把它记成$a:b$或$\dfrac{a}{b}$.</p>
+<p>由商的单值性可知，除了$1$以外，再没有什么数能具有类似于Ⅲ$3°$的性质.由此，如前所述.推得倒数(看成$1$及$a$的商)的唯一性；此外，容易证明数$a$及$\dfrac{1}{a}$是互为倒数.</p>
+<p>下列性质与算术的基本运算——加法及乘法双方都有关系：</p>
+<p>Ⅲ$5°$ $(a+b)c=a\cdot c+b\cdot c$(乘法关于和的分配性).</p>
+<p>由此很易导出关于乘法关于差的分配性：</p>
+<p>$$(a-b)\cdot c=a\cdot c-b\cdot c.$$</p>
+<p>依差的定义，这可以直接由下式推出</p>
+<p>$$(a-b)\cdot c+b\cdot c=[(a-b)+b]\cdot c=a\cdot c.$$</p>
+<p>再应用性质Ⅲ$5°$，可证</p>
+<p>$$b\cdot 0=0\cdot b=0.$$</p>
+<p>实际上[Ⅱ$3°$]</p>
+<p>$$a+0=a,(a+0)\cdot b=a\cdot b+0\cdot b=a\cdot b,$$</p>
+<p>由此推得$0\cdot b=0$，再由Ⅲ$1°$得$b\cdot 0=0$.</p>
+<p>反之，若$a\cdot b=0$又$b\neq 0$，则必须$a=0$.实际上，$a=\dfrac{0}{b}$，但同时又有$0=\dfrac{0}{b}$(因$b\cdot 0=0$)，因为商是唯一的，故$a=0$.</p>
+<p>最后，我们指出联系符号$&gt;$与乘号的一个性质：</p>
+<p>Ⅲ$6°$ 由$a &gt; b$及$c &gt;0$推得$a\cdot c &gt; b\cdot c$.</p>
+<p>据此可以用正数乘不等式的两边.由此可知，当$a &gt; 0$及$b &gt; 0$时，亦必有$a\cdot b &gt; 0$.</p>
+<p>注意，$(-a)\cdot b=-(a\cdot b)$；这由下面推得</p>
+<p>$$a\cdot b+(-a)\cdot b=[a+(-a)]\cdot b=0\cdot b=0.$$</p>
+<p>现在不难看出，若$a &lt; 0,b &gt; 0$，于是$a=-\mid a\mid,b=\mid b\mid$，则</p>
+<p>$$a\cdot b=(-\mid a\mid)\cdot \mid b\mid=-(\mid a\mid \cdot \mid b\mid) &lt; 0;$$</p>
+<p>当$a &gt; 0,b &lt; 0$时亦如此，又若$a &lt; 0,b &lt; 0$，则</p>
+<p>$$a\cdot b=(-\mid a\mid)(-\mid b\mid)=-[\mid a\mid \cdot (-\mid b\mid)]=-[-(\mid a\mid \cdot \mid b\mid]=\mid a\mid \cdot \mid b\mid &gt; 0.$$</p>
+<p>这样，我们已完全重新建立了关于乘法的符号规则，这些符号规则现在已成为有理数的上述性质的逻辑推论了.换言之，如果有理数满足上述诸性质，就必定要遵守这些符号规则.关于乘以$0$的规则，也可以这样说(如上所述).</p>
+<p>在处理了加法和乘法的性质以后，我们现在能够证明在前面数的基本性质[Ⅰ$3°$]中已述及的有理数域的<strong>稠密性</strong>了.就是，可以用它们证明，例如，由$a &gt; b$推得$a &gt; \dfrac{a+b}{2} &gt; b$.</p>
+<h2 id="阿基米德公理">阿基米德公理</h2>
+<p>我们用下列的简单而重要的论证，来结束我们的有理数基本性质一览表.这一性质是不能由上述的诸性质里推得的.</p>
+<p>Ⅳ$1°$ 不论$c &gt; 0$是怎样的数，总有大于$c$的自然数$n$存在着(<strong>阿基米德公理</strong>).</p>
+<p>实际上，阿基米德曾说明一个几何的命题，即为众所周知的阿基米德公理：</p>
+<p>若在直线上给定做任意两线段$A$及$B$，则$A$重复相加若干次后，其和总可以大于$B$：</p>
+<p>$$\underbrace{A+A+\cdots +A}_{n~次}=A\cdot n &gt; B.$$</p>
+<p>若将这论证转而对正数$a$及$b$来叙述，它便肯定有这样的自然数$n$存在使</p>
+<p>$$\underbrace{a+a+\cdots +a}_{n~次}=a\cdot n &gt; B.$$</p>
+<p>若应用已研究过的有理数的性质，则这不等式相当于$n &gt; \dfrac{b}{a}$；把商$\dfrac{b}{a}$记成$c$，我们便得出上面所叙述的Ⅳ$1°$.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/微积分/">微积分</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微积分/">微积分</a>
+  </div>
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://jianhanglin.github.io/blog/2014/10/weijifenxuejiaocheng101/" data-title="《微积分学教程(第一卷)》 绪论 实数 1 有理数域 | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/blog/2014/10/weijifenxuejiaocheng102/" title="《微积分学教程(第一卷)》 绪论 实数 2 无理数的导入·实数域的序">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《微积分学教程(第一卷)》 绪论 实数 2 无理数的导入·实数域的序</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/blog/2014/10/daishuxueyinlun115/"  title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 5 集合与映射">
+ <strong>下一篇：</strong><br/> 
+ <span>《代数学引论(第一卷)基础代数》 第1章 代数的起源 5 集合与映射
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+<section class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#有理数域的序"><span class="toc-number">2.</span> <span class="toc-text">有理数域的序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#有理数的加法及减法"><span class="toc-number">3.</span> <span class="toc-text">有理数的加法及减法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#有理数的乘法及除法"><span class="toc-number">4.</span> <span class="toc-text">有理数的乘法及除法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#阿基米德公理"><span class="toc-number">5.</span> <span class="toc-text">阿基米德公理</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/基础代数/" title="基础代数">基础代数<sup>8</sup></a></li>
+		
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>5</sup></a></li>
+		
+			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>12</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/代数/" title="代数">代数<sup>20</sup></a></li>
+		
+			<li><a href="/tags/微积分/" title="微积分">微积分<sup>5</sup></a></li>
+		
+			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/代数/" style="font-size: 20.00px;">代数</a><a href="/tags/微积分/" style="font-size: 15.00px;">微积分</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            <a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+          </li>
+        
+          <li>
+            <a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+          </li>
+        
+          <li>
+            <a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+          </li>
+        
+          <li>
+            <a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+          </li>
+        
+          <li>
+            <a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+          </li>
+        
+          <li>
+            <a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+          </li>
+        
+          <li>
+            <a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+          </li>
+        
+          <li>
+            <a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+          </li>
+        
+          <li>
+            <a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+          </li>
+        
+          <li>
+            <a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+          </li>
+        
+          <li>
+            <a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+          </li>
+        
+          <li>
+            <a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+          </li>
+        
+          <li>
+            <a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+          </li>
+        
+          <li>
+            <a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+          </li>
+        
+          <li>
+            <a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+          </li>
+        
+          <li>
+            <a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+          </li>
+        
+          <li>
+            <a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+          </li>
+        
+          <li>
+            <a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+          </li>
+        
+          <li>
+            <a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+          </li>
+        
+          <li>
+            <a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+          </li>
+        
+          <li>
+            <a href="http://www.google.com.hk" target="_blank" title="谷歌Google">谷歌Google</a>
+          </li>
+        
+          <li>
+            <a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://jianhanglin.github.io/about" target="_blank" title="JianhangLin">JianhangLin</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-1', 'linjianhang.me');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

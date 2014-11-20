@@ -1,0 +1,610 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《代数学引论》第零章 集合与整数 4 同余式和同余方程 | JianhangLin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="JianhangLin">
+    
+    <meta name="description" itemprop="description" content="在整数环$\bf Z$中我们引进一个基本的等价关系，即同余概念.它和整数的运算是相容的，从而产生新的代数结构.同余概念在代数中产生了广泛的影响.">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="JianhangLin" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="JianhangLin" title="JianhangLin"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="JianhangLin">JianhangLin</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于自己</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:jianhanglin.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/blog/2014/10/daishuxueyinlun04/" title="《代数学引论》第零章 集合与整数 4 同余式和同余方程" itemprop="url">《代数学引论》第零章 集合与整数 4 同余式和同余方程</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
+		
+  <p class="article-time">
+    <time datetime="2014-10-19T01:51:22.000Z" itemprop="datePublished"> 发表于 10月 19 2014</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#同余式和同余方程"><span class="toc-number">1.</span> <span class="toc-text">同余式和同余方程</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="同余式和同余方程">同余式和同余方程</h2>
+<p>在整数环$\bf Z$中我们引进一个基本的等价关系，即同余概念.它和整数的运算是相容的，从而产生新的代数结构.同余概念在代数中产生了广泛的影响.</p>
+<p><strong>定义2</strong> 设$n$为一正整数，$a,b$为任意整数.如果$n\mid a-b$，则$a,b$叫做<strong>模$n$同余</strong>，记作</p>
+<p>$$a\equiv b\pmod{n},$$</p>
+<p>$n$叫做<strong>模数</strong>.否则，$a,b$叫做<strong>模$n$非同余</strong>，记作$a\not\equiv b\pmod{n}$.以下的讨论恒固定一个模数或几个模数.</p>
+<p>容易证明$a\equiv b\pmod{n}$的充要条件是除法算式$a=q_1n+r_1$和$b=q_2n+r_2$有相同的余数$r_1=r_2$.</p>
+<p>同余概念以最适宜于描写一种有限多个状态的周期现象.例如计算某一天是星期几，可以取$7$作模数.计算一个整数是否偶数，可以取$2$作模数.取$2$作模做，余数$0$和$1$还可以描写电路的连接和断开.同余概念和整数的运算是相容的，表现在下列基本性质中.模数固定时，$a\equiv b\pmod{n}$可简写成$a\equiv b$.如果不写出模数，表示是对同一个模数而言的.</p>
+<p>$1$.同余是一个等价关系.</p>
+<p>$2$.若$a\equiv b$，$c\equiv d$，则$a\pm c\equiv b\pm d\pmod{n}$.</p>
+<p>$3$.若$a\equiv b$，$c\equiv d$，则$a\cdot c\equiv b\cdot d\pmod{n}$.</p>
+<p>$4$.若$ac\equiv bc\pmod{n}$，$(c,n)=1$，则$a\equiv b\pmod{n}$.</p>
+<p>$5$.若$a\equiv b\pmod{n}$，$m\mid n$，则$a\equiv b\pmod{m}$.</p>
+<p>$6$.若$a\equiv b\pmod{n}$，则$(a,n)=(b,n)$.</p>
+<p>$7$.若$a\equiv b\pmod{n}$，$d$为$a,b,n$的一个公因子，$a=da_1$，$b=db_1$，$n=dn_1$，则$a_1\equiv b_1\pmod{n_1}$.</p>
+<p><strong>例1</strong> $716\cdot 93$和$543\cdot 93$模$61$是否同余？假设$716\cdot 93\equiv 543\cdot 93\pmod{61}$，根据性质$4$，因$(93,61)=1$，有$716\equiv 543\pmod{61}$.但$61\nmid (716-543)=173$，所以$716\cdot 93\not\equiv 543\cdot 93\pmod{61}$.</p>
+<p><strong>例2</strong> 设复数$\varepsilon =\cos{\dfrac{2\pi}{17}}+i\sin{\dfrac{2\pi}{17}}$.计算$\varepsilon$的整数幂$\varepsilon ^m$等于计算$\varepsilon ^r$，其中$r$是$m$模$17$的余数，$0\leq r &lt; 17$.</p>
+<p>对于一个给定的模数$n$，全体整数按模$n$同余分成一些等价类，此时的等价类叫做<strong>整数模$n$的剩余类</strong>，含整数$a$的剩余类记作$\overline{a}$，剩余类$\overline{a}$的任一个元素叫做$\overline{a}$的一个代表.在每个剩余类中任取一个代表$r_i$，由这些代表组成的集合叫做整数模$n$的一个<strong>完全剩余代表系</strong>.整数模$n$的一个完全代表系$S$也可以这样来刻画：$1)$每个整数和$S$中一个元素模$n$同余，$2)S$中元素两两互不同余.根据除法算式可知，集合$S=\lbrace 0,1,2,\cdots ,n-1\rbrace$是模$n$的一个完全剩余类代表系.</p>
+<p>由模$n$的剩余类组成的商集记作${\bf Z}/(n)$.在${\bf Z}/(n)$中可以定义加法和乘法如下：</p>
+<p>$$\overline{a}+\overline{b}=\overline{a+b},$$</p>
+<p>$$\overline{a}\cdot \overline{b}=\overline{a\cdot b}.$$</p>
+<p>根据同余式的性质，定义与代表的取法无关而且加法和乘法还满足结合律、交换律和分配律，加法有零元素$\overline{0}$，每个$\overline{a}$有负元素：$\overline{-a}$：$\overline{a}+\overline{-a}=\overline{0}$.${\bf Z}/(n)$叫做<strong>整数模$n$的环</strong>.</p>
+<p>这一节剩下的部分来讨论一次同余方程和方程组.同余式</p>
+<p>$$ax\equiv b\pmod{n},a\not\equiv 0\pmod{0}$$</p>
+<p>是含有一个未知量$x$的一次式，叫做<strong>一次同余方程</strong>.若$x=c\in \bf Z$代入上方程使两边同余，则$c$叫做上方程的一个<strong>解</strong>.上方程的两个解$c_1,c_2$看作相同当而且仅当$c_1 \equiv c_2\pmod{n}$.</p>
+<p><strong>定理4</strong> 设$(a,n)=1$，则一次同余方程</p>
+<p>$$ax\equiv b\pmod{n}$$</p>
+<p>有解而且只有一个解.</p>
+<p><strong>证明</strong> 由于$(a,n)=1$，存在整数$u,v$使得$ua+vn=1$.两边乘$b$，$uba+vbn=b$，令$ub=c$，于是$ca\equiv uba\equiv b\pmod{n},x\equiv c$为其一解.其次，令$c_1,c_2$为任意两个解，于是</p>
+<p>$$ac_1\equiv b\pmod{n},$$</p>
+<p>$$ac_2\equiv b\pmod{n}.$$</p>
+<p>相减得$a(c_1-c_2)\equiv 0\pmod{n}$，由于$(a,n)=1$，根据同余的性质$4$，有$c_1\equiv c_2\pmod{n}$，$c_1,c_2$为同一解.</p>
+<p>考虑下列<strong>一次同余方程组</strong></p>
+<p>$$\begin{cases} x\equiv b_1\pmod{n_1}, \\ x\equiv b_2\pmod{n_2}, \\ \cdots \cdots \cdots \cdots \cdots \\ x\equiv b_r\pmod{n_r}. \end{cases} \tag{1}$$</p>
+<p>其中$n_1,n_2,\cdots ,n_r$为大于$1$的整数，两两互素，$b_1,b_2,\cdots ,b_r$是任意给定的整数.如果$x=c\in \bf Z$代入方程组使得同余式同时都成立，则$c$叫做方程组$(1)$的一个解.上方程组的两个解$c_1$和$c_2$看作相同当而且仅当</p>
+<span>$$c_1 \equiv c_2 \pmod{\prod \limits_{i=1}^rn_i}.$$</span>
+
+<p><strong>定理5 (孙子定理)</strong> 设一次同余方程组$(1)$中大于$1$的整数$n_1,n_2,\cdots ,n_r$两两互素，$b_1,b_2,\cdots ,b_r$是任意给定的整数，则$(1)$有解而且只有一解.</p>
+<p><strong>证明</strong> 这里只证明$r=2$的情况，读者可以应用数学归纳法去证明一般情况.设$r=2$，由于$(n_1,n_2)=1$，存在一对整数$u_1,u_2$使得$u_1n_1+u_2n_2=1$.令$e_2=u_1n_1$，$e_1=u_2n_2$.于是$e_i\equiv 1\pmod{n_i},i=1,2$，而$e_i\equiv 0\pmod{n_j},i\neq j$.取$c=b_1e_1+b_2e_2$，则$c$为方程组$(1)$的解.其次证明解的唯一性，设$c_1,c_2$为任意两解，于是</p>
+<p>$$c_1\equiv b_1,c_2\equiv b_1\pmod{n_1},$$</p>
+<p>$$c_1\equiv b_2,c_2\equiv b_2\pmod{n_2}.$$</p>
+<p>同余式相减得</p>
+<p>$$c_1-c_2\equiv 0\pmod{n_1},$$</p>
+<p>$$c_1-c_2\equiv 0\pmod{n_2}.$$</p>
+<p>由于$(n_1,n_2)=1$，根据互素性质$(3)c_1-c_2\equiv 0\pmod{n_1n_2}$，所以$c_1,c_2$为同一解.$\blacksquare$</p>
+<p>孙子定理在国际上叫做中国剩余定理.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/抽象代数/">抽象代数</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/代数/">代数</a>
+  </div>
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun04/" data-title="《代数学引论》第零章 集合与整数 4 同余式和同余方程 | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/blog/2014/09/hello-world/" title="Hello World">
+  <strong>上一篇：</strong><br/>
+  <span>
+  Hello World</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/blog/2014/09/daishuxueyinlun03/"  title="《代数学引论》第零章 集合与整数 3 整数. 整数的整除性">
+ <strong>下一篇：</strong><br/> 
+ <span>《代数学引论》第零章 集合与整数 3 整数. 整数的整除性
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+<section class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#同余式和同余方程"><span class="toc-number">1.</span> <span class="toc-text">同余式和同余方程</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/基础代数/" title="基础代数">基础代数<sup>8</sup></a></li>
+		
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>5</sup></a></li>
+		
+			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>12</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/代数/" title="代数">代数<sup>20</sup></a></li>
+		
+			<li><a href="/tags/微积分/" title="微积分">微积分<sup>5</sup></a></li>
+		
+			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/代数/" style="font-size: 20.00px;">代数</a><a href="/tags/微积分/" style="font-size: 15.00px;">微积分</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            <a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+          </li>
+        
+          <li>
+            <a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+          </li>
+        
+          <li>
+            <a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+          </li>
+        
+          <li>
+            <a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+          </li>
+        
+          <li>
+            <a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+          </li>
+        
+          <li>
+            <a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+          </li>
+        
+          <li>
+            <a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+          </li>
+        
+          <li>
+            <a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+          </li>
+        
+          <li>
+            <a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+          </li>
+        
+          <li>
+            <a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+          </li>
+        
+          <li>
+            <a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+          </li>
+        
+          <li>
+            <a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+          </li>
+        
+          <li>
+            <a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+          </li>
+        
+          <li>
+            <a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+          </li>
+        
+          <li>
+            <a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+          </li>
+        
+          <li>
+            <a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+          </li>
+        
+          <li>
+            <a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+          </li>
+        
+          <li>
+            <a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+          </li>
+        
+          <li>
+            <a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+          </li>
+        
+          <li>
+            <a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+          </li>
+        
+          <li>
+            <a href="http://www.google.com.hk" target="_blank" title="谷歌Google">谷歌Google</a>
+          </li>
+        
+          <li>
+            <a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://jianhanglin.github.io/about" target="_blank" title="JianhangLin">JianhangLin</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-1', 'linjianhang.me');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

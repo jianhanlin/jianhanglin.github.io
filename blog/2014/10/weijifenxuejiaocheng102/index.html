@@ -1,0 +1,711 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《微积分学教程(第一卷)》 绪论 实数 2 无理数的导入·实数域的序 | JianhangLin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="JianhangLin">
+    
+    <meta name="description" itemprop="description" content="我们仿效戴德金($\text{R.Dedekind}$)来叙述无理数的理论.">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="JianhangLin" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="JianhangLin" title="JianhangLin"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="JianhangLin">JianhangLin</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于自己</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:jianhanglin.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/blog/2014/10/weijifenxuejiaocheng102/" title="《微积分学教程(第一卷)》 绪论 实数 2 无理数的导入·实数域的序" itemprop="url">《微积分学教程(第一卷)》 绪论 实数 2 无理数的导入·实数域的序</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
+		
+  <p class="article-time">
+    <time datetime="2014-10-30T02:42:03.000Z" itemprop="datePublished"> 发表于 10月 30 2014</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#无理数的定义"><span class="toc-number">1.</span> <span class="toc-text">无理数的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实数域的序"><span class="toc-number">2.</span> <span class="toc-text">实数域的序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#辅助命题"><span class="toc-number">3.</span> <span class="toc-text">辅助命题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用无限小数来表示实数"><span class="toc-number">4.</span> <span class="toc-text">用无限小数来表示实数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实数域的连续性"><span class="toc-number">5.</span> <span class="toc-text">实数域的连续性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数集的界"><span class="toc-number">6.</span> <span class="toc-text">数集的界</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="无理数的定义">无理数的定义</h2>
+<p>有理数集及其在第一节内列举的一切性质，作为是已给的.</p>
+<p>我们仿效戴德金($\text{R.Dedekind}$)来叙述无理数的理论.有理数域内的分划的概念是这理论的基础.若将有理数全体所成的集合分拆为两个非空集合(即至少包含一个数的)$A,A’$.我们把这样的分拆叫做<strong>分划</strong>，只要满足条件：</p>
+<p>$1°$ 任一有理数，必在且仅在$A$及$A’$二集之一中出现；</p>
+<p>$2°$ 集$A$内的任一数$a$，必小于集$A’$内的任一数$a’$.</p>
+<p>集$A$称为分划的<strong>下组</strong>，集$A’$称为分划的<strong>上组</strong>.分划记成$A\mid A’$.</p>
+<p>由分划的定义推得，小于下组内的数$a$的一切有理数也都属于下组.仿此，大于上组内的数$a’$的一切有理数亦都属于上组.</p>
+<p>例$1$ 一切满足不等式$a &lt; 1$的有理数$a$，定为集$A$，一切满足$a’\geq 1$的$a’$，都算入集$A’$.</p>
+<p>很易验证，这样，我们实际上已得出分划了.数$1$属于$A’$组，且显然成为其中最小的数.由另一方面看，在$A$组内并无最大数，因不论我们在$A$内取怎样的数$a$，怛能在$a$与$1$之间指出有理数$a_1$来，因而它必大于$a$并且属于$A$组.</p>
+<p>例$2$ 取小于或等于$1$的一切有理数$a$，$a\leq 1$，归入下组$A$；取大于$1$的一切有理数$a’$.$a’ &gt; 1$.归入上组.则亦得一分划，且其中在上组无最小数，而在下组有最大数(即$1$).</p>
+<p>例$3$ 取使$a^2 &lt; 2$的一切正有理数$a$，数$0$及一切负有理数归入$A$组，使${a’}^2 &gt;2$的一切正有理数$a’$归入$A$组.</p>
+<p>很易证明，我们亦已得出分划.此处，在$A$组内既无最大数，在$A’$组内亦无最小数.我们将证明，例如，这论断的第一点(第二点同样可以证明).设$a$为$A$组内的任意正数，则$a^2 &lt; 2$.再证，必能得这样的正整数$n$，使</p>
+<p>$$(a+\dfrac{1}{n})^2 &lt; 2,$$</p>
+<p>于是$a+\dfrac{1}{n}$亦属于$A$.</p>
+<p>这不等式相当于：</p>
+<p>$$a^2+\dfrac{2a}{n}+\dfrac{1}{n^2} &lt; 2,\dfrac{2a}{n}+\dfrac{1}{n^2} &lt; 2-a^2,$$</p>
+<p>若$n$满足不等式$\dfrac{2a+1}{n} &lt; 2-a^2$，则上面第二个不等式也自然能满足了.为此，只需取</p>
+<p>$$n &gt; \dfrac{2a+1}{2-a^2},$$</p>
+<p>而这是恒为可能的[依阿基米德公理，Ⅳ$1°$].因此，不论$a$为$A$组内的怎样的正数，在这$A$组内终能求得大于它的数；又因为当$a\leq 0$时这论证显也成立，故在$A$组内没有任何数能成为最大的.</p>
+<p>很易明了，不可能有这样的分划存在，在它的下组内有最大数$a_0$，同时在上组内又有最小数$a_0’$.实际上，假设这样的分划存在着，则应用有理数域的稠密性[Ⅰ$3°$]，必能取得一个位于$a_0$与$a_0’$之间的有理数$c$：$a_0 &lt; c &lt; a_0’$.数$c$不能属于$A$组；因否则，$a_0$就不是此组的最大数.仿此，$c$亦不通属于$A’$组，但这是与定义分划的概念的性质$1°$相矛盾的.</p>
+<p>这样，分划仅能有三种类型，如刚才例$1,2,3$所表明的：</p>
+<p>$1)$在下组$A$内无最大数，而在上组$A’$内有最小数$r$；</p>
+<p>$2)$在下组$A$内有最大数$r$，而在上组$A’$内无最小数；</p>
+<p>$3)$在下组内既无最大数，在上组内亦无最小数.</p>
+<p>在前两种情形，我们说，分划由有理数$r$所产生($r$成为$A$与$A’$之间的<strong>界数</strong>)，或说分划定义有理数$r$.在例$1,2$中，$1$便是这样的数.在第三种情形界数并不存在，分划并不定义任何有理数.今引入新的对象——<strong>无理数</strong>.让我们约定，任一$3)$型的分划定义某一无理数$\alpha$.这个数$\alpha$便代替缺少的界数，我们好像把它插入在$A$组的一切数$a$与$A’$组的一切数$a’$之间.在例$3$中，这新创的数，很易推想而知，即是$\sqrt{2}$.</p>
+<p>我们并不引入无理数的任何同一式样的记法，我们总是把无理数$\alpha$理解为有理数域中确定它的分划$A\mid A’$.</p>
+<p>为了一致起见，同样来理解有理数$r$也常是很方便的.但对于任一有理数$r$存在着确定它的两种分划：在两种情形中，数$a &lt; r$总是属于下组，数$a’ &gt; r$总是属于上组，而数$r$本身可以任意包含在下组(这时$r$为下组的最大数)，或包含在上组($r$为上组的最小数).为了确定起见，我们约定：凡说到确定有理数$r$的分划时，常把这数放在上组内.</p>
+<p>有理数及无理数总称为<strong>实数</strong>.实数的概念，为数学分析的基本概念之一.</p>
+<h2 id="实数域的序">实数域的序</h2>
+<p>由分划$A\mid A’$及$B\mid B’$所确定的二无理数$\alpha$及$\beta$，当且仅当二分划为恒等时，始认为相等.实际上只要下组$A$及$B$互相重合就够了，因为这时$A’$与$B’$亦必互相重合.这定义在数$\alpha$及$\beta$为有理数时，仍可保持不变.换言之，若二有理数$\alpha$与$\beta$相等，则确定它们的分划相重合，反之，由分划的重合推得数$\alpha$与\beta$相等.在这里，自然仍须注意到，以分划来确定有理数时的上述约定.</p>
+<p>现在转而建立关于实数“大于”的概念.关于有理数这概念早已建立了.对于有理数$r$与无理数$\alpha$之间，“大于”的概念实际在[无理数的定义]中已建立了：即，若$\alpha$由分划$A\mid A’$所确定，我们便算作$\alpha$大于$A$组中的一切有理数，同时$A’$组中的一切有理数大于$\alpha$.</p>
+<p>现在设有二无理数$\alpha$及$\beta$，$\alpha $由分划$A\mid A’$，$\beta$由分划$B\mid B’$所确定.我们将称有较大下组的那个数为较大数.更准确些说，若$A$组整个包含着$B$组，并且不与它重合，则算作$\alpha &gt; \beta$(这条件，显然相当于：$B’$组整个包含着$A’$组，并且不与它重合).很易验证，当$\alpha ,\beta$之一是或甚至二者都是有理数时，这定义仍可保持.</p>
+<p>现在证明实数均能满足性质Ⅰ$1°$及Ⅰ$2°$.</p>
+<p>Ⅰ$1°$ 任一对(实)数$\alpha $与$\beta$之间必有且仅有下列三种关系之一：</p>
+<p>$$\alpha =\beta ,\alpha &gt; \beta ,\beta &gt; \alpha .$$</p>
+<p>若确定$\alpha$的分划$A\mid A’$与确定$\beta$的分划$B\mid B’$相重合，则$\alpha =\beta$.若这二分划不相重合，则或$A$整个包含$B$(这时$\alpha &gt; \beta$)，或不是这样.在后一情形，$B$组内有元素$b_0$落在$A’$内，则对于$A$组内的任何元素$a$，必有$a &lt; b_0$.因此$B$组整个包含$A$组，且不与它重合，于是我们有$\beta &gt; \alpha$.</p>
+<p>Ⅰ$2°$ 由$\alpha &gt; \beta$，$\beta &gt; \gamma$推得$\alpha &gt; \gamma$.</p>
+<p>设数$\alpha ,\beta ,\gamma$(它们中间可能有有理数)是由分划$A\mid A’,B\mid B’,C\mid C’$来确定的.若$\alpha &gt; \beta$，则依“大于”的定义，$A$组包含$B$组，且并不与它重合.但因$\beta &gt; \gamma$，故$B$组包含$C$组，且不与它重合.因此，$A$组亦包含$C$组，并且不与它重合，即$\alpha &gt; \gamma$.</p>
+<p>如在$2$有理数域的序中一样，现在可以建立“小于”的概念：若$\beta &gt; \alpha$，则我们说$\alpha &lt; \beta$.$&lt;$号亦与$&gt;$号一样具有传递性.</p>
+<h2 id="辅助命题">辅助命题</h2>
+<p>现在我们来建立实数域的<strong>稠密性</strong>(比较Ⅰ$3°$)；准确些说，我们将证明下列论断：</p>
+<p><strong>引理$1$</strong> 对于不论怎样的两个实数$\alpha$及$\beta$，其中$\alpha &gt; \beta$，恒有一个位于它们中间的有理数$r$：$\alpha &gt; r &gt; \beta$(因此，这种有理数有无穷个).</p>
+<p>因$\alpha &gt; \beta$，故确定数$\alpha$的分划的下组$A$整个包含确定$\beta$的下组$B$，且不与$B$重合.因此在$A$内必有有理数$r$，它不包含在$B$内，于是必属于$B’$；对于它</p>
+<p>$$\alpha &gt; r \geq \beta$$</p>
+<p>(只有在$\beta$为有理数时始能成立等式).但因为在$A$内无最大数，故在必要时，把$r$取得大一些就可以取消等式.</p>
+<p><strong>附注</strong> 我们事实上已证明了比实数域的稠密性还要强的性质：即在实数$\alpha$与$\beta$(若$\alpha &gt; \beta$)之间必定存在着有理数(不仅是实数).以后我们就将引用这个更强的稠密性.</p>
+<p>由此直接推得 </p>
+<p><strong>引理$2$</strong> 设给定两个实数$\alpha$和$\beta$.如果任取一个数$e &gt; 0$，数$\alpha$及$\beta$都能位于一对有理数$s$与$s’$之间：</p>
+<p>$$s’ &gt; \alpha &gt; s,s’ &gt; \beta &gt; s,$$</p>
+<p>这对数的差小于$e$：</p>
+<p>$$s’-s &lt; e,$$</p>
+<p>则数$\alpha$与$\beta$必须相等.</p>
+<p><strong>证明</strong> 我们用反证法来证明.例如，设$\alpha &gt; \beta$，依引理$1$，在$\alpha$与$\beta$间可以插入两个有理数$r$及$r’ &gt; r$：</p>
+<p>$$\alpha &gt; r’ &gt; r &gt; \beta .$$</p>
+<p>于是对于任何二数$s$及$s’$，当$\alpha$及$\beta$都在它们之间时，显然成立如下不等式</p>
+<p>$$s’ &gt; r’ &gt; r &gt; s,$$ </p>
+<p>由此</p>
+<p>$$s’-s &gt; r’-r &gt; 0,$$</p>
+<p>因此差$s’-s$不通小于数$e=r’-r$，违背引理的条件.这矛盾即证明了引理.</p>
+<h2 id="用无限小数来表示实数">用无限小数来表示实数</h2>
+<p>现在我们考虑这样的表示实数的方法，即其分数部分(尾数)是正的，而同时，其整数部分可以为正的、负的或零.</p>
+<p>首先假定被考察的实数$\alpha$并非整数，亦非有限十进小数.现在要来求它的十进小数近似值.若$\alpha$由分划$A\mid A’$所确定，则首先易见在$A$组内必有整数$M$，又在$A’$组内亦必有整数$N &gt; M$.在$M$上依次加$1$，必能得出这样两个相邻的整数$C_0$及$C_0 +1$，使</p>
+<p>$$C_0 &lt; \alpha &lt; C_0 +1.$$</p>
+<p>这里的数$C_0$可以为正的、负的或零.</p>
+<p>若再用数</p>
+<p>$$C_0.1;C_0.2;\cdots ;C_0.9,$$</p>
+<p>分$C_0$与$C_0+1$间的区间为十等份，则$\alpha$必(且仅)落在其中之一个部分区间内，因此我们又求得相差为$\dfrac{1}{10}$的两数：$C_0.c_1$及$C_0.c_1 +\dfrac{1}{10}$，且有</p>
+<p>$$ C_0.c_1 &lt; \alpha &lt; C_0.c_1 +\dfrac{1}{10}.$$</p>
+<p>继续这样分下去，在确定数码<span>$c_1 ,c_2 ,\cdots ,c_{n-1}$</span>后，我们就用不等式</p>
+<p>$$ C_0.c_1c_2 \cdots c_n &lt; \alpha &lt; C_0.c_1c_2 \cdots c_n +\dfrac{1}{10^n}.\tag{1}$$</p>
+<p>定义第$n$位数码$c_n$.</p>
+<p>这样，在求数$\alpha$的十进小数近似值的过程中，我们求得整数$C_0$及数码$c_1 ,C_2 ,\cdots ,c_n ,\cdots$的无限序列.由此组成的无限小数，即记号</p>
+<p>$$C_0.c_1c_2 \cdots c_n \cdots \tag{2}$$</p>
+<p>可以看成是实数$\alpha$的一种表示.</p>
+<p>在例外的情形，当$\alpha$本身就是整数或有限小数，亦可以用相似的方法由比$(1)$更普遍的关系式</p>
+<p>$$ C_0.c_1c_2 \cdots c_n \leq \alpha \leq C_0.c_1c_2 \cdots c_n +\dfrac{1}{10^n} \tag{1a}$$</p>
+<p>来相继地确定数$C_0$及数码$c_1 ,C_2 ,\cdots ,c_n ,\cdots$.事情是这样的，到某时，数$\alpha$会重合于包含它的区间的一端，重合于左端或右端都行；从这时开始，相应地，在$(1a)$中左端或右端就将经常不变地成立等式.按照成立等式的是左端还是右端，这以后的各数码就将全是$0$或全是$9$.因此，这时$\alpha$就有了双重的表示，一种是用零循环的，一种是用$9$循环的.例如，</p>
+<p>$$3.826=3.826000\cdots =3.825999\cdots ,$$</p>
+<p>$$-3.826=\overline{4}.174000\cdots =\overline{4}.173999\cdots .$$</p>
+<p>记法$x=\overline{4}.174000$表示$x=-4+0.174000$.</p>
+<p>反之，今设任给一无限十进小数$(2)$；我们要证明总可以找到一实数$\alpha$，刚好是被这小数所表示的.为此，我们来考察小数$(2)$的一段：</p>
+<p>$$C_n=C_0.c_1c_2 \cdots c_n ,\tag{3}$$</p>
+<p>把它作为所求数的“亏(不足的)近似值”，同样把</p>
+<p>$$C_n’=C_0.c_1c_2 \cdots c_n +\dfrac{1}{10^n} \tag{4}$$</p>
+<p>作为其“盈(过剩的)近似值”.不难看出，每一$C_n$小于每一$C_n’$.现在我们用如下法来定有理数域的一个分划：把大于一切$C_n$的有理数$a’$(例如，一切数$C_n’$)放在上组$A’$内，而把一切余下的数(例如，数$C_n$本身)放在$A$组内.很易验证，这就是我们所要的分划，它确定了所求的实数$\alpha$.</p>
+<p>实则，因$\alpha$就是在两组之间的界数，因此，当然成立</p>
+<p>$$C_n \leq \alpha \leq C_n’ ,$$</p>
+<p>即数$\alpha$满足于一切$(1a)$型的不等式.这就证明了小数$(2)$就是所求实数的表示式.</p>
+<p>盈十进近似值$(4)$和亏十进近似值$(3)$的差等于$\dfrac{1}{10^n}$，随着$n$的增大，这差可小于任何有理数$e &gt; 0$.事实上，因不超出数$\dfrac{1}{e}$的自然数仅能是有限多个，故不等式$10^n \leq \dfrac{1}{e}$，或相当的不等式$\dfrac{1}{10^n} \geq e$仅能对有限个$n$的值满足；对于其余一切$n$的值，将有</p>
+<p>$$\dfrac{1}{10^n} &lt; e.$$</p>
+<p>由这附注，依引理$2$，可得结论：任一异于$\alpha$的数$\beta$，既不能像$\alpha$那样满足一切不等式$(1)$或$(1a)$，故其无限十进小数表示式必与$\alpha$的表示式不同.</p>
+<p>特别是由此推得：不等于有限小数的数，其表示式不能以$0$或$9$来循环，因为任一以$0$或$9$来循环的小数显然表示有限小数.</p>
+<p>今后读者就可以将实数想象为无限十进小数.由中学课本内，人们知道，无限循环小数表示有理数，反之，任一有理数总可化成循环小数.这样，不循环的无限小数，就用来表示我们新引入的无理数(这一概念也可作为建立无理数的理论的出发点).</p>
+<p>附注 下面我们将常应用有理近似值$a$及$a’$以接近实数$\alpha$，这时，</p>
+<p>$$a &lt; \alpha &lt; a’.$$</p>
+<p>其差$a’-a$可为任意小.对于有理数$\alpha$，显然存在着这种数$a$及$a’$；对于无理数$\alpha$也可以有这样的$a$及$a’$，例如，当$n$充分大时应用十进近似值$C_n$及$C_n’$.</p>
+<h2 id="实数域的连续性">实数域的连续性</h2>
+<p>今转而考察一切实数所成之域的一个极重要的性质.这种性质使实数域在本质上异于有理数域.在考察有理数域的分划时，我们已看到，有时有这样的分划存在，使在有理数域内并无产生此分划的界数.正是由于有理数域有这种不完备性，即在它们中间存在着这些空隙，所以我们才要引入新数——无理数.今开始考察实数域的分划.在这种分划之下我们把这数域分拆成两个均非空集$\bf A$及$\bf A’$，使能满足：</p>
+<p>$1°$ 每一实数必落在集$\bf A,\bf A’$中一个且仅一个之内；</p>
+<p>$2°$ 集$\bf A$的每一数$\alpha$小于集$\bf A’$的每一数$\alpha’$.</p>
+<p>现在发生了问题：对于这样的分划$\bf A\mid \bf A’$，是否永远能找到——在实数域内——一个产生这分划的界数，或在这数域内还存在着空隙(这种空隙可作为再引入新数的理由)？</p>
+<p>要指出，事实上并没有这种空隙：</p>
+<p><strong>基本定理(戴德金)</strong> 对于实数域内的任一分划$\bf A\mid \bf A’$必有产生这分划的实数$\beta$存在.这数$\beta$，$1)$或是下组$\bf A$内的最大数，$2)$或是上组$\bf A’$内的最小数.</p>
+<p>注：如果不加证明地承认实数的基本性质，而不从有理数的性质引入这些基本性质，那么本定理同样看作是<strong>公理</strong>.把它称为<strong>戴德金公理</strong>或<strong>完备性公理</strong>.</p>
+<p>实数域的这一性质常称为它的<strong>完备性</strong>，也称为它的<strong>连续性</strong>(或<strong>密接性</strong>).</p>
+<p><strong>证明</strong> 将属于$\bf A$的一切有理数集记成$A$，属于$\bf A’$的一切有理数集记成$A’$.容易证明，集$A$及$A’$形成有理数域内的一个分划.</p>
+<p>这分划$A\mid A’$确定出某一实数$\beta$.它应该落在$\bf A$组或$\bf A’$组之一内.假定$\beta$落在下组$\bf A$内，则情形$1)$便实现了，就是$\beta$成为$\bf A$组的最大数.实际上，如果不是这样，便可在这组内找出大于$\beta$的另一数$\alpha _0$来.今在$\alpha _0$与$\beta$之间(依引理$1$)插入有理数$r$：</p>
+<p>$$\alpha _0 &gt; r &gt; \beta .$$</p>
+<p>$r$亦属于$\bf A$，故必属于$\bf A$的一部分$A$.我们便得出谬论：有理数$r$属于确定$\beta$的分划的下组，却又大于这数！这便证明了我们的论断.</p>
+<p>我们还可以证明类似的论断，如果$\beta$落在上组$\bf A’$内，则情形$2)$就实现了.</p>
+<p><strong>附注</strong> 同时在$\bf A$组内存在最大数，在$A’$组内存在最小数是不可能的；这可如同对有理数集合的分划一样地来验证(应用引理$1$).</p>
+<h2 id="数集的界">数集的界</h2>
+<p>我们应用基本定理[实数域的连续性]，在这里建立一些在现代分析中担任重要角色的概念.(在考察实数的算术运算时就已需要它们了.)</p>
+<p>设有实数的任一无限集；它可用任何方法给出.这种数集的例子是：自然数集，一切真分数集，在$0$与$1$间的一切实数集，方程$\sin{x}=\dfrac{1}{2}$的根的集，等等.</p>
+<p>集内的任一数记成$x$，因此$x$所代表的是集内一般的数，诸数$x$所成的集，便记成$\chi =\lbrace x\rbrace $.</p>
+<p>若对所考察的集$\lbrace x\rbrace $，有这样的数$M$存在，使一切$x\leq M$，就说，这集(被数$M$)<strong>上有界</strong>；这$M$就是$\lbrace x\rbrace $的<strong>上界</strong>.例如，真分数集被数$1$或任何大于$1$的数上有界；自然数序列不上有界.</p>
+<p>仿此，若能求出数$m$，使一切$x\geq m$，就说，集$\lbrace x\rbrace $(被数$m$)<strong>下有界</strong>，且数$m$称为集$\lbrace x\rbrace $的<strong>下界</strong>.例如，自然数序列被$1$或任何$&lt; 1$的数下有界；真分数集被$0$或$&lt; 0$的数下有界.</p>
+<p>上(下)有界的集，可以又下(上)有界，也可以不是下(上)有界.如，真分数集上有界也下有界，而自然数序列下有界，却不上有界.</p>
+<p>若数集不上(下)有界，则称“广义的数”$+\infty$($-\infty$)为它的上(下)界.关于这些“广义的数”或“无穷的数”，我们有</p>
+<p>$$-\infty &lt; +\infty 及 -\infty &lt; \alpha &lt; +\infty ,$$</p>
+<p>不论$\alpha$是怎样的(“有限的”)实数.</p>
+<p>符号$+\infty$和$-\infty$读作“正无穷”和“负无穷”.</p>
+<p>若数集上有界，即有有限的上界$M$，则同时可知这种上界必有无数个之多(例如，任何$&gt; M$的数，显然亦是上界).在一切上界内，最小的上界特别有用，它称为<strong>上确界</strong>.仿此，若数集下有界，则一切下界中的最大者，便称为<strong>下确界</strong>.如对于一切真分数集，$0$及$1$就各为下确界及上确界.</p>
+<p>成为问题的是：上(下)有界的数集是否永远有上(下)确界存在？实际上，由于上(下)界既是一无限数集，而在无限数集中并非恒能找出最小者或最大者，故在所考察的数集的一切上(下)界中有这种最小(大)数存在还需要加以证明.</p>
+<p><strong>定理</strong> 若集$\chi =\lbrace x\rbrace $上(下)有界，则它必有上(下)确界.</p>
+<p><strong>证明</strong> 在进行关于上界的讨论前，先考察两种情形：</p>
+<p>$1°$ 在集$\chi$的诸数$x$中有一最大数$\overline{x}$.那时，集内的一切数将满足不等式$x \leq \overline{x}$，即$\overline{x}$为$\chi$的上界.另一方面，$\overline{x}$属于$\chi$；因此，对于任何的上界$M$成立不等式$\overline{x}\leq M$.由此得结论，$\overline{x}$是$\chi$集的上确界.</p>
+<p>$2°$ 在集$\chi$的诸数$x$中无最大数.用下列方法产生实数域内的一个分划.取集$\chi$的一切上界$\alpha’$归入上组$\bf A’$内，一切余下的实数归入下组$\bf A$内.在这样分拆时，集$\chi$的一切数$x$将全部落在$\bf A$组内，因依照假定，其中没有最大数.这样，$\bf A$组及$\bf A’$组均非空集.这种分拆实际上就是一个分划，因一切实数均已分入两组，且$\bf A’$组内的任一数必大于$\bf A$组内的任何数.依戴德金基本定理，必有产生分划的实数$\beta$存在.一切数$x$，因属于$\bf A$组，均不能超过这“界数”$\beta$，即$\beta$可以用来作为$x$的上界，故$\beta$本身属于$A’$组，且成为该组的最小数.这样$\beta$就成为一切上界中的最小数，即是所求的集$\chi =\lbrace x\rbrace $的上确界.</p>
+<p>定理的下半部(关于下确界的存在)的证法完全与此相同.</p>
+<p>若$M^{\ast}$是数集$\chi =\lbrace x\rbrace $的上确界，则对于一切$x$恒有</p>
+<p>$$x \leq M^{\ast}.$$</p>
+<p>今取小于$M^{\ast}$的任意数$\alpha$，因$M^{\ast}$是上界中的最小者，则$\alpha$一定不会是集$\chi$的上界，即必能在$\chi$中求出数$x’$，使</p>
+<p>$$x’ &gt; \alpha .$$</p>
+<p>用这两个不等式就能完全表明集$\chi$的上确界的特征.</p>
+<p>仿此，集$\chi$的下确界$m^{\ast}$的特征可以用下面的话来表明：即对于$\chi$中的一切$x$有</p>
+<p>$$x \geq m^{\ast} ,$$</p>
+<p>但对于任一大于$m^{\ast}$的数$\beta$，必能在$\chi$中求出数$x’’$，使</p>
+<p>$$x’’ &lt; \beta .$$</p>
+<p>数集$\chi$的上确界是$M^{\ast}$及下确界是$m^{\ast}$常用下列符号来记：</p>
+<p>$$M^{\ast}=\text{sup} \chi =\text{sup} \lbrace x\rbrace ,m^{\ast}=\text{inf} \chi =\text{inf} \lbrace x\rbrace $$</p>
+<p>(依拉丁文：$\text{supremum} =$最高的，$\text{infimum}=$最低的).</p>
+<p>请注意一个明显的，以后常会遇到的推论：</p>
+<p>若某数集的一切数$x$满足不等式$x \leq M$，则必有$\text{sup} \lbrace x\rbrace \leq M$.</p>
+<p>实际上，数$M$显然是数集的上界之一，因此，一切上界中的最小者总不能超过它.</p>
+<p>仿此，由不等式$x \geq m$，则必有$\text{inf} \lbrace x\rbrace \geq m$.</p>
+<p>最后我们约定，若数集$\chi =\lbrace x\rbrace $不上有界，便说，它的上确界是$+\infty $：$\text{sup} \lbrace x\rbrace = +\infty$.仿此，若数集$\chi =\lbrace x\rbrace $不下有界，便说，它的下确界是$-\infty $：$\text{inf} \lbrace x\rbrace = -\infty$.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/微积分/">微积分</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微积分/">微积分</a>
+  </div>
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://jianhanglin.github.io/blog/2014/10/weijifenxuejiaocheng102/" data-title="《微积分学教程(第一卷)》 绪论 实数 2 无理数的导入·实数域的序 | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/blog/2014/11/weijifenxuejiaocheng103/" title="《微积分学教程(第一卷)》 绪论 实数 3 实数的算术运算">
+  <strong>上一篇：</strong><br/>
+  <span>
+  《微积分学教程(第一卷)》 绪论 实数 3 实数的算术运算</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/blog/2014/10/weijifenxuejiaocheng101/"  title="《微积分学教程(第一卷)》 绪论 实数 1 有理数域">
+ <strong>下一篇：</strong><br/> 
+ <span>《微积分学教程(第一卷)》 绪论 实数 1 有理数域
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+<section class="comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#无理数的定义"><span class="toc-number">1.</span> <span class="toc-text">无理数的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实数域的序"><span class="toc-number">2.</span> <span class="toc-text">实数域的序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#辅助命题"><span class="toc-number">3.</span> <span class="toc-text">辅助命题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用无限小数来表示实数"><span class="toc-number">4.</span> <span class="toc-text">用无限小数来表示实数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实数域的连续性"><span class="toc-number">5.</span> <span class="toc-text">实数域的连续性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数集的界"><span class="toc-number">6.</span> <span class="toc-text">数集的界</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/基础代数/" title="基础代数">基础代数<sup>8</sup></a></li>
+		
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>5</sup></a></li>
+		
+			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>12</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/代数/" title="代数">代数<sup>20</sup></a></li>
+		
+			<li><a href="/tags/微积分/" title="微积分">微积分<sup>5</sup></a></li>
+		
+			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/代数/" style="font-size: 20.00px;">代数</a><a href="/tags/微积分/" style="font-size: 15.00px;">微积分</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            <a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+          </li>
+        
+          <li>
+            <a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+          </li>
+        
+          <li>
+            <a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+          </li>
+        
+          <li>
+            <a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+          </li>
+        
+          <li>
+            <a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+          </li>
+        
+          <li>
+            <a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+          </li>
+        
+          <li>
+            <a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+          </li>
+        
+          <li>
+            <a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+          </li>
+        
+          <li>
+            <a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+          </li>
+        
+          <li>
+            <a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+          </li>
+        
+          <li>
+            <a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+          </li>
+        
+          <li>
+            <a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+          </li>
+        
+          <li>
+            <a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+          </li>
+        
+          <li>
+            <a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+          </li>
+        
+          <li>
+            <a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+          </li>
+        
+          <li>
+            <a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+          </li>
+        
+          <li>
+            <a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+          </li>
+        
+          <li>
+            <a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+          </li>
+        
+          <li>
+            <a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+          </li>
+        
+          <li>
+            <a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+          </li>
+        
+          <li>
+            <a href="http://www.google.com.hk" target="_blank" title="谷歌Google">谷歌Google</a>
+          </li>
+        
+          <li>
+            <a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://jianhanglin.github.io/about" target="_blank" title="JianhangLin">JianhangLin</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-1', 'linjianhang.me');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

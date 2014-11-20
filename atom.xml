@@ -4,7 +4,7 @@
   <subtitle><![CDATA[春水初生，春林初盛，春风十里，不如你.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-11-20T02:36:08.087Z</updated>
+  <updated>2014-11-20T02:38:50.467Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[《微积分学教程(第一卷)》 第一章 极限论 1 整序变量及其极限]]></title>
-    <link href="http://jianhanglin.github.io/2014/11/weijifenxuejiaocheng111/"/>
-    <id>http://jianhanglin.github.io/2014/11/weijifenxuejiaocheng111/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/"/>
+    <id>http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/</id>
     <published>2014-11-18T07:58:44.000Z</published>
     <updated>2014-11-18T08:09:57.000Z</updated>
     <content type="html"><![CDATA[<h2 id="变量、整序变量">变量、整序变量</h2>
@@ -35,8 +35,8 @@
   
   <entry>
     <title><![CDATA[《微积分学教程(第一卷)》 绪论 实数 4 实数的其他性质及应用]]></title>
-    <link href="http://jianhanglin.github.io/2014/11/weijifenxuejiaocheng104/"/>
-    <id>http://jianhanglin.github.io/2014/11/weijifenxuejiaocheng104/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng104/"/>
+    <id>http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng104/</id>
     <published>2014-11-17T08:51:51.000Z</published>
     <updated>2014-11-18T07:45:49.000Z</updated>
     <content type="html"><![CDATA[<h2 id="根的存在·以有理数为指数的幂">根的存在·以有理数为指数的幂</h2>
@@ -185,8 +185,8 @@
   
   <entry>
     <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 7 数学归纳法原理]]></title>
-    <link href="http://jianhanglin.github.io/2014/11/daishuxueyinlun117/"/>
-    <id>http://jianhanglin.github.io/2014/11/daishuxueyinlun117/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/11/daishuxueyinlun117/"/>
+    <id>http://jianhanglin.github.io/blog/2014/11/daishuxueyinlun117/</id>
     <published>2014-11-15T03:55:24.000Z</published>
     <updated>2014-11-19T07:36:22.000Z</updated>
     <content type="html"><![CDATA[<p>假设读者对全体自然数(或正整数)的集合$\mathbb{N}=\lbrace 1,2,3,\cdots \rbrace$了解得很清楚.事实上，研究集合$\mathbb{N}$的出发点是<a href="http://zh.wikipedia.org/wiki/%E7%9A%AE%E4%BA%9A%E8%AF%BA%E5%85%AC%E7%90%86" target="_blank" rel="external">皮亚诺公理</a>(<a href="http://baike.baidu.com/view/454509.htm?fr=aladdin" target="_blank" rel="external">皮亚诺</a>，$1858-1932$).从皮亚诺公理可以推导出自然数集，更精确地，非负整数集中加法和乘法的性质以及线性序(见$\S 6$第$4$段).特别是证明了一个直观而清晰的论断：每一个非空集合$S\subset \mathbb{N}$都有最小元，即存在一个自然数$s\in S$它小于$S$中的所有的数.根据皮亚诺公理得到的这一论断推导下述</p>
@@ -274,8 +274,8 @@
   
   <entry>
     <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 6 等价关系. 商映射]]></title>
-    <link href="http://jianhanglin.github.io/2014/11/daishuxueyinlun116/"/>
-    <id>http://jianhanglin.github.io/2014/11/daishuxueyinlun116/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/11/daishuxueyinlun116/"/>
+    <id>http://jianhanglin.github.io/blog/2014/11/daishuxueyinlun116/</id>
     <published>2014-11-06T07:18:52.000Z</published>
     <updated>2014-11-07T07:15:12.000Z</updated>
     <content type="html"><![CDATA[<p>在$\S 3$中引入的线性方程组的等价性，以及我们不自觉地在逻辑学，在日常生活等各个方面使用的各种形态的等价性使人们想到应该一般地定义这一概念.</p>
@@ -366,8 +366,8 @@
   
   <entry>
     <title><![CDATA[《微积分学教程(第一卷)》 绪论 实数 3 实数的算术运算]]></title>
-    <link href="http://jianhanglin.github.io/2014/11/weijifenxuejiaocheng103/"/>
-    <id>http://jianhanglin.github.io/2014/11/weijifenxuejiaocheng103/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng103/"/>
+    <id>http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng103/</id>
     <published>2014-11-06T07:13:39.000Z</published>
     <updated>2014-11-15T03:54:59.000Z</updated>
     <content type="html"><![CDATA[<h2 id="实数的和的定义">实数的和的定义</h2>
@@ -519,8 +519,8 @@
   
   <entry>
     <title><![CDATA[《微积分学教程(第一卷)》 绪论 实数 2 无理数的导入·实数域的序]]></title>
-    <link href="http://jianhanglin.github.io/2014/10/weijifenxuejiaocheng102/"/>
-    <id>http://jianhanglin.github.io/2014/10/weijifenxuejiaocheng102/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/10/weijifenxuejiaocheng102/"/>
+    <id>http://jianhanglin.github.io/blog/2014/10/weijifenxuejiaocheng102/</id>
     <published>2014-10-30T02:42:03.000Z</published>
     <updated>2014-11-06T07:13:16.000Z</updated>
     <content type="html"><![CDATA[<h2 id="无理数的定义">无理数的定义</h2>
@@ -683,8 +683,8 @@
   
   <entry>
     <title><![CDATA[《微积分学教程(第一卷)》 绪论 实数 1 有理数域]]></title>
-    <link href="http://jianhanglin.github.io/2014/10/weijifenxuejiaocheng101/"/>
-    <id>http://jianhanglin.github.io/2014/10/weijifenxuejiaocheng101/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/10/weijifenxuejiaocheng101/"/>
+    <id>http://jianhanglin.github.io/blog/2014/10/weijifenxuejiaocheng101/</id>
     <published>2014-10-28T02:21:24.000Z</published>
     <updated>2014-10-30T02:50:42.000Z</updated>
     <content type="html"><![CDATA[<p><strong><a href="http://book.douban.com/subject/1707158/" target="_blank" rel="external">微积分学教程(第一卷)</a></strong> <a href="http://pan.baidu.com/s/1i31NAN7" target="_blank" rel="external">在线阅读</a> Г.М.菲赫金哥尔茨 杨弢亮 叶彦谦  高等教育出版社 第8版 </p>
@@ -803,8 +803,8 @@
   
   <entry>
     <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 5 集合与映射]]></title>
-    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun115/"/>
-    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun115/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun115/"/>
+    <id>http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun115/</id>
     <published>2014-10-27T07:22:40.000Z</published>
     <updated>2014-11-07T06:19:59.000Z</updated>
     <content type="html"><![CDATA[<p>在前两节中，我们遇到了各式各样的元素的集合，也遇到了集合之间的映射.例如给定的线性方程组的解的集合，或使每一个二阶矩阵对应于它的行列式的法则——都是某些形式概念的特例，了解形式概念(哪怕在直观的层面上)对今后的学习是非常有益的.</p>
@@ -970,8 +970,8 @@
   
   <entry>
     <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 4 低阶行列式]]></title>
-    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun114/"/>
-    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun114/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun114/"/>
+    <id>http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun114/</id>
     <published>2014-10-25T01:30:11.000Z</published>
     <updated>2014-10-27T07:17:43.000Z</updated>
     <content type="html"><![CDATA[<h2 id="低阶行列式">低阶行列式</h2>
@@ -1080,8 +1080,8 @@
   
   <entry>
     <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 3 线性方程组初步]]></title>
-    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun113/"/>
-    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun113/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun113/"/>
+    <id>http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun113/</id>
     <published>2014-10-23T04:30:34.000Z</published>
     <updated>2014-11-17T05:17:20.000Z</updated>
     <content type="html"><![CDATA[<h1 id="线性方程组初步">线性方程组初步</h1>
@@ -1216,8 +1216,8 @@
   
   <entry>
     <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 2 几个典型问题]]></title>
-    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun112/"/>
-    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun112/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun112/"/>
+    <id>http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun112/</id>
     <published>2014-10-23T01:20:17.000Z</published>
     <updated>2014-10-23T04:32:42.000Z</updated>
     <content type="html"><![CDATA[<h2 id="几个典型问题">几个典型问题</h2>
@@ -1275,8 +1275,8 @@
   
   <entry>
     <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 1 简谈代数]]></title>
-    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun111/"/>
-    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun111/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun111/"/>
+    <id>http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun111/</id>
     <published>2014-10-22T08:27:50.000Z</published>
     <updated>2014-10-23T01:21:06.000Z</updated>
     <content type="html"><![CDATA[<p>代数从何而来？粗略地说，代数起源于加法，乘法和求整数次方幂的计算艺术.如果用字母代替数(这一点并非显而易见且有多种方式)，就使我们能够在更广泛的代数系统中使用类似的法则进行计算.对这一问题给出透彻回答的尝试将我们带进了久远的时代，带进了数学思想奇妙产生的过程.这一答案，最困难的部分与我们今天的基本代数结构：群、环、域、模等紧密相关.但这恰好是本书的大部分内容，因而第一章的目的目前似乎还达不到.</p>
@@ -1313,8 +1313,8 @@
   
   <entry>
     <title><![CDATA[《代数学引论(第一卷)基础代数》 前言]]></title>
-    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun0/"/>
-    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun0/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun0/"/>
+    <id>http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun0/</id>
     <published>2014-10-22T03:36:46.000Z</published>
     <updated>2014-10-23T03:29:25.000Z</updated>
     <content type="html"><![CDATA[<p><strong><a href="http://book.douban.com/subject/2036531/" target="_blank" rel="external">代数学引论(第一卷)基础代数</a></strong> <a href="http://pan.baidu.com/s/1c01XGQ0" target="_blank" rel="external">在线阅读</a> А.И.柯斯特利金 张英伯 高等教育出版社 第2版   </p>
@@ -1352,8 +1352,8 @@
   
   <entry>
     <title><![CDATA[《代数学引论》第零章 集合与整数 7 选择公理、佐恩引理和良序定理]]></title>
-    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun07/"/>
-    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun07/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun07/"/>
+    <id>http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun07/</id>
     <published>2014-10-22T01:51:00.000Z</published>
     <updated>2014-10-22T01:53:16.000Z</updated>
     <content type="html"><![CDATA[<h2 id="选择公理、佐恩引理和良序定理">选择公理、佐恩引理和良序定理</h2>
@@ -1371,8 +1371,8 @@
   
   <entry>
     <title><![CDATA[《代数学引论》第零章 集合与整数 6 偏序集合]]></title>
-    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun06/"/>
-    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun06/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun06/"/>
+    <id>http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun06/</id>
     <published>2014-10-21T07:34:53.000Z</published>
     <updated>2014-10-22T01:24:32.000Z</updated>
     <content type="html"><![CDATA[<h2 id="偏序集合">偏序集合</h2>
@@ -1404,8 +1404,8 @@
   
   <entry>
     <title><![CDATA[《代数学引论》第零章 集合与整数 5 欧拉函数和欧拉-费马定理]]></title>
-    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun05/"/>
-    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun05/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun05/"/>
+    <id>http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun05/</id>
     <published>2014-10-20T01:33:53.000Z</published>
     <updated>2014-10-22T00:49:50.000Z</updated>
     <content type="html"><![CDATA[<h2 id="第零章_集合与整数">第零章 集合与整数</h2>
@@ -1467,8 +1467,8 @@
   
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://jianhanglin.github.io/2014/09/hello-world/"/>
-    <id>http://jianhanglin.github.io/2014/09/hello-world/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/09/hello-world/"/>
+    <id>http://jianhanglin.github.io/blog/2014/09/hello-world/</id>
     <published>2014-10-19T04:33:59.000Z</published>
     <updated>2014-10-17T03:41:11.000Z</updated>
     <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. <a id="more"></a>If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
@@ -1537,8 +1537,8 @@
   
   <entry>
     <title><![CDATA[《代数学引论》第零章 集合与整数 4 同余式和同余方程]]></title>
-    <link href="http://jianhanglin.github.io/2014/10/daishuxueyinlun04/"/>
-    <id>http://jianhanglin.github.io/2014/10/daishuxueyinlun04/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun04/"/>
+    <id>http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun04/</id>
     <published>2014-10-19T01:51:22.000Z</published>
     <updated>2014-10-22T01:23:33.000Z</updated>
     <content type="html"><![CDATA[<h2 id="同余式和同余方程">同余式和同余方程</h2>
@@ -1600,8 +1600,8 @@
   
   <entry>
     <title><![CDATA[《代数学引论》第零章 集合与整数 3 整数. 整数的整除性]]></title>
-    <link href="http://jianhanglin.github.io/2014/09/daishuxueyinlun03/"/>
-    <id>http://jianhanglin.github.io/2014/09/daishuxueyinlun03/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/09/daishuxueyinlun03/"/>
+    <id>http://jianhanglin.github.io/blog/2014/09/daishuxueyinlun03/</id>
     <published>2014-10-18T10:21:34.000Z</published>
     <updated>2014-10-22T01:26:17.000Z</updated>
     <content type="html"><![CDATA[<h2 id="整数-_整数的整除性">整数. 整数的整除性</h2>
@@ -1707,8 +1707,8 @@
   
   <entry>
     <title><![CDATA[《代数学引论》第零章 集合与整数 2 自然数]]></title>
-    <link href="http://jianhanglin.github.io/2014/09/daishuxueyinlun02/"/>
-    <id>http://jianhanglin.github.io/2014/09/daishuxueyinlun02/</id>
+    <link href="http://jianhanglin.github.io/blog/2014/09/daishuxueyinlun02/"/>
+    <id>http://jianhanglin.github.io/blog/2014/09/daishuxueyinlun02/</id>
     <published>2014-10-18T10:21:33.000Z</published>
     <updated>2014-10-22T01:26:07.000Z</updated>
     <content type="html"><![CDATA[<h2 id="自然数">自然数</h2>
