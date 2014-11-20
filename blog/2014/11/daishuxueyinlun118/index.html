@@ -4,12 +4,14 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Hello World | JianhangLin</title>
+    <title>《代数学引论(第一卷)基础代数》 第1章 代数的起源 8 置换 | JianhangLin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="JianhangLin">
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info.">
+    <meta name="description" content="置换的标准记法
+我们来进一步讨论$\S 5$集合与映射提出的关于有限集一一变换的几个问题.一些重要的代数概念就是在这一基础上自然产生的.
+令$\Omega$是$n$元有限集.由于元素的性质对于我们来说是非本质的，为方便起见，不妨设$\Omega =\lbrace 1,2,\cdots ,n\rbra">
     
     
     
@@ -75,14 +77,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/blog/2014/09/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/blog/2014/11/daishuxueyinlun118/" title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 8 置换" itemprop="url">《代数学引论(第一卷)基础代数》 第1章 代数的起源 8 置换</a>
   </h1>
   <p class="article-author">By
        
 		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
 		
   <p class="article-time">
-    <time datetime="2014-10-19T04:33:59.000Z" itemprop="datePublished"> 发表于 10月 19 2014</time>
+    <time datetime="2014-11-20T05:35:40.000Z" itemprop="datePublished"> 发表于 11月 20 2014</time>
     
   </p>
 </header>
@@ -91,73 +93,49 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start-1"><span class="toc-number">2.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post-1"><span class="toc-number">2.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server-1"><span class="toc-number">2.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files-1"><span class="toc-number">2.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites-1"><span class="toc-number">2.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start-1"><span class="toc-number">3.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post-1"><span class="toc-number">3.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server-1"><span class="toc-number">3.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files-1"><span class="toc-number">3.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites-1"><span class="toc-number">3.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的标准记法"><span class="toc-number">1.</span> <span class="toc-text">置换的标准记法</span></a></li></ol>
 		
 		</div>
 		
-		<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. <a id="more"></a>If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+		<h2 id="置换的标准记法">置换的标准记法</h2>
+<p>我们来进一步讨论$\S 5$<a href="http://linjianhang.me/blog/2014/10/daishuxueyinlun115/" target="_blank" rel="external">集合与映射</a>提出的关于有限集一一变换的几个问题.一些重要的代数概念就是在这一基础上自然产生的.</p>
+<p>令$\Omega$是$n$元有限集.由于元素的性质对于我们来说是非本质的，为方便起见，不妨设$\Omega =\lbrace 1,2,\cdots ,n\rbrace$.由$\Omega \to \Omega$的全体一一变换组成的集合记作$S_n =S(\Omega )$，其元素通常用小写希腊字母表示，称为<strong>置换</strong>.仅对恒等映射<span>$e=e_{\Omega}$</span>保留用拉丁字母.</p>
+<p>用展开和直观的方式将任意置换$\pi :i\mapsto \pi (i)$，$i=1,2,\cdots ,n$，表示成下述形式：</p>
+<span>$$\pi =\begin{pmatrix}  1 & 2 & \cdots & n\\  i_1 & i_2 & \cdots & i_n  \end{pmatrix} ,$$</span>
 
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>它完全指明了所有的像：</p>
+<span>$$\begin{array}{ccccc}    & 1 & 2 & \cdots & n \\    \pi & ↧ & ↧ &  & ↧ ,\\      & i_1 & i_2 & \cdots & i_n ,\\  \end{array}\\  $$</span>
 
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>其中$i_k =\pi (k)$，$k=1,2,\cdots ,n$是符号$1,2,\cdots ,n$的一个排列.</p>
+<p>设置换$\sigma ,\tau \in S_n$，它们的乘法对应于映射合成的一般法则：$(\sigma \tau )(i)=\sigma (\tau (i))$.例如对于置换：</p>
+<span>$$\sigma =\begin{pmatrix}  1 & 2 & 3 & 4\\  2 & 3 & 4 & 1  \end{pmatrix} ,\tau =\begin{pmatrix}  1 & 2 & 3 & 4\\  4 & 3 & 2 & 1  \end{pmatrix} $$</span>
 
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>我们有</p>
+<span>$$\sigma \tau =\begin{pmatrix}  1 & 2 & 3 & 4\\  2 & 3 & 4 & 1  \end{pmatrix} \begin{pmatrix}  1 & 2 & 3 & 4\\  4 & 3 & 2 & 1  \end{pmatrix} = \begin{array}{cccc}    1 & 2 & 3 & 4 \\    ↧ & ↧ & ↧ & ↧ \\      4 & 3 & 2 & 1 \\  ↧ & ↧ & ↧ & ↧ \\   1 & 4 & 3 & 2 \\    \end{array} =\begin{pmatrix}  1 & 2 & 3 & 4\\  1 & 4 & 3 & 2  \end{pmatrix} .$$</span>
 
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start-1">Quick Start</h2>
-<h3 id="Create_a_new_post-1">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>同时</p>
+<span>$$\tau \sigma =\begin{pmatrix}  1 & 2 & 3 & 4\\  4 & 3 & 2 & 1  \end{pmatrix} \begin{pmatrix}  1 & 2 & 3 & 4\\  2 & 3 & 4 & 1  \end{pmatrix} = \begin{pmatrix}  1 & 2 & 3 & 4\\  3 & 2 & 1 & 4  \end{pmatrix} ,$$</span>
 
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server-1">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files-1">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites-1">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start-1">Quick Start</h2>
-<h3 id="Create_a_new_post-1">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server-1">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files-1">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites-1">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<p>所以$\sigma \tau \neq \tau \sigma$.</p>
+<p>按照$\S 5$的结果，置换的乘法满足下述规律.</p>
+<p>$i)$乘法是结合的：对任意$\alpha ,\beta ,\gamma \in S_n$，$(\alpha \beta )\gamma =\alpha (\beta \gamma )$.</p>
+<p>$ii)~ S_n$有单位元$e$：对任意$\pi \in S_n$，$\pi e =\pi =e \pi $.</p>
+<p>$iii)$每一个元素$\pi \in S_n$都有逆元$\pi ^{-1}:\pi \pi ^{-1} =e=\pi ^{-1}\pi$.</p>
+<p>这三条性质，补上我们暂且不谈的一般法则(见第$4$章)，给出了称$S_n$为群的根据.准确地说，集合$S_n$连同其元素的自然乘法运算(置换的合成)，叫作<strong>$n$元对称群</strong>(或$n$个符号的对称群，或$n$个点的对称群).</p>
   
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/基础代数/">基础代数</a>
+</div>
+
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/hello/">hello</a>
+  <span></span> <a href="/tags/代数/">代数</a>
   </div>
 
 </div>
@@ -165,7 +143,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://jianhanglin.github.io/blog/2014/09/hello-world/" data-title="Hello World | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  <div data-url="http://jianhanglin.github.io/blog/2014/11/daishuxueyinlun118/" data-title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 8 置换 | JianhangLin" data-tsina="1763313312" class="share clearfix">
   </div>
 
 </div>
@@ -175,18 +153,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/blog/2014/10/daishuxueyinlun05/" title="《代数学引论》第零章 集合与整数 5 欧拉函数和欧拉-费马定理">
+ <a href="/blog/2014/11/kaoyanshiti1/" title="华南理工大学2010年攻读硕士学位研究生入学考试试卷">
   <strong>上一篇：</strong><br/>
   <span>
-  《代数学引论》第零章 集合与整数 5 欧拉函数和欧拉-费马定理</span>
+  华南理工大学2010年攻读硕士学位研究生入学考试试卷</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/blog/2014/10/daishuxueyinlun04/"  title="《代数学引论》第零章 集合与整数 4 同余式和同余方程">
+<a href="/blog/2014/11/weijifenxuejiaocheng111/"  title="《微积分学教程(第一卷)》 第一章 极限论 1 整序变量及其极限">
  <strong>下一篇：</strong><br/> 
- <span>《代数学引论》第零章 集合与整数 4 同余式和同余方程
+ <span>《微积分学教程(第一卷)》 第一章 极限论 1 整序变量及其极限
 </span>
 </a>
 </div>
@@ -205,7 +183,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start-1"><span class="toc-number">2.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post-1"><span class="toc-number">2.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server-1"><span class="toc-number">2.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files-1"><span class="toc-number">2.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites-1"><span class="toc-number">2.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start-1"><span class="toc-number">3.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post-1"><span class="toc-number">3.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server-1"><span class="toc-number">3.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files-1"><span class="toc-number">3.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites-1"><span class="toc-number">3.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的标准记法"><span class="toc-number">1.</span> <span class="toc-text">置换的标准记法</span></a></li></ol>
  
   </div>
 
