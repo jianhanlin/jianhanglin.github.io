@@ -4,7 +4,7 @@
   <subtitle><![CDATA[春水初生，春林初盛，春风十里，不如你.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-11-20T13:14:57.593Z</updated>
+  <updated>2014-11-21T05:13:04.203Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -58,7 +58,7 @@
     <link href="http://jianhanglin.github.io/blog/2014/11/daishuxueyinlun118/"/>
     <id>http://jianhanglin.github.io/blog/2014/11/daishuxueyinlun118/</id>
     <published>2014-11-20T05:35:40.000Z</published>
-    <updated>2014-11-20T08:20:43.000Z</updated>
+    <updated>2014-11-21T05:11:53.000Z</updated>
     <content type="html"><![CDATA[<h2 id="置换的标准记法">置换的标准记法</h2>
 <p>我们来进一步讨论$\S 5$<a href="http://linjianhang.me/blog/2014/10/daishuxueyinlun115/" target="_blank" rel="external">集合与映射</a>提出的关于有限集一一变换的几个问题.一些重要的代数概念就是在这一基础上自然产生的.</p>
 <p>令$\Omega$是$n$元有限集.由于元素的性质对于我们来说是非本质的，为方便起见，不妨设$\Omega =\lbrace 1,2,\cdots ,n\rbrace$.由$\Omega \to \Omega$的全体一一变换组成的集合记作$S_n =S(\Omega )$，其元素通常用小写希腊字母表示，称为<strong>置换</strong>.仅对恒等映射<span>$e=e_{\Omega}$</span>保留用拉丁字母.</p>
@@ -83,7 +83,28 @@
 <p>$i)$乘法是结合的：对任意$\alpha ,\beta ,\gamma \in S_n$，$(\alpha \beta )\gamma =\alpha (\beta \gamma )$.</p>
 <p>$ii)~ S_n$有单位元$e$：对任意$\pi \in S_n$，$\pi e =\pi =e \pi $.</p>
 <p>$iii)$每一个元素$\pi \in S_n$都有逆元$\pi ^{-1}:\pi \pi ^{-1} =e=\pi ^{-1}\pi$.</p>
-<p>这三条性质，补上我们暂且不谈的一般法则(见第$4$章)，给出了称$S_n$为群的根据.准确地说，集合$S_n$连同其元素的自然乘法运算(置换的合成)，叫作<strong>$n$元对称群</strong>(或$n$个符号的对称群，或$n$个点的对称群).</p>
+<p>这三条性质，补上我们暂且不谈的一般法则(见第$4$章)，给出了称$S_n$为群的根据.准确地说，集合$S_n$连同其元素的自然乘法运算(置换的合成)，叫作<strong>$n$元对称群</strong>(或$n$个符号的对称群，或$n$个点的对称群).对于我们来说，眼下不过是术语上的约定，它将重点从集合$S_n$转向了同样重要的置换的乘法性质，即转向$S_n$中元素的合成可能表现出来的性质.对称群$S_n$是群的一般理论和$170$多年前伽罗瓦理论的源头，而且大量的数学思想正是与它相联系才得以产生.</p>
+<p><strong>注记</strong> 如果将术语置换当作数字$1,2,\cdots ,n$按照某种顺序摆放的代名词，$S_n$的元素有时也称为<strong>排列</strong>($\text{подстановка}$).因为$n$元有序数列与$S_n$的元素之间存在着一一对应，而“置换”一词比固定的序列使人更快地联想到运算，所以排列一词就不再使用了，我们后面还会谈到，例如将数代入多项式，但是它仅作为所指含义的另外规定.</p>
+<p>如果还需要更多的出处，至少可以在$a)$科学文献；$b)\text{П.С.}$亚历山大罗夫的教科书《解析几何讲义》($\text{Наука}$(科学出版社)，$1968,c~767$)中找到.</p>
+<p>我们来计算群$S_n$的阶$\mid S_n \mid$.符号$1$在置换$\sigma$的作用下变成了符号$\sigma (1)$，$\sigma (1)$有$n$种不同的取法，确定了$\sigma (1)$，$\sigma (2)$只能从剩下的$n-1$个符号中去取(所以不同的对($\sigma (1),\sigma (2)$)共计有$(n-1)+(n-1)+\cdots +(n-1)=n(n-1)$个)，而$\sigma (3)$只能从$n-2$个符号中取等等.$\sigma (1),\sigma (2),\cdots ,\sigma (n)$的所有可能的选择，也就是所有不同的置换共计$n(n-1)\cdots 2\cdot 1=n!$个.所以</p>
+<p>$$\text{Card} S_n =\mid S_n \mid =n!$$</p>
+<h2 id="置换的循环结构">置换的循环结构</h2>
+<p>我们现在将$S_n$中的置换分解为更简单的置换的乘积.先用上例中的置换$\sigma ,\tau \in S_4$，能过图表(图$13$)说明分解的思路.</p>
+<center><img src="/assets/img/daishuxueyinlun1/tu15.png" alt=""></center>
+
+<p>置换$\sigma $叫作一个长为$4$的循环，简单地写成<span>$\sigma=\begin{pmatrix} 1 & 2 & 3 & 4 \end{pmatrix} ,$</span>或</p>
+<span>$$\sigma=\begin{pmatrix} 2 & 3 & 4 & 1\end{pmatrix}=\begin{pmatrix} 3 & 4 & 1 & 2 \end{pmatrix}=\begin{pmatrix} 4 & 1 & 2 & 3 \end{pmatrix} ,$$</span>
+
+<p>而置换</p>
+<span>$$\tau=\begin{pmatrix} 1 & 4 \end{pmatrix}\begin{pmatrix} 2 & 3 \end{pmatrix} $$</span>
+
+<p>是两个无关的(不相交的)长为$2$的循环<span>$\begin{pmatrix} 1 & 4 \end{pmatrix}$</span>和<span>$\begin{pmatrix} 2 & 3 \end{pmatrix}$</span>的乘积.我们指出</p>
+<span>$$\sigma ^2=\begin{pmatrix} 1 & 3 \end{pmatrix}\begin{pmatrix} 2 & 4 \end{pmatrix} ,\sigma ^4=(\sigma ^2)^2=e ,\tau ^2 =e.$$</span>
+
+<p>现在设$\pi$是$S_n$中的任意置换.其方幂$\pi ^s$归纳地定义如下(见$\S 5$定理$3$的证明)：</p>
+<p>$$\pi ^s=\begin{cases} \pi (\pi ^{s-1}), &amp; 若 s &gt; 0， \\ e, &amp; 若s = 0，\\ \pi ^{-1}((\pi ^{-1})^{-s-1}), &amp; 若s &lt; 0.\end{cases}$$</p>
+<p>这时显然有</p>
+<p>$$\pi ^s \pi ^t =\pi ^{s+t} =\pi ^t \pi ^s ,s,t \in \mathbb{Z}$$</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<h2 id="置换的标准记法">置换的标准记法</h2>
@@ -101,13 +122,47 @@
     <link href="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/"/>
     <id>http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/</id>
     <published>2014-11-18T07:58:44.000Z</published>
-    <updated>2014-11-20T06:31:34.000Z</updated>
+    <updated>2014-11-21T02:24:17.000Z</updated>
     <content type="html"><![CDATA[<h2 id="变量、整序变量">变量、整序变量</h2>
 <p>在物理学及其他自然科学内读者曾经遇到各种不同的<strong>量</strong>：时间，长度，体积，重量等.任一种量，按照不同的情况，有时具有不同的值，有时仅取一值.在第一种情形我们称它为<strong>变量</strong>，在第二种情形称它为<strong>常量</strong>.</p>
 <p>但在数学上我们不顾所考察的量的物理意义，仅关心于表示这量的<strong>数字</strong>；量的物理意义仅当数学被应用时，始再获得重要性.这样，对于我们来说，变量仅为赋予数值的符号(例如，字母$x$)而已.[对整个数学分析来说，(在历史上)原来的、十分一般的变量概念与其说是纯数学性质的，不如说是自然科学性质的.给这个概念一个完全形式的定义，实际上不可能.有两种更为特殊的变量在今后的叙述中将起到关键的作用，它们是严格定义的，一种称为(自)变量，另一种称为整序变量(或称为整序型变量).所说这两类变量的严格定义靠如下方式实现：对它们要补充描述其指定过程，即确切地指出认为变量或整序变量已经给定的条件.特别是下面的一段正文乃是变量的定义.]</p>
+<p>若变量所能取值的集合$\chi =\lbrace x \rbrace $已经指定，则这变量就当作是已给定了.常量可以当作变量的特殊情形来看待，它相当于$\chi =\lbrace x \rbrace $只有一个元素的情形.[这样一来，首先是给定(自)变量，等价于给定某个数集；其次，说法“$x$-变量”事实上等价于“$x$-数集的类元(或任意元)”.我们指出，上面所说的不适用于“整序型的变量”(对于它，给定的手续另行说明).在本质上，刚才所说的一类变量(即自变量)，仅在第二章开头才会遇到并且用到.]</p>
+<p>在建立变量$x$的极限概念时，仅知道这变量所取值的数集$\chi$还是不够的；必须再知道.它所取的到底是些怎样的数值(在它们中间，可能有重复的)，以及它取这些值的次序.关于<strong>有序变量</strong>及其极限的问题的一般讨论，这里暂时搁下不提，放在下一卷的末尾[参阅第二卷的附录：《极限的一般观点》.] (那时，读者将已累积着对于这一方面的充分的经验).在本章内我们且讲述一种最简单同时也是最重要的特殊类型的变量.</p>
+<p>今从建立<strong>数列</strong>的概念开始.设有自然数的序列：</p>
+<p>$$1,2,\cdots ,n,\cdots ,n’ ,\cdots \label{1}\tag{1}$$</p>
+<p>在序列内数字依由小而大的顺序排列着，较大的数$n’$在较小的数$n$的后面(或较小的数$n$在较大的数$n’$的前面).若在序列$\eqref{1}$内，按照任何规律，将每一自然数$n$换成实数$x_n$，则得数列：</p>
+<span>$$x_1 ,x_2 ,x_3 ,\cdots ,x_n ,\cdots ,x_{n'} ,\cdots \label{2}\tag{2}$$</span>
+
+<p>其项或元素$x_n$有一切自然数作为序号，并依序号增大的次序排列着.当$n’ &gt; n$时，<span>$x_{n'}$</span>就在$x_n$的后面($x_n$在<span>$x_{n'}$</span>的前面)，不管<span>$x_{n'}$</span>本身的数值大于、小于或等于$x_n$.[仿此，可以定义直线上点的序列或自然界任何其他物体的序列的概念.]</p>
+<p>取值成序列$\eqref{2}$的变量$x$，我们——依照梅雷($Ch.~M\acute{e} ray$)——称之为<strong>整序变量</strong>.我们在这里就限于考察这种类型的变量.[虽然从直观上看，序列与整序变量两个概念有某些不同，但在本质上两者是等价的.实际上，为了确定序列$x_1 ,x_2 ,\cdots ,x_n ,\cdots $和为了给定依次具有值$x_1 ,x_2 ,\cdots ,x_n ,\cdots $的变量$x$，我们做的量同样的事——指出某个规则，使每一个自然数$n$对应着完全确定的实数$x_n$(这个取决于我们意愿的数，我们可称之为序列的第$n$项或整序变量的第$n$个值).序列与整序变量这两个概念的等价性反映在表示上：对于二者，形如$x_n$的符号是标准的表示.读者今后可以毫无顾虑地把序列与整序变量两个概念看成是等同的，而认为这两个术语是可以互换的同义词(确定整序变量总是等同于确定序列所遍历的值).我们要指出，更为普遍的术语“序列”现已远比术语“整序变量”更为通行，后者几乎不再使用.]</p>
+<p>在中学的数学教程内读者遇到过的变量即是整序型的变量.例如，大家所熟悉的序列</p>
+<p>$$\underset{1}{\large a} ,\underset{2}{\large a+d} ,\underset{3}{\large a+2d} ,\cdots ,\underset{n}{\large a+(n-1)d},\cdots \quad (算术序列)$$</p>
+<p>或</p>
+<p>$$\underset{1}{\large a} ,\underset{2}{\large aq} ,\underset{3}{\large aq^2} ,\cdots ,\underset{n}{\large aq^{n-1}},\cdots \quad (几何序列);$$</p>
+<p>每一序列中的变项就是整序变量.</p>
+<p>在定义圆周的长度时，通常考察圆内接正多边形的可变周长，由六边形起，将边数依次增加一倍；这样，这整序变量所取的数值便成一序列：</p>
+<p>$$P_6 \underset{1}{=} 6R ,\quad P_12 \underset{2}{=} 12R\sqrt{2-\sqrt{3}},$$</p>
+<span>$$P_{24} \underset{3}{=} 24R\sqrt{2-\sqrt{2+\sqrt{3}}} ,\quad \underset{4}{P_{48}},\cdots $$</span>
+
+<p>再说到$\sqrt{2}$的十进小数近似值(所说的是亏近似值)，使准确度继续增大，它们便成一序列：</p>
+<p>$$\underset{1}{\large 1.4},\underset{2}{\large 1.41},\underset{3}{\large 1.414},\underset{4}{\large 1.4142},\cdots $$</p>
+<p>这也是一个整序变量.</p>
+<p>取值成序列$\eqref{2}$的变量$x$常记成$x_n$，就是以序列中的变项(或普通项)，来记这个变量.</p>
+<p>有时，整序变量$x$直接由$x_n$的表达式所给定.如在算术序列及几何序列时各为$x_n =a+(n-1)d$及$x_n =aq^{n-1}$.利用这表达式便可以依已给序号立即算出整序变量的对应数值，而不必知道在这以前它取过一些什么数值.</p>
+<p>对于内接正多边形的周长，要写出一般的表达式，仅在引用数$\pi$后始为可能；内接正$m$边形的周长$p_m$，一般地表示为公式</p>
+<p>$$p_m =2mR\sin{\dfrac{\pi}{m}}.$$</p>
+<p>有时，序列$\eqref{2}$的普通项$x_n$的表达式可能无法知道.然若我们能掌握某种规则，只要知道整序变量的任一序号时，便能按照这规则算出其对应的数值，则序列$\eqref{2}$以及由它所决定的整序变量都算作是已给定了.因此，既然我们已知道根的近似算法，我们就可以算作$\sqrt{2}$的一切十进位近似值所成的序列是已经给定了，虽然这序列的普通项的表达式不得而知.</p>
+<p>若整序变量——在上述的意义下——已给定，则不仅它所取值的集合已整个地确定，并且它取这些值的次序亦确定；对应于每一序号，整序变量必有一个数值，又在两数值中，序号较大的当作是在后面的.</p>
+<p>再着重指出，整序变量的各个数值不一定要互不相同.例如，由下列公式之一所给定的整序变量：</p>
+<p>$$x_n =1;x_n =(-1)^{n+1};x_n =\dfrac{1+(-1)^n}{n},$$</p>
+<p>其对应的数列各为：</p>
+<span>$$\begin{array}{ccccccc}    \underset{1}{\large 1}, & \underset{2}{\large 1}, & \underset{3}{\large 1}, & \underset{4}{\large 1}, & \underset{5}{\large 1}, & \underset{6}{\large 1}, & \cdots \\    \underset{1}{\large 1}, & \underset{2}{\large -1}, & \underset{3}{\large 1}, & \underset{4}{\large -1}, & \underset{5}{\large 1}, & \underset{6}{\large -1}, & \cdots\\      \underset{1}{\large 0}, & \underset{2}{\large 1}, & \underset{3}{\large 0}, & \underset{4}{\large \frac{1}{2}}, & \underset{5}{\large 0}, & \underset{6}{\large \frac{1}{3}}, & \cdots \\   \end{array} $$</span>
+
+<p>在第一种情形，整序变量根本是一个常量，它所取值的集合只有一个元素$1$.在第二种情形，这集由整序变量所交错地取着的两个值$1$及$-1$所组成.最后，在第三种情形，变量的值是无限集，但这并不影响变量每隔一次取一个等于$0$的数值这一回事；在第三项的数值$0$，我们当作不仅是在第二项的数值$1$以后，且亦在第一项的数值$0$以后.</p>
+<h2 id="整序变量的极限">整序变量的极限</h2>
 ]]></content>
     <summary type="html">
-    <![CDATA[实数的其他性质及应用]]>
+    <![CDATA[在物理学及其他自然科学内读者曾经遇到各种不同的量，时间，长度，体积，重量等.任一种量，按照不同的情况，有时具有不同的值，有时仅取一值.在第一种情形我们称它为变量，在第二种情形称它为常量.]]>
     
     </summary>
     
