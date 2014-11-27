@@ -4,7 +4,7 @@
   <subtitle><![CDATA[春水初生，春林初盛，春风十里，不如你.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-11-24T09:03:49.980Z</updated>
+  <updated>2014-11-27T08:18:24.472Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -16,10 +16,44 @@
   
   <entry>
     <title><![CDATA[华南理工大学2010年攻读硕士学位研究生入学考试试卷]]></title>
+    <link href="http://jianhanglin.github.io/blog/2014/11/kaoyanshiti2/"/>
+    <id>http://jianhanglin.github.io/blog/2014/11/kaoyanshiti2/</id>
+    <published>2014-11-27T01:32:10.000Z</published>
+    <updated>2014-11-27T02:23:51.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://pan.baidu.com/s/1wCREY" target="_blank" rel="external">在线阅读</a></p>
+<p>科目名称：高等代数</p>
+<p>适用专业：基础数学，计算数学，概率论与数理统计，应用数学，运筹学与控制论</p>
+<p>$1$.（$15$分）设$m,n$为自然数，证明$(x^m-1,x^n-1)=x^{(m,n)}-1$.</p>
+<p>证明：$(1)$ 设$d=(m,n)$，因为$d\mid m$，则$m=d\cdot s$，其中$s\in \mathbb{N}$.所以</p>
+<p>$$x^m-1=(x^d)^s-1=(x^d-1)\left[ (x^d)^{s-1}+(x^d)^{s-2}+\cdots +(x^d)+1\right] .$$</p>
+<p>可推出：$x^{(m,n)}-1\mid x^m-1$，同理可得$x^{(m,n)}-1\mid x^n-1$.</p>
+<p>$(2)$ 设$d(x)=(x^m-1,x^n-1)$，对于$d=(m,n)$，则存在$a,b\in \mathbb{Z}$，使得$a\cdot m+b\cdot n=(m,n)$，即$a\cdot m=(m,n)-b\cdot n$.左乘$x^{-b\cdot n}$至$x^{(m,n)}-1$，则</p>
+<p>$$x^{-b\cdot n}(x^{(m,n)}-1)=x^{a\cdot m}-x^{-b\cdot n}=(x^{a\cdot m}-1)-(x^{-b\cdot n}-1).$$</p>
+<p>由$(1)$的推理可知，$x^m-1\mid x^{a\cdot m}-1,x^n-1\mid x^{-b\cdot n}-1$.又因为$(x^m-1,x^n-1)\mid x^m-1$且$(x^m-1,x^n-1)\mid x^n-1$，故有$d(x)\mid x^{a\cdot m}-1$，$d(x)\mid x^{-b\cdot n}-1$.</p>
+<p>所以$d(x)\mid x^{-b\cdot n}(x^{(m,n)}-1)$，又$d(x)\nmid x^{-b\cdot n}$，</p>
+<p>可得出</p>
+<p>$$(x^m-1,x^n-1)\mid x^{(m,n)}-1.$$</p>
+<p>综上所述，有</p>
+<p>$$(x^m-1,x^n-1)=x^{(m,n)}-1$$</p>
+<p>$2$、讨论函数$f(x),g(x)$在$x=0$处的可导性，其中</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[科目名称：高等代数]]>
+    
+    </summary>
+    
+      <category term="考研试题" scheme="http://jianhanglin.github.io/tags/%E8%80%83%E7%A0%94%E8%AF%95%E9%A2%98/"/>
+    
+      <category term="高等代数" scheme="http://jianhanglin.github.io/categories/%E9%AB%98%E7%AD%89%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[华南理工大学2010年攻读硕士学位研究生入学考试试卷]]></title>
     <link href="http://jianhanglin.github.io/blog/2014/11/kaoyanshiti1/"/>
     <id>http://jianhanglin.github.io/blog/2014/11/kaoyanshiti1/</id>
     <published>2014-11-20T08:43:20.000Z</published>
-    <updated>2014-11-24T09:02:20.000Z</updated>
+    <updated>2014-11-24T09:13:35.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://pan.baidu.com/s/1dDxS5yh" target="_blank" rel="external">在线阅读</a></p>
 <p>科目名称：数学分析</p>
 <p>适用专业：基础数学，计算数学，概率论与数理统计，应用数学，运筹学与控制论</p>
@@ -184,7 +218,7 @@
 <p>所以，</p>
 <span>$$\begin{align*}  I & =\underset{D}{\iint} \left( \sqrt{\dfrac{x-c}{a}}+\sqrt{\dfrac{y-c}{b}} \right)\,dx\,dy \\  & =\underset{\Delta }{\iint} (\mu +\nu )\cdot 4ab\mu \nu \,d\mu \,d\nu \\  & =4ab\int_0^1 \int_0^{1-\mu} (\mu ^2 \nu +\mu \nu ^2) d\nu \,d\mu \\  & =4ab\int_0^1 \dfrac{\mu ^4 -3\mu ^2 +2\mu}{6} \,d\mu \\  & =4ab \cdot \dfrac{1}{6} \left( \dfrac{\mu ^5}{5}-\mu ^3 +\mu ^2 \right) {\LARGE \mid} _0^1\\  & =\dfrac{2ab}{15}\\  \end{align*}$$</span>
 
-<p>六、（$15$分）设$f$为定义在$(a,+\infty )$上的函数，在每一有限区间$(a,b)$上有界，且</p>
+<p>五、（$15$分）设$f$为定义在$(a,+\infty )$上的函数，在每一有限区间$(a,b)$上有界，且</p>
 <p>$$\lim_{x\to +\infty } \left[ f(x+1)-f(x)\right] =A,$$</p>
 <p>证明</p>
 <p>$$\lim_{x\to +\infty } \dfrac{f(x)}{x}=A.$$</p>
@@ -238,7 +272,7 @@
     <link href="http://jianhanglin.github.io/blog/2014/11/daishuxueyinlun118/"/>
     <id>http://jianhanglin.github.io/blog/2014/11/daishuxueyinlun118/</id>
     <published>2014-11-20T05:35:40.000Z</published>
-    <updated>2014-11-21T05:11:53.000Z</updated>
+    <updated>2014-11-27T02:38:33.000Z</updated>
     <content type="html"><![CDATA[<h2 id="置换的标准记法">置换的标准记法</h2>
 <p>我们来进一步讨论$\S 5$<a href="http://linjianhang.me/blog/2014/10/daishuxueyinlun115/" target="_blank" rel="external">集合与映射</a>提出的关于有限集一一变换的几个问题.一些重要的代数概念就是在这一基础上自然产生的.</p>
 <p>令$\Omega$是$n$元有限集.由于元素的性质对于我们来说是非本质的，为方便起见，不妨设$\Omega =\lbrace 1,2,\cdots ,n\rbrace$.由$\Omega \to \Omega$的全体一一变换组成的集合记作$S_n =S(\Omega )$，其元素通常用小写希腊字母表示，称为<strong>置换</strong>.仅对恒等映射<span>$e=e_{\Omega}$</span>保留用拉丁字母.</p>
@@ -285,6 +319,75 @@
 <p>$$\pi ^s=\begin{cases} \pi (\pi ^{s-1}), &amp; 若 s &gt; 0， \\ e, &amp; 若s = 0，\\ \pi ^{-1}((\pi ^{-1})^{-s-1}), &amp; 若s &lt; 0.\end{cases}$$</p>
 <p>这时显然有</p>
 <p>$$\pi ^s \pi ^t =\pi ^{s+t} =\pi ^t \pi ^s ,s,t \in \mathbb{Z}$$</p>
+<p>(当$s$与$t$同号时，顺序添上$\pi$或$\pi ^{-1}$，当$s$与$t$异号时，用$e$代替$\pi \pi ^{-1}$，$\pi ^{-1}\pi$).因为$\mid \Omega \mid &lt; \infty$，所以对于每一个置换$\pi \in S_n$，可以找到唯一确定的自然数$q=q(\pi )$，使得全部不同的方幂包含在集合$\langle \pi \rangle =\lbrace e,\pi ,\cdots ,\pi ^{q-1} \rbrace$中，且$\pi ^q =e$.该数$q$叫作置换$\pi $的<strong>阶</strong>.这样，上述置换$\sigma$和$\tau$分别有阶$4$和$2$.</p>
+<p>称两个点$i,j\in \Omega$为$\pi$等价的，若存在某个$s\in \mathbb{Z}$，使得$j=\pi ^s(i)$.因为</p>
+<p>$$i=\pi ^0(i),j=\pi ^s(i) \Rightarrow i=\pi ^{-s}(j),j=\pi ^s(i),k=\pi ^t(j) \Rightarrow k=\pi ^{s+t}(i),$$</p>
+<p>我们显然得到了$\Omega$上的一个关系，它具有反身、对称、传递性(见$\S 6$第$2$段).基于等价关系的一般性质，我们有</p>
+<p>$$\Omega =\Omega _1 \cup \cdots \cup \Omega _p .\label{1}\tag{1}$$</p>
+<p>集合$\Omega$划分成了两两不相交的类$\Omega _1 ,\cdots ,\Omega _p$，这些类被直观地称为$\pi $轨道.这一名称是完全有根据的：因为每一个点$i\in \Omega$恰属于一个轨道，并且如果$i\in \Omega _k$，则$\Omega _k$由元素$\pi$的方幂作用在点$i$上的像组成：$i$，$\pi (i)$，$\pi ^2 (i)$，$\cdots$，$\pi ^{l_k -1}(i)$，此处$l_k =\mid \Omega _k \mid $是$\pi $轨道$\Omega _k$的长度.显然</p>
+<p>$$l_k \leq q =\text{Card} \langle \pi \rangle ,\quad \pi ^{l_k }(i)=i,$$</p>
+<p>并且$l_k$是具有这些性质的最小数.令</p>
+<span>$$\pi _k =(i,\pi (i),\cdots ,\pi ^{l_k -1}(i))=\begin{pmatrix}  i & \pi (i) & \cdots & \pi ^{l_k -2}(i)\\  \pi (i) & \pi ^2(i) & \cdots & \pi ^{l_k  -1}(i)  \end{pmatrix},$$</span>
+
+<p>我们得到了一个置换，叫作长为$l_k$的循环.</p>
+<p>将循环写成<span>$$\begin{pmatrix}  1 & 2 & 3 & \cdots & l \end{pmatrix}$$</span>或<span>$$\begin{pmatrix}  1, & 2, & 3, & \cdots  & ,l \end{pmatrix}$$</span>是有趣和方便的.</p>
+<p>循环$\pi _k$使集合$\Omega \backslash \Omega _k$中所有的点保持不变，而任取点$j\in \Omega _k$，$\pi (j) =\pi _k (j)$这一性质给我们提供了称两个循环$\pi _s ,\pi _t ,s\neq t$，是无关的或不相交的这一说法的依据.因为任取$i\in \Omega _k$，$\pi _k^{l_k }(i)=i$，所以$\pi _k^{l_k }=e$.</p>
+<p>这样，公式$\eqref{1}$的划分对应于置换$\pi$到乘积的分解</p>
+<p>$$\pi =\pi _1 \pi _2 \cdots \pi _p ,\label{2}\tag{2}$$</p>
+<p>其中任意两个循环都是可换序的：<span>$\pi =\pi _1 \pi _2 \cdots \pi _p =\pi _{l_1 } \pi _{l_2 } \cdots \pi _{l_p }$</span>.可以假定</p>
+<span>$$l_1 \geq l_2 \geq \cdots \geq l_m > l _{m+1 } =\cdots = l_p =1.$$</span>
+
+<p>如果循环$\pi _k =(i)$的长度是$1$，那么它事实上是恒等置换.这样的循环自然可在乘积$\eqref{2}$中省略：</p>
+<p>$$\pi =\pi _1 \pi _2 \cdots \pi _m ,l_k &gt; 1 ,1 \leq k \leq m.\label{3}\tag{3}$$</p>
+<p>例如我们可以将置换</p>
+<span>$$\pi =\begin{pmatrix}  1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ 2 & 3 & 4 & 5 & 1 & 7 & 6 & 8 \end{pmatrix}\in S_8$$</span>
+
+<p>写成</p>
+<span>$$\pi =\begin{pmatrix}  1 & 2 & 3 & 4 & 5 \end{pmatrix} \begin{pmatrix} 6 & 7 \end{pmatrix}\begin{pmatrix} 8 \end{pmatrix}=\begin{pmatrix} 1 & 2 & 3 & 4 & 5 \end{pmatrix}\begin{pmatrix} 6 & 7 \end{pmatrix}.\label{4}\tag{4}$$</span>
+
+<p>对任意$n \geq 7$，<span>$\begin{pmatrix}  1 & 2 & 3 & 4 & 5 \end{pmatrix} \begin{pmatrix} 6 & 7 \end{pmatrix}$</span>可以看成$S_n$的置换，这是上述记号的不便之处，可是一旦$n$确定下来，这种不确定性就不存在了.</p>
+<p>更精确地，假设我们还有形如$\eqref{3}$式的另一种分解$\pi =\alpha _1 \alpha _2 \cdots \alpha _r$，它也是不相交循环的乘积，并设符号$i$在$\pi$的作用下改变.这时存在$\pi _1 ,\cdots ,\pi _m$中的一个(且仅有一个)循环$\pi _s$，使得$\pi _s (i)\neq i$，同时，存在$\alpha _1 ,\cdots ,\alpha _r$中的一个循环$\alpha _t$，使得$\alpha _t (i)\neq i$.我们有$\pi _s (i)=\pi (i)=\alpha _t (i)$.如果我们已经知道</p>
+<p>$$ \pi _s^k (i)=\pi ^k(i)=\alpha _t^k (i),\label{5} \tag{5}$$</p>
+<p>那么将置换$\pi$作用于这一等式，并运用$\pi $与$\pi _s^k$和$\alpha _t^k$的交换性，我们得到</p>
+<p>$$ \pi \pi _s^k (i)=\pi ^{k+1}(i)=\pi \alpha _t^k (i),$$</p>
+<p>因而$\pi _s^k \pi (i)=\pi ^{k+1}(i)=\alpha _t^k \pi (i)$，最后，</p>
+<p>$$ \pi _s^{k+1} (i)=\pi ^{k+1}(i)=\alpha _t^{k+1} (i).$$</p>
+<p>这就是说，等式$\eqref{5}$对任意$k=0,1,2,\cdots$成立.但循环是被它的方幂在任意一个发生改变的符号上的作用唯一确定的.因而$\pi _s =\alpha _t$.然后再对$m$或$r$用归纳法.</p>
+<p>于是我们证明了</p>
+<p><strong>定理$1$</strong> $S_n$中的每一个置换$\pi \neq e$都是长度$\geq 2$、不相交的循环的乘积.这一分解式精确到循环的顺序是唯一确定的.</p>
+<p>将注意力转到长为$2$的循环.</p>
+<p><strong>定义</strong> 长为$2$的循环叫作<strong>对换</strong>.</p>
+<p>任意对换的形状为<span>$\pi =\begin{pmatrix} i & j \end{pmatrix}$</span>，它不改变所有异于$i,j$的符号.从定理$1$得到</p>
+<p><strong>推论</strong> 每一个置换$\pi \in S_n$都是对换的乘积.</p>
+<p><strong>证明</strong> 事实上，循环可以写成对换的乘积，例如</p>
+<span>$$\pi =\begin{pmatrix} 1 & 2 & \cdots & l-1 & l\end{pmatrix}=\begin{pmatrix} 1 & l \end{pmatrix}\begin{pmatrix} 1 & l-1 \end{pmatrix}\cdots \begin{pmatrix} 1 & 3 \end{pmatrix}\begin{pmatrix} 1 & 2 \end{pmatrix}.$$</span>
+
+<p>而定理$1$保证了任意置换可写成对换的乘积.$\quad \quad \square$ </p>
+<p>对定理$1$及其推论中的公式说明如下.从循环<span>$\sigma =\begin{pmatrix} i_1 & i_2 & i_3 & \cdots & i_{l-1} & i_l\end{pmatrix}$</span>的定义得出</p>
+<span>$$ i_1 \mapsto i_2 ,i_2 \mapsto i_3 ,\cdots ,i_{l-1} \mapsto i_l ,i_l \mapsto i_1$$</span>
+
+<p>和</p>
+<span>$$ j \mapsto j ,j\in \Omega \backslash \lbrace i_1 , i_2 , \cdots , i_{l-1} , i_l \rbrace ,$$</span>
+
+<p>如果我们将$\sigma$写成<span>$\sigma =\begin{pmatrix} i_2 & i_3 & \cdots & i_l & i_1\end{pmatrix}$</span>，即对包含在$\sigma$中的号码循环移位，则任何事情都没有改变.这样，定理$1$的唯一性是一个本质的特性.另一方面，在推论中将置换写成对换的乘积是没有这种唯一性的.令</p>
+<span>$$ \sigma =\begin{pmatrix} i_1 & i_2 & i_3 & \cdots & i_{l-1} & i_l\end{pmatrix} =\begin{pmatrix} i_1 & i_l \end{pmatrix}\begin{pmatrix} i_1 & i_{l-1} \end{pmatrix}\cdots \begin{pmatrix} i_1 & i_3 \end{pmatrix}\begin{pmatrix} i_1 & i_2 \end{pmatrix},$$</span>
+
+
+<span>$$ \sigma =\begin{pmatrix} i_2 & i_3 & \cdots & i_{l-1} & i_l & i_1 \end{pmatrix} =\begin{pmatrix} i_2 & i_1 \end{pmatrix}\begin{pmatrix} i_2 & i_l \end{pmatrix}\begin{pmatrix} i_2 & i_{l-1} \end{pmatrix}\cdots \begin{pmatrix} i_2 & i_3 \end{pmatrix}.$$</span>
+
+<p>置换$\sigma$的同种写法包含相同个数$l-1$个的不同的对换(仅仅<span>$\begin{pmatrix} i_1 & i_2 \end{pmatrix}=\begin{pmatrix} i_2 & i_1 \end{pmatrix}$</span>).此外，这些对换不是可交换的，而它们的个数也不是一成不变的.例如在$S_4$中</p>
+<span>$$ \begin{pmatrix} 1 & 2 & 3 \end{pmatrix}=\begin{pmatrix} 1 & 3 \end{pmatrix}\begin{pmatrix} 1 & 2 \end{pmatrix}=\begin{pmatrix} 2 & 3 \end{pmatrix}\begin{pmatrix} 1 & 3 \end{pmatrix}=\begin{pmatrix} 1 & 3 \end{pmatrix}\begin{pmatrix} 2 & 4 \end{pmatrix}\begin{pmatrix} 1 & 2 \end{pmatrix}\begin{pmatrix} 1 & 4 \end{pmatrix}.$$</span>
+
+<h2 id="置换的符号">置换的符号</h2>
+<p>给出下述重要定理：</p>
+<p><strong>定理$2$</strong> 设$\pi$是$S_n$中的一个置换，将$\pi $分解成对换的乘积：</p>
+<p>$$\pi =\tau _1 \tau _2 \cdots \tau _k ,\label{6}\tag{6}$$</p>
+<p>称</p>
+<p>$$\varepsilon _{\pi} =(-1)^k \label{7}\tag{7}$$</p>
+<p>为$\pi $的符号(亦称符号差或奇偶性)，它由置换$\pi$唯一确定并不信赖于$\eqref{6}$式的分解方法，即对于给定的$\pi$，整数$k$给出的奇偶性永远是唯一的.此外任取$\alpha ,\beta \in S_n$，</p>
+<span>$$\varepsilon _{\alpha \beta} =\varepsilon _{\alpha } \varepsilon _{\beta} .\label{8}\tag{8}$$</span>
+
+<p><strong>证明</strong> $1)$设除$\eqref{6}$式外，我们还有一个分解</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<h2 id="置换的标准记法">置换的标准记法</h2>
@@ -302,7 +405,7 @@
     <link href="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/"/>
     <id>http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/</id>
     <published>2014-11-18T07:58:44.000Z</published>
-    <updated>2014-11-21T02:24:17.000Z</updated>
+    <updated>2014-11-27T08:17:10.000Z</updated>
     <content type="html"><![CDATA[<h2 id="变量、整序变量">变量、整序变量</h2>
 <p>在物理学及其他自然科学内读者曾经遇到各种不同的<strong>量</strong>：时间，长度，体积，重量等.任一种量，按照不同的情况，有时具有不同的值，有时仅取一值.在第一种情形我们称它为<strong>变量</strong>，在第二种情形称它为<strong>常量</strong>.</p>
 <p>但在数学上我们不顾所考察的量的物理意义，仅关心于表示这量的<strong>数字</strong>；量的物理意义仅当数学被应用时，始再获得重要性.这样，对于我们来说，变量仅为赋予数值的符号(例如，字母$x$)而已.[对整个数学分析来说，(在历史上)原来的、十分一般的变量概念与其说是纯数学性质的，不如说是自然科学性质的.给这个概念一个完全形式的定义，实际上不可能.有两种更为特殊的变量在今后的叙述中将起到关键的作用，它们是严格定义的，一种称为(自)变量，另一种称为整序变量(或称为整序型变量).所说这两类变量的严格定义靠如下方式实现：对它们要补充描述其指定过程，即确切地指出认为变量或整序变量已经给定的条件.特别是下面的一段正文乃是变量的定义.]</p>
@@ -340,6 +443,84 @@
 
 <p>在第一种情形，整序变量根本是一个常量，它所取值的集合只有一个元素$1$.在第二种情形，这集由整序变量所交错地取着的两个值$1$及$-1$所组成.最后，在第三种情形，变量的值是无限集，但这并不影响变量每隔一次取一个等于$0$的数值这一回事；在第三项的数值$0$，我们当作不仅是在第二项的数值$1$以后，且亦在第一项的数值$0$以后.</p>
 <h2 id="整序变量的极限">整序变量的极限</h2>
+<p>读者从中学的教程内应该已熟悉这概念了.这里是它的严格的定义：</p>
+<p>若对于每一正数$\varepsilon$，不论它怎样小，恒有序号$N$，使在$n &gt; N$时，一切$x_n$的值满足不等式</p>
+<p>$$\mid x_n -a \mid &lt; \varepsilon ,\label{3}\tag{3}$$</p>
+<p>则常数$a$称为<strong>整序变量$x=x_n$的极限</strong>.</p>
+<p>$a$是整序变量的极限这一事实，记成：</p>
+<p>$$\lim x_n =a \quad 或\quad \lim x=a$$</p>
+<p>($\lim$是拉丁文$\text{limes}$的简写，即指“极限”).我们也说，变量趋于$a$，并写成</p>
+<p>$$ x_n \to a \quad 或\quad x\to a.$$</p>
+<p>有时称数$a$为序列$\eqref{2}$的极限，并说，这序列收敛于$a$.</p>
+<p>上述定义可以简短地叙述成：</p>
+<p>数$a$是整序变量$x=x_n$的极限，若$x$的数值$x_n$从某项开始都与$a$相差任意小.</p>
+<p>含任意$\varepsilon$的不等式$\eqref{3}$就是$x_n$可以与$a$“相差任意小”这一句话的准确记法，而序号$N$恰好就指示着上述定义中“从某项开始”那个“某项”的位置.</p>
+<p>最重要的是要认识到，序号$N$一般地说来，并不是一经指定后就永远不变的：它是由我们所选的数$\varepsilon$来决定的.为着要重视这件事.我们有时不写$N$而写成<span>$N_{\varepsilon}$</span>.当$\varepsilon$减小时，与它对应的序数<span>$N=N_{\varepsilon}$</span>，一般地说来，将会增大：要使整序变量$x_n$的值与$a$的接近程度愈大，则我们在序列$\eqref{2}$内所要考察的数值便必须愈远.</p>
+<p>整序变量$x_n$的一切数值都等于常量$a$的这情形是例外：显然，这时$a=\lim x_n$，但这时对于任何$\varepsilon &gt; 0$，不等式$\eqref{3}$能同时对于$x_n$的一切值都成立.[对于从某项起开始都等于$a$的整序变量$x_n$，有与此类似的情况.]</p>
+<p>我们已从[$3$实数的算术运算-绝对值]中知道，不等式$\eqref{3}$相当于下列不等式</p>
+<p>$$-\varepsilon &lt; x_n -a &lt; \varepsilon$$</p>
+<p>或</p>
+<p>$$a-\varepsilon &lt; x_n &lt; a+\varepsilon ;\label{4}\tag{4}$$</p>
+<p>以后我们经常要用到这些不等式.</p>
+<p>若把我们的整序变量$x_n$的值及数$a,a\pm \varepsilon$表示为数轴上的点[$4$实数的其他性质及应用-线段的度量] (图$2$)，则得整序变量的极限的显明的几何解释.以$a$点为中心的线段不论取得怎样小(其长为$2\varepsilon$)，一切点$x_n$，从某点起，必全部落在这线段之内(这样，在线段之外一定只有有限个点了).表示极限的点$a$就是表示整序变量的数值的点的<strong>凝聚中心</strong>.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu2.png" alt=""></center>
+
+<h2 id="无穷小量">无穷小量</h2>
+<p>当整序变量趋向于零时：$x_n \to 0$，这情形特别值得注意.</p>
+<p>极限为零的整序变量$x_n$称为<strong>无穷小量</strong>，或简称<strong>无穷小</strong>.</p>
+<p>若在整序变量的极限的定义内使$a=0$，则不等式$\eqref{3}$成为</p>
+<span>$$\mid x_n -0 \mid =\mid x_n \mid < \varepsilon \quad (n > N_{\varepsilon}).$$</span>
+
+<p>这样，上面的无穷小的定义可以不用术语“极限”而更详细地叙述成：</p>
+<p>若整序变量$x_n$的绝对值，自某项起，成为而且永远保持小于预先指定的任意小数$\varepsilon &gt; 0$，则它称为无穷小.</p>
+<p>由于历史性所形成的术语“无穷小”量是不十分恰当的，希望不要引起读者的误解，这量的任何个别数值，只要它不是零，就不能当作是“很小的”量.事实上，无穷小是这样一个变量[除去当它恒等于零的那种平凡情形以外]，它仅在自己变化过程中，可以变为小于任意选取的数$\varepsilon$.</p>
+<p>回到一般情形，设整序变量$x_n$以$a$为极限，则此变量与其极限的差</p>
+<p>$$\alpha _n =x_n -a$$</p>
+<p>显然将为无穷小：因依$\eqref{3}$，</p>
+<span>$$\mid \alpha _n \mid =\mid x_n -a \mid < \varepsilon \quad (n > N_{\varepsilon}).$$</span>
+
+<p>反之，若$\alpha _n$是无穷小，则$x_n \to a$.这使我们导出下列命题：</p>
+<p>整序变量$x_n$以常数$a$为极限的必要而且充分的条件是：它们的差$ \alpha _n = x_n -a $是无穷小.</p>
+<p>因此，可以给予“极限”的概念以另一定义(和旧定义完全相当)：</p>
+<p>若常数$a$与整序变量$x_n$的差是无穷小量，则$a$称为整序变量$x_n$的极限.</p>
+<p>自然而然地，若以这定义为极限论的出发点，则对于无穷小必须应用上述的第二定义.否则便得循环推理：极限由无穷小确定，而无穷小又由极限确定！</p>
+<p>因此，若整序变量$x_n \to a$，则可以表示为</p>
+<p>$$x_n =a +\alpha _n ,$$</p>
+<p>式中$\alpha _n$为无穷小.反之，若整序变量满足这表示式，则它有极限$a$.在实用时常用这式子以建立变量的极限.</p>
+<h2 id="例题">例题</h2>
+<p>$1)$ 考察整序变量</p>
+<p>$$x_n =\dfrac{1}{n},x_n =-\dfrac{1}{n}, x_n =\dfrac{(-1)^{n+1}}{n};$$</p>
+<p>与它们对应的数列为</p>
+<span>$$\begin{array}{ccccc}    1, & \dfrac{1}{2}, & \dfrac{1}{3}, & \dfrac{1}{4}, & \cdots \\    -1, & -\dfrac{1}{2}, & -\dfrac{1}{3}, & -\dfrac{1}{4}, & \cdots \\    1, & -\dfrac{1}{2}, & \dfrac{1}{3}, & -\dfrac{1}{4}, & \cdots \\  \end{array} $$</span>
+
+<p>三个变量都是无穷小，即有极限$0$.事实上，要使</p>
+<p>$$\mid x_n \mid =\dfrac{1}{n} &lt; \varepsilon ,$$</p>
+<p>仅需$n &gt; \dfrac{1}{\varepsilon}$便能成立.这样，便可取，例如，包含在$\dfrac{1}{\varepsilon}$内的最大的整数，即$E\left( \dfrac{1}{\varepsilon} \right)$[一般地，用$E(p)$表示不超过$p$的最大整数，或简称数$p$的整数部分；$E$是法文$\text{Entier}$的起首字母，表示“整”.]，作为<span>$N_{\varepsilon}$</span>.</p>
+<p>注意到，第一个变量常大于其极限$0$；第二个常小于它；第三个则交迭地忽大于忽小于它.</p>
+<p>$2)$若设</p>
+<p>$$x_n =\dfrac{2+(-1)^n}{n},$$</p>
+<p>则变量依次取下列数列中的数值</p>
+<span>$$\begin{array}{ccccccc} 1, & \dfrac{3}{2}, & \dfrac{1}{3}, & \dfrac{3}{4}, & \dfrac{1}{5}, & \dfrac{3}{6}, & \cdots \\ \end{array} $$</span>
+
+<p>在这情形同样有$x_n \to 0$，因</p>
+<p>$$\mid x_n \mid \leq \dfrac{3}{n} &lt; \varepsilon ,$$</p>
+<p>当$n &gt; \dfrac{3}{\varepsilon}$，故<span>$N_{\varepsilon}$</span>可以取为$E\left( \dfrac{3}{\varepsilon} \right)$.</p>
+<p>我们在此地碰到稀奇的特性：变量交迭地忽而接近于其极限$0$，忽而离去它.</p>
+<p>$3)$今设</p>
+<p>$$x_n =\dfrac{1+(-1)^n}{n};$$</p>
+<p>这整序变量我们已在[变量、整序变量]末遇到它过.在这里，亦同样地有$x_n \to 0$，因</p>
+<p>$$\mid x_n \mid \leq \dfrac{2}{n} &lt; \varepsilon ,$$</p>
+<p>仅需<span>$N > N_{\varepsilon}=E\left( \dfrac{2}{\varepsilon} \right)$</span>.</p>
+<p>注意到，对于$n$的一切奇数值变量都等于它的极限.</p>
+<p>这些简单的例子是很有趣的，由于它们表现出包含在上述整序变量的极限定义中的各种各样的可能性.变量的值是否均在极限值的一方；变量是否每一步都向其极限接近；最近，变量是否能达到其极限，即是否具有等于极限的数值；这些都不关紧要.重要的仅是定义中所说的：变量在最后，即项数充分远时的数值，与极限值之差要是任意小.</p>
+<p>$4)$ 取整序变量的更复杂的例：</p>
+<p>$$x_n =\dfrac{n^2-n+2}{3n^2+2n-4};$$</p>
+<p>我们要证明它的极限是$\dfrac13$.</p>
+<p>为此目的，考察差</p>
+<p>$$x_n -\dfrac13 =\dfrac{-5n+10}{3(3n^2+2n-4)},$$</p>
+<p>估计其绝对值，当$n &gt; 2$时，有</p>
+<p>$$\mid x_n -\dfrac13 \mid =\dfrac{5n-10}{3(3n^2+2n-4)} &lt; \dfrac{5n}{3(3n^2-4)} &lt; \dfrac{5n}{3\cdot 2n^2} &lt; \dfrac{1}{n},$$</p>
+<p>因此，若<span>$n > N_{\varepsilon}=E\left( \dfrac{1}{\varepsilon} \right)$</span>，这表达式便小于$\varepsilon$.这就证明了$x_n \to \dfrac13$.</p>
 ]]></content>
     <summary type="html">
     <![CDATA[在物理学及其他自然科学内读者曾经遇到各种不同的量，时间，长度，体积，重量等.任一种量，按照不同的情况，有时具有不同的值，有时仅取一值.在第一种情形我们称它为变量，在第二种情形称它为常量.]]>
@@ -1851,69 +2032,6 @@
     </summary>
     
       <category term="hello" scheme="http://jianhanglin.github.io/tags/hello/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[《代数学引论》第零章 集合与整数 4 同余式和同余方程]]></title>
-    <link href="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun04/"/>
-    <id>http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun04/</id>
-    <published>2014-10-19T01:51:22.000Z</published>
-    <updated>2014-10-22T01:23:33.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="同余式和同余方程">同余式和同余方程</h2>
-<p>在整数环$\bf Z$中我们引进一个基本的等价关系，即同余概念.它和整数的运算是相容的，从而产生新的代数结构.同余概念在代数中产生了广泛的影响.</p>
-<p><strong>定义2</strong> 设$n$为一正整数，$a,b$为任意整数.如果$n\mid a-b$，则$a,b$叫做<strong>模$n$同余</strong>，记作</p>
-<p>$$a\equiv b\pmod{n},$$</p>
-<p>$n$叫做<strong>模数</strong>.否则，$a,b$叫做<strong>模$n$非同余</strong>，记作$a\not\equiv b\pmod{n}$.以下的讨论恒固定一个模数或几个模数.</p>
-<p>容易证明$a\equiv b\pmod{n}$的充要条件是除法算式$a=q_1n+r_1$和$b=q_2n+r_2$有相同的余数$r_1=r_2$.</p>
-<p>同余概念以最适宜于描写一种有限多个状态的周期现象.例如计算某一天是星期几，可以取$7$作模数.计算一个整数是否偶数，可以取$2$作模数.取$2$作模做，余数$0$和$1$还可以描写电路的连接和断开.同余概念和整数的运算是相容的，表现在下列基本性质中.模数固定时，$a\equiv b\pmod{n}$可简写成$a\equiv b$.如果不写出模数，表示是对同一个模数而言的.</p>
-<p>$1$.同余是一个等价关系.</p>
-<p>$2$.若$a\equiv b$，$c\equiv d$，则$a\pm c\equiv b\pm d\pmod{n}$.</p>
-<p>$3$.若$a\equiv b$，$c\equiv d$，则$a\cdot c\equiv b\cdot d\pmod{n}$.</p>
-<p>$4$.若$ac\equiv bc\pmod{n}$，$(c,n)=1$，则$a\equiv b\pmod{n}$.</p>
-<p>$5$.若$a\equiv b\pmod{n}$，$m\mid n$，则$a\equiv b\pmod{m}$.</p>
-<p>$6$.若$a\equiv b\pmod{n}$，则$(a,n)=(b,n)$.</p>
-<p>$7$.若$a\equiv b\pmod{n}$，$d$为$a,b,n$的一个公因子，$a=da_1$，$b=db_1$，$n=dn_1$，则$a_1\equiv b_1\pmod{n_1}$.</p>
-<p><strong>例1</strong> $716\cdot 93$和$543\cdot 93$模$61$是否同余？假设$716\cdot 93\equiv 543\cdot 93\pmod{61}$，根据性质$4$，因$(93,61)=1$，有$716\equiv 543\pmod{61}$.但$61\nmid (716-543)=173$，所以$716\cdot 93\not\equiv 543\cdot 93\pmod{61}$.</p>
-<p><strong>例2</strong> 设复数$\varepsilon =\cos{\dfrac{2\pi}{17}}+i\sin{\dfrac{2\pi}{17}}$.计算$\varepsilon$的整数幂$\varepsilon ^m$等于计算$\varepsilon ^r$，其中$r$是$m$模$17$的余数，$0\leq r &lt; 17$.</p>
-<p>对于一个给定的模数$n$，全体整数按模$n$同余分成一些等价类，此时的等价类叫做<strong>整数模$n$的剩余类</strong>，含整数$a$的剩余类记作$\overline{a}$，剩余类$\overline{a}$的任一个元素叫做$\overline{a}$的一个代表.在每个剩余类中任取一个代表$r_i$，由这些代表组成的集合叫做整数模$n$的一个<strong>完全剩余代表系</strong>.整数模$n$的一个完全代表系$S$也可以这样来刻画：$1)$每个整数和$S$中一个元素模$n$同余，$2)S$中元素两两互不同余.根据除法算式可知，集合$S=\lbrace 0,1,2,\cdots ,n-1\rbrace$是模$n$的一个完全剩余类代表系.</p>
-<p>由模$n$的剩余类组成的商集记作${\bf Z}/(n)$.在${\bf Z}/(n)$中可以定义加法和乘法如下：</p>
-<p>$$\overline{a}+\overline{b}=\overline{a+b},$$</p>
-<p>$$\overline{a}\cdot \overline{b}=\overline{a\cdot b}.$$</p>
-<p>根据同余式的性质，定义与代表的取法无关而且加法和乘法还满足结合律、交换律和分配律，加法有零元素$\overline{0}$，每个$\overline{a}$有负元素：$\overline{-a}$：$\overline{a}+\overline{-a}=\overline{0}$.${\bf Z}/(n)$叫做<strong>整数模$n$的环</strong>.</p>
-<p>这一节剩下的部分来讨论一次同余方程和方程组.同余式</p>
-<p>$$ax\equiv b\pmod{n},a\not\equiv 0\pmod{0}$$</p>
-<p>是含有一个未知量$x$的一次式，叫做<strong>一次同余方程</strong>.若$x=c\in \bf Z$代入上方程使两边同余，则$c$叫做上方程的一个<strong>解</strong>.上方程的两个解$c_1,c_2$看作相同当而且仅当$c_1 \equiv c_2\pmod{n}$.</p>
-<p><strong>定理4</strong> 设$(a,n)=1$，则一次同余方程</p>
-<p>$$ax\equiv b\pmod{n}$$</p>
-<p>有解而且只有一个解.</p>
-<p><strong>证明</strong> 由于$(a,n)=1$，存在整数$u,v$使得$ua+vn=1$.两边乘$b$，$uba+vbn=b$，令$ub=c$，于是$ca\equiv uba\equiv b\pmod{n},x\equiv c$为其一解.其次，令$c_1,c_2$为任意两个解，于是</p>
-<p>$$ac_1\equiv b\pmod{n},$$</p>
-<p>$$ac_2\equiv b\pmod{n}.$$</p>
-<p>相减得$a(c_1-c_2)\equiv 0\pmod{n}$，由于$(a,n)=1$，根据同余的性质$4$，有$c_1\equiv c_2\pmod{n}$，$c_1,c_2$为同一解.</p>
-<p>考虑下列<strong>一次同余方程组</strong></p>
-<p>$$\begin{cases} x\equiv b_1\pmod{n_1}, \\ x\equiv b_2\pmod{n_2}, \\ \cdots \cdots \cdots \cdots \cdots \\ x\equiv b_r\pmod{n_r}. \end{cases} \tag{1}$$</p>
-<p>其中$n_1,n_2,\cdots ,n_r$为大于$1$的整数，两两互素，$b_1,b_2,\cdots ,b_r$是任意给定的整数.如果$x=c\in \bf Z$代入方程组使得同余式同时都成立，则$c$叫做方程组$(1)$的一个解.上方程组的两个解$c_1$和$c_2$看作相同当而且仅当</p>
-<span>$$c_1 \equiv c_2 \pmod{\prod \limits_{i=1}^rn_i}.$$</span>
-
-<p><strong>定理5 (孙子定理)</strong> 设一次同余方程组$(1)$中大于$1$的整数$n_1,n_2,\cdots ,n_r$两两互素，$b_1,b_2,\cdots ,b_r$是任意给定的整数，则$(1)$有解而且只有一解.</p>
-<p><strong>证明</strong> 这里只证明$r=2$的情况，读者可以应用数学归纳法去证明一般情况.设$r=2$，由于$(n_1,n_2)=1$，存在一对整数$u_1,u_2$使得$u_1n_1+u_2n_2=1$.令$e_2=u_1n_1$，$e_1=u_2n_2$.于是$e_i\equiv 1\pmod{n_i},i=1,2$，而$e_i\equiv 0\pmod{n_j},i\neq j$.取$c=b_1e_1+b_2e_2$，则$c$为方程组$(1)$的解.其次证明解的唯一性，设$c_1,c_2$为任意两解，于是</p>
-<p>$$c_1\equiv b_1,c_2\equiv b_1\pmod{n_1},$$</p>
-<p>$$c_1\equiv b_2,c_2\equiv b_2\pmod{n_2}.$$</p>
-<p>同余式相减得</p>
-<p>$$c_1-c_2\equiv 0\pmod{n_1},$$</p>
-<p>$$c_1-c_2\equiv 0\pmod{n_2}.$$</p>
-<p>由于$(n_1,n_2)=1$，根据互素性质$(3)c_1-c_2\equiv 0\pmod{n_1n_2}$，所以$c_1,c_2$为同一解.$\blacksquare$</p>
-<p>孙子定理在国际上叫做中国剩余定理.</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[在整数环$\bf Z$中我们引进一个基本的等价关系，即同余概念.它和整数的运算是相容的，从而产生新的代数结构.同余概念在代数中产生了广泛的影响.]]>
-    
-    </summary>
-    
-      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
     
   </entry>
   

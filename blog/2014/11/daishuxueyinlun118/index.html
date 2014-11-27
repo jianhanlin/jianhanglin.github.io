@@ -93,7 +93,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的标准记法"><span class="toc-number">1.</span> <span class="toc-text">置换的标准记法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的循环结构"><span class="toc-number">2.</span> <span class="toc-text">置换的循环结构</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的标准记法"><span class="toc-number">1.</span> <span class="toc-text">置换的标准记法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的循环结构"><span class="toc-number">2.</span> <span class="toc-text">置换的循环结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的符号"><span class="toc-number">3.</span> <span class="toc-text">置换的符号</span></a></li></ol>
 		
 		</div>
 		
@@ -143,6 +143,75 @@
 <p>$$\pi ^s=\begin{cases} \pi (\pi ^{s-1}), &amp; 若 s &gt; 0， \\ e, &amp; 若s = 0，\\ \pi ^{-1}((\pi ^{-1})^{-s-1}), &amp; 若s &lt; 0.\end{cases}$$</p>
 <p>这时显然有</p>
 <p>$$\pi ^s \pi ^t =\pi ^{s+t} =\pi ^t \pi ^s ,s,t \in \mathbb{Z}$$</p>
+<p>(当$s$与$t$同号时，顺序添上$\pi$或$\pi ^{-1}$，当$s$与$t$异号时，用$e$代替$\pi \pi ^{-1}$，$\pi ^{-1}\pi$).因为$\mid \Omega \mid &lt; \infty$，所以对于每一个置换$\pi \in S_n$，可以找到唯一确定的自然数$q=q(\pi )$，使得全部不同的方幂包含在集合$\langle \pi \rangle =\lbrace e,\pi ,\cdots ,\pi ^{q-1} \rbrace$中，且$\pi ^q =e$.该数$q$叫作置换$\pi $的<strong>阶</strong>.这样，上述置换$\sigma$和$\tau$分别有阶$4$和$2$.</p>
+<p>称两个点$i,j\in \Omega$为$\pi$等价的，若存在某个$s\in \mathbb{Z}$，使得$j=\pi ^s(i)$.因为</p>
+<p>$$i=\pi ^0(i),j=\pi ^s(i) \Rightarrow i=\pi ^{-s}(j),j=\pi ^s(i),k=\pi ^t(j) \Rightarrow k=\pi ^{s+t}(i),$$</p>
+<p>我们显然得到了$\Omega$上的一个关系，它具有反身、对称、传递性(见$\S 6$第$2$段).基于等价关系的一般性质，我们有</p>
+<p>$$\Omega =\Omega _1 \cup \cdots \cup \Omega _p .\label{1}\tag{1}$$</p>
+<p>集合$\Omega$划分成了两两不相交的类$\Omega _1 ,\cdots ,\Omega _p$，这些类被直观地称为$\pi $轨道.这一名称是完全有根据的：因为每一个点$i\in \Omega$恰属于一个轨道，并且如果$i\in \Omega _k$，则$\Omega _k$由元素$\pi$的方幂作用在点$i$上的像组成：$i$，$\pi (i)$，$\pi ^2 (i)$，$\cdots$，$\pi ^{l_k -1}(i)$，此处$l_k =\mid \Omega _k \mid $是$\pi $轨道$\Omega _k$的长度.显然</p>
+<p>$$l_k \leq q =\text{Card} \langle \pi \rangle ,\quad \pi ^{l_k }(i)=i,$$</p>
+<p>并且$l_k$是具有这些性质的最小数.令</p>
+<span>$$\pi _k =(i,\pi (i),\cdots ,\pi ^{l_k -1}(i))=\begin{pmatrix}  i & \pi (i) & \cdots & \pi ^{l_k -2}(i)\\  \pi (i) & \pi ^2(i) & \cdots & \pi ^{l_k  -1}(i)  \end{pmatrix},$$</span>
+
+<p>我们得到了一个置换，叫作长为$l_k$的循环.</p>
+<p>将循环写成<span>$$\begin{pmatrix}  1 & 2 & 3 & \cdots & l \end{pmatrix}$$</span>或<span>$$\begin{pmatrix}  1, & 2, & 3, & \cdots  & ,l \end{pmatrix}$$</span>是有趣和方便的.</p>
+<p>循环$\pi _k$使集合$\Omega \backslash \Omega _k$中所有的点保持不变，而任取点$j\in \Omega _k$，$\pi (j) =\pi _k (j)$这一性质给我们提供了称两个循环$\pi _s ,\pi _t ,s\neq t$，是无关的或不相交的这一说法的依据.因为任取$i\in \Omega _k$，$\pi _k^{l_k }(i)=i$，所以$\pi _k^{l_k }=e$.</p>
+<p>这样，公式$\eqref{1}$的划分对应于置换$\pi$到乘积的分解</p>
+<p>$$\pi =\pi _1 \pi _2 \cdots \pi _p ,\label{2}\tag{2}$$</p>
+<p>其中任意两个循环都是可换序的：<span>$\pi =\pi _1 \pi _2 \cdots \pi _p =\pi _{l_1 } \pi _{l_2 } \cdots \pi _{l_p }$</span>.可以假定</p>
+<span>$$l_1 \geq l_2 \geq \cdots \geq l_m > l _{m+1 } =\cdots = l_p =1.$$</span>
+
+<p>如果循环$\pi _k =(i)$的长度是$1$，那么它事实上是恒等置换.这样的循环自然可在乘积$\eqref{2}$中省略：</p>
+<p>$$\pi =\pi _1 \pi _2 \cdots \pi _m ,l_k &gt; 1 ,1 \leq k \leq m.\label{3}\tag{3}$$</p>
+<p>例如我们可以将置换</p>
+<span>$$\pi =\begin{pmatrix}  1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ 2 & 3 & 4 & 5 & 1 & 7 & 6 & 8 \end{pmatrix}\in S_8$$</span>
+
+<p>写成</p>
+<span>$$\pi =\begin{pmatrix}  1 & 2 & 3 & 4 & 5 \end{pmatrix} \begin{pmatrix} 6 & 7 \end{pmatrix}\begin{pmatrix} 8 \end{pmatrix}=\begin{pmatrix} 1 & 2 & 3 & 4 & 5 \end{pmatrix}\begin{pmatrix} 6 & 7 \end{pmatrix}.\label{4}\tag{4}$$</span>
+
+<p>对任意$n \geq 7$，<span>$\begin{pmatrix}  1 & 2 & 3 & 4 & 5 \end{pmatrix} \begin{pmatrix} 6 & 7 \end{pmatrix}$</span>可以看成$S_n$的置换，这是上述记号的不便之处，可是一旦$n$确定下来，这种不确定性就不存在了.</p>
+<p>更精确地，假设我们还有形如$\eqref{3}$式的另一种分解$\pi =\alpha _1 \alpha _2 \cdots \alpha _r$，它也是不相交循环的乘积，并设符号$i$在$\pi$的作用下改变.这时存在$\pi _1 ,\cdots ,\pi _m$中的一个(且仅有一个)循环$\pi _s$，使得$\pi _s (i)\neq i$，同时，存在$\alpha _1 ,\cdots ,\alpha _r$中的一个循环$\alpha _t$，使得$\alpha _t (i)\neq i$.我们有$\pi _s (i)=\pi (i)=\alpha _t (i)$.如果我们已经知道</p>
+<p>$$ \pi _s^k (i)=\pi ^k(i)=\alpha _t^k (i),\label{5} \tag{5}$$</p>
+<p>那么将置换$\pi$作用于这一等式，并运用$\pi $与$\pi _s^k$和$\alpha _t^k$的交换性，我们得到</p>
+<p>$$ \pi \pi _s^k (i)=\pi ^{k+1}(i)=\pi \alpha _t^k (i),$$</p>
+<p>因而$\pi _s^k \pi (i)=\pi ^{k+1}(i)=\alpha _t^k \pi (i)$，最后，</p>
+<p>$$ \pi _s^{k+1} (i)=\pi ^{k+1}(i)=\alpha _t^{k+1} (i).$$</p>
+<p>这就是说，等式$\eqref{5}$对任意$k=0,1,2,\cdots$成立.但循环是被它的方幂在任意一个发生改变的符号上的作用唯一确定的.因而$\pi _s =\alpha _t$.然后再对$m$或$r$用归纳法.</p>
+<p>于是我们证明了</p>
+<p><strong>定理$1$</strong> $S_n$中的每一个置换$\pi \neq e$都是长度$\geq 2$、不相交的循环的乘积.这一分解式精确到循环的顺序是唯一确定的.</p>
+<p>将注意力转到长为$2$的循环.</p>
+<p><strong>定义</strong> 长为$2$的循环叫作<strong>对换</strong>.</p>
+<p>任意对换的形状为<span>$\pi =\begin{pmatrix} i & j \end{pmatrix}$</span>，它不改变所有异于$i,j$的符号.从定理$1$得到</p>
+<p><strong>推论</strong> 每一个置换$\pi \in S_n$都是对换的乘积.</p>
+<p><strong>证明</strong> 事实上，循环可以写成对换的乘积，例如</p>
+<span>$$\pi =\begin{pmatrix} 1 & 2 & \cdots & l-1 & l\end{pmatrix}=\begin{pmatrix} 1 & l \end{pmatrix}\begin{pmatrix} 1 & l-1 \end{pmatrix}\cdots \begin{pmatrix} 1 & 3 \end{pmatrix}\begin{pmatrix} 1 & 2 \end{pmatrix}.$$</span>
+
+<p>而定理$1$保证了任意置换可写成对换的乘积.$\quad \quad \square$ </p>
+<p>对定理$1$及其推论中的公式说明如下.从循环<span>$\sigma =\begin{pmatrix} i_1 & i_2 & i_3 & \cdots & i_{l-1} & i_l\end{pmatrix}$</span>的定义得出</p>
+<span>$$ i_1 \mapsto i_2 ,i_2 \mapsto i_3 ,\cdots ,i_{l-1} \mapsto i_l ,i_l \mapsto i_1$$</span>
+
+<p>和</p>
+<span>$$ j \mapsto j ,j\in \Omega \backslash \lbrace i_1 , i_2 , \cdots , i_{l-1} , i_l \rbrace ,$$</span>
+
+<p>如果我们将$\sigma$写成<span>$\sigma =\begin{pmatrix} i_2 & i_3 & \cdots & i_l & i_1\end{pmatrix}$</span>，即对包含在$\sigma$中的号码循环移位，则任何事情都没有改变.这样，定理$1$的唯一性是一个本质的特性.另一方面，在推论中将置换写成对换的乘积是没有这种唯一性的.令</p>
+<span>$$ \sigma =\begin{pmatrix} i_1 & i_2 & i_3 & \cdots & i_{l-1} & i_l\end{pmatrix} =\begin{pmatrix} i_1 & i_l \end{pmatrix}\begin{pmatrix} i_1 & i_{l-1} \end{pmatrix}\cdots \begin{pmatrix} i_1 & i_3 \end{pmatrix}\begin{pmatrix} i_1 & i_2 \end{pmatrix},$$</span>
+
+
+<span>$$ \sigma =\begin{pmatrix} i_2 & i_3 & \cdots & i_{l-1} & i_l & i_1 \end{pmatrix} =\begin{pmatrix} i_2 & i_1 \end{pmatrix}\begin{pmatrix} i_2 & i_l \end{pmatrix}\begin{pmatrix} i_2 & i_{l-1} \end{pmatrix}\cdots \begin{pmatrix} i_2 & i_3 \end{pmatrix}.$$</span>
+
+<p>置换$\sigma$的同种写法包含相同个数$l-1$个的不同的对换(仅仅<span>$\begin{pmatrix} i_1 & i_2 \end{pmatrix}=\begin{pmatrix} i_2 & i_1 \end{pmatrix}$</span>).此外，这些对换不是可交换的，而它们的个数也不是一成不变的.例如在$S_4$中</p>
+<span>$$ \begin{pmatrix} 1 & 2 & 3 \end{pmatrix}=\begin{pmatrix} 1 & 3 \end{pmatrix}\begin{pmatrix} 1 & 2 \end{pmatrix}=\begin{pmatrix} 2 & 3 \end{pmatrix}\begin{pmatrix} 1 & 3 \end{pmatrix}=\begin{pmatrix} 1 & 3 \end{pmatrix}\begin{pmatrix} 2 & 4 \end{pmatrix}\begin{pmatrix} 1 & 2 \end{pmatrix}\begin{pmatrix} 1 & 4 \end{pmatrix}.$$</span>
+
+<h2 id="置换的符号">置换的符号</h2>
+<p>给出下述重要定理：</p>
+<p><strong>定理$2$</strong> 设$\pi$是$S_n$中的一个置换，将$\pi $分解成对换的乘积：</p>
+<p>$$\pi =\tau _1 \tau _2 \cdots \tau _k ,\label{6}\tag{6}$$</p>
+<p>称</p>
+<p>$$\varepsilon _{\pi} =(-1)^k \label{7}\tag{7}$$</p>
+<p>为$\pi $的符号(亦称符号差或奇偶性)，它由置换$\pi$唯一确定并不信赖于$\eqref{6}$式的分解方法，即对于给定的$\pi$，整数$k$给出的奇偶性永远是唯一的.此外任取$\alpha ,\beta \in S_n$，</p>
+<span>$$\varepsilon _{\alpha \beta} =\varepsilon _{\alpha } \varepsilon _{\beta} .\label{8}\tag{8}$$</span>
+
+<p><strong>证明</strong> $1)$设除$\eqref{6}$式外，我们还有一个分解</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -204,7 +273,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的标准记法"><span class="toc-number">1.</span> <span class="toc-text">置换的标准记法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的循环结构"><span class="toc-number">2.</span> <span class="toc-text">置换的循环结构</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的标准记法"><span class="toc-number">1.</span> <span class="toc-text">置换的标准记法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的循环结构"><span class="toc-number">2.</span> <span class="toc-text">置换的循环结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的符号"><span class="toc-number">3.</span> <span class="toc-text">置换的符号</span></a></li></ol>
  
   </div>
 
@@ -225,6 +294,8 @@
 		
 			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>1</sup></a></li>
 		
+			<li><a href="/categories/高等代数/" title="高等代数">高等代数<sup>1</sup></a></li>
+		
 		</ul>
 </div>
 
@@ -238,7 +309,7 @@
 		
 			<li><a href="/tags/微积分/" title="微积分">微积分<sup>5</sup></a></li>
 		
-			<li><a href="/tags/考研试题/" title="考研试题">考研试题<sup>1</sup></a></li>
+			<li><a href="/tags/考研试题/" title="考研试题">考研试题<sup>2</sup></a></li>
 		
 			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
 		
@@ -250,7 +321,7 @@
   <div class="tagcloudlist">
     <p class="asidetitle">标签云</p>
     <div class="tagcloudlist clearfix">
-       <a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/代数/" style="font-size: 20.00px;">代数</a><a href="/tags/微积分/" style="font-size: 15.00px;">微积分</a><a href="/tags/考研试题/" style="font-size: 10.00px;">考研试题</a>
+       <a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/代数/" style="font-size: 20.00px;">代数</a><a href="/tags/微积分/" style="font-size: 16.67px;">微积分</a><a href="/tags/考研试题/" style="font-size: 13.33px;">考研试题</a>
     </div>
   </div>
 

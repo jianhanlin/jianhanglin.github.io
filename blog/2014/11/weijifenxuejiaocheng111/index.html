@@ -91,7 +91,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#变量、整序变量"><span class="toc-number">1.</span> <span class="toc-text">变量、整序变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#整序变量的极限"><span class="toc-number">2.</span> <span class="toc-text">整序变量的极限</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#变量、整序变量"><span class="toc-number">1.</span> <span class="toc-text">变量、整序变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#整序变量的极限"><span class="toc-number">2.</span> <span class="toc-text">整序变量的极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无穷小量"><span class="toc-number">3.</span> <span class="toc-text">无穷小量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例题"><span class="toc-number">4.</span> <span class="toc-text">例题</span></a></li></ol>
 		
 		</div>
 		
@@ -132,6 +132,84 @@
 
 <p>在第一种情形，整序变量根本是一个常量，它所取值的集合只有一个元素$1$.在第二种情形，这集由整序变量所交错地取着的两个值$1$及$-1$所组成.最后，在第三种情形，变量的值是无限集，但这并不影响变量每隔一次取一个等于$0$的数值这一回事；在第三项的数值$0$，我们当作不仅是在第二项的数值$1$以后，且亦在第一项的数值$0$以后.</p>
 <h2 id="整序变量的极限">整序变量的极限</h2>
+<p>读者从中学的教程内应该已熟悉这概念了.这里是它的严格的定义：</p>
+<p>若对于每一正数$\varepsilon$，不论它怎样小，恒有序号$N$，使在$n &gt; N$时，一切$x_n$的值满足不等式</p>
+<p>$$\mid x_n -a \mid &lt; \varepsilon ,\label{3}\tag{3}$$</p>
+<p>则常数$a$称为<strong>整序变量$x=x_n$的极限</strong>.</p>
+<p>$a$是整序变量的极限这一事实，记成：</p>
+<p>$$\lim x_n =a \quad 或\quad \lim x=a$$</p>
+<p>($\lim$是拉丁文$\text{limes}$的简写，即指“极限”).我们也说，变量趋于$a$，并写成</p>
+<p>$$ x_n \to a \quad 或\quad x\to a.$$</p>
+<p>有时称数$a$为序列$\eqref{2}$的极限，并说，这序列收敛于$a$.</p>
+<p>上述定义可以简短地叙述成：</p>
+<p>数$a$是整序变量$x=x_n$的极限，若$x$的数值$x_n$从某项开始都与$a$相差任意小.</p>
+<p>含任意$\varepsilon$的不等式$\eqref{3}$就是$x_n$可以与$a$“相差任意小”这一句话的准确记法，而序号$N$恰好就指示着上述定义中“从某项开始”那个“某项”的位置.</p>
+<p>最重要的是要认识到，序号$N$一般地说来，并不是一经指定后就永远不变的：它是由我们所选的数$\varepsilon$来决定的.为着要重视这件事.我们有时不写$N$而写成<span>$N_{\varepsilon}$</span>.当$\varepsilon$减小时，与它对应的序数<span>$N=N_{\varepsilon}$</span>，一般地说来，将会增大：要使整序变量$x_n$的值与$a$的接近程度愈大，则我们在序列$\eqref{2}$内所要考察的数值便必须愈远.</p>
+<p>整序变量$x_n$的一切数值都等于常量$a$的这情形是例外：显然，这时$a=\lim x_n$，但这时对于任何$\varepsilon &gt; 0$，不等式$\eqref{3}$能同时对于$x_n$的一切值都成立.[对于从某项起开始都等于$a$的整序变量$x_n$，有与此类似的情况.]</p>
+<p>我们已从[$3$实数的算术运算-绝对值]中知道，不等式$\eqref{3}$相当于下列不等式</p>
+<p>$$-\varepsilon &lt; x_n -a &lt; \varepsilon$$</p>
+<p>或</p>
+<p>$$a-\varepsilon &lt; x_n &lt; a+\varepsilon ;\label{4}\tag{4}$$</p>
+<p>以后我们经常要用到这些不等式.</p>
+<p>若把我们的整序变量$x_n$的值及数$a,a\pm \varepsilon$表示为数轴上的点[$4$实数的其他性质及应用-线段的度量] (图$2$)，则得整序变量的极限的显明的几何解释.以$a$点为中心的线段不论取得怎样小(其长为$2\varepsilon$)，一切点$x_n$，从某点起，必全部落在这线段之内(这样，在线段之外一定只有有限个点了).表示极限的点$a$就是表示整序变量的数值的点的<strong>凝聚中心</strong>.</p>
+<center><img src="/assets/img/weijifenxuejiaocheng/1/tu2.png" alt=""></center>
+
+<h2 id="无穷小量">无穷小量</h2>
+<p>当整序变量趋向于零时：$x_n \to 0$，这情形特别值得注意.</p>
+<p>极限为零的整序变量$x_n$称为<strong>无穷小量</strong>，或简称<strong>无穷小</strong>.</p>
+<p>若在整序变量的极限的定义内使$a=0$，则不等式$\eqref{3}$成为</p>
+<span>$$\mid x_n -0 \mid =\mid x_n \mid < \varepsilon \quad (n > N_{\varepsilon}).$$</span>
+
+<p>这样，上面的无穷小的定义可以不用术语“极限”而更详细地叙述成：</p>
+<p>若整序变量$x_n$的绝对值，自某项起，成为而且永远保持小于预先指定的任意小数$\varepsilon &gt; 0$，则它称为无穷小.</p>
+<p>由于历史性所形成的术语“无穷小”量是不十分恰当的，希望不要引起读者的误解，这量的任何个别数值，只要它不是零，就不能当作是“很小的”量.事实上，无穷小是这样一个变量[除去当它恒等于零的那种平凡情形以外]，它仅在自己变化过程中，可以变为小于任意选取的数$\varepsilon$.</p>
+<p>回到一般情形，设整序变量$x_n$以$a$为极限，则此变量与其极限的差</p>
+<p>$$\alpha _n =x_n -a$$</p>
+<p>显然将为无穷小：因依$\eqref{3}$，</p>
+<span>$$\mid \alpha _n \mid =\mid x_n -a \mid < \varepsilon \quad (n > N_{\varepsilon}).$$</span>
+
+<p>反之，若$\alpha _n$是无穷小，则$x_n \to a$.这使我们导出下列命题：</p>
+<p>整序变量$x_n$以常数$a$为极限的必要而且充分的条件是：它们的差$ \alpha _n = x_n -a $是无穷小.</p>
+<p>因此，可以给予“极限”的概念以另一定义(和旧定义完全相当)：</p>
+<p>若常数$a$与整序变量$x_n$的差是无穷小量，则$a$称为整序变量$x_n$的极限.</p>
+<p>自然而然地，若以这定义为极限论的出发点，则对于无穷小必须应用上述的第二定义.否则便得循环推理：极限由无穷小确定，而无穷小又由极限确定！</p>
+<p>因此，若整序变量$x_n \to a$，则可以表示为</p>
+<p>$$x_n =a +\alpha _n ,$$</p>
+<p>式中$\alpha _n$为无穷小.反之，若整序变量满足这表示式，则它有极限$a$.在实用时常用这式子以建立变量的极限.</p>
+<h2 id="例题">例题</h2>
+<p>$1)$ 考察整序变量</p>
+<p>$$x_n =\dfrac{1}{n},x_n =-\dfrac{1}{n}, x_n =\dfrac{(-1)^{n+1}}{n};$$</p>
+<p>与它们对应的数列为</p>
+<span>$$\begin{array}{ccccc}    1, & \dfrac{1}{2}, & \dfrac{1}{3}, & \dfrac{1}{4}, & \cdots \\    -1, & -\dfrac{1}{2}, & -\dfrac{1}{3}, & -\dfrac{1}{4}, & \cdots \\    1, & -\dfrac{1}{2}, & \dfrac{1}{3}, & -\dfrac{1}{4}, & \cdots \\  \end{array} $$</span>
+
+<p>三个变量都是无穷小，即有极限$0$.事实上，要使</p>
+<p>$$\mid x_n \mid =\dfrac{1}{n} &lt; \varepsilon ,$$</p>
+<p>仅需$n &gt; \dfrac{1}{\varepsilon}$便能成立.这样，便可取，例如，包含在$\dfrac{1}{\varepsilon}$内的最大的整数，即$E\left( \dfrac{1}{\varepsilon} \right)$[一般地，用$E(p)$表示不超过$p$的最大整数，或简称数$p$的整数部分；$E$是法文$\text{Entier}$的起首字母，表示“整”.]，作为<span>$N_{\varepsilon}$</span>.</p>
+<p>注意到，第一个变量常大于其极限$0$；第二个常小于它；第三个则交迭地忽大于忽小于它.</p>
+<p>$2)$若设</p>
+<p>$$x_n =\dfrac{2+(-1)^n}{n},$$</p>
+<p>则变量依次取下列数列中的数值</p>
+<span>$$\begin{array}{ccccccc} 1, & \dfrac{3}{2}, & \dfrac{1}{3}, & \dfrac{3}{4}, & \dfrac{1}{5}, & \dfrac{3}{6}, & \cdots \\ \end{array} $$</span>
+
+<p>在这情形同样有$x_n \to 0$，因</p>
+<p>$$\mid x_n \mid \leq \dfrac{3}{n} &lt; \varepsilon ,$$</p>
+<p>当$n &gt; \dfrac{3}{\varepsilon}$，故<span>$N_{\varepsilon}$</span>可以取为$E\left( \dfrac{3}{\varepsilon} \right)$.</p>
+<p>我们在此地碰到稀奇的特性：变量交迭地忽而接近于其极限$0$，忽而离去它.</p>
+<p>$3)$今设</p>
+<p>$$x_n =\dfrac{1+(-1)^n}{n};$$</p>
+<p>这整序变量我们已在[变量、整序变量]末遇到它过.在这里，亦同样地有$x_n \to 0$，因</p>
+<p>$$\mid x_n \mid \leq \dfrac{2}{n} &lt; \varepsilon ,$$</p>
+<p>仅需<span>$N > N_{\varepsilon}=E\left( \dfrac{2}{\varepsilon} \right)$</span>.</p>
+<p>注意到，对于$n$的一切奇数值变量都等于它的极限.</p>
+<p>这些简单的例子是很有趣的，由于它们表现出包含在上述整序变量的极限定义中的各种各样的可能性.变量的值是否均在极限值的一方；变量是否每一步都向其极限接近；最近，变量是否能达到其极限，即是否具有等于极限的数值；这些都不关紧要.重要的仅是定义中所说的：变量在最后，即项数充分远时的数值，与极限值之差要是任意小.</p>
+<p>$4)$ 取整序变量的更复杂的例：</p>
+<p>$$x_n =\dfrac{n^2-n+2}{3n^2+2n-4};$$</p>
+<p>我们要证明它的极限是$\dfrac13$.</p>
+<p>为此目的，考察差</p>
+<p>$$x_n -\dfrac13 =\dfrac{-5n+10}{3(3n^2+2n-4)},$$</p>
+<p>估计其绝对值，当$n &gt; 2$时，有</p>
+<p>$$\mid x_n -\dfrac13 \mid =\dfrac{5n-10}{3(3n^2+2n-4)} &lt; \dfrac{5n}{3(3n^2-4)} &lt; \dfrac{5n}{3\cdot 2n^2} &lt; \dfrac{1}{n},$$</p>
+<p>因此，若<span>$n > N_{\varepsilon}=E\left( \dfrac{1}{\varepsilon} \right)$</span>，这表达式便小于$\varepsilon$.这就证明了$x_n \to \dfrac13$.</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -193,7 +271,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#变量、整序变量"><span class="toc-number">1.</span> <span class="toc-text">变量、整序变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#整序变量的极限"><span class="toc-number">2.</span> <span class="toc-text">整序变量的极限</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#变量、整序变量"><span class="toc-number">1.</span> <span class="toc-text">变量、整序变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#整序变量的极限"><span class="toc-number">2.</span> <span class="toc-text">整序变量的极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无穷小量"><span class="toc-number">3.</span> <span class="toc-text">无穷小量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例题"><span class="toc-number">4.</span> <span class="toc-text">例题</span></a></li></ol>
  
   </div>
 
@@ -214,6 +292,8 @@
 		
 			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>1</sup></a></li>
 		
+			<li><a href="/categories/高等代数/" title="高等代数">高等代数<sup>1</sup></a></li>
+		
 		</ul>
 </div>
 
@@ -227,7 +307,7 @@
 		
 			<li><a href="/tags/微积分/" title="微积分">微积分<sup>5</sup></a></li>
 		
-			<li><a href="/tags/考研试题/" title="考研试题">考研试题<sup>1</sup></a></li>
+			<li><a href="/tags/考研试题/" title="考研试题">考研试题<sup>2</sup></a></li>
 		
 			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
 		
@@ -239,7 +319,7 @@
   <div class="tagcloudlist">
     <p class="asidetitle">标签云</p>
     <div class="tagcloudlist clearfix">
-       <a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/代数/" style="font-size: 20.00px;">代数</a><a href="/tags/微积分/" style="font-size: 15.00px;">微积分</a><a href="/tags/考研试题/" style="font-size: 10.00px;">考研试题</a>
+       <a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/代数/" style="font-size: 20.00px;">代数</a><a href="/tags/微积分/" style="font-size: 16.67px;">微积分</a><a href="/tags/考研试题/" style="font-size: 13.33px;">考研试题</a>
     </div>
   </div>
 
