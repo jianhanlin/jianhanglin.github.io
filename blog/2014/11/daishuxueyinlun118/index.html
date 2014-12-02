@@ -93,7 +93,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的标准记法"><span class="toc-number">1.</span> <span class="toc-text">置换的标准记法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的循环结构"><span class="toc-number">2.</span> <span class="toc-text">置换的循环结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的符号"><span class="toc-number">3.</span> <span class="toc-text">置换的符号</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的标准记法"><span class="toc-number">1.</span> <span class="toc-text">置换的标准记法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的循环结构"><span class="toc-number">2.</span> <span class="toc-text">置换的循环结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的符号"><span class="toc-number">3.</span> <span class="toc-text">置换的符号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#$S_n$在函数上的作用"><span class="toc-number">4.</span> <span class="toc-text">$S_n$在函数上的作用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">5.</span> <span class="toc-text">习题</span></a></li></ol>
 		
 		</div>
 		
@@ -212,6 +212,132 @@
 <span>$$\varepsilon _{\alpha \beta} =\varepsilon _{\alpha } \varepsilon _{\beta} .\label{8}\tag{8}$$</span>
 
 <p><strong>证明</strong> $1)$设除$\eqref{6}$式外，我们还有一个分解</p>
+<span>$$\pi =\tau' _1 \tau' _2 \cdots \tau' _{k'} ,\label{61}\tag{6′}$$</span>
+
+<p>并且数$k$与$k’$是不同的.定理的结论等价于说，整数$k+k’$是一个偶数.因为$(\tau’ _s )^2=e$，且$\eqref{6}$与$\eqref{61}$给出<span>$\tau _1 \tau _2 \cdots \tau _k =\tau' _1 \tau' _2 \cdots \tau' _{k'}$</span>，用<span>$\tau' _{k'} ,\cdots ,\tau' _2 ,\tau' _1$</span>从右侧顺序去乘这一等式的两边，我们得到<span>$\tau _1 \tau _2 \cdots \tau _k \tau' _{k'} \cdots \tau' _2 \tau' _1=e$</span>.我们的问题可以归结成：设</p>
+<span>$$e=\sigma _1 \sigma _2 \cdots \sigma _{m-1} \sigma _m ,m > 0,\label{9}\tag{9}$$</span>
+
+<p>是单位置换到对换乘积的一个分解.则$m$是一个偶数.</p>
+<p>这个目的可以用下述方法实现：将$e$的表达式$\eqref{9}$转化成$m-2$个对换的乘积.继续这一过程，如果$m$是奇数，我们就得到了一个对换$\tau$.但显然$e\neq \tau$.根据以上分析，我们只需给出将$m$个因子削减为$m-2$个的依据.</p>
+<p>$2)$ 设$s,1 \leq s \leq n$，是任意一个包含在对换$\sigma _2 ,\cdots ,\sigma _m$中的整数.为确定起见，设</p>
+<span>$$e=\sigma _1 \cdots \sigma _{p-1} \sigma _p \sigma _{p+1} \cdots \sigma _m ,$$</span>
+
+<p>使得<span>$\sigma _p =\sigma _{p-1} =\begin{pmatrix} s & t \end{pmatrix}$</span>，而<span>$\sigma _{p+1} ,\cdots ,\sigma _m$</span>不包含<span>$s$</span>.对于<span>$\sigma _{p-1}$</span>，有下述四种可能性：</p>
+<p>$a)$ <span>$\sigma _{p-1} =\begin{pmatrix} s & t \end{pmatrix}$</span>；这时<span>$\sigma _{p-1} \sigma _{p} =\begin{pmatrix} s & t \end{pmatrix} \begin{pmatrix} s & t \end{pmatrix}$</span>从$e$的写法中排除，我们得到了$m-2$个对换的分解式；</p>
+<p>$b)$ <span>$\sigma _{p-1}=\begin{pmatrix} s & r \end{pmatrix},r\neq s ,t$</span>；则</p>
+<span>$$\sigma _{p-1} \sigma _{p} =\begin{pmatrix} s & r \end{pmatrix}\begin{pmatrix} s & t \end{pmatrix}=\begin{pmatrix} s & t \end{pmatrix}\begin{pmatrix} r & t \end{pmatrix},$$</span>
+
+<p>于是我们将$s$向左移动了一个位置，对换的个数$m$没有改变；</p>
+<p>$c)$ <span>$\sigma _{p-1}=\begin{pmatrix} t & r \end{pmatrix},r\neq s ,t$</span>；则</p>
+<span>$$\sigma _{p-1} \sigma _{p} =\begin{pmatrix} t & r \end{pmatrix}\begin{pmatrix} s & t \end{pmatrix}=\begin{pmatrix} s & r \end{pmatrix}\begin{pmatrix} t & r \end{pmatrix},$$</span>
+
+<p>再次出现$b)$的情况，$s$向左位移而对换的个数$m$没有改变；</p>
+<p>$d)$ <span>$\sigma _{p-1}=\begin{pmatrix} q & r \end{pmatrix},\lbrace q,r\rbrace \cap \lbrace s,t\rbrace =\varnothing$</span>；这时</p>
+<span>$$\sigma _{p-1} \sigma _{p} =\begin{pmatrix} q & r \end{pmatrix}\begin{pmatrix} s & t \end{pmatrix}=\begin{pmatrix} s & t \end{pmatrix}\begin{pmatrix} q & r \end{pmatrix}.$$</span>
+
+<p>如果出现情况$a)$，我们的目的就达到了.否则，不断重复$b)-d)$的处理方式，可以将$s$移动到左边第一个位置.归根到底，我们或者有情况$a)$，或者到达下述极限情况：$e=\sigma’ _1 \sigma’ _2 \cdots \sigma’ _m$，<span>$\sigma' _1 =\begin{pmatrix} s & t' \end{pmatrix}$</span>，且$s$不进入$\sigma’ _2 \cdots \sigma’ _m$.于是，当$k &gt; 1$时$\sigma’ _k (s)=s$，但$s=e(s)=\sigma’ _1 (s) =t’\neq s$.这个矛盾证明了情况$a)$必须出现，从而$m$是偶数，所以关于<span>$\varepsilon _{\pi}$</span>不变性的论断是正确的.</p>
+<p>$3)$ 如果$\alpha =\tau _1 \cdots \tau _k$，<span>$\beta =\tau _{k+1} \cdots \tau _{k+l}$</span>，则<span>$\alpha \beta =\tau _1 \cdots \tau _k \tau _{k+1} \cdots \tau _{k+l}$</span>，且<span>$\varepsilon _{\alpha} =(-1)^k$</span>,<span>$\varepsilon _{\beta} =(-1)^l$</span>,<span>$\varepsilon _{\alpha \beta } =(-1)^{k+l}=(-1)^k (-1)^l=\varepsilon _{\alpha } \varepsilon _{\beta }$</span>.$\quad \quad \square$</p>
+<p><strong>定义</strong> 若<span>$\varepsilon _{\pi }=1$</span>，则称置换$\pi \in S_n$为<strong>偶置换</strong>，若<span>$\varepsilon _{\pi }=-1$</span>，则称置换$\pi $为<strong>奇置换</strong>.</p>
+<p>根据定义，所有的对换都是奇置换，而<span>$\varepsilon _e =1$</span>.</p>
+<p><strong>推论</strong> 设置换$\pi \in S_n$分解为长为$l_1 ,l_2 ,\cdots ,l_m$的互不相交的循环的乘积.则</p>
+<span>$$ \varepsilon _{\pi }=(-1)^{\scriptsize {\displaystyle \sum_{k=1}^m (l_k -1)}}.$$</span>
+
+<p><strong>证明</strong> 事实上，根据定理$2$，我们有</p>
+<span>$$ \varepsilon _{\pi }=\varepsilon _{\pi _1 \cdots \pi _m }=\varepsilon _{\pi _1 }\cdots \varepsilon _{\pi _m}$$</span>
+
+<p>其中，<span>$\varepsilon _{\pi _k }=(-1)^{l_k -1}$</span>，因为$\pi _k$可以写成$l_k -1$个对换的乘积(见前述定理$1$的推论的证明).最后</p>
+<span>$$\varepsilon _{\pi }=(-1)^{l_1 -1}\cdots (-1)^{l_m -1}=(-1)^{\scriptsize {\displaystyle \sum_{k=1}^m (l_k -1)}}.\quad \quad \square$$</span>
+
+<p><strong>例</strong> 设<span>$\pi =\begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ 5 & 4 & 6 & 7 & 2 & 9 & 1 & 3 & 8 & 11 & 10 \end{pmatrix}$</span>.则<span>$\pi =\begin{pmatrix} 1 & 5 & 2 & 4 & 7 \end{pmatrix}\begin{pmatrix} 3 & 6 & 9 & 8 \end{pmatrix}\begin{pmatrix} 10 & 11 \end{pmatrix}$</span> ，从$l_1 =5$，$l_2 =4$，$l_3 =2$得到<span>$\varepsilon _{\pi } =(-1)^{4+3+1}=1$</span>.</p>
+<p>将$S_n$写成并集$S_n=A_n \cup \overline{A} _n$，其中</p>
+<span>$$A_n =\lbrace \pi \in S_n \mid \varepsilon _{\pi }=1\rbrace$$</span>
+
+<p>是偶置换的集合，$\overline{A}=S_n \backslash A_n$是奇置换的集合.设<span>$\tau =\begin{pmatrix} i & j \end{pmatrix}$</span>是任意对换.$S_n$到自身的映射<span>$L_{\tau }:\pi \mapsto \tau \pi$</span>是一个一一映射.(<span>$L_{\tau }$</span>是单射：$\tau \alpha =\tau \beta \Rightarrow \alpha =\beta $；结论由$\S 5$定理$3$给出.不难看出<span>$L_{\tau }^2$</span>是恒等映射，故<span>$L_{\tau }^{-1}=L_{\tau }$</span>).<span>$L_{\tau }$</span>可以直观地表示成在集合$S_n =\lbrace \pi _1 =e ,\pi _2 ,\pi _3 ,\cdots ,\pi _N \rbrace $上的一个$N=n!$阶置换：</p>
+<span>$$L_{\tau } =\begin{pmatrix} \pi _1 & \pi _2 & \pi _3 & \cdots  & \pi _N \\ \tau \pi _1 & \tau \pi _2 & \tau \pi _3 & \cdots  & \tau \pi _N \end{pmatrix}\label{10}\tag{10}$$</span>
+
+<span>$$R_{\tau } =\begin{pmatrix} \pi _1 & \pi _2 & \pi _3 & \cdots  & \pi _N \\ \pi _1 \tau & \pi _2 \tau & \pi _3 \tau & \cdots  & \pi _N \tau \end{pmatrix}\label{101}\tag{10′}$$</span>
+
+<p>也是$S_n$上的一个置换.映射$\eqref{10}$和$\eqref{101}$以后会有更广泛的应用.此刻我们指出<span>$\varepsilon _{\tau \pi } =\varepsilon _{\tau } \varepsilon _{\pi } =-\varepsilon _{\pi }$</span>，所以</p>
+<span>$$L_{\tau }(A_n) =\overline{A} _n ,\quad L_{\tau }(\overline{A} _n) =A_n.$$</span>
+
+<p>也就是说，$S_n$中偶置换的个数等于奇置换的个数，从而</p>
+<p>$$\mid A_n \mid =\dfrac12 \mid S_n \mid =\dfrac{n!}2 .\label{11}\tag{11}$$</p>
+<h2 id="$S_n$在函数上的作用">$S_n$在函数上的作用</h2>
+<p>$S_n$中任一置换$\sigma$的符号的重要意义可以在计算$\sigma$逆序数时看到(见本节最后的习题$5$).但现在不去管它，我们运用斜对称函数的概念，给出定理$2$的另一种证明，<strong>斜对称函数</strong>本身也是重要且有用的.</p>
+<p><strong>定义</strong> 设$\pi \in S_n$，$f$是$n$个自变量的函数.令</p>
+<span>$$(\pi \circ f)(x_1 ,x_2 ,\cdots ,x_n )=f(x_{\pi (1)} ,\cdots ,x_{\pi (n)})\label{12}\tag{12}$$</span>
+
+<p>则称函数$g= \pi \circ f$是由$\pi $作用在$f$上得到的.</p>
+<p><strong>引理$1$</strong> 设$\alpha ,\beta$是$S_n$的任意置换.则</p>
+<p>$$(\alpha \beta)\circ f=\alpha \circ (\beta \circ f).$$</p>
+<p><strong>证明</strong> 根据公式$\eqref{12}$，我们有</p>
+<span>$$(\alpha \circ (\beta \circ f))(x_1 ,\cdots ,x_n )=(\beta \circ f)(x_{\alpha (1)} ,\cdots ,x_{\alpha (n)}),$$</span>
+
+<p>令<span>$y_k =x_{\alpha (k)}$</span>，并注意到<span>$y_{\beta (i)} =x_{\alpha (\beta (i))}$</span>，</p>
+<span>$$\begin{align*}  & (\alpha \circ (\beta \circ f))(x_1 ,\cdots ,x_n )=(\beta \circ f)(y_1 ,\cdots ,y_n ) \\  = & f(y_{\beta (1)} ,\cdots ,y_{\beta (n)} )=f(x_{\alpha (\beta (1))} ,\cdots ,x_{\alpha (\beta (n))}) \\  = &f(x_{(\alpha \beta )(1)} ,\cdots ,x_{(\alpha \beta )(n)})=((\alpha \beta )\circ f)(x_1 ,\cdots ,x_n ).\quad \quad \square  \end{align*}$$</span>
+
+<p><strong>定义</strong> 一个$n$元函数$f$叫作<strong>斜对称的</strong>，若<span>$f(\cdots ,x_k ,x_{k+1} ,\cdots )=-f(\cdots ,x_{k+1} ,x_k ,\cdots )$</span>，也就是说，当交换任意两个相邻变量的位置时，函数值变号.</p>
+<p><strong>引理$2$</strong> 交换任意两个变量的位置，斜对称函数变号.</p>
+<p><strong>证明</strong> 设交换第$i,j$个自变量的位置，且$i &lt; j$.对位于$i,j$之间的自变量的个数$l=j-i-1$作归纳.当$l=0$时，引理的条件符合斜对称函数的定义.设引理对任意$j-i-1 &lt; l$真.则</p>
+<span>$$\begin{align*}  & f(\cdots ,x_i ,x_{i+1} ,\cdots ,x_{j-1} ,x_j ,\cdots ) =-f(\cdots ,x_{i+1} ,x_i ,\cdots ,x_{j-1} ,x_j ,\cdots )\\  = & f(\cdots ,x_{i+1} ,x_j ,\cdots ,x_{j-1} ,x_i ,\cdots ) =-f(\cdots ,x_j ,x_{i+1} ,\cdots ,x_{j-1} ,x_i ,\cdots ). \quad \square  \end{align*}$$</span> 
+
+<p>应该指出，并非所有的斜对称函数恒等于零.下面是一个最简单的例子.</p>
+<p><strong>例</strong> 设</p>
+<span>$$\Delta _n =\Delta _n (x_1 ,x_2 ,\cdots ,x_n )=\prod\limits_{1 < j < i \leq n}(x_i -x_j )$$</span>
+
+<p>符号$\prod$表示乘积，正如$\sum$表示求和.指出任意两个相邻的自变量<span>$x_k ,x_{k+1}$</span>，我们有</p>
+<span>$$\Delta _n =(x_{k+1} -x_k)\left[ (x_{k+1} -x_{k-1})\cdots (x_{k+1} -x_1)(x_k -x_{k-1})\cdots (x_k -x_1) \right]\cdot A\cdot B,$$</span>
+
+<p>其中  </p>
+<span>$$A=\prod\limits_{1 \leq j < i < k}(x_i -x_j ),$$</span>
+
+<span>$$B=\prod\limits_{s=k+2}\left[ (x_s -x_{s-1})\cdots (x_s -x_{k+1})(x_s -x_k)\cdots (x_s -x_1) \right] .$$</span>
+
+<p>交换<span>$x_k$</span>与<span>$x_{k+1}$</span>的位置，因子<span>$\left[ (x_{k+1} -x_{k-1} )\cdots (x_{k+1} -x_1 )(x_k -x_{k-1} )\cdots (x_k -x_1 ) \right] ,A$</span>和$B$显然没有改变，可是</p>
+<span>$$ (x_k -x_{k+1} )=-(x_{k+1} -x_k ).$$</span>
+
+<p>这就意味着</p>
+<span>$$\Delta _n (\cdots ,x_k ,x_{k+1} ,\cdots )=-\Delta _n (\cdots ,x_{k+1} ,x_k ,\cdots ),1\leq k \leq n+1.$$</span>
+
+<span>$\Delta _n$</span>是斜对称函数.根据引理$2$，我们有<br><span>$$\Delta _n (\cdots ,x_i ,\cdots ,x_j ,\cdots )=-\Delta _n (\cdots ,x_j ,\cdots ,x_i ,\cdots ).$$</span>
+
+<p>此外，当$x_1 ,\cdots ,x_n$两两不同时，</p>
+<span>$$\Delta _n (x_1 ,\cdots ,x_n )\neq 0.$$</span>
+
+<p><strong>定理$2$的第二种证明</strong> 考虑任意$n$个变元$x_1 ,\cdots ,x_n$上的斜对称函数$f$.根据定理$1$，当置换$\pi =\tau _1 \tau _2 \cdots \tau _k$分解成对换的乘积时，$\pi$在$f$上的作用归结到对换$\tau _k$，<span>$\tau _{k-1}$</span>，$\cdots$，$\tau _1$在$f$上的逐次作用，即$k$个$(-1)$与$f$的乘积：</p>
+<span>$$\pi \circ f=(\tau _1 \cdots \tau _{k-1})\circ (\tau _k \circ f)=-(\tau _1 \cdots \tau _{k-1})\circ f=\cdots =(-1)^kf=\varepsilon _{\pi} f.$$</span>
+
+<p>因为这一关系式的左边信赖于$\pi$，而不信赖于$\pi$的任何分解，所以由等式$\eqref{7}$指出的映射<span>$\varepsilon :\pi \mapsto \varepsilon _{\pi}$</span>当$f$不是零函数时由置换$\pi$完全确定.事实上，这样的函数是能够取到的，例如$f =\Delta _n$.</p>
+<p>按照引理$1$建立的法则将置换$\alpha \beta$作用到这样的函数$f$上，</p>
+<span>$$\varepsilon _{\alpha \beta} f=(\alpha \beta )\circ f=\alpha \circ (\beta \circ f)=\alpha \circ (\varepsilon _{\beta} f) =\varepsilon _{\beta} (\alpha \circ f)=\varepsilon _{\beta} (\varepsilon _{\alpha } f)=(\varepsilon _{\beta} \varepsilon _{\alpha} )f,$$</span>
+
+<p>从而得到关系式$\eqref{8}$.$\quad \quad \square$</p>
+<p><strong>注记</strong> 我们将不止一次地研究$S_n$对函数的作用，在[$\text{BAⅢ}$]中可以看到这仅仅是一般规律的个别体现.我们的另一个小小的成绩在于，将口头表达式“在$f(x_1 ,\cdots ,x_n)$中交换$x_i$与$x_j$的位置”，简记作符号$\tau \circ f$，其中<span>$\tau = \begin{pmatrix} i & j \end{pmatrix}$</span>.</p>
+<h2 id="习题">习题</h2>
+<p>$1$.在数学分析教科书中证明了斯特林公式</p>
+<p>$$n!\sim \sqrt{2\pi n} n^n e^{-n},$$</p>
+<p>此处$e=2.718281\cdots$是自然对数底，$\pi =3.141592\cdots $；符号$\sim$指当$n\to \infty$时，$\dfrac{\sqrt{2\pi n}n^n e^{-n}}{n!}$趋近于$1$.借助阶乘公式检验近似估计$100! &gt; (9.33\cdots )10^{157}$.在$S_{100}$中有多少长为$100$的循环？</p>
+<p>$2$.求置换$\eqref{4}$和置换</p>
+<span>$$\pi = \begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 \\ 3 & 6 & 8 & 2 & 1 & 4 & 5 & 7\end{pmatrix}$$</span>
+
+<p>的阶.</p>
+<p>$3$.形如$\eqref{3}$的置换$\pi$含有$m$个互不相交的循环，令</p>
+<p>$$m’ =n-\sum_{k=1}^m l_k ,$$</p>
+<p>则$\pi$使$m’$个符号(或点)保持不变.数$d(\pi )=n-(m+m’)$叫作置换$\pi$的<strong>减量</strong>.验证<span>$\varepsilon _{\pi} =(-1)^{d(\pi)}$</span>.</p>
+<p>$4$.计算置换</p>
+<span>$$\pi = \begin{pmatrix} 1 & 2 & 3 & \cdots & n-1 & n \\ n & n-1 & n-2 & \cdots & 2 & 1 \end{pmatrix}$$</span>
+
+<p>的符号.</p>
+<p>$5$.设$\Omega =\lbrace 1,2,\cdots ,n\rbrace$，$\Omega \times \Omega$是笛卡儿积.称元素对<span>$\begin{pmatrix} i & j \end{pmatrix} \in \Omega \times \Omega$</span>是置换$\sigma \in S_n$的<strong>逆序关系</strong>(或简称$\sigma$逆序)，若$i &lt; j$，但$\sigma (i) &gt; \sigma (j)$.令</p>
+<p>$$\text{sgn} (\sigma )=\prod\limits_{1\leq i &lt; j \leq n}\dfrac{\sigma (j) -\sigma (i)}{j-i}.$$</p>
+<p>因为非零有理数$\dfrac{\sigma (j) -\sigma (i)}{j-i}$取负号.当且仅当<span>$\begin{pmatrix} i & j \end{pmatrix}$</span>是$\sigma$逆序，又因为$\sigma :\Omega \to \Omega$是一一映射，所以$\text{sgn} (\sigma )=(-1)^k$，其中$k$是$\sigma$逆序的总数.易见</p>
+<span>$$\begin{align*}  (\sigma (j)\sigma (i))\sigma & =\begin{pmatrix} \cdots & \sigma (j） & \cdots & \sigma (i） & \cdots \\ \cdots & \sigma (i） & \cdots & \sigma (j） & \cdots \end{pmatrix}\begin{pmatrix} \cdots & i & \cdots & j & \cdots \\ \cdots & \sigma (i） & \cdots & \sigma (j）& \cdots \end{pmatrix} \\  & =\begin{pmatrix} \cdots & i & \cdots & j & \cdots \\ \cdots & \sigma (j） & \cdots & \sigma (i） & \cdots \end{pmatrix}.  \end{align*}$$</span>
+
+<p>这样，$\sigma $逆序<span>$\begin{pmatrix} i & j\end{pmatrix}$</span>在作为置换$\tau \sigma$的逆序时中止了，其中$\tau =(\sigma (j) ,\sigma (i))$是一个对换.</p>
+<p>证明可以找到$k$个对换$\tau _1 ,\cdots ,\tau _k$，使得</p>
+<span>$$\tau _k \tau _{k-1} \cdots \tau _1 \sigma =e,$$</span>
+
+<p>其中$e$是单位置换.则<span>$\sigma =\tau _1 \cdots \tau _{k-1} \tau _k$</span>，而<span>$\text{sgn} \sigma =(-1)^k=\varepsilon _{\sigma}$</span>，这两种记号代表置换的同一个不变量；(从拉丁文$\text{signum}$引出的)记号$\text{sgn}$就是符号的意思.我们得到了另一种便利的方法来确定置换的符号.例如对应于置换$\eqref{4}$的逆序的集合由五个数对<span>$\begin{pmatrix} 1 & 5 \end{pmatrix}$</span>，<span>$\begin{pmatrix} 2 & 5 \end{pmatrix}$</span>，<span>$\begin{pmatrix} 3 & 5 \end{pmatrix}$</span>，<span>$\begin{pmatrix} 4 & 5 \end{pmatrix}$</span>，<span>$\begin{pmatrix} 6 & 7 \end{pmatrix}$</span>组成，那么$\text{sgn}\pi =-1$.事实上，事情归结为计算置换$\pi$的下面一行中比$i$大却位于$i$的前面的数字$j$的个数，$i=1,2,\cdots ,n-1$.</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -273,7 +399,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的标准记法"><span class="toc-number">1.</span> <span class="toc-text">置换的标准记法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的循环结构"><span class="toc-number">2.</span> <span class="toc-text">置换的循环结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的符号"><span class="toc-number">3.</span> <span class="toc-text">置换的符号</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的标准记法"><span class="toc-number">1.</span> <span class="toc-text">置换的标准记法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的循环结构"><span class="toc-number">2.</span> <span class="toc-text">置换的循环结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#置换的符号"><span class="toc-number">3.</span> <span class="toc-text">置换的符号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#$S_n$在函数上的作用"><span class="toc-number">4.</span> <span class="toc-text">$S_n$在函数上的作用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#习题"><span class="toc-number">5.</span> <span class="toc-text">习题</span></a></li></ol>
  
   </div>
 

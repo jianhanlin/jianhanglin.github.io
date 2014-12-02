@@ -91,7 +91,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#变量、整序变量"><span class="toc-number">1.</span> <span class="toc-text">变量、整序变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#整序变量的极限"><span class="toc-number">2.</span> <span class="toc-text">整序变量的极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无穷小量"><span class="toc-number">3.</span> <span class="toc-text">无穷小量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例题"><span class="toc-number">4.</span> <span class="toc-text">例题</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#变量、整序变量"><span class="toc-number">1.</span> <span class="toc-text">变量、整序变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#整序变量的极限"><span class="toc-number">2.</span> <span class="toc-text">整序变量的极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无穷小量"><span class="toc-number">3.</span> <span class="toc-text">无穷小量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例题"><span class="toc-number">4.</span> <span class="toc-text">例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于有极限的整序变量的一些定理"><span class="toc-number">5.</span> <span class="toc-text">关于有极限的整序变量的一些定理</span></a></li></ol>
 		
 		</div>
 		
@@ -210,6 +210,78 @@
 <p>估计其绝对值，当$n &gt; 2$时，有</p>
 <p>$$\mid x_n -\dfrac13 \mid =\dfrac{5n-10}{3(3n^2+2n-4)} &lt; \dfrac{5n}{3(3n^2-4)} &lt; \dfrac{5n}{3\cdot 2n^2} &lt; \dfrac{1}{n},$$</p>
 <p>因此，若<span>$n > N_{\varepsilon}=E\left( \dfrac{1}{\varepsilon} \right)$</span>，这表达式便小于$\varepsilon$.这就证明了$x_n \to \dfrac13$.</p>
+<p>$5)$ 整序变量由公式</p>
+<p>$$x_n =a^{\frac{1}{n}} =\sqrt[n]{a}(a &gt; 1)$$</p>
+<p>所确定.要证$x_n \to 1$.</p>
+<p>若应用[以任意实数为指数的幂]的不等式$(3)$，则可以写成：</p>
+<span>$$\mid x_n -1 \mid =\sqrt[n]{a}-1 < \dfrac{a-1}{n} < \varepsilon ,仅需 n > N_{\varepsilon}=E\left( \dfrac{a-1}{\varepsilon} \right).$$</span>
+
+<p>但亦可用另外方法证明.不等式</p>
+<span>$$\mid x_n -1 \mid =a^{\frac{1}{n}}-1 < \varepsilon ,$$</span>
+
+<p>相当于</p>
+<p>$$\dfrac{1}{n} &lt; \log_a(1+\varepsilon ) 或 n &gt; \dfrac{1}{\log_a(1+\varepsilon ) },$$</p>
+<p>这样，在<span>$n > N_{\varepsilon}=E\left( \dfrac{1}{\log_a(1+\varepsilon } \right)$</span>时，它就成立了.</p>
+<p>由于所选的推论方法不同，我们便得出不同的<span>$N_{\varepsilon}$</span>的表达式.例如，在$a=10,\varepsilon =0.01$时，依第一种方法得<span>$N_{0.01}=\dfrac{9}{0.01}=900$</span>，而依第二种方法得<span>$N_{0.01}=E\left( \dfrac{1}{0.00432\cdots } \right) =231$</span>.依第二种方法我们得出<span>$N_{0.01}$</span>的一切可能的数值中的最小者，因为$10^{\frac{1}{231}}=1.010017\cdots $与$1$的差已大于$\varepsilon =0.01$.在一般情形也是如此，因为，很容易看出，当$n \leq \dfrac{1}{\log_a(1+\varepsilon ) }$时必有$a^{\frac{1}{n}}-1 \geq \varepsilon $.</p>
+<p>注意：如果只是要证明极限存在，则在这种场合我们总不关心于<span>$N_{\varepsilon}$</span>的最小可能的数值.只需保证不等式$\eqref{3}$能成立就好了，至于从哪一项开始，位置远些的抑近些的，可以不必去管它.</p>
+<p>$6)$ 整序变量</p>
+<p>$$a_n =q^n ,式中 \mid q\mid &lt; 1$$</p>
+<p>是无穷小的一个重要的例题.要证明$a_n \to 0$，试考察不等式</p>
+<p>$$\mid a_n \mid ={\mid q\mid }^n &lt; \varepsilon ,$$</p>
+<p>它相当于</p>
+<p>$$n\cdot \lg{\mid q\mid } &lt; \lg{\varepsilon } 或 n &gt; \dfrac{\lg{\varepsilon }}{\lg{\mid q\mid }}.$$</p>
+<p>[这里(和以后)$\lg x$都理解为$\log_{10}x$.由于$\mid q\mid &lt; 1$，故$\lg{\mid q\mid} &lt; 0$；因此，在用这数除不等式的两边时，不等号应换成相反的方向.]</p>
+<p>这样，若假定(设$\varepsilon &lt; 1$)</p>
+<span>$$ N_{\varepsilon } =E\left( \dfrac{\lg{\varepsilon }}{\lg{\mid q\mid }} \right) ,$$</span>
+
+<p>则在<span>$n > N_{\varepsilon }$</span>时，上述不等式一定成立.</p>
+<p>仿此，很易证明整序变量</p>
+<p>$$\beta _n =A \cdot q^n$$</p>
+<p>亦是无穷小，其中$\mid q \mid &lt; 1$，而$A$是常数.</p>
+<p>$7)$ 再考察无穷递减几何序列</p>
+<p>$$a ,aq ,aq^2 ,\cdots ,aq^{n-1},\cdots (\mid q\mid &lt; 1)$$</p>
+<p>并提出关于其和的定义问题.</p>
+<p>大家知道所谓无穷序列各项的和，自然应该是，当$n$无限增大时，其首$n$项的和$s_n$所趋向的极限.但</p>
+<p>$$s_n =\dfrac{a-aq^n}{1-q}=\dfrac{a}{1-q}-\dfrac{a}{1-q}\cdot q^n ,$$</p>
+<p>因此这整序变量$s_n$与常数$\dfrac{a}{1-q}$之差为$a_n =-\dfrac{a}{1-q}\cdot q^n$，我们刚才已看出它是无穷小量.因此，依极限的第二定义，所求序列各项的和为</p>
+<p>$$s=\lim s_n =\dfrac{a}{1-q}.$$</p>
+<p>因此，这个数就是几何序列的无穷多项的和，把它写成为：</p>
+<p>$$a+aq+aq^2+\cdots +aq^{n-1}+\cdots =\dfrac{a}{1-q}.$$</p>
+<p>$8)$ 设已给二数$a$及$b$.假定$x_0 =a,x_1 =b$，而整序变量$x_n$以后的数值则由等式</p>
+<span>$$x_n =\dfrac{x_{n-2} +x_{n-1}}{2}(n \geq 2)$$</span>
+
+<p>来决定.</p>
+<p>这些$x_n$实际上都已给定，因为，这里令$n=2,3,4,\cdots $，就可以依序地求出它的一切数值至任何项.</p>
+<p>若从上述等式的两边各减去<span>$x_{n-1}$</span>，则得</p>
+<span>$$x_n -x_{n-1}=-\dfrac{1}{2}(x_{n-1}-x_{n-2})(n=2,3,\cdots ).$$</span>
+
+<p>这样，序列</p>
+<span>$$ x_1 -x_0 =b-a ,x_2 -x_1 ,\cdots ,x_{n-1}-x_{n-2},x_n -x_{n-1}$$</span>
+
+<p>中，任一个差(由第二个开始)都可以由前面一个差乘以$-\dfrac{1}{2}$而得到.就是说，我们有乘以$-\dfrac{1}{2}$为公比的几何数列.因为它的$n$项和是$x_n -a$，所以利用我们已知的(参看$7)$)几何序列和的公式，立即得出</p>
+<p>$$\lim (x_n -a)=\dfrac{b-a}{1-\left( -\dfrac{1}{2} \right)}=\dfrac{2}{3}(b-a).$$</p>
+<p>由此不难得出</p>
+<p>$$\lim x_n =a+\dfrac{2}{3}(b-a)=\dfrac{a+2b}{3}.$$</p>
+<p>$9)$ 与几何序列相似，可以考查任意数列</p>
+<p>$$a_1 ,a_2 ,\cdots ,a_n ,\cdots $$</p>
+<p>并且把它们依次相加，作成“部分和”</p>
+<p>$$A_1 =a_1 ,A_2 =a_1 +a_2 ,A_3 =a_1 +a_2 +a_3 ,\cdots $$</p>
+<p>$$A_n =a_1 +a_2 +\cdots + a_n ,\cdots $$</p>
+<p>如果当$n$无限增大时，$A_n$趋于(有限或无穷)极限$A$，则数$A$就叫做所取一切数$a_n$的和，并且写成</p>
+<p>$$a_1 +a_2 +\cdots + a_n +\cdots =A.$$</p>
+<p>等式左边记号叫做<strong>无穷级数</strong>，数$A$叫做它的和.具有有限和的级数，我们说它是收敛的.</p>
+<p>例如，设已知级数</p>
+<p>$$\dfrac{1}{1\cdot 2}+\dfrac{1}{2\cdot 3}+\dfrac{1}{3\cdot 4}+\cdots +\dfrac{1}{n(n+1)}+\cdots$$</p>
+<p>这里</p>
+<p>$$a_1 =\dfrac{1}{1\cdot 2}=1-\dfrac{1}{2},a_2 =\dfrac{1}{2\cdot 3}=\dfrac{1}{2}-\dfrac{1}{3},\cdots$$</p>
+<p>$$a_n =\dfrac{1}{n(n+1)}=\dfrac{1}{n}-\dfrac{1}{n+1},\cdots $$</p>
+<p>因此，在这个情形</p>
+<p>$$A_n =\left( 1-\dfrac{1}{2} \right) +\left( \dfrac{1}{2}-\dfrac{1}{3} \right) +\cdots +\left( \dfrac{1}{n}-\dfrac{1}{n+1} \right) =1-\dfrac{1}{n+1}.$$</p>
+<p>显然$A_n \to 1$，因此，所说的级数收敛，并且和为$1$.</p>
+<p>如果级数没有有限和，这时我们就说这个级数发散：例如，</p>
+<p>$$1+1+\cdots +1+1+\cdots $$</p>
+<p>就是这样的级数.</p>
+<h2 id="关于有极限的整序变量的一些定理">关于有极限的整序变量的一些定理</h2>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -271,7 +343,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#变量、整序变量"><span class="toc-number">1.</span> <span class="toc-text">变量、整序变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#整序变量的极限"><span class="toc-number">2.</span> <span class="toc-text">整序变量的极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无穷小量"><span class="toc-number">3.</span> <span class="toc-text">无穷小量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例题"><span class="toc-number">4.</span> <span class="toc-text">例题</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#变量、整序变量"><span class="toc-number">1.</span> <span class="toc-text">变量、整序变量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#整序变量的极限"><span class="toc-number">2.</span> <span class="toc-text">整序变量的极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#无穷小量"><span class="toc-number">3.</span> <span class="toc-text">无穷小量</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#例题"><span class="toc-number">4.</span> <span class="toc-text">例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于有极限的整序变量的一些定理"><span class="toc-number">5.</span> <span class="toc-text">关于有极限的整序变量的一些定理</span></a></li></ol>
  
   </div>
 
