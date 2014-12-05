@@ -4,7 +4,7 @@
   <subtitle><![CDATA[春水初生，春林初盛，春风十里，不如你.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-12-02T09:09:55.693Z</updated>
+  <updated>2014-12-05T01:11:02.849Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -549,7 +549,7 @@
     <link href="http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/"/>
     <id>http://jianhanglin.github.io/blog/2014/11/weijifenxuejiaocheng111/</id>
     <published>2014-11-18T07:58:44.000Z</published>
-    <updated>2014-11-28T03:38:05.000Z</updated>
+    <updated>2014-12-05T01:09:29.000Z</updated>
     <content type="html"><![CDATA[<h2 id="变量、整序变量">变量、整序变量</h2>
 <p>在物理学及其他自然科学内读者曾经遇到各种不同的<strong>量</strong>：时间，长度，体积，重量等.任一种量，按照不同的情况，有时具有不同的值，有时仅取一值.在第一种情形我们称它为<strong>变量</strong>，在第二种情形称它为<strong>常量</strong>.</p>
 <p>但在数学上我们不顾所考察的量的物理意义，仅关心于表示这量的<strong>数字</strong>；量的物理意义仅当数学被应用时，始再获得重要性.这样，对于我们来说，变量仅为赋予数值的符号(例如，字母$x$)而已.[对整个数学分析来说，(在历史上)原来的、十分一般的变量概念与其说是纯数学性质的，不如说是自然科学性质的.给这个概念一个完全形式的定义，实际上不可能.有两种更为特殊的变量在今后的叙述中将起到关键的作用，它们是严格定义的，一种称为(自)变量，另一种称为整序变量(或称为整序型变量).所说这两类变量的严格定义靠如下方式实现：对它们要补充描述其指定过程，即确切地指出认为变量或整序变量已经给定的条件.特别是下面的一段正文乃是变量的定义.]</p>
@@ -676,7 +676,7 @@
 
 <p>相当于</p>
 <p>$$\dfrac{1}{n} &lt; \log_a(1+\varepsilon ) 或 n &gt; \dfrac{1}{\log_a(1+\varepsilon ) },$$</p>
-<p>这样，在<span>$n > N_{\varepsilon}=E\left( \dfrac{1}{\log_a(1+\varepsilon } \right)$</span>时，它就成立了.</p>
+<p>这样，在<span>$n > N_{\varepsilon}=E\left( \dfrac{1}{\log_a(1+\varepsilon) } \right)$</span>时，它就成立了.</p>
 <p>由于所选的推论方法不同，我们便得出不同的<span>$N_{\varepsilon}$</span>的表达式.例如，在$a=10,\varepsilon =0.01$时，依第一种方法得<span>$N_{0.01}=\dfrac{9}{0.01}=900$</span>，而依第二种方法得<span>$N_{0.01}=E\left( \dfrac{1}{0.00432\cdots } \right) =231$</span>.依第二种方法我们得出<span>$N_{0.01}$</span>的一切可能的数值中的最小者，因为$10^{\frac{1}{231}}=1.010017\cdots $与$1$的差已大于$\varepsilon =0.01$.在一般情形也是如此，因为，很容易看出，当$n \leq \dfrac{1}{\log_a(1+\varepsilon ) }$时必有$a^{\frac{1}{n}}-1 \geq \varepsilon $.</p>
 <p>注意：如果只是要证明极限存在，则在这种场合我们总不关心于<span>$N_{\varepsilon}$</span>的最小可能的数值.只需保证不等式$\eqref{3}$能成立就好了，至于从哪一项开始，位置远些的抑近些的，可以不必去管它.</p>
 <p>$6)$ 整序变量</p>
@@ -737,6 +737,78 @@
 <p>$$1+1+\cdots +1+1+\cdots $$</p>
 <p>就是这样的级数.</p>
 <h2 id="关于有极限的整序变量的一些定理">关于有极限的整序变量的一些定理</h2>
+<p>设整序变量有极限$a$.对于任一$p &lt; a$(或$q &gt; a$)很易选取数$\varepsilon &gt; 0$，使</p>
+<p>$$a-\varepsilon &gt; p\quad (或a+\varepsilon &lt; q);$$</p>
+<p>为此目的，只需取$\varepsilon$小于差$a-p$(或$q-a$)就是.但依极限的定义[整序变量的极限]，恒能求出这样的序号$N$，使当$n &gt; N$时不等式[参阅($\eqref{4}$)]</p>
+<p>$$ x_n &gt; a -\varepsilon \quad (x_n &lt; a+\varepsilon)$$</p>
+<p>能满足.因此，自然也成立不等式</p>
+<p>$$ x_n &gt; p \quad (或 x_n &lt; q).$$</p>
+<p>$1°$若整序变量$x_n$趋于极限$a$，又$a &gt; p(a &lt; q)$，则一切变量的数值，从某项开始，亦将$&gt; p( &lt; q)$.</p>
+<p>这一简单的命题包含一系列有用的推论.</p>
+<p>$2°$若整序变量$x_n$趋于极限$a &gt; 0( &lt; 0)$，则变量本身从某项开始亦必有$x_n &gt; 0( &lt; 0)$.</p>
+<p>要证明此论点，只需在上述命题中取$p=0(q=0)$就行了.</p>
+<p>要准确的结果是：</p>
+<p>$3°$若整序变量$x_n$趋于异于零的极限$a$，则必有充分远的$x_n$的值，其绝对值得超过某正数$r$：</p>
+<p>$$\mid x_n \mid &gt; r &gt; 0\quad (n &gt; N).$$</p>
+<p>实际上，当$a &gt; 0( &lt; 0)$时，可以取</p>
+<p>$$0 &lt; p &lt; a \quad (a &lt; q &lt; 0),$$</p>
+<p>并假定$r=p(r=\mid q\mid )$.</p>
+<p>$4°$另一方面，若整序变量$x_n$有极限$a$，则$x_n$必定是有界的，意即，它的一切值在绝对值上不超过某一有限的界：</p>
+<p>$$\mid x_n \mid \leq M \quad (M=常数；n=1,2,\cdots ).$$</p>
+<p>取数$M’ &gt; \mid a\mid $，即$-M’ &lt; a &lt; M’$，并假定$p=-M’,q=M’$.求出这样的序号$N$.使当$n &gt; N$时，有</p>
+<p>$$-M’ &lt; x_n &lt; M’\quad 或\quad \mid x_n \mid &lt; M’.$$</p>
+<p>这不等式当$n=N+1,N+2,\cdots$时，自然能满足，因此它只可能对于整序变量的前$N$项(或它们之中的某几项)不满足.</p>
+<p>因此，若假定$M$等于数</p>
+<p>$$\mid x_1 \mid ,\mid x_2 \mid ,\cdots ,\mid x_N \mid ,M’$$</p>
+<p>中的最大者，则一切$x_n$的值都将满足$\mid x_n \mid \leq M$，此即需证者.</p>
+<p><strong>附注</strong> Ⅰ.$x_n$为有界变量的定义也可以用不等式</p>
+<p>$$k\leq x_n \leq g \quad (n=1,2,\cdots )$$</p>
+<p>来表示，式中$k$及$g$为二有限数.实际上，由这些不等式，若令$M$等于$\mid k\mid $及$\mid g\mid $中的最大数，则得$\mid x_n \mid \leq M$；反之，若先有最后的不等式，则可以把它写成$-M\leq x_n \leq M$，这样$-M$就可当作是$k$，$M$就可当作是$g$.</p>
+<p>Ⅱ.命题$4°$不能逆述.并非一切有界的整序变量都有极限.例如，若设$x_n=(-1)^{n+1}$，则这个整序变量当然是有界的：$\mid x_n \mid \leq 1$，但它却并无极限，总是在$+1$和$-1$间振动着.</p>
+<p>最后，根据命题$1°$，证明极限的唯一性.</p>
+<p>$5°$整序变量$x_n$不能同时趋于两个相异的极限.</p>
+<p>事实上，假定其逆：设同时有$x_n \to a$和$x_n \to b$，又$a &lt; b$.取出$a$与$b$间的任一数$r$，</p>
+<p>$$a &lt; r &lt; b.$$</p>
+<p>因$x_n \to a$及$a &lt; r$，必能求得序号$N’$，使当$n &gt; N’$时不等式$x_n &lt; r$能满足.由另一方面，因$x_n \to b$及$b &gt; r$，必能求得序号$N’’$，使当$n &gt; N’’$时成立$x_n &gt; r$.若取大于$N’$及$N’’$的序数$n$，则变量$x_n$的对应值将同时既$&lt; r$又$&gt; r$，这是不可能的.</p>
+<p>这矛盾便证明了我们的命题.</p>
+<h2 id="无穷大量">无穷大量</h2>
+<p>无穷大量(或简称无穷在)，在某种意义上是与无穷小量相反的.</p>
+<p>若整序变量$x_n$，由某项开始，其绝对值变成且保持着大于预先指定的任意大数$E &gt; 0$，</p>
+<p>$$\mid x_n \mid &gt; E \quad (当n &gt; N_E 时),$$</p>
+<p>$x_n$便称为无穷大.</p>
+<p>如同在无穷小的情形一样，这里亦需着重指出，无穷大量的任一个别数值都不能当作“大量”看待.我们这里所讨论的是这样的变量，它仅在本身改变的过程中可以大于任意选取的数$E$.</p>
+<p>无穷大的例，如整序变量</p>
+<p>$$x_n =n; x_n =-n ,x_n =(-1)^{n+1}n,$$</p>
+<p>它们都依次在整数的序列中取值，但第一种带正号，第二种带负号，第三种带交迭的符号.</p>
+<p>再举一个无穷大量的例子：</p>
+<p>$$x^n =Q^n ,\quad 当\mid Q \mid &gt; 1时.$$</p>
+<p>事实上，不论怎样的$E &gt; 0$，不等式</p>
+<p>$$\mid x^n \mid  ={\mid Q \mid }^n  &gt; E$$</p>
+<p>总能满足，仅需</p>
+<p>$$n\cdot \lg{\mid Q\mid } &gt; \lg{E}\quad 或\quad n &gt; \dfrac{\lg{E}}{\lg{\mid Q\mid }}.$$</p>
+<p>因$\mid Q\mid &gt; 1$，故$\lg{\mid Q\mid } &gt; 0$.</p>
+<p>因此，可以取数</p>
+<p>$$E\left( \dfrac{\lg{E}}{\lg{\mid Q\mid }} \right)$$</p>
+<p>当作$N_E$.</p>
+<p>若整序变量$x_n$成为无穷大，并且(至少在充分大的$n$时)保持着一定的符号($+$或$-$)，这时，按照符号的正或负，我们说$x_n$有极限$+\infty$或$-\infty$，并写成：</p>
+<p>$$\lim x_n =+\infty ,x\to +\infty \quad 或\quad \lim x_n =-\infty ,x\to -\infty .$$</p>
+<p>在这些情形时，可以分别用不等式</p>
+<p>$$x_n &gt; E \quad 或 \quad x_n &lt; -E$$</p>
+<p>来代替不等式$\mid x_n \mid &gt; E$，以作为每种特殊无穷大量的定义式.由此已可推得必有$x_n &gt; 0$或$x_n &lt; 0$.</p>
+<p>在一般情形无穷大量表示关系：$\mid x_n \mid \to + \infty .$</p>
+<p>在前面所举的无穷大量的例中，显然，整序变量$x_n =n$趋向$+\infty$，$x_n =-n$趋向$-\infty$.至于第三个：$x_n =(-1)^{n+1}n$，对于它我们既不能说它趋向$+\infty$，也不能说它趋向$-\infty$.</p>
+<p>最后，关于整序变量$x_n =Q^n$，当$Q &gt; 1$时，可以说它趋向$+\infty$，而当$Q &lt; -1$时，仅能说极限不存在.</p>
+<p>关于“广义的数”$\pm \infty$，我们在[数集的界]内已讨论过它；必须记住，它们的应用，在意义上完全是有条件的，对这些“数”进行算术运算时要特别小心.常常简单写$\infty$来代替$+\infty$.</p>
+<p>引入无穷极限并不破坏在前一段(参阅$5°$)内所建立的极限的唯一性的定理；实际上，有如在($4°$)已指出过的，有一有限极限$a$的整序变量必为有界，因此，无论如何不能同时又趋向无穷极限.</p>
+<p>最后，讲一讲无穷大量与无穷小量间的简单关系：</p>
+<p>若整序变量$x_n$是无穷大，则它的倒数$\alpha _n =\dfrac{1}{x_n }$将成无穷小.</p>
+<p>取任意数$\varepsilon &gt; 0$.因$x_n \to \infty $，故对于数$E= \dfrac{1}{\varepsilon }$可以求得序号$N$，使</p>
+<p>$$\mid x_n \mid &gt; \dfrac{1}{\varepsilon },仅需 n &gt; N.$$</p>
+<p>于是对于这种$n$，显然将有</p>
+<p>$$\mid \alpha \mid &lt; \varepsilon ,$$</p>
+<p>这就证明了我们的命题.</p>
+<p>仿此，可以证明逆命题：</p>
+<p>若整序变量$\alpha _n$(不等于零)是无穷小，则它的倒数$ x_n =\dfrac{1}{\alpha _n }$将成无穷大.</p>
 ]]></content>
     <summary type="html">
     <![CDATA[在物理学及其他自然科学内读者曾经遇到各种不同的量，时间，长度，体积，重量等.任一种量，按照不同的情况，有时具有不同的值，有时仅取一值.在第一种情形我们称它为变量，在第二种情形称它为常量.]]>
