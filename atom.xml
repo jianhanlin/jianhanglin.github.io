@@ -4,7 +4,7 @@
   <subtitle><![CDATA[春水初生，春林初盛，春风十里，不如你.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-12-05T01:13:31.162Z</updated>
+  <updated>2014-12-08T08:04:21.556Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://jianhanglin.github.io/blog/2014/11/kaoyanshiti2/"/>
     <id>http://jianhanglin.github.io/blog/2014/11/kaoyanshiti2/</id>
     <published>2014-11-27T01:32:10.000Z</published>
-    <updated>2014-11-28T09:27:59.000Z</updated>
+    <updated>2014-12-08T08:03:54.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://pan.baidu.com/s/1wCREY" target="_blank" rel="external">在线阅读</a></p>
 <p>科目名称：高等代数</p>
 <p>适用专业：基础数学，计算数学，概率论与数理统计，应用数学，运筹学与控制论</p>
@@ -51,9 +51,194 @@
 <p>$3$.（$20$分）设$V$是$n$维线性空间($n \geq 3$)，$X$和$Y$为$V$的两个空间，并且维$(X)=n-1$，维$(Y)=n-2$.</p>
 <p>$(1)$证明：维$(X\cap Y)=n-2$或$n-3$.</p>
 <p>$(2)$证明：维$(X\cap Y)=n-2$当且仅当$Y$是$X$的子空间.</p>
-<p>$(3)$举例说明：存在满足题设条件的线性空间$V$及其子空间$X$和$Y$使得维维$(X\cap Y)=n-2$.</p>
+<p>$(3)$举例说明：存在满足题设条件的线性空间$V$及其子空间$X$和$Y$使得维$(X\cap Y)=n-2$.</p>
 <p>证明：$(1)$根据题意，由式子得</p>
 <p>$$\text{dim}(X\cap Y)=\text{dim}(X)+\text{dim}(Y)-\text{dim}(X+Y) \geq (n-1)+(n-2)-n=n-3;$$</p>
+<p>且</p>
+<p>$$\text{dim}(X\cap Y)\leq \min \lbrace \text{dim} (X),\text{dim} (Y) \rbrace =n-2;$$</p>
+<p>即可得出：$\text{dim}(X\cap Y) =n-2$或$n-3$.</p>
+<p>$(2)$如果$\text{dim} (X\cap Y)=n-2$，又因为$X\cap Y\subset Y$，且$\text{dim}(Y)=n-2$，</p>
+<p>可得出</p>
+<p>$$X\cap Y= Y$$</p>
+<p>即有$Y$是$X$的子空间：$Y \subset X$.</p>
+<p>反过来，如果$Y$是$X$的子空间，即是：$Y \subset X$，</p>
+<p>则有</p>
+<p>$$X\cap Y= Y$$</p>
+<p>于是</p>
+<p>$$\text{dim} (X\cap Y) =\text{dim} (Y) =n-2.$$</p>
+<p>因此，维$(X\cap Y)=n-2$当且仅当$Y$是$X$的子空间.</p>
+<p>$(3)$令$V=R^3=\text{span} \lbrace e_1 ,e_2 ,e_3 \rbrace $，$X=\text{span} \lbrace e_1 ,e_2  \rbrace $，$Y=\text{span} \lbrace e_1 \rbrace $，则有</p>
+<p>$$\text{dim} (X\cap Y)=1=3-2.$$</p>
+<p>$4$.（$15$分）设$A$是$n$阶实对称矩阵，若$A$的前$n-1$个顺序主子式均大于零，而$\mid A \mid =0$.证明：$n$元二次型$f(x_1 ,x_2 ,\cdots ,x_n )=X’AX$是半正定的，其中$X=(x_1 ,x_2 ,\cdots ,x_n )’$.</p>
+<p>证明：由题设，令<span>$A=\begin{pmatrix} Q & b \\  b' & c \end{pmatrix}$</span>.</p>
+<p>因为$A$的前$n-1$个顺序主子式均大于零，因为由正定二次型的等价条件，知$Q$为一个正定阵，且存在实可逆矩阵$B$，使$Q=B’B$.</p>
+<p>矩阵<span>$\begin{pmatrix} E_{n-1} & 0 \\  -b'Q^{-1} & 1 \end{pmatrix}$</span>左乘矩阵<span>$A=\begin{pmatrix} Q & b \\  b' & c \end{pmatrix}$</span>，则得</p>
+<span>$$\begin{pmatrix} E_{n-1} & 0 \\  -b'Q^{-1} & 1 \end{pmatrix}\begin{pmatrix} Q & b \\  b' & c \end{pmatrix}=\begin{pmatrix} Q & b \\  0 & c-b'Q^{-1}b \end{pmatrix}$$</span>
+
+<p>由于$\mid A \mid =0$，得出$c=b’Q^{-1}b$.</p>
+<p>由于$X=(x_1 ,x_2 ,\cdots ,x_n )’$，令<span>$Z=X'=(x_1 ,x_2 ,\cdots ,x_{n-1} ,x_n )=(z,x_n)$</span>而$Z\in R^n$，<span>$z=(x_1 ,x_2 ,\cdots ,x_{n-1})$</span>.</p>
+<p>于是</p>
+<span>$$\begin{align*}  ZAZ' & =(z,x_n )\begin{pmatrix} Q & b \\  b' & c \end{pmatrix}\begin{pmatrix} z' \\ x_n \end{pmatrix} \\  & =zQz'+x_n zb +x_n b'z'+cx_n^2 \\  & =zQz'+2x_n b'z'+b'Q^{-1}bx_n^2 (\because zb=b'z',c=b'Q^{-1}b)\\  & =zB'Bz'+2x_n b'z'+b'B^{-1}{B'}^{-1}bx_n^2 (\because Q=B'B,Q^{-1}=B^{-1}{B'}^{-1})\\  & =y\cdot y'+2x_n b'B^{-1}Bz'+b'B^{-1}{B'}^{-1}bx_n^2 (\because y'=Bz',x_n b'z'=x_n b'B^{-1}Bz')\\  & =y\cdot y'+2x_n p\cdot y'+p\cdot p' x_n^2 (\because p=b'B^{-1} ,p'={B'}^{-1}b)\\  & ={\mid y' \mid }^2 +2x_n p\cdot y'+{\mid p \mid }^2\cdot x_n^2 (\because {\mid y' \mid }^2=y\cdot y',{\mid p \mid }^2=p\cdot p')\\  & ={\mid x_n \cdot p+y'\mid }^2 \geq 0  \end{align*}$$</span>
+
+<p>依半正定二次型等价条件，矩阵$A$为半正定的.</p>
+<p>$5$.（$15$分）设$\mathcal{A}$是实数域$R$上的$n$维线性空间$V$上的线性变换，${\mathcal{A}}^2=\mathcal{E}$(恒等变换).令$V^{+}=\lbrace x\in V\mid \mathcal{A} x=x\rbrace $，$V^{-}=\lbrace x\in V\mid \mathcal{A} x=-x\rbrace $.</p>
+<p>证明：$V=V^{+}\oplus V^{-}$.</p>
+<p>证明：对于任意的$x\in V$来说，有$x=\dfrac{x+x}{2}=\dfrac{x+\mathcal{A}x}{2} +\dfrac{x-\mathcal{A}x}{2}$.</p>
+<p>对于$x+\mathcal{A}x$来说，有</p>
+<p>$$\mathcal{A}(x+\mathcal{A}x)=\mathcal{A}x+{\mathcal{A}}^2x=\mathcal{A}x+x=x+\mathcal{A}x$$</p>
+<p>因此，$x+\mathcal{A}x\in V^{+}$，可知$\dfrac{x+\mathcal{A}x}{2}\in V^{+}$.</p>
+<p>对于$x-\mathcal{A}x$来说，有</p>
+<p>$$\mathcal{A}(x-\mathcal{A}x)=\mathcal{A}x-{\mathcal{A}}^2x=\mathcal{A}x-x=-(x-\mathcal{A}x)$$</p>
+<p>因此，$x+\mathcal{A}x\in V^{-}$，可知$\dfrac{x+\mathcal{A}x}{2}\in V^{-}$.</p>
+<p>由此，对于任意的$x\in V$来说，有</p>
+<p>$$x=\dfrac{x+\mathcal{A}x}{2} +\dfrac{x-\mathcal{A}x}{2}\in V^{+} + V^{-}.$$</p>
+<p>另外，对于任意的$x\in V^{+} \cap V^{-}$来说，有$\mathcal{A}x =x $，且$-\mathcal{A}x =x $，故</p>
+<p>$$2x =\mathcal{A}x -\mathcal{A}x=0$$</p>
+<p>推得</p>
+<p>$$x=0.$$</p>
+<p>因此，</p>
+<p>$$V^{+} \cap V^{-}=\lbrace 0\rbrace .$$</p>
+<p>综合上述所证，$V=V^{+}\oplus V^{-}$.</p>
+<p>$6$.（$15$分）设$A=(a_1 ,a_2 ,\cdots ,a_n )$为非零实$1\times n$矩阵，求：</p>
+<p>$(1)$ 秩$(A’A)$；</p>
+<p>$(2)$ $(A’A)$的特征值和特征向量.</p>
+<p>解：$(1)$ 设$A’,A$分别为$n\times 1$与$1\times n$矩阵，则有</p>
+<p>$$rank(A’A) \leq \min\lbrace rank(A’),rank(A),n,1\rbrace .$$</p>
+<p>故</p>
+<p>$$rank(A’A) \leq 1$$</p>
+<p>其次，因为$A=(a_1 ,a_2 ,\cdots ,a_n )$为非零实$1\times n$矩阵，可设$a_i \neq 0$，那么$a_i \cdot a_i \neq 0$，故</p>
+<p>$$rank(A’A) \geq 1$$</p>
+<p>由上得出$rank(A’A) = 1$.</p>
+<p>$(2)$首先，由于</p>
+<p>$$(A’A)\cdot A’=A’\cdot (A\cdot A’)=A’\sum_{i=1}^n a_i^2$$</p>
+<p>故由定义可知</p>
+<p>$A’$是$A’A$的属于特征值<span>$\displaystyle \sum_{i=1}^n a_i^2$</span>的特征向量.</p>
+<p>另一方面，再求$(0E-A’A)x=0$，即</p>
+<p>$$-A’Ax=0$$</p>
+<p>的基础解系.</p>
+<p>由于$rank(A’A) = 1$，故$rank(-A’A) =rank(A’A)= 1$.</p>
+<p>可一般性地设$a_1 \neq 0$，有</p>
+<span>$$\begin{align*}  -A'A & =-\begin{pmatrix} a_1 \\ a_2 \\ \cdots\\ a_n \end{pmatrix}(a_1 ,a_2 ,\cdots ,a_n ) \\  & = \begin{pmatrix} -a_1 a_1 & -a_1 a_2 & \cdots & -a_1 a_n \\ -a_2 a_1 & -a_2 a_2 & \cdots & -a_2 a_n \\ \vdots & \vdots & \ddots & \vdots \\ -a_n a_1 & -a_n a_2 & \cdots & -a_n a_n \end{pmatrix}\to \cdots \\  & \to \begin{pmatrix} -a_1 a_1 & -a_1 a_2 & \cdots & -a_1 a_n \\ 0 & 0 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & 0 \end{pmatrix} \\  & \to \begin{pmatrix} a_1 & a_2 & \cdots & a_n \\ 0 & 0 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & 0 \end{pmatrix} \\  \end{align*}$$</span>
+
+<p>由上可知，方程组$-A’Ax=0$同解于$a_1 x_1 +a_2 x_2 +\cdots +a_n x_n =0(a_1 \neq 0)$，因此方程组$-A’Ax=0$的基础解系为</p>
+<p>$$\alpha _1 =(-a_2 ,a_1 ,0,\cdots ,0)’,$$</p>
+<p>$$\alpha _2 =(-a_3 ,0,a_1 ,\cdots ,0)’,$$</p>
+<p>$$\cdots \cdots \cdots \cdots \cdots \cdots \cdots \cdots$$</p>
+<p>$$\alpha _{n-1} =(-a_n ,0,0,\cdots ,a_1 )’.$$</p>
+<p>于是$A’A$属于特征值$0$的全部特征向量为</p>
+<span>$$k_1 \alpha _1 +k_2 \alpha _2 +\cdots + k_{n-1} \alpha _{n-1},$$</span>
+
+<p>其中<span>$k_1 ,k_2 ,\cdots ,k_{n-1}$</span>是不全为零的任意常数.</p>
+<p>$7$.（$15$分）设$\alpha$为欧氏空间$V$的非零向量，对$\xi \in V$定义$\mathcal{A} \xi =\xi-\dfrac{2(\xi ,\alpha )}{(\alpha ,\alpha )}\alpha $.</p>
+<p>$1)$ 证明：$\mathcal{A}$为$V$的正交变换.</p>
+<p>$2)$ 记$W=L(\alpha )^{\perp}$，则$W$是$n-1$维子空间，并且</p>
+<span>$$\mathcal{A} \xi =\begin{cases} \xi , & \xi \in W, \\ -\xi , & \xi =\alpha .\end{cases}$$</span>
+
+<p>$3)$ 设$V$的维数是$4$，令$\epsilon _1 ,\epsilon _2 ,\epsilon _3 ,\epsilon _4$为$V$的标准正交基，并设$\alpha =-\dfrac{1}{2} \epsilon _1 -\dfrac{1}{2} \epsilon _2 -\dfrac{1}{2} \epsilon _3 +\dfrac{1}{2} \epsilon _4$，求$\mathcal{A}$在$\epsilon _1 ,\epsilon _2 ,\epsilon _3 ,\epsilon _4$下的矩阵.</p>
+<p>证明：$1)$根据正交变换的定义，对于任意的$\beta ,\gamma \in V$，</p>
+<span>$$\begin{align*}  (\mathcal{A} \beta ,\mathcal{A} \gamma ) & =\left( \beta -\dfrac{2(\beta ,\alpha )}{(\alpha ,\alpha )}\alpha ,\gamma -\dfrac{2(\gamma ,\alpha )}{(\alpha ,\alpha )}\alpha \right) \\  & =(\beta ,\gamma )-\dfrac{2(\gamma ,\alpha )}{(\alpha ,\alpha )}(\beta ,\alpha )-\dfrac{2(\beta ,\alpha )}{(\alpha ,\alpha )}(\alpha ,\gamma ) +\dfrac{4(\beta ,\alpha )\cdot (\gamma ,\alpha )}{(\alpha ,\alpha )\cdot (\alpha ,\alpha )}(\alpha ,\alpha )\\  & =(\beta ,\gamma )  \end{align*}$$</span>
+
+<p>因此，$\mathcal{A}$为$V$的正交变换.</p>
+<p>$2)$ 明显的，对于$W=L(\alpha )^{\perp}$，有</p>
+<p>$$dim(W)=dim(V)-dim \ span \lbrace \alpha \rbrace =n-1.$$</p>
+<p>对于$\xi \in V$来说，如果$\xi =\alpha $，那么</p>
+<span>$$\mathcal{A} \alpha =\alpha-\dfrac{2(\alpha ,\alpha )}{(\alpha ,\alpha )}\alpha =\alpha -2\alpha=-\alpha $$</span> 
+
+<p>如果$\xi \in W$，那么对于$\mathcal{A} \xi$来说，有</p>
+<span>$$(\mathcal{A} \xi ,\alpha )=\left( \xi-\dfrac{2(\xi ,\alpha )}{(\alpha ,\alpha )}\alpha ,\alpha   \right) =0 $$</span> 
+
+<p>可知$\mathcal{A} \xi \in W$.</p>
+<p>这时对于任意的$\eta \in W$，有</p>
+<p>$$(\mathcal{A} \xi ,\eta )=\left( \xi-\dfrac{2(\xi ,\alpha )}{(\alpha ,\alpha )}\alpha ,\eta \right) =(\xi ,\eta ).$$</p>
+<p>可知</p>
+<p>$$\mathcal{A} \xi =\xi .$$</p>
+<p>综述可知，</p>
+<span>$$\mathcal{A} \xi =\begin{cases} \xi , & \xi \in W, \\ -\xi , & \xi =\alpha .\end{cases}$$</span> 
+
+<p>$3)$ 对$\epsilon _1 ,\epsilon _2 ,\epsilon _3 ,\epsilon _4$来说，利用式子$\mathcal{A} \xi =\xi-\dfrac{2(\xi ,\alpha )}{(\alpha ,\alpha )}\alpha $来求$\mathcal{A} \epsilon _1 ,\mathcal{A} \epsilon _2 ,\mathcal{A} \epsilon _3 ,\mathcal{A} \epsilon _4$.</p>
+<span>$$\begin{align*}  \mathcal{A} \epsilon _1 & =\epsilon _1 -\dfrac{2(\epsilon _1 ,\alpha )}{(\alpha ,\alpha )}\alpha \\  & =\epsilon _1 -2(\epsilon _1 ,\alpha )\alpha \\  & =\epsilon _1 -2(\epsilon _1 ,-\dfrac{1}{2} \epsilon _1 -\dfrac{1}{2} \epsilon _2 -\dfrac{1}{2} \epsilon _3 +\dfrac{1}{2} \epsilon _4 )\alpha \\  & =\epsilon _1 -2(\epsilon _1 ,-\dfrac{1}{2} \epsilon _1 )\alpha \\  & =\epsilon _1 -2\cdot (-\dfrac{1}{2})(\epsilon _1 , \epsilon _1 )\alpha \\  & =\epsilon _1 +\alpha \\  & =\dfrac{1}{2} \epsilon _1 -\dfrac{1}{2} \epsilon _2 -\dfrac{1}{2} \epsilon _3 +\dfrac{1}{2} \epsilon _4   \end{align*}$$</span>
+
+<p>同理，有</p>
+<span>$$\begin{align*}  \mathcal{A} \epsilon _2 & =\epsilon _2 -\dfrac{2(\epsilon _2 ,\alpha )}{(\alpha ,\alpha )}\alpha \\  & =\epsilon _2 -2(\epsilon _2 ,\alpha )\alpha \\  & =\epsilon _2 -2(\epsilon _2 ,-\dfrac{1}{2} \epsilon _1 -\dfrac{1}{2} \epsilon _2 -\dfrac{1}{2} \epsilon _3 +\dfrac{1}{2} \epsilon _4 )\alpha \\  & =\epsilon _2 -2(\epsilon _2 ,-\dfrac{1}{2} \epsilon _2 )\alpha \\  & =\epsilon _2 -2\cdot (-\dfrac{1}{2})(\epsilon _2 , \epsilon _2 )\alpha \\  & =\epsilon _2 +\alpha \\  & =-\dfrac{1}{2} \epsilon _1 +\dfrac{1}{2} \epsilon _2 -\dfrac{1}{2} \epsilon _3 +\dfrac{1}{2} \epsilon _4   \end{align*}$$</span>
+
+<span>$$\begin{align*}  \mathcal{A} \epsilon _3 & =\epsilon _3 -\dfrac{2(\epsilon _3 ,\alpha )}{(\alpha ,\alpha )}\alpha \\  & =\epsilon _3 -2(\epsilon _3 ,\alpha )\alpha \\  & =\epsilon _3 -2(\epsilon _3 ,-\dfrac{1}{2} \epsilon _1 -\dfrac{1}{2} \epsilon _2 -\dfrac{1}{2} \epsilon _3 +\dfrac{1}{2} \epsilon _4 )\alpha \\  & =\epsilon _3 -2(\epsilon _3 ,-\dfrac{1}{2} \epsilon _3 )\alpha \\  & =\epsilon _3 -2\cdot (-\dfrac{1}{2})(\epsilon _3 , \epsilon _3 )\alpha \\  & =\epsilon _3 +\alpha \\  & =-\dfrac{1}{2} \epsilon _1 -\dfrac{1}{2} \epsilon _2 +\dfrac{1}{2} \epsilon _3 +\dfrac{1}{2} \epsilon _4   \end{align*}$$</span>
+
+<span>$$\begin{align*}  \mathcal{A} \epsilon _4 & =\epsilon _4 -\dfrac{2(\epsilon _4 ,\alpha )}{(\alpha ,\alpha )}\alpha \\  & =\epsilon _4 -2(\epsilon _4 ,\alpha )\alpha \\  & =\epsilon _4 -2(\epsilon _4 ,-\dfrac{1}{2} \epsilon _1 -\dfrac{1}{2} \epsilon _2 -\dfrac{1}{2} \epsilon _3 +\dfrac{1}{2} \epsilon _4 )\alpha \\  & =\epsilon _4 -2(\epsilon _4 ,\dfrac{1}{2} \epsilon _4 )\alpha \\  & =\epsilon _4 -2\cdot \dfrac{1}{2} (\epsilon _4 , \epsilon _4 )\alpha \\  & =\epsilon _4 -\alpha \\  & =\dfrac{1}{2} \epsilon _1 +\dfrac{1}{2} \epsilon _2 +\dfrac{1}{2} \epsilon _3 +\dfrac{1}{2} \epsilon _4   \end{align*}$$</span>
+
+<p>综上所述，可得</p>
+<span>$$\mathcal{A} (\epsilon _1 ,\epsilon _2 ,\epsilon _3 ,\epsilon _4)=(\epsilon _1 ,\epsilon _2 ,\epsilon _3 ,\epsilon _4)\begin{pmatrix} \dfrac{1}{2} & -\dfrac{1}{2} & -\dfrac{1}{2} & \dfrac{1}{2} \\ -\dfrac{1}{2} & \dfrac{1}{2} & -\dfrac{1}{2} & \dfrac{1}{2} \\ -\dfrac{1}{2} & -\dfrac{1}{2} & \dfrac{1}{2} & \dfrac{1}{2} \\ \dfrac{1}{2} & \dfrac{1}{2} & \dfrac{1}{2} & \dfrac{1}{2} \end{pmatrix}$$</span>
+
+<p>故$\mathcal{A}$在$\epsilon _1 ,\epsilon _2 ,\epsilon _3 ,\epsilon _4$下的矩阵为：</p>
+<span>$$\begin{pmatrix} \dfrac{1}{2} & -\dfrac{1}{2} & -\dfrac{1}{2} & \dfrac{1}{2} \\ -\dfrac{1}{2} & \dfrac{1}{2} & -\dfrac{1}{2} & \dfrac{1}{2} \\ -\dfrac{1}{2} & -\dfrac{1}{2} & \dfrac{1}{2} & \dfrac{1}{2} \\ \dfrac{1}{2} & \dfrac{1}{2} & \dfrac{1}{2} & \dfrac{1}{2} \end{pmatrix}.$$</span>
+
+<p>$8$.（$20$分）在欧氏空间中有三组向量：$\alpha _1 ,\alpha _2 ,\cdots ,\alpha _s$；$\beta _1 ,\beta _2 ,\cdots ,\beta _s $和$\gamma _1 ,\gamma _2 ,\cdots ,\gamma _s$.如果$\alpha _1 ,\alpha _2 ,\cdots ,\alpha _s$是线性无关的，$\beta _1 ,\beta _2 ,\cdots ,\beta _s $和$\gamma _1 ,\gamma _2 ,\cdots ,\gamma _s$都是两两正交的单位向量，并且对一切$i,1\leq i \leq s$，均有</p>
+<p>$$L(\alpha _1 ,\alpha _2 ,\cdots ,\alpha _i )=L(\beta _1 ,\beta _2 ,\cdots ,\beta _i )=L(\gamma _1 ,\gamma _2 ,\cdots ,\gamma _i ),$$</p>
+<p>证明：对每个$i$，有$\beta _i =\pm \gamma _i$. </p>
+<p>证明：下面用数学归纳法进行证明.</p>
+<p>当$i=1$时，由题意有$L(\beta _1 )=L(\gamma _1 )$，又因为$\beta _1 ,\beta _2 ,\cdots ,\beta _s $和$\gamma _1 ,\gamma _2 ,\cdots ,\gamma _s$都是两两正交的单位向量，于是有$\mid \beta _1 \mid =1=\mid \gamma _1 \mid$.因此有</p>
+<p>$$\beta _1 =\pm \gamma _1 $$</p>
+<p>成立.</p>
+<p>假设已有</p>
+<p>$$\beta _j =\pm \gamma _j ,\quad 1\leq j\leq i-1 ,2\leq i\leq n$$</p>
+<p>成立.下证$\beta _i =\pm \gamma _i$也成立.</p>
+<p>对向量$\beta _i$来说，存在一组不同时为零的数$b_1 ,b_2 ,\cdots ,b_i$和一组两两正交的单位向量$\gamma _1 ,\gamma _2 ,\cdots ,\gamma _i $，使得</p>
+<p>$$\beta _i =b_1 \cdot \gamma _1 + b_2 \cdot \gamma _2 +\cdots +b_i \cdot \gamma _i$$</p>
+<p>成立.</p>
+<p>由于$\beta _1 ,\beta _2 ,\cdots ,\beta _s $为两两正交的单位向量，故对于任意的$\pm \beta _j ,1\leq j\leq i-1$和$\beta _i$来说，有</p>
+<span>$$\begin{align*}  0 & =(\beta _i ,\pm \beta _j ) \\  & =(\beta _i ,\gamma _j ) \\  & =(b_1 \cdot \gamma _1 + b_2 \cdot \gamma _2 +\cdots +b_i \cdot \gamma _i ,\gamma _j ) \\   & =(b_j \cdot \gamma _j ,\gamma _j ) \\   & =b_j \cdot (\gamma _j ,\gamma _j ) \\  & =b_j \\  \end{align*}$$</span>
+
+<p>因此，</p>
+<p>$$\beta _i =b_i \cdot \gamma _i.$$</p>
+<p>又因为$\beta _1 ,\beta _2 ,\cdots ,\beta _s $和$\gamma _1 ,\gamma _2 ,\cdots ,\gamma _s$都是两两正交的单位向量，于是有$\mid \beta _i \mid =1=\mid \gamma _i \mid ,1\leq i\leq s$.</p>
+<p>于是，$b_i =\pm 1$，即有</p>
+<p>$$\beta _i =\pm \gamma _i$$</p>
+<p>成立.</p>
+<p>综上所述，对每个$i$，有$\beta _i =\pm \gamma _i$. </p>
+<p>$9$.（$20$分）设$A,B$都是实对称矩阵，证明：当且仅当$AB=BA$时，有正交矩阵$Q$，使$Q^{-1}AQ$与$Q^{-1}BQ$同时为对角矩阵.</p>
+<p>证明：下面分两部分来证明.</p>
+<p>第一部分.假设存在一个正交矩阵$Q$，使得$Q^{-1}AQ$与$Q^{-1}BQ$同时为对角矩阵，那么即有</p>
+<span>$$Q^{-1}AQ=\begin{pmatrix} \lambda _1 &  & \\  & \ddots & \\ &  & \lambda _n \end{pmatrix},\quad Q^{-1}BQ=\begin{pmatrix} \mu _1 &  & \\  & \ddots & \\ &  & \mu _n \end{pmatrix}$$</span>
+
+<p>成立.</p>
+<p>这时，式子</p>
+<span>$$\begin{align*}  Q^{-1}ABQ & =Q^{-1}AQ\cdot Q^{-1}BQ \\  & =\begin{pmatrix} \lambda _1 &  & \\  & \ddots & \\ &  & \lambda _n \end{pmatrix}\cdot \begin{pmatrix} \mu _1 &  & \\  & \ddots & \\ &  & \mu _n \end{pmatrix} \\  & =\begin{pmatrix} \lambda _1 \mu _1 &  & \\  & \ddots & \\ &  & \lambda _n \mu _n \end{pmatrix} \\   & =\begin{pmatrix}  \mu _1 \lambda _1 &  & \\  & \ddots & \\ &  & \mu _n \lambda _n \end{pmatrix} \\   & =\begin{pmatrix} \mu _1 &  & \\  & \ddots & \\ &  & \mu _n \end{pmatrix}\cdot \begin{pmatrix} \lambda _1 &  & \\  & \ddots & \\ &  & \lambda _n \end{pmatrix} \\  & =Q^{-1}BQ\cdot Q^{-1}AQ \\  & =Q^{-1}BAQ \\  \end{align*}$$</span>
+
+<p>成立，从而</p>
+<p>$$AB=BA$$</p>
+<p>成立.</p>
+<p>第二部分.由于矩阵$A$是实对称矩阵，根据基本定理，从而存在一个正交矩阵$P$，使</p>
+<span>$$P'AP=P^{-1}AP=\begin{pmatrix} \lambda _1 E_{\lambda _1} &  & \\  & \ddots & \\ &  & \lambda _s E_{\lambda _s}\end{pmatrix} ,$$</span>
+
+<p>其中$\lambda _1 ,\lambda _2 ,\cdots ,\lambda _s$互不相同.</p>
+<p>将$P^{-1}BP$写成与$P^{-1}AP$类似的分块矩阵：</p>
+<span>$$P^{-1}BP=\begin{pmatrix} \tilde{B} _{\lambda _1 \lambda _1 } & \cdots & \tilde{B} _{\lambda _1 \lambda _s } \\ \vdots & \ddots & \vdots \\ \tilde{B} _{\lambda _s \lambda _1 } & \cdots & \tilde{B} _{\lambda _s \lambda _s }\end{pmatrix} ,$$</span>
+
+<p>又由$AB=BA$，所以</p>
+<p>$$(P^{-1}AP)(P^{-1}BP)=(P^{-1}BP)(P^{-1}AP)$$</p>
+<p>那么有</p>
+<span>$$\begin{pmatrix} \lambda _1 E_{\lambda _1} &  & \\  & \ddots & \\ &  & \lambda _s E_{\lambda _s}\end{pmatrix}\begin{pmatrix} \tilde{B} _{\lambda _1 \lambda _1 } & \cdots & \tilde{B} _{\lambda _1 \lambda _s } \\ \vdots & \ddots & \vdots \\ \tilde{B} _{\lambda _s \lambda _1 } & \cdots & \tilde{B} _{\lambda _s \lambda _s }\end{pmatrix} =\begin{pmatrix} \tilde{B} _{\lambda _1 \lambda _1 } & \cdots & \tilde{B} _{\lambda _1 \lambda _s } \\ \vdots & \ddots & \vdots \\ \tilde{B} _{\lambda _s \lambda _1 } & \cdots & \tilde{B} _{\lambda _s \lambda _s }\end{pmatrix}\begin{pmatrix} \lambda _1 E_{\lambda _1} &  & \\  & \ddots & \\ &  & \lambda _s E_{\lambda _s}\end{pmatrix}.$$</span>
+
+<p>可知有<span>$\lambda _i E_{\lambda _i}\cdot \tilde{B} _{\lambda _i \lambda _j } =\tilde{B} _{\lambda _i \lambda _j } \cdot \lambda _j E_{\lambda _j}$</span>成立，</p>
+<p>得出</p>
+<p>$$\tilde{B} _{\lambda _i \lambda _j }=0,i\neq j,$$</p>
+<p>于是</p>
+<span>$$P^{-1}BP=\begin{pmatrix} \tilde{B} _{\lambda _1 \lambda _1 } &  &  \\ & \ddots & \\ &  & \tilde{B} _{\lambda _s \lambda _s }\end{pmatrix} .$$</span>
+
+<p>因为$\tilde{B} _{\lambda _i \lambda _i }$为实对称矩阵，</p>
+<p>同样存在正交矩阵$R_{\lambda _i }$，使得</p>
+<span>$$R_{\lambda _i }^{-1} \tilde{B} _{\lambda _i \lambda _i }R_{\lambda _i }=\begin{pmatrix} b_{i1} &  &  \\ & \ddots & \\ &  & b_{ik_i }\end{pmatrix}$$</span>
+
+<p>成立.</p>
+<p>记</p>
+<span>$$ R=\begin{pmatrix} R_{\lambda _1 } &  &  \\ & \ddots & \\ &  & R_{\lambda _s }\end{pmatrix},Q=PR,$$</span>
+
+<p>则$Q$为正交矩阵，且</p>
+<span>$$\begin{align*}  Q^{-1}AQ & =R^{-1}P^{-1}APR \\  & =\begin{pmatrix} R_{\lambda _1 }^{-1} &  &  \\ & \ddots & \\ &  & R_{\lambda _s }^{-1}\end{pmatrix}\cdot \begin{pmatrix} \lambda _1 E_{\lambda _1} &  & \\  & \ddots & \\ &  & \lambda _s E_{\lambda _s}\end{pmatrix}\cdot \begin{pmatrix} R_{\lambda _1 } &  &  \\ & \ddots & \\ &  & R_{\lambda _s }\end{pmatrix}\\  & =\begin{pmatrix} \lambda _1 E_{\lambda _1} &  & \\  & \ddots & \\ &  & \lambda _s E_{\lambda _s}\end{pmatrix}\\   \end{align*},$$</span>
+
+<span>$$\begin{align*}  Q^{-1}BQ & =R^{-1}P^{-1}BPR \\  & =\begin{pmatrix} R_{\lambda _1 }^{-1} &  &  \\ & \ddots & \\ &  & R_{\lambda _s }^{-1}\end{pmatrix}\cdot \begin{pmatrix} \tilde{B} _{\lambda _1 \lambda _1 } &  &  \\ & \ddots & \\ &  & \tilde{B} _{\lambda _s \lambda _s }\end{pmatrix}\cdot \begin{pmatrix} R_{\lambda _1 } &  &  \\ & \ddots & \\ &  & R_{\lambda _s }\end{pmatrix}\\  & =\begin{pmatrix} b_{11} &  &  &  &  &  &  \\  & \ddots &  &  &  &  &  \\  &  & b_{1k_1} &  &  &  & \\ & &  & \ddots &  &  & \\ &  & &  & b_{s1} &  & \\  &  &  &  &  & \ddots & \\ &  & &  & &  & b_{sk_s} \end{pmatrix}\\   \end{align*}.$$</span>
+
+<p>所以当$AB=BA$时，有有正交矩阵$Q$，使$Q^{-1}AQ$与$Q^{-1}BQ$同时为对角矩阵.</p>
+<p>综合上述两部分，可知对于实对称矩阵$A,B$，当且仅当$AB=BA$时，有正交矩阵$Q$，使$Q^{-1}AQ$与$Q^{-1}BQ$同时为对角矩阵.</p>
 ]]></content>
     <summary type="html">
     <![CDATA[科目名称：高等代数]]>
