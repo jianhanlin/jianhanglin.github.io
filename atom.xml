@@ -4,7 +4,7 @@
   <subtitle><![CDATA[春水初生，春林初盛，春风十里，不如你.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-12-08T08:04:21.556Z</updated>
+  <updated>2014-12-09T09:18:35.600Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -13,6 +13,89 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 9 整数的算术]]></title>
+    <link href="http://jianhanglin.github.io/blog/2014/12/daishuxueyinlun119/"/>
+    <id>http://jianhanglin.github.io/blog/2014/12/daishuxueyinlun119/</id>
+    <published>2014-12-08T08:25:52.000Z</published>
+    <updated>2014-12-09T09:17:00.000Z</updated>
+    <content type="html"><![CDATA[<p>本节的目的是简述整数的初等可除性质，以便在后面的章节中引用.进一步的结果将在第$5$章给出，在那里，整除性理论被推广到更一般的代数系统中.</p>
+<h2 id="算术基本定理">算术基本定理</h2>
+<p>若存在某个$t\in \mathbb{Z}$，使得$n=st$，则整数$s$叫作整数$n$的<strong>因数</strong>(或<strong>因子</strong>)，$n$本身叫作$s$的<strong>倍数</strong>.$n$被$s$整除记作$s\mid n$，而$n$不能被$s$整除记作$s\nmid n$.整除性是$\mathbb{Z}$上的传递关系.如果$m\mid n$且$n\mid m$，则$n=\pm m$，而整数$n,m$叫作<strong>相伴的</strong>.如果整数$p$的全部因子为$\pm p$，$\pm 1$(非真因子)，则称$p$为<strong>素数</strong>.通常约定素数是正的且大于$1$.</p>
+<p>下述定理表现出素数的基础作用.</p>
+<p><strong>算术基本定理</strong> 每一个正整数$n\neq 1$都可以分解成素数的乘积$n=p_1 p_2 \cdots p_s$.这一写法除因子的次序外是唯一的.</p>
+<p>将相同因子收集到一起并改变记法，我们得到</p>
+<span>$$ n=p_1^{\varepsilon _1} p_2^{\varepsilon _2} \cdots p_k^{\varepsilon _k} ,\quad \varepsilon _i > 0 ,1\leq i\leq k.$$</span>
+
+<p>任意有理数$a=\dfrac{n}{m} \in \mathbb{Q}$也有类似的分解，但指数$\varepsilon _i$有正数也有负数.</p>
+<p>我们指出，全体素数的集合</p>
+<p>$$P=\lbrace 2,3,5,7,11,13,\cdots \rbrace$$</p>
+<p>是<strong>无限集</strong>(欧几里得定理).事实上，如果仅有有限个素数，设为$p_1 ,p_2 ,\cdots ,p_t$，那么根据基本定理，整数$c=p_1 p_2 \cdots p_t +1$至少被某一个$p_i$除尽.不失一般性，设$c=p_1 c’$.则$p_1 (c’-p_2 \cdots p_t )=1$，这是不可能的，因为单位元在$\mathbb{Z}$中的因子只有$\pm 1$.$\quad \quad\quad \square$</p>
+<p>基本定理的证明将延迟至第$5$章给出.一眼看来，定理似乎是显然的，以至不需要证明.但事实并非如此，尽管所谈问题仅涉及整数乘法的性质(整除性)，基本定理的证明却必须同时用到$\mathbb{Z}$中的乘法和加法运算.</p>
+<p>为了说明定理的非平凡性，考察$\mathbb{N}$中的子集</p>
+<p>$$S=\lbrace 4k+1 \mid k=0,1,2,\cdots \rbrace .$$</p>
+<p>$S$关于乘法封闭：</p>
+<p>$$(4k_1 +1)(4k_2 +1)=4k_3 +1.$$</p>
+<p>对$n\in S$作归纳不难证明分解的存在性(类似于基本定理的第一部分)，即$n$可以分解成：$n=q_1 \cdots q_t$，其中$q_i$不能用$S$中的元素做进一步分解.称之为<strong>拟素数</strong>.$5,9,13,17,21,49$都是这种拟素数的例子.</p>
+<p>基本定理的第二部分对$S$不真，例如数$441\in S$就有两种不同的到拟素数的分解：$441=9\cdot 49 ={21}^2$.</p>
+<h2 id="$\mathbb{Z}$中的最大公约数和最小公倍数">$\mathbb{Z}$中的最大公约数和最小公倍数</h2>
+<p>如果允许使用零方幂(永远认为$p_i^0 =1$)，任意两个整数$n$和$m$都可以写成同一组两两不等的素数方幂的乘积：</p>
+<span>$$ n=\pm p_1^{\alpha _1 } p_2^{\alpha _2 } \cdots p_k^{\alpha _k } ,m=\pm p_1^{\beta _1 } p_2^{\beta  _2 } \cdots p_k^{\beta  _k } .$$</span>
+
+<p>引入两个整数</p>
+<span>$$\begin{matrix} g.c.d(n,m)=p_1^{\gamma _1 } p_2^{\gamma _2 } \cdots p_k^{\gamma _k }, \\  l.c.m(n,m)=p_1^{\delta _1 } p_2^{\delta _2 } \cdots p_k^{\delta _k }, \\ \end{matrix}\label{1}\tag{1}$$</span>
+
+<p>其中$\gamma _i =\min \lbrace \alpha _i ,\beta _i \rbrace $，$\delta _i =\max \lbrace \alpha _i ,\beta _i \rbrace $，$i=1,2,\cdots ,k$.</p>
+<p>因为$d\mid n \Rightarrow d=\pm p_1^{\alpha’ _1 } \cdots p_k^{\alpha’ _k },0\leq \alpha’ _i \leq \alpha _i$，所以从$\eqref{1}$式可得下述论断.</p>
+<p>$i) \ g.c.d(n,m)\mid n ,g.c.d(n,m)\mid m$，并且若$d\mid n,d\mid m$，则$d\mid g.c.d(n,m)$.</p>
+<p>$ii) \ n\mid l.c.m(n,m) ,m\mid l.c.m(n,m)$，并且若$n\mid u,m\mid u$，则$l.c.m(n,m)\mid u$.</p>
+<p>性质$i)$和$ii)$证实了记号$g.c.d$和$l.c.m$分别是整数$n,m$的最大公因数和最小公倍数.当$n &gt; 0,m &gt; 0$时，它们满足关系</p>
+<p>$$g.c.d(n,m)\cdot l.c.m(n,m)=nm.\label{2}\tag{2}$$</p>
+<p>若$g.c.d(n,m)=1$，则称整数$n,m$为<strong>互素的</strong>.这时$\eqref{2}$式具有形式$l.c.m(n,m)=nm$.</p>
+<h2 id="$\mathbb{Z}$中的带余除法">$\mathbb{Z}$中的带余除法</h2>
+<p>给定$a,b\in \mathbb{Z} ,b &gt; 0$，总可以找到$q,r \in \mathbb{Z}$，使得</p>
+<p>$$a=bq+r ,\quad 0\leq r &lt; b$$</p>
+<p>(如果仅仅假设$b\neq 0$，那么有不等式$0\leq r &lt; \mid b\mid $).</p>
+<p><strong>证明</strong> 事实上，集合</p>
+<p>$$S=\lbrace a-bs\mid s\in \mathbb{Z},a-bs \geq 0\rbrace$$</p>
+<p>显然不空(例如$a-b(-a^2) &gt; 0$).于是$S$包含一个最小元素，记作$r=a-bq$.根据条件，$r\geq 0$.假如$r \geq b$，我们得到元素$r-b=a-b(q+1)\in S$，它小于$r$.这一矛盾说明，$r$必须小于$b$.</p>
+<p>上述简单的论证给出了一个算法，可以通过有限步找到<strong>商数</strong>$q$和<strong>余数</strong>$r$，$\mathbb{Z}$中的带余除法可以用来给出$g.c.d$的另一种定义，如果注意到关系式$\eqref{2}$，还有$l.c.m$的另一种定义.</p>
+<p>作法如下，给定不全为零的整数$n$和$m$，令</p>
+<p>$$J=\lbrace nu+mv\mid u,v\in \mathbb{Z} \rbrace \label{3}\tag{3}$$</p>
+<p>选出$J$中的最小正数$d=nu_0 +mv_0$.运用带余除法将$n$写作$n=dq+r,0\leq r &lt; d$.我们有</p>
+<p>$$r=n-dq=n-(nu_0 +mv_0 )q=n(1-u_0 q)+m(-v_0 q)\in J,$$</p>
+<p>从$d$的选取得到$r=0$.因而$d\mid n$.类似地，$d\mid m$.现在假设$d’$是数$n$和$m$的任意一个公因子.这时</p>
+<p>$$d’\mid n,d’\mid m\Rightarrow d’\mid nu_0 ,d’\mid mv_0 \Rightarrow d’\mid (nu_0 +mv_0 )\Rightarrow d’\mid d.$$</p>
+<p>这样$d$具备最大公因数的一切性质，所以$d=g.c.d(n,m)$.我们证明了下述论断.</p>
+<p><strong>命题</strong> 两个不全为零的整数的最大公因数总可以写成下述形式：</p>
+<p>$$g.c.d(n,m)=nu+mv ,\quad u,v\in \mathbb{Z} \label{4}\tag{4}$$</p>
+<p>特别地，整数$n,m$互素，当且仅当存在某对$u,v\in \mathbb{Z}$，使得</p>
+<p>$$nu+mv=1. \label{41}\tag{4′}$$</p>
+<p><strong>证明</strong> 我们已经验证过，互素的整数$n,m$满足关系式$\eqref{41}$.反之，如果$n,m$满足$\eqref{41}$，则</p>
+<p>$$d\mid n,d\mid m\Rightarrow d\mid nu,d\mid mv\Rightarrow d\mid (nu+mv)\Rightarrow d\mid 1\Rightarrow d=\pm 1. \quad \quad \square$$</p>
+<p>关系式$\eqref{4}$和$\eqref{41}$的证明是非常有用的.只需从集合$J$中取出任意一个正数(见$\eqref{3}$式)，然后借助带余除法找到$J$中越来越小的正数，直到得出最小的正数，这就是最大公因数.</p>
+<h2 id="习题">习题</h2>
+<p>$1$.每一个不等于$2$的素数都可以写成$4k+1$或$4k-1$的形式.运用在第$1$段给出的集合$S$的乘法证明，形如$4k-1$的素数有无穷多个.</p>
+<p>$2$.下述论断是非平凡的.</p>
+<p>若$n,m\in \mathbb{Z} ,g.c.d(n,m)=1$,如果$p$是整除$n^2+m^2$的一个素数，则$p=4k+1$.</p>
+<p>试用该论断证明存在无穷多个形如$4k+1$的素数.</p>
+<p>$3$.如果自然数$n$恰可被$r$个不同的素数$p_1 ,\cdots ,p_r$整除，则小于$n$且与$n$互素的整数的个数</p>
+<p>$$\varphi (n)=n(1-\dfrac{1}{p_1 })\cdots (1-\dfrac{1}{p_r }).$$</p>
+<p>函数$\varphi :\mathbb{N} \to \mathbb{N}$叫作<strong>欧拉函数</strong>.</p>
+<p>证明公式当$n\leq 25$时，以及当$n=p^m$时成立.</p>
+<p>$4$.运用二项式定理，对$n$作归纳证明，若$p$是素数，则$n^p-n$对任意$n\in \mathbb{Z}$可以被$p$整除.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[简述整数的初等可除性质.]]>
+    
+    </summary>
+    
+      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
+    
+      <category term="基础代数" scheme="http://jianhanglin.github.io/categories/%E5%9F%BA%E7%A1%80%E4%BB%A3%E6%95%B0/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[华南理工大学2010年攻读硕士学位研究生入学考试试卷]]></title>
@@ -2435,76 +2518,6 @@
       <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
     
       <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://jianhanglin.github.io/blog/2014/09/hello-world/"/>
-    <id>http://jianhanglin.github.io/blog/2014/09/hello-world/</id>
-    <published>2014-10-19T04:33:59.000Z</published>
-    <updated>2014-10-17T03:41:11.000Z</updated>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. <a id="more"></a>If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start-1">Quick Start</h2>
-<h3 id="Create_a_new_post-1">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server-1">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files-1">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites-1">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start-1">Quick Start</h2>
-<h3 id="Create_a_new_post-1">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server-1">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files-1">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites-1">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. ]]>
-    
-    </summary>
-    
-      <category term="hello" scheme="http://jianhanglin.github.io/tags/hello/"/>
     
   </entry>
   
