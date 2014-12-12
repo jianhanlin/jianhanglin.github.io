@@ -4,7 +4,7 @@
   <subtitle><![CDATA[春水初生，春林初盛，春风十里，不如你.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://jianhanglin.github.io/"/>
-  <updated>2014-12-09T09:18:35.600Z</updated>
+  <updated>2014-12-12T07:35:03.905Z</updated>
   <id>http://jianhanglin.github.io/</id>
   
   <author>
@@ -13,6 +13,883 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[华南理工大学2009年攻读硕士学位研究生入学考试试卷]]></title>
+    <link href="http://jianhanglin.github.io/blog/2014/12/kaoyanshiti3/"/>
+    <id>http://jianhanglin.github.io/blog/2014/12/kaoyanshiti3/</id>
+    <published>2014-12-11T03:28:04.000Z</published>
+    <updated>2014-12-11T08:39:06.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://pan.baidu.com/s/1hKgcY" target="_blank" rel="external">在线阅读</a></p>
+<p>科目名称：数学分析</p>
+<p>适用专业：基础数学，计算数学，概率论与数理统计，应用数学，运筹学与控制论</p>
+<p>$1$.($10$分)设函数$f(x)=\varphi (a+bx)-\varphi (a-bx)$，其中$\varphi (x)$在$x=a$的某个小邻域内有定义且在该点处可导，求$f’(0)$.</p>
+<p>解：由导数定义，以及$\varphi (x)$在$x=a$的某个小邻域内有定义且在该点处可导，可知</p>
+<span>$$\begin{align*}  & f'(0) \\  = & \lim_{x\to 0} \dfrac{f(x)-f(0)}{x-0}\\  = & \lim_{x\to 0} \dfrac{(\varphi (a+bx)-\varphi (a-bx))-(\varphi (a)-\varphi (a))}{x} \\  = & \lim_{x\to 0} \dfrac{(\varphi (a+bx)-\varphi (a))-(\varphi (a-bx)-\varphi (a))}{x} \\  = & \lim_{x\to 0} \dfrac{\varphi (a+bx)-\varphi (a)}{x}-\lim_{x\to 0} \dfrac{\varphi (a-bx)-\varphi (a)}{x} \\  = & \lim_{x\to 0} b\cdot \dfrac{\varphi (a+bx)-\varphi (a)}{a+bx-a}-\lim_{x\to 0} (-b)\cdot \dfrac{\varphi (a-bx)-\varphi (a)}{a-bx-a} \\  = & b\varphi' (a)-(-b)\varphi' (a)\\  = & 2b\varphi' (a)  \end{align*}$$</span>
+
+<p>即$f’(0)=2b\varphi’ (a)$.</p>
+<p>$2$.($10$分)设$0 &lt; x &lt; y &lt; \pi$，证明</p>
+<p>$$y\sin{y}+2\cos{y}+\pi y &gt; x\sin{x}+2\cos{x}+\pi x.$$</p>
+<p>证明：令函数$f(x)=x\sin{x}+2\cos{x}+\pi x$，其中$0 &lt; x &lt; \pi$.</p>
+<p>对函数$f(x)$求一阶导，有</p>
+<span>$$\begin{align*}  & f'(x) \\  = & (x\sin{x}+2\cos{x}+\pi x)'\\  = & \sin{x}+x\cos{x} -2\sin{x} +\pi \\  = & x\cos{x} -\sin{x}+\pi  \end{align*}$$</span>
+
+<p>对函数$f’(x)$再求导，有</p>
+<span>$$\begin{align*}  & f''(x) \\  = & (x\cos{x} -\sin{x}+\pi)'\\  = & \cos{x} -x\sin{x}-\cos{x}\\  = & -x\sin{x}  \end{align*}$$</span>
+
+<p>因此，当$0 &lt; x &lt; \pi$时，可知$f’’(x) &lt; 0$，于是可知$f’(x)$在区间$x\in (0,\pi )$上是严格单调递减的.</p>
+<p>这时有</p>
+<p>$$f’(x) &gt; f’(\pi ) =0.$$</p>
+<p>因此可知函数$f(x)$在区间$x\in (0,\pi )$上是严格单调递增的，那么对于任意的$x,y$，其中$0 &lt; x &lt; y &lt; \pi$就有</p>
+<p>$$f(y) &gt; f(x)$$</p>
+<p>即</p>
+<p>$$y\sin{y}+2\cos{y}+\pi y &gt; x\sin{x}+2\cos{x}+\pi x.$$</p>
+<p>$3$.($10$分)设$x &gt; 0,y &gt; 0$，求$f(x,y)=x^2y(4-x-y)$的极值.</p>
+<p>解：由于</p>
+<span>$$\begin{align*}  & f(x,y) \\  = & x^2y(4-x-y)\\  = & 4x^2y-x^3y-x^2y^2  \end{align*}$$</span>
+
+<p>对其求偏导数得：</p>
+<span>$$\begin{align*}  & f_x (x,y)=8xy-3x^2y-2xy^2=xy(8-3x-2y),\\  & f_y (x,y)=4x^2-x^3-2xy^2=x^2(4-x-2y),\\  & f_{xx} (x,y)=8y-6xy-2y^2,\\  & f_{yy} (x,y)=-2x^2,\\  & f_{xy} (x,y)=f_{yx} (x,y)=8x-3x^2-4xy.  \end{align*}$$</span>
+
+<p>注意到$x &gt; 0,y &gt; 0$，由方程组</p>
+<p>$$\begin{cases} f_x (x,y)=8xy-3x^2y-2xy^2=xy(8-3x-2y)=0, \\ f_y (x,y)=4x^2-x^3-2xy^2=x^2(4-x-2y)=0\end{cases}，$$</p>
+<p>可得稳定点$P_0 (2,1)$为唯一的极值点.</p>
+<p>又因为</p>
+<p>$$f_{xx }(P_0 )=8\cdot 1-6\cdot 2\cdot 1-2\cdot 1^2 =-6 &lt; 0,$$</p>
+<span>$$(f_{xx }f_{yy }-f_{xy }^2)(P_0 )=(-6)\cdot (-2\cdot 2^2)-(8\cdot 2 -3\cdot 2^2-4\cdot 2\cdot 1)^2=32 > 0,$$</span>
+
+<p>根据判别规则，知点$P_0 (2,1)$是极大值点.</p>
+<p>此时极大值为$f(2,1)=2^2 \cdot 1\cdot (4-2-1)=4$.</p>
+<p>$4$.($10$分)设<span>$f(x)=\dfrac{\int_0^x du \int_0^{u^2} \arctan{(1+t)} dt}{x(1-\cos{x})}$</span>，求$\displaystyle \lim_{x\to 0}f(x)$.</p>
+<p>解：令$g(u)=\int_0^{u^2} \arctan{(1+t)} dt$，对函数$g(u)$求导有</p>
+<p>$$g’(u)=2u\cdot \arctan{(1+u^2)}.$$</p>
+<p>于是，</p>
+<span>$$\begin{align*}  \lim_{x\to 0} f(x) & =\lim_{x\to 0} \dfrac{\int_0^x g(u) du }{x(1-\cos{x})} \\  & =\lim_{x\to 0} \dfrac{\int_0^x g(u) du }{x\cdot \dfrac{x^2}{2}} (\because 1-\cos{x} \sim \dfrac{x^2}{2} (x\to 0))\\  & =\lim_{x\to 0} \dfrac{g(x)}{\dfrac{3x^2}{2}} \\  & =\lim_{x\to 0} \dfrac{g'(x)}{3x} \\  & =\lim_{x\to 0} \dfrac{2x\cdot \arctan{(1+x^2)}}{3x} \\  & =\dfrac{2}{3} \cdot arctan{1} \\  & =\dfrac{2}{3} \times \dfrac{\pi }{4} \\  & =\dfrac{\pi }{6} \\  \end{align*}$$</span>
+
+<p>即</p>
+<p>$$\lim_{x\to 0} f(x) =\dfrac{\pi }{6}.$$</p>
+<p>$5$.($10$分)计算$\oint_c xdy -ydx$，其中$c$为椭圆$(x+2y)^2+(3x+2y)^2=1$，方向为逆时针方向.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[科目名称：数学分析]]>
+    
+    </summary>
+    
+      <category term="考研试题" scheme="http://jianhanglin.github.io/tags/%E8%80%83%E7%A0%94%E8%AF%95%E9%A2%98/"/>
+    
+      <category term="数学分析" scheme="http://jianhanglin.github.io/categories/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[华南理工大学2010年攻读硕士学位研究生入学考试试卷]]></title>
+    <link href="http://jianhanglin.github.io/blog/2014/12/kaoyanshiti1/"/>
+    <id>http://jianhanglin.github.io/blog/2014/12/kaoyanshiti1/</id>
+    <published>2014-12-11T03:28:04.000Z</published>
+    <updated>2014-11-24T09:13:35.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://pan.baidu.com/s/1dDxS5yh" target="_blank" rel="external">在线阅读</a></p>
+<p>科目名称：数学分析</p>
+<p>适用专业：基础数学，计算数学，概率论与数理统计，应用数学，运筹学与控制论</p>
+<p>一、求解下列各题（每小题$10$分，共$60$分）</p>
+<p>$1$、确定$\alpha$与$\beta$，使</p>
+<p>$$\lim_{n\to \infty}\left( \sqrt{3n^2+4n-2} -\alpha n-\beta \right)=0.$$</p>
+<p>解：欲使</p>
+<p>$$\lim_{n\to \infty}\left( \sqrt{3n^2+4n-2} -\alpha n-\beta \right)=0$$</p>
+<p>由</p>
+<span>$$\begin{align*}  & \lim_{n\to \infty}\left( \sqrt{3n^2+4n-2} -\alpha n-\beta \right)\\  = & \lim_{n\to \infty} \dfrac{3n^2+4n-2-(\alpha n+\beta )^2}{\sqrt{3n^2+4n-2}+\alpha n+\beta}\\  = & \lim_{n\to \infty} \dfrac{(3-\alpha ^2)n^2+(4-2\alpha \beta )n-2-\beta ^2}{\sqrt{3n^2+4n-2}+\alpha n+\beta}  \end{align*}$$</span>
+
+<p>这时，只需令</p>
+<p>$$3-\alpha ^2=0，4-2\alpha \beta =0$$</p>
+<p>即可解出</p>
+<p>$$\begin{cases} \alpha _1 =\sqrt{3} \\ \beta _1 =\dfrac{2\sqrt{3}}{3} \end{cases},\begin{cases} \alpha _2 =-\sqrt{3} \\ \beta _2 =-\dfrac{2\sqrt{3}}{3} \end{cases}$$</p>
+<p>当$\alpha _2 =-\sqrt{3},\beta _2 =-\dfrac{2\sqrt{3}}{3}$时，</p>
+<span>$$\begin{align*}  & \lim_{n\to \infty}\left( \sqrt{3n^2+4n-2} -\alpha n-\beta \right)\\  = & \lim_{n\to \infty} \left( \sqrt{3n^2+4n-2} -(-\sqrt{3}) n-(-\dfrac{2\sqrt{3}}{3})\right) \to \infty \neq 0  \end{align*}$$</span>
+
+<p>故舍去$\alpha _2 =-\sqrt{3},\beta _2 =-\dfrac{2\sqrt{3}}{3}$.</p>
+<p>因此，当$\alpha =\sqrt{3},\beta =\dfrac{2\sqrt{3}}{3}$时，</p>
+<p>$$\lim_{n\to \infty}\left( \sqrt{3n^2+4n-2} -\alpha n-\beta \right)=0.$$</p>
+<p>$2$、讨论函数$f(x),g(x)$在$x=0$处的可导性，其中</p>
+<p>$$f(x)=\begin{cases} -x, &amp; x为无理数 \\ x, &amp; x为有理数 \end{cases}$$</p>
+<p>$$g(x)=\begin{cases} -x^2, &amp; x为无理数 \\ x^2, &amp; x为有理数 \end{cases}.$$</p>
+<p>解：函数$f(x)$在$x=0$处不可导，函数$g(x)$在$x=0$处可导.</p>
+<p>$a)$首先取以$x=0$为极限的一组数列$\lbrace x_n \rbrace$，其中$x_n$为无理数，$n\in \mathbb{N}$.</p>
+<p>则有</p>
+<span>$$\lim_{x_n \to 0}\dfrac{f(x_n )-f(0)}{x_n -0}= \lim_{x_n \to 0}\dfrac{-x_n -0}{x_n -0}=-1$$</span>
+
+<p>然后取以$x=0$为极限的另一组数列$\lbrace x_n’ \rbrace$，其中$x_n’$为有理数，$n\in \mathbb{N}$.</p>
+<p>则有</p>
+<span>$$\lim_{x_n' \to 0}\dfrac{f(x_n' )-f(0)}{x_n' -0}= \lim_{x_n' \to 0}\dfrac{x_n' -0}{x_n' -0}=1$$</span>
+
+<p>根据归结原则可得$f(x)$在$x=0$处不连续，所以由定理：若函数$f$在点$x_0$处可导，则$f$在点$x_0$连续.可知函数$f(x)$在$x=0$处不可导.</p>
+<p>$b)$取任意一组以$x=0$为极限的数列$\lbrace x_n \rbrace$，其中$n\in \mathbb{N}$.</p>
+<p>则有</p>
+<span>$$\lim_{x_n \to 0}\dfrac{g(x_n )-g(0)}{x_n -0}= \lim_{x_n \to 0}\dfrac{\mid {x_n }^2 \mid -0}{x_n -0}=\lim_{x_n \to 0}\dfrac{\mid {x_n }^2 \mid}{x_n } $$</span>
+
+<p>通过对上式分析可知，不管$x_n$取无理数还是有理数，都有</p>
+<span>$$\lim_{x_n \to 0}\dfrac{\mid {x_n }^2 \mid}{x_n }=0$$</span>
+
+<p>可知函数$g(x)$在$x=0$处可导.</p>
+<p>$3$、已知$f(x)$在$[ 0,+\infty )$上连续，且满足$0 \leq f(x) \leq x$，$x\in [ 0,+\infty )$.设$a_1 \geq 0$，<span>$a_{n+1} =f(a_n )$</span>，$n=1,2,\cdots $，证明：</p>
+<p>$1) \lbrace a_n \rbrace $收敛；</p>
+<p>$2)$ 若<span>$\displaystyle \lim_{n \to \infty}a_n =l$</span>，则$f(l)=l$.</p>
+<p>证明：</p>
+<p>$1)$因为$f(x)\leq x$，所以$f(a_n )\leq a_n$.又<span>$a_{n+1} =f(a_n )$</span>，所以<span>$a_{n+1} -a_n =f(a_n )-a_n \leq 0$</span>.故$\lbrace a_n \rbrace $是单调递减的.</p>
+<p>因为$x\in [ 0,+\infty )$，所以$a_n \in [ 0,+\infty )$，即$a_n$有下界$0$.</p>
+<p>根据单调有界定理，可知$\lbrace a_n \rbrace $收敛.</p>
+<p>$2)$若<span>$\displaystyle \lim_{n \to \infty}a_n =l$</span>，加上$f(x)$在$[ 0,+\infty )$上连续，故可对等式<span>$a_{n+1} =f(a_n )$</span>两边取极限，即</p>
+<span>$$\lim_{n \to \infty}a_{n+1} =\lim_{n \to \infty}f(a_n ) =f(\lim_{n \to \infty}a_n ) $$</span>
+
+<p>故有$l=f(l)$.</p>
+<p>于是若<span>$\displaystyle \lim_{n \to \infty}a_n =l$</span>，则$f(l)=l$.</p>
+<p>$4$、判断下面级数的收敛性</p>
+<span>$$\sum_{n=1}^{\infty}\dfrac{x^n}{(1+x)(1+x^2)\cdots (1+x^n)},x \geq 0.$$</span>
+
+<p>解：正项级数<span>$\displaystyle\sum_{n=1}^{\infty}\dfrac{x^n}{(1+x)(1+x^2)\cdots (1+x^n)},x \geq 0$</span>收敛.</p>
+<p>理由如下：</p>
+<p>记$u_n=\dfrac{x^n}{(1+x)(1+x^2)\cdots (1+x^n)}$，</p>
+<p>由比式判别法的极限形式，</p>
+<span>$$\begin{align*}  & \lim_{n \to \infty}\dfrac{u_{n+1}}{u_n}\\  = & \lim_{n \to \infty}\dfrac{x^{n+1}}{(1+x)(1+x^2)\cdots (1+x^n)(1+x^{n+1})}\cdot \dfrac{x^n}{(1+x)(1+x^2)\cdots (1+x^n)}\\  = & \lim_{n \to \infty}\dfrac{x}{1+x^{n+1}}\\  \end{align*}$$</span>
+
+<p>当$0\leq x &lt; 1$时，<span>$\displaystyle \lim_{n \to \infty}\dfrac{x}{1+x^{n+1}}=x < 1$</span>.</p>
+<p>当$x=1$时，<span>$\displaystyle \lim_{n \to \infty}\dfrac{x}{1+x^{n+1}}=\dfrac12 < 1$</span>.</p>
+<p>当$x &gt; 1$，<span>$\displaystyle \lim_{n \to \infty}\dfrac{x}{1+x^{n+1}}=0 < 1$</span>.</p>
+<p>综上所述，正项级数<span>$\displaystyle\sum_{n=1}^{\infty}\dfrac{x^n}{(1+x)(1+x^2)\cdots (1+x^n)},x \geq 0$</span>收敛.</p>
+<p>$5$、讨论函数</p>
+<p>$$f(x,y)=(1+e^y)\cos x-ye^y$$</p>
+<p>的极大值和极小值.</p>
+<p>解：由方程组</p>
+<p>$$\begin{cases} f_x =-(1+e^y)\sin x =0 \\ f_y =e^y(\cos x -1-y) \end{cases},$$</p>
+<p>得$f$的稳定点$P_0 \lbrace (2k\pi ,0),((2k+1)\pi ,-2) \mid k \in Z\rbrace$.</p>
+<p>由</p>
+<span>$$\begin{cases} f_{xx} =-(1+e^y)\cos x \\\ f_{xy} =-\sin xe^y \\\ f_{yy}=e^y(\cos x-2-y)\end{cases} $$</span>
+
+<p>知，当$P_0$取为$(2k\pi ,0),k \in Z$时</p>
+<span>$$f_{xx} (P_0 )=-2 < 0,f_{xy} (P_0 )=0,f_{yy} (P_0 )=-1,(f_{xx} f_{yy} -f_{xy}^2)(P_0 )=2 > 0.$$</span>
+
+<p>当$P_0$取为$((2k+1)\pi ,-2),k \in Z$时</p>
+<span>$$f_{xx} (P_0 )=1+e^{-2},f_{xy} (P_0 )=0,f_{yy} (P_0 )=-e^{-2},(f_{xx} f_{yy} -f_{xy}^2)(P_0 )=-e^{-2}(1+e^{-2}) < 0.$$</span>
+
+<p>因此$f$在点$P_0 \lbrace (2k\pi ,0)\mid k \in Z\rbrace$取得极大值$f\lbrace (2k\pi ,0) \rbrace =2$，$f$在点$P_0 \lbrace ((2k+1)\pi ,-2)\mid k \in Z\rbrace$不能取得极值.</p>
+<p>$6$、计算</p>
+<p>$$\underset{S}{\iint}x^3\,dy\,dz+2y^3\,dz\,dx+3z^3\,dx\,dy\, ,$$</p>
+<p>其中$S$为球面</p>
+<p>$$x^2+y^2+z^2=a^2$$</p>
+<p>的外侧.</p>
+<p>解：应用高斯公式，所求曲面积分等于</p>
+<span>$$\begin{align*}  & \underset{V}\iiint \left[ \dfrac{\partial}{\partial x}(x^3)+\dfrac{\partial}{\partial y}(2y^3)+\dfrac{\partial}{\partial z}(3z^3)\right] dx\,dy\,dz \\  = & \underset{V}\iiint (3x^2+6y^2+9z^2) dx\,dy\,dz  \end{align*}$$</span>
+
+<p>其中$V$是球体</p>
+<p>$$x^2+y^2+z^2\leq a^2.$$</p>
+<p>由于</p>
+<span>$$\underset{V}\iiint (3x^2+6y^2+9z^2) dx\,dy\,dz= \underset{V}\iiint 3x^2 dx\,dy\,dz +\underset{V}\iiint 6y^2 dx\,dy\,dz \underset{V}\iiint 9z^2 dx\,dy\,dz ,$$</span>
+
+<p>其中</p>
+<span>$$\underset{V}\iiint 3x^2 dx\,dy\,dz ={\int}_{-a}^a 3x^2 dx \underset{R_x}\iint dy\,dz ,$$</span>
+
+<p>这里$R_x$表示圆面：</p>
+<p>$$y^2+z^2\leq a^2-x^2$$</p>
+<p>或</p>
+<p>$$\dfrac{y^2}{a^2-x^2}+\dfrac{z^2}{a^2-x^2}\leq 1 .$$</p>
+<p>它的面积为</p>
+<p>$$\pi \left( \sqrt{a^2-x^2}\right) \left( \sqrt{a^2-x^2}\right) =\pi \left( a^2-x^2\right).$$</p>
+<p>于是</p>
+<span>$$\underset{V}\iiint 3x^2 dx\,dy\,dz ={\int}_{-a}^a 3x^2\pi \left( a^2-x^2\right) dx=\dfrac{4}{5}\pi a^5.$$</span>
+
+<p>又因为$V$是球体，故有</p>
+<span>$$\underset{V}\iiint 6y^2 dx\,dy\,dz=2\underset{V}\iiint 3x^2 dx\,dy\,dz =\dfrac{8}{5}\pi a^5.$$</span>
+
+<span>$$\underset{V}\iiint 9z^2 dx\,dy\,dz=3\underset{V}\iiint 3x^2 dx\,dy\,dz =\dfrac{12}{5}\pi a^5.$$</span>
+
+<p>所以</p>
+<span>$$\begin{align*}  & \underset{S}{\iint}x^3\,dy\,dz+2y^3\,dz\,dx+3z^3\,dx\,dy \\  = & \underset{V}\iiint (3x^2+6y^2+9z^2) dx\,dy\,dz \\  = & \dfrac{4}{5}\pi a^5 + \dfrac{8}{5}\pi a^5 + \dfrac{12}{5}\pi a^5 \\  = & \dfrac{24}{5}\pi a^5  \end{align*}$$</span>
+
+<p>二、（$15$分）设$p$为正常数，函数$f(x)=\cos (x^p)$，证明：当$ 0 &lt; p \leq 1$时，$f(x)$在$[ 0,+\infty )$上一致连续.</p>
+<p>证明：任取$a &gt; 0$，函数$f(x)=\cos (x^p),0 &lt; p \leq 1$在$[0,a]$上连续，从而在区间$[0,1]$上一致连续.</p>
+<p>即对任给的正数$\varepsilon$，存在正数$\delta _1$，对$x_1 ,x_2 \in [0,a]$，当$\mid x_1 -x_2 \mid &lt; 0$时，有</p>
+<p>$$\mid \cos \left( x_1^p \right) -\cos \left( x_2^p \right) \mid &lt; \varepsilon$$</p>
+<p>现再考虑$f(x)$在$[ \dfrac{a}{2},+\infty )$上的一致连续性.</p>
+<p>由于当$x_1 ,x_2 \in [ \dfrac{a}{2},+\infty ),0 &lt; p \leq 1$时</p>
+<span>$$\begin{align*}  & \mid \cos \left( x_1^p \right) -\cos \left( x_2^p \right) \mid\\  = & \mid 2\sin \dfrac{x_1^p +x_2^p}{2} \sin \dfrac{x_1^p -x_2^p}{2} \mid\\  \leq & 2\mid \sin \dfrac{x_1^p -x_2^p}{2} \mid \\  \leq & \mid x_1^p -x_2^p \mid \\  \leq & \mid x_1 -x_2 \mid ^p\\  \end{align*}$$</span>
+
+<p>对上述$\varepsilon$,令$\delta _2 =\sqrt[p]{\varepsilon}$，当$x_1 ,x_2 \in [ \dfrac{a}{2},+\infty )$，$0 &lt; p \leq 1$，且$x_1 -x_2 ＜ \delta _2$时，有$\mid f(x_1 ) -f(x_2 )\mid &lt; \varepsilon$.</p>
+<p>现取$\delta =\min \lbrace \delta _1 ,\delta _2 ,\dfrac{a}{2}\rbrace $，当$x_1 ,x_2 \in [ 0,+\infty )$，从而有</p>
+<p>$$\mid f(x_1 ) -f(x_2 )\mid &lt; \varepsilon$$</p>
+<p>故$f(x)$在$[ 0,+\infty )$上一致连续.</p>
+<p>三、（$15$分）证明</p>
+<p>$$\int_a^b e^{-xy}\,dy\, =\dfrac{e^{-ax}-e^{-bx}}{x},$$</p>
+<p>并计算积分</p>
+<p>$$\int_0^{\infty} \dfrac{e^{-ax}-e^{-bx}}{x}\,dx,~ (b &gt; a &gt; 0).$$</p>
+<p>证明：</p>
+<p>$$\int_a^b e^{-xy}\,dy\, =-\dfrac{e^{-xy}}{x}{\Large \mid} _a^b=-\dfrac{e^{-xb}}{x}-\left( -\dfrac{e^{-xa}}{x}\right) =\dfrac{e^{-ax}-e^{-bx}}{x}.$$</p>
+<p>积分</p>
+<span>$$\int_0^{\infty} \dfrac{e^{-ax}-e^{-bx}}{x}\,dx= \int_0^{\infty} \int_a^b e^{-xy}\,dy\,dx=\int_a^b \int_0^{\infty} e^{-xy}\,dx\,dy=\int_a^b \dfrac{1}{y}\,dy=\ln{\mid y\mid} {\Large \mid} _b^a=\ln{\dfrac{b}{a}}.$$</span>
+
+<p>四、（$15$分）令</p>
+<p>$$f(x,y)=\begin{cases} \dfrac{\ln{(1+xy)}}{x}, &amp; x\neq 0 \\ y, &amp; x=0 \end{cases},$$</p>
+<p>证明$f(x,y)$在其定义域上是连续的.</p>
+<p>证明： $f(x,y)$的定义域为$D=\lbrace (x,y)\mid xy &gt; -1\rbrace$，显然$f(x,y)$在$(x,y)\in D$，$x\neq 0$处连续.</p>
+<p>对于$(0,0)$处，有$f(0,0)=0$.</p>
+<p>而</p>
+<span>$$\lim_{(x,y)\to (0,0)} f(x,y)=\lim_{(x,y)\to (0,0)} \dfrac{\ln{(1+xy)}}{x}=\lim_{(x,y)\to (0,0)} y\dfrac{\ln{(1+xy)}}{xy}=\lim_{(x,y)\to (0,0)} y\ln{(1+xy)^{\frac{1}{xy}}} =0=f(0,0)$$</span>
+
+<p>所以$f(x,y)$在$(0,0)$处连续.</p>
+<p>对于任意的$y_0 \neq 0$来说，有$f(0,y_0 )=y_0$.</p>
+<p>而</p>
+<span>$$\lim_{(x,y)\to (0,y_0 )} f(x,y)=\lim_{(x,y)\to (0,y_0 )} \dfrac{\ln{(1+xy)}}{x}=\lim_{(x,y)\to (0,y_0 )} y\dfrac{\ln{(1+xy)}}{xy}=\lim_{(x,y)\to (0,y_0)} y\ln{(1+xy)^{\frac{1}{xy}}} =y_0 =f(0,y_0 )$$</span>
+
+<p>所以$f(x,y)$在$(0,y_0)$处连续.</p>
+<p>综上所述，$f(x,y)$在其定义域上是连续的.</p>
+<p>五、（$15$分）求积分</p>
+<p>$$I=\underset{D}{\iint} \left( \sqrt{\dfrac{x-c}{a}}+\sqrt{\dfrac{y-c}{b}} \right)\,dx\,dy ,$$</p>
+<p>其中$D$由曲线$\sqrt{\dfrac{x-c}{a}}+\sqrt{\dfrac{y-c}{b}}=1$和$x=c,y=c$所围成，且$a ,b,c &gt; 0$.</p>
+<p>解：为了简化积分区域，作变换</p>
+<p>$$x=a\mu ^2+c, y=b\nu ^2+c.$$</p>
+<p>因此，它把$xy$平面上的区域$D$对应到$\mu \nu$平面上的三角形区域$\Delta $:由$\mu \geq 0$，$\nu \geq 0$和$\mu +\nu \leq 1$所组成.</p>
+<p>由于</p>
+<span>$$J(\mu ,\nu )  \begin{vmatrix}  2a\mu & 0 \\  0 & 2b\nu \\  \end{vmatrix}=4ab\mu \nu , (\mu ,\nu )\in \Delta,  $$</span>
+
+<p>所以，</p>
+<span>$$\begin{align*}  I & =\underset{D}{\iint} \left( \sqrt{\dfrac{x-c}{a}}+\sqrt{\dfrac{y-c}{b}} \right)\,dx\,dy \\  & =\underset{\Delta }{\iint} (\mu +\nu )\cdot 4ab\mu \nu \,d\mu \,d\nu \\  & =4ab\int_0^1 \int_0^{1-\mu} (\mu ^2 \nu +\mu \nu ^2) d\nu \,d\mu \\  & =4ab\int_0^1 \dfrac{\mu ^4 -3\mu ^2 +2\mu}{6} \,d\mu \\  & =4ab \cdot \dfrac{1}{6} \left( \dfrac{\mu ^5}{5}-\mu ^3 +\mu ^2 \right) {\LARGE \mid} _0^1\\  & =\dfrac{2ab}{15}\\  \end{align*}$$</span>
+
+<p>五、（$15$分）设$f$为定义在$(a,+\infty )$上的函数，在每一有限区间$(a,b)$上有界，且</p>
+<p>$$\lim_{x\to +\infty } \left[ f(x+1)-f(x)\right] =A,$$</p>
+<p>证明</p>
+<p>$$\lim_{x\to +\infty } \dfrac{f(x)}{x}=A.$$</p>
+<p>证明：由题设$\displaystyle \lim_{x\to +\infty } \left[ f(x+1)-f(x)\right] =A$.因此对任给正数$\varepsilon$，必存在正数$x_0 &gt; a$，使得$x \geq x_0$时，有$\mid f(x+1)-f(x)-A\mid &lt; \dfrac{\varepsilon}{3}$.</p>
+<p>现设$x &gt; x_0 +1$，于是存在正整数$n$(信赖于$x$)，满足$n \leq x-x_0 &lt; n+1$.令$L=x-x_0 -n$，则$0 \leq L &lt; 1$，且$x =x_0 +n + L$.于是有</p>
+<span>$$\begin{align*}  & \mid \dfrac{f(x)}{x}-A\mid \\  = & \mid n\cdot \dfrac{f(x)}{xn}-A\mid \\  = & \mid n\cdot \dfrac{f(x)-f(x_0 +L)+f(x_0 +L)}{xn}-A\mid \\  = & \mid \dfrac{n}{x}\cdot \left[ \dfrac{f(x)-f(x_0 +L)}{n}-A+A\right] +\dfrac{f(x_0 +L)}{x}-A \mid \\  = & \mid \dfrac{n}{x}\cdot \left[ \dfrac{f(x)-f(x_0 +L)}{n}-A\right] +\dfrac{f(x_0 +L)}{x}+\dfrac{n}{x}\cdot A-A \mid \\  = &  \mid \dfrac{n}{x}\cdot \left[ \dfrac{f(x)-f(x_0 +L)}{n}-A\right] +\dfrac{f(x_0 +L)}{x}-\dfrac{x_0 +L}{x}\cdot A\mid   \end{align*}$$</span>
+
+<p>显然</p>
+<span>$$\begin{align*}  & \mid \dfrac{n}{x}\cdot \left[ \dfrac{f(x)-f(x_0 +L)}{n}-A\right]\\    \leq & \mid \dfrac{f(x)-f(x_0 +L)}{n}-A \mid \\  = & \mid \dfrac{f(x_0 +L+n)-f(x_0 +L+n-1)+f(x_0 +L+n-1)-\cdots -f(x_0 +L+1)+f(x_0 +L+1)-f(x_0 +L)}{n}-A \mid \\  = & \dfrac{1}{n}\mid \sum_{k=1}^n\left[ f(x_0 +L+k)-f(x_0 +L+k-1)-A\right] \mid \\  \leq & \dfrac{1}{n}\sum_{k=1}^n\mid  f(x_0 +L+k)-f(x_0 +L+k-1)-A\mid\\  < & \dfrac{1}{n}\cdot \dfrac{n}{3}\varepsilon \\  = & \dfrac{\varepsilon }{3}  \end{align*}$$</span>
+
+<p>由题设知$f(x)$在每一有限区间$(a,b)$上有界，可知函数$f(x)$在$x_0 \leq x &lt; x_0 +1$上也有界，故存在正数$x_1$，使当$x &gt; x_1$时，便有</p>
+<p>$$\mid \dfrac{f(x_0 +L)}{x}\mid &lt; \dfrac{\varepsilon}{3}(0 \leq L &lt; 1)$$</p>
+<p>又显然存在正数$x_2$，使当$x &gt; x_2$时，有$\mid \dfrac{x_0 +L}{x}\cdot A\mid &lt; \dfrac{\varepsilon}{3} $</p>
+<p>令$X=\max \lbrace x_0 +1 ,x_1 ,x_2 \rbrace $，于是当$x &gt; X$时，便有</p>
+<p>$$\mid \dfrac{f(x)}{x}-A\mid &lt; \dfrac{\varepsilon}{3} +\dfrac{\varepsilon}{3} + \dfrac{\varepsilon}{3} = \varepsilon$$</p>
+<p>故有 </p>
+<p>$$\lim_{x\to +\infty } \dfrac{f(x)}{x}=A.$$</p>
+<p>六、（$15$分）设$f(x),g(x)$在$[ a,b]$连续，证明</p>
+<span>$$\lim_{\lambda (\Delta)\to 0} \sum_{i=1}^n f(\xi _i)g(\theta _i)\Delta x_i =\int_a^b f(x)g(x)\,dx$$</span>
+
+<p>其中$\Delta$为$[a,b]$的任一分割</p>
+<span>$$\Delta :a=x_0 < x_1 < \cdots < x_n =b,\xi _i ,\theta _i \in [x_i ,x_{i+1}],i=1,2,\cdots ,n ,\Delta x_i =x_i -x_{i-1}$$</span>
+
+<p>证明：因为$f(x),g(x)$在$[ a,b]$连续，故$f(x),g(x)$在$[ a,b]$上可积，且一致连续.同时，$f(x)\cdot g(x)$在$[ a,b]$上也可积.</p>
+<p>记$\displaystyle J=\int_a^b f(x)g(x)\,dx$，则对任给的正数$\varepsilon$，总存在某一正数$\delta _1$，使得对$[ a,b]$的任何分割，以及在其上任意选取的点集$\lbrace \xi _i \rbrace$，只要<span>$\begin{Vmatrix}\Delta \\ \end{Vmatrix} < \delta _1$</span>，就有</p>
+<p>$$\mid \sum_{i=1}^n f(\xi _i)g(\xi _i)\Delta x_i -J\mid &lt; \varepsilon.$$</p>
+<p>同时，记$\displaystyle A=\int_a^b f(x)\,dx$，则对任给的正数$\varepsilon$，总存在某一正数$\delta _2$，使得对$[ a,b]$的任何分割，以及在其上任意选取的点集$\lbrace \xi _i \rbrace$，只要<span>$\begin{Vmatrix}\Delta \\ \end{Vmatrix} < \delta _2$</span>，就有</p>
+<p>$$\mid \sum_{i=1}^n f(\xi _i)\Delta x_i -A\mid &lt; \varepsilon.$$</p>
+<p>同样地，对于$g(x)$在区间$[ a,b]$上一致连续，则对任给的正数$\varepsilon$，存在$\delta _3=\delta (\varepsilon ) &gt; 0$，使得对任何$x’,x’’\in [a,b]$，只要$\mid x’-x’’\mid &lt; \delta _3 $，就有</p>
+<p>$$\mid g(x’)-g(x’’)\mid &lt; \dfrac{\varepsilon}{A}.$$</p>
+<p>因此，</p>
+<p>对任任给的正数$\varepsilon$，总存在某一正数$\lambda (\Delta) =\min \lbrace \delta _1 ,\delta _2 ,\delta _3 \rbrace$，使得对$[ a,b]$的任何分割，以及在其上任意选取的点集$\lbrace \xi _i \rbrace$以及点集$\lbrace \theta _i \rbrace$，只要<span>$\begin{Vmatrix}\Delta \\ \end{Vmatrix} < \lambda (\Delta)$</span>，就有</p>
+<span>$$\begin{align*}  & \mid \sum_{i=1}^n f(\xi _i)g(\theta _i)\Delta x_i -J\mid \\    \leq & \mid \sum_{i=1}^n f(\xi _i)g(\xi _i)\Delta x_i -J\mid +\mid \sum_{i=1}^n f(\xi _i)\left[ g(\theta _i)-g(\xi _i)\right] \Delta x_i \mid \\  \leq & \mid \sum_{i=1}^n f(\xi _i)g(\xi _i)\Delta x_i -J\mid +\underset{\mid x'-x''\mid < \lambda (\Delta)}{\max}\mid g(x')-g(x'')\mid \sum_{i=1}^n \mid f(\xi _i)\mid \Delta x_i\\  < & \varepsilon + \dfrac{\varepsilon}{A} \cdot A=2\varepsilon  \end{align*}$$</span>
+
+<p>这时，根据定义可得</p>
+<span>$$\lim_{\lambda (\Delta)\to 0} \sum_{i=1}^n f(\xi _i)g(\theta _i)\Delta x_i =\int_a^b f(x)g(x)\,dx.$$</span>
+]]></content>
+    <summary type="html">
+    <![CDATA[科目名称：数学分析]]>
+    
+    </summary>
+    
+      <category term="考研试题" scheme="http://jianhanglin.github.io/tags/%E8%80%83%E7%A0%94%E8%AF%95%E9%A2%98/"/>
+    
+      <category term="数学分析" scheme="http://jianhanglin.github.io/categories/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[华南理工大学2010年攻读硕士学位研究生入学考试试卷]]></title>
+    <link href="http://jianhanglin.github.io/blog/2014/12/kaoyanshiti1/"/>
+    <id>http://jianhanglin.github.io/blog/2014/12/kaoyanshiti1/</id>
+    <published>2014-12-11T03:28:04.000Z</published>
+    <updated>2014-11-24T09:13:35.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://pan.baidu.com/s/1dDxS5yh" target="_blank" rel="external">在线阅读</a></p>
+<p>科目名称：数学分析</p>
+<p>适用专业：基础数学，计算数学，概率论与数理统计，应用数学，运筹学与控制论</p>
+<p>一、求解下列各题（每小题$10$分，共$60$分）</p>
+<p>$1$、确定$\alpha$与$\beta$，使</p>
+<p>$$\lim_{n\to \infty}\left( \sqrt{3n^2+4n-2} -\alpha n-\beta \right)=0.$$</p>
+<p>解：欲使</p>
+<p>$$\lim_{n\to \infty}\left( \sqrt{3n^2+4n-2} -\alpha n-\beta \right)=0$$</p>
+<p>由</p>
+<span>$$\begin{align*}  & \lim_{n\to \infty}\left( \sqrt{3n^2+4n-2} -\alpha n-\beta \right)\\  = & \lim_{n\to \infty} \dfrac{3n^2+4n-2-(\alpha n+\beta )^2}{\sqrt{3n^2+4n-2}+\alpha n+\beta}\\  = & \lim_{n\to \infty} \dfrac{(3-\alpha ^2)n^2+(4-2\alpha \beta )n-2-\beta ^2}{\sqrt{3n^2+4n-2}+\alpha n+\beta}  \end{align*}$$</span>
+
+<p>这时，只需令</p>
+<p>$$3-\alpha ^2=0，4-2\alpha \beta =0$$</p>
+<p>即可解出</p>
+<p>$$\begin{cases} \alpha _1 =\sqrt{3} \\ \beta _1 =\dfrac{2\sqrt{3}}{3} \end{cases},\begin{cases} \alpha _2 =-\sqrt{3} \\ \beta _2 =-\dfrac{2\sqrt{3}}{3} \end{cases}$$</p>
+<p>当$\alpha _2 =-\sqrt{3},\beta _2 =-\dfrac{2\sqrt{3}}{3}$时，</p>
+<span>$$\begin{align*}  & \lim_{n\to \infty}\left( \sqrt{3n^2+4n-2} -\alpha n-\beta \right)\\  = & \lim_{n\to \infty} \left( \sqrt{3n^2+4n-2} -(-\sqrt{3}) n-(-\dfrac{2\sqrt{3}}{3})\right) \to \infty \neq 0  \end{align*}$$</span>
+
+<p>故舍去$\alpha _2 =-\sqrt{3},\beta _2 =-\dfrac{2\sqrt{3}}{3}$.</p>
+<p>因此，当$\alpha =\sqrt{3},\beta =\dfrac{2\sqrt{3}}{3}$时，</p>
+<p>$$\lim_{n\to \infty}\left( \sqrt{3n^2+4n-2} -\alpha n-\beta \right)=0.$$</p>
+<p>$2$、讨论函数$f(x),g(x)$在$x=0$处的可导性，其中</p>
+<p>$$f(x)=\begin{cases} -x, &amp; x为无理数 \\ x, &amp; x为有理数 \end{cases}$$</p>
+<p>$$g(x)=\begin{cases} -x^2, &amp; x为无理数 \\ x^2, &amp; x为有理数 \end{cases}.$$</p>
+<p>解：函数$f(x)$在$x=0$处不可导，函数$g(x)$在$x=0$处可导.</p>
+<p>$a)$首先取以$x=0$为极限的一组数列$\lbrace x_n \rbrace$，其中$x_n$为无理数，$n\in \mathbb{N}$.</p>
+<p>则有</p>
+<span>$$\lim_{x_n \to 0}\dfrac{f(x_n )-f(0)}{x_n -0}= \lim_{x_n \to 0}\dfrac{-x_n -0}{x_n -0}=-1$$</span>
+
+<p>然后取以$x=0$为极限的另一组数列$\lbrace x_n’ \rbrace$，其中$x_n’$为有理数，$n\in \mathbb{N}$.</p>
+<p>则有</p>
+<span>$$\lim_{x_n' \to 0}\dfrac{f(x_n' )-f(0)}{x_n' -0}= \lim_{x_n' \to 0}\dfrac{x_n' -0}{x_n' -0}=1$$</span>
+
+<p>根据归结原则可得$f(x)$在$x=0$处不连续，所以由定理：若函数$f$在点$x_0$处可导，则$f$在点$x_0$连续.可知函数$f(x)$在$x=0$处不可导.</p>
+<p>$b)$取任意一组以$x=0$为极限的数列$\lbrace x_n \rbrace$，其中$n\in \mathbb{N}$.</p>
+<p>则有</p>
+<span>$$\lim_{x_n \to 0}\dfrac{g(x_n )-g(0)}{x_n -0}= \lim_{x_n \to 0}\dfrac{\mid {x_n }^2 \mid -0}{x_n -0}=\lim_{x_n \to 0}\dfrac{\mid {x_n }^2 \mid}{x_n } $$</span>
+
+<p>通过对上式分析可知，不管$x_n$取无理数还是有理数，都有</p>
+<span>$$\lim_{x_n \to 0}\dfrac{\mid {x_n }^2 \mid}{x_n }=0$$</span>
+
+<p>可知函数$g(x)$在$x=0$处可导.</p>
+<p>$3$、已知$f(x)$在$[ 0,+\infty )$上连续，且满足$0 \leq f(x) \leq x$，$x\in [ 0,+\infty )$.设$a_1 \geq 0$，<span>$a_{n+1} =f(a_n )$</span>，$n=1,2,\cdots $，证明：</p>
+<p>$1) \lbrace a_n \rbrace $收敛；</p>
+<p>$2)$ 若<span>$\displaystyle \lim_{n \to \infty}a_n =l$</span>，则$f(l)=l$.</p>
+<p>证明：</p>
+<p>$1)$因为$f(x)\leq x$，所以$f(a_n )\leq a_n$.又<span>$a_{n+1} =f(a_n )$</span>，所以<span>$a_{n+1} -a_n =f(a_n )-a_n \leq 0$</span>.故$\lbrace a_n \rbrace $是单调递减的.</p>
+<p>因为$x\in [ 0,+\infty )$，所以$a_n \in [ 0,+\infty )$，即$a_n$有下界$0$.</p>
+<p>根据单调有界定理，可知$\lbrace a_n \rbrace $收敛.</p>
+<p>$2)$若<span>$\displaystyle \lim_{n \to \infty}a_n =l$</span>，加上$f(x)$在$[ 0,+\infty )$上连续，故可对等式<span>$a_{n+1} =f(a_n )$</span>两边取极限，即</p>
+<span>$$\lim_{n \to \infty}a_{n+1} =\lim_{n \to \infty}f(a_n ) =f(\lim_{n \to \infty}a_n ) $$</span>
+
+<p>故有$l=f(l)$.</p>
+<p>于是若<span>$\displaystyle \lim_{n \to \infty}a_n =l$</span>，则$f(l)=l$.</p>
+<p>$4$、判断下面级数的收敛性</p>
+<span>$$\sum_{n=1}^{\infty}\dfrac{x^n}{(1+x)(1+x^2)\cdots (1+x^n)},x \geq 0.$$</span>
+
+<p>解：正项级数<span>$\displaystyle\sum_{n=1}^{\infty}\dfrac{x^n}{(1+x)(1+x^2)\cdots (1+x^n)},x \geq 0$</span>收敛.</p>
+<p>理由如下：</p>
+<p>记$u_n=\dfrac{x^n}{(1+x)(1+x^2)\cdots (1+x^n)}$，</p>
+<p>由比式判别法的极限形式，</p>
+<span>$$\begin{align*}  & \lim_{n \to \infty}\dfrac{u_{n+1}}{u_n}\\  = & \lim_{n \to \infty}\dfrac{x^{n+1}}{(1+x)(1+x^2)\cdots (1+x^n)(1+x^{n+1})}\cdot \dfrac{x^n}{(1+x)(1+x^2)\cdots (1+x^n)}\\  = & \lim_{n \to \infty}\dfrac{x}{1+x^{n+1}}\\  \end{align*}$$</span>
+
+<p>当$0\leq x &lt; 1$时，<span>$\displaystyle \lim_{n \to \infty}\dfrac{x}{1+x^{n+1}}=x < 1$</span>.</p>
+<p>当$x=1$时，<span>$\displaystyle \lim_{n \to \infty}\dfrac{x}{1+x^{n+1}}=\dfrac12 < 1$</span>.</p>
+<p>当$x &gt; 1$，<span>$\displaystyle \lim_{n \to \infty}\dfrac{x}{1+x^{n+1}}=0 < 1$</span>.</p>
+<p>综上所述，正项级数<span>$\displaystyle\sum_{n=1}^{\infty}\dfrac{x^n}{(1+x)(1+x^2)\cdots (1+x^n)},x \geq 0$</span>收敛.</p>
+<p>$5$、讨论函数</p>
+<p>$$f(x,y)=(1+e^y)\cos x-ye^y$$</p>
+<p>的极大值和极小值.</p>
+<p>解：由方程组</p>
+<p>$$\begin{cases} f_x =-(1+e^y)\sin x =0 \\ f_y =e^y(\cos x -1-y) \end{cases},$$</p>
+<p>得$f$的稳定点$P_0 \lbrace (2k\pi ,0),((2k+1)\pi ,-2) \mid k \in Z\rbrace$.</p>
+<p>由</p>
+<span>$$\begin{cases} f_{xx} =-(1+e^y)\cos x \\\ f_{xy} =-\sin xe^y \\\ f_{yy}=e^y(\cos x-2-y)\end{cases} $$</span>
+
+<p>知，当$P_0$取为$(2k\pi ,0),k \in Z$时</p>
+<span>$$f_{xx} (P_0 )=-2 < 0,f_{xy} (P_0 )=0,f_{yy} (P_0 )=-1,(f_{xx} f_{yy} -f_{xy}^2)(P_0 )=2 > 0.$$</span>
+
+<p>当$P_0$取为$((2k+1)\pi ,-2),k \in Z$时</p>
+<span>$$f_{xx} (P_0 )=1+e^{-2},f_{xy} (P_0 )=0,f_{yy} (P_0 )=-e^{-2},(f_{xx} f_{yy} -f_{xy}^2)(P_0 )=-e^{-2}(1+e^{-2}) < 0.$$</span>
+
+<p>因此$f$在点$P_0 \lbrace (2k\pi ,0)\mid k \in Z\rbrace$取得极大值$f\lbrace (2k\pi ,0) \rbrace =2$，$f$在点$P_0 \lbrace ((2k+1)\pi ,-2)\mid k \in Z\rbrace$不能取得极值.</p>
+<p>$6$、计算</p>
+<p>$$\underset{S}{\iint}x^3\,dy\,dz+2y^3\,dz\,dx+3z^3\,dx\,dy\, ,$$</p>
+<p>其中$S$为球面</p>
+<p>$$x^2+y^2+z^2=a^2$$</p>
+<p>的外侧.</p>
+<p>解：应用高斯公式，所求曲面积分等于</p>
+<span>$$\begin{align*}  & \underset{V}\iiint \left[ \dfrac{\partial}{\partial x}(x^3)+\dfrac{\partial}{\partial y}(2y^3)+\dfrac{\partial}{\partial z}(3z^3)\right] dx\,dy\,dz \\  = & \underset{V}\iiint (3x^2+6y^2+9z^2) dx\,dy\,dz  \end{align*}$$</span>
+
+<p>其中$V$是球体</p>
+<p>$$x^2+y^2+z^2\leq a^2.$$</p>
+<p>由于</p>
+<span>$$\underset{V}\iiint (3x^2+6y^2+9z^2) dx\,dy\,dz= \underset{V}\iiint 3x^2 dx\,dy\,dz +\underset{V}\iiint 6y^2 dx\,dy\,dz \underset{V}\iiint 9z^2 dx\,dy\,dz ,$$</span>
+
+<p>其中</p>
+<span>$$\underset{V}\iiint 3x^2 dx\,dy\,dz ={\int}_{-a}^a 3x^2 dx \underset{R_x}\iint dy\,dz ,$$</span>
+
+<p>这里$R_x$表示圆面：</p>
+<p>$$y^2+z^2\leq a^2-x^2$$</p>
+<p>或</p>
+<p>$$\dfrac{y^2}{a^2-x^2}+\dfrac{z^2}{a^2-x^2}\leq 1 .$$</p>
+<p>它的面积为</p>
+<p>$$\pi \left( \sqrt{a^2-x^2}\right) \left( \sqrt{a^2-x^2}\right) =\pi \left( a^2-x^2\right).$$</p>
+<p>于是</p>
+<span>$$\underset{V}\iiint 3x^2 dx\,dy\,dz ={\int}_{-a}^a 3x^2\pi \left( a^2-x^2\right) dx=\dfrac{4}{5}\pi a^5.$$</span>
+
+<p>又因为$V$是球体，故有</p>
+<span>$$\underset{V}\iiint 6y^2 dx\,dy\,dz=2\underset{V}\iiint 3x^2 dx\,dy\,dz =\dfrac{8}{5}\pi a^5.$$</span>
+
+<span>$$\underset{V}\iiint 9z^2 dx\,dy\,dz=3\underset{V}\iiint 3x^2 dx\,dy\,dz =\dfrac{12}{5}\pi a^5.$$</span>
+
+<p>所以</p>
+<span>$$\begin{align*}  & \underset{S}{\iint}x^3\,dy\,dz+2y^3\,dz\,dx+3z^3\,dx\,dy \\  = & \underset{V}\iiint (3x^2+6y^2+9z^2) dx\,dy\,dz \\  = & \dfrac{4}{5}\pi a^5 + \dfrac{8}{5}\pi a^5 + \dfrac{12}{5}\pi a^5 \\  = & \dfrac{24}{5}\pi a^5  \end{align*}$$</span>
+
+<p>二、（$15$分）设$p$为正常数，函数$f(x)=\cos (x^p)$，证明：当$ 0 &lt; p \leq 1$时，$f(x)$在$[ 0,+\infty )$上一致连续.</p>
+<p>证明：任取$a &gt; 0$，函数$f(x)=\cos (x^p),0 &lt; p \leq 1$在$[0,a]$上连续，从而在区间$[0,1]$上一致连续.</p>
+<p>即对任给的正数$\varepsilon$，存在正数$\delta _1$，对$x_1 ,x_2 \in [0,a]$，当$\mid x_1 -x_2 \mid &lt; 0$时，有</p>
+<p>$$\mid \cos \left( x_1^p \right) -\cos \left( x_2^p \right) \mid &lt; \varepsilon$$</p>
+<p>现再考虑$f(x)$在$[ \dfrac{a}{2},+\infty )$上的一致连续性.</p>
+<p>由于当$x_1 ,x_2 \in [ \dfrac{a}{2},+\infty ),0 &lt; p \leq 1$时</p>
+<span>$$\begin{align*}  & \mid \cos \left( x_1^p \right) -\cos \left( x_2^p \right) \mid\\  = & \mid 2\sin \dfrac{x_1^p +x_2^p}{2} \sin \dfrac{x_1^p -x_2^p}{2} \mid\\  \leq & 2\mid \sin \dfrac{x_1^p -x_2^p}{2} \mid \\  \leq & \mid x_1^p -x_2^p \mid \\  \leq & \mid x_1 -x_2 \mid ^p\\  \end{align*}$$</span>
+
+<p>对上述$\varepsilon$,令$\delta _2 =\sqrt[p]{\varepsilon}$，当$x_1 ,x_2 \in [ \dfrac{a}{2},+\infty )$，$0 &lt; p \leq 1$，且$x_1 -x_2 ＜ \delta _2$时，有$\mid f(x_1 ) -f(x_2 )\mid &lt; \varepsilon$.</p>
+<p>现取$\delta =\min \lbrace \delta _1 ,\delta _2 ,\dfrac{a}{2}\rbrace $，当$x_1 ,x_2 \in [ 0,+\infty )$，从而有</p>
+<p>$$\mid f(x_1 ) -f(x_2 )\mid &lt; \varepsilon$$</p>
+<p>故$f(x)$在$[ 0,+\infty )$上一致连续.</p>
+<p>三、（$15$分）证明</p>
+<p>$$\int_a^b e^{-xy}\,dy\, =\dfrac{e^{-ax}-e^{-bx}}{x},$$</p>
+<p>并计算积分</p>
+<p>$$\int_0^{\infty} \dfrac{e^{-ax}-e^{-bx}}{x}\,dx,~ (b &gt; a &gt; 0).$$</p>
+<p>证明：</p>
+<p>$$\int_a^b e^{-xy}\,dy\, =-\dfrac{e^{-xy}}{x}{\Large \mid} _a^b=-\dfrac{e^{-xb}}{x}-\left( -\dfrac{e^{-xa}}{x}\right) =\dfrac{e^{-ax}-e^{-bx}}{x}.$$</p>
+<p>积分</p>
+<span>$$\int_0^{\infty} \dfrac{e^{-ax}-e^{-bx}}{x}\,dx= \int_0^{\infty} \int_a^b e^{-xy}\,dy\,dx=\int_a^b \int_0^{\infty} e^{-xy}\,dx\,dy=\int_a^b \dfrac{1}{y}\,dy=\ln{\mid y\mid} {\Large \mid} _b^a=\ln{\dfrac{b}{a}}.$$</span>
+
+<p>四、（$15$分）令</p>
+<p>$$f(x,y)=\begin{cases} \dfrac{\ln{(1+xy)}}{x}, &amp; x\neq 0 \\ y, &amp; x=0 \end{cases},$$</p>
+<p>证明$f(x,y)$在其定义域上是连续的.</p>
+<p>证明： $f(x,y)$的定义域为$D=\lbrace (x,y)\mid xy &gt; -1\rbrace$，显然$f(x,y)$在$(x,y)\in D$，$x\neq 0$处连续.</p>
+<p>对于$(0,0)$处，有$f(0,0)=0$.</p>
+<p>而</p>
+<span>$$\lim_{(x,y)\to (0,0)} f(x,y)=\lim_{(x,y)\to (0,0)} \dfrac{\ln{(1+xy)}}{x}=\lim_{(x,y)\to (0,0)} y\dfrac{\ln{(1+xy)}}{xy}=\lim_{(x,y)\to (0,0)} y\ln{(1+xy)^{\frac{1}{xy}}} =0=f(0,0)$$</span>
+
+<p>所以$f(x,y)$在$(0,0)$处连续.</p>
+<p>对于任意的$y_0 \neq 0$来说，有$f(0,y_0 )=y_0$.</p>
+<p>而</p>
+<span>$$\lim_{(x,y)\to (0,y_0 )} f(x,y)=\lim_{(x,y)\to (0,y_0 )} \dfrac{\ln{(1+xy)}}{x}=\lim_{(x,y)\to (0,y_0 )} y\dfrac{\ln{(1+xy)}}{xy}=\lim_{(x,y)\to (0,y_0)} y\ln{(1+xy)^{\frac{1}{xy}}} =y_0 =f(0,y_0 )$$</span>
+
+<p>所以$f(x,y)$在$(0,y_0)$处连续.</p>
+<p>综上所述，$f(x,y)$在其定义域上是连续的.</p>
+<p>五、（$15$分）求积分</p>
+<p>$$I=\underset{D}{\iint} \left( \sqrt{\dfrac{x-c}{a}}+\sqrt{\dfrac{y-c}{b}} \right)\,dx\,dy ,$$</p>
+<p>其中$D$由曲线$\sqrt{\dfrac{x-c}{a}}+\sqrt{\dfrac{y-c}{b}}=1$和$x=c,y=c$所围成，且$a ,b,c &gt; 0$.</p>
+<p>解：为了简化积分区域，作变换</p>
+<p>$$x=a\mu ^2+c, y=b\nu ^2+c.$$</p>
+<p>因此，它把$xy$平面上的区域$D$对应到$\mu \nu$平面上的三角形区域$\Delta $:由$\mu \geq 0$，$\nu \geq 0$和$\mu +\nu \leq 1$所组成.</p>
+<p>由于</p>
+<span>$$J(\mu ,\nu )  \begin{vmatrix}  2a\mu & 0 \\  0 & 2b\nu \\  \end{vmatrix}=4ab\mu \nu , (\mu ,\nu )\in \Delta,  $$</span>
+
+<p>所以，</p>
+<span>$$\begin{align*}  I & =\underset{D}{\iint} \left( \sqrt{\dfrac{x-c}{a}}+\sqrt{\dfrac{y-c}{b}} \right)\,dx\,dy \\  & =\underset{\Delta }{\iint} (\mu +\nu )\cdot 4ab\mu \nu \,d\mu \,d\nu \\  & =4ab\int_0^1 \int_0^{1-\mu} (\mu ^2 \nu +\mu \nu ^2) d\nu \,d\mu \\  & =4ab\int_0^1 \dfrac{\mu ^4 -3\mu ^2 +2\mu}{6} \,d\mu \\  & =4ab \cdot \dfrac{1}{6} \left( \dfrac{\mu ^5}{5}-\mu ^3 +\mu ^2 \right) {\LARGE \mid} _0^1\\  & =\dfrac{2ab}{15}\\  \end{align*}$$</span>
+
+<p>五、（$15$分）设$f$为定义在$(a,+\infty )$上的函数，在每一有限区间$(a,b)$上有界，且</p>
+<p>$$\lim_{x\to +\infty } \left[ f(x+1)-f(x)\right] =A,$$</p>
+<p>证明</p>
+<p>$$\lim_{x\to +\infty } \dfrac{f(x)}{x}=A.$$</p>
+<p>证明：由题设$\displaystyle \lim_{x\to +\infty } \left[ f(x+1)-f(x)\right] =A$.因此对任给正数$\varepsilon$，必存在正数$x_0 &gt; a$，使得$x \geq x_0$时，有$\mid f(x+1)-f(x)-A\mid &lt; \dfrac{\varepsilon}{3}$.</p>
+<p>现设$x &gt; x_0 +1$，于是存在正整数$n$(信赖于$x$)，满足$n \leq x-x_0 &lt; n+1$.令$L=x-x_0 -n$，则$0 \leq L &lt; 1$，且$x =x_0 +n + L$.于是有</p>
+<span>$$\begin{align*}  & \mid \dfrac{f(x)}{x}-A\mid \\  = & \mid n\cdot \dfrac{f(x)}{xn}-A\mid \\  = & \mid n\cdot \dfrac{f(x)-f(x_0 +L)+f(x_0 +L)}{xn}-A\mid \\  = & \mid \dfrac{n}{x}\cdot \left[ \dfrac{f(x)-f(x_0 +L)}{n}-A+A\right] +\dfrac{f(x_0 +L)}{x}-A \mid \\  = & \mid \dfrac{n}{x}\cdot \left[ \dfrac{f(x)-f(x_0 +L)}{n}-A\right] +\dfrac{f(x_0 +L)}{x}+\dfrac{n}{x}\cdot A-A \mid \\  = &  \mid \dfrac{n}{x}\cdot \left[ \dfrac{f(x)-f(x_0 +L)}{n}-A\right] +\dfrac{f(x_0 +L)}{x}-\dfrac{x_0 +L}{x}\cdot A\mid   \end{align*}$$</span>
+
+<p>显然</p>
+<span>$$\begin{align*}  & \mid \dfrac{n}{x}\cdot \left[ \dfrac{f(x)-f(x_0 +L)}{n}-A\right]\\    \leq & \mid \dfrac{f(x)-f(x_0 +L)}{n}-A \mid \\  = & \mid \dfrac{f(x_0 +L+n)-f(x_0 +L+n-1)+f(x_0 +L+n-1)-\cdots -f(x_0 +L+1)+f(x_0 +L+1)-f(x_0 +L)}{n}-A \mid \\  = & \dfrac{1}{n}\mid \sum_{k=1}^n\left[ f(x_0 +L+k)-f(x_0 +L+k-1)-A\right] \mid \\  \leq & \dfrac{1}{n}\sum_{k=1}^n\mid  f(x_0 +L+k)-f(x_0 +L+k-1)-A\mid\\  < & \dfrac{1}{n}\cdot \dfrac{n}{3}\varepsilon \\  = & \dfrac{\varepsilon }{3}  \end{align*}$$</span>
+
+<p>由题设知$f(x)$在每一有限区间$(a,b)$上有界，可知函数$f(x)$在$x_0 \leq x &lt; x_0 +1$上也有界，故存在正数$x_1$，使当$x &gt; x_1$时，便有</p>
+<p>$$\mid \dfrac{f(x_0 +L)}{x}\mid &lt; \dfrac{\varepsilon}{3}(0 \leq L &lt; 1)$$</p>
+<p>又显然存在正数$x_2$，使当$x &gt; x_2$时，有$\mid \dfrac{x_0 +L}{x}\cdot A\mid &lt; \dfrac{\varepsilon}{3} $</p>
+<p>令$X=\max \lbrace x_0 +1 ,x_1 ,x_2 \rbrace $，于是当$x &gt; X$时，便有</p>
+<p>$$\mid \dfrac{f(x)}{x}-A\mid &lt; \dfrac{\varepsilon}{3} +\dfrac{\varepsilon}{3} + \dfrac{\varepsilon}{3} = \varepsilon$$</p>
+<p>故有 </p>
+<p>$$\lim_{x\to +\infty } \dfrac{f(x)}{x}=A.$$</p>
+<p>六、（$15$分）设$f(x),g(x)$在$[ a,b]$连续，证明</p>
+<span>$$\lim_{\lambda (\Delta)\to 0} \sum_{i=1}^n f(\xi _i)g(\theta _i)\Delta x_i =\int_a^b f(x)g(x)\,dx$$</span>
+
+<p>其中$\Delta$为$[a,b]$的任一分割</p>
+<span>$$\Delta :a=x_0 < x_1 < \cdots < x_n =b,\xi _i ,\theta _i \in [x_i ,x_{i+1}],i=1,2,\cdots ,n ,\Delta x_i =x_i -x_{i-1}$$</span>
+
+<p>证明：因为$f(x),g(x)$在$[ a,b]$连续，故$f(x),g(x)$在$[ a,b]$上可积，且一致连续.同时，$f(x)\cdot g(x)$在$[ a,b]$上也可积.</p>
+<p>记$\displaystyle J=\int_a^b f(x)g(x)\,dx$，则对任给的正数$\varepsilon$，总存在某一正数$\delta _1$，使得对$[ a,b]$的任何分割，以及在其上任意选取的点集$\lbrace \xi _i \rbrace$，只要<span>$\begin{Vmatrix}\Delta \\ \end{Vmatrix} < \delta _1$</span>，就有</p>
+<p>$$\mid \sum_{i=1}^n f(\xi _i)g(\xi _i)\Delta x_i -J\mid &lt; \varepsilon.$$</p>
+<p>同时，记$\displaystyle A=\int_a^b f(x)\,dx$，则对任给的正数$\varepsilon$，总存在某一正数$\delta _2$，使得对$[ a,b]$的任何分割，以及在其上任意选取的点集$\lbrace \xi _i \rbrace$，只要<span>$\begin{Vmatrix}\Delta \\ \end{Vmatrix} < \delta _2$</span>，就有</p>
+<p>$$\mid \sum_{i=1}^n f(\xi _i)\Delta x_i -A\mid &lt; \varepsilon.$$</p>
+<p>同样地，对于$g(x)$在区间$[ a,b]$上一致连续，则对任给的正数$\varepsilon$，存在$\delta _3=\delta (\varepsilon ) &gt; 0$，使得对任何$x’,x’’\in [a,b]$，只要$\mid x’-x’’\mid &lt; \delta _3 $，就有</p>
+<p>$$\mid g(x’)-g(x’’)\mid &lt; \dfrac{\varepsilon}{A}.$$</p>
+<p>因此，</p>
+<p>对任任给的正数$\varepsilon$，总存在某一正数$\lambda (\Delta) =\min \lbrace \delta _1 ,\delta _2 ,\delta _3 \rbrace$，使得对$[ a,b]$的任何分割，以及在其上任意选取的点集$\lbrace \xi _i \rbrace$以及点集$\lbrace \theta _i \rbrace$，只要<span>$\begin{Vmatrix}\Delta \\ \end{Vmatrix} < \lambda (\Delta)$</span>，就有</p>
+<span>$$\begin{align*}  & \mid \sum_{i=1}^n f(\xi _i)g(\theta _i)\Delta x_i -J\mid \\    \leq & \mid \sum_{i=1}^n f(\xi _i)g(\xi _i)\Delta x_i -J\mid +\mid \sum_{i=1}^n f(\xi _i)\left[ g(\theta _i)-g(\xi _i)\right] \Delta x_i \mid \\  \leq & \mid \sum_{i=1}^n f(\xi _i)g(\xi _i)\Delta x_i -J\mid +\underset{\mid x'-x''\mid < \lambda (\Delta)}{\max}\mid g(x')-g(x'')\mid \sum_{i=1}^n \mid f(\xi _i)\mid \Delta x_i\\  < & \varepsilon + \dfrac{\varepsilon}{A} \cdot A=2\varepsilon  \end{align*}$$</span>
+
+<p>这时，根据定义可得</p>
+<span>$$\lim_{\lambda (\Delta)\to 0} \sum_{i=1}^n f(\xi _i)g(\theta _i)\Delta x_i =\int_a^b f(x)g(x)\,dx.$$</span>
+]]></content>
+    <summary type="html">
+    <![CDATA[科目名称：数学分析]]>
+    
+    </summary>
+    
+      <category term="考研试题" scheme="http://jianhanglin.github.io/tags/%E8%80%83%E7%A0%94%E8%AF%95%E9%A2%98/"/>
+    
+      <category term="数学分析" scheme="http://jianhanglin.github.io/categories/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[华南理工大学2010年攻读硕士学位研究生入学考试试卷]]></title>
+    <link href="http://jianhanglin.github.io/blog/2014/12/kaoyanshiti1/"/>
+    <id>http://jianhanglin.github.io/blog/2014/12/kaoyanshiti1/</id>
+    <published>2014-12-11T03:28:04.000Z</published>
+    <updated>2014-11-24T09:13:35.000Z</updated>
+    <content type="html"><![CDATA[<p><a href="http://pan.baidu.com/s/1dDxS5yh" target="_blank" rel="external">在线阅读</a></p>
+<p>科目名称：数学分析</p>
+<p>适用专业：基础数学，计算数学，概率论与数理统计，应用数学，运筹学与控制论</p>
+<p>一、求解下列各题（每小题$10$分，共$60$分）</p>
+<p>$1$、确定$\alpha$与$\beta$，使</p>
+<p>$$\lim_{n\to \infty}\left( \sqrt{3n^2+4n-2} -\alpha n-\beta \right)=0.$$</p>
+<p>解：欲使</p>
+<p>$$\lim_{n\to \infty}\left( \sqrt{3n^2+4n-2} -\alpha n-\beta \right)=0$$</p>
+<p>由</p>
+<span>$$\begin{align*}  & \lim_{n\to \infty}\left( \sqrt{3n^2+4n-2} -\alpha n-\beta \right)\\  = & \lim_{n\to \infty} \dfrac{3n^2+4n-2-(\alpha n+\beta )^2}{\sqrt{3n^2+4n-2}+\alpha n+\beta}\\  = & \lim_{n\to \infty} \dfrac{(3-\alpha ^2)n^2+(4-2\alpha \beta )n-2-\beta ^2}{\sqrt{3n^2+4n-2}+\alpha n+\beta}  \end{align*}$$</span>
+
+<p>这时，只需令</p>
+<p>$$3-\alpha ^2=0，4-2\alpha \beta =0$$</p>
+<p>即可解出</p>
+<p>$$\begin{cases} \alpha _1 =\sqrt{3} \\ \beta _1 =\dfrac{2\sqrt{3}}{3} \end{cases},\begin{cases} \alpha _2 =-\sqrt{3} \\ \beta _2 =-\dfrac{2\sqrt{3}}{3} \end{cases}$$</p>
+<p>当$\alpha _2 =-\sqrt{3},\beta _2 =-\dfrac{2\sqrt{3}}{3}$时，</p>
+<span>$$\begin{align*}  & \lim_{n\to \infty}\left( \sqrt{3n^2+4n-2} -\alpha n-\beta \right)\\  = & \lim_{n\to \infty} \left( \sqrt{3n^2+4n-2} -(-\sqrt{3}) n-(-\dfrac{2\sqrt{3}}{3})\right) \to \infty \neq 0  \end{align*}$$</span>
+
+<p>故舍去$\alpha _2 =-\sqrt{3},\beta _2 =-\dfrac{2\sqrt{3}}{3}$.</p>
+<p>因此，当$\alpha =\sqrt{3},\beta =\dfrac{2\sqrt{3}}{3}$时，</p>
+<p>$$\lim_{n\to \infty}\left( \sqrt{3n^2+4n-2} -\alpha n-\beta \right)=0.$$</p>
+<p>$2$、讨论函数$f(x),g(x)$在$x=0$处的可导性，其中</p>
+<p>$$f(x)=\begin{cases} -x, &amp; x为无理数 \\ x, &amp; x为有理数 \end{cases}$$</p>
+<p>$$g(x)=\begin{cases} -x^2, &amp; x为无理数 \\ x^2, &amp; x为有理数 \end{cases}.$$</p>
+<p>解：函数$f(x)$在$x=0$处不可导，函数$g(x)$在$x=0$处可导.</p>
+<p>$a)$首先取以$x=0$为极限的一组数列$\lbrace x_n \rbrace$，其中$x_n$为无理数，$n\in \mathbb{N}$.</p>
+<p>则有</p>
+<span>$$\lim_{x_n \to 0}\dfrac{f(x_n )-f(0)}{x_n -0}= \lim_{x_n \to 0}\dfrac{-x_n -0}{x_n -0}=-1$$</span>
+
+<p>然后取以$x=0$为极限的另一组数列$\lbrace x_n’ \rbrace$，其中$x_n’$为有理数，$n\in \mathbb{N}$.</p>
+<p>则有</p>
+<span>$$\lim_{x_n' \to 0}\dfrac{f(x_n' )-f(0)}{x_n' -0}= \lim_{x_n' \to 0}\dfrac{x_n' -0}{x_n' -0}=1$$</span>
+
+<p>根据归结原则可得$f(x)$在$x=0$处不连续，所以由定理：若函数$f$在点$x_0$处可导，则$f$在点$x_0$连续.可知函数$f(x)$在$x=0$处不可导.</p>
+<p>$b)$取任意一组以$x=0$为极限的数列$\lbrace x_n \rbrace$，其中$n\in \mathbb{N}$.</p>
+<p>则有</p>
+<span>$$\lim_{x_n \to 0}\dfrac{g(x_n )-g(0)}{x_n -0}= \lim_{x_n \to 0}\dfrac{\mid {x_n }^2 \mid -0}{x_n -0}=\lim_{x_n \to 0}\dfrac{\mid {x_n }^2 \mid}{x_n } $$</span>
+
+<p>通过对上式分析可知，不管$x_n$取无理数还是有理数，都有</p>
+<span>$$\lim_{x_n \to 0}\dfrac{\mid {x_n }^2 \mid}{x_n }=0$$</span>
+
+<p>可知函数$g(x)$在$x=0$处可导.</p>
+<p>$3$、已知$f(x)$在$[ 0,+\infty )$上连续，且满足$0 \leq f(x) \leq x$，$x\in [ 0,+\infty )$.设$a_1 \geq 0$，<span>$a_{n+1} =f(a_n )$</span>，$n=1,2,\cdots $，证明：</p>
+<p>$1) \lbrace a_n \rbrace $收敛；</p>
+<p>$2)$ 若<span>$\displaystyle \lim_{n \to \infty}a_n =l$</span>，则$f(l)=l$.</p>
+<p>证明：</p>
+<p>$1)$因为$f(x)\leq x$，所以$f(a_n )\leq a_n$.又<span>$a_{n+1} =f(a_n )$</span>，所以<span>$a_{n+1} -a_n =f(a_n )-a_n \leq 0$</span>.故$\lbrace a_n \rbrace $是单调递减的.</p>
+<p>因为$x\in [ 0,+\infty )$，所以$a_n \in [ 0,+\infty )$，即$a_n$有下界$0$.</p>
+<p>根据单调有界定理，可知$\lbrace a_n \rbrace $收敛.</p>
+<p>$2)$若<span>$\displaystyle \lim_{n \to \infty}a_n =l$</span>，加上$f(x)$在$[ 0,+\infty )$上连续，故可对等式<span>$a_{n+1} =f(a_n )$</span>两边取极限，即</p>
+<span>$$\lim_{n \to \infty}a_{n+1} =\lim_{n \to \infty}f(a_n ) =f(\lim_{n \to \infty}a_n ) $$</span>
+
+<p>故有$l=f(l)$.</p>
+<p>于是若<span>$\displaystyle \lim_{n \to \infty}a_n =l$</span>，则$f(l)=l$.</p>
+<p>$4$、判断下面级数的收敛性</p>
+<span>$$\sum_{n=1}^{\infty}\dfrac{x^n}{(1+x)(1+x^2)\cdots (1+x^n)},x \geq 0.$$</span>
+
+<p>解：正项级数<span>$\displaystyle\sum_{n=1}^{\infty}\dfrac{x^n}{(1+x)(1+x^2)\cdots (1+x^n)},x \geq 0$</span>收敛.</p>
+<p>理由如下：</p>
+<p>记$u_n=\dfrac{x^n}{(1+x)(1+x^2)\cdots (1+x^n)}$，</p>
+<p>由比式判别法的极限形式，</p>
+<span>$$\begin{align*}  & \lim_{n \to \infty}\dfrac{u_{n+1}}{u_n}\\  = & \lim_{n \to \infty}\dfrac{x^{n+1}}{(1+x)(1+x^2)\cdots (1+x^n)(1+x^{n+1})}\cdot \dfrac{x^n}{(1+x)(1+x^2)\cdots (1+x^n)}\\  = & \lim_{n \to \infty}\dfrac{x}{1+x^{n+1}}\\  \end{align*}$$</span>
+
+<p>当$0\leq x &lt; 1$时，<span>$\displaystyle \lim_{n \to \infty}\dfrac{x}{1+x^{n+1}}=x < 1$</span>.</p>
+<p>当$x=1$时，<span>$\displaystyle \lim_{n \to \infty}\dfrac{x}{1+x^{n+1}}=\dfrac12 < 1$</span>.</p>
+<p>当$x &gt; 1$，<span>$\displaystyle \lim_{n \to \infty}\dfrac{x}{1+x^{n+1}}=0 < 1$</span>.</p>
+<p>综上所述，正项级数<span>$\displaystyle\sum_{n=1}^{\infty}\dfrac{x^n}{(1+x)(1+x^2)\cdots (1+x^n)},x \geq 0$</span>收敛.</p>
+<p>$5$、讨论函数</p>
+<p>$$f(x,y)=(1+e^y)\cos x-ye^y$$</p>
+<p>的极大值和极小值.</p>
+<p>解：由方程组</p>
+<p>$$\begin{cases} f_x =-(1+e^y)\sin x =0 \\ f_y =e^y(\cos x -1-y) \end{cases},$$</p>
+<p>得$f$的稳定点$P_0 \lbrace (2k\pi ,0),((2k+1)\pi ,-2) \mid k \in Z\rbrace$.</p>
+<p>由</p>
+<span>$$\begin{cases} f_{xx} =-(1+e^y)\cos x \\\ f_{xy} =-\sin xe^y \\\ f_{yy}=e^y(\cos x-2-y)\end{cases} $$</span>
+
+<p>知，当$P_0$取为$(2k\pi ,0),k \in Z$时</p>
+<span>$$f_{xx} (P_0 )=-2 < 0,f_{xy} (P_0 )=0,f_{yy} (P_0 )=-1,(f_{xx} f_{yy} -f_{xy}^2)(P_0 )=2 > 0.$$</span>
+
+<p>当$P_0$取为$((2k+1)\pi ,-2),k \in Z$时</p>
+<span>$$f_{xx} (P_0 )=1+e^{-2},f_{xy} (P_0 )=0,f_{yy} (P_0 )=-e^{-2},(f_{xx} f_{yy} -f_{xy}^2)(P_0 )=-e^{-2}(1+e^{-2}) < 0.$$</span>
+
+<p>因此$f$在点$P_0 \lbrace (2k\pi ,0)\mid k \in Z\rbrace$取得极大值$f\lbrace (2k\pi ,0) \rbrace =2$，$f$在点$P_0 \lbrace ((2k+1)\pi ,-2)\mid k \in Z\rbrace$不能取得极值.</p>
+<p>$6$、计算</p>
+<p>$$\underset{S}{\iint}x^3\,dy\,dz+2y^3\,dz\,dx+3z^3\,dx\,dy\, ,$$</p>
+<p>其中$S$为球面</p>
+<p>$$x^2+y^2+z^2=a^2$$</p>
+<p>的外侧.</p>
+<p>解：应用高斯公式，所求曲面积分等于</p>
+<span>$$\begin{align*}  & \underset{V}\iiint \left[ \dfrac{\partial}{\partial x}(x^3)+\dfrac{\partial}{\partial y}(2y^3)+\dfrac{\partial}{\partial z}(3z^3)\right] dx\,dy\,dz \\  = & \underset{V}\iiint (3x^2+6y^2+9z^2) dx\,dy\,dz  \end{align*}$$</span>
+
+<p>其中$V$是球体</p>
+<p>$$x^2+y^2+z^2\leq a^2.$$</p>
+<p>由于</p>
+<span>$$\underset{V}\iiint (3x^2+6y^2+9z^2) dx\,dy\,dz= \underset{V}\iiint 3x^2 dx\,dy\,dz +\underset{V}\iiint 6y^2 dx\,dy\,dz \underset{V}\iiint 9z^2 dx\,dy\,dz ,$$</span>
+
+<p>其中</p>
+<span>$$\underset{V}\iiint 3x^2 dx\,dy\,dz ={\int}_{-a}^a 3x^2 dx \underset{R_x}\iint dy\,dz ,$$</span>
+
+<p>这里$R_x$表示圆面：</p>
+<p>$$y^2+z^2\leq a^2-x^2$$</p>
+<p>或</p>
+<p>$$\dfrac{y^2}{a^2-x^2}+\dfrac{z^2}{a^2-x^2}\leq 1 .$$</p>
+<p>它的面积为</p>
+<p>$$\pi \left( \sqrt{a^2-x^2}\right) \left( \sqrt{a^2-x^2}\right) =\pi \left( a^2-x^2\right).$$</p>
+<p>于是</p>
+<span>$$\underset{V}\iiint 3x^2 dx\,dy\,dz ={\int}_{-a}^a 3x^2\pi \left( a^2-x^2\right) dx=\dfrac{4}{5}\pi a^5.$$</span>
+
+<p>又因为$V$是球体，故有</p>
+<span>$$\underset{V}\iiint 6y^2 dx\,dy\,dz=2\underset{V}\iiint 3x^2 dx\,dy\,dz =\dfrac{8}{5}\pi a^5.$$</span>
+
+<span>$$\underset{V}\iiint 9z^2 dx\,dy\,dz=3\underset{V}\iiint 3x^2 dx\,dy\,dz =\dfrac{12}{5}\pi a^5.$$</span>
+
+<p>所以</p>
+<span>$$\begin{align*}  & \underset{S}{\iint}x^3\,dy\,dz+2y^3\,dz\,dx+3z^3\,dx\,dy \\  = & \underset{V}\iiint (3x^2+6y^2+9z^2) dx\,dy\,dz \\  = & \dfrac{4}{5}\pi a^5 + \dfrac{8}{5}\pi a^5 + \dfrac{12}{5}\pi a^5 \\  = & \dfrac{24}{5}\pi a^5  \end{align*}$$</span>
+
+<p>二、（$15$分）设$p$为正常数，函数$f(x)=\cos (x^p)$，证明：当$ 0 &lt; p \leq 1$时，$f(x)$在$[ 0,+\infty )$上一致连续.</p>
+<p>证明：任取$a &gt; 0$，函数$f(x)=\cos (x^p),0 &lt; p \leq 1$在$[0,a]$上连续，从而在区间$[0,1]$上一致连续.</p>
+<p>即对任给的正数$\varepsilon$，存在正数$\delta _1$，对$x_1 ,x_2 \in [0,a]$，当$\mid x_1 -x_2 \mid &lt; 0$时，有</p>
+<p>$$\mid \cos \left( x_1^p \right) -\cos \left( x_2^p \right) \mid &lt; \varepsilon$$</p>
+<p>现再考虑$f(x)$在$[ \dfrac{a}{2},+\infty )$上的一致连续性.</p>
+<p>由于当$x_1 ,x_2 \in [ \dfrac{a}{2},+\infty ),0 &lt; p \leq 1$时</p>
+<span>$$\begin{align*}  & \mid \cos \left( x_1^p \right) -\cos \left( x_2^p \right) \mid\\  = & \mid 2\sin \dfrac{x_1^p +x_2^p}{2} \sin \dfrac{x_1^p -x_2^p}{2} \mid\\  \leq & 2\mid \sin \dfrac{x_1^p -x_2^p}{2} \mid \\  \leq & \mid x_1^p -x_2^p \mid \\  \leq & \mid x_1 -x_2 \mid ^p\\  \end{align*}$$</span>
+
+<p>对上述$\varepsilon$,令$\delta _2 =\sqrt[p]{\varepsilon}$，当$x_1 ,x_2 \in [ \dfrac{a}{2},+\infty )$，$0 &lt; p \leq 1$，且$x_1 -x_2 ＜ \delta _2$时，有$\mid f(x_1 ) -f(x_2 )\mid &lt; \varepsilon$.</p>
+<p>现取$\delta =\min \lbrace \delta _1 ,\delta _2 ,\dfrac{a}{2}\rbrace $，当$x_1 ,x_2 \in [ 0,+\infty )$，从而有</p>
+<p>$$\mid f(x_1 ) -f(x_2 )\mid &lt; \varepsilon$$</p>
+<p>故$f(x)$在$[ 0,+\infty )$上一致连续.</p>
+<p>三、（$15$分）证明</p>
+<p>$$\int_a^b e^{-xy}\,dy\, =\dfrac{e^{-ax}-e^{-bx}}{x},$$</p>
+<p>并计算积分</p>
+<p>$$\int_0^{\infty} \dfrac{e^{-ax}-e^{-bx}}{x}\,dx,~ (b &gt; a &gt; 0).$$</p>
+<p>证明：</p>
+<p>$$\int_a^b e^{-xy}\,dy\, =-\dfrac{e^{-xy}}{x}{\Large \mid} _a^b=-\dfrac{e^{-xb}}{x}-\left( -\dfrac{e^{-xa}}{x}\right) =\dfrac{e^{-ax}-e^{-bx}}{x}.$$</p>
+<p>积分</p>
+<span>$$\int_0^{\infty} \dfrac{e^{-ax}-e^{-bx}}{x}\,dx= \int_0^{\infty} \int_a^b e^{-xy}\,dy\,dx=\int_a^b \int_0^{\infty} e^{-xy}\,dx\,dy=\int_a^b \dfrac{1}{y}\,dy=\ln{\mid y\mid} {\Large \mid} _b^a=\ln{\dfrac{b}{a}}.$$</span>
+
+<p>四、（$15$分）令</p>
+<p>$$f(x,y)=\begin{cases} \dfrac{\ln{(1+xy)}}{x}, &amp; x\neq 0 \\ y, &amp; x=0 \end{cases},$$</p>
+<p>证明$f(x,y)$在其定义域上是连续的.</p>
+<p>证明： $f(x,y)$的定义域为$D=\lbrace (x,y)\mid xy &gt; -1\rbrace$，显然$f(x,y)$在$(x,y)\in D$，$x\neq 0$处连续.</p>
+<p>对于$(0,0)$处，有$f(0,0)=0$.</p>
+<p>而</p>
+<span>$$\lim_{(x,y)\to (0,0)} f(x,y)=\lim_{(x,y)\to (0,0)} \dfrac{\ln{(1+xy)}}{x}=\lim_{(x,y)\to (0,0)} y\dfrac{\ln{(1+xy)}}{xy}=\lim_{(x,y)\to (0,0)} y\ln{(1+xy)^{\frac{1}{xy}}} =0=f(0,0)$$</span>
+
+<p>所以$f(x,y)$在$(0,0)$处连续.</p>
+<p>对于任意的$y_0 \neq 0$来说，有$f(0,y_0 )=y_0$.</p>
+<p>而</p>
+<span>$$\lim_{(x,y)\to (0,y_0 )} f(x,y)=\lim_{(x,y)\to (0,y_0 )} \dfrac{\ln{(1+xy)}}{x}=\lim_{(x,y)\to (0,y_0 )} y\dfrac{\ln{(1+xy)}}{xy}=\lim_{(x,y)\to (0,y_0)} y\ln{(1+xy)^{\frac{1}{xy}}} =y_0 =f(0,y_0 )$$</span>
+
+<p>所以$f(x,y)$在$(0,y_0)$处连续.</p>
+<p>综上所述，$f(x,y)$在其定义域上是连续的.</p>
+<p>五、（$15$分）求积分</p>
+<p>$$I=\underset{D}{\iint} \left( \sqrt{\dfrac{x-c}{a}}+\sqrt{\dfrac{y-c}{b}} \right)\,dx\,dy ,$$</p>
+<p>其中$D$由曲线$\sqrt{\dfrac{x-c}{a}}+\sqrt{\dfrac{y-c}{b}}=1$和$x=c,y=c$所围成，且$a ,b,c &gt; 0$.</p>
+<p>解：为了简化积分区域，作变换</p>
+<p>$$x=a\mu ^2+c, y=b\nu ^2+c.$$</p>
+<p>因此，它把$xy$平面上的区域$D$对应到$\mu \nu$平面上的三角形区域$\Delta $:由$\mu \geq 0$，$\nu \geq 0$和$\mu +\nu \leq 1$所组成.</p>
+<p>由于</p>
+<span>$$J(\mu ,\nu )  \begin{vmatrix}  2a\mu & 0 \\  0 & 2b\nu \\  \end{vmatrix}=4ab\mu \nu , (\mu ,\nu )\in \Delta,  $$</span>
+
+<p>所以，</p>
+<span>$$\begin{align*}  I & =\underset{D}{\iint} \left( \sqrt{\dfrac{x-c}{a}}+\sqrt{\dfrac{y-c}{b}} \right)\,dx\,dy \\  & =\underset{\Delta }{\iint} (\mu +\nu )\cdot 4ab\mu \nu \,d\mu \,d\nu \\  & =4ab\int_0^1 \int_0^{1-\mu} (\mu ^2 \nu +\mu \nu ^2) d\nu \,d\mu \\  & =4ab\int_0^1 \dfrac{\mu ^4 -3\mu ^2 +2\mu}{6} \,d\mu \\  & =4ab \cdot \dfrac{1}{6} \left( \dfrac{\mu ^5}{5}-\mu ^3 +\mu ^2 \right) {\LARGE \mid} _0^1\\  & =\dfrac{2ab}{15}\\  \end{align*}$$</span>
+
+<p>五、（$15$分）设$f$为定义在$(a,+\infty )$上的函数，在每一有限区间$(a,b)$上有界，且</p>
+<p>$$\lim_{x\to +\infty } \left[ f(x+1)-f(x)\right] =A,$$</p>
+<p>证明</p>
+<p>$$\lim_{x\to +\infty } \dfrac{f(x)}{x}=A.$$</p>
+<p>证明：由题设$\displaystyle \lim_{x\to +\infty } \left[ f(x+1)-f(x)\right] =A$.因此对任给正数$\varepsilon$，必存在正数$x_0 &gt; a$，使得$x \geq x_0$时，有$\mid f(x+1)-f(x)-A\mid &lt; \dfrac{\varepsilon}{3}$.</p>
+<p>现设$x &gt; x_0 +1$，于是存在正整数$n$(信赖于$x$)，满足$n \leq x-x_0 &lt; n+1$.令$L=x-x_0 -n$，则$0 \leq L &lt; 1$，且$x =x_0 +n + L$.于是有</p>
+<span>$$\begin{align*}  & \mid \dfrac{f(x)}{x}-A\mid \\  = & \mid n\cdot \dfrac{f(x)}{xn}-A\mid \\  = & \mid n\cdot \dfrac{f(x)-f(x_0 +L)+f(x_0 +L)}{xn}-A\mid \\  = & \mid \dfrac{n}{x}\cdot \left[ \dfrac{f(x)-f(x_0 +L)}{n}-A+A\right] +\dfrac{f(x_0 +L)}{x}-A \mid \\  = & \mid \dfrac{n}{x}\cdot \left[ \dfrac{f(x)-f(x_0 +L)}{n}-A\right] +\dfrac{f(x_0 +L)}{x}+\dfrac{n}{x}\cdot A-A \mid \\  = &  \mid \dfrac{n}{x}\cdot \left[ \dfrac{f(x)-f(x_0 +L)}{n}-A\right] +\dfrac{f(x_0 +L)}{x}-\dfrac{x_0 +L}{x}\cdot A\mid   \end{align*}$$</span>
+
+<p>显然</p>
+<span>$$\begin{align*}  & \mid \dfrac{n}{x}\cdot \left[ \dfrac{f(x)-f(x_0 +L)}{n}-A\right]\\    \leq & \mid \dfrac{f(x)-f(x_0 +L)}{n}-A \mid \\  = & \mid \dfrac{f(x_0 +L+n)-f(x_0 +L+n-1)+f(x_0 +L+n-1)-\cdots -f(x_0 +L+1)+f(x_0 +L+1)-f(x_0 +L)}{n}-A \mid \\  = & \dfrac{1}{n}\mid \sum_{k=1}^n\left[ f(x_0 +L+k)-f(x_0 +L+k-1)-A\right] \mid \\  \leq & \dfrac{1}{n}\sum_{k=1}^n\mid  f(x_0 +L+k)-f(x_0 +L+k-1)-A\mid\\  < & \dfrac{1}{n}\cdot \dfrac{n}{3}\varepsilon \\  = & \dfrac{\varepsilon }{3}  \end{align*}$$</span>
+
+<p>由题设知$f(x)$在每一有限区间$(a,b)$上有界，可知函数$f(x)$在$x_0 \leq x &lt; x_0 +1$上也有界，故存在正数$x_1$，使当$x &gt; x_1$时，便有</p>
+<p>$$\mid \dfrac{f(x_0 +L)}{x}\mid &lt; \dfrac{\varepsilon}{3}(0 \leq L &lt; 1)$$</p>
+<p>又显然存在正数$x_2$，使当$x &gt; x_2$时，有$\mid \dfrac{x_0 +L}{x}\cdot A\mid &lt; \dfrac{\varepsilon}{3} $</p>
+<p>令$X=\max \lbrace x_0 +1 ,x_1 ,x_2 \rbrace $，于是当$x &gt; X$时，便有</p>
+<p>$$\mid \dfrac{f(x)}{x}-A\mid &lt; \dfrac{\varepsilon}{3} +\dfrac{\varepsilon}{3} + \dfrac{\varepsilon}{3} = \varepsilon$$</p>
+<p>故有 </p>
+<p>$$\lim_{x\to +\infty } \dfrac{f(x)}{x}=A.$$</p>
+<p>六、（$15$分）设$f(x),g(x)$在$[ a,b]$连续，证明</p>
+<span>$$\lim_{\lambda (\Delta)\to 0} \sum_{i=1}^n f(\xi _i)g(\theta _i)\Delta x_i =\int_a^b f(x)g(x)\,dx$$</span>
+
+<p>其中$\Delta$为$[a,b]$的任一分割</p>
+<span>$$\Delta :a=x_0 < x_1 < \cdots < x_n =b,\xi _i ,\theta _i \in [x_i ,x_{i+1}],i=1,2,\cdots ,n ,\Delta x_i =x_i -x_{i-1}$$</span>
+
+<p>证明：因为$f(x),g(x)$在$[ a,b]$连续，故$f(x),g(x)$在$[ a,b]$上可积，且一致连续.同时，$f(x)\cdot g(x)$在$[ a,b]$上也可积.</p>
+<p>记$\displaystyle J=\int_a^b f(x)g(x)\,dx$，则对任给的正数$\varepsilon$，总存在某一正数$\delta _1$，使得对$[ a,b]$的任何分割，以及在其上任意选取的点集$\lbrace \xi _i \rbrace$，只要<span>$\begin{Vmatrix}\Delta \\ \end{Vmatrix} < \delta _1$</span>，就有</p>
+<p>$$\mid \sum_{i=1}^n f(\xi _i)g(\xi _i)\Delta x_i -J\mid &lt; \varepsilon.$$</p>
+<p>同时，记$\displaystyle A=\int_a^b f(x)\,dx$，则对任给的正数$\varepsilon$，总存在某一正数$\delta _2$，使得对$[ a,b]$的任何分割，以及在其上任意选取的点集$\lbrace \xi _i \rbrace$，只要<span>$\begin{Vmatrix}\Delta \\ \end{Vmatrix} < \delta _2$</span>，就有</p>
+<p>$$\mid \sum_{i=1}^n f(\xi _i)\Delta x_i -A\mid &lt; \varepsilon.$$</p>
+<p>同样地，对于$g(x)$在区间$[ a,b]$上一致连续，则对任给的正数$\varepsilon$，存在$\delta _3=\delta (\varepsilon ) &gt; 0$，使得对任何$x’,x’’\in [a,b]$，只要$\mid x’-x’’\mid &lt; \delta _3 $，就有</p>
+<p>$$\mid g(x’)-g(x’’)\mid &lt; \dfrac{\varepsilon}{A}.$$</p>
+<p>因此，</p>
+<p>对任任给的正数$\varepsilon$，总存在某一正数$\lambda (\Delta) =\min \lbrace \delta _1 ,\delta _2 ,\delta _3 \rbrace$，使得对$[ a,b]$的任何分割，以及在其上任意选取的点集$\lbrace \xi _i \rbrace$以及点集$\lbrace \theta _i \rbrace$，只要<span>$\begin{Vmatrix}\Delta \\ \end{Vmatrix} < \lambda (\Delta)$</span>，就有</p>
+<span>$$\begin{align*}  & \mid \sum_{i=1}^n f(\xi _i)g(\theta _i)\Delta x_i -J\mid \\    \leq & \mid \sum_{i=1}^n f(\xi _i)g(\xi _i)\Delta x_i -J\mid +\mid \sum_{i=1}^n f(\xi _i)\left[ g(\theta _i)-g(\xi _i)\right] \Delta x_i \mid \\  \leq & \mid \sum_{i=1}^n f(\xi _i)g(\xi _i)\Delta x_i -J\mid +\underset{\mid x'-x''\mid < \lambda (\Delta)}{\max}\mid g(x')-g(x'')\mid \sum_{i=1}^n \mid f(\xi _i)\mid \Delta x_i\\  < & \varepsilon + \dfrac{\varepsilon}{A} \cdot A=2\varepsilon  \end{align*}$$</span>
+
+<p>这时，根据定义可得</p>
+<span>$$\lim_{\lambda (\Delta)\to 0} \sum_{i=1}^n f(\xi _i)g(\theta _i)\Delta x_i =\int_a^b f(x)g(x)\,dx.$$</span>
+]]></content>
+    <summary type="html">
+    <![CDATA[科目名称：数学分析]]>
+    
+    </summary>
+    
+      <category term="考研试题" scheme="http://jianhanglin.github.io/tags/%E8%80%83%E7%A0%94%E8%AF%95%E9%A2%98/"/>
+    
+      <category term="数学分析" scheme="http://jianhanglin.github.io/categories/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[《微积分学教程(第一卷)》 第一章 极限论 2 极限的定理·若干容易求得的极限]]></title>
+    <link href="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng112/"/>
+    <id>http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng112/</id>
+    <published>2014-12-09T09:24:10.000Z</published>
+    <updated>2014-12-12T07:21:44.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="对等式及不等式取极限">对等式及不等式取极限</h2>
+<p>当我们用等号或不等号联结二整序变量$x_n$及$y_n$时，我们所指的总是它们的对应数值，即具有同一序号的数值.</p>
+<p>$1°$ 若二整序变量$x_n ,y_n$在它们的一切变化过程中总是相等：$x_n =y_n$，并且各趋于有限极限：</p>
+<p>$$\lim x_n =a ,\quad \lim y_n =b,$$</p>
+<p>则这些极限必相等：$a=b$.</p>
+<p>这可由极限的唯一性<a href="http://linjianhang.me/blog/2014/11/weijifenxuejiaocheng111/" target="_blank" rel="external">[关于有极限的整序变量的一些定理]</a>直接推得.</p>
+<p>这定理通常写成对等式取极限的形式：由$x_n =y_n$得出：</p>
+<p>$$\lim x_n \lim y_n .$$</p>
+<p>$2°$ 若二整序变量$x_n ,y_n$常满足不等式$x_n \geq y_n$，并且各趋于有限极限：</p>
+<p>$$\lim x_n =a ,\quad \lim y_n =b,$$</p>
+<p>则必$a \geq b$.</p>
+<p>假定是相反的情形：设$a &lt; b$.像在<a href="http://linjianhang.me/blog/2014/11/weijifenxuejiaocheng111/" target="_blank" rel="external">[关于有极限的整序变量的一些定理]</a>中一样，任取在$a$与$b$间的一数$r$，$a &lt; r &lt; b$.那么，一方面，可以求得序号$N’$，使当$n &gt; N’$时成立$x_n &lt; r$，但另一方面，又可求得序号$N’’$，使当$n &gt; N’’$时成立$y_n &gt; r$.若$N$大于$N’$和$N’’$，则当$n &gt; N$时将同时成立不等式</p>
+<p>$$x_n &lt; r ,\quad y_n &gt; r,$$</p>
+<p>由此</p>
+<p>$$x_n &lt; y_n ,$$</p>
+<p>这是违反假定的.定理便得证明.</p>
+<p>这定理使我们得以对不等式(连同着等号的)取极限：由$x_n \geq y_n$得结论：</p>
+<p>$$\lim x_n \geq \lim y_n .$$</p>
+<p>当然，各处的$\geq $号都可以换成$\leq $号.</p>
+<p>请读者注意，由严格的不等式$x_n &gt; y_n$，一般说来，不能推得严格的不等式$\lim x_n &gt; \lim y_n $，而仅能推得：$\lim x_n \geq \lim y_n $.例如对于一切的$n$，有$\dfrac{1}{n} &gt; -\dfrac{1}{n}$，但却有</p>
+<p>$$\lim \dfrac{1}{n} =\lim (-\dfrac{1}{n})=0.$$</p>
+<p>在确定整序变量的极限的存在及其数值时，下面的定理常是很有用的：</p>
+<p>$3°$ 若二整序变量$x_n ,y_n ,z_n$恒满足不等式</p>
+<p>$$x_n \leq y_n \leq z_n ,$$</p>
+<p>并且$x_n$及$z_n$趋向同一极限$a$：</p>
+<p>$$\lim x_n =\lim z_n =a,$$</p>
+<p>则$y_n$亦必以$a$为极限：</p>
+<p>$$\lim y_n =a.$$</p>
+<p>指定任意的$\varepsilon &gt; 0$.对于这$\varepsilon$，首先可以求得序号$N’$，使当$n &gt; N’$时</p>
+<p>$$a-\varepsilon &lt; x_n &lt; a+\varepsilon .$$</p>
+<p>其次，又可求得序号$N’’$，使当$n &gt; N’’$时</p>
+<p>$$a-\varepsilon &lt; z_n &lt; a+\varepsilon .$$</p>
+<p>设$N$大于$N’$及$N’’$；则当$n &gt; N$时，上述两不等式都能满足，故</p>
+<p>$$a-\varepsilon &lt; x_n \leq y_n \leq z_n &lt; a+\varepsilon .$$</p>
+<p>结果当$n &gt; N$时</p>
+<p>$$a-\varepsilon &lt;  y_n  &lt; a+\varepsilon \quad 或 \quad \mid y_n -a \mid &lt; \varepsilon .$$</p>
+<p>这样，实际上就是$\lim y_n =a$.</p>
+<p>由这定理，特别，可以推得：若对于一切$n$</p>
+<p>$$a \leq y_n \leq z_n ,$$</p>
+<p>且已知$z_n \to a$，则亦必有$y_n \to a$.要直接证明这事实也是很容易的.</p>
+<p>定理$1°$，$2°$及$3°$很易推广至无穷极限的情形(其中定理$3°$仅适用于带有确定符号的无穷极限).</p>
+<h2 id="关于无穷小的引理">关于无穷小的引理</h2>
+<p>在以后的定理中我们将要同时考察两个(或更多个)整序变量，并在它们之间施行算术运算.这时如上所述，我们所指的也就是在这些整序变量的对应数值间施行算术运算的意思.例如，说及二整序变量$x_n$及$y_n$的和时，若$x_n$及$y_n$各依次在数列</p>
+<p>$$x_1 ,x_2 ,x_3 ,\cdots ,x_n ,\cdots $$</p>
+<p>及</p>
+<p>$$y_1 ,y_2 ,y_3 ,\cdots ,y_n ,\cdots $$</p>
+<p>中取值，那么整序变量$x_n +y_n$便依次在数列</p>
+<p>$$x_1 +y_1 ,x_2 +y_2 ,x_3 +y_3 ,\cdots ,x_n +y_n ,\cdots $$</p>
+<p>中取值.</p>
+<p>在证明关于变量的算术运算的定理时，下面两个关于无穷小的引理，将担任着重要的角色.</p>
+<p><strong>引理$1$</strong> 任何有限个无穷小的和亦是无穷小量.</p>
+<p>我们只证明对于二无穷小$\alpha _n$及$\beta _n$的情形(一般的情形仿此讨论).</p>
+<p>给定任意的$\varepsilon &gt; 0$.根据无穷小的定义，由$\varepsilon $可以决定无穷小$\alpha _n$的序号$N’$，使当$n &gt; N’$时有</p>
+<p>$$\mid \alpha _n \mid &lt; \dfrac{\varepsilon }{2} .$$</p>
+<p>同样地对于$\beta _n$可以求出$N’’$，使当$n &gt; N’’$时有</p>
+<p>$$\mid \beta _n \mid &lt; \dfrac{\varepsilon }{2} .$$</p>
+<p>若取自然数$N$大于$N’$及$N’’$，则当$n &gt; N$时，两不等式同时成立，这样，便有</p>
+<p>$$\mid \alpha _n +\beta _n \mid \leq \mid \alpha _n \mid +\mid \beta _n \mid &lt; \dfrac{\varepsilon }{2} +\dfrac{\varepsilon }{2} =\varepsilon .$$</p>
+<p>因此，$\alpha _n +\beta _n$也是无穷小.</p>
+<p><strong>引理$2$</strong> 有界变量$x_n$与无穷小$\alpha _n$的乘积仍是无穷小.</p>
+<p>设对于一切$n$有</p>
+<p>$$\mid x_n \mid \leq M.$$</p>
+<p>若给定任意数$\varepsilon &gt; 0$，则依$\dfrac{\varepsilon }{M}$，对于无穷小$\alpha _n$可以求出$N$，使当$n &gt; N$时有</p>
+<p>$$\mid \alpha _n \mid &lt; \dfrac{\varepsilon }{M} .$$</p>
+<p>对于这种$n$，显然有</p>
+<p>$$\mid x_n \cdot \alpha _n \mid =\mid x_n \mid \cdot \mid \alpha _n \mid &lt; M \cdot \dfrac{\varepsilon }{M}=\varepsilon .$$</p>
+<p>由此推得，$x_n \cdot \alpha _n$为无穷小.</p>
+<h2 id="变量的算术运算">变量的算术运算</h2>
+<p>下面这些定理所以重要，在于在很多情形时，用了它们可以不必把一切与极限有关的问题都追溯到“极限”的定义，然后依指定的$\varepsilon$找出对应的$N$，等等.用了这些定理，极限的计算将大为简化.</p>
+<p>$1°$ 若整序变量$x_n$及$y_n$趋于有限极限：</p>
+<p>$$\lim x_n =a,\quad \lim y_n =b,$$</p>
+<p>则它们的和(差)仍趋于有限极限，并且</p>
+<p>$$\lim (x_n \pm y_n )=a\pm b.$$</p>
+<p>由定理的条件，推得</p>
+<p>$$x_n =a+\alpha _n ,y_n =b+\beta _n \label{1}\tag{1}$$</p>
+<p>式中$\alpha _n$及$\beta _n$为无穷小.故</p>
+<p>$$x_n \pm y_n =(a\pm b)+(\alpha _n \pm \beta _n ).$$</p>
+<p>这时的$\alpha _n \pm \beta _n$依引理$1$为无穷小；因此，应用极限的第二定义，可以证实整序变量$x_n \pm y_n$有极限等于$a\pm b$，此即要证明的.</p>
+<p>这定理及其证法，可以推广到任意有限个有极限的整序变量相加的情形.</p>
+<p>$2°$ 若整序变量$x_n$及$y_n$趋于有限极限</p>
+<p>$$\lim x_n =a,\quad \lim y_n =b,$$</p>
+<p>则它们的积仍趋于有限极限，并且</p>
+<p>$$\lim x_n y_n =ab.$$</p>
+<p>仍由等式$\eqref{1}$出发，这次便有</p>
+<p>$$x_n y_n =ab+(a\beta _n +b\alpha _n +\alpha _n \beta _n ).$$</p>
+<p>依引理$1$及$2$，在括号内的式子为无穷小量.由此便推得，整序变量$x_n y_n$确趋于极限$ab$.</p>
+<p>这定理可以推广到任意有限个有极限的整序变量相乘的情形(例如，用数学归纳法).</p>
+<p>$3°$ 若整序变量$x_n$及$y_n$趋于有限极限</p>
+<p>$$\lim x_n =a,\quad \lim y_n =b,$$</p>
+<p>并且$b$异于$0$，则它们的比仍趋于有限极限，并且</p>
+<p>$$\lim \dfrac{x_n }{y_n } =\dfrac{a}{b} .$$</p>
+<p>由于$b\neq 0$,根据[关于有极限的整序变量的一些定理]的命题$3°$，由某项开始，不仅$y_n \neq 0$，且有</p>
+<p>$$\mid y_n \mid &gt; r &gt; 0,$$</p>
+<p>式中$r$是常数.对于使上面的不等式成立的那些$n$,比$\dfrac{x_n }{y_n }$显然是有意义的.</p>
+<p>依旧由等式$\eqref{1}$出发，得</p>
+<p>$$\dfrac{x_n }{y_n } -\dfrac{a}{b}=\dfrac{a+\alpha _n }{b+\beta _n }-\dfrac{a}{b}=\dfrac{1}{by_n }(b\alpha _n -a\beta _n ).$$</p>
+<p>依引理$1$及$2$，在括号内的式子为无穷小量.根据开始时的叙述，而其乘数将是有界变量：</p>
+<p>$$\mid \dfrac{1}{by_n } \mid =\dfrac{1}{\mid b\mid \mid y_n \mid } &lt; \dfrac{1}{\mid b\mid r } .$$</p>
+<p>因此，依引理$2$，等式右边的积将是无穷小.但它表示整序变量$\dfrac{x_n }{y_n }$及数$\dfrac{a}{b}$的差，故$\dfrac{x_n }{y_n }$的极限是$\dfrac{a}{b}$.此即所要证的.</p>
+<h2 id="不定式">不定式</h2>
+<p>在前一段内我们曾考察式子</p>
+<p>$$x_n \pm y_n ,x_n y_n ,\dfrac{x_n }{y_n } ,\label{2} \tag{2}$$</p>
+<p>并在整序变量$x_n$及$y_n$都趋于有限极限的假定下(在相除的情形，$y_n$的极限应不等于零)，我们已确定了各式子的极限.</p>
+<p>今再详述余下的尚未考察的情形，当$x_n$及$y_n$(其中之一或两者)的极限是无穷大时，或(若论及除法)当分母的极限为零时.由这两种情形，这里只讲四种重要而且有用的奇异性.</p>
+<p>$1°$ 我们首先来看商$\dfrac{x_n }{y_n }$，设两个变量$x_n$及$y_n$同时趋于零.这里我们首先遇到完全特殊的情况：虽然已知$x_n$及$y_n$的极限，但关于它们的比的极限——在不知道这些整序变量的本身时——我们不能作出任何一般的论断.这极限，信赖着两变量各自改变的规律，可以有各种不同的数值，或根本不存在.下列的简单的例子可以解释这点.</p>
+<p>设$x_n =\dfrac{1}{n^2} ,y_n =\dfrac{1}{n}$，则两整序变量各自趋于零，它们的比$\dfrac{x_n }{y_n }=\dfrac{1}{n}$也趋于零；反之，设$x_n =\dfrac{1}{n} ,y_n =\dfrac{1}{n^2}$，虽然它们仍旧各自趋于零，但这次它们的比$\dfrac{x_n }{y_n }=n$趋于$\infty$!再取任一异于零的数$a$，并作出两个无穷小$x_n =\dfrac{a}{n}$及$y_n =\dfrac{1}{n}$便知它们的比有极限为$a$(因恒等于$a$).</p>
+<p>最后，若$x_n =\dfrac{(-1)^{n+1}}{n},y_n =\dfrac{1}{n}$(两者各有极限为零)，则比$\dfrac{x_n }{y_n }=(-1)^{n+1}$显出根本没有极限.</p>
+<p>这样，单是知道整序变量$x_n$及$y_n$的极限，在目前的情形上我们就无法判断它们的比的性态：必须知道整序变量本身，即它们改变的规律，并直接研究比$\dfrac{x_n }{y_n }$.为了要表达当$x_n \to 0$及$y_n \to 0$的情形时的奇异性，就说，表达式$\dfrac{x_n }{y_n }$是$\dfrac{0}{0}$型的不定式.</p>
+<p>$2°$ 在同时$x_n \to \pm \infty$及$y_n \to \pm \infty$的情形，亦有类似的情况.若不知道整序变量本身，关于它们的比的性态便不能作出一般的论断.这一事实可以用完全类似于$1°$内引用的那些例题来表明：</p>
+<p>$$x_n =n\to \infty ,y_n =n^2 \to \infty ,\dfrac{x_n }{y_n }=\dfrac{1}{n} \to 0;$$</p>
+<p>$$x_n =n^2\to \infty ,y_n =n \to \infty ,\dfrac{x_n }{y_n }=n\to 0;$$</p>
+<p>$$x_n =an\to \pm \infty (a\neq 0),y_n =n \to \infty ,\dfrac{x_n }{y_n }=a\to a;$$</p>
+<p>$$x_n =[2+(-1)^{n+1}]n\to \infty ,y_n =n \to \infty ,\dfrac{x_n }{y_n }=2+(-1)^{n+1}$$</p>
+<p>根本没有极限.</p>
+<p>在这种情形，就说，表达式$\dfrac{x_n }{y_n }$是$\dfrac{0}{0}$型的不定式.</p>
+<p>转而考察积$x_n y_n$.</p>
+<p>$3°$ 若$x_n$趋于零，同时$y_n$趋于$\pm \infty$，则研究积$x_n y_n$的性态时，我们又遇到像$1°$及$2°$内所遇到的那种奇异性.关于这点可以由下面的例题证实它：</p>
+<p>$$x_n =\dfrac{1}{n^2}\to 0 ,y_n =n \to \infty ,x_n y_n =\dfrac{1}{n}\to 0;$$</p>
+<p>$$x_n =\dfrac{1}{n}\to 0 ,y_n =n^2 \to \infty ,x_n y_n =n\to \infty;$$</p>
+<p>$$x_n =\dfrac{a}{n}\to 0(a\neq 0) ,y_n =n \to \infty ,x_n y_n =a\to a;$$</p>
+<p>$$x_n =\dfrac{(-1)^{n+1}}{n}\to 0,y_n =n \to \infty ,x_n y_n =(-1)^{n+1}$$</p>
+<p>根本没有极限.</p>
+<p>在这种情形，即当$x_n \to 0$及$y_n \to \infty$时，就说，表达式$x_n y_n$是$0\cdot \infty$型的不定式.</p>
+<p>最后，考察代数和$x_n +y_n$.</p>
+<p>$4°$ 这里讲当$x_n$及$y_n$趋于异号的无穷大时的奇异情形：就是若不知道整序变量$x_n$及$y_n$本身，则不可能确定$x_n +y_n$的极限.在这里所表示的各种不同的可能性可用下面的例题表明它：</p>
+<p>$$x_n =2n\to +\infty ,y_n =-n \to -\infty ,x_n +y_n =n\to +\infty ;$$</p>
+<p>$$x_n =n\to +\infty ,y_n =-2n \to -\infty ,x_n +y_n =-n\to -\infty ;$$</p>
+<p>$$x_n =n+a\to +\infty ,y_n =-n \to -\infty ,x_n +y_n =a\to a;$$</p>
+<p>$$x_n =n+(-1)^{n+1}\to +\infty ,y_n =-n \to -\infty ,x_n y_n =(-1)^{n+1}$$</p>
+<p>根本没有极限.</p>
+<p>因此，当$x_n \to +\infty$及$y_n \to -\infty$时，即说，式$x_n +y_n$表示$\infty-\infty$型的不定式.</p>
+<p>这样，当提出了依整序变量$x_n$及$y_n$的极限去确定由它们所组成的算术式$\eqref{2}$的极限这个问题以后，我们发现了不可能解答的四种情形：即型为</p>
+<p>$$\dfrac{0}{0},\quad \dfrac{\infty }{\infty},\quad 0\cdot \infty ,\quad \infty -\infty$$</p>
+<p>的不定式.在这些情形，必须注意整序变量$x_n$及$y_n$的改变规律，直接去研究我们所关心的式子.类似的研究称为<strong>不定式的定值法</strong>.以后它并不永远像上面所举的例题那样简单.下面我们要举几个这种类型的比较有趣的例题.</p>
+<h2 id="极限求法的例题">极限求法的例题</h2>
+]]></content>
+    <summary type="html">
+    <![CDATA[若干容易求得的极限]]>
+    
+    </summary>
+    
+      <category term="微积分" scheme="http://jianhanglin.github.io/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/"/>
+    
+      <category term="微积分" scheme="http://jianhanglin.github.io/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 9 整数的算术]]></title>
@@ -2326,198 +3203,6 @@
       <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
     
       <category term="基础代数" scheme="http://jianhanglin.github.io/categories/%E5%9F%BA%E7%A1%80%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[《代数学引论(第一卷)基础代数》 第1章 代数的起源 1 简谈代数]]></title>
-    <link href="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun111/"/>
-    <id>http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun111/</id>
-    <published>2014-10-22T08:27:50.000Z</published>
-    <updated>2014-10-23T01:21:06.000Z</updated>
-    <content type="html"><![CDATA[<p>代数从何而来？粗略地说，代数起源于加法，乘法和求整数次方幂的计算艺术.如果用字母代替数(这一点并非显而易见且有多种方式)，就使我们能够在更广泛的代数系统中使用类似的法则进行计算.对这一问题给出透彻回答的尝试将我们带进了久远的时代，带进了数学思想奇妙产生的过程.这一答案，最困难的部分与我们今天的基本代数结构：群、环、域、模等紧密相关.但这恰好是本书的大部分内容，因而第一章的目的目前似乎还达不到.</p>
-<p>幸运的是，在大多数代数公理抽象的外表下，隐含着非常具体的理论和实际问题，它们的解决常常幸运地成为进一步发展抽象理论的动力.同样地，所发展的理论又成为解决这些问题的基础和工具.存在于所有数学领域内的理论与应用之间的复杂的相互作用在代数中表现得尤为明显，同时也在某种程度上说明我们通常采用的围绕中心问题层层深入的教学方法是有道理的.</p>
-<p>在对历史事件进行过简短评注之后，我们将叙述包含在下面章节中的一些问题.这些问题之一成为研究线性方程组，矩阵和行列式理论的出发点.我们介绍高斯方法并得到解线性方程组的初步认识.</p>
-<p>在这一步引入标准的符号和术语是有益的，为此我们将扼要地给出集合与映射的理论.</p>
-<p>我们将引入等价关系和商映射的重要概念.进一步，为了详细讲解数学归纳法原理.建立了一些初等的组合关系式，我们特别引出了置换的概念，它是行列式理念的基础.</p>
-<p>最后在末尾一节中列出了整数的最简单的算术性质.这些性质不仅将来要用，也是在更复杂的代数系统中构造类似算法的原型.</p>
-<p>本章的材料并未超出中学课程太多.仅要求读者准备上升到更高一般的观点。</p>
-<h2 id="简谈代数">简谈代数</h2>
-<p>在我们今天的时代，谈论数学的“代数化”不是没有理由的，即代数的思想和方法渗透到数学各个分支的理论与应用中.这种情况在$20$世纪中叶变得十分明显，但情况并不总是如此.正如人类活动的所有领域一样，数学也会受到时尚的影响.代数方法的流行有其实际的原因，尽管对它的迷恋有时会超越理智的界限.由于掩盖了内容的代数外壳不亚于对代数的基本无知造成的不幸，所以教科书的作者要是擅长于避免代数过分的形式化，那么就会合情合理地受到赞许.</p>
-<p>只要不走极端，代数自古以来就是数学的一个重要的组成部分.几何也是这样，但我们愿意在这里引用索菲·格尔曼的观点.“代数不外是符号的几何，而几何不外是图形的代数.”后来情况有些变化，但仍可以说“数学对象的自然属性实质上是不太重要的第二位的事情，例如我们得到的结果既可以用纯几何定理的形式表述，也可以借助解析几何以代数定理的形式出现.”(<a href="http://baike.baidu.com/view/786982.htm?fr=aladdin" target="_blank" rel="external">尼·布尔巴基</a>).</p>
-<p>根据“重要的不是数学对象，而是它们之间的关系”这一原则，代数被定义为对各种集合的元素施行代数运算的科学(这种说法有些重复，并且使未入门者完全莫名其妙).代数运算本身来源于初等算术.反过来，基于代数学的思想，“高等算术”，即数论中的许多事实得到了最自然的证明.</p>
-<p>但是代数结构，即带有代数运算的集合，意义远远超出了对数论的应用.许多数学对象(拓扑空间，多复变函数等等)，其研究方法是建立相应的代数结构，即便与所研究的对象不完全吻合，但在所有的情况下都能反映出它们的本质方面.在现实世界中没有什么东西是完全相同的.</p>
-<p>对代数学的这明确看法是在$45$年前由量子力学的创始人之一狄拉克提出来的，他说：“现代物理学越来越需要抽象数学及其基础的发展.非欧几何和非交换代数一度被认为是虚构的，是迷恋逻辑推理的简单结果，而现在则被认为是描绘物理世界不可或缺的工具.”</p>
-<p>代数工具在研究量子力学的基本粒子，在考察刚体性质和晶体结构(在这方面，群表示理论特别重要)，在分析经济模式，在制造现代化计算机等方面都是非常有用的.</p>
-<p>与此同时，代数学也受到其他学科新鲜汁液的哺育，其中包括数学中的其他学科.例如代数的同调方法产生于拓扑学和代数理论.因而代数的面貌和人们对代数的看法在不同的时期有所改变是不足为奇的.我们不可能详细地列出这些变化，不仅由于篇幅有限，尤其是因为书写历史必需具体，而这只有在学习了代数的基础知识之后才能办到.我们仅限于列举一个带有人名和年代的图表.</p>
-<span>$$  \begin{array}{|l|l|}  \hline  古代巴比伦和埃及文化，希腊文化.丢番图的 & 自然数与正有理数的四则运算.几何学与 \\  “算术”(公元前3世纪) & 天文学中的代数公式.作图问题的形成 \\  & (立方倍积与三等分角)，代数思想的使用 \\  & 是很久以后的事情. \\  \hline  中世纪的东方文化.穆罕默德·花拉子米 & 一次及二次代数方程.术语“代数”一词 \\  (\text{Muhammad al-Khwārizmī})的著作《代数》 & 的产生. \\  (约825年) & \\  \hline  文艺复兴时代 & 三次和四次代数方程的一般解，建立了现 \\  \text{S.}费罗(1465-1526) & 代的代数符号 \\  \text{N.}塔尔塔利亚(1500-1557) & \\  \text{G.}卡尔达诺(1501-1576) & \\  \text{L.}费拉里(1522-1565) & \\  \text{F.}韦达(1540-1603) & \\  \text{R.}邦贝利(1530-1572) & \\  \hline  17至18世纪 & 出现了解析几何——几何与代数之间的 \\  \text{R.}笛卡儿(1596-1650) & 坚实的桥梁.\\  \text{P.}费马(1601-1665) & 数论研究趋于活跃.\\  \text{I.}牛顿(1643-1727) & 开始研究多项式代数.\\  \text{G.}莱布尼茨(1646-1716) & 深入研究代数方程求解的一般公式.\\  \text{L.}欧拉(1707-1783) & 证明数值系数代数方程根的存在性的首.\\  \text{J.}达朗贝尔(1717-1783) & 批方法.\\  \text{J.L.}拉格朗日(1736-1813) & 行列式理论的开端.\\  \text{G.}克拉默(1704-1752) & \\  \text{P.}拉普拉斯(1749-1827) & \\  \text{A.}范德蒙德(1735-1796) & \\  \hline  19世纪至20世纪初 & 证明数值系数方程根的存在性的基本定理. \\  \text{K.F.}高斯(1777-1855) & 代数理论的深入发展.\\  \text{P.}狄利克雷(1805-1859) & \\  \text{E.}库默尔(1810-1893) & \\  \text{L.}克罗内克(1823-1891) & \\  \text{R.}戴德金(1831-1916) & \\  \text{E.L.}佐洛塔廖夫(1847-1878) & \\  \text{G.F}沃罗诺依(1868-1908) & \\  \text{A.A.}马尔可夫(1856-1922) & \\  \hline  \text{P.L}切比雪夫(1821-1894) & 探讨代数方程近似解的求法.\\  \text{G.}埃尔米特(1822-1901) & 使根处于某一位置时系数应满足的条件.\\  \text{N.I}罗巴切夫斯基(1792-1856) & \\  \text{A.}胡尔维茨(1859-1919) & \\  \text{P.}鲁菲尼(1765-1822) & 证明次数 \geq 5的方程不能用根式求解.\\  \text{N.H.}阿贝尔(1802-1829) & 代数函数论的发展.\\  \text{G.}雅可比(1804-1851) & 伽罗瓦理论的创立.\\  \text{E.}伽罗瓦(1811-1832) & 主要基于转换群的有限群论的开端.\\  \text{G.}黎曼(1826-1866) & \\  \text{A.L.}柯西(1789-1857) & \\  \text{G.}若尔当(1838-1922) & \\  \text{L.}西罗(1832-1918) & \\  \hline  \text{H.}格拉斯曼(1809-1877) & 线性代数方法的深入发展.\\  \text{J.}西尔维斯特(1814-1897) & 发现四元数后引起的超复数的研究\\  \text{A.}凯莱(1821-1895) & (这样的系统现在称为代数).\\  \text{W.}哈密尔顿(1805-1865) & 特别是连续群(李群)的发展为李代\\  \text{G.}布尔(1815-1864) & 数理论奠定了基础.\\  \text{S.}李(1842-1899) & 代数几何和不变量理论成为数学的重要\\  \text{F.}弗罗贝尼乌斯(1849-1918) & 分支.\\  \text{J.}塞雷(1819-1885) & 在19世纪，数学尚未高度专门化，许多大科\\  \text{M.}诺特(1844-1922) & 学家在不同的领域内创造性地工作.\\  \text{D.A.}格拉韦(1863-1939) & \\  \text{H.}庞加莱(1854-1912) & \\  \text{F.}克莱茵(1849-1925) & \\  \text{W.}伯恩赛德(1852-1927) & \\  \text{F.}莫林(1861-1941) & \\  \text{J.}舒尔(1875-1941) & \\  \text{H.}外尔(1885-1955) & \\  \text{F.}恩里克(1871-1946) & \\  \hline  \text{J.}冯·诺依曼(1903-1957) & 20世纪上半叶，整个数学大厦得到了根本\\  \text{D.}希尔伯特(1862-1943) & 性的改造.\\  \text{E.}嘉当(1869-1951) & 代数不再是关于解代数方程的科学，开始\\  \text{K.}亨泽尔(1861-1941) & 坚定地滑道公理化和更加抽象的道路发展.\\  \text{E.}施泰尼茨(1871-1928) & \\  \text{E.}诺特(1882-1935) & \\  \text{E.}阿廷(1898-1962) & \\  \text{H.}布尔巴基《数学原理》. & \\  \hline  \end{array}  $$</span>
-
-<span>$$  \begin{array}{|ll|}  \hline  环、模、范畴、同调理论成为常用的语言.许多不同的理论符合泛代数的通用模式.模型论兴起于 & \\  代数与数理逻辑的交界处.古老的理论焕然一新，扩大了自己的应用领域. & \\  例子有现代代数几何、代数拓扑、代数K-理论、代数群理论.有限群论经历了特殊的飞跃. & \\  \hline  \end{array}  $$</span>
-
-<p>目前代数学正处于生机勃勃的发展中.其中俄罗斯数学家做出了重大贡献.我国高水平的代数研究，应归功于下述学者，如$\text{N.G.}$切博塔廖夫($1894-1947$)，$\text{O.Ju.}$施米特($1891-1956$)，$\text{A.I.}$马尔采夫($1909-1967$)，$\text{A.G.}$库洛什($1908-1971$)，$\text{P.S.}$诺维科夫($1901-1975$)，$\text{D.K.}$法捷耶夫($1907-1989$).</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[代数从何而来？粗略地说，代数起源于加法，乘法和求整数次方幂的计算艺术.]]>
-    
-    </summary>
-    
-      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="基础代数" scheme="http://jianhanglin.github.io/categories/%E5%9F%BA%E7%A1%80%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[《代数学引论(第一卷)基础代数》 前言]]></title>
-    <link href="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun0/"/>
-    <id>http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun0/</id>
-    <published>2014-10-22T03:36:46.000Z</published>
-    <updated>2014-10-23T03:29:25.000Z</updated>
-    <content type="html"><![CDATA[<p><strong><a href="http://book.douban.com/subject/2036531/" target="_blank" rel="external">代数学引论(第一卷)基础代数</a></strong> <a href="http://pan.baidu.com/s/1c01XGQ0" target="_blank" rel="external">在线阅读</a> А.И.柯斯特利金 张英伯 高等教育出版社 第2版   </p>
-<p><center><img src="/assets/img/daishuxueyinlun1/cover.jpg" alt=""></center></p>
-<div align="right">“代数是慷慨的，它提供给人们的”</div>
-
-<div align="right">常常比人们要求的还要多.”</div>
-
-<div align="right">——<a href="http://zh.wikipedia.org/wiki/%E8%AE%A9%C2%B7%E5%8B%92%E6%9C%97%C2%B7%E8%BE%BE%E6%9C%97%E8%B4%9D%E5%B0%94" target="_blank" rel="external">达朗贝尔</a></div>
-
-<h1 id="前言">前言</h1>
-<p>人们很早就感到有必要把代数、线性代数和几何放到一个统一的教程中.而教科书《代数学引论》($M.$科学，1977)自出版后的$22$年来可以看作是这种统一处理的初步尝试.代数是数学中一个充满活力的分支，具有强烈的吸引力，它基于为数不多的几个清晰而直观的原理.代数概念的意义可能有数论或几何的特征，常常根植于数学计算和解方程.从这种历史观点产生的原则和要求是通用的，它已经贯彻到现代大学的代数教程中.全部困难在于，如何使这些众所周知的想法或多或少地实现.对传统作法的改进——有时在统一线性代数和多维解析几何教材方面，有时在将初等数论分散插入代数教材方面，都在《代数学引论》中有所反映.本书的写作基于前面提到过的同名教科书，但进行了大力度的扩充，并为读者方便起见分为三部分.不言而喻，这些部分合在一起显然囊括了前述教程稳定的核心内容，那是所有此类教科书都应该满足的最低要求.另一方面，书中材料的安排对应于最近十年来莫斯科大学数学力学系学生代数教学的顺序：第一学期——“代数基础”；第二学期——“线性代数与几何”；第三学期——“代数的基本结构”(这里的代数属初等水平，但充分包含了当代每个数学家所需的代数系统).为方便起见，今后引用这些书时利用相应的缩写$[BAI]$，$[BAII]$，$[BAIII]$.材料编排的顺序依照如下原则：不仅力求思路合理，还按照贺拉斯聪明的忠告：“今天只说今天该说的，其余的到适当时候再说.”换言之，我们的风格是集中表述内容，不计较多次返回同样的议题或同一个例子.于是，当群、环、域、同构的概念出现在$[BAI]$时是作为例子进行讨论的，然后集中在$[BAII]$，对这些概念更本质的研究在$[BAIII]$中进行，抽象的向量空间及其线性算子在$[BAII]$研究，尽管在本书的最前面几章已经伴随着线性方程组出现过类似的具体概念.当然，只有读者有权判断这种途径是否有利于对事物的理解，伟大的数学家庞加莱在他的著名论文《<a href="http://book.douban.com/subject/5373898/" target="_blank" rel="external">科学与方法</a>》(<a href="http://pan.baidu.com/s/1bno25tX" target="_blank" rel="external">第$2$章，数学的定义与教学</a>)中就是这样说的.根据作者的经验，实际的课程(每一学期每周三小时，第二学期每周四小时，第三学期每周两小时)，显然不可能涵盖教科书的全部材料，这样做也是不应该的.按照作者的构想，课程寄希望于主讲人的自由发挥(当然是在教科书的明确框架之内).作者希望读者把这本书看作一本参考书或是大学生的补充读物.现代数学的丰富多彩不可能削足适履地安排进任何一体“代数学引论”中，但教科书应当成为创造性思维的推动力.刻意安排的围绕某一基本问题的大量习题促进了这一点的实现.此外，每一部分都分为若干章节，列举出某些未解决的或难解决的问题并有必要的说明(都是根据作者个人的想法)，它们直接与课程的内容衔接，且几乎接近于解决.这些问题未必能引起普遍的兴趣，但是如果能在一些人心中点燃探索数学真理的火花，那就太美好了.</p>
-<p>谈谈$[BAI]$.可以认为这本书是小型的代数.群、环、域等基本概念对于大多数大学生来说都是新的，它们的引入尽量采用非正式和最少量的方式，尽管由此得到的诱导概念的总量是相当大的.为方便起见，我们抽出若干最常用的代数系统，如群$(\bf Z,+)$，$S_n$，$A_n$，$GL_n$，$SL_n$，多项式环，域$\bf Q,R,C$和$\bf Z_p$.代数语言以它们为背景展示出来.按照传统并顾及到从中学到大学之间的过渡，首先讲解了矩阵和行列式，并用它们讨论了线性方程组的解.基本的代数结构就在这时自然产生了.更为详尽的研究放在$[BAIII]$中，而我们现在的任务是积累生动的例子.</p>
-<p>应该特别注意在补充文献中所列出的<a href="http://book.douban.com/subject/25862912/" target="_blank" rel="external">沙法列维奇</a>的书<a href="http://pan.baidu.com/s/1bnpi19H" target="_blank" rel="external">$[4]$</a>，从中可以看到在代数乃至整数数学中新的、高水平的非传统观念的发展.</p>
-<p>感谢《代数学引论》原版教科书的全体读者，感谢英文、保加利亚文、西班牙文、波兰文、法文、中文的译者和评注才，感谢莫斯科大学高等代数教研室的成员们，在那里，本书仍然在经受着年复一年的检验.</p>
-<p>我非常高兴地对柯斯特利金娜、伊莲娜和奥斯特利克在本书成稿时提供的无法估量的帮助表示深切的感谢.</p>
-<div align="right">А.И.柯斯特利金</div>
-
-<h2 id="补充文献"><div align="center">补充文献</div></h2>
-<p>$1$.<a href="http://pan.baidu.com/s/1sjAuFBR" target="_blank" rel="external">Под реДакцией Кострикина.А И Сборник задач по алгебре.——М.:Факториал,1995.</a> (《代数习题集》)</p>
-<p>$2$.<a href="http://pan.baidu.com/s/1mgsnV4W" target="_blank" rel="external">Курош А Г.Курс высшей алгебры.——ю-е изд.——М.:Наука,1971.</a>(《高等代数教程》)</p>
-<p>$3$.<a href="http://pan.baidu.com/s/1mgC6J1m" target="_blank" rel="external">Фаддеев ДК.Лекции по алгебре.——М.:наука,1984</a>(《代数学讲义》)</p>
-<p>$4$.<a href="http://pan.baidu.com/s/1mgJYsFQ" target="_blank" rel="external">Шафаревич И Р.Основные понятия алгебры.——М.:ВИНИТИ,1986</a>(<a href="http://pan.baidu.com/s/1bnpi19H" target="_blank" rel="external">《代数基本概念》</a>)</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[代数是慷慨的，它提供给人们的常常比人们要求的还要多.]]>
-    
-    </summary>
-    
-      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="基础代数" scheme="http://jianhanglin.github.io/categories/%E5%9F%BA%E7%A1%80%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[《代数学引论》第零章 集合与整数 7 选择公理、佐恩引理和良序定理]]></title>
-    <link href="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun07/"/>
-    <id>http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun07/</id>
-    <published>2014-10-22T01:51:00.000Z</published>
-    <updated>2014-10-22T01:53:16.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="选择公理、佐恩引理和良序定理">选择公理、佐恩引理和良序定理</h2>
-]]></content>
-    <summary type="html">
-    <![CDATA[在代数中有一类定理是断言某种对象的存在性，这种对象属于一定的集合而且具有特定的性质.]]>
-    
-    </summary>
-    
-      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[《代数学引论》第零章 集合与整数 6 偏序集合]]></title>
-    <link href="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun06/"/>
-    <id>http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun06/</id>
-    <published>2014-10-21T07:34:53.000Z</published>
-    <updated>2014-10-22T01:24:32.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="偏序集合">偏序集合</h2>
-<p>集合$S$上的一个关系，记作$\leq$，叫做一个<strong>偏序</strong>，如果$\leq$满足</p>
-<p>$1)$ 反身性 $a\leq a$对所有$a\in S$；</p>
-<p>$2)$ 反对称性 若$a\leq b$且$b\leq a$，则$a=b$；</p>
-<p>$3)$ 传递性 若$a\leq b$且$b\leq c$，则$a\leq c$.</p>
-<p>一个具有偏序的集合叫做<strong>偏序集合</strong>，如果集合$S$上一个偏序$\leq$对于任意$a,b\in S$恒有$a\leq b$或$b\leq a$，则$\leq $叫做一个<strong>全序</strong>.偏序集合的元素$a,b$叫做<strong>可比较的</strong>，如果$a\leq b$和$b\leq a$有一成立.如果一个偏序集合$S$的一个子集$A$的任一对元素都可比较的，则$A$叫做$S$的一个<strong>链</strong>.</p>
-<p><strong>例$1$</strong> 设$X$为一集合.$X$的幂集$P(X)$按$X$的包含关系构成一个偏序集合，$P(X)$为一个链当且仅当$X$为空集或只含一个元素.</p>
-<pre><code>所谓幂集（<span class="keyword">Power</span> <span class="keyword">Set</span>）， 就是原集合中所有的子集（包括全集和空集）构成的集族。
-</code></pre><p><strong>例$2$</strong> 自然数系$\bf N$按小于等于号$\leq $是一个全序集合.</p>
-<p><strong>例$3$</strong> 自然数系$\bf N$的整除关系$a\mid b$记成$a\leq b$，就是一个偏序.</p>
-<p>设$S$为一个偏序集合.元素$a\in S$叫做$S$的一个<strong>极小元素</strong>，如果$S$没有元素$x$使得$x &lt; a$(即$x\leq a,x\neq a$)，或者说从$x\leq a$推出$x=a$.依此，元素$a\in S$叫做$S$的一个<strong>极大元素</strong>，如果不存在$x\in S$使得$a &lt; x$，或者说如果从$a\leq x$可推出$a=x$.若$S$有极大(小)元素$a$，并不要求$a$与$S$的所有元素可以比较.</p>
-<p><strong>例$4$</strong> 令$N_1 =N-\lbrace 0,1 \rbrace$，$N_1$按整除关系是一偏序集合，此时每个素数是$N_1$的极小元素，$N_1$没有极大元素.</p>
-<p>设$A$为偏序集合$S$的一个子集，元素$a\in S$叫做$A$的一个<strong>下界</strong>，如果对所有的$x\in A$都有$a\leq x$.类似，元素$a\in S$叫做$A$的一个<strong>上界</strong>，如果对所有$x\in A$都有$x\leq a$.$A$可以没有下界或有多个下界.若$A$有下界，也不要求它属于$A$，对上界也如此.在例$2$中令$A=\lbrace 2k\mid k\in \bf N\rbrace$，$A$没有上界但有下界$0$且$0\in A$.在例$3$中令$B=\lbrace 2k+1\mid k\in \bf N\rbrace$，$B$有一上界$0$，但$0\notin B$.</p>
-<p>设$S$为一个偏序集合，$A$为一个子集，如果$A$有一个下界$a$而且$a\in S$，则$a$叫做$A$的一个<strong>最小元素</strong>.类似地，如果$A$有一个上界$a$而且$a\in A$，则$a$叫做$A$的一个<strong>最大元素</strong>.$A$可以没有最小(大)元素，如果$A$有最小(大)元素，则它是唯一的.</p>
-<p>在例$1$中空集是$P(X)$的最小元素，$X$是$P(X)$的最大元素.在例$2$中$0$是$\bf N$的最小元素，$\bf N$没有最大元素.在例$3$中，$1$是$\bf N$的最小元素.$0$是$\bf N$的最大元素.   </p>
-]]></content>
-    <summary type="html">
-    <![CDATA[集合$S$上的一个关系，记作$\leq$，叫做一个偏序，如果$\leq$满足反身性、反对称性和传递性.]]>
-    
-    </summary>
-    
-      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[《代数学引论》第零章 集合与整数 5 欧拉函数和欧拉-费马定理]]></title>
-    <link href="http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun05/"/>
-    <id>http://jianhanglin.github.io/blog/2014/10/daishuxueyinlun05/</id>
-    <published>2014-10-20T01:33:53.000Z</published>
-    <updated>2014-10-22T00:49:50.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="第零章_集合与整数">第零章 集合与整数</h2>
-<h2 id="欧拉函数和欧拉-费马定理">欧拉函数和欧拉-费马定理</h2>
-<p>首先介绍数论中一个重要的函数即欧拉函数.</p>
-<p>设$n$为一正整数，在$0,1,2,\cdots ,n-1$中与$n$互素的整数的个数记作$\varphi (n)$，叫做<strong>欧拉函数</strong>.由同余性质$6$知道，$\varphi (n)$也就是那些模$n$的剩余类的个数，这些剩余类是由与$n$互素的整数组成的.从这些剩余类取出的代表所组成的集合叫做<strong>模$n$的既约剩余代表系</strong>.一个既约剩余代表系$T$也可以这样来刻画：$1)$任一个与$n$互素的整数必与$T$中一个数模$n$同余，而且$2)T$中整数与$n$互素而且模$n$两两不同余.</p>
-<p>设$r_1,r_2,\cdots ,r_N,N=\varphi (n)$，为模$n$的一个既约剩余代表系，$(a,n)=1$，则$ar_1,ar_2,\cdots ,ar_N$仍是模$n$的一个既约剩余代表系.这是因为，首先根据互素性质$4)$和同余性质$4$，$ar_1,ar_2,\cdots ,ar_N$与$n$互素而且两两互不同余$\pmod{n}$.其次，每个$ar_i$和某一个<span>$r_{a_i} (1\leq a_i\leq N)$</span>同余，而且当$i\neq j$有$a_i\neq a_j$，于是<span>$ar_i \mapsto r_{a_i}$</span>是一个单射，因而是一个满射.$\alpha _1,\alpha _2,\cdots ,\alpha _N$是$1,2,\cdots ,N$的一个排列.由于每个与$n$互素的整数$b$必与某个<span>$r_{a_i}$</span>同余，由上可知$b$必与$ar_i$同余.所以$ar_1,ar_2,\cdots ,ar_N$是模$n$的既约剩余代表系.</p>
-<p><strong>定理$6$(欧拉-费马($Fermat$))</strong> 设$(a,n)=1,N=\varphi (n)$，则</p>
-<p>$$a^N \equiv 1\pmod{n}.$$</p>
-<p><strong>证明</strong> 取模$n$的一个既约剩余代表系<span>$r_1 ,r_2 ,\cdots ,r_N$</span>.由于$(a,n)=1$，<span>$ar_1,ar_2,\cdots ,ar_N$</span>也是一个既约剩余代表系，而且<span>$ar_i\equiv r_{a_i}\pmod{n}$</span>，$a_1,a_2,\cdots ,a_N$是$1,2,\cdots ,N$的一个排列.这$N$个同余式连乘得</p>
-<span>$$\prod \limits_{i=1}^Nar_i\equiv \prod \limits_{i=1}^Nr_{a_i}=\prod \limits_{i=1}^Nr_i\pmod{n},$$</span>
-
-<p>$$a^N\prod \limits r_i\equiv \prod \limits r_i\pmod{n},$$</p>
-<p>根据互素性质$4)$，$\prod \limits r_i$与$n$互素，根据同余式性质$4$，消去$\prod \limits r_i$得$a^N \equiv 1\pmod{n}$.$\blacksquare$</p>
-<p>定理$6$的特殊情况是，$n=p$为一素数，$\varphi (p)=p-1$.$(a,p)=1$即$p\nmid a$，于是</p>
-<p>$$a^{p-1}\equiv 1\pmod{p}.$$</p>
-<p>这就是费马定理.费马定理也可写成：对任意素数$p$和任意整数$a$，恒有</p>
-<p>$$a^p \equiv a\pmod{p}.$$</p>
-<p>在这里顺便介绍一下指数的概念.设$a,n$为互素的一对整数，$n\geq 1$，则存在一个最小正整数$m$使得</p>
-<p>$$a^m \equiv 1\pmod{n},$$</p>
-<p>$m$叫做<strong>$a$模$n$的指数</strong>.指数的存在由欧拉-费马定理得到保证.因为使$a^k\equiv 1\pmod{n}$的正整数$k$存在，$\varphi (n)$就是一个.$k$的存在也可直接看出.因为$a,a^2,a^3,\cdots $中必有两个同余的，设$a^j \equiv a^i \pmod{n}$，$j&gt;i$，消去$a^i$使$a^{j-i}\equiv 1\pmod{n}$.应用除法算式可以证明指数的一个基本性质：</p>
-<p>$a^k \equiv 1\pmod{n}\Leftrightarrow m\mid k$，$m$为$a~mod~n$的指数.特别地，指数$m\mid \varphi (n)$.</p>
-<p><strong>例</strong> $~2~mod~17$的指数为$8$，$3~mod~17$的指数为$16=\varphi (17)$.计算$3^{157}~mod~17$，可应用指数.</p>
-<p>首先，$157\equiv 13\pmod{16}$，$3^{157}\equiv 3^{13}\pmod{17}$，而$3^{13}\equiv 3^8\cdot 3^5\equiv -3^5\equiv -5\pmod{17}$.</p>
-<p><strong>个人思路</strong>：首先先分解$157=9\times 16+13$.根据欧拉-费马定理，令$a=3^k$，$n=17$，则$(a,n)=(3^k,17)=1$，对任意的整数$k$来说.$N=\varphi (n)=\varphi (17)=17-1=16$，因此有$a^N=(3^k)^{16} \equiv 1\pmod{17}$成立，也即是说$a^{N}\cdot 3^{13}=(3^k)^{16}\cdot 3^{13} \equiv 3^{13}\pmod{17}$成立.这时，可令$k=9$，则有$3^{157}=(3^9)^{16}\cdot 3^{13} \equiv 3^{13}\pmod{17}$成立.因为$17\times 386=6562=6561+1=3^8+1$，所以$3^8\equiv -1\pmod{17}$.因为$3^5=243=17\times 16+5$，所以$3^5\equiv 5\pmod{17}$.因此有$3^{13}\equiv 3^8\cdot 3^5\equiv -3^5\equiv -5\pmod{17}$.</p>
-<p>下面我们来计算欧拉函数.</p>
-<p><strong>引理$1$</strong>$~p$为素数，$\varphi (p^m)=p^m (1-\dfrac{1}{p})$，$m\geq 1$.</p>
-<p><strong>证明</strong> 因为在$S=\lbrace 0,1,2,\cdots ,p^m-1 \rbrace$中除去$p$的倍数，剩下的都与$p$互素，而$S$中$p$的倍数恰好有$\dfrac{p^m}{p}$个，因此$S$中与$p$互素的整数的个数为$p^m-p^{m-1}$.</p>
-<p><strong>引理$2$</strong>设$n=n_1\times n_2$，$(n_1,n_2)=1$，$n_i\geq 1$，则</p>
-<p>$$\varphi (n)=\varphi (n_1)\times \varphi (n_2).$$</p>
-<p><strong>证明</strong>$\varphi (n_i)$简记作$N_i$，$i=1,2$.设$r_1,\cdots$,<span>$r_{N_1}$</span>和$s_1,\cdots $,<span>$s_{N_2}$</span>分别为模$n_1$和模$n_2$的既约剩余代表系.根据孙子定理，存在整数<span>$t_{ij}$</span>，$i=1,\cdots ,N_1$，$j=1,\cdots ,N_2$使得</p>
-<span>$$t_{ij}\equiv r_i\pmod{n_1},$$</span>
-
-<span>$$t_{ij}\equiv s_j\pmod{n_2}.$$</span>
-
-<p>证明<span>$t_{ij}$</span>为模<span>$n_1n_2$</span>的一个既约剩余代表系.首先，由于<span>$(r_i,n_1)=1$</span>，有<span>$(t_{ij},n_1)=1$</span>.由于<span>$(s_j,n_2)=1$</span>，有<span>$(t_{ij},n_2)=1$</span>.因而<span>$(t_{ij},n_1n_2)=1$</span>.其次<span>$t_{ij}$</span>互不同余.假设若<span>$t_{ij}\equiv t_{kl}\pmod{n_1n_2}$</span>，一方面有<span>$t_{ij}\equiv t_{kl}\pmod{n_1}$</span>，它化为<span>$r_i\equiv r_k\pmod{n_1}$</span>，从而$i=k$，另一方面有<span>$t_{ij}\equiv t_{kl}\pmod{n_2}$</span>，它化为<span>$s_j\equiv s_l\pmod{n_2}$</span>，从而$j=l$.所以<span>$t_{ij}$</span>互不同余<span>$\pmod{n_1n_2}$</span>.最后设$a$为任一与$n$互素的整数，根据<span>$r_i$</span>和<span>$s_j$</span>的定义，存在<span>$r_i$</span>和<span>$s_j$</span>使得<span>$a\equiv r_i\pmod{n_1}$</span>，<span>$a\equiv s_j\pmod{n_2}$</span>，于是根据孙子定理有<span>$a\equiv t_{ij}\pmod{n}$</span>(<strong>不懂</strong>).所以$t_{ij}$是模$n$的一个既约代表系.这就证明了<span>$\varphi (n)=\varphi (n_1)\times \varphi (n_2)$</span>.$\blacksquare$</p>
-<p><strong>定理$7$</strong>设$n=p_1^{e_1}p_2^{e_2}\cdots p_r^{e_r}$，$p_1,p_2,\cdots ,p_r$为不同素数，$e_i \geq 1$，则</p>
-<p>$$\varphi (n)=n(1-\dfrac{1}{p_1})(1-\dfrac{1}{p_2})\cdots (1-\dfrac{1}{p_r}).$$</p>
-<p>应用引理$1$和引理$2$对$r$作归纳法即得.</p>
-<p>最后证明欧拉函数的一个性质</p>
-<p>$$\underset{d\mid n}{\sum}\varphi (d)=n.$$</p>
-<p>设$S=\lbrace 0,1,\cdots ,n-1\rbrace$，对每个$d\mid n$，令<span>$S_d =\lbrace x\in S\mid (x,n)=d\rbrace$</span>.显然$S=\underset{d\mid n}{\bigcup}S_d$是$S$的一个划分.其次，映射</p>
-<p>$$\eta :x\mapsto \dfrac{x}{d},x\in S_d$$</p>
-<p>是$S_d$到$S(\dfrac{n}{d})=\lbrace 0,1,2,\cdots ,\dfrac{n}{d}-1\rbrace$的一个单射.而且象集$\eta (S_d)$恰好是$S(\dfrac{n}{d})$中与$\dfrac{n}{d}$互素的整数全体.所以$\mid S_d\mid =\varphi (\dfrac{n}{d})$，由此得</p>
-<p>$$n=\underset{d\mid n}{\sum}\mid S_d\mid =\underset{d\mid n}{\sum} \varphi (\dfrac{n}{d}),$$</p>
-<p>当$d$走遍$n$的因子时，$\dfrac{n}{d}$刚好走遍$n$的因子，所以</p>
-<p>$$\underset{d\mid n}{\sum} \varphi (d)=\underset{d\mid n}{\sum} \varphi (\dfrac{n}{d}).$$</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[设$n$为一正整数，在$0,1,2,\cdots ,n-1$中与$n$互素的整数的个数记作$\varphi (n)$，叫做欧拉函数.]]>
-    
-    </summary>
-    
-      <category term="代数" scheme="http://jianhanglin.github.io/tags/%E4%BB%A3%E6%95%B0/"/>
-    
-      <category term="抽象代数" scheme="http://jianhanglin.github.io/categories/%E6%8A%BD%E8%B1%A1%E4%BB%A3%E6%95%B0/"/>
     
   </entry>
   

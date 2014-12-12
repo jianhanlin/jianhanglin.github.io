@@ -1,0 +1,700 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>《微积分学教程(第一卷)》 第一章 极限论 2 极限的定理·若干容易求得的极限 | JianhangLin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="JianhangLin">
+    
+    <meta name="description" itemprop="description" content="若干容易求得的极限">
+    
+    
+    
+    
+    <link rel="alternative" href="/atom.xml" title="JianhangLin" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="JianhangLin" title="JianhangLin"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="JianhangLin">JianhangLin</a></h1>
+				<h2 class="blog-motto">春水初生，春林初盛，春风十里，不如你.</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">我的博文</a></li>
+					
+						<li><a href="/plan">书目</a></li>
+					
+						<li><a href="/like">刺猬与玫瑰</a></li>
+					
+						<li><a href="/archives">归档</a></li>
+					
+						<li><a href="/about">关于自己</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:jianhanglin.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/blog/2014/12/weijifenxuejiaocheng112/" title="《微积分学教程(第一卷)》 第一章 极限论 2 极限的定理·若干容易求得的极限" itemprop="url">《微积分学教程(第一卷)》 第一章 极限论 2 极限的定理·若干容易求得的极限</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="http://jianhanglin.github.io/about" title="JianhangLin" target="_blank" itemprop="author">JianhangLin</a>
+		
+  <p class="article-time">
+    <time datetime="2014-12-09T09:24:10.000Z" itemprop="datePublished"> 发表于 12月 9 2014</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#对等式及不等式取极限"><span class="toc-number">1.</span> <span class="toc-text">对等式及不等式取极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于无穷小的引理"><span class="toc-number">2.</span> <span class="toc-text">关于无穷小的引理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#变量的算术运算"><span class="toc-number">3.</span> <span class="toc-text">变量的算术运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#不定式"><span class="toc-number">4.</span> <span class="toc-text">不定式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#极限求法的例题"><span class="toc-number">5.</span> <span class="toc-text">极限求法的例题</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="对等式及不等式取极限">对等式及不等式取极限</h2>
+<p>当我们用等号或不等号联结二整序变量$x_n$及$y_n$时，我们所指的总是它们的对应数值，即具有同一序号的数值.</p>
+<p>$1°$ 若二整序变量$x_n ,y_n$在它们的一切变化过程中总是相等：$x_n =y_n$，并且各趋于有限极限：</p>
+<p>$$\lim x_n =a ,\quad \lim y_n =b,$$</p>
+<p>则这些极限必相等：$a=b$.</p>
+<p>这可由极限的唯一性<a href="http://linjianhang.me/blog/2014/11/weijifenxuejiaocheng111/" target="_blank" rel="external">[关于有极限的整序变量的一些定理]</a>直接推得.</p>
+<p>这定理通常写成对等式取极限的形式：由$x_n =y_n$得出：</p>
+<p>$$\lim x_n \lim y_n .$$</p>
+<p>$2°$ 若二整序变量$x_n ,y_n$常满足不等式$x_n \geq y_n$，并且各趋于有限极限：</p>
+<p>$$\lim x_n =a ,\quad \lim y_n =b,$$</p>
+<p>则必$a \geq b$.</p>
+<p>假定是相反的情形：设$a &lt; b$.像在<a href="http://linjianhang.me/blog/2014/11/weijifenxuejiaocheng111/" target="_blank" rel="external">[关于有极限的整序变量的一些定理]</a>中一样，任取在$a$与$b$间的一数$r$，$a &lt; r &lt; b$.那么，一方面，可以求得序号$N’$，使当$n &gt; N’$时成立$x_n &lt; r$，但另一方面，又可求得序号$N’’$，使当$n &gt; N’’$时成立$y_n &gt; r$.若$N$大于$N’$和$N’’$，则当$n &gt; N$时将同时成立不等式</p>
+<p>$$x_n &lt; r ,\quad y_n &gt; r,$$</p>
+<p>由此</p>
+<p>$$x_n &lt; y_n ,$$</p>
+<p>这是违反假定的.定理便得证明.</p>
+<p>这定理使我们得以对不等式(连同着等号的)取极限：由$x_n \geq y_n$得结论：</p>
+<p>$$\lim x_n \geq \lim y_n .$$</p>
+<p>当然，各处的$\geq $号都可以换成$\leq $号.</p>
+<p>请读者注意，由严格的不等式$x_n &gt; y_n$，一般说来，不能推得严格的不等式$\lim x_n &gt; \lim y_n $，而仅能推得：$\lim x_n \geq \lim y_n $.例如对于一切的$n$，有$\dfrac{1}{n} &gt; -\dfrac{1}{n}$，但却有</p>
+<p>$$\lim \dfrac{1}{n} =\lim (-\dfrac{1}{n})=0.$$</p>
+<p>在确定整序变量的极限的存在及其数值时，下面的定理常是很有用的：</p>
+<p>$3°$ 若二整序变量$x_n ,y_n ,z_n$恒满足不等式</p>
+<p>$$x_n \leq y_n \leq z_n ,$$</p>
+<p>并且$x_n$及$z_n$趋向同一极限$a$：</p>
+<p>$$\lim x_n =\lim z_n =a,$$</p>
+<p>则$y_n$亦必以$a$为极限：</p>
+<p>$$\lim y_n =a.$$</p>
+<p>指定任意的$\varepsilon &gt; 0$.对于这$\varepsilon$，首先可以求得序号$N’$，使当$n &gt; N’$时</p>
+<p>$$a-\varepsilon &lt; x_n &lt; a+\varepsilon .$$</p>
+<p>其次，又可求得序号$N’’$，使当$n &gt; N’’$时</p>
+<p>$$a-\varepsilon &lt; z_n &lt; a+\varepsilon .$$</p>
+<p>设$N$大于$N’$及$N’’$；则当$n &gt; N$时，上述两不等式都能满足，故</p>
+<p>$$a-\varepsilon &lt; x_n \leq y_n \leq z_n &lt; a+\varepsilon .$$</p>
+<p>结果当$n &gt; N$时</p>
+<p>$$a-\varepsilon &lt;  y_n  &lt; a+\varepsilon \quad 或 \quad \mid y_n -a \mid &lt; \varepsilon .$$</p>
+<p>这样，实际上就是$\lim y_n =a$.</p>
+<p>由这定理，特别，可以推得：若对于一切$n$</p>
+<p>$$a \leq y_n \leq z_n ,$$</p>
+<p>且已知$z_n \to a$，则亦必有$y_n \to a$.要直接证明这事实也是很容易的.</p>
+<p>定理$1°$，$2°$及$3°$很易推广至无穷极限的情形(其中定理$3°$仅适用于带有确定符号的无穷极限).</p>
+<h2 id="关于无穷小的引理">关于无穷小的引理</h2>
+<p>在以后的定理中我们将要同时考察两个(或更多个)整序变量，并在它们之间施行算术运算.这时如上所述，我们所指的也就是在这些整序变量的对应数值间施行算术运算的意思.例如，说及二整序变量$x_n$及$y_n$的和时，若$x_n$及$y_n$各依次在数列</p>
+<p>$$x_1 ,x_2 ,x_3 ,\cdots ,x_n ,\cdots $$</p>
+<p>及</p>
+<p>$$y_1 ,y_2 ,y_3 ,\cdots ,y_n ,\cdots $$</p>
+<p>中取值，那么整序变量$x_n +y_n$便依次在数列</p>
+<p>$$x_1 +y_1 ,x_2 +y_2 ,x_3 +y_3 ,\cdots ,x_n +y_n ,\cdots $$</p>
+<p>中取值.</p>
+<p>在证明关于变量的算术运算的定理时，下面两个关于无穷小的引理，将担任着重要的角色.</p>
+<p><strong>引理$1$</strong> 任何有限个无穷小的和亦是无穷小量.</p>
+<p>我们只证明对于二无穷小$\alpha _n$及$\beta _n$的情形(一般的情形仿此讨论).</p>
+<p>给定任意的$\varepsilon &gt; 0$.根据无穷小的定义，由$\varepsilon $可以决定无穷小$\alpha _n$的序号$N’$，使当$n &gt; N’$时有</p>
+<p>$$\mid \alpha _n \mid &lt; \dfrac{\varepsilon }{2} .$$</p>
+<p>同样地对于$\beta _n$可以求出$N’’$，使当$n &gt; N’’$时有</p>
+<p>$$\mid \beta _n \mid &lt; \dfrac{\varepsilon }{2} .$$</p>
+<p>若取自然数$N$大于$N’$及$N’’$，则当$n &gt; N$时，两不等式同时成立，这样，便有</p>
+<p>$$\mid \alpha _n +\beta _n \mid \leq \mid \alpha _n \mid +\mid \beta _n \mid &lt; \dfrac{\varepsilon }{2} +\dfrac{\varepsilon }{2} =\varepsilon .$$</p>
+<p>因此，$\alpha _n +\beta _n$也是无穷小.</p>
+<p><strong>引理$2$</strong> 有界变量$x_n$与无穷小$\alpha _n$的乘积仍是无穷小.</p>
+<p>设对于一切$n$有</p>
+<p>$$\mid x_n \mid \leq M.$$</p>
+<p>若给定任意数$\varepsilon &gt; 0$，则依$\dfrac{\varepsilon }{M}$，对于无穷小$\alpha _n$可以求出$N$，使当$n &gt; N$时有</p>
+<p>$$\mid \alpha _n \mid &lt; \dfrac{\varepsilon }{M} .$$</p>
+<p>对于这种$n$，显然有</p>
+<p>$$\mid x_n \cdot \alpha _n \mid =\mid x_n \mid \cdot \mid \alpha _n \mid &lt; M \cdot \dfrac{\varepsilon }{M}=\varepsilon .$$</p>
+<p>由此推得，$x_n \cdot \alpha _n$为无穷小.</p>
+<h2 id="变量的算术运算">变量的算术运算</h2>
+<p>下面这些定理所以重要，在于在很多情形时，用了它们可以不必把一切与极限有关的问题都追溯到“极限”的定义，然后依指定的$\varepsilon$找出对应的$N$，等等.用了这些定理，极限的计算将大为简化.</p>
+<p>$1°$ 若整序变量$x_n$及$y_n$趋于有限极限：</p>
+<p>$$\lim x_n =a,\quad \lim y_n =b,$$</p>
+<p>则它们的和(差)仍趋于有限极限，并且</p>
+<p>$$\lim (x_n \pm y_n )=a\pm b.$$</p>
+<p>由定理的条件，推得</p>
+<p>$$x_n =a+\alpha _n ,y_n =b+\beta _n \label{1}\tag{1}$$</p>
+<p>式中$\alpha _n$及$\beta _n$为无穷小.故</p>
+<p>$$x_n \pm y_n =(a\pm b)+(\alpha _n \pm \beta _n ).$$</p>
+<p>这时的$\alpha _n \pm \beta _n$依引理$1$为无穷小；因此，应用极限的第二定义，可以证实整序变量$x_n \pm y_n$有极限等于$a\pm b$，此即要证明的.</p>
+<p>这定理及其证法，可以推广到任意有限个有极限的整序变量相加的情形.</p>
+<p>$2°$ 若整序变量$x_n$及$y_n$趋于有限极限</p>
+<p>$$\lim x_n =a,\quad \lim y_n =b,$$</p>
+<p>则它们的积仍趋于有限极限，并且</p>
+<p>$$\lim x_n y_n =ab.$$</p>
+<p>仍由等式$\eqref{1}$出发，这次便有</p>
+<p>$$x_n y_n =ab+(a\beta _n +b\alpha _n +\alpha _n \beta _n ).$$</p>
+<p>依引理$1$及$2$，在括号内的式子为无穷小量.由此便推得，整序变量$x_n y_n$确趋于极限$ab$.</p>
+<p>这定理可以推广到任意有限个有极限的整序变量相乘的情形(例如，用数学归纳法).</p>
+<p>$3°$ 若整序变量$x_n$及$y_n$趋于有限极限</p>
+<p>$$\lim x_n =a,\quad \lim y_n =b,$$</p>
+<p>并且$b$异于$0$，则它们的比仍趋于有限极限，并且</p>
+<p>$$\lim \dfrac{x_n }{y_n } =\dfrac{a}{b} .$$</p>
+<p>由于$b\neq 0$,根据[关于有极限的整序变量的一些定理]的命题$3°$，由某项开始，不仅$y_n \neq 0$，且有</p>
+<p>$$\mid y_n \mid &gt; r &gt; 0,$$</p>
+<p>式中$r$是常数.对于使上面的不等式成立的那些$n$,比$\dfrac{x_n }{y_n }$显然是有意义的.</p>
+<p>依旧由等式$\eqref{1}$出发，得</p>
+<p>$$\dfrac{x_n }{y_n } -\dfrac{a}{b}=\dfrac{a+\alpha _n }{b+\beta _n }-\dfrac{a}{b}=\dfrac{1}{by_n }(b\alpha _n -a\beta _n ).$$</p>
+<p>依引理$1$及$2$，在括号内的式子为无穷小量.根据开始时的叙述，而其乘数将是有界变量：</p>
+<p>$$\mid \dfrac{1}{by_n } \mid =\dfrac{1}{\mid b\mid \mid y_n \mid } &lt; \dfrac{1}{\mid b\mid r } .$$</p>
+<p>因此，依引理$2$，等式右边的积将是无穷小.但它表示整序变量$\dfrac{x_n }{y_n }$及数$\dfrac{a}{b}$的差，故$\dfrac{x_n }{y_n }$的极限是$\dfrac{a}{b}$.此即所要证的.</p>
+<h2 id="不定式">不定式</h2>
+<p>在前一段内我们曾考察式子</p>
+<p>$$x_n \pm y_n ,x_n y_n ,\dfrac{x_n }{y_n } ,\label{2} \tag{2}$$</p>
+<p>并在整序变量$x_n$及$y_n$都趋于有限极限的假定下(在相除的情形，$y_n$的极限应不等于零)，我们已确定了各式子的极限.</p>
+<p>今再详述余下的尚未考察的情形，当$x_n$及$y_n$(其中之一或两者)的极限是无穷大时，或(若论及除法)当分母的极限为零时.由这两种情形，这里只讲四种重要而且有用的奇异性.</p>
+<p>$1°$ 我们首先来看商$\dfrac{x_n }{y_n }$，设两个变量$x_n$及$y_n$同时趋于零.这里我们首先遇到完全特殊的情况：虽然已知$x_n$及$y_n$的极限，但关于它们的比的极限——在不知道这些整序变量的本身时——我们不能作出任何一般的论断.这极限，信赖着两变量各自改变的规律，可以有各种不同的数值，或根本不存在.下列的简单的例子可以解释这点.</p>
+<p>设$x_n =\dfrac{1}{n^2} ,y_n =\dfrac{1}{n}$，则两整序变量各自趋于零，它们的比$\dfrac{x_n }{y_n }=\dfrac{1}{n}$也趋于零；反之，设$x_n =\dfrac{1}{n} ,y_n =\dfrac{1}{n^2}$，虽然它们仍旧各自趋于零，但这次它们的比$\dfrac{x_n }{y_n }=n$趋于$\infty$!再取任一异于零的数$a$，并作出两个无穷小$x_n =\dfrac{a}{n}$及$y_n =\dfrac{1}{n}$便知它们的比有极限为$a$(因恒等于$a$).</p>
+<p>最后，若$x_n =\dfrac{(-1)^{n+1}}{n},y_n =\dfrac{1}{n}$(两者各有极限为零)，则比$\dfrac{x_n }{y_n }=(-1)^{n+1}$显出根本没有极限.</p>
+<p>这样，单是知道整序变量$x_n$及$y_n$的极限，在目前的情形上我们就无法判断它们的比的性态：必须知道整序变量本身，即它们改变的规律，并直接研究比$\dfrac{x_n }{y_n }$.为了要表达当$x_n \to 0$及$y_n \to 0$的情形时的奇异性，就说，表达式$\dfrac{x_n }{y_n }$是$\dfrac{0}{0}$型的不定式.</p>
+<p>$2°$ 在同时$x_n \to \pm \infty$及$y_n \to \pm \infty$的情形，亦有类似的情况.若不知道整序变量本身，关于它们的比的性态便不能作出一般的论断.这一事实可以用完全类似于$1°$内引用的那些例题来表明：</p>
+<p>$$x_n =n\to \infty ,y_n =n^2 \to \infty ,\dfrac{x_n }{y_n }=\dfrac{1}{n} \to 0;$$</p>
+<p>$$x_n =n^2\to \infty ,y_n =n \to \infty ,\dfrac{x_n }{y_n }=n\to 0;$$</p>
+<p>$$x_n =an\to \pm \infty (a\neq 0),y_n =n \to \infty ,\dfrac{x_n }{y_n }=a\to a;$$</p>
+<p>$$x_n =[2+(-1)^{n+1}]n\to \infty ,y_n =n \to \infty ,\dfrac{x_n }{y_n }=2+(-1)^{n+1}$$</p>
+<p>根本没有极限.</p>
+<p>在这种情形，就说，表达式$\dfrac{x_n }{y_n }$是$\dfrac{0}{0}$型的不定式.</p>
+<p>转而考察积$x_n y_n$.</p>
+<p>$3°$ 若$x_n$趋于零，同时$y_n$趋于$\pm \infty$，则研究积$x_n y_n$的性态时，我们又遇到像$1°$及$2°$内所遇到的那种奇异性.关于这点可以由下面的例题证实它：</p>
+<p>$$x_n =\dfrac{1}{n^2}\to 0 ,y_n =n \to \infty ,x_n y_n =\dfrac{1}{n}\to 0;$$</p>
+<p>$$x_n =\dfrac{1}{n}\to 0 ,y_n =n^2 \to \infty ,x_n y_n =n\to \infty;$$</p>
+<p>$$x_n =\dfrac{a}{n}\to 0(a\neq 0) ,y_n =n \to \infty ,x_n y_n =a\to a;$$</p>
+<p>$$x_n =\dfrac{(-1)^{n+1}}{n}\to 0,y_n =n \to \infty ,x_n y_n =(-1)^{n+1}$$</p>
+<p>根本没有极限.</p>
+<p>在这种情形，即当$x_n \to 0$及$y_n \to \infty$时，就说，表达式$x_n y_n$是$0\cdot \infty$型的不定式.</p>
+<p>最后，考察代数和$x_n +y_n$.</p>
+<p>$4°$ 这里讲当$x_n$及$y_n$趋于异号的无穷大时的奇异情形：就是若不知道整序变量$x_n$及$y_n$本身，则不可能确定$x_n +y_n$的极限.在这里所表示的各种不同的可能性可用下面的例题表明它：</p>
+<p>$$x_n =2n\to +\infty ,y_n =-n \to -\infty ,x_n +y_n =n\to +\infty ;$$</p>
+<p>$$x_n =n\to +\infty ,y_n =-2n \to -\infty ,x_n +y_n =-n\to -\infty ;$$</p>
+<p>$$x_n =n+a\to +\infty ,y_n =-n \to -\infty ,x_n +y_n =a\to a;$$</p>
+<p>$$x_n =n+(-1)^{n+1}\to +\infty ,y_n =-n \to -\infty ,x_n y_n =(-1)^{n+1}$$</p>
+<p>根本没有极限.</p>
+<p>因此，当$x_n \to +\infty$及$y_n \to -\infty$时，即说，式$x_n +y_n$表示$\infty-\infty$型的不定式.</p>
+<p>这样，当提出了依整序变量$x_n$及$y_n$的极限去确定由它们所组成的算术式$\eqref{2}$的极限这个问题以后，我们发现了不可能解答的四种情形：即型为</p>
+<p>$$\dfrac{0}{0},\quad \dfrac{\infty }{\infty},\quad 0\cdot \infty ,\quad \infty -\infty$$</p>
+<p>的不定式.在这些情形，必须注意整序变量$x_n$及$y_n$的改变规律，直接去研究我们所关心的式子.类似的研究称为<strong>不定式的定值法</strong>.以后它并不永远像上面所举的例题那样简单.下面我们要举几个这种类型的比较有趣的例题.</p>
+<h2 id="极限求法的例题">极限求法的例题</h2>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/微积分/">微积分</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/微积分/">微积分</a>
+  </div>
+
+</div>
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://jianhanglin.github.io/blog/2014/12/weijifenxuejiaocheng112/" data-title="《微积分学教程(第一卷)》 第一章 极限论 2 极限的定理·若干容易求得的极限 | JianhangLin" data-tsina="1763313312" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/blog/2014/12/kaoyanshiti1/" title="华南理工大学2010年攻读硕士学位研究生入学考试试卷">
+  <strong>上一篇：</strong><br/>
+  <span>
+  华南理工大学2010年攻读硕士学位研究生入学考试试卷</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/blog/2014/12/daishuxueyinlun119/"  title="《代数学引论(第一卷)基础代数》 第1章 代数的起源 9 整数的算术">
+ <strong>下一篇：</strong><br/> 
+ <span>《代数学引论(第一卷)基础代数》 第1章 代数的起源 9 整数的算术
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#对等式及不等式取极限"><span class="toc-number">1.</span> <span class="toc-text">对等式及不等式取极限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于无穷小的引理"><span class="toc-number">2.</span> <span class="toc-text">关于无穷小的引理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#变量的算术运算"><span class="toc-number">3.</span> <span class="toc-text">变量的算术运算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#不定式"><span class="toc-number">4.</span> <span class="toc-text">不定式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#极限求法的例题"><span class="toc-number">5.</span> <span class="toc-text">极限求法的例题</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/基础代数/" title="基础代数">基础代数<sup>10</sup></a></li>
+		
+			<li><a href="/categories/微积分/" title="微积分">微积分<sup>6</sup></a></li>
+		
+			<li><a href="/categories/抽象代数/" title="抽象代数">抽象代数<sup>12</sup></a></li>
+		
+			<li><a href="/categories/数学分析/" title="数学分析">数学分析<sup>5</sup></a></li>
+		
+			<li><a href="/categories/高等代数/" title="高等代数">高等代数<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/代数/" title="代数">代数<sup>22</sup></a></li>
+		
+			<li><a href="/tags/微积分/" title="微积分">微积分<sup>6</sup></a></li>
+		
+			<li><a href="/tags/考研试题/" title="考研试题">考研试题<sup>6</sup></a></li>
+		
+			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/代数/" style="font-size: 20.00px;">代数</a><a href="/tags/微积分/" style="font-size: 15.00px;">微积分</a><a href="/tags/考研试题/" style="font-size: 15.00px;">考研试题</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            <a href="http://www.ox.ac.uk/" target="_blank" title="University of Oxford">University of Oxford</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cam.ac.uk/" target="_blank" title="University of Cambridge">University of Cambridge</a>
+          </li>
+        
+          <li>
+            <a href="http://www.harvard.edu/" target="_blank" title="Harvard University">Harvard University</a>
+          </li>
+        
+          <li>
+            <a href="http://www.caltech.edu/" target="_blank" title="California Institute of Technology">California Institute of Technology</a>
+          </li>
+        
+          <li>
+            <a href="www.stanford.edu/" target="_blank" title="Stanford University">Stanford University</a>
+          </li>
+        
+          <li>
+            <a href="http://web.mit.edu/" target="_blank" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>
+          </li>
+        
+          <li>
+            <a href="http://www.princeton.edu/" target="_blank" title="Princeton University">Princeton University</a>
+          </li>
+        
+          <li>
+            <a href="http://www.yale.edu/" target="_blank" title="Yale University">Yale University</a>
+          </li>
+        
+          <li>
+            <a href="http://www3.imperial.ac.uk/" target="_blank" title="Imperial College London">Imperial College London</a>
+          </li>
+        
+          <li>
+            <a href="http://www.ucl.ac.uk/" target="_blank" title="London&#39;s Global University">London&#39;s Global University</a>
+          </li>
+        
+          <li>
+            <a href="http://berkeley.edu/" target="_blank" title="University of California-Berkeley">University of California-Berkeley</a>
+          </li>
+        
+          <li>
+            <a href="http://www.ucla.edu/" target="_blank" title="University of California, Los Angeles">University of California, Los Angeles</a>
+          </li>
+        
+          <li>
+            <a href="http://www.u-psud.fr/" target="_blank" title="Université Paris-Sud 11">Université Paris-Sud 11</a>
+          </li>
+        
+          <li>
+            <a href="http://www.upmc.fr/" target="_blank" title="Université Paris VI">Université Paris VI</a>
+          </li>
+        
+          <li>
+            <a href="http://www.uchicago.edu/" target="_blank" title="The University of Chicago">The University of Chicago</a>
+          </li>
+        
+          <li>
+            <a href="http://www.math.ac.cn/" target="_blank" title="中科院数学与系统科学研究院">中科院数学与系统科学研究院</a>
+          </li>
+        
+          <li>
+            <a href="http://www.math.org.cn/" target="_blank" title="博士数学论坛">博士数学论坛</a>
+          </li>
+        
+          <li>
+            <a href="http://emuch.net/bbs/index.php" target="_blank" title="小木虫">小木虫</a>
+          </li>
+        
+          <li>
+            <a href="http://www.cnblogs.com/zhangzujin/" target="_blank" title="张祖锦的数学博客">张祖锦的数学博客</a>
+          </li>
+        
+          <li>
+            <a href="http://www.maplesoft.com/" target="_blank" title="Maple">Maple</a>
+          </li>
+        
+          <li>
+            <a href="http://www.wolfram.com" target="_blank" title="Mathematica">Mathematica</a>
+          </li>
+        
+          <li>
+            <a href="http://www.mathworks.cn/" target="_blank" title="Matlab">Matlab</a>
+          </li>
+        
+          <li>
+            <a href="http://www.google.com.hk" target="_blank" title="谷歌Google">谷歌Google</a>
+          </li>
+        
+          <li>
+            <a href="http://www.baidu.com" target="_blank" title="百度Baidu">百度Baidu</a>
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=1763313312&verifier=eb816cbb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jianhang. <br/>
+			Welcome to my Math Blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1763313312" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/jianhanglin" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		
+		
+		
+		
+		<a href="https://www.douban.com/people/LinJianhang" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+        
+		
+		
+		<a href="mailto:674491602ljh@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://jianhanglin.github.io/about" target="_blank" title="JianhangLin">JianhangLin</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#nothing"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"jianhanglin"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-53424865-1', 'linjianhang.me');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
+}); 
+</script>
+<script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

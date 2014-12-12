@@ -1066,6 +1066,29 @@ article .article-content figure img {
     padding-top: 0.7em;
   }
 }
+article .article-content .img-thumbnail {
+  max-width: 240px;
+  max-height: 96px;
+  display: block;
+  margin-right: 0.7em;
+  padding: 0;
+  float: right;
+  clear: right;
+}
+article .article-content .img-topic {
+  max-width: 300px;
+  max-height: 1800px;
+  display: block;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+  padding: 0;
+  float: right;
+  clear: right;
+}
+article .article-content .img-center {
+  display: block;
+  margin: auto;
+}
 article .article-content figcaption,
 article .article-content .caption {
   display: block;
