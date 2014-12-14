@@ -639,12 +639,27 @@ header nav ul li a:hover {
   background: #fafafa;
   margin-bottom: 3.5em;
 }
-#main article.post-expand .article-more-link {
-  margin-top: 1.5em;
-  padding-top: 1em;
-  border-top: 2px solid #ddd;
+.img-logo {
+  max-width: 180px;
+  max-height: 96px;
+  display: block !important;
+  margin-right: 0.7em;
+  margin-left: 0.7em;
+  padding: 0;
+  float: right;
+  clear: right;
 }
-#main article.post-expand .article-more-link a {
+.img-topic {
+  max-width: 300px;
+  max-height: 1800px;
+  display: block !important;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+  padding: 0;
+  float: right;
+  clear: right;
+}
+.article-more-link a {
   display: inline-block;
   line-height: 1em;
   padding: 6px 15px;
@@ -654,7 +669,7 @@ header nav ul li a:hover {
   color: #817c7c;
   text-decoration: none;
 }
-#main article.post-expand .article-more-link a:hover {
+.article-more-link a:hover {
   background: #ccf;
   color: #fff;
   text-decoration: none;
@@ -914,6 +929,12 @@ article .article-content {
   color: #413f3f;
   font-size: 100%;
 }
+article .article-content:before,
+article .article-content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 article .article-content .kb {
   padding: 0.1em 0.6em;
   border: 1px solid #ccc;
@@ -1066,24 +1087,9 @@ article .article-content figure img {
     padding-top: 0.7em;
   }
 }
-article .article-content .img-thumbnail {
-  max-width: 240px;
-  max-height: 96px;
-  display: block;
-  margin-right: 0.7em;
-  padding: 0;
-  float: right;
-  clear: right;
-}
-article .article-content .img-topic {
-  max-width: 300px;
-  max-height: 1800px;
-  display: block;
-  margin-left: 0.7em;
-  margin-right: 0.7em;
-  padding: 0;
-  float: right;
-  clear: right;
+article .article-content .img-topic,
+article .article-content .img-logo {
+  display: none;
 }
 article .article-content .img-center {
   display: block;
@@ -1347,10 +1353,25 @@ footer.article-footer {
   filter: none;
   visibility: visible;
 }
-@media only screen and (min-width: 768px) {
-  .article-catetags {
-    width: 60%;
-  }
+.comments-count {
+  color: #d6d6d6;
+  margin-top: 0.3em;
+  padding: 0.5em 0;
+  float: right;
+}
+.comments-count span:before {
+  font-family: "FontAwesome";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f075";
+}
+.comments-count-link {
+  padding: 0.5em;
+  margin: 0 0.3em;
+}
+.comments-count-link:hover {
+  color: #fff !important;
+  background: #2ca6cb;
 }
 .article-tags,
 .article-categories {
